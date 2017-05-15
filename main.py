@@ -194,7 +194,7 @@ def vehicle_detail(vehicle, vroot, groot, tunk_type):
 			vgun = gun_detail(groot.find("shared").find(gun.tag))
 			
 			if gun.find("reloadTime") is not None:
-				vgun.read_time = float(gun.find("reloadTime").text)
+				vgun.reload_time = float(gun.find("reloadTime").text)
 
 			vturret.guns.append(vgun)
 
