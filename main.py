@@ -1,7 +1,9 @@
-#encode:utf-8
+# coding: utf-8
+
 import json
 import os
 import copy
+import gettext
 
 class Gun:
 	def __init__(self, reload_time):
@@ -25,7 +27,15 @@ class Vehicle:
 		self.contry = contry
 		self.tunk_type = tunk_type
 		self.level = level
-		self.name = name.split(":")[1]
+
+		f, n = name[1:].split(":")
+
+		_ = gettext.translation(
+			domain=f,
+			localedir='locale',
+			languages=["ja"]).gettext
+
+		self.name = _(n)
 		self.health = -1
 		self.front = -1
 		self.sides = -1
