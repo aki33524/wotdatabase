@@ -1,0 +1,911 @@
+{
+   "hull" : {
+      "maxHealth" : 248,
+      "weight" : 9640,
+      "swinging" : {
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.68",
+         "lodDist" : "FAR"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/french/F70_SARL42/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/french/F70_SARL42/collision/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "-0.0042 0.691525 0.72596"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "tags" : {
+            "diesel" : "diesel_medium"
+         },
+         "pixie" : "gas_medium"
+      },
+      "camouflage" : {
+         "tiling" : "1.6 1.6 0.000000 0.000000",
+         "exclusionMask" : {}
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.28",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "rayStart" : "0.38532 0.546986 1.98368",
+            "rayEnd" : "0.385229 0.171663 1.84536"
+         },
+         "inscription" : [
+            {
+               "rayStart" : "-0.0261783 0.374629 2.4461",
+               "rayEnd" : "-0.026172 0.000880286 2.30358",
+               "size" : "0.6",
+               "rayUp" : "0.000000 0.000000 -1",
+               "hideIfDamaged" : true
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "size" : "0.55",
+               "rayEnd" : "0.798833 0.52762 1.12131",
+               "rayStart" : "1.17404 0.632674 1.21177"
+            }
+         ]
+      },
+      "armor" : {
+         "armor_8" : "",
+         "armor_14" : 10,
+         "armor_3" : 40,
+         "armor_10" : 20,
+         "armor_1" : 40,
+         "armor_12" : 20,
+         "armor_13" : 40,
+         "armor_11" : 20,
+         "armor_4" : 40,
+         "armor_9" : 30,
+         "armor_5" : 30,
+         "armor_2" : 40,
+         "armor_6" : 40,
+         "armor_7" : 30
+      },
+      "primaryArmor" : "armor_1 armor_5 armor_9",
+      "hangarShadowTexture" : "vehicles/french/F70_SARL42/SARL42_HangarShadowMap.dds",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 125,
+         "maxRegenHealth" : 85
+      },
+      "models" : {
+         "undamaged" : "vehicles/french/F70_SARL42/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F70_SARL42/crash/lod0/Hull.model",
+         "exploded" : "vehicles/french/F70_SARL42/crash/lod0/Hull.model"
+      }
+   },
+   "chassis" : {
+      "Chassis_SARL42_2" : {
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.06",
+                  "template" : "Track_L",
+                  "count" : 9,
+                  "startIndex" : 1,
+                  "minOffset" : "-0.06",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "count" : 9,
+                  "startIndex" : 1,
+                  "template" : "Track_R",
+                  "maxOffset" : "0.06"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 1,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.03",
+                  "isLeft" : true,
+                  "minOffset" : "-0.03"
+               },
+               {
+                  "count" : 1,
+                  "startIndex" : "",
+                  "maxOffset" : "0.03",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.03",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "traces" : {
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "size" : "0.3 0.4"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "maxLoad" : 24300,
+         "models" : {
+            "undamaged" : "vehicles/french/F70_SARL42/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F70_SARL42/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F70_SARL42/crash/lod0/Chassis.model"
+         },
+         "trackNodes" : {
+            "elasticity" : 1300,
+            "backwardElastK" : 1,
+            "maxOffset" : "0.265",
+            "maxAmplitude" : "0.015",
+            "forwardElastK" : 1,
+            "node" : [
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : 1,
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.72"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "2.5",
+                  "forwardElastK" : "0.72"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "1.25"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.72"
+               },
+               {
+                  "forwardElastK" : "0.72",
+                  "backwardElastK" : "2.5",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.25",
+                  "backwardElastK" : 3
+               }
+            ],
+            "gravity" : "-9.8",
+            "linkBones" : false,
+            "enable" : true,
+            "offset" : "0",
+            "damping" : 2
+         },
+         "level" : 4,
+         "wwsoundNPC" : "trds_chf_npc",
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "segmentLength" : "0.104",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/french/F70_SARL42/track/segment.model",
+            "right" : "vehicles/french/F70_SARL42/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/french/F70_SARL42/track/segment.model",
+            "segmentOffset" : "0.156",
+            "left" : "vehicles/french/F70_SARL42/track/left.track"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "userString" : "#france_vehicles:Chassis_SARL42_2",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "17.1428",
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "radius" : "0.0852183",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : "17.1428"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "17.1428",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L4",
+                  "syncAngle" : "17.1428",
+                  "isLeft" : true,
+                  "radius" : "0.0852183",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0.0852182",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 3
+               },
+               {
+                  "count" : 10,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0.0852182",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 10,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "maxRegenHealth" : 60,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "weight" : 6500,
+         "bulkHealthFactor" : "3.0",
+         "terrainResistance" : "1 1.1 2",
+         "rotationSpeed" : 28,
+         "price" : 4300,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : -2,
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "rotationIsAroundCenter" : false,
+         "brakeForce" : 24000,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "tags" : {},
+         "trackThickness" : "-0.0131",
+         "repairCost" : "1.0",
+         "topRightCarryingPoint" : "0.944202 1.70122",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "maxHealth" : 80,
+         "hullPosition" : "0 1 0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F70_SARL42/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F70_SARL42/collision/Chassis.model"
+         }
+      },
+      "Chassis_SARL42" : {
+         "maxHealth" : 70,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F70_SARL42/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F70_SARL42/collision/Chassis.model"
+         },
+         "hullPosition" : "0 1 0",
+         "topRightCarryingPoint" : "0.944202 1.70122",
+         "camouflage" : {
+            "tiling" : "0.97 0.97 0.000000 0.000000"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "trackThickness" : "-0.0131",
+         "unlocks" : {
+            "chassis" : "Chassis_SARL42_2"
+         },
+         "repairCost" : "1.0",
+         "brakeForce" : 20000,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : -2
+         },
+         "rotationIsAroundCenter" : false,
+         "price" : 1600,
+         "rotationSpeed" : 26,
+         "terrainResistance" : "1.1 1.3 2.1",
+         "bulkHealthFactor" : "3.0",
+         "tags" : {},
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "maxRegenHealth" : 55,
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "radius" : "0.0852182",
+                  "isLeft" : false
+               },
+               {
+                  "template" : "W_R",
+                  "count" : 10,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0.0852182",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 3
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "count" : 10
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : "17.1428",
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "syncAngle" : "17.1428",
+                  "isLeading" : true,
+                  "radius" : "0.0852183"
+               },
+               {
+                  "syncAngle" : "17.1428",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.0852183",
+                  "isLeft" : true,
+                  "syncAngle" : "17.1428",
+                  "name" : "WD_L4"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "userString" : "#france_vehicles:Chassis_SARL42",
+         "weight" : 6500,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 7 0 0 -0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "splineDesc" : {
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/french/F70_SARL42/track/segment.model",
+            "segmentLength" : "0.104",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/french/F70_SARL42/track/right.track",
+            "left" : "vehicles/french/F70_SARL42/track/left.track",
+            "segmentModelRight" : "vehicles/french/F70_SARL42/track/segment.model",
+            "segmentOffset" : "0.156"
+         },
+         "maxLoad" : 20200,
+         "wwsoundPC" : "treads_type_pc",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.06",
+                  "isLeft" : true,
+                  "maxOffset" : "0.06",
+                  "template" : "Track_L",
+                  "count" : 9,
+                  "startIndex" : 1
+               },
+               {
+                  "minOffset" : "-0.06",
+                  "isLeft" : false,
+                  "maxOffset" : "0.06",
+                  "template" : "Track_R",
+                  "count" : 9,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "minOffset" : "-0.03",
+                  "template" : "Track_L",
+                  "maxOffset" : "0.03",
+                  "count" : 1,
+                  "startIndex" : ""
+               },
+               {
+                  "maxOffset" : "0.03",
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "count" : 1,
+                  "minOffset" : "-0.03",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "size" : "0.3 0.4"
+         },
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 3,
+         "trackNodes" : {
+            "elasticity" : 1300,
+            "backwardElastK" : 1,
+            "maxOffset" : "0.265",
+            "maxAmplitude" : "0.015",
+            "node" : [
+               {
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.72"
+               },
+               {
+                  "forwardElastK" : "0.72",
+                  "backwardElastK" : "2.5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "1.25",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "forwardElastK" : "0.72",
+                  "backwardElastK" : 2,
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "backwardElastK" : "2.5",
+                  "forwardElastK" : "0.72",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.25",
+                  "backwardElastK" : 3
+               }
+            ],
+            "forwardElastK" : 1,
+            "linkBones" : false,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "offset" : "0",
+            "damping" : 2
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F70_SARL42/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F70_SARL42/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F70_SARL42/normal/lod0/Chassis.model"
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.914159825"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_SARL42_2" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_SARL42" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Hispano_219CV_V8" : {
+               "smplEnginePower" : "231.5446"
+            },
+            "Somua_230_V8" : {
+               "smplEnginePower" : "243.1747"
+            }
+         }
+      }
+   },
+   "engines" : {
+      "Somua_230_V8" : "shared",
+      "Hispano_219CV_V8" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "french_rose",
+      "lodDist" : "MEDIUM"
+   },
+   "turrets0" : {
+      "Turret_1_SARL42" : {
+         "turretRotatorHealth" : {
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F70_SARL42/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F70_SARL42/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F70_SARL42/normal/lod0/Turret_01.model"
+         },
+         "tags" : {},
+         "level" : 3,
+         "circularVisionRadius" : 300,
+         "price" : 2000,
+         "primaryArmor" : "armor_1 armor_5 armor_7",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_6" : 40,
+            "armor_7" : 40,
+            "armor_2" : 40,
+            "armor_11" : 40,
+            "armor_13" : 20,
+            "armor_5" : 40,
+            "armor_9" : 40,
+            "armor_4" : 20,
+            "armor_3" : 40,
+            "armor_8" : "",
+            "armor_12" : 40,
+            "armor_10" : 40,
+            "armor_1" : 40
+         },
+         "rotationSpeed" : 30,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "guns" : {
+            "_47mm_SA37" : "shared",
+            "_47mm_SA37_ameliore" : "shared",
+            "_47mm_SA35" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.79 0.43 0.000000 0.000000",
+            "exclusionMask" : {}
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1.05118 0.524998 -0.118626",
+                  "rayEnd" : "-1 1 -0"
+               },
+               {
+                  "rayEnd" : "1 1 -0",
+                  "rayStart" : "1.05118 0.524998 -0.118626",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "isMirrored" : true
+               }
+            ]
+         },
+         "weight" : 2800,
+         "physicsShape" : "0.965 -0.035 1.023 -0.023 0.653 0.231 0.405 0.301 0.500 0.587 0.000 0.500 0.000 0.000 0.295",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F70_SARL42/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F70_SARL42/collision/Turret_01.model"
+         },
+         "showEmblemsOnGun" : false,
+         "gunPosition" : "0.0042 0.4277 0.95884",
+         "userString" : "#france_vehicles:Turret_1_SARL42",
+         "maxHealth" : 62
+      },
+      "Turret_2_SARL42" : {
+         "price" : 4800,
+         "circularVisionRadius" : 330,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30
+         },
+         "armor" : {
+            "armor_11" : 40,
+            "armor_13" : 30,
+            "armor_5" : 30,
+            "armor_9" : "",
+            "armor_4" : 20,
+            "armor_3" : 40,
+            "armor_14" : 20,
+            "armor_8" : 30,
+            "armor_12" : 40,
+            "armor_1" : 40,
+            "armor_6" : 40,
+            "armor_7" : 30,
+            "armor_16" : 30,
+            "armor_15" : 20,
+            "armor_2" : 30
+         },
+         "primaryArmor" : "armor_1 armor_7 armor_5",
+         "rotationSpeed" : 32,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F70_SARL42/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/french/F70_SARL42/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/french/F70_SARL42/crash/lod0/Turret_02.model"
+         },
+         "level" : 4,
+         "tags" : {},
+         "unlocks" : {
+            "gun" : "_75mm_SA32"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "guns" : {
+            "_47mm_SA35" : "shared",
+            "_75mm_SA32" : "shared",
+            "_75mm_Long_44" : "shared",
+            "_47mm_SA37" : "shared",
+            "_47mm_SA37_ameliore" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.94 0.46 0.000000 0.000000",
+            "exclusionMask" : {}
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-0.76426 0.375383 0.197896",
+                  "rayEnd" : "-1 0 0"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "size" : "0.28",
+                  "isMirrored" : true,
+                  "rayEnd" : "1 0 0",
+                  "rayStart" : "0.76426 0.375383 0.197896"
+               }
+            ]
+         },
+         "invisibilityFactor" : "0.704",
+         "gunPosition" : "0.0042 0.5168 0.97264",
+         "userString" : "#france_vehicles:Turret_2_SARL42",
+         "maxHealth" : 102,
+         "weight" : 3500,
+         "showEmblemsOnGun" : false,
+         "physicsShape" : "0.988 0.000 1.000 0.000 0.827 0.116 0.728 0.587 0.500 0.500 0.000 0.500 0.000 0.000 0.514",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F70_SARL42/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/french/F70_SARL42/collision/Turret_02.model"
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "repairCost" : "4.0",
+   "crewXpFactor" : "1.0",
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "speedLimits" : {
+      "backward" : 16,
+      "forward" : 40
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.8"
+   },
+   "radios" : {
+      "ER_29" : "shared",
+      "ER_26_ter" : "shared",
+      "ER_28" : "shared",
+      "ER_27" : "shared"
+   },
+   "crew" : {
+      "loader" : "AAAAAAAA",
+      "commander" : {},
+      "gunner" : {},
+      "driver" : {}
+   },
+   "invisibility" : {
+      "moving" : "0.184",
+      "firePenalty" : "0.368",
+      "camouflageBonus" : "0.03",
+      "still" : "0.245",
+      "camouflageNetBonus" : "0.1"
+   }
+}

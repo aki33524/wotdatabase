@@ -1,0 +1,723 @@
+{
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "hull" : {
+      "weight" : 7955,
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "maxHealth" : 680,
+      "turretPositions" : {
+         "turret" : "-0 0 -0"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 200,
+         "maxRegenHealth" : 135,
+         "repairCost" : "1.0"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.329636 0.442523 1.61137",
+            "size" : "0.24",
+            "hideIfDamaged" : false,
+            "rayEnd" : "0.329635 0.0718068 1.46114",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "models" : {
+         "undamaged" : "vehicles/french/F16_AMX_13_75/normal/lod0/Hull.model",
+         "exploded" : "vehicles/french/F16_AMX_13_75/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F16_AMX_13_75/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.28 34.00 0.42 1.00 0.05 0.30",
+         "pitchParams" : "0.28 34.00 0.42 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.59"
+      },
+      "hangarShadowTexture" : "vehicles/french/F16_AMX_13_75/AMX_13_75_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "1.84 1.84 0.000000 0.000000"
+      },
+      "armor" : {
+         "armor_1" : 15,
+         "armor_2" : 20,
+         "armor_7" : 30,
+         "armor_6" : 10,
+         "armor_11" : 40,
+         "armor_3" : 20,
+         "armor_5" : 10,
+         "armor_4" : 15,
+         "armor_8" : "",
+         "armor_10" : 50,
+         "armor_9" : 25
+      },
+      "primaryArmor" : "armor_10 armor_3 armor_4",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F16_AMX_13_75/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F16_AMX_13_75/collision_client/Hull.model"
+      }
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Detroit_Diesel_6V53T" : {
+               "smplEnginePower" : 400
+            },
+            "_6F11SRYT" : {
+               "smplEnginePower" : 300
+            }
+         },
+         "chassis" : {
+            "Chassis_AMX_13_75_3" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  }
+               }
+            },
+            "Chassis_AMX_13_75_2" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_AMX_13_75" : {
+         "circularVisionRadius" : 370,
+         "notInShop" : true,
+         "maxHealth" : 170,
+         "physicsShape" : "1.424 -0.304 0.971 0.000 0.686 0.524 0.120 0.090 0.472 0.533 0.107 0.500 0.337 0.000 0.045",
+         "guns" : {
+            "_75mm_SA49_L48" : "shared",
+            "_75mm_SA50" : "shared"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 65,
+            "maxHealth" : 130,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_6" : 10,
+            "armor_7" : 20,
+            "armor_2" : 20,
+            "armor_1" : 30,
+            "armor_9" : 40,
+            "armor_8" : "",
+            "armor_4" : 20,
+            "armor_5" : 10,
+            "armor_3" : 20
+         },
+         "price" : 10300,
+         "weight" : 2900,
+         "tags" : {},
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 45,
+            "maxHealth" : 90
+         },
+         "showEmblemsOnGun" : true,
+         "userString" : "#france_vehicles:Turret_1_AMX_13_75",
+         "emblemSlots" : {
+            "player" : {
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "size" : "0.187",
+               "rayEnd" : "-0.524193 -0.0702739 -0.355795",
+               "rayStart" : "-0.923958 -0.0696569 -0.369425"
+            },
+            "inscription" : {
+               "hideIfDamaged" : true,
+               "size" : "0.651",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "0.483405 -0.00395808 -1.15124",
+               "rayStart" : "0.85563 -0.00230804 -1.18758"
+            }
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F16_AMX_13_75/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F16_AMX_13_75/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F16_AMX_13_75/crash/lod0/Turret_01.model"
+         },
+         "level" : 7,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F16_AMX_13_75/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F16_AMX_13_75/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0 0 0",
+         "primaryArmor" : "armor_9 armor_3 armor_4",
+         "camouflage" : {
+            "tiling" : "1 0.445 0.000000 0.000000"
+         },
+         "rotationSpeed" : 46
+      }
+   },
+   "chassis" : {
+      "Chassis_AMX_13_75_2" : {
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-2.7",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "maxClimbAngle" : 25,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.11",
+                  "startIndex" : "",
+                  "maxOffset" : "0.1",
+                  "isLeft" : true,
+                  "count" : 5,
+                  "template" : "Track_L"
+               },
+               {
+                  "startIndex" : "",
+                  "minOffset" : "-0.11",
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "count" : 5,
+                  "maxOffset" : "0.1"
+               }
+            ]
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 2,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 5,
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 2,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "syncAngle" : "21.2",
+                  "isLeft" : false
+               },
+               {
+                  "syncAngle" : 21,
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R3",
+                  "radius" : "0.2918"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "21.2",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "radius" : "0.2918",
+                  "isLeft" : true,
+                  "syncAngle" : 21
+               }
+            ]
+         },
+         "level" : 6,
+         "bulkHealthFactor" : "3.0",
+         "userString" : "#france_vehicles:Chassis_AMX_13_75_2",
+         "terrainResistance" : "0.8 0.9 1.6",
+         "trackThickness" : "-0.012",
+         "price" : 7350,
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/french/F16_AMX_13_75/track/segment.model",
+            "right" : "vehicles/french/F16_AMX_13_75/track/right.track",
+            "segmentModelRight" : "vehicles/french/F16_AMX_13_75/track/segment.model",
+            "segmentOffset" : "0.108",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.116",
+            "left" : "vehicles/french/F16_AMX_13_75/track/left.track"
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.16",
+            "vehicleRotation" : "0.16"
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_AMX_13_75_3"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "trackNodes" : {
+            "node" : [
+               {
+                  "offset" : "-0.041",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.81"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.041",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "backwardElastK" : "0.81",
+                  "forwardElastK" : "1.7",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "offset" : "-0.041"
+               },
+               {
+                  "backwardElastK" : "0.81",
+                  "forwardElastK" : "1.51",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "offset" : "-0.041"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "offset" : "-0.041"
+               },
+               {
+                  "offset" : "-0.041",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               }
+            ],
+            "damping" : 2,
+            "maxOffset" : "0.1",
+            "linkBones" : false,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "elasticity" : 1113,
+            "maxAmplitude" : "0.1"
+         },
+         "hullPosition" : "0 1 0",
+         "maxHealth" : 130,
+         "wwsoundPC" : "treads_type_pc",
+         "brakeForce" : 35500,
+         "repairCost" : "5.0",
+         "models" : {
+            "undamaged" : "vehicles/french/F16_AMX_13_75/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F16_AMX_13_75/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F16_AMX_13_75/crash/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 40,
+         "topRightCarryingPoint" : "1.07287 1.43585",
+         "rotationIsAroundCenter" : false,
+         "traces" : {
+            "size" : "0.41 0.4",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank"
+         },
+         "maxRegenHealth" : 100,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F16_AMX_13_75/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F16_AMX_13_75/collision/Chassis.model"
+         },
+         "tags" : {},
+         "weight" : 1500,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "maxLoad" : 14650,
+         "wwsoundNPC" : "trds_chf_npc"
+      },
+      "Chassis_AMX_13_75_3" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "brakeForce" : 35500,
+         "wwsoundPC" : "treads_type_pc",
+         "maxHealth" : 140,
+         "hullPosition" : "0 1 0",
+         "trackNodes" : {
+            "maxAmplitude" : "0.1",
+            "elasticity" : 1113,
+            "enable" : true,
+            "linkBones" : false,
+            "gravity" : "-9.8",
+            "maxOffset" : "0.1",
+            "damping" : 2,
+            "node" : [
+               {
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.81",
+                  "offset" : "-0.041",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.041",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.041",
+                  "backwardElastK" : "0.81",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "1.7"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.51",
+                  "backwardElastK" : "0.81",
+                  "offset" : "-0.041",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.041",
+                  "isLeft" : true,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "offset" : "-0.041"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.41 0.4",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR"
+         },
+         "maxRegenHealth" : 105,
+         "rotationIsAroundCenter" : false,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F16_AMX_13_75/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F16_AMX_13_75/collision_client/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.07287 1.43585",
+         "rotationSpeed" : 42,
+         "models" : {
+            "destroyed" : "vehicles/french/F16_AMX_13_75/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F16_AMX_13_75/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F16_AMX_13_75/crash/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "repairCost" : "5.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxLoad" : 16350,
+         "tags" : {},
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "weight" : 1500,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : "21.2"
+               },
+               {
+                  "syncAngle" : 21,
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "isLeading" : true,
+                  "radius" : "0.2918"
+               },
+               {
+                  "syncAngle" : "21.2",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 21,
+                  "isLeft" : true,
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "radius" : "0.2918"
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 5,
+                  "template" : "W_R",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 2,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "maxClimbAngle" : 25,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.11",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 5,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.1"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "count" : 5,
+                  "maxOffset" : "0.1",
+                  "minOffset" : "-0.11",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.7",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "terrainResistance" : "0.7 0.8 1.4",
+         "userString" : "#france_vehicles:Chassis_AMX_13_75_3",
+         "level" : 7,
+         "bulkHealthFactor" : "3.0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.14",
+            "vehicleMovement" : "0.14"
+         },
+         "price" : 19540,
+         "splineDesc" : {
+            "left" : "vehicles/french/F16_AMX_13_75/track/left.track",
+            "segmentLength" : "0.116",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.108",
+            "segmentModelRight" : "vehicles/french/F16_AMX_13_75/track/segment.model",
+            "segmentModelLeft" : "vehicles/french/F16_AMX_13_75/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "right" : "vehicles/french/F16_AMX_13_75/track/right.track"
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "trackThickness" : "-0.012"
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "radios" : {
+      "SCR_508" : "shared",
+      "SCR_528" : "shared"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.4",
+      "exclusionMask" : "vehicles/french/F16_AMX_13_75/AMX_13_75_chassis_01_AM.dds"
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "8.1",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.988708203"
+   },
+   "engines" : {
+      "Detroit_Diesel_6V53T" : "shared",
+      "_6F11SRYT" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : 61,
+      "backward" : 23
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.86"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.465",
+      "moving" : "0.31",
+      "still" : "0.31"
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "radioman\n\n\t\t\tloader",
+      "gunner" : "loader"
+   }
+}

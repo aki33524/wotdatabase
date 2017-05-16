@@ -1,0 +1,973 @@
+{
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "chassis" : {
+      "Chassis_Cz03_LT_vz35_2" : {
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.605",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "models" : {
+            "destroyed" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/czech/Cz03_LT_vz35/normal/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 45,
+         "wwsoundPC" : "treads_type_pc",
+         "traces" : {
+            "size" : "0.34 0.34",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR"
+         },
+         "trackThickness" : "0.0025",
+         "trackNodes" : {
+            "gravity" : "-9.8",
+            "maxAmplitude" : "0.1",
+            "forwardElastK" : 1,
+            "backwardElastK" : 1,
+            "linkBones" : false,
+            "damping" : 2,
+            "offset" : "0",
+            "elasticity" : 1400,
+            "maxOffset" : "0.1",
+            "enable" : true,
+            "node" : [
+               {
+                  "offset" : "-0.055",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65"
+               },
+               {
+                  "forwardElastK" : "0.65",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.4",
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.65",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L4",
+                  "offset" : "-0.057"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "2.2",
+                  "name" : "Track_VT_L5"
+               },
+               {
+                  "backwardElastK" : "2.4",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L6"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.055",
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.4",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.046"
+               },
+               {
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.046"
+               },
+               {
+                  "offset" : "-0.057",
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : 2,
+                  "isLeft" : false,
+                  "forwardElastK" : "0.65"
+               },
+               {
+                  "backwardElastK" : "2.2",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.4",
+                  "name" : "Track_VT_R6"
+               }
+            ]
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "rotationSpeed" : 45,
+         "rotationIsAroundCenter" : false,
+         "level" : 2,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.34",
+            "vehicleMovement" : "0.34"
+         },
+         "weight" : 3200,
+         "drivingWheels" : "WD_L0 WD_L6",
+         "maxHealth" : 60,
+         "brakeForce" : 10500,
+         "maxLoad" : 13000,
+         "price" : 630,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/czech/Cz03_LT_vz35/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/czech/Cz03_LT_vz35/collision/Chassis.model"
+         },
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/czech/Cz03_LT_vz35/track/Pz35_track.model",
+            "segmentModelLeft" : "vehicles/czech/Cz03_LT_vz35/track/Pz35_track.model",
+            "segmentOffset" : "0.11",
+            "left" : "vehicles/czech/Cz03_LT_vz35/track/left.track",
+            "right" : "vehicles/czech/Cz03_LT_vz35/track/right.track",
+            "segmentLength" : "0.08"
+         },
+         "bulkHealthFactor" : "3.0",
+         "repairCost" : "1.0",
+         "hullPosition" : "0 1 0",
+         "topRightCarryingPoint" : "0.825398 1.56354",
+         "navmeshGirth" : "6.0",
+         "maxClimbAngle" : 25,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "terrainResistance" : "1 1.2 2",
+         "tags" : {},
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "maxOffset" : "0.03",
+                  "minOffset" : "-0.03",
+                  "count" : 8
+               },
+               {
+                  "maxOffset" : "0.03",
+                  "count" : 8,
+                  "minOffset" : "-0.03",
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "userString" : "#czech_vehicles:Chassis_Cz03_LT_vz35_2",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : "18.947"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R1",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "18.947",
+                  "isLeading" : true,
+                  "name" : "WD_R6",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "18.947",
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "18.947",
+                  "name" : "WD_L6",
+                  "isLeading" : true,
+                  "radius" : "0"
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "startIndex" : 2,
+                  "template" : "WD_R",
+                  "count" : 4,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 8,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 4,
+                  "template" : "WD_L",
+                  "startIndex" : 2,
+                  "isLeft" : true
+               },
+               {
+                  "count" : 8,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         }
+      },
+      "Chassis_Cz03_LT_vz35" : {
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.34 0.34"
+         },
+         "trackNodes" : {
+            "backwardElastK" : 1,
+            "linkBones" : false,
+            "forwardElastK" : 1,
+            "gravity" : "-9.8",
+            "maxAmplitude" : "0.1",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.2",
+                  "offset" : "-0.055",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "offset" : "-0.057",
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : true,
+                  "backwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VT_L5",
+                  "backwardElastK" : "2.2",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "2.4",
+                  "name" : "Track_VT_L6"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.65",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.055"
+               },
+               {
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.4",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.046"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.65",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.046"
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.65",
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.046"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.057"
+               },
+               {
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.2",
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "name" : "Track_VT_R6",
+                  "forwardElastK" : "0.65",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.4"
+               }
+            ],
+            "enable" : true,
+            "elasticity" : 1400,
+            "maxOffset" : "0.1",
+            "damping" : 2,
+            "offset" : "0"
+         },
+         "trackThickness" : "0.0025",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-2.605",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "models" : {
+            "undamaged" : "vehicles/czech/Cz03_LT_vz35/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 40,
+         "wwsoundPC" : "treads_type_pc",
+         "rotationIsAroundCenter" : false,
+         "level" : 1,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.36",
+            "vehicleRotation" : "0.36"
+         },
+         "drivingWheels" : "WD_L0 WD_L6",
+         "weight" : 3200,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "rotationSpeed" : 40,
+         "bulkHealthFactor" : "3.0",
+         "repairCost" : "1.0",
+         "hullPosition" : "0 1 0",
+         "topRightCarryingPoint" : "0.825398 1.56354",
+         "maxHealth" : 50,
+         "brakeForce" : 10500,
+         "unlocks" : {
+            "chassis" : "Chassis_Cz03_LT_vz35_2"
+         },
+         "maxLoad" : 11000,
+         "price" : 360,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/czech/Cz03_LT_vz35/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/czech/Cz03_LT_vz35/collision/Chassis.model"
+         },
+         "splineDesc" : {
+            "segmentLength" : "0.08",
+            "right" : "vehicles/czech/Cz03_LT_vz35/track/right.track",
+            "left" : "vehicles/czech/Cz03_LT_vz35/track/left.track",
+            "segmentModelLeft" : "vehicles/czech/Cz03_LT_vz35/track/Pz35_track.model",
+            "segmentOffset" : "0.11",
+            "segmentModelRight" : "vehicles/czech/Cz03_LT_vz35/track/Pz35_track.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM"
+         },
+         "tags" : {},
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "maxOffset" : "0.03",
+                  "count" : 8,
+                  "minOffset" : "-0.03"
+               },
+               {
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "maxOffset" : "0.03",
+                  "count" : 8,
+                  "minOffset" : "-0.03"
+               }
+            ]
+         },
+         "userString" : "#czech_vehicles:Chassis_Cz03_LT_vz35",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "18.947",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "WD_R1",
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : "18.947",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R6",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "18.947",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : "18.947",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L6"
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0",
+                  "count" : 4,
+                  "template" : "WD_R",
+                  "startIndex" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "count" : 8,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 4,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 2
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 8
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "terrainResistance" : "1.1 1.4 2.2"
+      }
+   },
+   "invisibility" : {
+      "still" : "0.266",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.199",
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.399"
+   },
+   "radios" : {
+      "Radiostanice_vz_35" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 34
+   },
+   "repairCost" : "3.3",
+   "hull" : {
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/czech/Cz03_LT_vz35/collision/Hull.model",
+         "collisionModelClient" : "vehicles/czech/Cz03_LT_vz35/collision_client/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/czech/Cz03_LT_vz35/LT_vz35_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.74",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 80,
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "maxHealth" : 120,
+      "models" : {
+         "destroyed" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Hull.model",
+         "exploded" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/czech/Cz03_LT_vz35/normal/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_8" : "",
+         "armor_3" : 16,
+         "armor_6" : 8,
+         "armor_5" : 12,
+         "armor_2" : 10,
+         "armor_4" : 16,
+         "armor_1" : 25
+      },
+      "weight" : 4935,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "camouflage" : {
+         "tiling" : "0.82 0.82 0.64 0.72"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.22",
+            "rayEnd" : "-0.267451 -0.0683061 1.97064",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.267451 0.128855 2.00421"
+         }
+      }
+   },
+   "camouflage" : {
+      "tiling" : "5.9 5.9 0.5 0.13",
+      "priceFactor" : "0.4",
+      "exclusionMask" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.813602698"
+   },
+   "crew" : {
+      "driver" : {},
+      "radioman" : {},
+      "commander" : "gunner\n\n\t\t\tloader"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "czech_round"
+   },
+   "engines" : {
+      "Skoda_T_11_2" : "shared",
+      "Skoda_T_11_0" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Cz03_LT_vz35" : {
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         },
+         "showEmblemsOnGun" : false,
+         "rotationSpeed" : 26,
+         "userString" : "#czech_vehicles:Turret_1_Cz03_LT_vz35",
+         "level" : 1,
+         "circularVisionRadius" : 290,
+         "tags" : {},
+         "armor" : {
+            "armor_1" : 25,
+            "armor_5" : 8,
+            "armor_8" : "",
+            "armor_3" : 16,
+            "armor_6" : 8,
+            "armor_4" : 16,
+            "armor_2" : 20,
+            "armor_7" : 10,
+            "armor_9" : 20
+         },
+         "weight" : 1000,
+         "unlocks" : {
+            "turret" : "Turret_2_Cz03_LT_vz35"
+         },
+         "maxHealth" : 30,
+         "models" : {
+            "destroyed" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/czech/Cz03_LT_vz35/normal/lod0/Turret_01.model"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/czech/Cz03_LT_vz35/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/czech/Cz03_LT_vz35/collision_client/Turret_01.model"
+         },
+         "price" : 300,
+         "gunPosition" : "0.008352 0.2899 0.520474",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "guns" : {
+            "_37mm_Skoda_A3" : "shared",
+            "_37mm_Skoda_A8" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.4 0.4 0.24 0.83"
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayStart" : "-1 0 -0",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.370571 0.26623 -0.42523",
+                  "size" : "0.5",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1 0 -0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.5",
+                  "rayEnd" : "0.370571 0.26623 -0.42523",
+                  "isMirrored" : true
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "-0.682013 0.326051 -0.0397057",
+                  "hideIfDamaged" : false,
+                  "size" : "0.22",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0 0 -0"
+               },
+               {
+                  "rayStart" : "0.68159 0.327074 -0.0339757",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayEnd" : "0.487829 0.278037 -0.0268155",
+                  "size" : "0.22",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "maxRegenHealth" : 20,
+            "repairCost" : "1.0"
+         },
+         "physicsShape" : "0.939 -0.063 0.911 0.017 0.801 0.110 0.412 1.000 0.524 0.395 0.285 0.496 0.254 0.605 0.075",
+         "wwturretRotatorSoundManual" : "tur_mech_trav"
+      },
+      "Turret_2_Cz03_LT_vz35" : {
+         "rotationSpeed" : 30,
+         "showEmblemsOnGun" : false,
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0"
+         },
+         "weight" : 1000,
+         "armor" : {
+            "armor_8" : "",
+            "armor_3" : 16,
+            "armor_5" : 8,
+            "armor_1" : 25,
+            "armor_9" : 20,
+            "armor_6" : 8,
+            "armor_4" : 16,
+            "armor_2" : 20,
+            "armor_7" : 10
+         },
+         "tags" : {},
+         "circularVisionRadius" : 320,
+         "level" : 2,
+         "userString" : "#czech_vehicles:Turret_2_Cz03_LT_vz35",
+         "price" : 680,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/czech/Cz03_LT_vz35/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/czech/Cz03_LT_vz35/collision_client/Turret_02.model"
+         },
+         "models" : {
+            "destroyed" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/czech/Cz03_LT_vz35/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/czech/Cz03_LT_vz35/normal/lod0/Turret_02.model"
+         },
+         "maxHealth" : 60,
+         "unlocks" : {
+            "vehicle" : "Cz10_LT_vz38"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "physicsShape" : "0.939 -0.063 0.911 0.017 0.801 0.110 0.412 1.000 0.524 0.395 0.285 0.496 0.254 0.605 0.075",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-0.682013 0.326051 -0.0397057",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.22",
+                  "rayEnd" : "-0 0 -0"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayEnd" : "0 0 -0",
+                  "size" : "0.22",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "0.682013 0.326051 -0.0397057",
+                  "hideIfDamaged" : false
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayStart" : "-1 0 -0",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.370571 0.26623 -0.42523",
+                  "size" : "0.5",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1 0 -0",
+                  "rayEnd" : "0.370571 0.26623 -0.42523",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.5"
+               }
+            ]
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "1.0",
+            "maxHealth" : 40
+         },
+         "guns" : {
+            "_37mm_Skoda_A8" : "shared",
+            "_37mm_Skoda_A3" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.415 0.415 0.33 0.08"
+         },
+         "gunPosition" : "0.008352 0.2899 0.520474",
+         "primaryArmor" : "armor_1 armor_3 armor_4"
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Cz03_LT_vz35" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_Cz03_LT_vz35_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Skoda_T_11_0" : {
+               "smplEnginePower" : "126.8737"
+            },
+            "Skoda_T_11_2" : {
+               "smplEnginePower" : "142.733"
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0"
+}

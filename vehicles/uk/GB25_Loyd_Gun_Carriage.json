@@ -1,0 +1,755 @@
+{
+   "invisibility" : {
+      "still" : "0.327",
+      "firePenalty" : "0.491",
+      "moving" : "0.164",
+      "camouflageNetBonus" : "0.05",
+      "camouflageBonus" : "0.02"
+   },
+   "engines" : {
+      "Ford_V8-220" : "shared",
+      "Ford_V8-221" : "shared"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.4",
+      "exclusionMask" : {}
+   },
+   "radios" : {
+      "N11" : "shared",
+      "N9" : "shared"
+   },
+   "crew" : {
+      "commander" : "gunner\n\n\t\t\tradioman",
+      "driver" : {},
+      "loader" : {}
+   },
+   "chassis" : {
+      "Chassis_GB25_Loyd_Carrier" : {
+         "terrainResistance" : "1.3 1.5 2.5",
+         "weight" : 2000,
+         "repairCost" : "1.0",
+         "rotationSpeed" : 22,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "brakeForce" : 4000,
+         "userString" : "#gb_vehicles:Chassis_GB25_Loyd_Carrier",
+         "wwsoundPC" : "treads_type_pc",
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "size" : "0.2 0.26",
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01"
+         },
+         "maxLoad" : 4500,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "count" : 4,
+                  "maxOffset" : "0.06"
+               },
+               {
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "count" : 4,
+                  "maxOffset" : "0.06"
+               }
+            ]
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_GB25_Loyd_Carrier_2"
+         },
+         "maxHealth" : 40,
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "bulkHealthFactor" : "3.0",
+         "armor" : {
+            "leftTrack" : 5,
+            "rightTrack" : 5
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "trackThickness" : "-0.0063",
+         "topRightCarryingPoint" : "0.760991 1.1327",
+         "trackNodes" : {
+            "maxAmplitude" : "0.05",
+            "linkBones" : false,
+            "enable" : true,
+            "offset" : "0",
+            "damping" : 2,
+            "maxOffset" : "0.05",
+            "elasticity" : 1150,
+            "gravity" : "-9.8",
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "offset" : "-0.063"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "offset" : "-0.063"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.063"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "offset" : "-0.063",
+                  "isLeft" : false,
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "offset" : "-0.063",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "offset" : "-0.063",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               }
+            ],
+            "backwardElastK" : 1,
+            "forwardElastK" : 1
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision_client/Chassis.model"
+         },
+         "hullPosition" : "0 1 0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "count" : 2,
+                  "template" : "WD_R",
+                  "radius" : "0.0952314",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0.23",
+                  "startIndex" : "",
+                  "count" : 4
+               },
+               {
+                  "radius" : "0.0952314",
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "count" : 2,
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 4,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.23",
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0.27818",
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "syncAngle" : 10
+               },
+               {
+                  "syncAngle" : 10,
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "radius" : "0.27818",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 10,
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0.27818",
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "syncAngle" : 10,
+                  "isLeft" : true
+               }
+            ]
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.52",
+            "vehicleMovement" : "0.52"
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "maxRegenHealth" : 30,
+         "models" : {
+            "destroyed" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB25_Loyd_Gun_Carriage/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-8.1",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "level" : 1,
+         "price" : 270,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/segment.model",
+            "right" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/right.track",
+            "segmentOffset" : "0.113",
+            "left" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/segment.model",
+            "segmentLength" : "0.042",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            }
+         }
+      },
+      "Chassis_GB25_Loyd_Carrier_2" : {
+         "terrainResistance" : "1.2 1.4 2.3",
+         "weight" : 2000,
+         "repairCost" : "1.0",
+         "rotationSpeed" : 24,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "brakeForce" : 4500,
+         "userString" : "#gb_vehicles:Chassis_GB25_Loyd_Carrier_2",
+         "wwsoundPC" : "treads_type_pc",
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "size" : "0.2 0.26",
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR"
+         },
+         "maxLoad" : 6500,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "count" : 4
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 4,
+                  "maxOffset" : "0.06",
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "maxHealth" : 50,
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "bulkHealthFactor" : "3.0",
+         "armor" : {
+            "rightTrack" : 5,
+            "leftTrack" : 5
+         },
+         "trackThickness" : "-0.0063",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "0.760991 1.1327",
+         "trackNodes" : {
+            "maxAmplitude" : "0.05",
+            "linkBones" : false,
+            "enable" : true,
+            "damping" : 2,
+            "offset" : "0",
+            "maxOffset" : "0.05",
+            "elasticity" : 1150,
+            "gravity" : "-9.8",
+            "forwardElastK" : 1,
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "offset" : "-0.063",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "offset" : "-0.063",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "offset" : "-0.063",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "offset" : "-0.063",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.063"
+               },
+               {
+                  "offset" : "-0.063",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8"
+               }
+            ],
+            "backwardElastK" : 1
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision/Chassis.model"
+         },
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0.27818",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "syncAngle" : 10,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R3",
+                  "radius" : "0.27818",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 10
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0.27818",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : 10
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : 10,
+                  "name" : "WD_L3",
+                  "radius" : "0",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0.0952314",
+                  "template" : "WD_R"
+               },
+               {
+                  "radius" : "0.23",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 4
+               },
+               {
+                  "startIndex" : 1,
+                  "count" : 2,
+                  "radius" : "0.0952314",
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "radius" : "0.23",
+                  "count" : 4,
+                  "startIndex" : ""
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "hullPosition" : "0 1 0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.48",
+            "vehicleMovement" : "0.48"
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "maxRegenHealth" : 40,
+         "models" : {
+            "destroyed" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB25_Loyd_Gun_Carriage/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "textureScale" : "-8.1",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "level" : 2,
+         "price" : 550,
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/left.track",
+            "segmentOffset" : "0.113",
+            "right" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/right.track",
+            "segmentModelRight" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/segment.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.042",
+            "segmentModelLeft" : "vehicles/british/GB25_Loyd_Gun_Carriage/track/segment.model"
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_GB25_Loyd_Carrier" : {
+         "gunPosition" : "-0 1 -0",
+         "armor" : {
+            "armor_4" : "3.2",
+            "armor_2" : 7,
+            "armor_3" : "3.2",
+            "armor_5" : "",
+            "armor_1" : 7
+         },
+         "physicsShape" : "1.214 0.038 1.000 0.000 1.095 0.038 0.500 0.100 0.000 0.500 0.000 0.500 0.600 0.195 1.000",
+         "weight" : 100,
+         "userString" : "#gb_vehicles:Turret_1_GB25_Loyd_Carrier",
+         "rotationSpeed" : 10,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision_client/Turret_01.model"
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "maxHealth" : 40,
+            "repairCost" : "1.0"
+         },
+         "camouflage" : {
+            "tiling" : "0.25 0.25 0.000000 0.000000"
+         },
+         "level" : 1,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "circularVisionRadius" : 260,
+         "guns" : {
+            "_13pdr_Gun" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_01",
+         "emblemSlots" : {},
+         "models" : {
+            "undamaged" : "vehicles/british/GB25_Loyd_Gun_Carriage/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Turret_01.model"
+         },
+         "maxHealth" : 16,
+         "tags" : "AAAAAAAAAAAA",
+         "showEmblemsOnGun" : false,
+         "ceilless" : true,
+         "price" : 100,
+         "notInShop" : true
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "forward" : 48,
+      "backward" : 12
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB25_Loyd_Carrier" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB25_Loyd_Carrier_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Ford_V8-220" : {
+               "smplEnginePower" : "68.72327"
+            },
+            "Ford_V8-221" : {
+               "smplEnginePower" : "89.8689"
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.42853594"
+   },
+   "repairCost" : "5.00",
+   "hull" : {
+      "emblemSlots" : {
+         "player" : [
+            {
+               "size" : "0.24",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.02271 0.17622 -1.09675",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-0.822709 0.17613 -1.09674"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.24",
+               "isMirrored" : true,
+               "rayEnd" : "0.822709 0.17613 -1.09674",
+               "rayStart" : "1.02271 0.17622 -1.09675",
+               "hideIfDamaged" : false
+            }
+         ],
+         "clan" : {
+            "size" : "0.22",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "0.287186 -0.215931 1.58475",
+            "hideIfDamaged" : true,
+            "rayEnd" : "0.287186 -0.215931 1.48475"
+         },
+         "inscription" : [
+            {
+               "size" : "0.86",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.02273 0.178776 0.699843",
+               "hideIfDamaged" : true,
+               "rayEnd" : "-1 0 1"
+            },
+            {
+               "rayEnd" : "1 0 1",
+               "hideIfDamaged" : true,
+               "rayStart" : "1.02273 0.178776 0.699843",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.86"
+            }
+         ]
+      },
+      "models" : {
+         "destroyed" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB25_Loyd_Gun_Carriage/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB25_Loyd_Gun_Carriage/crash/lod0/Hull.model"
+      },
+      "weight" : 1617,
+      "armor" : {
+         "armor_8" : "",
+         "armor_3" : 7,
+         "armor_2" : 7,
+         "armor_6" : "3.2"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 60,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 30
+      },
+      "turretPositions" : {
+         "turret" : "-0.2934 -0.270724 0.90016"
+      },
+      "camouflage" : {
+         "tiling" : "1.72 1.72 0.000000 0.000000"
+      },
+      "swinging" : {
+         "pitchParams" : "0.30 36.00 0.38 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.30 36.00 0.38 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.83",
+         "lodDist" : "FAR"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB25_Loyd_Gun_Carriage/collision_client/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB25_Loyd_Gun_Carriage/Loyd_Gun_Carriage_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_8",
+      "maxHealth" : 64,
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   }
+}

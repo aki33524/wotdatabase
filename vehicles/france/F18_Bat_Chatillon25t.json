@@ -1,0 +1,362 @@
+{
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "2.0",
+      "exclusionMask" : "vehicles/french/F18_Bat_Chatillon25t/Bat_Chatillon25t_CM.dds"
+   },
+   "crew" : {
+      "commander" : "radioman\n\n\t\t\tloader",
+      "gunner" : "loader",
+      "driver" : {}
+   },
+   "turrets0" : {
+      "Turret_1_Bat_Chatillon25t" : {
+         "physicsShape" : "1.215 -0.045 0.893 0.000 1.226 0.056 0.249 0.000 0.500 0.500 0.000 0.500 0.367 0.000 0.014",
+         "userString" : "#france_vehicles:Turret_1_Bat_Chatillon25t",
+         "rotationSpeed" : 38,
+         "shortUserString" : "#france_vehicles:Turret_1_Bat_Chatillon25t_short",
+         "level" : 10,
+         "maxHealth" : 360,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F18_Bat_Chatillon25t/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F18_Bat_Chatillon25t/collision/Turret_01.model"
+         },
+         "showEmblemsOnGun" : true,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 150,
+            "maxRegenHealth" : 75
+         },
+         "gunPosition" : "0.000000 0.461964 0.02317",
+         "models" : {
+            "exploded" : "vehicles/french/F18_Bat_Chatillon25t/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F18_Bat_Chatillon25t/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F18_Bat_Chatillon25t/crash/lod0/Turret_01.model"
+         },
+         "armor" : {
+            "armor_2" : 50,
+            "armor_6" : 50,
+            "armor_7" : 30,
+            "armor_5" : "",
+            "armor_1" : 70,
+            "armor_4" : "",
+            "armor_3" : "",
+            "armor_8" : 15
+         },
+         "notInShop" : true,
+         "price" : 37000,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 400,
+         "primaryArmor" : "armor_6 armor_7 armor_8",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 55,
+            "maxHealth" : 110,
+            "repairCost" : "1.0"
+         },
+         "guns" : {
+            "_100mm_SA_47" : "shared",
+            "_90mm_F3" : "shared",
+            "_105mm_CN_105_57" : "shared"
+         },
+         "emblemSlots" : {
+            "inscription" : {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-0.668705 0.0365738 -0.760173",
+               "rayStart" : "-1.06871 0.0365738 -0.760173",
+               "hideIfDamaged" : false,
+               "size" : "0.7"
+            },
+            "player" : [
+               {
+                  "size" : "0.24",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1.06871 0.0208187 -1.22352",
+                  "isMirrored" : true,
+                  "rayEnd" : "0.668705 0.0208187 -1.22352",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0.668705 0.0219177 -1.2482",
+                  "rayStart" : "-1.06871 0.0219177 -1.2482",
+                  "size" : "0.24",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "tags" : {},
+         "weight" : 5700
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "repairCost" : "13.072",
+   "engines" : {
+      "Hispano-Suiza_HS110" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.86",
+      "default" : "french_rose",
+      "lodDist" : "MEDIUM"
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "radios" : {
+      "SCR_528" : "shared"
+   },
+   "invisibility" : {
+      "firePenalty" : "0.444",
+      "moving" : "0.222",
+      "camouflageNetBonus" : "0.1",
+      "still" : "0.296",
+      "camouflageBonus" : "0.03"
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "inscription" : {
+            "hideIfDamaged" : true,
+            "size" : "0.75",
+            "rayStart" : "0.479185 0.626629 1.91683",
+            "rayEnd" : "0.479185 0.263974 1.74807",
+            "rayUp" : "0.704593 -0.14179 -0.695302"
+         },
+         "clan" : {
+            "rayStart" : "-0.639287 0.724051 1.70748",
+            "size" : "0.24",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.639287 0.361395 1.53872"
+         }
+      },
+      "weight" : 10674,
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F18_Bat_Chatillon25t/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F18_Bat_Chatillon25t/collision_client/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/french/F18_Bat_Chatillon25t/Bat_Chatillon25t_HangarShadowMap.dds",
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 1440,
+      "models" : {
+         "destroyed" : "vehicles/french/F18_Bat_Chatillon25t/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F18_Bat_Chatillon25t/normal/lod0/Hull.model",
+         "exploded" : "vehicles/french/F18_Bat_Chatillon25t/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 -0"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 260,
+         "maxRegenHealth" : 180
+      },
+      "armor" : {
+         "armor_2" : 50,
+         "armor_12" : 10,
+         "armor_5" : 50,
+         "armor_10" : 20,
+         "armor_7" : 15,
+         "armor_6" : 40,
+         "armor_1" : 60,
+         "armor_4" : 30,
+         "armor_13" : "",
+         "armor_8" : 15,
+         "armor_11" : 15,
+         "armor_3" : 40,
+         "armor_9" : 25,
+         "armor_14" : 25
+      },
+      "swinging" : {
+         "pitchParams" : "0.26 36.00 0.42 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.26 36.00 0.42 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.5",
+         "lodDist" : "FAR"
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.321930894"
+   },
+   "chassis" : {
+      "Chassis_Bat_Chatillon25t_2" : {
+         "level" : 10,
+         "brakeForce" : 35500,
+         "maxHealth" : 250,
+         "maxRegenHealth" : 190,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-0.765",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "hullPosition" : "0 1 0",
+         "repairCost" : "5.0",
+         "userString" : "#france_vehicles:Chassis_Bat_Chatillon25t_2",
+         "rotationSpeed" : 42,
+         "maxLoad" : 28000,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "0.9 1 1.6",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F18_Bat_Chatillon25t/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F18_Bat_Chatillon25t/collision_client/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true,
+         "maxClimbAngle" : 25,
+         "price" : 68200,
+         "models" : {
+            "exploded" : "vehicles/french/F18_Bat_Chatillon25t/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F18_Bat_Chatillon25t/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F18_Bat_Chatillon25t/crash/lod0/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "traces" : {
+            "textureSet" : "ussr_02",
+            "lodDist" : "FAR",
+            "size" : "0.48 0.7",
+            "bufferPrefs" : "mediumTank"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.17",
+            "vehicleRotation" : "0.17"
+         },
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "topRightCarryingPoint" : "1.26626 1.72671",
+         "weight" : 4100,
+         "wwsoundPC" : "treads_type_pc",
+         "tags" : {},
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "WD_R"
+               },
+               {
+                  "count" : 6,
+                  "template" : "W_R",
+                  "radius" : "0.2755",
+                  "startIndex" : "",
+                  "isLeft" : false
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "count" : 3
+               },
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.2755",
+                  "template" : "W_L"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : false
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4"
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "isLeading" : true
+               }
+            ]
+         }
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Bat_Chatillon25t_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Hispano-Suiza_HS110" : {
+               "smplEnginePower" : "761.2424"
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : 65,
+      "backward" : 23
+   }
+}

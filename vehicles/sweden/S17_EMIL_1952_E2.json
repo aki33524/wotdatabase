@@ -1,0 +1,890 @@
+{
+   "chassis" : {
+      "Chassis_S17_EMIL_1952_E2" : {
+         "wwsoundPC" : "treads_type_pc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/sweden/S17_EMIL_1952_E2/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/sweden/S17_EMIL_1952_E2/collision_client/Chassis.model"
+         },
+         "maxHealth" : 240,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "1.4 1.5 2.5",
+         "maxRegenHealth" : 180,
+         "unlocks" : {
+            "chassis" : "Chassis_S17_EMIL_1952_E2_2"
+         },
+         "userString" : "#sweden_vehicles:Chassis_S17_EMIL_1952_E2",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "repairCost" : "5.0",
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "largeTank",
+            "size" : "0.46 0.67"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 7500,
+         "hullPosition" : "0.000000 1.01468 0.000000",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "trackNodes" : {
+            "linkBones" : false,
+            "enable" : true,
+            "gravity" : "-9.8",
+            "elasticity" : 1100,
+            "maxAmplitude" : "0.1",
+            "damping" : 2,
+            "maxOffset" : "0.1",
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.4",
+                  "offset" : "-0.034",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.8",
+                  "offset" : "-0.034",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L4",
+                  "offset" : "-0.034",
+                  "backwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.4",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.034"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.8",
+                  "offset" : "-0.034",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.034",
+                  "backwardElastK" : 2
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "1.1976 1.95218",
+         "armor" : {
+            "leftTrack" : 30,
+            "rightTrack" : 30
+         },
+         "brakeForce" : 37000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.05",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "minOffset" : "-0.05",
+                  "template" : "Track_L"
+               },
+               {
+                  "maxOffset" : "0.05",
+                  "count" : 6,
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "minOffset" : "-0.05",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "trackThickness" : "-0.0177",
+         "rotationIsAroundCenter" : false,
+         "bulkHealthFactor" : "3.0",
+         "maxClimbAngle" : 25,
+         "tags" : {},
+         "splineDesc" : {
+            "right" : "vehicles/sweden/S17_EMIL_1952_E2/track/right.track",
+            "segmentModelLeft" : "vehicles/sweden/S17_EMIL_1952_E2/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.287",
+            "segmentModelRight" : "vehicles/sweden/S17_EMIL_1952_E2/track/segment.model",
+            "left" : "vehicles/sweden/S17_EMIL_1952_E2/track/left.track",
+            "segmentLength" : "0.119"
+         },
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 27,
+         "level" : 8,
+         "drivingWheels" : "WD_L0 WD_L6",
+         "maxLoad" : 38000,
+         "price" : 28000,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : "18.9474",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : false,
+                  "name" : "WD_L1",
+                  "isLeft" : true,
+                  "radius" : "0.0888506"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.0888506",
+                  "name" : "WD_L4",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_L5"
+               },
+               {
+                  "syncAngle" : "18.9474",
+                  "name" : "WD_L6",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : "18.9474",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R1",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.0888506"
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.0888506"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "WD_R5"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R6",
+                  "syncAngle" : "18.9474"
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 2,
+                  "isLeft" : true,
+                  "startIndex" : 2,
+                  "radius" : "0",
+                  "template" : "WD_L"
+               },
+               {
+                  "count" : 6,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 2,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "startIndex" : 2
+               },
+               {
+                  "count" : 6,
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "template" : "W_R"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "models" : {
+            "destroyed" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/sweden/S17_EMIL_1952_E2/normal/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.15"
+         }
+      },
+      "Chassis_S17_EMIL_1952_E2_2" : {
+         "rotationIsAroundCenter" : false,
+         "bulkHealthFactor" : "3.0",
+         "maxClimbAngle" : 25,
+         "tags" : {},
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 6,
+                  "maxOffset" : "0.05",
+                  "minOffset" : "-0.05",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "Track_R",
+                  "minOffset" : "-0.05",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "count" : 6,
+                  "maxOffset" : "0.05"
+               }
+            ]
+         },
+         "trackThickness" : "-0.0177",
+         "brakeForce" : 37000,
+         "armor" : {
+            "rightTrack" : 30,
+            "leftTrack" : 30
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.15"
+         },
+         "price" : 64200,
+         "models" : {
+            "destroyed" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/sweden/S17_EMIL_1952_E2/normal/lod0/Chassis.model"
+         },
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "18.9474",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeading" : false,
+                  "name" : "WD_L1",
+                  "radius" : "0.0888506",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.0888506",
+                  "isLeading" : false,
+                  "name" : "WD_L4"
+               },
+               {
+                  "name" : "WD_L5",
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L6",
+                  "syncAngle" : "18.9474",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "syncAngle" : "18.9474"
+               },
+               {
+                  "radius" : "0.0888506",
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "WD_R1"
+               },
+               {
+                  "radius" : "0.0888506",
+                  "isLeft" : false,
+                  "name" : "WD_R4",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_R5"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R6",
+                  "syncAngle" : "18.9474"
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 2,
+                  "startIndex" : 2,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "WD_L"
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 6
+               },
+               {
+                  "count" : 2,
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "startIndex" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "count" : 6
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "level" : 9,
+         "drivingWheels" : "WD_L0 WD_L6",
+         "maxLoad" : 40000,
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/sweden/S17_EMIL_1952_E2/track/segment.model",
+            "right" : "vehicles/sweden/S17_EMIL_1952_E2/track/right.track",
+            "left" : "vehicles/sweden/S17_EMIL_1952_E2/track/left.track",
+            "segmentOffset" : "0.287",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/sweden/S17_EMIL_1952_E2/track/segment.model",
+            "segmentLength" : "0.119"
+         },
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 30,
+         "maxRegenHealth" : 190,
+         "userString" : "#sweden_vehicles:Chassis_S17_EMIL_1952_E2_2",
+         "repairCost" : "5.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "traces" : {
+            "size" : "0.46 0.67",
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "1.3 1.4 2.3",
+         "maxHealth" : 250,
+         "wwsoundPC" : "treads_type_pc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/sweden/S17_EMIL_1952_E2/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/sweden/S17_EMIL_1952_E2/collision_client/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.1976 1.95218",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.25",
+            "vehicleRotation" : "0.25"
+         },
+         "trackNodes" : {
+            "maxAmplitude" : "0.1",
+            "elasticity" : 1100,
+            "node" : [
+               {
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.2",
+                  "offset" : "-0.034",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.4",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.8",
+                  "offset" : "-0.034"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "offset" : "-0.034",
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.034",
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.034",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "maxOffset" : "0.1",
+            "damping" : 2,
+            "linkBones" : false,
+            "gravity" : "-9.8",
+            "enable" : true
+         },
+         "hullPosition" : "0.000000 1.01468 0.000000",
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 7500
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "AVS_1195" : {
+               "smplEnginePower" : 520
+            },
+            "AV_1195" : {
+               "smplEnginePower" : 400
+            }
+         },
+         "chassis" : {
+            "Chassis_S17_EMIL_1952_E2_2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            },
+            "Chassis_S17_EMIL_1952_E2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "commander" : "radioman\n\n\t\t\tloader",
+      "driver" : {},
+      "gunner" : "loader"
+   },
+   "engines" : {
+      "AVS_1195" : "shared",
+      "AV_1195" : "shared"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : 56,
+      "backward" : 18
+   },
+   "emblems" : {
+      "default" : "swedish_flag",
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.02",
+      "still" : "0.105",
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.158",
+      "moving" : "0.052"
+   },
+   "clientAdjustmentFactors" : {
+      "chassis" : {
+         "Chassis_S17_EMIL_1952_E2" : {
+            "alpha" : "0"
+         },
+         "Chassis_S17_EMIL_1952_E2_2" : {
+            "alpha" : "0"
+         }
+      },
+      "engines" : {
+         "AVS_1195" : {
+            "bravo" : "175.773"
+         },
+         "AV_1195" : {
+            "bravo" : "142.733"
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_S17_EMIL_1952_E2" : {
+         "tags" : {},
+         "userString" : "#sweden_vehicles:Turret_1_S17_EMIL_1952_E2",
+         "camouflage" : {
+            "tiling" : "0.7 1.4 0.000000 0.000000"
+         },
+         "gunPosition" : "-0 0 -0",
+         "physicsShape" : "1.796 -0.818 1.000 0.000 0.952 -0.023 0.500 0.500 0.500 0.500 0.115 0.500 0.350 0.000 0.000",
+         "maxHealth" : 340,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/sweden/S17_EMIL_1952_E2/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/sweden/S17_EMIL_1952_E2/collision/Turret_01.model"
+         },
+         "showEmblemsOnGun" : true,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayStart" : "-0.962093 0.333869 -1.8881",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.814",
+                  "rayEnd" : "-0.764515 0.302833 -1.88808"
+               },
+               {
+                  "hideIfDamaged" : true,
+                  "rayStart" : "0.963755 0.28332 -1.55034",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.585",
+                  "rayEnd" : "0.76618 0.252285 -1.55036"
+               }
+            ]
+         },
+         "armor" : {
+            "armor_7" : 70,
+            "armor_3" : 60,
+            "armor_6" : 30,
+            "armor_1" : 215,
+            "armor_8" : "",
+            "armor_9" : 120,
+            "armor_2" : 360,
+            "armor_4" : 30,
+            "armor_5" : 20
+         },
+         "price" : 55000,
+         "models" : {
+            "exploded" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/sweden/S17_EMIL_1952_E2/normal/lod0/Turret_01.model"
+         },
+         "guns" : {
+            "_105mm_TK_105_9" : "shared",
+            "_120mm_akan_L_40" : "shared"
+         },
+         "circularVisionRadius" : 380,
+         "level" : 9,
+         "weight" : 14000,
+         "notInShop" : true,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 55,
+            "repairCost" : "1.0",
+            "maxHealth" : 110
+         },
+         "rotationSpeed" : 20,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 75,
+            "repairCost" : "1.0",
+            "maxHealth" : 150
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "armor" : {
+         "armor_8" : "",
+         "armor_7" : 70,
+         "armor_3" : 60,
+         "armor_15" : 50,
+         "armor_5" : 18,
+         "armor_1" : 80,
+         "armor_14" : 50,
+         "armor_11" : 70,
+         "armor_10" : 40,
+         "armor_13" : 150,
+         "armor_6" : 15,
+         "armor_2" : 115,
+         "armor_16" : 115,
+         "armor_4" : 30,
+         "armor_12" : 330,
+         "armor_9" : 30
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2 HP_Track_Exhaus_3 HP_Track_Exhaus_4",
+         "pixie" : "gas_large"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.0636538 0.0206541 -0.997758",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.640507 0.26176 2.28011",
+            "rayEnd" : "-0.579495 0.0798563 2.22363",
+            "size" : "0.3"
+         },
+         "player" : [
+            {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.31532 0.369024 0.822451",
+               "size" : "0.25",
+               "rayEnd" : "-1.17114 0.230415 0.822141"
+            },
+            {
+               "rayEnd" : "1.17114 0.230415 0.822141",
+               "size" : "0.25",
+               "hideIfDamaged" : false,
+               "rayStart" : "1.31532 0.369024 0.822451",
+               "rayUp" : "0.000000 1 0.000000",
+               "isMirrored" : true
+            }
+         ]
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/sweden/S17_EMIL_1952_E2/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/sweden/S17_EMIL_1952_E2/collision/Hull.model"
+      },
+      "weight" : 12573,
+      "turretPositions" : {
+         "turret" : "0.000000 0.41989 0.624192"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 1360,
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 260,
+         "maxRegenHealth" : 180
+      },
+      "camouflage" : {
+         "tiling" : "2.6 2.6 0.000000 0.000000"
+      },
+      "models" : {
+         "exploded" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/sweden/S17_EMIL_1952_E2/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/sweden/S17_EMIL_1952_E2/crash/lod0/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/sweden/S17_EMIL_1952_E2/EMIL_1952_E2_HangarShadowMap.dds",
+      "swinging" : {
+         "sensitivityToImpulse" : "0.12",
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26",
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26",
+         "lodDist" : "FAR"
+      }
+   },
+   "repairCost" : "9.0",
+   "radios" : {
+      "Ra_400" : "shared",
+      "Ra_421" : "shared"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.8",
+      "exclusionMask" : "system/maps/null_exclusion_mask.dds"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   }
+}

@@ -1,0 +1,536 @@
+{
+   "turrets0" : {
+      "Ferdinandturm_IGR" : {
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G37_Ferdinand/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G37_Ferdinand/collision_client/Turret_01.model"
+         },
+         "price" : 100,
+         "models" : {
+            "undamaged" : "vehicles/german/G37_Ferdinand/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G37_Ferdinand/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G37_Ferdinand/crash/lod0/Turret_01.model"
+         },
+         "guns" : {
+            "_128mm_PaK44_L55_IGR" : "shared"
+         },
+         "notInShop" : true,
+         "userString" : "#igr_vehicles:Ferdinandturm_IGR",
+         "weight" : 50,
+         "gunPosition" : "-0.000000 0.00194 0.010203",
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "level" : 8,
+         "circularVisionRadius" : 370,
+         "rotationSpeed" : 26,
+         "wwturretRotatorSoundManual" : "tur_man_trav_07",
+         "tags" : "AAAAAAAAAAAA",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "maxHealth" : 300,
+         "armor" : {
+            "armor_1" : ""
+         },
+         "showEmblemsOnGun" : false,
+         "emblemSlots" : {}
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "radios" : {
+      "FuG12_IGR" : "shared"
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G37_Ferdinand/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G37_Ferdinand/collision/Hull.model"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G37_Ferdinand/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G37_Ferdinand/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G37_Ferdinand/normal/lod0/Hull.model"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "turretPositions" : {
+         "turret" : "-0.000000 1.2021 -0.070475"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large",
+         "tags" : {
+            "diesel" : "particles/Tank/engine_exit_diesel.xml"
+         }
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 150,
+         "maxHealth" : 220,
+         "repairCost" : "1.0"
+      },
+      "hangarShadowTexture" : "vehicles/german/G37_Ferdinand/Ferdinand_HangarShadowMap.dds",
+      "swinging" : {
+         "pitchParams" : "0.20 32.00 0.36 1.00 0.05 0.29",
+         "rollParams" : "1.00 0.20 32.00 0.36 1.00 0.05 0.29",
+         "sensitivityToImpulse" : "0.3",
+         "lodDist" : "FAR"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "size" : "0.92",
+               "hideIfDamaged" : true,
+               "rayStart" : "1.36585 1.34441 -0.981524",
+               "rayEnd" : "1.0159 1.15065 -0.980927",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.0159 1.15065 -0.980927",
+               "rayStart" : "-1.36585 1.34441 -0.981524",
+               "hideIfDamaged" : true,
+               "size" : "0.92"
+            }
+         ],
+         "player" : [
+            {
+               "size" : "0.32",
+               "hideIfDamaged" : false,
+               "isMirrored" : true,
+               "rayStart" : "1.29487 1.32751 -2.06647",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.13669 1.24162 -2.06618"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.01137 1.15992 -2.05141",
+               "rayStart" : "-1.36069 1.3548 -2.05143",
+               "size" : "0.32",
+               "hideIfDamaged" : true
+            }
+         ],
+         "clan" : {
+            "rayStart" : "-0.673612 0.581527 2.61925",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-0.673612 0.498581 2.22796",
+            "size" : "0.2",
+            "hideIfDamaged" : false
+         }
+      },
+      "armor" : {
+         "armor_4" : 80,
+         "armor_3" : 80,
+         "armor_2" : 200,
+         "armor_1" : 300,
+         "armor_11" : 30,
+         "armor_9" : 30,
+         "armor_12" : 50,
+         "armor_5" : 200,
+         "armor_6" : 80,
+         "armor_8" : 20,
+         "armor_13" : 30,
+         "armor_15" : 25,
+         "armor_7" : 80,
+         "armor_14" : 40,
+         "armor_10" : ""
+      },
+      "maxHealth" : 1200,
+      "weight" : 41500
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.04",
+      "still" : "0.191",
+      "camouflageNetBonus" : "0.15",
+      "moving" : "0.115",
+      "firePenalty" : "0.287"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "engines" : {
+      "Porsche_Deutz_Typ180_2_IGR" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : 30,
+      "backward" : 10
+   },
+   "repairCost" : "9.2",
+   "camouflage" : {
+      "priceFactor" : "1.6",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "chassis" : {
+      "Ferdinandvetstaerktketten_IGR" : {
+         "wwsoundPC" : "treads_type_pc",
+         "models" : {
+            "undamaged" : "vehicles/german/G37_Ferdinand/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G37_Ferdinand/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G37_Ferdinand/crash/lod0/Chassis.model"
+         },
+         "hullPosition" : "0.000000 1.12259 0.000000",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0.39713",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "37.8947",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L1",
+                  "syncAngle" : "37.8947",
+                  "isLeft" : true,
+                  "radius" : "0.39713",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "syncAngle" : "37.8947",
+                  "isLeft" : false,
+                  "radius" : "0.39713",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "37.8947",
+                  "name" : "WD_R1",
+                  "isLeading" : true,
+                  "radius" : "0.39713"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0.365",
+                  "isLeft" : true,
+                  "count" : 6
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 6,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0.365"
+               }
+            ]
+         },
+         "brakeForce" : 34000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G37_Ferdinand/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G37_Ferdinand/collision/Chassis.model"
+         },
+         "maxLoad" : 68950,
+         "maxRegenHealth" : 165,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "weight" : 20550,
+         "userString" : "#igr_vehicles:Ferdinandvetstaerktketten_IGR",
+         "rotationIsAroundCenter" : true,
+         "trackThickness" : "-0.012",
+         "terrainResistance" : "1.1 1.7 2.9",
+         "trackNodes" : {
+            "enable" : true,
+            "maxOffset" : "0.14",
+            "node" : [
+               {
+                  "backwardElastK" : "0.8",
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.5",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.075",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "0.5",
+                  "offset" : "-0.158",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.82",
+                  "rightSibling" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.18",
+                  "forwardElastK" : "0.5",
+                  "leftSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.84",
+                  "rightSibling" : "Track_VT_L3"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.5",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "offset" : "-0.197",
+                  "rightSibling" : "Track_VT_L4",
+                  "backwardElastK" : "0.86"
+               },
+               {
+                  "forwardElastK" : "0.5",
+                  "leftSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "offset" : "-0.18",
+                  "rightSibling" : "Track_VT_L5",
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "offset" : "-0.162",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L4",
+                  "forwardElastK" : "0.5"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.6",
+                  "offset" : "-0.059",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.01"
+               },
+               {
+                  "backwardElastK" : "1.01",
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.6",
+                  "offset" : "-0.059",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "offset" : "-0.051"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "offset" : "-0.051"
+               },
+               {
+                  "forwardElastK" : "0.5",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "offset" : "-0.075",
+                  "rightSibling" : "Track_VT_R1",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "0.82",
+                  "rightSibling" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "offset" : "-0.158",
+                  "name" : "Track_VT_R1",
+                  "leftSibling" : "Track_VT_R0",
+                  "forwardElastK" : "0.5"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.18",
+                  "name" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R1",
+                  "forwardElastK" : "0.5",
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "0.84"
+               },
+               {
+                  "rightSibling" : "Track_VT_R4",
+                  "backwardElastK" : "0.86",
+                  "offset" : "-0.197",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R2",
+                  "forwardElastK" : "0.5",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "name" : "Track_VT_R4",
+                  "leftSibling" : "Track_VT_R3",
+                  "forwardElastK" : "0.5",
+                  "offset" : "-0.18",
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R5"
+               },
+               {
+                  "offset" : "-0.162",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R4",
+                  "forwardElastK" : "0.5",
+                  "name" : "Track_VT_R5",
+                  "backwardElastK" : "1.2"
+               }
+            ],
+            "gravity" : "-7.4",
+            "damping" : 2,
+            "offset" : "0",
+            "forwardElastK" : "1.01",
+            "maxAmplitude" : "0.09",
+            "backwardElastK" : 1,
+            "linkBones" : true,
+            "elasticity" : 1094
+         },
+         "maxClimbAngle" : 25,
+         "topRightCarryingPoint" : "1.30891 2.1295",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "maxHealth" : 220,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "count" : 6,
+                  "minOffset" : "-0.08",
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "maxOffset" : "0.08"
+               },
+               {
+                  "isLeft" : false,
+                  "minOffset" : "-0.08",
+                  "count" : 6,
+                  "maxOffset" : "0.08",
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "splineDesc" : {
+            "segment2ModelLeft" : "vehicles/german/G37_Ferdinand/track/segment2.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "right" : "vehicles/german/G37_Ferdinand/track/right.track",
+            "segment2ModelRight" : "vehicles/german/G37_Ferdinand/track/segment2.model",
+            "segmentOffset" : "-0.072",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/german/G37_Ferdinand/track/segment.model",
+            "segmentModelRight" : "vehicles/german/G37_Ferdinand/track/segment.model",
+            "segmentLength" : "0.26",
+            "left" : "vehicles/german/G37_Ferdinand/track/left.track",
+            "segment2Offset" : "0.133"
+         },
+         "price" : "32234.0",
+         "notInShop" : true,
+         "shortUserString" : "#igr_vehicles:Ferdinandvetstaerktketten_IGR_short",
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "repairCost" : "5.0",
+         "rotationSpeed" : 21,
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.6 0.62",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 -0"
+            }
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 8,
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "tags" : {},
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.5",
+            "lodDist" : "MEDIUM_TRACK"
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.804393468"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Ferdinandvetstaerktketten_IGR" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Porsche_Deutz_Typ180_2_IGR" : {
+               "smplEnginePower" : "888.1161"
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.9",
+      "default" : "germany_cross"
+   },
+   "crew" : {
+      "gunner" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "driver" : {},
+      "commander" : {},
+      "radioman" : {}
+   }
+}

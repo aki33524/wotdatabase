@@ -1,0 +1,536 @@
+{
+   "repairCost" : "2.00",
+   "radios" : {
+      "SCR_210A" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_T7_Combat_Car" : {
+         "notInShop" : true,
+         "showEmblemsOnGun" : false,
+         "gunPosition" : "-0 0 1",
+         "userString" : "#usa_vehicles:Turret_1_T7_Combat_Car",
+         "level" : 2,
+         "maxHealth" : 30,
+         "tags" : "AAAAAAAAAAAA",
+         "armor" : {
+            "armor_8" : "",
+            "armor_2" : "12.7",
+            "armor_3" : "12.7",
+            "armor_4" : "12.7",
+            "armor_6" : "6.4",
+            "armor_5" : "6.4",
+            "armor_9" : "12.7",
+            "armor_1" : "12.7"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30
+         },
+         "physicsShape" : "1.019 0.025 1.006 0.000 0.391 0.398 0.575 0.525 0.264 0.500 0.000 0.292 0.236 0.047 0.000",
+         "price" : 600,
+         "weight" : 800,
+         "guns" : {
+            "_12.7mm_MG_HB_M2_A" : "shared"
+         },
+         "rotationSpeed" : 24,
+         "camouflage" : {
+            "tiling" : "1.2 0.6 0.51 0.98"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A93_T7_Combat_Car/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/american/A93_T7_Combat_Car/collision/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "emblemSlots" : {
+            "inscription" : {
+               "rayStart" : "-0.58633 0.220672 -0.608647",
+               "size" : "0.5",
+               "rayEnd" : "-0.308398 0.220672 -0.32098",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            },
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "rayStart" : "-0.793589 0.38784 0.306776",
+                  "size" : "0.18",
+                  "rayEnd" : "-0 0 0"
+               },
+               {
+                  "rayEnd" : "0 0 0",
+                  "isMirrored" : true,
+                  "rayStart" : "1 0 0",
+                  "size" : "0.18",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "circularVisionRadius" : 280,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 20
+         },
+         "models" : {
+            "exploded" : "vehicles/american/A93_T7_Combat_Car/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A93_T7_Combat_Car/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A93_T7_Combat_Car/crash/lod0/Turret_01.model"
+         }
+      }
+   },
+   "chassis" : {
+      "Chassis_T7_Combat_Car" : {
+         "weight" : 3500,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 36,
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : 36,
+                  "name" : "WD_L1"
+               },
+               {
+                  "syncAngle" : 36,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : 36,
+                  "name" : "WD_R1"
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 3,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0.51465"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 3,
+                  "isLeft" : false,
+                  "radius" : "0.51465",
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "tags" : {},
+         "repairCost" : "5.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "models" : {
+            "exploded" : "vehicles/american/A93_T7_Combat_Car/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A93_T7_Combat_Car/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A93_T7_Combat_Car/normal/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : false,
+         "wwsoundPC" : "treads_type_pc",
+         "wwsoundNPC" : "trds_chf_npc",
+         "terrainResistance" : "1.2 1.5 3.4",
+         "trackNodes" : {
+            "damping" : 2,
+            "gravity" : "-9.8",
+            "linkBones" : true,
+            "elasticity" : 1100,
+            "maxAmplitude" : "0.1",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : 1,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : 1
+               },
+               {
+                  "leftSibling" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L3",
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L3",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_L5"
+               },
+               {
+                  "leftSibling" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L6",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_L5"
+               },
+               {
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_L6",
+                  "leftSibling" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 2,
+                  "rightSibling" : "Track_VT_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.05",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.8",
+                  "rightSibling" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R3",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R5",
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_R6"
+               }
+            ],
+            "maxOffset" : "0.1",
+            "enable" : true
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A93_T7_Combat_Car/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A93_T7_Combat_Car/collision_client/Chassis.model"
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.3 0.32"
+         },
+         "rotationSpeed" : 44,
+         "hullPosition" : "0 1 0",
+         "price" : 600,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "level" : 2,
+         "maxHealth" : 60,
+         "armor" : {
+            "leftTrack" : 6,
+            "rightTrack" : 6
+         },
+         "brakeForce" : 10500,
+         "maxLoad" : 12500,
+         "userString" : "#usa_vehicles:Chassis_T7_Combat_Car",
+         "notInShop" : true,
+         "maxClimbAngle" : 25,
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "segment2Offset" : "0.093",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segment2ModelRight" : "vehicles/american/A93_T7_Combat_Car/track/segment_2.model",
+            "right" : "vehicles/american/A93_T7_Combat_Car/track/right.track",
+            "segmentModelLeft" : "vehicles/american/A93_T7_Combat_Car/track/segment_1.model",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.187",
+            "left" : "vehicles/american/A93_T7_Combat_Car/track/left.track",
+            "segmentModelRight" : "vehicles/american/A93_T7_Combat_Car/track/segment_1.model",
+            "segmentOffset" : "0.308",
+            "segment2ModelLeft" : "vehicles/american/A93_T7_Combat_Car/track/segment_2.model"
+         },
+         "maxRegenHealth" : 45,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "1.1201 1.28158",
+         "bulkHealthFactor" : "3.0",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-4.6",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 3,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "count" : 3,
+                  "isLeft" : false,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "trackThickness" : "0.0038"
+      }
+   },
+   "emblems" : {
+      "alpha" : "0.92",
+      "lodDist" : "MEDIUM",
+      "default" : "usa_star"
+   },
+   "hull" : {
+      "camouflage" : {
+         "tiling" : "1.5 1.5 0.000000 0.000000"
+      },
+      "hangarShadowTexture" : "vehicles/american/A93_T7_Combat_Car/T7_Combat_Car_HangarShadowMap.dds",
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A93_T7_Combat_Car/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A93_T7_Combat_Car/collision_client/Hull.model"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.00428616 0.213229 2.1209",
+            "size" : "0.3",
+            "rayEnd" : "0.00428624 -0.157603 1.97096",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false
+         }
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.28 34.00 0.36 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.71",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.28 34.00 0.36 1.00 0.05 0.30"
+      },
+      "maxHealth" : 120,
+      "armor" : {
+         "armor_7" : "15.9",
+         "armor_1" : "15.9",
+         "armor_9" : "15.9",
+         "armor_11" : "6.4",
+         "armor_16" : "9.5",
+         "armor_6" : "9.5",
+         "armor_4" : "6.4",
+         "armor_3" : "12.7",
+         "armor_14" : "15.9",
+         "armor_10" : "15.9",
+         "armor_8" : "",
+         "armor_2" : "15.9"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "weight" : 5085,
+      "models" : {
+         "undamaged" : "vehicles/american/A93_T7_Combat_Car/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A93_T7_Combat_Car/crash/lod0/Hull.model",
+         "exploded" : "vehicles/american/A93_T7_Combat_Car/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 90,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 60
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      }
+   },
+   "speedLimits" : {
+      "forward" : 56,
+      "backward" : 20
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_W-670-9A" : {
+               "smplEnginePower" : "277.0077"
+            }
+         },
+         "chassis" : {
+            "Chassis_T7_Combat_Car" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.356",
+      "still" : "0.237",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.177"
+   },
+   "crewXpFactor" : "1.5",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.877327986"
+   },
+   "crew" : {
+      "commander" : "gunner",
+      "loader" : {},
+      "driver" : {},
+      "radioman" : {}
+   },
+   "camouflage" : {
+      "priceFactor" : "0.4",
+      "tiling" : "1 1 0 0"
+   },
+   "engines" : {
+      "Continental_W-670-9A" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "premiumVehicleXPFactor" : "0.7",
+   "fuelTanks" : {
+      "Small" : "shared"
+   }
+}

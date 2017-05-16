@@ -1,0 +1,853 @@
+{
+   "crewXpFactor" : "1.0",
+   "chassis" : {
+      "VVSS_T16E1" : {
+         "price" : 330,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A02_M2_lt/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A02_M2_lt/collision_client/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "size" : "0.34 0.32",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "mediumTank"
+         },
+         "trackNodes" : {
+            "backwardElastK" : 1,
+            "maxOffset" : "0.05",
+            "damping" : 2,
+            "linkBones" : false,
+            "gravity" : "-9.9",
+            "node" : [
+               {
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.053",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.03",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.034",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.053",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "1.3"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "offset" : "-0.03",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "offset" : "-0.044",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : 1,
+                  "offset" : "-0.044",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.053",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "2.01"
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.034",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "offset" : "-0.053",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9"
+               }
+            ],
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1044,
+            "offset" : "0",
+            "enable" : true,
+            "forwardElastK" : 1
+         },
+         "rotationIsAroundCenter" : false,
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "segment2ModelLeft" : "vehicles/american/A02_M2_lt/track/T-16_track2.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/american/A02_M2_lt/track/T-16_track1.model",
+            "left" : "vehicles/american/A02_M2_lt/track/left.track",
+            "right" : "vehicles/american/A02_M2_lt/track/right.track",
+            "segmentOffset" : "0.055",
+            "segment2Offset" : "0.004",
+            "segmentLength" : "0.117",
+            "segment2ModelRight" : "vehicles/american/A02_M2_lt/track/T-16_track2.model",
+            "segmentModelRight" : "vehicles/american/A02_M2_lt/track/T-16_track1.model"
+         },
+         "hullPosition" : "0 1 0",
+         "userString" : "#usa_vehicles:VVSS_T16E1",
+         "unlocks" : {
+            "chassis" : "VVSS_T16E2"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : "25.714",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0.3151",
+                  "isLeading" : true,
+                  "name" : "WD_L3",
+                  "isLeft" : true,
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R3",
+                  "isLeft" : false,
+                  "radius" : "0.3151",
+                  "syncAngle" : "25.714"
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "count" : 4,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.26"
+               },
+               {
+                  "template" : "W_R",
+                  "count" : 4,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0.26"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0.09879",
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "template" : "WD_R",
+                  "radius" : "0.09879",
+                  "count" : 2,
+                  "isLeft" : false,
+                  "startIndex" : 1
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "0.941331 1.24297",
+         "rotationSpeed" : 36,
+         "models" : {
+            "exploded" : "vehicles/american/A02_M2_lt/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A02_M2_lt/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A02_M2_lt/normal/lod0/Chassis.model"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "minOffset" : "-0.08",
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 4
+               },
+               {
+                  "count" : 4,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "minOffset" : "-0.08",
+                  "maxOffset" : "0.06",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.28",
+            "vehicleRotation" : "0.28"
+         },
+         "repairCost" : "5.0",
+         "wwsoundPC" : "treads_type_pc",
+         "brakeForce" : 34500,
+         "tags" : {},
+         "maxLoad" : 11500,
+         "terrainResistance" : "1 1.5 3.4",
+         "trackThickness" : "-0.0012",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.9",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "maxRegenHealth" : 40,
+         "maxHealth" : 50,
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 1,
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "bulkHealthFactor" : "3.0",
+         "weight" : 3300,
+         "drivingWheels" : "WD_L0 WD_L3",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         }
+      },
+      "VVSS_T16E2" : {
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "bulkHealthFactor" : "3.0",
+         "drivingWheels" : "WD_L0 WD_L3",
+         "weight" : 3300,
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "maxHealth" : 60,
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 2,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.9",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxRegenHealth" : 45,
+         "maxLoad" : 11500,
+         "terrainResistance" : "0.9 1.5 3.4",
+         "trackThickness" : "-0.0012",
+         "tags" : {},
+         "brakeForce" : 34500,
+         "wwsoundPC" : "treads_type_pc",
+         "models" : {
+            "undamaged" : "vehicles/american/A02_M2_lt/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A02_M2_lt/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A02_M2_lt/crash/lod0/Chassis.model"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.08",
+                  "count" : 4,
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "count" : 4,
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.08"
+               }
+            ]
+         },
+         "repairCost" : "5.0",
+         "rotationSpeed" : 40,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "count" : 4,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.26"
+               },
+               {
+                  "radius" : "0.26",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 4,
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0.09879",
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0.09879",
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "template" : "WD_R"
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "syncAngle" : "25.714",
+                  "radius" : "0.3151",
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : "25.714",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "isLeading" : true,
+                  "radius" : "0.3151",
+                  "syncAngle" : "25.714"
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "0.941331 1.24297",
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segment2ModelLeft" : "vehicles/american/A02_M2_lt/track/T-16_track2.model",
+            "segment2Offset" : "0.004",
+            "segmentLength" : "0.117",
+            "segmentOffset" : "0.055",
+            "right" : "vehicles/american/A02_M2_lt/track/right.track",
+            "left" : "vehicles/american/A02_M2_lt/track/left.track",
+            "segmentModelLeft" : "vehicles/american/A02_M2_lt/track/T-16_track1.model",
+            "segmentModelRight" : "vehicles/american/A02_M2_lt/track/T-16_track1.model",
+            "segment2ModelRight" : "vehicles/american/A02_M2_lt/track/T-16_track2.model"
+         },
+         "navmeshGirth" : "6.0",
+         "userString" : "#usa_vehicles:VVSS_T16E2",
+         "hullPosition" : "0 1 0",
+         "trackNodes" : {
+            "elasticity" : 1044,
+            "maxAmplitude" : "0.05",
+            "node" : [
+               {
+                  "forwardElastK" : "2.01",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.053",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "offset" : "-0.03",
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.034",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.053",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.03",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "offset" : "-0.044",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "offset" : "-0.044",
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "2.01",
+                  "isLeft" : false,
+                  "offset" : "-0.053",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.034",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.053",
+                  "isLeft" : false
+               }
+            ],
+            "offset" : "0",
+            "enable" : true,
+            "forwardElastK" : 1,
+            "backwardElastK" : 1,
+            "maxOffset" : "0.05",
+            "damping" : 2,
+            "linkBones" : false,
+            "gravity" : "-9.9"
+         },
+         "rotationIsAroundCenter" : false,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A02_M2_lt/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A02_M2_lt/collision/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.34 0.32",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02"
+         },
+         "price" : 620
+      }
+   },
+   "speedLimits" : {
+      "forward" : 58,
+      "backward" : 20
+   },
+   "emblems" : {
+      "alpha" : "0.82",
+      "default" : "usa_star",
+      "lodDist" : "MEDIUM"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.744882416"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.4"
+   },
+   "invisibility" : {
+      "still" : "0.262",
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.393",
+      "moving" : "0.197",
+      "camouflageNetBonus" : "0.1"
+   },
+   "radios" : {
+      "SCR_200" : "shared"
+   },
+   "turrets0" : {
+      "M2D27812" : {
+         "level" : 2,
+         "maxHealth" : 48,
+         "unlocks" : {
+            "gun" : "_37mm_M-5"
+         },
+         "camouflage" : {
+            "tiling" : "0.415 0.25 0.000000 0.000000"
+         },
+         "armor" : {
+            "armor_1" : "38.1",
+            "armor_4" : "25.4",
+            "armor_5" : "12.7",
+            "armor_8" : "",
+            "armor_10" : "38.1",
+            "armor_3" : "25.4",
+            "armor_6" : "12.7",
+            "armor_9" : "38.1",
+            "armor_7" : "12.7"
+         },
+         "rotationSpeed" : 35,
+         "guns" : {
+            "_12.7mm_MG_HB_M2" : "shared",
+            "_20mm_Hispano_Suiza_Birgikt_gun" : "shared",
+            "_37mm_M-5" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "models" : {
+            "destroyed" : "vehicles/american/A02_M2_lt/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/american/A02_M2_lt/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/american/A02_M2_lt/normal/lod0/Turret_02.model"
+         },
+         "weight" : 800,
+         "invisibilityFactor" : "0.908",
+         "showEmblemsOnGun" : false,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "price" : 640,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "maxHealth" : 40,
+            "repairCost" : "1.0"
+         },
+         "emblemSlots" : {
+            "inscription" : {
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "rayStart" : "0.51546 0.476275 -0.515071",
+               "size" : "0.48",
+               "rayEnd" : "0 0 -0"
+            },
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "rayStart" : "1 0 0",
+                  "size" : "0.24",
+                  "rayEnd" : "0 0 0",
+                  "isMirrored" : true
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-0.6474 0.444862 0.272637",
+                  "rayEnd" : "-0 0 0",
+                  "size" : "0.24"
+               }
+            ]
+         },
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A02_M2_lt/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/american/A02_M2_lt/collision/Turret_02.model"
+         },
+         "circularVisionRadius" : 320,
+         "physicsShape" : "0.940 0.000 0.934 0.000 0.556 0.160 0.749 0.415 0.544 0.500 0.000 0.500 0.066 0.100 0.202",
+         "gunPosition" : "-0.02982 0.22182 0.68795",
+         "userString" : "#usa_vehicles:M2D27812",
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         }
+      },
+      "M2D27810" : {
+         "circularVisionRadius" : 260,
+         "physicsShape" : "0.969 0.018 1.000 0.000 0.529 0.151 0.764 0.396 0.500 0.500 0.000 0.500 0.000 0.500 0.233",
+         "gunPosition" : "0.02465 0.206245 0.796029",
+         "userString" : "#usa_vehicles:M2D27810",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "showEmblemsOnGun" : false,
+         "price" : 450,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "1.0",
+            "maxHealth" : 40
+         },
+         "emblemSlots" : {
+            "inscription" : {
+               "rayEnd" : "0.472899 0.318683 -0.20627",
+               "size" : "0.48",
+               "rayStart" : "1 0 -0",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            },
+            "player" : [
+               {
+                  "rayEnd" : "-0 0 0",
+                  "size" : "0.19",
+                  "rayStart" : "-1 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "isMirrored" : true,
+                  "rayEnd" : "0 0 0",
+                  "size" : "0.19",
+                  "rayStart" : "0.633198 0.335979 0.2765",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A02_M2_lt/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/american/A02_M2_lt/collision/Turret_01.model"
+         },
+         "guns" : {
+            "_20mm_Hispano_Suiza_Birgikt_gun" : "shared",
+            "_12.7mm_MG_HB_M2" : "shared"
+         },
+         "models" : {
+            "destroyed" : "vehicles/american/A02_M2_lt/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A02_M2_lt/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A02_M2_lt/normal/lod0/Turret_01.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "weight" : 700,
+         "level" : 1,
+         "maxHealth" : 28,
+         "camouflage" : {
+            "tiling" : "0.55 0.25 0.000000 0.000000"
+         },
+         "armor" : {
+            "armor_9" : "15.9",
+            "armor_7" : "15.9",
+            "armor_8" : "",
+            "armor_1" : "15.9",
+            "armor_4" : "15.9",
+            "armor_5" : "15.9",
+            "armor_3" : "15.9",
+            "armor_6" : "6.4"
+         },
+         "rotationSpeed" : 32
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_W670-7" : {
+               "smplEnginePower" : "277.0077"
+            },
+            "Cuiberson_T-10204" : {
+               "smplEnginePower" : "232.6019"
+            }
+         },
+         "chassis" : {
+            "VVSS_T16E1" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            },
+            "VVSS_T16E2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "engines" : {
+      "Continental_W670-7" : "shared",
+      "Cuiberson_T-10204" : "shared"
+   },
+   "repairCost" : "3.000",
+   "crew" : {
+      "radioman" : {},
+      "gunner" : "loader",
+      "driver" : {},
+      "commander" : {}
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.166298 0.204107 1.46043",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.24",
+            "rayEnd" : "-0.166298 0.0177648 1.38779"
+         }
+      },
+      "camouflage" : {
+         "tiling" : "0.925 0.925 0.000000 0.000000"
+      },
+      "hangarShadowTexture" : "vehicles/american/A02_M2_lt/M2_lt_HangarShadowMap.dds",
+      "armor" : {
+         "armor_14" : "19.1",
+         "armor_12" : "25.4",
+         "armor_9" : "6.4",
+         "armor_7" : "9.5",
+         "armor_13" : "12.7",
+         "armor_3" : "25.4",
+         "armor_6" : "25.4",
+         "armor_11" : "25.4",
+         "armor_10" : "9.5",
+         "armor_8" : "",
+         "armor_4" : "25.4",
+         "armor_5" : "15.9",
+         "armor_1" : "38.1",
+         "armor_2" : "44.5"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A02_M2_lt/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A02_M2_lt/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 85,
+         "maxRegenHealth" : 55
+      },
+      "maxHealth" : 112,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_small"
+      },
+      "turretPositions" : {
+         "turret" : "0.00433 0.794658 -0.08039"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.71",
+         "rollParams" : "1.00 0.28 34.00 0.36 1.00 0.05 0.30",
+         "pitchParams" : "0.28 34.00 0.36 1.00 0.05 0.30",
+         "lodDist" : "FAR"
+      },
+      "weight" : 4000,
+      "models" : {
+         "destroyed" : "vehicles/american/A02_M2_lt/crash/lod0/Hull.model",
+         "exploded" : "vehicles/american/A02_M2_lt/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A02_M2_lt/normal/lod0/Hull.model"
+      }
+   }
+}

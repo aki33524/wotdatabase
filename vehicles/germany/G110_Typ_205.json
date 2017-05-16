@@ -1,0 +1,705 @@
+{
+   "crewXpFactor" : "1.0",
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "hull" : {
+      "armor" : {
+         "armor_4" : 135,
+         "armor_1" : 200,
+         "armor_9" : 100,
+         "armor_6" : 50,
+         "armor_3" : 155,
+         "armor_16" : 100,
+         "armor_14" : 100,
+         "armor_15" : 135,
+         "armor_7" : 180,
+         "armor_12" : 55,
+         "armor_2" : 200,
+         "armor_11" : 50,
+         "armor_8" : "",
+         "armor_10" : 40,
+         "armor_13" : 200,
+         "armor_5" : 120
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.891885 0.563457 3.59629",
+            "rayStart" : "-0.891885 0.727419 3.71082",
+            "size" : "0.3"
+         }
+      },
+      "hangarShadowTexture" : "vehicles/german/G110_Typ_205/Typ_205_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "-0.001022 0.947784 -1.14001"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxHealth" : 240,
+         "maxRegenHealth" : 160,
+         "repairCost" : "1.0"
+      },
+      "maxHealth" : 1840,
+      "models" : {
+         "destroyed" : "vehicles/german/G110_Typ_205/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G110_Typ_205/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G110_Typ_205/normal/lod0/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "1 1 0.000000 0.2"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.08",
+         "pitchParams" : "0.20 36.00 0.34 1.00 0.04 0.26",
+         "rollParams" : "1.00 0.20 36.00 0.34 1.00 0.04 0.26",
+         "lodDist" : "FAR"
+      },
+      "weight" : 83500,
+      "AODecals" : {
+         "decal" : {
+            "transform" : "6 0 0 0 2 0 0 -0 11 0 -1 -0"
+         }
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G110_Typ_205/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G110_Typ_205/collision_client/Hull.model"
+      },
+      "exhaust" : {
+         "tags" : {
+            "diesel" : "diesel_large"
+         },
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "guns" : {
+         "_128mm_L50A" : {
+            "delta" : "1.06901408"
+         }
+      },
+      "chassis" : {
+         "Chassis_G110_Typ_205" : {
+            "alpha" : "0.16905"
+         },
+         "Chassis_G110_Typ_205_2" : {
+            "alpha" : "0.15295"
+         }
+      },
+      "engines" : {
+         "Porsche_Typ_220" : {
+            "bravo" : "396.4804"
+         },
+         "Daimler-Benz_DB-603" : {
+            "bravo" : "317.1843"
+         }
+      }
+   },
+   "chassis" : {
+      "Chassis_G110_Typ_205" : {
+         "models" : {
+            "undamaged" : "vehicles/german/G110_Typ_205/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G110_Typ_205/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G110_Typ_205/crash/lod0/Chassis.model"
+         },
+         "price" : 32000,
+         "armor" : {
+            "leftTrack" : 50,
+            "rightTrack" : 50
+         },
+         "navmeshGirth" : "6.0",
+         "unlocks" : {
+            "chassis" : "Chassis_G110_Typ_205_2"
+         },
+         "rotationIsAroundCenter" : true,
+         "traces" : {
+            "textureSet" : "germany_typ_205",
+            "size" : "0.6 1.15",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR"
+         },
+         "repairCost" : "5.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "minOffset" : "-0.06",
+                  "isLeft" : true,
+                  "maxOffset" : "0.08",
+                  "template" : "Track_L",
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "maxOffset" : "0.08",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.06",
+                  "count" : 8
+               }
+            ]
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-3.8"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G110_Typ_205/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G110_Typ_205/collision_client/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0.000000 1.06339 0.000000",
+         "level" : 8,
+         "wwsoundNPC" : "trds_chf_npc",
+         "trackThickness" : "-0.0233",
+         "splineDesc" : {
+            "segment2Offset" : "0.125",
+            "segmentLength" : "0.257",
+            "segment2ModelRight" : "vehicles/german/G110_Typ_205/track/segment2.model",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/german/G110_Typ_205/track/segment1.model",
+            "right" : "vehicles/german/G110_Typ_205/track/right.track",
+            "segment2ModelLeft" : "vehicles/german/G110_Typ_205/track/segment2.model",
+            "segmentOffset" : "0.171",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/german/G110_Typ_205/track/segment1.model",
+            "left" : "vehicles/german/G110_Typ_205/track/left.track"
+         },
+         "tags" : {},
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R"
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 8
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 36
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : 36
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 36,
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "syncAngle" : 36,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L1",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "rotationSpeed" : 12,
+         "brakeForce" : 170000,
+         "maxClimbAngle" : 25,
+         "userString" : "#germany_vehicles:Chassis_G110_Typ_205",
+         "maxRegenHealth" : 180,
+         "maxHealth" : 240,
+         "drivingWheels" : "WD_L0 WD_L1",
+         "weight" : 30000,
+         "trackNodes" : {
+            "linkBones" : true,
+            "elasticity" : 1060,
+            "maxOffset" : "0.08",
+            "damping" : 2,
+            "node" : [
+               {
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : 1,
+                  "offset" : "-0.052"
+               },
+               {
+                  "offset" : "-0.052",
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : 1,
+                  "isLeft" : false,
+                  "backwardElastK" : 2
+               },
+               {
+                  "offset" : "-0.052",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : 1,
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : 2,
+                  "offset" : "-0.052"
+               }
+            ],
+            "maxAmplitude" : "0.08",
+            "gravity" : -8,
+            "enable" : true
+         },
+         "topRightCarryingPoint" : "1.08057 2.85667",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "bulkHealthFactor" : "3.0",
+         "maxLoad" : 171000,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.21",
+            "vehicleMovement" : "0.21"
+         },
+         "terrainResistance" : "2 2.1 3.4"
+      },
+      "Chassis_G110_Typ_205_2" : {
+         "models" : {
+            "undamaged" : "vehicles/german/G110_Typ_205/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G110_Typ_205/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G110_Typ_205/crash/lod0/Chassis.model"
+         },
+         "price" : 65500,
+         "armor" : {
+            "rightTrack" : 50,
+            "leftTrack" : 50
+         },
+         "navmeshGirth" : "6.0",
+         "rotationIsAroundCenter" : true,
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_typ_205",
+            "size" : "0.6 1.15"
+         },
+         "repairCost" : "5.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.08",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "minOffset" : "-0.06",
+                  "count" : 8
+               },
+               {
+                  "maxOffset" : "0.08",
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "count" : 8,
+                  "minOffset" : "-0.06"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G110_Typ_205/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G110_Typ_205/collision/Chassis.model"
+         },
+         "tracks" : {
+            "textureScale" : "-3.8",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 9,
+         "hullPosition" : "0.000000 1.06339 0.000000",
+         "wwsoundNPC" : "trds_chf_npc",
+         "trackThickness" : "-0.0233",
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.171",
+            "segment2ModelLeft" : "vehicles/german/G110_Typ_205/track/segment2.model",
+            "left" : "vehicles/german/G110_Typ_205/track/left.track",
+            "segmentModelLeft" : "vehicles/german/G110_Typ_205/track/segment1.model",
+            "segment2ModelRight" : "vehicles/german/G110_Typ_205/track/segment2.model",
+            "segmentLength" : "0.257",
+            "segment2Offset" : "0.125",
+            "segmentModelRight" : "vehicles/german/G110_Typ_205/track/segment1.model",
+            "right" : "vehicles/german/G110_Typ_205/track/right.track",
+            "lodDist" : "MEDIUM"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 36,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : 36
+               },
+               {
+                  "syncAngle" : 36,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "syncAngle" : 36,
+                  "isLeading" : true,
+                  "name" : "WD_L1"
+               }
+            ]
+         },
+         "tags" : {},
+         "rotationSpeed" : 15,
+         "brakeForce" : 180000,
+         "maxClimbAngle" : 25,
+         "userString" : "#germany_vehicles:Chassis_G110_Typ_205_2",
+         "maxRegenHealth" : 190,
+         "weight" : 30000,
+         "maxHealth" : 250,
+         "drivingWheels" : "WD_L0 WD_L1",
+         "trackNodes" : {
+            "linkBones" : true,
+            "maxOffset" : "0.08",
+            "elasticity" : 1060,
+            "damping" : 2,
+            "node" : [
+               {
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.052"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "offset" : "-0.052",
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 2,
+                  "offset" : "-0.052",
+                  "backwardElastK" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : 2,
+                  "offset" : "-0.052",
+                  "backwardElastK" : 1,
+                  "isLeft" : false
+               }
+            ],
+            "maxAmplitude" : "0.08",
+            "gravity" : -8,
+            "enable" : true
+         },
+         "maxLoad" : 180000,
+         "bulkHealthFactor" : "3.0",
+         "topRightCarryingPoint" : "1.08057 2.85667",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "terrainResistance" : "1.8 1.9 3"
+      }
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.02",
+      "camouflageNetBonus" : "0.05",
+      "still" : "0.038",
+      "firePenalty" : "0.057",
+      "moving" : "0.019"
+   },
+   "repairCost" : "8.9",
+   "engines" : {
+      "Daimler-Benz_DB-603" : "shared",
+      "Porsche_Typ_220" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.8",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "turrets0" : {
+      "Turret_1_G110_Typ_205" : {
+         "level" : 9,
+         "gunPosition" : "0.001302 0.629715 1.55854",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G110_Typ_205/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G110_Typ_205/collision/Turret_01.model"
+         },
+         "maxHealth" : 460,
+         "camouflage" : {
+            "tiling" : "0.715 0.715 0.000000 0.000000"
+         },
+         "weight" : 50000,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "guns" : {
+            "_128mm_KwK44_L55" : "shared",
+            "_128mm_L50A" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "circularVisionRadius" : 400,
+         "userString" : "#germany_vehicles:Turret_1_G110_Typ_205",
+         "notInShop" : true,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1.11989 0.680563 -0.0355085",
+                  "rayStart" : "-1.29474 0.777663 -0.0354993",
+                  "size" : "0.3"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "size" : "0.3",
+                  "rayStart" : "1.31629 0.771074 0.0833931",
+                  "rayEnd" : "1.14143 0.674015 0.0833827",
+                  "isMirrored" : true
+               }
+            ],
+            "inscription" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.803",
+                  "rayEnd" : "-0.983113 0.658082 -1.37303",
+                  "rayStart" : "-1.15773 0.753636 -1.39246"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.803",
+                  "rayEnd" : "0.983113 0.658082 -1.37303",
+                  "rayStart" : "1.15773 0.753636 -1.39246"
+               }
+            ]
+         },
+         "armor" : {
+            "armor_3" : 160,
+            "armor_14" : 150,
+            "armor_16" : 210,
+            "armor_6" : 80,
+            "armor_9" : 80,
+            "armor_4" : 150,
+            "armor_1" : 240,
+            "armor_5" : 90,
+            "armor_13" : 40,
+            "armor_10" : 200,
+            "armor_11" : 190,
+            "armor_8" : "",
+            "armor_12" : 210,
+            "armor_2" : 240,
+            "armor_7" : 150,
+            "armor_15" : 180
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 150,
+            "maxRegenHealth" : 75,
+            "repairCost" : "1.0"
+         },
+         "physicsShape" : "1.078 0.120 1.097 0.000 0.525 0.249 1.000 0.525 0.203 0.553 0.438 0.500 0.143 0.498 0.000",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "2.0",
+            "maxRegenHealth" : 55,
+            "maxHealth" : 110
+         },
+         "models" : {
+            "destroyed" : "vehicles/german/G110_Typ_205/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G110_Typ_205/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G110_Typ_205/normal/lod0/Turret_01.model"
+         },
+         "price" : 55000,
+         "rotationSpeed" : 15,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "tags" : {}
+      }
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 20
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM",
+      "default" : "germany_cross"
+   },
+   "radios" : {
+      "FuG7" : "shared",
+      "FuG12" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G110_Typ_205_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1047"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1047"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1047"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1047"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1047"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1047"
+                     }
+                  }
+               }
+            },
+            "Chassis_G110_Typ_205" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.16905"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.16905"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.16905"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.16905"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.16905"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.16905"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Porsche_Typ_220" : {
+               "smplEnginePower" : 1750
+            },
+            "Daimler-Benz_DB-603" : {
+               "smplEnginePower" : 1400
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "commander" : {},
+      "gunner" : {},
+      "radioman" : {}
+   }
+}

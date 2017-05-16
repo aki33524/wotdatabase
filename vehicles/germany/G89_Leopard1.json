@@ -1,0 +1,525 @@
+{
+   "hull" : {
+      "maxHealth" : 1560,
+      "weight" : 18950,
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G89_Leopard1/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G89_Leopard1/collision/Hull.model"
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G89_Leopard1/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G89_Leopard1/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G89_Leopard1/crash/lod0/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "1.18 1.18 0.000000 0.000000"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2 HP_Track_Exhaus_3 HP_Track_Exhaus_4",
+         "pixie" : "diesel_large"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 180,
+         "maxHealth" : 260,
+         "repairCost" : "1.0"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.2",
+         "pitchParams" : "0.24 34.00 0.40 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.24 34.00 0.40 1.00 0.05 0.30"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.659404 0.550962 2.66801",
+            "rayEnd" : "0.659404 0.204556 2.46802",
+            "size" : "0.32",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "armor" : {
+         "armor_16" : 10,
+         "armor_12" : 20,
+         "armor_6" : 20,
+         "armor_10" : 20,
+         "armor_4" : 25,
+         "armor_13" : 25,
+         "armor_3" : 35,
+         "armor_9" : 30,
+         "armor_5" : 20,
+         "armor_15" : 30,
+         "armor_11" : 30,
+         "armor_7" : 50,
+         "armor_1" : 70,
+         "armor_2" : 50,
+         "armor_8" : "",
+         "armor_14" : 10
+      },
+      "hangarShadowTexture" : "vehicles/german/G89_Leopard1/Leopard1_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "0 1 1"
+      }
+   },
+   "invisibility" : {
+      "still" : "0.247",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.371",
+      "moving" : "0.185",
+      "camouflageBonus" : "0.03"
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "forward" : 65,
+      "backward" : 23
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "MB-838_CAM-500_1" : {
+               "smplEnginePower" : "877.5433"
+            }
+         },
+         "chassis" : {
+            "Chassis_Leopard1" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "repairCost" : 13,
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_Leopard1" : {
+         "tags" : {},
+         "topRightCarryingPoint" : "1.34635 2.04474",
+         "bulkHealthFactor" : "3.0",
+         "maxClimbAngle" : 25,
+         "drivingWheels" : "WD_L0 WD_L5",
+         "wwsoundPC" : "treads_type_pc",
+         "wwsoundNPC" : "trds_chf_npc",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "maxOffset" : "0.07",
+                  "minOffset" : "-0.1",
+                  "isLeft" : true,
+                  "count" : 7
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.1",
+                  "maxOffset" : "0.07",
+                  "count" : 7,
+                  "isLeft" : false
+               }
+            ]
+         },
+         "brakeForce" : 43000,
+         "maxLoad" : 42000,
+         "rotationIsAroundCenter" : true,
+         "splineDesc" : {
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "left" : "vehicles/german/G89_Leopard1/track/left.track",
+            "segmentModelRight" : "vehicles/german/G89_Leopard1/track/segment1.model",
+            "segmentOffset" : "0.038",
+            "segmentModelLeft" : "vehicles/german/G89_Leopard1/track/segment1.model",
+            "segmentLength" : "0.16",
+            "right" : "vehicles/german/G89_Leopard1/track/right.track",
+            "segment2Offset" : "0.071",
+            "lodDist" : "MEDIUM",
+            "segment2ModelRight" : "vehicles/german/G89_Leopard1/track/segment2.model",
+            "segment2ModelLeft" : "vehicles/german/G89_Leopard1/track/segment2.model"
+         },
+         "terrainResistance" : "0.8 0.9 1.8",
+         "maxRegenHealth" : 190,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.7"
+         },
+         "maxHealth" : 250,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L5",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "syncAngle" : 30,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R5",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : 30,
+                  "radius" : "0"
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "count" : 4,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 7,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_L"
+               },
+               {
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 4
+               },
+               {
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 7,
+                  "isLeft" : false
+               }
+            ]
+         },
+         "userString" : "#germany_vehicles:Chassis_Leopard1",
+         "repairCost" : "5.0",
+         "rotationSpeed" : 54,
+         "price" : 82500,
+         "level" : 10,
+         "hullPosition" : "0 1 0",
+         "weight" : 10000,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G89_Leopard1/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G89_Leopard1/collision_client/Chassis.model"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G89_Leopard1/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G89_Leopard1/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G89_Leopard1/crash/lod0/Chassis.model"
+         },
+         "notInShop" : true,
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 0"
+            }
+         },
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.18",
+            "vehicleMovement" : "0.18"
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_02",
+            "size" : "0.44 0.58",
+            "lodDist" : "FAR"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "trackThickness" : "0",
+         "trackNodes" : {
+            "enable" : true,
+            "maxAmplitude" : "0.015",
+            "maxOffset" : "0.01",
+            "linkBones" : false,
+            "backwardElastK" : 1,
+            "offset" : "0",
+            "node" : [
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.13",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.13",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "backwardElastK" : "1.39",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "2.05"
+               },
+               {
+                  "forwardElastK" : "2.05",
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "1.39",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.067",
+                  "backwardElastK" : "1.6",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "forwardElastK" : "1.44",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "offset" : "-0.067"
+               },
+               {
+                  "offset" : "-0.067",
+                  "backwardElastK" : "2.5",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "offset" : "-0.067",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : 3,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "3.5",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.85",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.067"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "1.44",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.067"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.5",
+                  "offset" : "-0.067"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : 3,
+                  "isLeft" : false,
+                  "offset" : "-0.067"
+               },
+               {
+                  "name" : "Track_VT_R4",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "3.5",
+                  "isLeft" : false
+               }
+            ],
+            "forwardElastK" : 1,
+            "elasticity" : 1372,
+            "damping" : 2,
+            "gravity" : -9
+         }
+      }
+   },
+   "engines" : {
+      "MB-838_CAM-500_1" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "radios" : {
+      "SEM25_1" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.92",
+      "lodDist" : "MEDIUM",
+      "default" : "germany_bundecross"
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : "AAAAAAAA",
+      "loader" : {},
+      "driver" : {}
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Leopard1" : {
+         "tags" : {},
+         "guns" : {
+            "_105mm_BK_L7A3_L51" : "shared"
+         },
+         "weight" : 7718,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G89_Leopard1/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G89_Leopard1/collision/Turret_01.model"
+         },
+         "models" : {
+            "destroyed" : "vehicles/german/G89_Leopard1/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G89_Leopard1/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G89_Leopard1/normal/lod0/Turret_01.model"
+         },
+         "notInShop" : true,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 85,
+            "maxHealth" : 170,
+            "repairCost" : "1.0"
+         },
+         "showEmblemsOnGun" : false,
+         "armor" : {
+            "armor_11" : 40,
+            "armor_1" : 52,
+            "armor_7" : 49,
+            "armor_3" : 40,
+            "armor_13" : 30,
+            "armor_4" : 50,
+            "armor_12" : 50,
+            "armor_10" : 27,
+            "armor_6" : 25,
+            "armor_2" : 60,
+            "armor_15" : 20,
+            "armor_5" : 20,
+            "armor_14" : 49,
+            "armor_8" : "",
+            "armor_9" : 20
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 410,
+         "primaryArmor" : "armor_1 armor_2 armor_2",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 60,
+            "repairCost" : "2.0",
+            "maxHealth" : 120
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.396 0.415 0.621 0.368 0.468 0.500 0.290 0.500 0.315 0.462 0.014",
+         "camouflage" : {
+            "tiling" : "1.12 0.46 0.32 0.000000"
+         },
+         "rotationSpeed" : 36,
+         "maxHealth" : 390,
+         "gunPosition" : "-0.000001 0.4 1.19598",
+         "userString" : "#germany_vehicles:Turret_1_Leopard1",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.26",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1.3575 0.596352 -0.323078",
+                  "rayEnd" : "-1.01396 0.399898 -0.381205"
+               },
+               {
+                  "rayEnd" : "1.01396 0.399898 -0.381205",
+                  "rayStart" : "1.3575 0.596352 -0.323078",
+                  "size" : "0.26",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayEnd" : "-1 0 0",
+                  "rayStart" : "-1.08214 0.56386 0.26541",
+                  "size" : "0.531",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "1.08214 0.56386 0.26541",
+                  "rayEnd" : "1 0 0",
+                  "size" : "0.531",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "price" : 66000,
+         "level" : 10
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.00092121"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   }
+}

@@ -1,0 +1,507 @@
+{
+   "radios" : {
+      "C45" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_GB48_FV215b_183" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 9 0 0 -0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "models" : {
+            "exploded" : "vehicles/british/GB48_FV215b_183/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB48_FV215b_183/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB48_FV215b_183/normal/lod0/Chassis.model"
+         },
+         "trackNodes" : {
+            "enable" : true,
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1",
+            "gravity" : "-9.8",
+            "linkBones" : false,
+            "node" : [
+               {
+                  "backwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : 1,
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : 1,
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : 1,
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : 1,
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               }
+            ],
+            "damping" : 2,
+            "elasticity" : 1200
+         },
+         "maxHealth" : 250,
+         "maxRegenHealth" : 190,
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB48_FV215b_183/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB48_FV215b_183/collision/Chassis.model"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "brakeForce" : 60000,
+         "topRightCarryingPoint" : "1.45453 2.45035",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.26",
+            "vehicleRotation" : "0.26"
+         },
+         "terrainResistance" : "1.8 2 3",
+         "price" : 82500,
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 8,
+                  "template" : "W_L",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "count" : 4
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "count" : 8,
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : 20,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L5",
+                  "syncAngle" : 20,
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : 20,
+                  "name" : "WD_R0"
+               },
+               {
+                  "radius" : "0",
+                  "syncAngle" : 20,
+                  "name" : "WD_R5",
+                  "isLeft" : false,
+                  "isLeading" : true
+               }
+            ]
+         },
+         "weight" : 12000,
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 24,
+         "trackThickness" : "-0.0032",
+         "hullPosition" : "0.000000 1.13387 0.000000",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "count" : 8,
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06"
+               },
+               {
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "count" : 8,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "repairCost" : "5.0",
+         "wwsoundPC" : "treads_type_pc",
+         "maxLoad" : 64000,
+         "tracks" : {
+            "textureScale" : "-1.7",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "notInShop" : true,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB48_FV215b_183/track/segment.model",
+            "segmentModelRight" : "vehicles/british/GB48_FV215b_183/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentLength" : "0.144",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/british/GB48_FV215b_183/track/left.track",
+            "right" : "vehicles/british/GB48_FV215b_183/track/right.track",
+            "segmentOffset" : "0.123"
+         },
+         "rotationIsAroundCenter" : true,
+         "drivingWheels" : "WD_L0 WD_L5",
+         "bulkHealthFactor" : "3.0",
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.48 0.72",
+            "textureSet" : "ussr_01",
+            "bufferPrefs" : "largeTank"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB48_FV215b_183",
+         "tags" : {},
+         "level" : 10,
+         "wwsoundNPC" : "trds_chf_npc"
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0"
+   },
+   "repairCost" : 11,
+   "turrets0" : {
+      "Turret_1_GB48_FV215b_183" : {
+         "maxHealth" : 400,
+         "showEmblemsOnGun" : false,
+         "camouflage" : {
+            "tiling" : "0.67 0.67 0.39 0.31"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB48_FV215b_183/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB48_FV215b_183/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB48_FV215b_183/normal/lod0/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "physicsShape" : "1.021 0.000 0.971 0.000 0.900 -0.071 0.659 0.363 0.469 0.457 0.061 0.536 0.114 0.353 0.232",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 120,
+            "maxRegenHealth" : 60
+         },
+         "armor" : {
+            "armor_2" : "203.2",
+            "armor_16" : "177.8",
+            "armor_6" : "76.2",
+            "armor_4" : "31.8",
+            "armor_10" : "50.8",
+            "armor_11" : 127,
+            "armor_1" : 254,
+            "armor_9" : "50.8",
+            "armor_5" : "44.5",
+            "armor_12" : "228.6",
+            "armor_13" : "139.7",
+            "armor_7" : "101.6",
+            "armor_14" : "101.6",
+            "armor_15" : "228.6",
+            "armor_3" : "177.8",
+            "armor_8" : ""
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1.26446 0.827189 -1.19321",
+                  "rayStart" : "-1.63827 0.883125 -1.32412",
+                  "rayUp" : "-0.0408579 0.992692 0.113549",
+                  "size" : "0.28"
+               },
+               {
+                  "rayEnd" : "1.26446 0.827189 -1.19321",
+                  "hideIfDamaged" : true,
+                  "isMirrored" : true,
+                  "rayUp" : "-0.0408579 0.992692 0.113549",
+                  "size" : "0.28",
+                  "rayStart" : "1.63827 0.883125 -1.32412"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayEnd" : "-1.20205 0.272349 0.598673",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.74",
+                  "rayStart" : "-1.3797 0.304409 0.684765"
+               },
+               {
+                  "rayStart" : "1.31825 0.288455 0.66815",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.74",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "1.22816 0.272945 0.627629"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB48_FV215b_183/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB48_FV215b_183/collision/Turret_01.model"
+         },
+         "price" : 66000,
+         "guns" : {
+            "_183mm_AT_Gun" : "shared"
+         },
+         "circularVisionRadius" : 390,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 85,
+            "maxHealth" : 170,
+            "repairCost" : "1.0"
+         },
+         "weight" : 17000,
+         "notInShop" : true,
+         "rotationSpeed" : 16,
+         "userString" : "#gb_vehicles:Turret_1_GB48_FV215b_183",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "gunPosition" : "0.000000 0.5304 1.5893",
+         "tags" : {},
+         "level" : 10
+      }
+   },
+   "engines" : {
+      "Rolls_Royse_Meteor_Mk12" : "shared"
+   },
+   "emblems" : {
+      "default" : "britain_color",
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM"
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.15",
+      "moving" : "0.068",
+      "still" : "0.113",
+      "firePenalty" : "0.17",
+      "camouflageBonus" : "0.04"
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "gunner" : {},
+      "commander" : "AAAAAAAA"
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : "34.3"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.049459057"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "hull" : {
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 260,
+         "maxRegenHealth" : 180
+      },
+      "armor" : {
+         "armor_8" : "",
+         "armor_3" : "50.8",
+         "armor_1" : "152.4",
+         "armor_11" : "203.2",
+         "armor_7" : 36,
+         "armor_6" : 20,
+         "armor_4" : "38.1",
+         "armor_10" : 254,
+         "armor_9" : 6,
+         "armor_5" : "31.8",
+         "armor_2" : "76.2"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.24 38.00 0.36 1.00 0.04 0.26",
+         "pitchParams" : "0.24 38.00 0.36 1.00 0.04 0.26",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.12"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "0.750186 0.37376 2.77072",
+            "hideIfDamaged" : true,
+            "rayStart" : "0.750244 0.535518 2.88834",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.22"
+         }
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB48_FV215b_183/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB48_FV215b_183/collision/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.695531 -1.5111"
+      },
+      "maxHealth" : 1600,
+      "weight" : 24516,
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB48_FV215b_183/FV215b_183_HangarShadowMap.dds",
+      "models" : {
+         "undamaged" : "vehicles/british/GB48_FV215b_183/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB48_FV215b_183/crash/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB48_FV215b_183/crash/lod0/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_2"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Rolls_Royse_Meteor_Mk12" : {
+               "smplEnginePower" : "845.8249"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB48_FV215b_183" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.161"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.161"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.161"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.161"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.161"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.161"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

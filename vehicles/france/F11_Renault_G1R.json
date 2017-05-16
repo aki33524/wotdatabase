@@ -1,0 +1,882 @@
+{
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "repairCost" : "5.0",
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "still" : "0.253",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.38",
+      "moving" : "0.19"
+   },
+   "speedLimits" : {
+      "forward" : 40,
+      "backward" : 12
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "1.0",
+      "tiling" : "1 1 0 0"
+   },
+   "turrets0" : {
+      "Turret_1_Renault_G1R" : {
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.428 0.105 0.500 0.495 0.500 0.500 0.319 0.712 0.317 0.335 0.229",
+         "rotationSpeed" : 30,
+         "circularVisionRadius" : 330,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F11_Renault_G1R/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F11_Renault_G1R/collision_client/Turret_01.model"
+         },
+         "unlocks" : {
+            "turret" : "Turret_2_Renault_G1R"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "armor" : {
+            "armor_7" : 60,
+            "armor_9" : 40,
+            "armor_4" : 60,
+            "armor_6" : 20,
+            "armor_16" : 40,
+            "armor_12" : 40,
+            "armor_13" : 40,
+            "armor_3" : 60,
+            "armor_15" : 30,
+            "armor_2" : 30,
+            "armor_5" : 20,
+            "armor_14" : 40,
+            "armor_1" : 60,
+            "armor_10" : 60,
+            "armor_8" : ""
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35
+         },
+         "price" : 4000,
+         "userString" : "#france_vehicles:Turret_1_Renault_G1R",
+         "models" : {
+            "exploded" : "vehicles/french/F11_Renault_G1R/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F11_Renault_G1R/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F11_Renault_G1R/crash/lod0/Turret_01.model"
+         },
+         "camouflage" : {
+            "tiling" : "0.37 0.37 0.17 0.000000"
+         },
+         "showEmblemsOnGun" : false,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.24",
+                  "rayStart" : "-1 0 0",
+                  "rayEnd" : "-1 0 0",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "0.805683 0.2437 0.0273378",
+                  "rayEnd" : "0.627272 0.157361 0.000602836",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "guns" : {
+            "_75mm_SA32" : "shared"
+         },
+         "tags" : {},
+         "maxHealth" : 78,
+         "weight" : 3500,
+         "gunPosition" : "-0.002108 0.153941 0.96582",
+         "level" : 4
+      },
+      "Turret_2_Renault_G1R" : {
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "unlocks" : {
+            "gun" : [
+               "_75mm_Long_44",
+               "Canon_de_105_court_mle_1934S_T"
+            ]
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35
+         },
+         "price" : 10100,
+         "armor" : {
+            "armor_13" : 20,
+            "armor_15" : 40,
+            "armor_1" : 60,
+            "armor_10" : 60,
+            "armor_11" : 30,
+            "armor_7" : 60,
+            "armor_9" : 60,
+            "armor_6" : 20,
+            "armor_4" : 60,
+            "armor_16" : 40,
+            "armor_12" : 60,
+            "armor_3" : 60,
+            "armor_2" : 60,
+            "armor_5" : 20,
+            "armor_14" : 60,
+            "armor_8" : ""
+         },
+         "userString" : "#france_vehicles:Turret_2_Renault_G1R",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "rotationSpeed" : 28,
+         "physicsShape" : "1.000 -0.040 1.039 0.000 0.495 -0.085 0.614 0.577 0.395 0.310 0.167 0.500 0.118 0.528 0.168",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F11_Renault_G1R/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/french/F11_Renault_G1R/collision/Turret_02.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "circularVisionRadius" : 350,
+         "invisibilityFactor" : "1.033",
+         "tags" : {},
+         "maxHealth" : 148,
+         "weight" : 5700,
+         "gunPosition" : "-0 0 1",
+         "level" : 5,
+         "models" : {
+            "exploded" : "vehicles/french/F11_Renault_G1R/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/french/F11_Renault_G1R/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/french/F11_Renault_G1R/crash/lod0/Turret_02.model"
+         },
+         "showEmblemsOnGun" : false,
+         "camouflage" : {
+            "tiling" : "0.58 0.58 0.000000 0.000000"
+         },
+         "guns" : {
+            "Canon_de_105_court_mle_1934S_T" : "shared",
+            "_75mm_Long_44" : "shared",
+            "_75mm_SA32" : "shared"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.24",
+                  "rayStart" : "-0.0782383 1.07043 -0.230434",
+                  "rayEnd" : "0.103897 0.98784 -0.232604",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 1",
+                  "rayStart" : "0.736284 0.415818 0.72716",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : true
+               }
+            ]
+         }
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Renault_G1R_2" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_Renault_G1R" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Renault_T13" : {
+               "smplEnginePower" : "422.9124"
+            },
+            "Renault_T12" : {
+               "smplEnginePower" : "370.0484"
+            },
+            "Renault_T14" : {
+               "smplEnginePower" : "475.7765"
+            }
+         }
+      }
+   },
+   "radios" : {
+      "ER_26_ter" : "shared",
+      "ER_27" : "shared",
+      "ER_29" : "shared"
+   },
+   "crew" : {
+      "loader" : {},
+      "radioman" : {},
+      "driver" : {},
+      "commander" : "gunner"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "hangarShadowTexture" : "vehicles/french/F11_Renault_G1R/Renault_G1R_HangarShadowMap.dds",
+      "models" : {
+         "destroyed" : "vehicles/french/F11_Renault_G1R/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F11_Renault_G1R/normal/lod0/Hull.model",
+         "exploded" : "vehicles/french/F11_Renault_G1R/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 85,
+         "maxHealth" : 130,
+         "repairCost" : "1.0"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F11_Renault_G1R/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F11_Renault_G1R/collision_client/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayUp" : "0.162706 -0.00418568 -0.986666",
+               "rayEnd" : "-0.350739 0.0168449 2.06946",
+               "rayStart" : "-0.351195 0.110529 2.10443",
+               "hideIfDamaged" : false,
+               "size" : "0.5"
+            },
+            {
+               "size" : "0.7",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "rayStart" : "1.32261 0.00297844 0.24986",
+               "rayEnd" : "1.22261 0.00297844 0.24986"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.462497 0.430529 1.44737",
+            "rayEnd" : "-0.457961 0.344792 1.39609",
+            "hideIfDamaged" : true,
+            "size" : "0.28"
+         }
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "primaryArmor" : "armor_1 armor_7 armor_4",
+      "weight" : 19140,
+      "armor" : {
+         "armor_12" : 50,
+         "armor_13" : 50,
+         "armor_16" : 60,
+         "armor_3" : 10,
+         "armor_11" : 40,
+         "armor_4" : 60,
+         "armor_6" : 20,
+         "armor_7" : 60,
+         "armor_9" : 40,
+         "armor_10" : 40,
+         "armor_8" : "",
+         "armor_5" : 20,
+         "armor_2" : 40,
+         "armor_1" : 60,
+         "armor_14" : 50
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.59",
+         "rollParams" : "1.00 0.28 34.00 0.42 1.00 0.05 0.30",
+         "pitchParams" : "0.28 34.00 0.42 1.00 0.05 0.30"
+      },
+      "maxHealth" : 312
+   },
+   "engines" : {
+      "Renault_T13" : "shared",
+      "Renault_T14" : "shared",
+      "Renault_T12" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM",
+      "default" : "french_rose"
+   },
+   "chassis" : {
+      "Chassis_Renault_G1R" : {
+         "bulkHealthFactor" : "3.0",
+         "models" : {
+            "undamaged" : "vehicles/french/F11_Renault_G1R/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F11_Renault_G1R/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F11_Renault_G1R/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.4",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "trackNodes" : {
+            "maxOffset" : "0.25",
+            "backwardElastK" : 1,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : 2
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "2.5",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : 3,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "2.5",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 3,
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false
+               }
+            ],
+            "offset" : "0",
+            "damping" : 2,
+            "gravity" : "-9.8",
+            "linkBones" : false,
+            "elasticity" : 1100,
+            "forwardElastK" : 1,
+            "maxAmplitude" : "0.015",
+            "enable" : true
+         },
+         "maxLoad" : 33000,
+         "tags" : {},
+         "repairCost" : "5.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "weight" : 7000,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.28",
+            "vehicleRotation" : "0.28"
+         },
+         "terrainResistance" : "1.1 1.2 2.4",
+         "wwsoundNPC" : "trds_chf_npc",
+         "brakeForce" : 33000,
+         "maxRegenHealth" : 70,
+         "unlocks" : {
+            "chassis" : "Chassis_Renault_G1R_2"
+         },
+         "rotationIsAroundCenter" : false,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.3 0.52",
+            "textureSet" : "usa_02"
+         },
+         "hullPosition" : "0.000000 1.04755 0.000000",
+         "navmeshGirth" : "6.0",
+         "maxHealth" : 90,
+         "wwsoundPC" : "treads_type_pc",
+         "topRightCarryingPoint" : "1.01276 1.62013",
+         "level" : 4,
+         "maxClimbAngle" : 25,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "count" : 6,
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L"
+               },
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.06"
+               }
+            ]
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 6,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 6
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 30,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 30
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 30
+               },
+               {
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : 30
+               }
+            ]
+         },
+         "rotationSpeed" : 28,
+         "splineDesc" : {
+            "segment2ModelRight" : "vehicles/french/F11_Renault_G1R/track/segment_02.model",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/french/F11_Renault_G1R/track/segment_01.model",
+            "segmentModelLeft" : "vehicles/french/F11_Renault_G1R/track/segment_01.model",
+            "segment2Offset" : "0.164",
+            "right" : "vehicles/french/F11_Renault_G1R/track/right.track",
+            "left" : "vehicles/french/F11_Renault_G1R/track/left.track",
+            "segment2ModelLeft" : "vehicles/french/F11_Renault_G1R/track/segment_02.model",
+            "segmentOffset" : "0.157",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.165"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F11_Renault_G1R/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F11_Renault_G1R/collision/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "price" : 4000,
+         "userString" : "#france_vehicles:Chassis_Renault_G1R",
+         "trackThickness" : "-0.0344"
+      },
+      "Chassis_Renault_G1R_2" : {
+         "rotationIsAroundCenter" : false,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "brakeForce" : 36000,
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxRegenHealth" : 75,
+         "weight" : 7000,
+         "tags" : {},
+         "repairCost" : "5.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "terrainResistance" : "1 1.1 2.1",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "tracks" : {
+            "textureScale" : "-1.4",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxLoad" : 36000,
+         "trackNodes" : {
+            "forwardElastK" : 1,
+            "maxAmplitude" : "0.015",
+            "linkBones" : false,
+            "elasticity" : 1100,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "offset" : "0",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 2
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "2.5",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : 3,
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : 2
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "2.5",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : 3,
+                  "backwardElastK" : "0.9"
+               }
+            ],
+            "backwardElastK" : 1,
+            "maxOffset" : "0.25",
+            "damping" : 2
+         },
+         "bulkHealthFactor" : "3.0",
+         "models" : {
+            "destroyed" : "vehicles/french/F11_Renault_G1R/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F11_Renault_G1R/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F11_Renault_G1R/normal/lod0/Chassis.model"
+         },
+         "price" : 9600,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "userString" : "#france_vehicles:Chassis_Renault_G1R_2",
+         "trackThickness" : "-0.0344",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "template" : "WD_R"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 6
+               }
+            ],
+            "wheel" : [
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 30,
+                  "name" : "WD_R4"
+               },
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               }
+            ]
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "count" : 6,
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L"
+               },
+               {
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.06",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F11_Renault_G1R/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F11_Renault_G1R/collision_client/Chassis.model"
+         },
+         "rotationSpeed" : 30,
+         "splineDesc" : {
+            "segmentLength" : "0.165",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.157",
+            "left" : "vehicles/french/F11_Renault_G1R/track/left.track",
+            "right" : "vehicles/french/F11_Renault_G1R/track/right.track",
+            "segment2ModelLeft" : "vehicles/french/F11_Renault_G1R/track/segment_02.model",
+            "segment2Offset" : "0.164",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/french/F11_Renault_G1R/track/segment_01.model",
+            "segmentModelRight" : "vehicles/french/F11_Renault_G1R/track/segment_01.model",
+            "segment2ModelRight" : "vehicles/french/F11_Renault_G1R/track/segment_02.model"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "maxHealth" : 100,
+         "level" : 5,
+         "maxClimbAngle" : 25,
+         "topRightCarryingPoint" : "1.01276 1.62013",
+         "hullPosition" : "0.000000 1.04755 0.000000",
+         "traces" : {
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "size" : "0.3 0.52",
+            "bufferPrefs" : "mediumTank"
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.928175316"
+   }
+}

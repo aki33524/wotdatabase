@@ -1,0 +1,541 @@
+{
+   "clientAdjustmentFactors" : {},
+   "emblems" : {
+      "alpha" : 1,
+      "default" : "usa_star",
+      "lodDist" : "MEDIUM"
+   },
+   "chassis" : {
+      "Chassis_A115_Chrysler_K" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.07",
+                  "isLeft" : true,
+                  "count" : 8,
+                  "startIndex" : "",
+                  "maxOffset" : "0.07",
+                  "template" : "Track_L"
+               },
+               {
+                  "maxOffset" : "0.07",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 8,
+                  "minOffset" : "-0.07"
+               }
+            ]
+         },
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L1",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0.312",
+                  "startIndex" : "",
+                  "count" : 8,
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.312",
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "syncAngle" : "27.6923",
+                  "radius" : "0.39355",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0.312",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "name" : "WD_L0",
+                  "syncAngle" : "27.6923",
+                  "radius" : "0.39355",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0.312",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "syncAngle" : "27.6923"
+               }
+            ]
+         },
+         "price" : 30000,
+         "maxRegenHealth" : 165,
+         "models" : {
+            "destroyed" : "vehicles/american/A115_Chrysler_K/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A115_Chrysler_K/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A115_Chrysler_K/crash/lod0/Chassis.model"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "notInShop" : true,
+         "rotationSpeed" : 32,
+         "maxClimbAngle" : 25,
+         "rotationIsAroundCenter" : true,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A115_Chrysler_K/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A115_Chrysler_K/collision/Chassis.model"
+         },
+         "trackNodes" : {
+            "gravity" : "-9.8",
+            "elasticity" : 1050,
+            "enable" : true,
+            "damping" : 2,
+            "maxAmplitude" : "0.075",
+            "maxOffset" : "0.075",
+            "node" : [
+               {
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L1",
+                  "offset" : "-0.19"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.269",
+                  "leftSibling" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.9"
+               },
+               {
+                  "leftSibling" : "Track_VT_L1",
+                  "offset" : "-0.284",
+                  "rightSibling" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.8",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L4",
+                  "leftSibling" : "Track_VT_L2",
+                  "offset" : "-0.297",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "1.7"
+               },
+               {
+                  "rightSibling" : "Track_VT_L5",
+                  "offset" : "-0.28",
+                  "leftSibling" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L6",
+                  "leftSibling" : "Track_VT_L4",
+                  "offset" : "-0.25",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "rightSibling" : "Track_VT_L7",
+                  "offset" : "-0.224",
+                  "leftSibling" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L6",
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L7",
+                  "forwardElastK" : "1.3",
+                  "isLeft" : true,
+                  "offset" : "-0.176",
+                  "leftSibling" : "Track_VT_L6"
+               },
+               {
+                  "offset" : "-0.19",
+                  "rightSibling" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "offset" : "-0.269",
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "1.9",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.284",
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R4",
+                  "offset" : "-0.297",
+                  "leftSibling" : "Track_VT_R2",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.7",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "offset" : "-0.28",
+                  "leftSibling" : "Track_VT_R3",
+                  "rightSibling" : "Track_VT_R5",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R5",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "offset" : "-0.25",
+                  "leftSibling" : "Track_VT_R4",
+                  "rightSibling" : "Track_VT_R6"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.224",
+                  "leftSibling" : "Track_VT_R5",
+                  "rightSibling" : "Track_VT_R7",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.4",
+                  "name" : "Track_VT_R6"
+               },
+               {
+                  "name" : "Track_VT_R7",
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.176",
+                  "leftSibling" : "Track_VT_R6",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "linkBones" : true
+         },
+         "traces" : {
+            "size" : "0.6 0.91",
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "t97",
+            "lodDist" : "FAR"
+         },
+         "weight" : 10000,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "level" : 8,
+         "repairCost" : "5.0",
+         "maxLoad" : 63000,
+         "hullPosition" : "0.000000 1.05629 0.000000",
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "userString" : "#usa_vehicles:Chassis_A115_Chrysler_K",
+         "trackThickness" : "-0.0043",
+         "topRightCarryingPoint" : "1.57065 2.51932",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.37",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "brakeForce" : 60000,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/american/A115_Chrysler_K/track/segment1.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segment2ModelRight" : "vehicles/american/A115_Chrysler_K/track/segment2.model",
+            "segmentModelLeft" : "vehicles/american/A115_Chrysler_K/track/segment1.model",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.166",
+            "right" : "vehicles/american/A115_Chrysler_K/track/right.track",
+            "segment2ModelLeft" : "vehicles/american/A115_Chrysler_K/track/segment2.model",
+            "segmentOffset" : "0.222",
+            "left" : "vehicles/american/A115_Chrysler_K/track/left.track",
+            "segment2Offset" : "0.082"
+         },
+         "maxHealth" : 220,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 8 -0 0 0"
+            }
+         },
+         "terrainResistance" : "1 1.1 2",
+         "navmeshGirth" : "6.0"
+      }
+   },
+   "speedLimits" : {
+      "forward" : 35,
+      "backward" : 14
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.02",
+      "moving" : "0.056",
+      "firePenalty" : "0.11",
+      "still" : "0.093",
+      "camouflageNetBonus" : "0.05"
+   },
+   "radios" : {
+      "SCR_528A1" : "shared"
+   },
+   "engines" : {
+      "Chrysler_1200_HP" : "shared"
+   },
+   "repairCost" : "4.5",
+   "turrets0" : {
+      "Turret_1_A115_Chrysler_K" : {
+         "userString" : "#usa_vehicles:Turret_1_A115_Chrysler_K",
+         "gunPosition" : "-0.000025 0.491709 1.40896",
+         "notInShop" : true,
+         "guns" : {
+            "_105mm_Gun_T5E1_2" : "shared"
+         },
+         "rotationSpeed" : 24,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "models" : {
+            "destroyed" : "vehicles/american/A115_Chrysler_K/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A115_Chrysler_K/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A115_Chrysler_K/crash/lod0/Turret_01.model"
+         },
+         "physicsShape" : "0.960 -0.013 1.027 0.000 0.607 0.084 0.610 0.560 0.483 0.470 0.380 0.550 0.397 0.510 0.070",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "price" : 30000,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 160,
+            "maxRegenHealth" : 80
+         },
+         "tags" : {},
+         "showEmblemsOnGun" : false,
+         "camouflage" : {
+            "tiling" : "1.2 1.2 0.000000 0.000000"
+         },
+         "armor" : {
+            "armor_6" : "25.4",
+            "armor_14" : "50.8",
+            "armor_16" : "152.4",
+            "armor_1" : 254,
+            "armor_5" : "38.1",
+            "armor_10" : "228.6",
+            "armor_8" : "",
+            "armor_15" : "101.6",
+            "armor_2" : "241.3",
+            "armor_9" : "203.2",
+            "armor_3" : 127,
+            "armor_13" : "63.5",
+            "armor_12" : "76.2",
+            "armor_4" : "88.9",
+            "armor_7" : "177.8",
+            "armor_11" : "139.7"
+         },
+         "level" : 8,
+         "circularVisionRadius" : 380,
+         "weight" : 10000,
+         "emblemSlots" : {},
+         "maxHealth" : 300,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 110,
+            "maxRegenHealth" : 55
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A115_Chrysler_K/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A115_Chrysler_K/collision_client/Turret_01.model"
+         }
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "1.6"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_A115_Chrysler_K" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Chrysler_1200_HP" : {
+               "smplEnginePower" : 1100
+            }
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.930443 0.605958 2.99129",
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.930443 0.432787 2.89122",
+            "size" : "0.35"
+         }
+      },
+      "maxHealth" : 1200,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "swinging" : {
+         "pitchParams" : "0.22 38.00 0.48 1.00 0.05 0.34",
+         "sensitivityToImpulse" : "0.24",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.24 38.00 0.48 1.00 0.06 0.40"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/american/A115_Chrysler_K/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/american/A115_Chrysler_K/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/american/A115_Chrysler_K/Chrysler_K_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "2 2 0.000000 0.000000"
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "armor" : {
+         "armor_3" : "101.6",
+         "armor_9" : "19.1",
+         "armor_6" : "25.4",
+         "armor_2" : "184.2",
+         "armor_8" : "",
+         "armor_10" : "82.6",
+         "armor_1" : "152.4",
+         "armor_4" : "76.2",
+         "armor_7" : "101.6",
+         "armor_5" : "38.1"
+      },
+      "weight" : 35709,
+      "turretPositions" : {
+         "turret" : "0.000025 0.86605 -1.95431"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 190,
+         "maxHealth" : 280,
+         "repairCost" : "1.0"
+      },
+      "models" : {
+         "undamaged" : "vehicles/american/A115_Chrysler_K/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A115_Chrysler_K/crash/lod0/Hull.model",
+         "exploded" : "vehicles/american/A115_Chrysler_K/crash/lod0/Hull.model"
+      }
+   },
+   "customDefaultCamouflage" : true,
+   "crewXpFactor" : "1.5",
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "loader" : {},
+      "gunner" : {},
+      "driver" : {}
+   },
+   "premiumVehicleXPFactor" : "0.1"
+}

@@ -1,0 +1,494 @@
+{
+   "crewXpFactor" : "1.5",
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6",
+      "exclusionMask" : {}
+   },
+   "crew" : {
+      "commander" : {},
+      "driver" : {},
+      "loader" : "AAAAAAAA",
+      "gunner" : {}
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM",
+      "default" : "britain_color"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB87_Chieftain_T95_turret" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Leyland_L60_No_4" : {
+               "smplEnginePower" : "792.9609"
+            }
+         }
+      }
+   },
+   "repairCost" : "8.5",
+   "turrets0" : {
+      "Turret_1_GB87_Chieftain_T95_turret" : {
+         "weight" : 10200,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB87_Chieftain_T95_turret/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB87_Chieftain_T95_turret/collision/Turret_01.model"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-1 0 1",
+                  "rayStart" : "-0.837505 0.622196 0.72851",
+                  "size" : "0.24",
+                  "rayUp" : "0.752227 0.24774 -0.610557",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayEnd" : "1 0 1",
+                  "rayStart" : "1 1 1",
+                  "size" : "0.24",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "inscription" : [
+               {
+                  "size" : "0.683",
+                  "rayUp" : "0.776761 0.629553 -0.0174624",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1.00555 0.472102 -0.19563",
+                  "rayStart" : "-1.12816 0.622443 -0.195028"
+               },
+               {
+                  "rayEnd" : "1.13764 0.312637 -0.218376",
+                  "rayStart" : "1.3056 0.40743 -0.239353",
+                  "size" : "0.683",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "-0.00351588 0.999536 -0.0302468"
+               }
+            ]
+         },
+         "tags" : {},
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 70,
+            "maxHealth" : 140
+         },
+         "primaryArmor" : "armor_2 armor_12 armor_4",
+         "notInShop" : true,
+         "guns" : {
+            "_90mm_Gun_T208_rifled" : "shared"
+         },
+         "price" : 30000,
+         "rotationSpeed" : 36,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "maxHealth" : 280,
+         "circularVisionRadius" : 380,
+         "gunPosition" : "0.000499 0.365597 1.3023",
+         "camouflage" : {
+            "tiling" : "0.64 0.64 0.000000 0.000000"
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.538 0.133 0.766 0.646 0.445 0.500 0.355 0.500 0.000 0.100 0.310",
+         "showEmblemsOnGun" : false,
+         "models" : {
+            "destroyed" : "vehicles/british/GB87_Chieftain_T95_turret/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB87_Chieftain_T95_turret/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB87_Chieftain_T95_turret/normal/lod0/Turret_01.model"
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB87_Chieftain_T95_turret",
+         "armor" : {
+            "armor_7" : "114.3",
+            "armor_11" : "76.2",
+            "armor_5" : "38.1",
+            "armor_6" : "38.1",
+            "armor_1" : "355.6",
+            "armor_10" : "101.6",
+            "armor_3" : "63.5",
+            "armor_14" : "165.1",
+            "armor_12" : "88.9",
+            "armor_13" : "139.7",
+            "armor_4" : "50.8",
+            "armor_15" : "152.4",
+            "armor_2" : 254,
+            "armor_8" : "",
+            "armor_9" : 127
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100,
+            "repairCost" : "1.0"
+         },
+         "level" : 8
+      }
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB87_Chieftain_T95_turret/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB87_Chieftain_T95_turret/collision_client/Hull.model"
+      },
+      "weight" : 24732,
+      "hangarShadowTexture" : "vehicles/british/GB87_Chieftain_T95_turret/Chieftain_T95_HangarShadowMap.dds",
+      "swinging" : {
+         "rollParams" : "1.00 0.20 32.00 0.38 1.00 0.04 0.28",
+         "sensitivityToImpulse" : "0.34",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.20 32.00 0.38 1.00 0.04 0.28"
+      },
+      "turretPositions" : {
+         "turret" : "-0 1 1"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.297381 0.307868 2.99829",
+            "rayEnd" : "-0.298011 0.118875 2.93287",
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.24"
+         }
+      },
+      "models" : {
+         "exploded" : "vehicles/british/GB87_Chieftain_T95_turret/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB87_Chieftain_T95_turret/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB87_Chieftain_T95_turret/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_9" : 6,
+         "armor_15" : 85,
+         "armor_8" : "",
+         "armor_12" : 127,
+         "armor_3" : "50.8",
+         "armor_10" : 85,
+         "armor_1" : 85,
+         "armor_7" : "38.1",
+         "armor_11" : "44.5",
+         "armor_4" : "25.4",
+         "armor_2" : "76.2",
+         "armor_14" : "101.6",
+         "armor_13" : "114.3",
+         "armor_6" : 17,
+         "armor_5" : "19.1",
+         "armor_16" : "152.4"
+      },
+      "exhaust" : {
+         "pixie" : "diesel_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2 HP_Track_Exhaus_3"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 150,
+         "maxHealth" : 220,
+         "repairCost" : "1.0"
+      },
+      "camouflage" : {
+         "tiling" : "1.06 1.06 0.000000 0.000000"
+      },
+      "maxHealth" : 1120
+   },
+   "radios" : {
+      "C42_B47" : "shared"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.179",
+      "moving" : "0.09",
+      "still" : "0.119",
+      "camouflageNetBonus" : "0.1"
+   },
+   "speedLimits" : {
+      "forward" : 42,
+      "backward" : 15
+   },
+   "chassis" : {
+      "Chassis_GB87_Chieftain_T95_turret" : {
+         "wwsoundPC" : "treads_type_pc",
+         "rotationIsAroundCenter" : true,
+         "models" : {
+            "undamaged" : "vehicles/british/GB87_Chieftain_T95_turret/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB87_Chieftain_T95_turret/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB87_Chieftain_T95_turret/crash/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 150,
+         "maxLoad" : 60000,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "syncAngle" : 30,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R4",
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 30,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L4",
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "count" : 6
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "radius" : "0",
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "template" : "W_L"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "size" : "0.44 0.6",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR"
+         },
+         "level" : 8,
+         "userString" : "#gb_vehicles:Chassis_GB87_Chieftain_T95_turret",
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB87_Chieftain_T95_turret/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB87_Chieftain_T95_turret/collision_client/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 11800,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.56",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "brakeForce" : 50000,
+         "trackNodes" : {
+            "elasticity" : 1200,
+            "damping" : 2,
+            "backwardElastK" : 1,
+            "enable" : true,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.065",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 1
+               },
+               {
+                  "offset" : "-0.065",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.065",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.065"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.6",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "backwardElastK" : "0.6",
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.065",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.065",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.065"
+               },
+               {
+                  "offset" : "-0.065",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               }
+            ],
+            "gravity" : "-9.8",
+            "forwardElastK" : 1,
+            "linkBones" : false,
+            "offset" : "0",
+            "maxAmplitude" : "0.05",
+            "maxOffset" : "0.05"
+         },
+         "splineDesc" : {
+            "left" : "vehicles/british/GB87_Chieftain_T95_turret/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/british/GB87_Chieftain_T95_turret/track/segment.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.164",
+            "segmentLength" : "0.156",
+            "right" : "vehicles/british/GB87_Chieftain_T95_turret/track/right.track",
+            "segmentModelLeft" : "vehicles/british/GB87_Chieftain_T95_turret/track/segment.model"
+         },
+         "maxClimbAngle" : 25,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "hullPosition" : "0.000000 1.07847 0.000000",
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.18",
+            "vehicleRotation" : "0.18"
+         },
+         "price" : 30000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "count" : 6,
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "count" : 6,
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "notInShop" : true,
+         "trackThickness" : "-0.0079",
+         "topRightCarryingPoint" : "1.34524 2.31032",
+         "repairCost" : "7.5",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 9 0 0 -0"
+            }
+         },
+         "terrainResistance" : "0.8 1 1.8",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "maxHealth" : 200,
+         "navmeshGirth" : "6.0",
+         "bulkHealthFactor" : "3.0",
+         "rotationSpeed" : 40
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : "collision"
+   },
+   "engines" : {
+      "Leyland_L60_No_4" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.059943384"
+   },
+   "premiumVehicleXPFactor" : "0.1"
+}

@@ -1,0 +1,818 @@
+{
+   "invisibility" : {
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.29",
+      "camouflageBonus" : "0.02",
+      "still" : "0.193",
+      "moving" : "0.097"
+   },
+   "chassis" : {
+      "Chassis_Lorraine155_51" : {
+         "maxLoad" : 33000,
+         "unlocks" : {
+            "chassis" : "Chassis_Lorraine155_51_2"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.5 0.72",
+            "bufferPrefs" : "mediumTank"
+         },
+         "userString" : "#france_vehicles:Chassis_Lorraine155_51",
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 7,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.8",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "rotationIsAroundCenter" : true,
+         "drivingWheels" : "WD_L0 WD_L5",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "minOffset" : "-0.0663366",
+                  "isLeft" : true,
+                  "maxOffset" : "0.0762376",
+                  "count" : 5
+               },
+               {
+                  "count" : 5,
+                  "maxOffset" : "0.0762376",
+                  "isLeft" : false,
+                  "minOffset" : "-0.0663366",
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "models" : {
+            "exploded" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F25_Lorraine155_51/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Chassis.model"
+         },
+         "trackThickness" : "-0.0263",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F25_Lorraine155_51/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F25_Lorraine155_51/collision/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "topRightCarryingPoint" : "1.38079 1.8872",
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "price" : 20080,
+         "maxRegenHealth" : 90,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R0"
+               },
+               {
+                  "syncAngle" : "21.1765",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_R5",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L5",
+                  "radius" : "0",
+                  "syncAngle" : "21.1765",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 4
+               },
+               {
+                  "count" : 5,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_R"
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 4
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 5
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "hullPosition" : "0.000000 0.99182 0.000000",
+         "trackNodes" : {
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "node" : [
+               {
+                  "offset" : "0",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "offset" : "0",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2
+               },
+               {
+                  "offset" : "-0.103",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.054",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.4",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "offset" : "-0.054"
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.8",
+                  "offset" : "-0.054",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "offset" : "-0.143",
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "offset" : "-0.103",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "offset" : "-0.054",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "1.4",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.054",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.054",
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "offset" : "-0.143",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.7"
+               }
+            ],
+            "enable" : true,
+            "maxAmplitude" : "0.03",
+            "linkBones" : false,
+            "maxOffset" : "0.03",
+            "elasticity" : 1100
+         },
+         "weight" : 15000,
+         "terrainResistance" : "1.3 1.5 2.5",
+         "splineDesc" : {
+            "segmentLength" : "0.137",
+            "segmentOffset" : "0.213",
+            "segmentModelRight" : "vehicles/french/F25_Lorraine155_51/track/segment1.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/french/F25_Lorraine155_51/track/left.track",
+            "right" : "vehicles/french/F25_Lorraine155_51/track/right.track",
+            "segmentModelLeft" : "vehicles/french/F25_Lorraine155_51/track/segment1.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "repairCost" : "5.0",
+         "tags" : {},
+         "maxHealth" : 120,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.33",
+            "vehicleRotation" : "0.33"
+         },
+         "maxClimbAngle" : 25,
+         "brakeForce" : 30000,
+         "rotationSpeed" : 25,
+         "navmeshGirth" : "6.0"
+      },
+      "Chassis_Lorraine155_51_2" : {
+         "level" : 8,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.8"
+         },
+         "rotationIsAroundCenter" : true,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 5,
+                  "maxOffset" : "0.0762376",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "minOffset" : "-0.0663366"
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.0663366",
+                  "isLeft" : false,
+                  "maxOffset" : "0.0762376",
+                  "count" : 5
+               }
+            ]
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "bulkHealthFactor" : "3.0",
+         "models" : {
+            "destroyed" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F25_Lorraine155_51/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Chassis.model"
+         },
+         "trackThickness" : "-0.0263",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F25_Lorraine155_51/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F25_Lorraine155_51/collision/Chassis.model"
+         },
+         "maxLoad" : 36500,
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.5 0.72",
+            "bufferPrefs" : "mediumTank"
+         },
+         "userString" : "#france_vehicles:Chassis_Lorraine155_51_2",
+         "wwsoundPC" : "treads_type_pc",
+         "splineDesc" : {
+            "right" : "vehicles/french/F25_Lorraine155_51/track/right.track",
+            "left" : "vehicles/french/F25_Lorraine155_51/track/left.track",
+            "segmentModelLeft" : "vehicles/french/F25_Lorraine155_51/track/segment1.model",
+            "segmentModelRight" : "vehicles/french/F25_Lorraine155_51/track/segment1.model",
+            "segmentLength" : "0.137",
+            "segmentOffset" : "0.201",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            }
+         },
+         "terrainResistance" : "1.2 1.4 2.3",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "repairCost" : "5.0",
+         "tags" : {},
+         "maxHealth" : 130,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.3",
+            "vehicleMovement" : "0.3"
+         },
+         "brakeForce" : 33000,
+         "maxClimbAngle" : 25,
+         "rotationSpeed" : 28,
+         "navmeshGirth" : "6.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "topRightCarryingPoint" : "1.38079 1.8872",
+         "price" : 33000,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "maxRegenHealth" : 100,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "syncAngle" : "21.1765",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765",
+                  "name" : "WD_R5",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765",
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L5",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 4,
+                  "template" : "WD_R",
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 5,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_R"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 4,
+                  "startIndex" : 1,
+                  "template" : "WD_L"
+               },
+               {
+                  "count" : 5,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "W_L"
+               }
+            ]
+         },
+         "hullPosition" : "0.000000 0.99182 0.000000",
+         "trackNodes" : {
+            "maxOffset" : "0.03",
+            "linkBones" : false,
+            "elasticity" : 1100,
+            "maxAmplitude" : "0.03",
+            "damping" : 2,
+            "gravity" : "-9.8",
+            "node" : [
+               {
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "offset" : "0"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "offset" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.103",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "forwardElastK" : "0.8",
+                  "offset" : "-0.054",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "offset" : "-0.054",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "offset" : "-0.054"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.143",
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.103",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "offset" : "-0.054",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "1.4",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.8",
+                  "offset" : "-0.054",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.054",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.143",
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.7"
+               }
+            ],
+            "enable" : true
+         },
+         "weight" : 15000
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6"
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "repairCost" : "25.43",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.738580048"
+   },
+   "speedLimits" : {
+      "forward" : 60,
+      "backward" : 14
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Lorraine155_51_2" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_Lorraine155_51" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Maybach_HL_230_TRM_P30" : {
+               "smplEnginePower" : "740.0968"
+            },
+            "Maybach_850CV" : {
+               "smplEnginePower" : "898.689"
+            }
+         }
+      }
+   },
+   "hull" : {
+      "swinging" : {
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.68"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F25_Lorraine155_51/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F25_Lorraine155_51/collision_client/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "chanceToHit" : "0.50",
+         "maxHealth" : 120,
+         "maxRegenHealth" : 60
+      },
+      "models" : {
+         "exploded" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F25_Lorraine155_51/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "-0.000080 -0.01727 1.91279"
+      },
+      "weight" : 13605,
+      "armor" : {
+         "armor_3" : 30,
+         "armor_2" : 40,
+         "armor_1" : 40,
+         "armor_10" : 30,
+         "armor_6" : 20,
+         "armor_4" : 25,
+         "armor_7" : 20,
+         "armor_5" : 30,
+         "armor_8" : 20,
+         "armor_9" : ""
+      },
+      "maxHealth" : 312,
+      "camouflage" : {
+         "tiling" : "2 2 0.000000 0.000000"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayStart" : "1.59996 0.492738 0.405334",
+               "rayEnd" : "1.39996 0.492738 0.405334",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "size" : "0.896"
+            },
+            {
+               "hideIfDamaged" : false,
+               "size" : "0.896",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.39996 0.492738 0.405334",
+               "rayStart" : "-1.59996 0.492738 0.405334"
+            }
+         ],
+         "player" : [
+            {
+               "rayStart" : "1.44818 1.37249 -0.0829163",
+               "hideIfDamaged" : true,
+               "size" : "0.3",
+               "isMirrored" : true,
+               "rayEnd" : "1.28047 1.26353 -0.0829163",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "size" : "0.3",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.28047 1.26353 -0.0829163",
+               "rayStart" : "-1.44818 1.37249 -0.0829163"
+            }
+         ],
+         "clan" : {
+            "rayStart" : "0.39637 0.154222 2.88641",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "0.39637 0.0154582 2.74238",
+            "size" : "0.3",
+            "hideIfDamaged" : true
+         }
+      },
+      "hangarShadowTexture" : "vehicles/french/F25_Lorraine155_51/Lorraine155_5_HangarShadowMap.dds",
+      "primaryArmor" : "armor_1 armor_3 armor_4"
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "commander" : "AAAAAAAA"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "engines" : {
+      "Maybach_850CV" : "shared",
+      "Maybach_HL_230_TRM_P30" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "emblems" : {
+      "default" : "french_rose",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.86"
+   },
+   "radios" : {
+      "SCR_508" : "shared",
+      "SCR_528" : "shared"
+   },
+   "turrets0" : {
+      "Turret_2_Lorraine155_51" : {
+         "weight" : 170,
+         "circularVisionRadius" : 270,
+         "userString" : "#france_vehicles:Turret_2_Lorraine155_51",
+         "guns" : {
+            "Canon_de_155mm_L_GPF" : "shared",
+            "Obusier_de_155mm_mle.1950" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_04",
+         "armor" : {
+            "armor_2" : 10,
+            "armor_1" : 10
+         },
+         "price" : 20000,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F25_Lorraine155_51/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F25_Lorraine155_51/crash/lod0/Turret_01.model"
+         },
+         "ceilless" : true,
+         "gunPosition" : "0 1 -1",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F25_Lorraine155_51/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F25_Lorraine155_51/collision_client/Turret_01.model"
+         },
+         "notInShop" : true,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "rotationSpeed" : 14,
+         "physicsShape" : "0.995 0.002 1.008 0.000 1.027 -0.020 0.667 0.625 0.252 0.500 0.000 0.500 0.000 0.000 0.000",
+         "tags" : "AAAAAAAAAAAA",
+         "showEmblemsOnGun" : false,
+         "level" : 8,
+         "camouflage" : {
+            "tiling" : "1 0.5 0.000000 0.000000"
+         },
+         "maxHealth" : 78,
+         "emblemSlots" : {}
+      }
+   }
+}

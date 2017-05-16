@@ -1,0 +1,617 @@
+{
+   "crewXpFactor" : "1.0",
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.9",
+      "default" : "french_rose"
+   },
+   "engines" : {
+      "Saurer" : "shared"
+   },
+   "hull" : {
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "turretPositions" : {
+         "turret" : "-0.0044 0.527809 2.16238"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/french/F64_AMX_50Fosh_155/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/french/F64_AMX_50Fosh_155/collision/Hull.model"
+      },
+      "exhaust" : {
+         "tags" : {
+            "diesel" : "diesel_large"
+         },
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "models" : {
+         "destroyed" : "vehicles/french/F64_AMX_50Fosh_155/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F64_AMX_50Fosh_155/normal/lod0/Hull.model",
+         "exploded" : "vehicles/french/F64_AMX_50Fosh_155/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_32" : 50,
+         "armor_8" : "",
+         "armor_16" : 200,
+         "armor_14" : 175,
+         "armor_26" : 100,
+         "armor_1" : 180,
+         "armor_13" : 150,
+         "armor_2" : 100,
+         "armor_7" : 20,
+         "armor_15" : 140,
+         "armor_30" : 120,
+         "armor_28" : 50,
+         "armor_31" : 175,
+         "armor_20" : 50,
+         "armor_10" : 180,
+         "armor_27" : 200,
+         "armor_3" : 40,
+         "armor_5" : 30,
+         "armor_4" : 40,
+         "armor_12" : 30,
+         "armor_25" : 40,
+         "armor_29" : 40,
+         "armor_21" : 170,
+         "armor_9" : 50,
+         "armor_17" : 130,
+         "armor_11" : 40,
+         "armor_6" : 30
+      },
+      "weight" : 40300,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.17",
+         "rollParams" : "1.00 0.24 35.00 0.35 1.00 0.04 0.25",
+         "pitchParams" : "0.24 35.00 0.35 1.00 0.04 0.25"
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "rayEnd" : "-1.37932 0.741666 -1.66023",
+               "size" : "0.32",
+               "hideIfDamaged" : false,
+               "rayStart" : "-1.57262 0.793006 -1.66016",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "size" : "0.32",
+               "isMirrored" : true,
+               "rayEnd" : "1.37836 0.744147 -1.63751",
+               "rayStart" : "1.57154 0.795944 -1.63755",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            }
+         ],
+         "inscription" : [
+            {
+               "size" : "0.78",
+               "rayEnd" : "1.27768 0.733868 -0.231414",
+               "rayStart" : "1.6641 0.837234 -0.231431",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true
+            },
+            {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.56749 0.811392 -0.231427",
+               "size" : "0.78",
+               "rayEnd" : "-1.37428 0.75971 -0.231418"
+            }
+         ],
+         "clan" : {
+            "rayStart" : "0.956516 0.768805 1.82196",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "rayEnd" : "0.960751 0.606947 1.70455",
+            "size" : "0.32"
+         }
+      },
+      "hangarShadowTexture" : "vehicles/french/F64_AMX_50Fosh_155/AMX_50Fosh_155_HangarShadowMap.dds",
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 180,
+         "repairCost" : "1.0",
+         "maxHealth" : 260
+      },
+      "maxHealth" : 1480
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.16343034",
+      "guns" : {
+         "_155mm_SA_58_AC" : {
+            "delta" : "1"
+         }
+      }
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : {},
+      "gunner" : {},
+      "commander" : "AAAAAAAA"
+   },
+   "turrets0" : {
+      "Turret_1_AMX_50Fosh_155" : {
+         "showEmblemsOnGun" : false,
+         "guns" : {
+            "_155mm_SA_58_AC" : "shared"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F64_AMX_50Fosh_155/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F64_AMX_50Fosh_155/collision_client/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "price" : 100,
+         "level" : 10,
+         "emblemSlots" : {},
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 120,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 60
+         },
+         "gunPosition" : "0 0 0",
+         "rotationSpeed" : 26,
+         "notInShop" : true,
+         "userString" : "#france_vehicles:Turret_1_AMX_50Fosh_155",
+         "tags" : "AAAAAAAAAAAA",
+         "models" : {
+            "undamaged" : "vehicles/french/F64_AMX_50Fosh_155/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F64_AMX_50Fosh_155/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F64_AMX_50Fosh_155/crash/lod0/Turret_01.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_07",
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "circularVisionRadius" : 380,
+         "armor" : {
+            "armor_1" : ""
+         },
+         "weight" : 170,
+         "maxHealth" : 370
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.365",
+      "moving" : "0.146",
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04",
+      "still" : "0.243"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_AMX_50Fosh_155_2" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Saurer" : {
+               "smplEnginePower" : "1057.281"
+            }
+         }
+      }
+   },
+   "repairCost" : "11.32",
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "camouflage" : {
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/french/F64_AMX_50Fosh_155/AMX_50Fosh_155_chassis_01_AM.dds"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "chassis" : {
+      "Chassis_AMX_50Fosh_155_2" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "minOffset" : "-0.0785124",
+                  "isLeft" : true,
+                  "maxOffset" : "0.0785124",
+                  "startIndex" : "",
+                  "count" : 9
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 9,
+                  "minOffset" : "-0.0785124",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "maxOffset" : "0.0785124"
+               }
+            ]
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 9,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 9,
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "22.5",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.11281",
+                  "name" : "WD_R1"
+               },
+               {
+                  "syncAngle" : "22.5",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_R2"
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "22.5",
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "name" : "WD_L1",
+                  "radius" : "0.11281",
+                  "isLeft" : true,
+                  "isLeading" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L2",
+                  "isLeft" : true,
+                  "syncAngle" : "22.5",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "price" : 82500,
+         "repairCost" : "5.0",
+         "navmeshGirth" : "6.0",
+         "trackThickness" : "-0.0465",
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F64_AMX_50Fosh_155/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F64_AMX_50Fosh_155/collision/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "tags" : {},
+         "hullPosition" : "0.000000 1.13999 0.000000",
+         "maxRegenHealth" : 225,
+         "terrainResistance" : "1.4 1.6 2.4",
+         "splineDesc" : {
+            "segmentOffset" : "0.107",
+            "left" : "vehicles/french/F64_AMX_50Fosh_155/track/left.track",
+            "right" : "vehicles/french/F64_AMX_50Fosh_155/track/right.track",
+            "segmentModelLeft" : "vehicles/french/F64_AMX_50Fosh_155/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentLength" : "0.158",
+            "segmentModelRight" : "vehicles/french/F64_AMX_50Fosh_155/track/segment.model"
+         },
+         "armor" : {
+            "rightTrack" : 30,
+            "leftTrack" : 30
+         },
+         "maxLoad" : 59560,
+         "weight" : 11000,
+         "rotationIsAroundCenter" : true,
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 10,
+         "drivingWheels" : "WD_L0 WD_L2",
+         "rotationSpeed" : 30,
+         "userString" : "#france_vehicles:Chassis_AMX_50Fosh_155_2",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "size" : "0.44 0.74"
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F64_AMX_50Fosh_155/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F64_AMX_50Fosh_155/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F64_AMX_50Fosh_155/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.48"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "maxHealth" : 300,
+         "brakeForce" : 57500,
+         "topRightCarryingPoint" : "1.33198 2.23938",
+         "trackNodes" : {
+            "elasticity" : 1113,
+            "maxAmplitude" : "0.1",
+            "gravity" : "-9.8",
+            "maxOffset" : "0.1",
+            "linkBones" : true,
+            "enable" : true,
+            "damping" : 2,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.1",
+                  "rightSibling" : "Track_VT_L1",
+                  "offset" : "-0.171",
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "offset" : "-0.198",
+                  "rightSibling" : "Track_VT_L2"
+               },
+               {
+                  "backwardElastK" : "1.3",
+                  "isLeft" : true,
+                  "offset" : "-0.213",
+                  "rightSibling" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.4",
+                  "rightSibling" : "Track_VT_L4",
+                  "offset" : "-0.22"
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_L3",
+                  "rightSibling" : "Track_VT_L5",
+                  "offset" : "-0.228",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "rightSibling" : "Track_VT_L6",
+                  "offset" : "-0.245",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_L4"
+               },
+               {
+                  "leftSibling" : "Track_VT_L5",
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : true,
+                  "offset" : "-0.245",
+                  "rightSibling" : "Track_VT_L7"
+               },
+               {
+                  "rightSibling" : "Track_VT_L8",
+                  "offset" : "-0.217",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_L7",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_L6"
+               },
+               {
+                  "name" : "Track_VT_L8",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_L7",
+                  "offset" : "-0.185",
+                  "rightSibling" : "Track_VT_L9",
+                  "backwardElastK" : "1.9",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.112",
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L9",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_L8"
+               },
+               {
+                  "offset" : "-0.171",
+                  "rightSibling" : "Track_VT_R1",
+                  "backwardElastK" : "1.1",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "offset" : "-0.198",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R1",
+                  "leftSibling" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3",
+                  "offset" : "-0.213",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.3"
+               },
+               {
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.4",
+                  "isLeft" : false,
+                  "offset" : "-0.22",
+                  "rightSibling" : "Track_VT_R4"
+               },
+               {
+                  "offset" : "-0.228",
+                  "rightSibling" : "Track_VT_R5",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R4",
+                  "leftSibling" : "Track_VT_R3"
+               },
+               {
+                  "leftSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R5",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_R6",
+                  "offset" : "-0.245"
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R6",
+                  "leftSibling" : "Track_VT_R5",
+                  "offset" : "-0.245",
+                  "rightSibling" : "Track_VT_R7",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "isLeft" : false,
+                  "offset" : "-0.217",
+                  "rightSibling" : "Track_VT_R8",
+                  "leftSibling" : "Track_VT_R6",
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R7"
+               },
+               {
+                  "name" : "Track_VT_R8",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_R7",
+                  "offset" : "-0.185",
+                  "rightSibling" : "Track_VT_R9",
+                  "backwardElastK" : "1.9",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.112",
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R9",
+                  "forwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_R8"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ]
+         },
+         "maxClimbAngle" : 25
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "speedLimits" : {
+      "backward" : 13,
+      "forward" : 50
+   },
+   "radios" : {
+      "SCR_619" : "shared"
+   }
+}

@@ -1,0 +1,933 @@
+{
+   "emblems" : {
+      "default" : "french_rose",
+      "alpha" : "0.86",
+      "lodDist" : "MEDIUM"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Somua_S35_2" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_Somua_S35" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Somua_190CV_V8" : {
+               "smplEnginePower" : "200.8834"
+            },
+            "Hispano_219CV_V8" : {
+               "smplEnginePower" : "231.5446"
+            },
+            "Somua_230_V8" : {
+               "smplEnginePower" : "243.1747"
+            }
+         }
+      }
+   },
+   "hull" : {
+      "maxHealth" : 184,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "0.417228 0.739944 1.91237",
+            "hideIfDamaged" : false,
+            "rayEnd" : "0.417194 0.414069 1.6804",
+            "size" : "0.24"
+         },
+         "inscription" : {
+            "size" : "0.55",
+            "hideIfDamaged" : true,
+            "rayEnd" : "-0.234099 0.381846 1.72359",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.233792 0.709472 1.95305"
+         }
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/french/F44_Somua_S35/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/french/F44_Somua_S35/collision/Hull.model"
+      },
+      "models" : {
+         "destroyed" : "vehicles/french/F44_Somua_S35/crash/lod0/Hull.model",
+         "exploded" : "vehicles/french/F44_Somua_S35/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F44_Somua_S35/normal/lod0/Hull.model"
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.36",
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26",
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26"
+      },
+      "camouflage" : {
+         "tiling" : "1 0.58 0.000000 0.000000"
+      },
+      "armor" : {
+         "armor_4" : 25,
+         "armor_1" : 47,
+         "armor_8" : 20,
+         "armor_6" : 35,
+         "armor_9" : "",
+         "armor_3" : 25,
+         "armor_10" : 10,
+         "armor_2" : 47,
+         "armor_11" : 47,
+         "armor_7" : 25,
+         "armor_12" : 40,
+         "armor_5" : 40
+      },
+      "variants" : {
+         "hull2" : {
+            "turretHardPoints" : {
+               "hardPoint" : "HP_turretJoint_2"
+            },
+            "emblemSlots" : {
+               "inscription" : {
+                  "rayStart" : "-0.236374 0.709864 1.95546",
+                  "rayUp" : "0.000000 0.000000 -1",
+                  "size" : "0.55",
+                  "rayEnd" : "-0.236681 0.382239 1.726",
+                  "hideIfDamaged" : true
+               },
+               "clan" : {
+                  "rayUp" : "0.000000 0.000000 -1",
+                  "rayStart" : "0.416279 0.740442 1.91166",
+                  "rayEnd" : "0.416245 0.414581 1.6797",
+                  "hideIfDamaged" : false,
+                  "size" : "0.24"
+               }
+            },
+            "turret0" : "Turret_2_Somua_S35",
+            "turretPositions" : {
+               "turret" : "-0 1 0"
+            }
+         }
+      },
+      "primaryArmor" : "armor_1 armor_5 armor_6",
+      "turretHardPoints" : {
+         "hardPoint" : "HP_turretJoint_1"
+      },
+      "hangarShadowTexture" : "vehicles/french/F44_Somua_S35/Somua_S35_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "-0.012 0.977971 0.5084"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 100,
+         "maxRegenHealth" : 70,
+         "repairCost" : "1.0"
+      },
+      "weight" : 10860
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "3.2",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.861312906"
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Somua_S35" : {
+         "weight" : 2000,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 50,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 25
+         },
+         "price" : 600,
+         "guns" : {
+            "_47mm_SA34" : "shared",
+            "_47mm_SA35" : "shared"
+         },
+         "gunPosition" : "-0.05458 0.28168 0.6229",
+         "userString" : "#france_vehicles:Turret_1_Somua_S35",
+         "camouflage" : {
+            "tiling" : "0.28 0.28 0.000000 0.000000"
+         },
+         "showEmblemsOnGun" : false,
+         "tags" : {},
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "emblemSlots" : {
+            "inscription" : {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "0 0 -1",
+               "size" : "0.4",
+               "hideIfDamaged" : true,
+               "rayEnd" : "0 0 -1"
+            },
+            "player" : [
+               {
+                  "size" : "0.22",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 0 0"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1 0 0",
+                  "size" : "0.22",
+                  "isMirrored" : true,
+                  "rayEnd" : "0 0 0",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "physicsShape" : "0.965 0.032 1.000 0.000 0.570 0.009 0.500 0.434 0.435 0.500 0.344 0.500 0.258 0.727 0.104",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 35,
+            "repairCost" : "1.0",
+            "maxHealth" : 70
+         },
+         "armor" : {
+            "armor_7" : 40,
+            "armor_5" : 30,
+            "armor_2" : 42,
+            "armor_11" : 40,
+            "armor_6" : 30,
+            "armor_3" : 42,
+            "armor_10" : 42,
+            "armor_9" : "",
+            "armor_4" : 42,
+            "armor_1" : 42
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F44_Somua_S35/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F44_Somua_S35/collision_client/Turret_01.model"
+         },
+         "circularVisionRadius" : 320,
+         "models" : {
+            "exploded" : "vehicles/french/F44_Somua_S35/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F44_Somua_S35/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F44_Somua_S35/normal/lod0/Turret_01.model"
+         },
+         "maxHealth" : 46,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "level" : 2,
+         "rotationSpeed" : 40
+      },
+      "Turret_2_Somua_S35" : {
+         "price" : 1850,
+         "weight" : 2340,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 25,
+            "maxHealth" : 50
+         },
+         "guns" : {
+            "_47mm_SA37" : "shared",
+            "_47mm_SA34" : "shared",
+            "_47mm_SA35" : "shared"
+         },
+         "gunPosition" : "0.32159 0.23743 0.57891",
+         "userString" : "#france_vehicles:Turret_2_Somua_S35",
+         "camouflage" : {
+            "tiling" : "0.34 0.34 0.000000 0.000000"
+         },
+         "showEmblemsOnGun" : false,
+         "tags" : {},
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "emblemSlots" : {
+            "inscription" : {
+               "size" : "0.48",
+               "hideIfDamaged" : false,
+               "rayEnd" : "0.0775017 0.248514 -0.734899",
+               "rayStart" : "0.0774774 0.267021 -0.791973",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            "player" : [
+               {
+                  "rayStart" : "-1 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.22",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.360199 0.179707 0.1872"
+               },
+               {
+                  "size" : "0.22",
+                  "rayEnd" : "0 0 -0",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayStart" : "1 0 -1",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "invisibilityFactor" : "1.013",
+         "physicsShape" : "0.896 0.009 1.041 0.027 0.652 0.190 1.000 0.407 0.493 0.500 0.371 0.500 0.090 0.000 0.154",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 35,
+            "repairCost" : "1.0",
+            "maxHealth" : 70
+         },
+         "unlocks" : {
+            "vehicle" : "F70_SARL42",
+            "gun" : "_47mm_SA37"
+         },
+         "armor" : {
+            "armor_9" : 35,
+            "armor_3" : 40,
+            "armor_10" : 25,
+            "armor_6" : 25,
+            "armor_1" : 40,
+            "armor_13" : 35,
+            "armor_8" : 25,
+            "armor_4" : 60,
+            "armor_5" : 60,
+            "armor_7" : 40,
+            "armor_12" : 40,
+            "armor_11" : "",
+            "armor_2" : 40
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F44_Somua_S35/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/french/F44_Somua_S35/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/french/F44_Somua_S35/crash/lod0/Turret_02.model"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F44_Somua_S35/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/french/F44_Somua_S35/collision/Turret_02.model"
+         },
+         "circularVisionRadius" : 330,
+         "maxHealth" : 66,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "level" : 3,
+         "rotationSpeed" : 42
+      }
+   },
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 45
+   },
+   "radios" : {
+      "ER_27" : "shared",
+      "ER_28" : "shared",
+      "ER_26_ter" : "shared",
+      "ER_29" : "shared"
+   },
+   "chassis" : {
+      "Chassis_Somua_S35" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.0392562",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "count" : 9,
+                  "maxOffset" : "0.0867769",
+                  "startIndex" : ""
+               },
+               {
+                  "maxOffset" : "0.087",
+                  "startIndex" : "",
+                  "count" : 9,
+                  "isLeft" : false,
+                  "minOffset" : "-0.039",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "weight" : 6000,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "maxClimbAngle" : 25,
+         "brakeForce" : 20000,
+         "drivingWheels" : "WD_L0 WD_L3",
+         "terrainResistance" : "1.3 1.5 2.5",
+         "rotationIsAroundCenter" : false,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/french/F44_Somua_S35/track/segmentL.model",
+            "segmentLength" : "0.102",
+            "segmentOffset" : "0.059",
+            "segmentModelRight" : "vehicles/french/F44_Somua_S35/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/french/F44_Somua_S35/track/right.track",
+            "left" : "vehicles/french/F44_Somua_S35/track/left.track"
+         },
+         "topRightCarryingPoint" : "0.843512 1.48389",
+         "bulkHealthFactor" : "3.0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "count" : 2,
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "count" : 9,
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "count" : 2,
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 9,
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "radius" : "0"
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "syncAngle" : "16.3636",
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "syncAngle" : "16.3636"
+               },
+               {
+                  "syncAngle" : "16.3636",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L3",
+                  "syncAngle" : "16.3636",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0.34582"
+               }
+            ]
+         },
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "trackThickness" : "-0.0279",
+         "maxRegenHealth" : 55,
+         "maxHealth" : 70,
+         "traces" : {
+            "size" : "0.2 0.38",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank"
+         },
+         "price" : 600,
+         "tags" : {},
+         "trackNodes" : {
+            "damping" : 2,
+            "maxOffset" : "0.095",
+            "maxAmplitude" : "0.095",
+            "elasticity" : 1311,
+            "gravity" : "-8.9",
+            "linkBones" : false,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.79",
+                  "offset" : "-0.018"
+               },
+               {
+                  "offset" : "-0.018",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.79",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "offset" : "-0.018"
+               },
+               {
+                  "offset" : "-0.018",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.032"
+               },
+               {
+                  "offset" : "-0.032",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.032",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.8",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.9",
+                  "isLeft" : true,
+                  "offset" : "-0.022"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.8",
+                  "offset" : "-0.032"
+               },
+               {
+                  "offset" : "-0.032",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.8",
+                  "isLeft" : false,
+                  "offset" : "-0.032"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.9",
+                  "isLeft" : false,
+                  "offset" : "-0.022"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R4",
+                  "forwardElastK" : "0.8"
+               }
+            ],
+            "enable" : true
+         },
+         "userString" : "#france_vehicles:Chassis_Somua_S35",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "maxLoad" : 20200,
+         "unlocks" : {
+            "chassis" : "Chassis_Somua_S35_2"
+         },
+         "tracks" : {
+            "textureScale" : "-2.4",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "repairCost" : "5.0",
+         "hullPosition" : "0 1 0",
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "rotationSpeed" : 35,
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 2,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F44_Somua_S35/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F44_Somua_S35/collision_client/Chassis.model"
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F44_Somua_S35/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F44_Somua_S35/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F44_Somua_S35/crash/lod0/Chassis.model"
+         }
+      },
+      "Chassis_Somua_S35_2" : {
+         "wwsoundNPC" : "trds_chf_npc",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "trackThickness" : "-0.0279",
+         "maxHealth" : 80,
+         "maxRegenHealth" : 60,
+         "maxClimbAngle" : 25,
+         "drivingWheels" : "WD_L0 WD_L3",
+         "brakeForce" : 23000,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.0867769",
+                  "startIndex" : "",
+                  "count" : 9,
+                  "isLeft" : true,
+                  "minOffset" : "-0.0392562",
+                  "template" : "Track_L"
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 9,
+                  "startIndex" : "",
+                  "maxOffset" : "0.087",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.039"
+               }
+            ]
+         },
+         "weight" : 6000,
+         "bulkHealthFactor" : "3.0",
+         "topRightCarryingPoint" : "0.843512 1.48389",
+         "splineDesc" : {
+            "segmentOffset" : "0.059",
+            "segmentModelRight" : "vehicles/french/F44_Somua_S35/track/segment.model",
+            "segmentModelLeft" : "vehicles/french/F44_Somua_S35/track/segmentL.model",
+            "segmentLength" : "0.102",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "right" : "vehicles/french/F44_Somua_S35/track/right.track",
+            "left" : "vehicles/french/F44_Somua_S35/track/left.track"
+         },
+         "navmeshGirth" : "6.0",
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "count" : 2
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 9,
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 2,
+                  "isLeft" : true,
+                  "startIndex" : 1
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 9,
+                  "isLeft" : true,
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "16.3636",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "syncAngle" : "16.3636",
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "16.3636",
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L3",
+                  "syncAngle" : "16.3636",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0.34582"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "rotationIsAroundCenter" : false,
+         "terrainResistance" : "1.2 1.4 2.4",
+         "tracks" : {
+            "textureScale" : "-2.4",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 3,
+         "rotationSpeed" : 38,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F44_Somua_S35/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F44_Somua_S35/collision_client/Chassis.model"
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F44_Somua_S35/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F44_Somua_S35/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F44_Somua_S35/crash/lod0/Chassis.model"
+         },
+         "repairCost" : "5.0",
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "hullPosition" : "0 1 0",
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "size" : "0.2 0.38",
+            "bufferPrefs" : "mediumTank"
+         },
+         "price" : 1900,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.23",
+            "vehicleRotation" : "0.23"
+         },
+         "maxLoad" : 23500,
+         "tags" : {},
+         "trackNodes" : {
+            "enable" : true,
+            "linkBones" : false,
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.79",
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "offset" : "-0.018"
+               },
+               {
+                  "forwardElastK" : "0.79",
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 2,
+                  "isLeft" : false,
+                  "offset" : "-0.018"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "offset" : "-0.018"
+               },
+               {
+                  "offset" : "-0.018",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.7",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "offset" : "-0.022",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.9",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "offset" : "-0.032",
+                  "backwardElastK" : "1.7",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "1.9",
+                  "offset" : "-0.022"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R4",
+                  "isLeft" : false
+               }
+            ],
+            "gravity" : "-8.9",
+            "elasticity" : 1311,
+            "maxAmplitude" : "0.095",
+            "damping" : 2,
+            "maxOffset" : "0.095"
+         },
+         "userString" : "#france_vehicles:Chassis_Somua_S35_2"
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "0.6",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "engines" : {
+      "Somua_230_V8" : "shared",
+      "Somua_190CV_V8" : "shared",
+      "Hispano_219CV_V8" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "crew" : {
+      "commander" : "gunner\n\n\t\t\tloader",
+      "radioman" : "loader",
+      "driver" : {}
+   },
+   "invisibility" : {
+      "still" : "0.258",
+      "firePenalty" : "0.387",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.194",
+      "camouflageBonus" : "0.03"
+   }
+}

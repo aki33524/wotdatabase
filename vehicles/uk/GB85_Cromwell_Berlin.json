@@ -1,0 +1,595 @@
+{
+   "premiumVehicleXPFactor" : "0.3",
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "britain_color",
+      "alpha" : "0.88"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/british/GB85_Cromwell_Berlin/Cromwell_Berlin_HangarShadowMap.dds",
+      "swinging" : {
+         "pitchParams" : "0.26 36.00 0.48 1.00 0.05 0.33",
+         "rollParams" : "1.00 0.26 36.00 0.48 1.00 0.05 0.33",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.58"
+      },
+      "maxHealth" : 600,
+      "camouflage" : {
+         "tiling" : "2.74 2.74 0.000000 0.000000"
+      },
+      "models" : {
+         "undamaged" : "vehicles/british/GB85_Cromwell_Berlin/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB85_Cromwell_Berlin/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB85_Cromwell_Berlin/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_5" : 20,
+         "armor_3" : "44.5",
+         "armor_10" : 25,
+         "armor_13" : 8,
+         "armor_6" : "14.4",
+         "armor_12" : "6.4",
+         "armor_2" : "57.2",
+         "armor_7" : "42.9",
+         "armor_1" : "63.5",
+         "armor_9" : "39.7",
+         "armor_15" : "39.3",
+         "armor_11" : 14,
+         "armor_14" : 20,
+         "armor_16" : 25,
+         "armor_8" : "",
+         "armor_4" : "31.8"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.750341 0.41873 2.22464",
+            "rayEnd" : "-0.75037 0.41873 2.02464",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : false,
+            "size" : "0.22"
+         }
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 120,
+         "repairCost" : "1.0",
+         "maxHealth" : 180
+      },
+      "weight" : 14900,
+      "turretPositions" : {
+         "turret" : "0.000000 0.595397 0.50324"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB85_Cromwell_Berlin/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB85_Cromwell_Berlin/collision/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_7 armor_4"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.2"
+   },
+   "radios" : {
+      "British_Wireless_set_N19" : "shared"
+   },
+   "invisibility" : {
+      "still" : "0.253",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "moving" : "0.19",
+      "firePenalty" : "0.38"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "chassis" : {
+      "Chassis_GB85_Cromwell_Berlin" : {
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "maxLoad" : 29500,
+         "wwsoundPC" : "treads_type_pc",
+         "weight" : 6500,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "syncAngle" : 18,
+                  "isLeading" : true,
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : 18,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R0"
+               },
+               {
+                  "syncAngle" : 18,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R1"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "W_R0"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 4,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "brakeForce" : 31000,
+         "maxRegenHealth" : 90,
+         "trackThickness" : "0.005",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : -4,
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB85_Cromwell_Berlin/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB85_Cromwell_Berlin/collision/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 -0"
+            }
+         },
+         "hullPosition" : "0 1 0",
+         "repairCost" : "5.0",
+         "tags" : {},
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 5,
+                  "maxOffset" : "0.07",
+                  "template" : "Track_L",
+                  "minOffset" : "-0.1"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 5,
+                  "isLeft" : false,
+                  "maxOffset" : "0.07",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.1"
+               }
+            ]
+         },
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB85_Cromwell_Berlin/track/segment.model",
+            "left" : "vehicles/british/GB85_Cromwell_Berlin/track/left.track",
+            "segmentOffset" : "0.044",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/british/GB85_Cromwell_Berlin/track/segment2.model",
+            "segmentLength" : "0.096",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/british/GB85_Cromwell_Berlin/track/right.track"
+         },
+         "rotationIsAroundCenter" : false,
+         "rotationSpeed" : 50,
+         "level" : 6,
+         "price" : 12000,
+         "traces" : {
+            "size" : "0.25 0.38",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "ussr_01"
+         },
+         "maxHealth" : 120,
+         "navmeshGirth" : "6.0",
+         "maxClimbAngle" : 25,
+         "notInShop" : true,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "trackNodes" : {
+            "damping" : 2,
+            "elasticity" : 1000,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 1,
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.1",
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "leftSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L2",
+                  "rightSibling" : "Track_VT_L3",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L2",
+                  "backwardElastK" : "1.3",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L4"
+               },
+               {
+                  "leftSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L4",
+                  "rightSibling" : "Track_VT_L5",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "1.4",
+                  "isLeft" : true
+               },
+               {
+                  "leftSibling" : "Track_VT_L4",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L6",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true
+               },
+               {
+                  "leftSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L6",
+                  "rightSibling" : "Track_VT_L7",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "1.6",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L8",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L7"
+               },
+               {
+                  "name" : "Track_VT_L8",
+                  "leftSibling" : "Track_VT_L7",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L9",
+                  "backwardElastK" : "1.8",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L10",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.9",
+                  "name" : "Track_VT_L9",
+                  "leftSibling" : "Track_VT_L8"
+               },
+               {
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L9",
+                  "name" : "Track_VT_L10"
+               },
+               {
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.1",
+                  "name" : "Track_VT_R1",
+                  "leftSibling" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R1",
+                  "backwardElastK" : "1.2",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R3",
+                  "forwardElastK" : "0.68"
+               },
+               {
+                  "backwardElastK" : "1.3",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R4",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R2"
+               },
+               {
+                  "rightSibling" : "Track_VT_R5",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.4",
+                  "leftSibling" : "Track_VT_R3",
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "leftSibling" : "Track_VT_R5",
+                  "name" : "Track_VT_R6",
+                  "rightSibling" : "Track_VT_R7",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "leftSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R7",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R8",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R8",
+                  "leftSibling" : "Track_VT_R7",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R9",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.9",
+                  "rightSibling" : "Track_VT_R10",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R9",
+                  "leftSibling" : "Track_VT_R8"
+               },
+               {
+                  "name" : "Track_VT_R10",
+                  "leftSibling" : "Track_VT_R9",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : 2
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "maxAmplitude" : "0.1",
+            "gravity" : -9,
+            "enable" : true,
+            "maxOffset" : "0.1",
+            "linkBones" : true
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "userString" : "#gb_vehicles:Chassis_GB85_Cromwell_Berlin",
+         "terrainResistance" : "0.5 0.6 1.5",
+         "models" : {
+            "undamaged" : "vehicles/british/GB85_Cromwell_Berlin/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB85_Cromwell_Berlin/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB85_Cromwell_Berlin/crash/lod0/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.2494 1.86766",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.24",
+            "vehicleRotation" : "0.24"
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.896736835"
+   },
+   "repairCost" : "4.0",
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 64
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "crew" : {
+      "radioman" : {},
+      "loader" : {},
+      "driver" : {},
+      "commander" : {},
+      "gunner" : {}
+   },
+   "crewXpFactor" : "1.5",
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "engines" : {
+      "Rolls_Royse_Meteor_MkIV_A" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB85_Cromwell_Berlin" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0483"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0483"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0483"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0483"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0483"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0483"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Rolls_Royse_Meteor_MkIV_A" : {
+               "smplEnginePower" : "687.2327"
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_GB85_Cromwell_Berlin" : {
+         "physicsShape" : "1.020 -0.013 1.007 0.000 0.543 0.278 1.000 0.364 0.318 0.464 0.000 0.000 0.000 0.000 0.093",
+         "camouflage" : {
+            "tiling" : "1.12 1.12 0.000000 0.000000"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB85_Cromwell_Berlin/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB85_Cromwell_Berlin/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB85_Cromwell_Berlin/normal/lod0/Turret_01.model"
+         },
+         "tags" : {},
+         "userString" : "#gb_vehicles:Turret_1_GB85_Cromwell_Berlin",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB85_Cromwell_Berlin/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB85_Cromwell_Berlin/collision/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "gunPosition" : "0.000000 0.3 0.86",
+         "guns" : {
+            "_75mm_Gun_Mk_VA" : "shared"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1 0 -1",
+                  "rayEnd" : "-1 0 -1",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.2"
+               },
+               {
+                  "rayStart" : "0.96258 0.217572 0.0724518",
+                  "rayEnd" : "0.767705 0.217556 0.0274683",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.18"
+               }
+            ]
+         },
+         "notInShop" : true,
+         "showEmblemsOnGun" : false,
+         "maxHealth" : 150,
+         "weight" : 5000,
+         "level" : 6,
+         "price" : 12000,
+         "turretRotatorHealth" : {
+            "maxHealth" : 120,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 60
+         },
+         "rotationSpeed" : 48,
+         "armor" : {
+            "armor_8" : "",
+            "armor_6" : "19.1",
+            "armor_4" : "57.2",
+            "armor_10" : 20,
+            "armor_11" : 20,
+            "armor_3" : "63.5",
+            "armor_1" : "76.2",
+            "armor_9" : "63.5",
+            "armor_7" : "76.2",
+            "armor_2" : "76.2",
+            "armor_5" : 20
+         },
+         "circularVisionRadius" : 360
+      }
+   }
+}

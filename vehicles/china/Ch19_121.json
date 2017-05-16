@@ -1,0 +1,586 @@
+{
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Ch19_121" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "_12150L7" : {
+               "smplEnginePower" : "613.2231"
+            }
+         }
+      }
+   },
+   "hull" : {
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_large"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.301736 0.241498 2.99311",
+            "hideIfDamaged" : true,
+            "size" : "0.28",
+            "rayEnd" : "-0.301736 -0.10491 2.79311",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "swinging" : {
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.26 36.00 0.42 1.00 0.05 0.32",
+         "pitchParams" : "0.26 36.00 0.42 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.36"
+      },
+      "armor" : {
+         "armor_2" : 80,
+         "armor_1" : 120,
+         "armor_6" : 20,
+         "armor_3" : 80,
+         "armor_10" : 45,
+         "armor_8" : "",
+         "armor_5" : 15,
+         "armor_11" : 30,
+         "armor_4" : 60,
+         "armor_9" : 30,
+         "armor_7" : 57
+      },
+      "maxHealth" : 1560,
+      "ammoBayHealth" : {
+         "maxHealth" : 210,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 140
+      },
+      "models" : {
+         "destroyed" : "vehicles/chinese/Ch19_121/crash/lod0/Hull.model",
+         "exploded" : "vehicles/chinese/Ch19_121/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/chinese/Ch19_121/normal/lod0/Hull.model"
+      },
+      "weight" : 17225,
+      "camouflage" : {
+         "tiling" : "0.865 0.865 0.000000 0.000000"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/chinese/Ch19_121/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/chinese/Ch19_121/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/chinese/Ch19_121/121_HangarShadowMap.dds"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.198",
+      "camouflageBonus" : "0.03",
+      "still" : "0.263",
+      "firePenalty" : "0.395"
+   },
+   "crew" : {
+      "commander" : {},
+      "gunner" : {},
+      "loader" : "AAAAAAAA",
+      "driver" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.140259361"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "radios" : {
+      "A-220B_1" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "chassis" : {
+      "Chassis_Ch19_121" : {
+         "notInShop" : true,
+         "rotationSpeed" : 50,
+         "terrainResistance" : "0.7 0.8 1.6",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "level" : 10,
+         "trackThickness" : "-0.0064",
+         "models" : {
+            "undamaged" : "vehicles/chinese/Ch19_121/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/chinese/Ch19_121/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/chinese/Ch19_121/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.65"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "minOffset" : "-0.08",
+                  "maxOffset" : "0.08",
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "count" : 5,
+                  "startIndex" : "",
+                  "minOffset" : "-0.08",
+                  "maxOffset" : "0.08"
+               }
+            ]
+         },
+         "hullPosition" : "0 1 0",
+         "splineDesc" : {
+            "segmentOffset" : "0.132",
+            "segmentLength" : "0.135",
+            "right" : "vehicles/chinese/Ch19_121/track/right.track",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "left" : "vehicles/chinese/Ch19_121/track/left.track",
+            "segmentModelRight" : "vehicles/chinese/Ch19_121/track/segment.model",
+            "segmentModelLeft" : "vehicles/chinese/Ch19_121/track/segment.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "traces" : {
+            "textureSet" : "ussr_02",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.48 0.62",
+            "lodDist" : "FAR"
+         },
+         "topRightCarryingPoint" : "1.32233 2.14405",
+         "maxHealth" : 250,
+         "trackNodes" : {
+            "gravity" : "-9.8",
+            "elasticity" : 1100,
+            "maxAmplitude" : "0.1",
+            "linkBones" : true,
+            "enable" : true,
+            "maxOffset" : "0.1",
+            "node" : [
+               {
+                  "backwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L1",
+                  "offset" : "-0.123",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "offset" : "-0.176",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.85",
+                  "backwardElastK" : "1.3",
+                  "leftSibling" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L2"
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "leftSibling" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L3",
+                  "offset" : "-0.123",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "rightSibling" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.155"
+               },
+               {
+                  "offset" : "-0.123",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_L3",
+                  "rightSibling" : "Track_VT_L5"
+               },
+               {
+                  "offset" : "-0.176",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : "0.85",
+                  "backwardElastK" : "1.7",
+                  "leftSibling" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L6"
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "leftSibling" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L7",
+                  "offset" : "-0.123",
+                  "name" : "Track_VT_L6",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "offset" : "-0.162",
+                  "name" : "Track_VT_L7",
+                  "forwardElastK" : "0.85",
+                  "leftSibling" : "Track_VT_L6",
+                  "backwardElastK" : "1.9",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L8"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "leftSibling" : "Track_VT_L7",
+                  "isLeft" : true,
+                  "offset" : "-0.123",
+                  "name" : "Track_VT_L8",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "offset" : "-0.123",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.2",
+                  "rightSibling" : "Track_VT_R1"
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "backwardElastK" : "1.3",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.176"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1",
+                  "backwardElastK" : "1.4",
+                  "rightSibling" : "Track_VT_R3",
+                  "offset" : "-0.123",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "rightSibling" : "Track_VT_R4",
+                  "backwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.85",
+                  "offset" : "-0.155"
+               },
+               {
+                  "offset" : "-0.123",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R3",
+                  "rightSibling" : "Track_VT_R5"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "leftSibling" : "Track_VT_R4",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R5",
+                  "forwardElastK" : "0.85",
+                  "offset" : "-0.176"
+               },
+               {
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R6",
+                  "offset" : "-0.123",
+                  "rightSibling" : "Track_VT_R7",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R5",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "offset" : "-0.162",
+                  "name" : "Track_VT_R7",
+                  "forwardElastK" : "0.85",
+                  "backwardElastK" : "1.9",
+                  "leftSibling" : "Track_VT_R6",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R8"
+               },
+               {
+                  "offset" : "-0.123",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R8",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R7",
+                  "backwardElastK" : 2
+               }
+            ],
+            "damping" : 2
+         },
+         "price" : 82500,
+         "brakeForce" : 50000,
+         "repairCost" : "5.0",
+         "userString" : "#china_vehicles:Chassis_Ch19_121",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_L0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_L1"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R1"
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 5
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 5
+               }
+            ]
+         },
+         "maxRegenHealth" : 190,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.14",
+            "vehicleRotation" : "0.14"
+         },
+         "wwsoundNPC" : "trds_med_npc",
+         "wwsoundPC" : "treads_type_pc",
+         "maxClimbAngle" : 25,
+         "navmeshGirth" : "6.0",
+         "rotationIsAroundCenter" : false,
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/chinese/Ch19_121/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/chinese/Ch19_121/collision_client/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "weight" : 7700,
+         "maxLoad" : 42000
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "speedLimits" : {
+      "forward" : 56,
+      "backward" : 20
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM",
+      "default" : "china_star"
+   },
+   "engines" : {
+      "_12150L7" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Ch19_121" : {
+         "circularVisionRadius" : 400,
+         "models" : {
+            "undamaged" : "vehicles/chinese/Ch19_121/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/chinese/Ch19_121/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/chinese/Ch19_121/crash/lod0/Turret_01.model"
+         },
+         "camouflage" : {
+            "tiling" : "0.505 0.505 0.000000 0.000000"
+         },
+         "notInShop" : true,
+         "physicsShape" : "0.961 0.000 1.099 0.000 0.661 0.179 0.789 0.335 0.453 0.500 0.309 0.500 0.146 0.464 0.300",
+         "rotationSpeed" : 40,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayEnd" : "-1.10647 0.25901 -0.55974",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1.27866 0.319365 -0.641648",
+                  "hideIfDamaged" : false,
+                  "size" : "0.64"
+               },
+               {
+                  "rayEnd" : "1.07729 0.256388 -0.571198",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1.24817 0.311923 -0.659029",
+                  "size" : "0.64"
+               }
+            ],
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 0",
+                  "size" : "0.28",
+                  "rayStart" : "-1.272 0.358707 0.617452",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "size" : "0.28",
+                  "isMirrored" : true,
+                  "rayStart" : "1.28435 0.375262 0.603981",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0.934532 0.23287 0.472249"
+               }
+            ]
+         },
+         "userString" : "#china_vehicles:Turret_1_Ch19_121",
+         "level" : 10,
+         "price" : 66000,
+         "showEmblemsOnGun" : false,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 60,
+            "repairCost" : "1.0",
+            "maxHealth" : 120
+         },
+         "maxHealth" : 390,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 85,
+            "maxHealth" : 170
+         },
+         "tags" : {},
+         "weight" : 10000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/chinese/Ch19_121/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/chinese/Ch19_121/collision/Turret_01.model"
+         },
+         "gunPosition" : "0.032249 0.267913 1.12918",
+         "armor" : {
+            "armor_3" : 130,
+            "armor_10" : 45,
+            "armor_8" : "",
+            "armor_6" : 30,
+            "armor_1" : 240,
+            "armor_2" : 185,
+            "armor_7" : 30,
+            "armor_9" : 185,
+            "armor_11" : 48,
+            "armor_4" : 60,
+            "armor_5" : 95
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "guns" : {
+            "_122-mm_60-122TG" : "shared"
+         }
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "repairCost" : "12.69"
+}

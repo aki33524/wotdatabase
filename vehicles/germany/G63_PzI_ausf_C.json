@@ -1,0 +1,958 @@
+{
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Maybach_HL66P" : {
+               "smplEnginePower" : "198.585"
+            },
+            "Maybach_HL_45P" : {
+               "smplEnginePower" : "165.4875"
+            }
+         },
+         "chassis" : {
+            "Chassis_PzI_ausf_C" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0924"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0924"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0924"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0924"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0924"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0924"
+                     }
+                  }
+               }
+            },
+            "Chassis_PzI_ausf_C_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.084"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.084"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.084"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.084"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.084"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.084"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "still" : "0.322",
+      "moving" : "0.322",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.483"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.793388022"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "speedLimits" : {
+      "forward" : 79,
+      "backward" : 22
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   },
+   "repairCost" : 4,
+   "emblems" : {
+      "default" : "germany_cross",
+      "alpha" : "0.84",
+      "lodDist" : "MEDIUM"
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "swinging" : {
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.74"
+      },
+      "turretPositions" : {
+         "turret" : "0.1354 0.592505 -0.0648"
+      },
+      "hangarShadowTexture" : "vehicles/german/G63_PzI_ausf_C/PzI_ausf_C_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "0.415139 0.483585 1.26606",
+            "hideIfDamaged" : false,
+            "size" : "0.219",
+            "rayEnd" : "0 0 1"
+         },
+         "inscription" : {
+            "hideIfDamaged" : true,
+            "rayEnd" : "-0.0111487 -0.092342 1.53531",
+            "size" : "0.58",
+            "rayStart" : "-0.0111487 0.28353 1.67213",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "weight" : 3670,
+      "maxHealth" : 168,
+      "ammoBayHealth" : {
+         "maxHealth" : 100,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 70
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G63_PzI_ausf_C/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G63_PzI_ausf_C/collision/Hull.model"
+      },
+      "models" : {
+         "destroyed" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G63_PzI_ausf_C/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Hull.model"
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "camouflage" : {
+         "tiling" : "2.1 2.1 0.000000 0.000000"
+      },
+      "armor" : {
+         "armor_4" : "14.5",
+         "armor_5" : 10,
+         "armor_2" : 20,
+         "armor_16" : 5,
+         "armor_8" : "",
+         "armor_12" : "19.5",
+         "armor_6" : 5,
+         "armor_3" : 20,
+         "armor_1" : 30
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.6"
+   },
+   "radios" : {
+      "FuG7" : "shared",
+      "FuG_Spr.A" : "shared",
+      "FuG5" : "shared"
+   },
+   "turrets0" : {
+      "Turret_2_PzI_ausf_C" : {
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "camouflage" : {
+            "tiling" : "1.4 1.4 0.000000 0.000000"
+         },
+         "physicsShape" : "0.973 -0.055 1.019 0.000 0.491 0.255 0.893 0.510 0.215 0.500 0.302 0.500 0.077 0.681 0.323",
+         "models" : {
+            "exploded" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/german/G63_PzI_ausf_C/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Turret_02.model"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "price" : 2000,
+         "weight" : 900,
+         "showEmblemsOnGun" : false,
+         "maxHealth" : 62,
+         "rotationSpeed" : 44,
+         "emblemSlots" : {
+            "inscription" : {
+               "hideIfDamaged" : true,
+               "rayEnd" : "-0 0 -0",
+               "size" : "0.54",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1 0 -0"
+            },
+            "player" : [
+               {
+                  "hideIfDamaged" : true,
+                  "size" : "0.22",
+                  "rayEnd" : "-0 0 0",
+                  "rayStart" : "-1 0 0",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayEnd" : "0 0 0",
+                  "size" : "0.22",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1 0 0"
+               }
+            ]
+         },
+         "unlocks" : {
+            "gun" : "_7.92mm_Mauser_EW_141"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "turretRotatorHealth" : {
+            "maxHealth" : 70,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 35
+         },
+         "armor" : {
+            "armor_5" : 10,
+            "armor_4" : "14.5",
+            "armor_8" : "",
+            "armor_2" : 30,
+            "armor_9" : 10,
+            "armor_3" : "14.5",
+            "armor_1" : 30,
+            "armor_6" : 30
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G63_PzI_ausf_C/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/german/G63_PzI_ausf_C/collision_client/Turret_02.model"
+         },
+         "circularVisionRadius" : 340,
+         "userString" : "#germany_vehicles:Turret_2_PzI_ausf_C",
+         "level" : 3,
+         "guns" : {
+            "_20mm_Flak_38_L112" : "shared",
+            "_7.92mm_Mauser_EW_141" : "shared",
+            "_20mm_KwK_38_L55" : "shared"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "2.0",
+            "maxHealth" : 50,
+            "maxRegenHealth" : 25
+         },
+         "gunPosition" : "-0 0 1",
+         "invisibilityFactor" : "1.037"
+      },
+      "Turret_1_PzI_ausf_C" : {
+         "showEmblemsOnGun" : false,
+         "weight" : 600,
+         "tags" : "AAAAAAAAAAAA",
+         "price" : 1580,
+         "maxHealth" : 42,
+         "rotationSpeed" : 42,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 0 0",
+                  "size" : "0.165",
+                  "rayEnd" : "-0 0 0",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayStart" : "1 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.165",
+                  "rayEnd" : "0 0 0",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true
+               }
+            ]
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "camouflage" : {
+            "tiling" : "0.9 0.9 0.000000 0.000000"
+         },
+         "physicsShape" : "0.848 -0.045 0.945 0.000 0.527 0.273 0.633 0.277 0.202 0.500 0.267 0.500 0.177 0.605 0.059",
+         "models" : {
+            "destroyed" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G63_PzI_ausf_C/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Turret_01.model"
+         },
+         "gunPosition" : "-0.000752 0.230925 0.4925",
+         "guns" : {
+            "_20mm_Flak_38_L112" : "shared",
+            "_20mm_KwK_38_L55" : "shared"
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 25,
+            "maxHealth" : 50,
+            "repairCost" : "2.0"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 70,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 35
+         },
+         "primaryArmor" : "armor_2 armor_3 armor_3",
+         "armor" : {
+            "armor_3" : 13,
+            "armor_5" : 8,
+            "armor_1" : 15,
+            "armor_6" : 13,
+            "armor_8" : "",
+            "armor_7" : 8,
+            "armor_2" : 14
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G63_PzI_ausf_C/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G63_PzI_ausf_C/collision_client/Turret_01.model"
+         },
+         "circularVisionRadius" : 320,
+         "level" : 3,
+         "userString" : "#germany_vehicles:Turret_1_PzI_ausf_C"
+      }
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "gunner\n\n\t\t\tradioman\n\n\t\t\tloader"
+   },
+   "engines" : {
+      "Maybach_HL_45P" : "shared",
+      "Maybach_HL66P" : "shared"
+   },
+   "chassis" : {
+      "Chassis_PzI_ausf_C_2" : {
+         "rotationIsAroundCenter" : true,
+         "trackNodes" : {
+            "maxOffset" : "0.05",
+            "enable" : true,
+            "node" : [
+               {
+                  "offset" : "-0.082",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.126",
+                  "leftSibling" : "Track_VT_L0"
+               },
+               {
+                  "rightSibling" : "Track_VT_L3",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_L1",
+                  "offset" : "-0.111"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L4",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "1.4",
+                  "isLeft" : true,
+                  "offset" : "-0.087",
+                  "leftSibling" : "Track_VT_L2"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "offset" : "-0.06",
+                  "leftSibling" : "Track_VT_L3"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : 1,
+                  "isLeft" : true,
+                  "offset" : "-0.041",
+                  "leftSibling" : "Track_VT_L4"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.045",
+                  "leftSibling" : "Track_VT_L5"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 2,
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.082"
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.8",
+                  "leftSibling" : "Track_VT_R0",
+                  "offset" : "-0.126"
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.111",
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "offset" : "-0.087",
+                  "leftSibling" : "Track_VT_R2",
+                  "forwardElastK" : "1.4",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.2",
+                  "name" : "Track_VT_R4",
+                  "rightSibling" : "Track_VT_R5",
+                  "backwardElastK" : "0.75",
+                  "leftSibling" : "Track_VT_R3",
+                  "offset" : "-0.06"
+               },
+               {
+                  "name" : "Track_VT_R5",
+                  "rightSibling" : "Track_VT_R6",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "forwardElastK" : 1,
+                  "leftSibling" : "Track_VT_R4",
+                  "offset" : "-0.041"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VT_R6",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.045",
+                  "leftSibling" : "Track_VT_R5"
+               }
+            ],
+            "gravity" : "-9.8",
+            "maxAmplitude" : "0.05",
+            "damping" : 2,
+            "elasticity" : 1100,
+            "linkBones" : true
+         },
+         "brakeForce" : 9000,
+         "maxHealth" : 70,
+         "traces" : {
+            "textureSet" : "germany_02",
+            "size" : "0.44 0.32",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR"
+         },
+         "price" : 1840,
+         "tags" : {},
+         "weight" : 2500,
+         "models" : {
+            "undamaged" : "vehicles/german/G63_PzI_ausf_C/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxRegenHealth" : 55,
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 3 0 0 -0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.24",
+            "vehicleRotation" : "0.24"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06"
+               },
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "template" : "Track_R",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "repairCost" : "5.0",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "hullPosition" : "0 1 0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G63_PzI_ausf_C/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G63_PzI_ausf_C/collision_client/Chassis.model"
+         },
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "rotationSpeed" : 48,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.5",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "terrainResistance" : "0.9 1 1.9",
+         "trackThickness" : "-0.0038",
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 5
+               },
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "isLeft" : false
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "17.1429",
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : "17.1429",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "17.1429"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R1",
+                  "syncAngle" : "17.1429",
+                  "radius" : "0",
+                  "isLeading" : true
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "bulkHealthFactor" : "3.0",
+         "splineDesc" : {
+            "segmentLength" : "0.085",
+            "left" : "vehicles/german/G63_PzI_ausf_C/track/left.track",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/german/G63_PzI_ausf_C/track/right.track",
+            "segmentModelRight" : "vehicles/german/G63_PzI_ausf_C/track/segment.model",
+            "segmentModelLeft" : "vehicles/german/G63_PzI_ausf_C/track/segment.model",
+            "segmentOffset" : "0.193",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            }
+         },
+         "userString" : "#germany_vehicles:Chassis_PzI_ausf_C_2",
+         "level" : 3,
+         "topRightCarryingPoint" : "1 1",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "maxLoad" : 10200
+      },
+      "Chassis_PzI_ausf_C" : {
+         "maxLoad" : 8000,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "level" : 3,
+         "topRightCarryingPoint" : "1 1",
+         "userString" : "#germany_vehicles:Chassis_PzI_ausf_C",
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.193",
+            "segmentModelLeft" : "vehicles/german/G63_PzI_ausf_C/track/segment.model",
+            "segmentModelRight" : "vehicles/german/G63_PzI_ausf_C/track/segment.model",
+            "right" : "vehicles/german/G63_PzI_ausf_C/track/right.track",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/german/G63_PzI_ausf_C/track/left.track",
+            "segmentLength" : "0.085"
+         },
+         "bulkHealthFactor" : "3.0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : "17.1429",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : "17.1429",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : "17.1429",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "syncAngle" : "17.1429",
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 5,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 5,
+                  "isLeft" : false,
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "trackThickness" : "-0.0038",
+         "terrainResistance" : "1 1.1 2.1",
+         "tracks" : {
+            "textureScale" : "-3.5",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "rotationSpeed" : 44,
+         "unlocks" : {
+            "chassis" : "Chassis_PzI_ausf_C_2"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G63_PzI_ausf_C/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G63_PzI_ausf_C/collision_client/Chassis.model"
+         },
+         "hullPosition" : "0 1 0",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "startIndex" : "",
+                  "count" : 5
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "startIndex" : "",
+                  "count" : 5
+               }
+            ]
+         },
+         "repairCost" : "5.0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "maxClimbAngle" : 25,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 3 0 0 -0"
+            }
+         },
+         "navmeshGirth" : "6.0",
+         "maxRegenHealth" : 45,
+         "wwsoundNPC" : "trds_chf_npc",
+         "models" : {
+            "undamaged" : "vehicles/german/G63_PzI_ausf_C/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G63_PzI_ausf_C/crash/lod0/Chassis.model"
+         },
+         "weight" : 2500,
+         "price" : 1800,
+         "tags" : {},
+         "traces" : {
+            "textureSet" : "germany_02",
+            "size" : "0.44 0.32",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank"
+         },
+         "brakeForce" : 8000,
+         "maxHealth" : 60,
+         "trackNodes" : {
+            "enable" : true,
+            "gravity" : "-9.8",
+            "node" : [
+               {
+                  "backwardElastK" : 1,
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "offset" : "-0.082"
+               },
+               {
+                  "offset" : "-0.126",
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.111",
+                  "leftSibling" : "Track_VT_L1"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "offset" : "-0.087",
+                  "rightSibling" : "Track_VT_L4",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.4",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.2",
+                  "rightSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : "0.75",
+                  "offset" : "-0.06",
+                  "leftSibling" : "Track_VT_L3"
+               },
+               {
+                  "leftSibling" : "Track_VT_L4",
+                  "offset" : "-0.041",
+                  "rightSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L5",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "0.75",
+                  "leftSibling" : "Track_VT_L5",
+                  "offset" : "-0.045"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 2
+               },
+               {
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "forwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.082",
+                  "rightSibling" : "Track_VT_R1",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : 2
+               },
+               {
+                  "offset" : "-0.126",
+                  "leftSibling" : "Track_VT_R0",
+                  "name" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R2",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "offset" : "-0.111",
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "leftSibling" : "Track_VT_R2",
+                  "offset" : "-0.087",
+                  "rightSibling" : "Track_VT_R4",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "leftSibling" : "Track_VT_R3",
+                  "offset" : "-0.06",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R5",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "leftSibling" : "Track_VT_R4",
+                  "offset" : "-0.041",
+                  "rightSibling" : "Track_VT_R6",
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R5",
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R6",
+                  "offset" : "-0.045",
+                  "leftSibling" : "Track_VT_R5"
+               }
+            ],
+            "maxOffset" : "0.05",
+            "linkBones" : true,
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1100,
+            "damping" : 2
+         },
+         "rotationIsAroundCenter" : true
+      }
+   }
+}

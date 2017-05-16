@@ -1,0 +1,479 @@
+{
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.8",
+      "default" : "japanese_sun",
+      "lodDist" : "MEDIUM"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Mitsubishi" : {
+               "smplEnginePower" : "79.29608"
+            }
+         },
+         "chassis" : {
+            "Chassis_NC27_2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "0.2",
+      "tiling" : "1 1 0 0"
+   },
+   "crewXpFactor" : "1.0",
+   "radios" : {
+      "_Type94_Otsu" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.815424179"
+   },
+   "chassis" : {
+      "Chassis_NC27_2" : {
+         "price" : "",
+         "tags" : {},
+         "maxRegenHealth" : 40,
+         "maxClimbAngle" : 25,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "repairCost" : "1.0",
+         "terrainResistance" : "1.1 1.3 2.5",
+         "wwsoundNPC" : "trds_chf_npc",
+         "hullPosition" : "0 1 0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "minOffset" : "-0.0332168",
+                  "count" : 14,
+                  "maxOffset" : "0.0262238",
+                  "template" : "Track_L",
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 14,
+                  "minOffset" : "-0.0332168",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.0262238"
+               }
+            ]
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.3",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "navmeshGirth" : "6.0",
+         "trackNodes" : {
+            "maxAmplitude" : "0.03",
+            "node" : [
+               {
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.046",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.046"
+               },
+               {
+                  "offset" : "-0.046",
+                  "backwardElastK" : "1.1",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "offset" : "-0.046",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.3",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.046"
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.046"
+               },
+               {
+                  "backwardElastK" : "1.1",
+                  "isLeft" : false,
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "offset" : "-0.046",
+                  "backwardElastK" : "1.3",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "offset" : "-0.046",
+                  "name" : "Track_VT_R4",
+                  "forwardElastK" : "0.9"
+               }
+            ],
+            "damping" : 2,
+            "elasticity" : 1100,
+            "linkBones" : false,
+            "maxOffset" : "0.03",
+            "enable" : true,
+            "gravity" : -6
+         },
+         "maxHealth" : 50,
+         "armor" : {
+            "rightTrack" : 5,
+            "leftTrack" : 5
+         },
+         "rotationIsAroundCenter" : false,
+         "rotationSpeed" : 40,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.4",
+            "vehicleMovement" : "0.4"
+         },
+         "weight" : 2600,
+         "brakeForce" : 9400,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 8,
+                  "template" : "W_R",
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 6,
+                  "template" : "W_R",
+                  "startIndex" : 8
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 8,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 6,
+                  "template" : "W_L",
+                  "startIndex" : 8
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "syncAngle" : "32.7273",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R1",
+                  "isLeading" : true,
+                  "syncAngle" : "32.7273",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : "32.7273",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "syncAngle" : "32.7273",
+                  "isLeading" : true,
+                  "name" : "WD_L1"
+               }
+            ]
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "models" : {
+            "exploded" : "vehicles/japan/J01_NC27/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/japan/J01_NC27/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/japan/J01_NC27/crash/lod0/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "userString" : "#japan_vehicles:Chassis_NC27_2",
+         "splineDesc" : {
+            "right" : "vehicles/japan/J01_NC27/track/right.track",
+            "left" : "vehicles/japan/J01_NC27/track/left.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/japan/J01_NC27/track/segment1.model",
+            "segmentModelRight" : "vehicles/japan/J01_NC27/track/segment1.model",
+            "segmentLength" : "0.151",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.19"
+         },
+         "bulkHealthFactor" : "3.0",
+         "traces" : {
+            "size" : "0.35 0.33",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank"
+         },
+         "level" : 1,
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J01_NC27/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/japan/J01_NC27/collision_client/Chassis.model"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "maxLoad" : 10500,
+         "trackThickness" : "0",
+         "topRightCarryingPoint" : "0.686146 1.34952"
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "speedLimits" : {
+      "forward" : 23,
+      "backward" : 8
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "turrets0" : {
+      "Turret_2_NC27" : {
+         "gunPosition" : "0.000000 0.232351 0.476",
+         "level" : 1,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J01_NC27/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/japan/J01_NC27/collision_client/Turret_02.model"
+         },
+         "maxHealth" : 22,
+         "notInShop" : true,
+         "armor" : {
+            "armor_6" : 8,
+            "armor_8" : "",
+            "armor_4" : 20,
+            "armor_5" : 20,
+            "armor_2" : 20,
+            "armor_3" : 20,
+            "armor_1" : 20,
+            "armor_10" : 20,
+            "armor_7" : 8,
+            "armor_9" : 20
+         },
+         "rotationSpeed" : 24,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.706 0.390 0.688 0.481 0.563 0.500 0.253 0.500 0.207 0.473 0.588",
+         "weight" : 200,
+         "showEmblemsOnGun" : false,
+         "circularVisionRadius" : 280,
+         "tags" : {},
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-0.570576 0.258313 -0.20808",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0.389027 0.221107 -0.13288",
+                  "size" : "0.24",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "0 0 -0",
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "rayStart" : "1 0 -0"
+               }
+            ],
+            "inscription" : {
+               "rayStart" : "-0.01635 0.569602 0.285877",
+               "rayUp" : "0.000000 0.000000 -1",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-0.0173634 0.377194 0.231314",
+               "size" : "0.5"
+            }
+         },
+         "price" : "",
+         "models" : {
+            "exploded" : "vehicles/japan/J01_NC27/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/japan/J01_NC27/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/japan/J01_NC27/crash/lod0/Turret_02.model"
+         },
+         "userString" : "#japan_vehicles:Turret_2_NC27",
+         "guns" : {
+            "_37mm_Sogekiho" : "shared",
+            "_13.2mm_Type93" : "shared"
+         },
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 30,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 15
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 50,
+            "maxRegenHealth" : 25
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_05"
+      }
+   },
+   "repairCost" : "",
+   "crew" : {
+      "commander" : "gunner\n\t\t\tradioman\n\t\t\tloader",
+      "driver" : {}
+   },
+   "invisibility" : {
+      "still" : "0.245",
+      "firePenalty" : "0.368",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "moving" : "0.184"
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/japan/J01_NC27/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/japan/J01_NC27/collision/Hull.model"
+      },
+      "maxHealth" : 88,
+      "swinging" : {
+         "pitchParams" : "0.30 36.00 0.34 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.88",
+         "rollParams" : "1.00 0.30 36.00 0.34 1.00 0.05 0.32",
+         "lodDist" : "FAR"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.535453 0.43705"
+      },
+      "exhaust" : {
+         "tags" : {},
+         "pixie" : "diesel_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "models" : {
+         "exploded" : "vehicles/japan/J01_NC27/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/japan/J01_NC27/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/japan/J01_NC27/normal/lod0/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/japan/J01_NC27/NC27_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.173939 0.302582 1.34454",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "size" : "0.22",
+            "rayEnd" : "0.173939 0.111377 1.28589"
+         }
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 45,
+         "maxHealth" : 65,
+         "repairCost" : "1.0"
+      },
+      "camouflage" : {
+         "tiling" : "4 2 0.000000 0.000000"
+      },
+      "weight" : 4674,
+      "primaryArmor" : "armor_1 armor_12 armor_4",
+      "armor" : {
+         "armor_14" : 22,
+         "armor_8" : 6,
+         "armor_6" : 12,
+         "armor_12" : 30,
+         "armor_5" : 12,
+         "armor_4" : 22,
+         "armor_3" : 20,
+         "armor_11" : 30,
+         "armor_2" : 30,
+         "armor_13" : 12,
+         "armor_1" : 30,
+         "armor_15" : 11,
+         "armor_7" : 12,
+         "armor_10" : 8,
+         "armor_9" : ""
+      }
+   },
+   "engines" : {
+      "Mitsubishi" : "shared"
+   }
+}

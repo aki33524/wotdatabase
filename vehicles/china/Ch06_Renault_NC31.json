@@ -1,0 +1,483 @@
+{
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/chinese/Ch06_Renault_NC31/Renault_NC31_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "turretPositions" : {
+         "turret" : "0.0012 0.550769 0.5362"
+      },
+      "armor" : {
+         "armor_8" : 8,
+         "armor_4" : 16,
+         "armor_1" : 16,
+         "armor_3" : 16,
+         "armor_5" : 8,
+         "armor_6" : 8,
+         "armor_2" : 16,
+         "armor_7" : ""
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/chinese/Ch06_Renault_NC31/collision/Hull.model",
+         "collisionModelClient" : "vehicles/chinese/Ch06_Renault_NC31/collision_client/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.58",
+               "hideIfDamaged" : false,
+               "rayStart" : "-1 0 0",
+               "rayEnd" : "-0 0 0"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.58",
+               "hideIfDamaged" : false,
+               "rayStart" : "1 0 0",
+               "rayEnd" : "0 0 0"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.22",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.00587464 -0.00520698 2.11801",
+            "rayEnd" : "-0.00587463 -0.141711 1.74202"
+         }
+      },
+      "maxHealth" : 88,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.67",
+         "pitchParams" : "0.26 32.00 0.38 1.00 0.05 0.29",
+         "rollParams" : "1.00 0.26 32.00 0.38 1.00 0.05 0.29"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "weight" : 4923,
+      "models" : {
+         "exploded" : "vehicles/chinese/Ch06_Renault_NC31/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/chinese/Ch06_Renault_NC31/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/chinese/Ch06_Renault_NC31/normal/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 45,
+         "maxHealth" : 65,
+         "repairCost" : "1.0"
+      },
+      "camouflage" : {
+         "tiling" : "4 4 0.000000 0.000000"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Ch06_Renault_NC31_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "_Renault_NC" : {
+               "smplEnginePower" : "79.29608"
+            }
+         }
+      }
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "china_star",
+      "alpha" : "0.86"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.166",
+      "still" : "0.221",
+      "firePenalty" : "0.332",
+      "camouflageBonus" : "0.03"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "radios" : {
+      "ER_52" : "shared"
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "gunner\n\n\t\t\tradioman\n\n\t\t\tloader"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "turrets0" : {
+      "Turret_2_Ch06_Renault_NC31" : {
+         "wwturretRotatorSoundManual" : "tur_man_trav_03",
+         "primaryArmor" : "armor_1 armor_3 armor_3",
+         "models" : {
+            "exploded" : "vehicles/chinese/Ch06_Renault_NC31/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/chinese/Ch06_Renault_NC31/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/chinese/Ch06_Renault_NC31/normal/lod0/Turret_02.model"
+         },
+         "maxHealth" : 22,
+         "circularVisionRadius" : 280,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 30,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 15
+         },
+         "price" : "",
+         "armor" : {
+            "armor_2" : 22,
+            "armor_7" : 8,
+            "armor_9" : 16,
+            "armor_8" : "",
+            "armor_4" : 16,
+            "armor_1" : 22,
+            "armor_5" : 22,
+            "armor_3" : 22,
+            "armor_6" : 8
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/chinese/Ch06_Renault_NC31/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/chinese/Ch06_Renault_NC31/collision_client/Turret_02.model"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-0.298747 0.158351 0.00300072",
+                  "rayStart" : "-0.690999 0.236423 0.00941993",
+                  "hideIfDamaged" : false,
+                  "size" : "0.22",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "size" : "0.22",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0.298747 0.158351 0.00300072",
+                  "isMirrored" : true,
+                  "rayStart" : "0.690999 0.236423 0.00941993"
+               }
+            ]
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 25,
+            "maxHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "level" : 1,
+         "physicsShape" : "1.000 0.010 0.987 0.000 0.534 0.130 0.500 0.441 0.500 0.500 0.207 0.500 0.234 0.426 0.277",
+         "rotationSpeed" : 34,
+         "tags" : {},
+         "weight" : 200,
+         "notInShop" : true,
+         "gunPosition" : "0.00091 0.214172 0.491025",
+         "showEmblemsOnGun" : false,
+         "userString" : "#china_vehicles:Turret_2_Ch06_Renault_NC31",
+         "guns" : {
+            "_37mm_APX_SA18" : "shared",
+            "_37mm_KwK_L46" : "shared"
+         }
+      }
+   },
+   "engines" : {
+      "_Renault_NC" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "0.2",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "forward" : 25,
+      "backward" : 8
+   },
+   "repairCost" : "",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.815043165"
+   },
+   "chassis" : {
+      "Chassis_Ch06_Renault_NC31_2" : {
+         "trackNodes" : {
+            "linkBones" : true,
+            "enable" : true,
+            "gravity" : "-9.8",
+            "maxOffset" : "0.03",
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.264",
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.6",
+                  "isLeft" : true,
+                  "backwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : "0.6",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L0",
+                  "backwardElastK" : "1.5",
+                  "offset" : "-0.296",
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.264",
+                  "backwardElastK" : 2,
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.6",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_R0",
+                  "offset" : "0"
+               },
+               {
+                  "offset" : "0",
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "backwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "backwardElastK" : 1,
+                  "forwardElastK" : "0.6",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.264"
+               },
+               {
+                  "offset" : "-0.296",
+                  "name" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.6",
+                  "backwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.264",
+                  "backwardElastK" : 2,
+                  "leftSibling" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.6"
+               }
+            ],
+            "maxAmplitude" : "0.03",
+            "damping" : 2,
+            "elasticity" : 1100
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "userString" : "#china_vehicles:Chassis_Ch06_Renault_NC31_2",
+         "notInShop" : true,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.38",
+            "vehicleRotation" : "0.38"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "maxOffset" : "0.06"
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.06",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "navmeshGirth" : "6.0",
+         "level" : 1,
+         "tags" : {},
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/chinese/Ch06_Renault_NC31/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/chinese/Ch06_Renault_NC31/collision/Chassis.model"
+         },
+         "maxLoad" : 8600,
+         "wwsoundPC" : "treads_type_pc",
+         "wwsoundNPC" : "trds_med_npc",
+         "maxRegenHealth" : 40,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 15,
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R1",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R2",
+                  "syncAngle" : 15
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : 15
+               },
+               {
+                  "name" : "WD_L1",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : 15,
+                  "name" : "WD_L2"
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "count" : 8,
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "terrainResistance" : "1 1.2 2.1",
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "right" : "vehicles/chinese/Ch06_Renault_NC31/track/right.track",
+            "segmentModelLeft" : "vehicles/chinese/Ch06_Renault_NC31/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.029",
+            "segmentLength" : "0.12",
+            "segmentModelRight" : "vehicles/chinese/Ch06_Renault_NC31/track/segment.model",
+            "left" : "vehicles/chinese/Ch06_Renault_NC31/track/left.track"
+         },
+         "hullPosition" : "0.000000 1.03073 0.000000",
+         "trackThickness" : "-0.009",
+         "rotationSpeed" : 60,
+         "weight" : 800,
+         "rotationIsAroundCenter" : false,
+         "maxClimbAngle" : 25,
+         "armor" : {
+            "rightTrack" : 5,
+            "leftTrack" : 5
+         },
+         "price" : "",
+         "repairCost" : "1.0",
+         "maxHealth" : 50,
+         "brakeForce" : 6600,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-2.4"
+         },
+         "models" : {
+            "destroyed" : "vehicles/chinese/Ch06_Renault_NC31/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/chinese/Ch06_Renault_NC31/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/chinese/Ch06_Renault_NC31/crash/lod0/Chassis.model"
+         },
+         "topRightCarryingPoint" : "0.719037 1.26677",
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "size" : "0.48 0.36",
+            "textureSet" : "usa_02"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         }
+      }
+   }
+}

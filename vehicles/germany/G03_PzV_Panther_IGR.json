@@ -1,0 +1,564 @@
+{
+   "radios" : {
+      "FuG12_IGR" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.963500662"
+   },
+   "repairCost" : "6.09",
+   "speedLimits" : {
+      "forward" : 55,
+      "backward" : 20
+   },
+   "engines" : {
+      "Maybach_HL_230_TRM_P30_IGR" : "shared"
+   },
+   "turrets0" : {
+      "Pz-V_Shmallturm_IGR" : {
+         "invisibilityFactor" : "0.991",
+         "gunPosition" : "0.0058 0.4563 1.0316",
+         "models" : {
+            "destroyed" : "vehicles/german/G03_PzV_Panther/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/german/G03_PzV_Panther/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/german/G03_PzV_Panther/crash/lod0/Turret_02.model"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 65,
+            "repairCost" : "1.0",
+            "maxHealth" : 130
+         },
+         "price" : 22300,
+         "guns" : {
+            "_75mm_KwK45_L100_IGR" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 380,
+         "shortUserString" : "#igr_vehicles:Pz-V_Shmallturm_IGR_short",
+         "userString" : "#igr_vehicles:Pz-V_Shmallturm_IGR",
+         "showEmblemsOnGun" : false,
+         "notInShop" : true,
+         "tags" : {},
+         "camouflage" : {
+            "tiling" : "0.7 0.7 0.000000 0.000000"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G03_PzV_Panther/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/german/G03_PzV_Panther/collision/Turret_02.model"
+         },
+         "physicsShape" : "1.008 -0.015 1.028 0.000 0.658 0.126 0.924 0.286 0.402 0.509 0.290 0.500 0.268 0.571 0.000",
+         "rotationSpeed" : 30,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayEnd" : "-0.798685 0.289348 0.0538259",
+                  "rayStart" : "-1.14356 0.448953 0.178674",
+                  "hideIfDamaged" : false,
+                  "size" : "0.72",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "1.14356 0.448953 0.178674",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "0.798685 0.289348 0.0538259",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.72"
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "-1 0 1",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-1 0 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1 0 1",
+                  "rayEnd" : "1 0 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "size" : "0.32"
+               }
+            ]
+         },
+         "armor" : {
+            "armor_7" : 120,
+            "armor_3" : 60,
+            "armor_16" : 40,
+            "armor_8" : "",
+            "armor_6" : 40,
+            "armor_1" : 120,
+            "armor_9" : 60,
+            "armor_4" : 60,
+            "armor_5" : 40
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "maxHealth" : 340,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 45,
+            "maxHealth" : 90
+         },
+         "weight" : 7745,
+         "level" : 7
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "chassis" : {
+      "Pz-V_Vetstaerktketten_IGR" : {
+         "hullPosition" : "0.000000 1.23974 0.000000",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.55",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 0"
+            }
+         },
+         "rotationSpeed" : 32,
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "maxOffset" : "0.1",
+                  "minOffset" : "-0.1",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 8
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.1",
+                  "minOffset" : "-0.1",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "tags" : {},
+         "terrainResistance" : "1 1.2 2.3",
+         "trackThickness" : "-0.0702",
+         "wwsoundNPC" : "trds_chf_npc",
+         "shortUserString" : "#igr_vehicles:Pz-V_Vetstaerktketten_IGR_short",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "21.1765",
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0.3435",
+                  "name" : "WD_L1",
+                  "syncAngle" : "21.1765"
+               },
+               {
+                  "name" : "WD_R0",
+                  "syncAngle" : "21.1765",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : "21.1765",
+                  "name" : "WD_R1",
+                  "radius" : "0.3435",
+                  "isLeading" : true,
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "radius" : "0.447",
+                  "isLeft" : true,
+                  "template" : "W_L"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 8,
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0.447"
+               }
+            ]
+         },
+         "navmeshGirth" : "6.0",
+         "price" : 18200,
+         "weight" : 15000,
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 7,
+         "brakeForce" : 45000,
+         "repairCost" : "5.0",
+         "maxHealth" : 160,
+         "trackNodes" : {
+            "linkBones" : true,
+            "node" : [
+               {
+                  "offset" : "-0.096",
+                  "forwardElastK" : "2.4",
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1",
+                  "backwardElastK" : "0.55",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.55",
+                  "forwardElastK" : 2,
+                  "offset" : "-0.132"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.7",
+                  "offset" : "-0.14",
+                  "backwardElastK" : "0.55",
+                  "rightSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L2",
+                  "offset" : "-0.14",
+                  "forwardElastK" : "1.4",
+                  "rightSibling" : "Track_VT_L4",
+                  "backwardElastK" : "0.55",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L3",
+                  "rightSibling" : "Track_VT_L5",
+                  "backwardElastK" : "0.55",
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "1.1",
+                  "offset" : "-0.14"
+               },
+               {
+                  "name" : "Track_VT_L5",
+                  "rightSibling" : "Track_VT_L6",
+                  "backwardElastK" : "0.55",
+                  "offset" : "-0.129",
+                  "forwardElastK" : "0.95",
+                  "leftSibling" : "Track_VT_L4",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L5",
+                  "forwardElastK" : "0.8",
+                  "offset" : "-0.116",
+                  "name" : "Track_VT_L6",
+                  "rightSibling" : "Track_VT_L7",
+                  "backwardElastK" : "0.55"
+               },
+               {
+                  "backwardElastK" : "0.55",
+                  "name" : "Track_VT_L7",
+                  "offset" : "-0.099",
+                  "forwardElastK" : "0.7",
+                  "leftSibling" : "Track_VT_L6",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.096",
+                  "forwardElastK" : "2.4",
+                  "backwardElastK" : "0.55",
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.55",
+                  "offset" : "-0.132",
+                  "forwardElastK" : 2
+               },
+               {
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "0.55",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.7",
+                  "offset" : "-0.14",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "forwardElastK" : "1.4",
+                  "offset" : "-0.14",
+                  "rightSibling" : "Track_VT_R4",
+                  "backwardElastK" : "0.55",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R2"
+               },
+               {
+                  "leftSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.55",
+                  "rightSibling" : "Track_VT_R5",
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.14",
+                  "forwardElastK" : "1.1"
+               },
+               {
+                  "leftSibling" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "offset" : "-0.129",
+                  "forwardElastK" : "0.95",
+                  "rightSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R5",
+                  "backwardElastK" : "0.55"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R5",
+                  "rightSibling" : "Track_VT_R7",
+                  "name" : "Track_VT_R6",
+                  "backwardElastK" : "0.55",
+                  "offset" : "-0.116",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "leftSibling" : "Track_VT_R6",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.7",
+                  "offset" : "-0.099",
+                  "backwardElastK" : "0.55",
+                  "name" : "Track_VT_R7"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "damping" : 2,
+            "maxOffset" : "0.07",
+            "enable" : true,
+            "elasticity" : 1200,
+            "gravity" : "-9.8",
+            "maxAmplitude" : "0.07"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "traces" : {
+            "size" : "0.48 0.62",
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G03_PzV_Panther/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G03_PzV_Panther/collision_client/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "maxLoad" : 48000,
+         "rotationIsAroundCenter" : true,
+         "notInShop" : true,
+         "topRightCarryingPoint" : "1.36878 1.95724",
+         "userString" : "#igr_vehicles:Pz-V_Vetstaerktketten_IGR",
+         "maxClimbAngle" : 25,
+         "splineDesc" : {
+            "segmentLength" : "0.151",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/german/G03_PzV_Panther/track/segment.model",
+            "left" : "vehicles/german/G03_PzV_Panther/track/left.track",
+            "segmentModelLeft" : "vehicles/german/G03_PzV_Panther/track/segment.model",
+            "right" : "vehicles/german/G03_PzV_Panther/track/right.track",
+            "segmentOffset" : "0.21"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.18",
+            "vehicleRotation" : "0.18"
+         },
+         "maxRegenHealth" : 120,
+         "models" : {
+            "exploded" : "vehicles/german/G03_PzV_Panther/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G03_PzV_Panther/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G03_PzV_Panther/crash/lod0/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0"
+      }
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "still" : "0.162",
+      "camouflageBonus" : "0.03",
+      "moving" : "0.121",
+      "firePenalty" : "0.243"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.4",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "crew" : {
+      "radioman" : {},
+      "driver" : {},
+      "loader" : {},
+      "commander" : {},
+      "gunner" : {}
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "hull" : {
+      "weight" : 18775,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 960,
+      "turretPositions" : {
+         "turret" : "0.000000 0.723957 -0.265"
+      },
+      "armor" : {
+         "armor_7" : 16,
+         "armor_15" : 65,
+         "armor_3" : 50,
+         "armor_13" : 16,
+         "armor_14" : 25,
+         "armor_16" : 5,
+         "armor_2" : 50,
+         "armor_6" : 16,
+         "armor_8" : "",
+         "armor_1" : 85,
+         "armor_4" : 40,
+         "armor_5" : 40,
+         "armor_11" : 40
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.32",
+            "rayStart" : "-0.457764 0.677167 2.42992",
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.457764 0.3528 2.19586"
+         }
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "camouflage" : {
+         "tiling" : "1.6 1.6 0.7 0.7"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 190,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 130
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.48",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "hangarShadowTexture" : "vehicles/german/G03_PzV_Panther/PzV_Panther_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G03_PzV_Panther/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G03_PzV_Panther/collision_client/Hull.model"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G03_PzV_Panther/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G03_PzV_Panther/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G03_PzV_Panther/crash/lod0/Hull.model"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Maybach_HL_230_TRM_P30_IGR" : {
+               "smplEnginePower" : "740.0968"
+            }
+         },
+         "chassis" : {
+            "Pz-V_Vetstaerktketten_IGR" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   }
+}

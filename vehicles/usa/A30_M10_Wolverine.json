@@ -1,0 +1,878 @@
+{
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.0",
+      "exclusionMask" : {}
+   },
+   "chassis" : {
+      "Chassis_M10_Wolverine_2" : {
+         "navmeshGirth" : "6.0",
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0.12745",
+                  "isLeft" : false
+               },
+               {
+                  "count" : 6,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_L"
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               }
+            ]
+         },
+         "maxRegenHealth" : 75,
+         "trackNodes" : {
+            "maxOffset" : "0.05",
+            "damping" : 2,
+            "linkBones" : false,
+            "node" : [
+               {
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.02",
+                  "offset" : "-0.032",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.02",
+                  "isLeft" : false,
+                  "offset" : "-0.032",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "forwardElastK" : "2.03",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true,
+                  "offset" : "-0.032",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "offset" : "-0.032",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "2.03"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.032"
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.032",
+                  "isLeft" : false
+               }
+            ],
+            "gravity" : "-8.8",
+            "enable" : true,
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1038
+         },
+         "level" : 5,
+         "rotationSpeed" : 30,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A30_M10_Wolverine/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A30_M10_Wolverine/collision_client/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "maxLoad" : 31700,
+         "userString" : "#usa_vehicles:Chassis_M10_Wolverine_2",
+         "bulkHealthFactor" : "3.0",
+         "brakeForce" : 35500,
+         "repairCost" : "5.0",
+         "topRightCarryingPoint" : "1.05187 1.89241",
+         "weight" : 7000,
+         "tags" : {},
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.08",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "count" : 6
+               },
+               {
+                  "minOffset" : "-0.08",
+                  "isLeft" : false,
+                  "maxOffset" : "0.06",
+                  "count" : 6,
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "trackThickness" : "-0.0016",
+         "wwsoundPC" : "treads_type_pc",
+         "splineDesc" : {
+            "segment2ModelLeft" : "vehicles/american/A30_M10_Wolverine/track/segment2.model",
+            "segmentModelRight" : "vehicles/american/A30_M10_Wolverine/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.026",
+            "segment2ModelRight" : "vehicles/american/A30_M10_Wolverine/track/segment2.model",
+            "left" : "vehicles/american/A30_M10_Wolverine/track/left.track",
+            "right" : "vehicles/american/A30_M10_Wolverine/track/right.track",
+            "segmentModelLeft" : "vehicles/american/A30_M10_Wolverine/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "segment2Offset" : "0.075",
+            "segmentLength" : "0.145"
+         },
+         "terrainResistance" : "1.1 1.3 2.3",
+         "wwsoundNPC" : "trds_chf_npc",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.23",
+            "vehicleMovement" : "0.23"
+         },
+         "tracks" : {
+            "textureScale" : "-3.1",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.4 0.47",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_01"
+         },
+         "maxHealth" : 100,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "rotationIsAroundCenter" : true,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "models" : {
+            "exploded" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A30_M10_Wolverine/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Chassis.model"
+         },
+         "price" : 10000,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "hullPosition" : "0 1 0"
+      },
+      "Chassis_M10_Wolverine" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 6,
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "minOffset" : "-0.08",
+                  "isLeft" : true
+               },
+               {
+                  "minOffset" : "-0.08",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "count" : 6,
+                  "maxOffset" : "0.06"
+               }
+            ]
+         },
+         "trackThickness" : "-0.0016",
+         "wwsoundPC" : "treads_type_pc",
+         "splineDesc" : {
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/american/A30_M10_Wolverine/track/segment.model",
+            "segment2ModelLeft" : "vehicles/american/A30_M10_Wolverine/track/segment2.model",
+            "segment2ModelRight" : "vehicles/american/A30_M10_Wolverine/track/segment2.model",
+            "segmentOffset" : "0.026",
+            "right" : "vehicles/american/A30_M10_Wolverine/track/right.track",
+            "left" : "vehicles/american/A30_M10_Wolverine/track/left.track",
+            "segment2Offset" : "0.075",
+            "segmentLength" : "0.145",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/american/A30_M10_Wolverine/track/segment.model"
+         },
+         "terrainResistance" : "1.3 1.7 2.5",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.1",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "maxHealth" : 90,
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "size" : "0.4 0.47",
+            "bufferPrefs" : "mediumTank"
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "rotationIsAroundCenter" : true,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "models" : {
+            "destroyed" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A30_M10_Wolverine/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Chassis.model"
+         },
+         "price" : 4300,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "hullPosition" : "0 1 0",
+         "navmeshGirth" : "6.0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R4",
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0.12745",
+                  "isLeft" : false,
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "count" : 6,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 3
+               },
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0"
+               }
+            ]
+         },
+         "maxRegenHealth" : 70,
+         "trackNodes" : {
+            "elasticity" : 1038,
+            "node" : [
+               {
+                  "offset" : "-0.032",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.02"
+               },
+               {
+                  "backwardElastK" : "2.02",
+                  "forwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "offset" : "-0.032"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.032",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "2.03",
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "offset" : "-0.032",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "2.03"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "2.01",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.032",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.3"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.032",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "2.01",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.032"
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.032",
+                  "isLeft" : false
+               }
+            ],
+            "gravity" : "-8.8",
+            "enable" : true,
+            "maxAmplitude" : "0.05",
+            "maxOffset" : "0.05",
+            "damping" : 2,
+            "linkBones" : false
+         },
+         "level" : 4,
+         "rotationSpeed" : 28,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A30_M10_Wolverine/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A30_M10_Wolverine/collision_client/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "maxLoad" : 28490,
+         "userString" : "#usa_vehicles:Chassis_M10_Wolverine",
+         "bulkHealthFactor" : "3.0",
+         "topRightCarryingPoint" : "1.05187 1.89241",
+         "brakeForce" : 35500,
+         "tags" : {},
+         "repairCost" : "5.0",
+         "weight" : 7000,
+         "unlocks" : {
+            "chassis" : "Chassis_M10_Wolverine_2"
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Wright_Continental_R-975C1" : {
+               "smplEnginePower" : "422.9124"
+            },
+            "Ford_GAA_R" : {
+               "smplEnginePower" : "528.6406"
+            },
+            "Wright_Continental_R-975EC2" : {
+               "smplEnginePower" : "370.0484"
+            },
+            "GMC_6046" : {
+               "smplEnginePower" : "444.0581"
+            }
+         },
+         "chassis" : {
+            "Chassis_M10_Wolverine" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            },
+            "Chassis_M10_Wolverine_2" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 48
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "engines" : {
+      "Wright_Continental_R-975EC2" : "shared",
+      "Ford_GAA_R" : "shared",
+      "GMC_6046" : "shared",
+      "Wright_Continental_R-975C1" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.82",
+      "default" : "usa_star"
+   },
+   "repairCost" : "6.43",
+   "hull" : {
+      "weight" : 14800,
+      "camouflage" : {
+         "tiling" : "1.18 1.18 0.000000 0.000000"
+      },
+      "armor" : {
+         "armor_13" : "9.5",
+         "armor_7" : "19.1",
+         "armor_8" : "12.7",
+         "armor_4" : "25.4",
+         "armor_2" : "38.1",
+         "armor_11" : "9.5",
+         "armor_3" : "19.1",
+         "armor_1" : "38.1",
+         "armor_14" : "19.1",
+         "armor_9" : "6.4",
+         "armor_12" : "50.8",
+         "armor_10" : "25.4",
+         "armor_6" : "31.8",
+         "armor_5" : "25.4"
+      },
+      "swinging" : {
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.32"
+      },
+      "hangarShadowTexture" : "vehicles/american/A30_M10_Wolverine/M10_Wolverine_HangarShadowMap.dds",
+      "models" : {
+         "exploded" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A30_M10_Wolverine/normal/lod0/Hull.model"
+      },
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "tags" : {
+            "diesel" : "diesel_medium"
+         },
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A30_M10_Wolverine/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A30_M10_Wolverine/collision_client/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 120,
+         "maxHealth" : 170,
+         "repairCost" : "1.0"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "-0.298765 0.0115407 2.21084",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.298765 0.344327 2.43277",
+            "size" : "0.32"
+         },
+         "inscription" : {
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.0188612 0.483955 1.66924",
+            "size" : "0.73",
+            "rayStart" : "-0.0188612 0.680349 1.80718",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "maxHealth" : 272,
+      "turretPositions" : {
+         "turret" : "0 1 -0"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_3"
+   },
+   "radios" : {
+      "SCR_506" : "shared",
+      "SCR_508" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_M10_Wolverine" : {
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "physicsShape" : "0.835 0.101 1.137 0.000 0.604 0.245 1.000 0.187 0.511 0.475 0.237 0.482 0.000 0.000 0.000",
+         "rotationSpeed" : 17,
+         "level" : 4,
+         "camouflage" : {
+            "tiling" : "0.775 0.775 0.000000 0.000000"
+         },
+         "maxHealth" : 68,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-0.976499 0.452788 0.0636461",
+                  "size" : "0.28",
+                  "rayEnd" : "-0.76108 0.367787 0.000649273",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "size" : "0.28",
+                  "rayStart" : "1 0 0",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 0",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A30_M10_Wolverine/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A30_M10_Wolverine/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0.000000 0.362378 1.04756",
+         "armor" : {
+            "armor_5" : "19.1",
+            "armor_2" : "",
+            "armor_6" : "63.5",
+            "armor_4" : "25.4",
+            "armor_1" : "19.1",
+            "armor_7" : "57.2",
+            "armor_3" : "25.4"
+         },
+         "circularVisionRadius" : 370,
+         "tags" : "AAAAAAAAAAAA",
+         "weight" : 3700,
+         "guns" : {
+            "_105mm_AT_SPH_M4_L23" : "shared",
+            "_76mm_AT_Gun_M1A1" : "shared",
+            "_75mm_AT_Gun_M7_L50" : "shared",
+            "_76mm_AT_Gun_M1A2" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#usa_vehicles:Turret_1_M10_Wolverine",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "ceilless" : true,
+         "primaryArmor" : "armor_7 armor_3 armor_4",
+         "price" : 4400,
+         "models" : {
+            "exploded" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A30_M10_Wolverine/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Turret_01.model"
+         }
+      },
+      "Turret_2_M10_Wolverine" : {
+         "guns" : {
+            "_105mm_AT_SPH_M4_L23" : "shared",
+            "_76mm_AT_Gun_M1A1" : "shared",
+            "_75mm_AT_Gun_M7_L50" : "shared",
+            "_76mm_AT_Gun_M1A2" : "shared"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "weight" : 4400,
+         "showEmblemsOnGun" : false,
+         "userString" : "#usa_vehicles:Turret_2_M10_Wolverine",
+         "armor" : {
+            "armor_4" : "25.4",
+            "armor_8" : "50.8",
+            "armor_2" : "",
+            "armor_7" : "25.4",
+            "armor_5" : "19.1",
+            "armor_10" : "25.4",
+            "armor_6" : "63.5",
+            "armor_11" : "57.2",
+            "armor_3" : "25.4",
+            "armor_9" : "50.8",
+            "armor_1" : "19.1"
+         },
+         "circularVisionRadius" : 370,
+         "price" : 10300,
+         "unlocks" : {
+            "vehicle" : "A31_M36_Slagger"
+         },
+         "models" : {
+            "undamaged" : "vehicles/american/A30_M10_Wolverine/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/american/A30_M10_Wolverine/crash/lod0/Turret_02.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "primaryArmor" : "armor_11 armor_3 armor_4",
+         "ceilless" : true,
+         "level" : 5,
+         "physicsShape" : "0.920 0.000 1.040 0.000 0.625 0.205 1.000 0.335 0.500 0.500 0.148 0.500 0.000 0.100 0.000",
+         "rotationSpeed" : 16,
+         "camouflage" : {
+            "tiling" : "0.73 0.73 0.000000 0.18"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A30_M10_Wolverine/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/american/A30_M10_Wolverine/collision/Turret_02.model"
+         },
+         "gunPosition" : "0.000000 0.362378 1.04756",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-0.906473 0.48252 -0.651921",
+                  "size" : "0.28",
+                  "rayStart" : "-1.12196 0.567512 -0.589137",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "rayStart" : "1.12385 0.559399 -0.587487",
+                  "rayEnd" : "1 0 -1",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "maxHealth" : 88,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35,
+            "repairCost" : "1.0"
+         }
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "commander" : {},
+      "radioman" : {},
+      "gunner" : {},
+      "driver" : {},
+      "loader" : {}
+   },
+   "invisibility" : {
+      "moving" : "0.187",
+      "still" : "0.312",
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04",
+      "firePenalty" : "0.468"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.847232066"
+   }
+}

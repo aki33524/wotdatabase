@@ -1,0 +1,509 @@
+{
+   "premiumVehicleXPFactor" : "0.2",
+   "crewXpFactor" : "1.5",
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 43
+   },
+   "hull" : {
+      "swinging" : {
+         "sensitivityToImpulse" : "0.35",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32"
+      },
+      "maxHealth" : 696,
+      "armor" : {
+         "armor_8" : "",
+         "armor_10" : 90,
+         "armor_12" : 115,
+         "armor_9" : 85,
+         "armor_15" : 145,
+         "armor_2" : 60,
+         "armor_16" : 90,
+         "armor_1" : 90,
+         "armor_6" : 30,
+         "armor_11" : 100,
+         "armor_5" : 90,
+         "armor_7" : 20,
+         "armor_3" : 75,
+         "armor_14" : 30,
+         "armor_4" : 60,
+         "armor_13" : 30
+      },
+      "turretPositions" : {
+         "turret" : "0.2299 0.852038 2.27121"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/russian/R116_ISU122C_Berlin/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/russian/R116_ISU122C_Berlin/collision/Hull.model"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "diesel_large"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 135,
+         "maxHealth" : 200
+      },
+      "models" : {
+         "undamaged" : "vehicles/russian/R116_ISU122C_Berlin/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/russian/R116_ISU122C_Berlin/crash/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R116_ISU122C_Berlin/crash/lod0/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_5 armor_4",
+      "camouflage" : {
+         "tiling" : "1.12 1.12 0.000000 0.000000"
+      },
+      "weight" : 30000,
+      "hangarShadowTexture" : "vehicles/russian/R116_ISU122C_Berlin/ISU122C_Berlin_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "-0.687813 0.969097 1.81154",
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.3",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.687813 1.16912 2.15793"
+         },
+         "inscription" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.56",
+               "rayEnd" : "-1.04213 0.753857 1.55098",
+               "rayStart" : "-1.41072 0.84772 1.67472",
+               "hideIfDamaged" : true
+            },
+            {
+               "rayStart" : "1.41072 0.84772 1.67472",
+               "hideIfDamaged" : false,
+               "size" : "0.56",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.04213 0.753857 1.55098"
+            }
+         ],
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.3",
+               "rayEnd" : "-1.09335 0.760863 0.967878",
+               "rayStart" : "-1.47707 0.867518 0.930742",
+               "hideIfDamaged" : false
+            },
+            {
+               "rayStart" : "1.47707 0.867518 0.930742",
+               "hideIfDamaged" : false,
+               "isMirrored" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.3",
+               "rayEnd" : "1.09335 0.760863 0.967878"
+            }
+         ]
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : "sandCollisionLight"
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "repairCost" : "5.0",
+   "chassis" : {
+      "Chassis_R116_ISU122C_Berlin" : {
+         "maxRegenHealth" : 150,
+         "bulkHealthFactor" : "3.0",
+         "wwsoundPC" : "treads_type_pc",
+         "drivingWheels" : [
+            "WD_L0 WD_L4",
+            "WD_L0 WD_L4"
+         ],
+         "maxClimbAngle" : 25,
+         "maxLoad" : 54400,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "navmeshGirth" : "6.0",
+         "notInShop" : true,
+         "brakeForce" : 39500,
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1
+               },
+               {
+                  "radius" : "0.2751",
+                  "count" : 6,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "isLeft" : false
+               },
+               {
+                  "count" : 3,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "radius" : "0.2751",
+                  "count" : 6,
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "syncAngle" : "25.7143",
+                  "isLeft" : false,
+                  "radius" : "0.2751"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R4",
+                  "syncAngle" : "25.7143",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.2751",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "25.7143"
+               },
+               {
+                  "syncAngle" : "25.7143",
+                  "name" : "WD_L4",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "models" : {
+            "undamaged" : "vehicles/russian/R116_ISU122C_Berlin/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R116_ISU122C_Berlin/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/russian/R116_ISU122C_Berlin/crash/lod0/Chassis.model"
+         },
+         "rotationSpeed" : 27,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/russian/R116_ISU122C_Berlin/track/segment.model",
+            "right" : "vehicles/russian/R116_ISU122C_Berlin/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.075",
+            "segmentLength" : "0.156",
+            "left" : "vehicles/russian/R116_ISU122C_Berlin/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/russian/R116_ISU122C_Berlin/track/segment.model"
+         },
+         "repairCost" : "5.0",
+         "userString" : "#ussr_vehicles:Chassis_R116_ISU122C_Berlin",
+         "tracks" : {
+            "textureScale" : "-2.9",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "trackNodes" : {
+            "maxAmplitude" : "0.015",
+            "linkBones" : true,
+            "damping" : 8,
+            "gravity" : -4,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.6",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.85",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.83",
+                  "rightSibling" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L0",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L3",
+                  "backwardElastK" : "2.5",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L2",
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : "0.85",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.83",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "2.5",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "leftSibling" : "Track_VT_R2",
+                  "backwardElastK" : 3,
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3"
+               }
+            ],
+            "offset" : "0",
+            "elasticity" : 1500,
+            "forwardElastK" : 1,
+            "backwardElastK" : 1,
+            "maxOffset" : "0.01",
+            "enable" : true
+         },
+         "trackThickness" : [
+            "-0.0278",
+            "0"
+         ],
+         "wwsoundNPC" : "trds_med_npc",
+         "weight" : 12000,
+         "terrainResistance" : "1.1 1.3 2.2",
+         "tags" : {},
+         "maxHealth" : 200,
+         "topRightCarryingPoint" : "1.20342 2.23216",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "rotationIsAroundCenter" : true,
+         "price" : 20000,
+         "hullPosition" : "0 1 0",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R116_ISU122C_Berlin/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/russian/R116_ISU122C_Berlin/collision_client/Chassis.model"
+         },
+         "level" : 7,
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "ussr_01",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.58 0.67"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "minOffset" : "-0.1",
+                  "maxOffset" : "0.07"
+               },
+               {
+                  "count" : 6,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "minOffset" : "-0.1",
+                  "maxOffset" : "0.07"
+               }
+            ]
+         }
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "1.4",
+      "tiling" : "1 1 0 0"
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : "AAAAAAAA",
+      "driver" : {},
+      "loader" : [
+         {},
+         {}
+      ]
+   },
+   "invisibility" : {
+      "firePenalty" : "0.396",
+      "camouflageBonus" : "0.04",
+      "still" : "0.264",
+      "moving" : "0.159",
+      "camouflageNetBonus" : "0.15"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "V-2IS_B" : {
+               "smplEnginePower" : "634.3687"
+            }
+         },
+         "chassis" : {
+            "Chassis_R116_ISU122C_Berlin" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "emblems" : {
+      "default" : "ussr_star",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "engines" : {
+      "V-2IS_B" : "shared"
+   },
+   "radios" : {
+      "_10RKM" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_R116_ISU122C_Berlin" : {
+         "weight" : 100,
+         "tags" : "AAAAAAAAAAAA",
+         "notInShop" : true,
+         "maxHealth" : 174,
+         "gunPosition" : "0 0 0",
+         "armor" : {
+            "armor_1" : ""
+         },
+         "guns" : {
+            "_122mm_D-25C_mod1944_B" : "shared"
+         },
+         "rotationSpeed" : 26,
+         "price" : 100,
+         "models" : {
+            "exploded" : "vehicles/russian/R116_ISU122C_Berlin/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/russian/R116_ISU122C_Berlin/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/russian/R116_ISU122C_Berlin/normal/lod0/Turret_01.model"
+         },
+         "circularVisionRadius" : 350,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "emblemSlots" : {},
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "userString" : "#ussr_vehicles:Turret_1_R116_ISU122C_Berlin",
+         "wwturretRotatorSoundManual" : "tur_man_trav_04",
+         "level" : 7,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100,
+            "repairCost" : "1.0"
+         },
+         "showEmblemsOnGun" : false,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R116_ISU122C_Berlin/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/russian/R116_ISU122C_Berlin/collision_client/Turret_01.model"
+         }
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.982479122"
+   }
+}

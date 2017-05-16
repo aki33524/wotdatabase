@@ -1,0 +1,631 @@
+{
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "radios" : {
+      "SCR_538" : "shared",
+      "SCR_508" : "shared"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/american/A10_M6/M6_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "1.78 1.78 0.79 0.27"
+      },
+      "turretPositions" : {
+         "turret" : "-0 1 1"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_large"
+      },
+      "models" : {
+         "undamaged" : "vehicles/american/A10_M6/normal/lod0/Hull.model",
+         "exploded" : "vehicles/american/A10_M6/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A10_M6/crash/lod0/Hull.model"
+      },
+      "weight" : 32000,
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.0070077 -0.229172 2.95394",
+            "rayStart" : "-0.0070077 0.0149131 3.27083",
+            "size" : "0.32",
+            "rayUp" : "0.000000 1 0.000000"
+         }
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 135,
+         "repairCost" : "1.0",
+         "maxHealth" : 200
+      },
+      "armor" : {
+         "armor_2" : 102,
+         "armor_11" : 30,
+         "armor_1" : 83,
+         "armor_8" : 25,
+         "armor_3" : 44,
+         "armor_7" : 25,
+         "armor_6" : 70,
+         "armor_5" : 44,
+         "armor_13" : "",
+         "armor_12" : 20,
+         "armor_4" : 41,
+         "armor_10" : 50,
+         "armor_9" : 26
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "maxHealth" : 672,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.3",
+         "pitchParams" : "0.26 38.00 0.34 1.00 0.04 0.27",
+         "rollParams" : "1.00 0.26 38.00 0.34 1.00 0.04 0.27"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A10_M6/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A10_M6/collision_client/Hull.model"
+      }
+   },
+   "speedLimits" : {
+      "forward" : 35,
+      "backward" : 10
+   },
+   "emblems" : {
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM",
+      "default" : "usa_star"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "HVS1" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            },
+            "HVS2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Wright_G2X_m_781C9GC1" : {
+               "smplEnginePower" : "872.257"
+            },
+            "Wright_G200_m_781C9GC1" : {
+               "smplEnginePower" : "1014.99"
+            }
+         }
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "chassis" : {
+      "HVS1" : {
+         "maxClimbAngle" : 25,
+         "navmeshGirth" : "6.0",
+         "maxHealth" : 130,
+         "price" : "9700.0",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 2 0 0 0 9 0 0 0"
+            }
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "terrainResistance" : "1.1 1.7 2.9",
+         "bulkHealthFactor" : "3.0",
+         "rotationSpeed" : 21,
+         "drivingWheels" : "WD_L0 WD_L2",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "brakeForce" : 45500,
+         "maxLoad" : 57600,
+         "level" : 5,
+         "maxRegenHealth" : 100,
+         "weight" : 15000,
+         "models" : {
+            "destroyed" : "vehicles/american/A10_M6/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A10_M6/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A10_M6/normal/lod0/Chassis.model"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A10_M6/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A10_M6/collision/Chassis.model"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.23",
+            "vehicleRotation" : "0.23"
+         },
+         "topRightCarryingPoint" : "1.19196 2.39855",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 8
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 1,
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "WD_R",
+                  "count" : 1,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : false
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "name" : "WD_L2",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R2",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "unlocks" : {
+            "chassis" : "AAAA"
+         },
+         "repairCost" : "5.0",
+         "wwsoundPC" : "treads_type_pc",
+         "rotationIsAroundCenter" : false,
+         "hullPosition" : "0.000000 1.36958 0.000000",
+         "tags" : {},
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_01",
+            "size" : "0.34 0.74"
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.56",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "userString" : "#usa_vehicles:HVS1"
+      },
+      "HVS2" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 2 0 0 0 9 0 0 0"
+            }
+         },
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "terrainResistance" : "1.1 1.4 2.3",
+         "wwsoundNPC" : "trds_chf_npc",
+         "price" : 15900,
+         "navmeshGirth" : "6.0",
+         "maxHealth" : 140,
+         "maxClimbAngle" : 25,
+         "maxRegenHealth" : 105,
+         "weight" : 15000,
+         "brakeForce" : 43500,
+         "level" : 6,
+         "maxLoad" : 61000,
+         "models" : {
+            "destroyed" : "vehicles/american/A10_M6/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A10_M6/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A10_M6/normal/lod0/Chassis.model"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "drivingWheels" : "WD_L0 WD_L2",
+         "bulkHealthFactor" : "3.0",
+         "rotationSpeed" : 25,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "W_L"
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 1,
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "count" : 1
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L2",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R2",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "repairCost" : "5.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A10_M6/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A10_M6/collision_client/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.19196 2.39855",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.21",
+            "vehicleRotation" : "0.21"
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-0.56",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "traces" : {
+            "textureSet" : "usa_01",
+            "size" : "0.34 0.74",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank"
+         },
+         "userString" : "#usa_vehicles:HVS2",
+         "hullPosition" : "0.000000 1.36958 0.000000",
+         "rotationIsAroundCenter" : false,
+         "tags" : {}
+      }
+   },
+   "repairCost" : "5.16",
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "engines" : {
+      "Wright_G200_m_781C9GC1" : "shared",
+      "Wright_G2X_m_781C9GC1" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.109173552"
+   },
+   "crew" : {
+      "driver" : {},
+      "radioman" : {},
+      "loader" : {},
+      "gunner" : [
+         {},
+         {}
+      ],
+      "commander" : {}
+   },
+   "turrets0" : {
+      "M6D2" : {
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "turretRotatorHealth" : {
+            "maxHealth" : 130,
+            "maxRegenHealth" : 65,
+            "repairCost" : "1.0"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A10_M6/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A10_M6/collision_client/Turret_01.model"
+         },
+         "unlocks" : {
+            "gun" : "_90mm_Gun_M3"
+         },
+         "showEmblemsOnGun" : false,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "tags" : {},
+         "userString" : "#usa_vehicles:M6D2",
+         "camouflage" : {
+            "tiling" : "1.9 1.9 0.14 0.000000"
+         },
+         "physicsShape" : "0.956 -0.057 1.000 0.000 0.591 0.180 0.626 0.313 0.404 0.635 0.000 0.500 0.000 0.100 0.000",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0",
+            "maxHealth" : 80
+         },
+         "maxHealth" : 198,
+         "price" : 18250,
+         "circularVisionRadius" : 350,
+         "armor" : {
+            "armor_2" : 83,
+            "armor_11" : 50,
+            "armor_1" : 102,
+            "armor_8" : "",
+            "armor_3" : 83,
+            "armor_7" : 25,
+            "armor_6" : 25,
+            "armor_5" : 83,
+            "armor_4" : 83,
+            "armor_10" : 20,
+            "armor_9" : 102
+         },
+         "gunPosition" : "0.14005 0.361855 0.966905",
+         "guns" : {
+            "_76mm_Gun_M1A2" : "shared",
+            "_76mm_Gun_M1A1" : "shared",
+            "_90mm_Gun_M3" : "shared",
+            "_75mm_Gun_M7_L50" : "shared"
+         },
+         "rotationSpeed" : 28,
+         "models" : {
+            "destroyed" : "vehicles/american/A10_M6/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A10_M6/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A10_M6/crash/lod0/Turret_01.model"
+         },
+         "level" : 6,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayStart" : "-1.0129 0.468261 0.72966",
+                  "rayEnd" : "-0 0 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32"
+               },
+               {
+                  "rayEnd" : "0 0 1",
+                  "rayStart" : "1.0129 0.468261 0.72966",
+                  "size" : "0.32",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "isMirrored" : true
+               }
+            ],
+            "inscription" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.78",
+                  "rayEnd" : "-1 0 -0",
+                  "rayStart" : "-1.16364 0.4769 -0.174551"
+               },
+               {
+                  "rayEnd" : "1 0 -0",
+                  "rayStart" : "1.16364 0.4769 -0.174551",
+                  "size" : "0.78",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true
+               }
+            ]
+         },
+         "weight" : 8400
+      },
+      "M6D1" : {
+         "gunPosition" : "0.14005 0.361855 0.966905",
+         "guns" : {
+            "_76mm_Gun_M1A1" : "shared",
+            "_75mm_Gun_M7_L50" : "shared",
+            "_76mm_Gun_M1A2" : "shared"
+         },
+         "rotationSpeed" : 25,
+         "level" : 5,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "size" : "0.78",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 -0",
+                  "rayStart" : "-1.26333 0.461516 -0.124446",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "hideIfDamaged" : true,
+                  "size" : "0.78",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 -0",
+                  "rayStart" : "1.26333 0.461516 -0.124446"
+               }
+            ],
+            "player" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0 0 1",
+                  "rayStart" : "-1.01291 0.448004 0.734183",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32"
+               },
+               {
+                  "isMirrored" : true,
+                  "hideIfDamaged" : true,
+                  "rayStart" : "1.01291 0.448004 0.734183",
+                  "rayEnd" : "0 0 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32"
+               }
+            ]
+         },
+         "weight" : 8000,
+         "models" : {
+            "undamaged" : "vehicles/american/A10_M6/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A10_M6/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A10_M6/crash/lod0/Turret_01.model"
+         },
+         "circularVisionRadius" : 320,
+         "maxHealth" : 168,
+         "price" : 10000,
+         "armor" : {
+            "armor_2" : 83,
+            "armor_11" : 50,
+            "armor_1" : 102,
+            "armor_8" : "",
+            "armor_3" : 83,
+            "armor_7" : 25,
+            "armor_6" : 25,
+            "armor_5" : 83,
+            "armor_4" : 83,
+            "armor_10" : 20,
+            "armor_9" : 102
+         },
+         "tags" : {},
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0",
+            "maxHealth" : 80
+         },
+         "physicsShape" : "0.950 -0.065 1.000 -0.010 0.588 0.173 0.580 0.365 0.440 0.563 0.000 0.500 0.000 0.100 0.000",
+         "camouflage" : {
+            "tiling" : "1.9 1.9 0.28 0.24"
+         },
+         "userString" : "#usa_vehicles:M6D1",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 65,
+            "repairCost" : "1.0",
+            "maxHealth" : 130
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A10_M6/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/american/A10_M6/collision/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "showEmblemsOnGun" : false,
+         "wwturretRotatorSoundManual" : "tur_mech_trav"
+      }
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.02",
+      "still" : "0.078",
+      "moving" : "0.039",
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.117"
+   },
+   "camouflage" : {
+      "exclusionMask" : "vehicles/american/A10_M6/M6_CM.DDS",
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.2"
+   }
+}

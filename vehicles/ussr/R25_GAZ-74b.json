@@ -1,0 +1,693 @@
+{
+   "speedLimits" : {
+      "backward" : 14,
+      "forward" : 43
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.15",
+      "firePenalty" : "0.596",
+      "camouflageBonus" : "0.04",
+      "still" : "0.397",
+      "moving" : "0.238"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.850502793"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/russian/R25_GAZ-74b/GAZ-74b_HangarShadowMap.dds",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 75,
+         "maxHealth" : 110
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/russian/R25_GAZ-74b/collision/Hull.model",
+         "collisionModelClient" : "vehicles/russian/R25_GAZ-74b/collision_client/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "-0.1658 0.852648 -0.09499"
+      },
+      "maxHealth" : 208,
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "weight" : 6870,
+      "models" : {
+         "destroyed" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/russian/R25_GAZ-74b/normal/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 36.00 0.38 1.00 0.05 0.32",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.72",
+         "rollParams" : "1.00 0.28 36.00 0.38 1.00 0.05 0.32"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "camouflage" : {
+         "tiling" : "1.6 1.6 0.000000 0.000000"
+      },
+      "armor" : {
+         "armor_7" : 10,
+         "armor_3" : 15,
+         "armor_4" : 15,
+         "armor_2" : 30,
+         "armor_8" : "",
+         "armor_9" : 7,
+         "armor_6" : 25,
+         "armor_10" : 7,
+         "armor_5" : 42,
+         "armor_1" : 25
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.00974929 0.18483 2.13092",
+            "size" : "0.32",
+            "rayEnd" : "-0.00974929 0.0114721 2.03119",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false
+         },
+         "inscription" : {
+            "rayStart" : "-1.1386 0.717689 -1.54609",
+            "size" : "0.64",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-1.06343 0.690315 -1.54609"
+         },
+         "player" : [
+            {
+               "size" : "0.32",
+               "rayStart" : "-1.09015 1.0887 -1.06815",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-0.90197 1.02097 -1.06815"
+            },
+            {
+               "size" : "0.32",
+               "rayStart" : "0.928782 1.09166 -1.02731",
+               "isMirrored" : true,
+               "rayEnd" : "0.740685 1.02369 -1.02738",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            }
+         ]
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "0.8",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/russian/R25_GAZ-74b/GAZ-74b_hull_01_AM.dds"
+   },
+   "engines" : {
+      "GMC" : "shared",
+      "GAZ-203" : "shared",
+      "M-80" : "shared"
+   },
+   "repairCost" : "3.8",
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "M-80" : {
+               "smplEnginePower" : "179.7378"
+            },
+            "GAZ-203" : {
+               "smplEnginePower" : "148.0194"
+            },
+            "GMC" : {
+               "smplEnginePower" : "222.029"
+            }
+         },
+         "chassis" : {
+            "GAZ-74B" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            },
+            "SU-85A" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "radios" : {
+      "_9RM" : "shared",
+      "_9R" : "shared"
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : {},
+      "driver" : {},
+      "loader" : "AAAAAAAA"
+   },
+   "turrets0" : {
+      "SU-85A1" : {
+         "showEmblemsOnGun" : false,
+         "notInShop" : true,
+         "emblemSlots" : {},
+         "tags" : "AAAAAAAAAAAA",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "rotationSpeed" : 44,
+         "maxHealth" : 52,
+         "models" : {
+            "destroyed" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/russian/R25_GAZ-74b/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Turret_01.model"
+         },
+         "weight" : 100,
+         "wwturretRotatorSoundManual" : "tur_man_trav_02",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R25_GAZ-74b/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/russian/R25_GAZ-74b/collision_client/Turret_01.model"
+         },
+         "physicsShape" : "1.000 -0.203 1.000 -0.000 1.000 -0.038 0.972 0.360 0.381 0.500 0.000 0.500 0.000 0.100 0.240",
+         "ceilless" : true,
+         "camouflage" : {
+            "tiling" : "0.25 0.25 0.000000 0.000000"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_8" : "",
+            "armor_3" : 15
+         },
+         "circularVisionRadius" : 310,
+         "guns" : {
+            "_85mm_D-5S-85A" : "shared",
+            "_85mm_LB-2S" : "shared",
+            "_76mm_ZiS-3_mod_42" : "shared",
+            "_57mm_ZiS-2" : "shared"
+         },
+         "price" : 100,
+         "level" : 4,
+         "gunPosition" : "0 0 0",
+         "userString" : "#ussr_vehicles:SU-85A1"
+      }
+   },
+   "chassis" : {
+      "SU-85A" : {
+         "terrainResistance" : "1.1 1.3 2.1",
+         "rotationIsAroundCenter" : true,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "minOffset" : "-0.1",
+                  "template" : "Track_L",
+                  "maxOffset" : "0.1",
+                  "isLeft" : true
+               },
+               {
+                  "template" : "Track_R",
+                  "minOffset" : "-0.1",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "maxOffset" : "0.1"
+               }
+            ]
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : -3,
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "hullPosition" : "0 1 0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : 24,
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "syncAngle" : 24,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : 24
+               },
+               {
+                  "syncAngle" : 24,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R1",
+                  "radius" : "0"
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "count" : 6
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "trackThickness" : "0",
+         "maxRegenHealth" : 60,
+         "repairCost" : "5.0",
+         "bulkHealthFactor" : "3.0",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "wwsoundNPC" : "trds_med_npc",
+         "models" : {
+            "exploded" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R25_GAZ-74b/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "traces" : {
+            "textureSet" : "ussr_01",
+            "lodDist" : "FAR",
+            "size" : "0.32 0.3",
+            "bufferPrefs" : "smallTank"
+         },
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L1",
+         "trackNodes" : {
+            "gravity" : "-6.2",
+            "maxAmplitude" : "0.1",
+            "maxOffset" : "0.1",
+            "linkBones" : false,
+            "forwardElastK" : 1,
+            "offset" : "-0.046",
+            "node" : [
+               {
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.15",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.15",
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : "2.18",
+                  "forwardElastK" : "1.47"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.47",
+                  "backwardElastK" : "2.18"
+               },
+               {
+                  "backwardElastK" : "0.82",
+                  "forwardElastK" : "2.5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "backwardElastK" : "0.78",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.82",
+                  "forwardElastK" : "2.5"
+               },
+               {
+                  "backwardElastK" : "0.78",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               }
+            ],
+            "enable" : true,
+            "damping" : 2,
+            "elasticity" : 1168,
+            "backwardElastK" : 1
+         },
+         "userString" : "#ussr_vehicles:SU-85A",
+         "brakeForce" : 14000,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "maxClimbAngle" : 25,
+         "topRightCarryingPoint" : "1.18398 1.56381",
+         "splineDesc" : {
+            "segmentLength" : "0.109",
+            "segmentModelRight" : "vehicles/russian/R25_GAZ-74b/track/SU-76_track.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/russian/R25_GAZ-74b/track/left.track",
+            "segmentOffset" : "0.057",
+            "segmentModelLeft" : "vehicles/russian/R25_GAZ-74b/track/SU-76_track.model",
+            "right" : "vehicles/russian/R25_GAZ-74b/track/right.track"
+         },
+         "level" : 4,
+         "price" : 4510,
+         "rotationSpeed" : 40,
+         "maxHealth" : 80,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "weight" : 3000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R25_GAZ-74b/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/russian/R25_GAZ-74b/collision/Chassis.model"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "maxLoad" : 15000
+      },
+      "GAZ-74B" : {
+         "traces" : {
+            "size" : "0.32 0.3",
+            "lodDist" : "FAR",
+            "textureSet" : "ussr_01",
+            "bufferPrefs" : "smallTank"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "models" : {
+            "exploded" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R25_GAZ-74b/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R25_GAZ-74b/crash/lod0/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_med_npc",
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L1",
+         "hullPosition" : "0 1 0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "syncAngle" : 24,
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : 24
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "syncAngle" : 24,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 24,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_R1",
+                  "isLeft" : false
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "count" : 6,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : -3,
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "minOffset" : "-0.1",
+                  "isLeft" : true,
+                  "maxOffset" : "0.1"
+               },
+               {
+                  "maxOffset" : "0.1",
+                  "isLeft" : false,
+                  "minOffset" : "-0.1",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : true,
+         "terrainResistance" : "1.3 1.5 2.3",
+         "bulkHealthFactor" : "3.0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.22",
+            "vehicleMovement" : "0.22"
+         },
+         "repairCost" : "5.0",
+         "maxRegenHealth" : 55,
+         "trackThickness" : "0",
+         "wwsoundPC" : "treads_type_pc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R25_GAZ-74b/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/russian/R25_GAZ-74b/collision_client/Chassis.model"
+         },
+         "weight" : 3000,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "maxHealth" : 70,
+         "rotationSpeed" : 38,
+         "maxLoad" : 12400,
+         "navmeshGirth" : "6.0",
+         "unlocks" : {
+            "chassis" : "SU-85A"
+         },
+         "userString" : "#ussr_vehicles:GAZ-74B",
+         "trackNodes" : {
+            "damping" : 2,
+            "backwardElastK" : 1,
+            "elasticity" : 1168,
+            "enable" : true,
+            "offset" : "-0.046",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.15"
+               },
+               {
+                  "backwardElastK" : "2.15",
+                  "forwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.47",
+                  "backwardElastK" : "2.18"
+               },
+               {
+                  "forwardElastK" : "1.47",
+                  "backwardElastK" : "2.18",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "backwardElastK" : "0.82",
+                  "forwardElastK" : "2.5",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.78",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "2.5",
+                  "backwardElastK" : "0.82",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.78"
+               }
+            ],
+            "forwardElastK" : 1,
+            "linkBones" : false,
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1",
+            "gravity" : "-6.2"
+         },
+         "price" : 1800,
+         "level" : 3,
+         "topRightCarryingPoint" : "1.18398 1.56381",
+         "splineDesc" : {
+            "segmentLength" : "0.109",
+            "segmentModelRight" : "vehicles/russian/R25_GAZ-74b/track/SU-76_track.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/russian/R25_GAZ-74b/track/left.track",
+            "segmentOffset" : "0.057",
+            "segmentModelLeft" : "vehicles/russian/R25_GAZ-74b/track/SU-76_track.model",
+            "right" : "vehicles/russian/R25_GAZ-74b/track/right.track"
+         },
+         "maxClimbAngle" : 25,
+         "brakeForce" : 12400,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         }
+      }
+   },
+   "emblems" : {
+      "default" : "ussr_star",
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM"
+   }
+}

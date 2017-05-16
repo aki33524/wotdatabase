@@ -1,0 +1,986 @@
+{
+   "radios" : {
+      "Ra_146" : "shared",
+      "Ra_100" : "shared",
+      "Ra_105" : "shared"
+   },
+   "camouflage" : {
+      "exclusionMask" : "system/maps/null_exclusion_mask.dds",
+      "priceFactor" : "1.4",
+      "tiling" : "1 1 0 0"
+   },
+   "emblems" : {
+      "default" : "swedish_flag",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "invisibility" : {
+      "moving" : "0.232",
+      "camouflageBonus" : "0.04",
+      "camouflageNetBonus" : "0.15",
+      "still" : "0.387",
+      "firePenalty" : "0.581"
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/Ikv_90_Typ_B_Bofors_HangarShadowMap.dds",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 135,
+         "maxHealth" : 200
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_medium"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision/Hull.model"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.32",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "pitchParams" : "0.22 36.00 0.40 1.00 0.05 0.32"
+      },
+      "turretPositions" : {
+         "turret" : "-0.00371 0.914834 -0.39604"
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.35343 0.434087 -1.68509",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.55343 0.434087 -1.68509",
+               "size" : "0.35"
+            },
+            {
+               "rayEnd" : "1.35343 0.434087 -1.68509",
+               "hideIfDamaged" : true,
+               "isMirrored" : true,
+               "size" : "0.35",
+               "rayStart" : "1.55343 0.434087 -1.68509",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "inscription" : [
+            {
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.35341 0.439737 -0.467712",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.55341 0.439737 -0.467712",
+               "size" : "0.585"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.585",
+               "rayStart" : "1.55341 0.439737 -0.467712",
+               "rayEnd" : "1.35341 0.439737 -0.467712",
+               "hideIfDamaged" : false
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.3",
+            "rayStart" : "1 1 -0",
+            "hideIfDamaged" : true,
+            "rayEnd" : "1 1 -0"
+         }
+      },
+      "models" : {
+         "exploded" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/normal/lod0/Hull.model"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "maxHealth" : 640,
+      "armor" : {
+         "armor_3" : 12,
+         "armor_7" : 10,
+         "armor_1" : 15,
+         "armor_10" : 18,
+         "armor_8" : "",
+         "armor_5" : 10,
+         "armor_6" : 6,
+         "armor_9" : 10,
+         "armor_4" : 12,
+         "armor_2" : 12
+      },
+      "camouflage" : {
+         "tiling" : "2.3 2.3 0.000000 0.000000"
+      },
+      "weight" : 7633,
+      "primaryArmor" : "armor_1 armor_3 armor_4"
+   },
+   "clientAdjustmentFactors" : {
+      "engines" : {
+         "Volvo_TD_100_A" : {
+            "bravo" : "71.36648"
+         },
+         "Volvo_THD_100_B" : {
+            "bravo" : "79.82472"
+         }
+      },
+      "chassis" : {
+         "Chassis_S06_Ikv_90_Typ_B_Bofors_2" : {
+            "alpha" : "0"
+         },
+         "Chassis_S06_Ikv_90_Typ_B_Bofors" : {
+            "alpha" : "0"
+         }
+      }
+   },
+   "repairCost" : "7.50",
+   "turrets0" : {
+      "Turret_1_S06_Ikv_90_Typ_B_Bofors" : {
+         "wwturretRotatorSoundManual" : "tur_man_trav_03",
+         "rotationSpeed" : 20,
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision/Turret_01.model"
+         },
+         "guns" : {
+            "_90mm_kan_m_F" : "shared",
+            "_90mm_Bofors_L_53" : "shared"
+         },
+         "physicsShape" : "1.100 0.000 1.000 0.000 1.000 0.000 0.500 0.500 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "userString" : "#sweden_vehicles:Turret_1_S06_Ikv_90_Typ_B_Bofors",
+         "level" : 7,
+         "maxHealth" : 160,
+         "models" : {
+            "undamaged" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Turret_01.model"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 90,
+            "maxRegenHealth" : 45
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "circularVisionRadius" : 340,
+         "price" : 100,
+         "tags" : "AAAAAAAAAAAA",
+         "primaryArmor" : "armor_1 armor_1 armor_1",
+         "showEmblemsOnGun" : false,
+         "weight" : 100,
+         "gunPosition" : "0.000000 0.000000 -0.0125",
+         "armor" : {
+            "armor_1" : ""
+         },
+         "emblemSlots" : {}
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "engines" : {
+      "Volvo_TD_100_A" : "shared",
+      "Volvo_THD_100_B" : "shared"
+   },
+   "chassis" : {
+      "Chassis_S06_Ikv_90_Typ_B_Bofors_2" : {
+         "tracks" : {
+            "textureScale" : -3,
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "traces" : {
+            "size" : "0.4 0.42",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "decalGroup" : "trace",
+            "lodDist" : "FAR",
+            "decalTexture" : "trace"
+         },
+         "level" : 7,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "minOffset" : "-0.06",
+                  "count" : 5,
+                  "template" : "Track_L"
+               },
+               {
+                  "template" : "Track_R",
+                  "count" : 5,
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "startIndex" : "",
+                  "maxOffset" : "0.06"
+               }
+            ]
+         },
+         "price" : 23300,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "trackThickness" : "-0.017",
+         "rotationIsAroundCenter" : true,
+         "wwsoundPC" : "treads_type_pc",
+         "topRightCarryingPoint" : "1.2004 1.49282",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "maxClimbAngle" : 25,
+         "rotationSpeed" : 30,
+         "maxLoad" : 16000,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision_client/Chassis.model"
+         },
+         "maxRegenHealth" : 105,
+         "brakeForce" : 13000,
+         "userString" : "#sweden_vehicles:Chassis_S06_Ikv_90_Typ_B_Bofors_2",
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "count" : 5
+               },
+               {
+                  "count" : 5,
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : "25.7142",
+                  "isLeading" : true,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R1",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142"
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "25.7142",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "25.7142",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "models" : {
+            "exploded" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/normal/lod0/Chassis.model"
+         },
+         "maxHealth" : 140,
+         "splineDesc" : {
+            "segmentOffset" : "0.134",
+            "left" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "right" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/right.track",
+            "segmentModelLeft" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/segment.model",
+            "segmentLength" : "0.113",
+            "segmentModelRight" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/segment.model",
+            "lodDist" : "MEDIUM"
+         },
+         "trackNodes" : {
+            "linkBones" : true,
+            "damping" : 2,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "elasticity" : 1100,
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "leftSibling" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "leftSibling" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L3",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L4"
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "rightSibling" : "Track_VT_L5",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L3"
+               },
+               {
+                  "leftSibling" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L5"
+               },
+               {
+                  "leftSibling" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_L7",
+                  "name" : "Track_VT_L6"
+               },
+               {
+                  "name" : "Track_VT_L7",
+                  "rightSibling" : "Track_VT_L8",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L6"
+               },
+               {
+                  "leftSibling" : "Track_VT_L7",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L9",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L8"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L8",
+                  "name" : "Track_VT_L9",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L10"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L9",
+                  "name" : "Track_VT_L10",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R1",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R1",
+                  "leftSibling" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R3"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "leftSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R5",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R5",
+                  "leftSibling" : "Track_VT_R4",
+                  "isLeft" : false
+               },
+               {
+                  "leftSibling" : "Track_VT_R5",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R7",
+                  "name" : "Track_VT_R6"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R7",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R8"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R7",
+                  "name" : "Track_VT_R8",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R9"
+               },
+               {
+                  "rightSibling" : "Track_VT_R10",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R9",
+                  "leftSibling" : "Track_VT_R8",
+                  "isLeft" : false
+               },
+               {
+                  "leftSibling" : "Track_VT_R9",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.2",
+                  "name" : "Track_VT_R10"
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "terrainResistance" : "1.2 1.4 2.3",
+         "weight" : 3500,
+         "hullPosition" : "0 1 0",
+         "repairCost" : "5.0",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "wwsoundNPC" : "trds_chf_npc"
+      },
+      "Chassis_S06_Ikv_90_Typ_B_Bofors" : {
+         "wwsoundNPC" : "trds_chf_npc",
+         "hullPosition" : "0 1 0",
+         "repairCost" : "5.0",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "weight" : 3500,
+         "terrainResistance" : "1.3 1.7 2.6",
+         "tags" : {},
+         "navmeshGirth" : "6.0",
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 130,
+         "models" : {
+            "exploded" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/crash/lod0/Chassis.model"
+         },
+         "splineDesc" : {
+            "segmentOffset" : "0.134",
+            "left" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/left.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/right.track",
+            "segmentModelLeft" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/track/segment.model",
+            "segmentLength" : "0.113"
+         },
+         "trackNodes" : {
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L3"
+               },
+               {
+                  "rightSibling" : "Track_VT_L4",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_L5"
+               },
+               {
+                  "rightSibling" : "Track_VT_L6",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L4",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L6",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L7"
+               },
+               {
+                  "leftSibling" : "Track_VT_L6",
+                  "isLeft" : true,
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L8",
+                  "name" : "Track_VT_L7"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_L9",
+                  "name" : "Track_VT_L8",
+                  "leftSibling" : "Track_VT_L7",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_L10",
+                  "name" : "Track_VT_L9",
+                  "leftSibling" : "Track_VT_L8",
+                  "isLeft" : true
+               },
+               {
+                  "leftSibling" : "Track_VT_L9",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.2",
+                  "name" : "Track_VT_L10"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "name" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R2",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R4"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R5",
+                  "name" : "Track_VT_R4",
+                  "leftSibling" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R5",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "rightSibling" : "Track_VT_R6",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R4"
+               },
+               {
+                  "rightSibling" : "Track_VT_R7",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VT_R6",
+                  "leftSibling" : "Track_VT_R5",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R7",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "rightSibling" : "Track_VT_R8"
+               },
+               {
+                  "name" : "Track_VT_R8",
+                  "rightSibling" : "Track_VT_R9",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R7"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R8",
+                  "name" : "Track_VT_R9",
+                  "rightSibling" : "Track_VT_R10",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R9",
+                  "name" : "Track_VT_R10",
+                  "forwardElastK" : "1.2",
+                  "backwardElastK" : "0.75"
+               }
+            ],
+            "elasticity" : 1100,
+            "linkBones" : true,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "damping" : 2
+         },
+         "userString" : "#sweden_vehicles:Chassis_S06_Ikv_90_Typ_B_Bofors",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : "25.7142",
+                  "isLeading" : true,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R1",
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L1",
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142",
+                  "isLeft" : true,
+                  "radius" : "0"
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "W_R",
+                  "count" : 5,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 5
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "brakeForce" : 13000,
+         "maxRegenHealth" : 100,
+         "rotationSpeed" : 30,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/sweden/S06_Ikv_90_Typ_B_Bofors/collision/Chassis.model"
+         },
+         "maxLoad" : 13500,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.26",
+            "vehicleRotation" : "0.26"
+         },
+         "maxClimbAngle" : 25,
+         "topRightCarryingPoint" : "1.2004 1.49282",
+         "wwsoundPC" : "treads_type_pc",
+         "trackThickness" : "-0.017",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "rotationIsAroundCenter" : true,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "price" : 12000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 5,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "minOffset" : "-0.06"
+               },
+               {
+                  "count" : 5,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "isLeft" : false,
+                  "minOffset" : "-0.06"
+               }
+            ]
+         },
+         "level" : 6,
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_01",
+            "size" : "0.4 0.42",
+            "decalTexture" : "trace",
+            "lodDist" : "FAR",
+            "decalGroup" : "trace"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "unlocks" : {
+            "chassis" : "Chassis_S06_Ikv_90_Typ_B_Bofors_2"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : -3,
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         }
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 65
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_S06_Ikv_90_Typ_B_Bofors" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            },
+            "Chassis_S06_Ikv_90_Typ_B_Bofors_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Volvo_TD_100_A" : {
+               "smplEnginePower" : 250
+            },
+            "Volvo_THD_100_B" : {
+               "smplEnginePower" : 270
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "crew" : {
+      "gunner" : {},
+      "loader" : {},
+      "commander" : "AAAAAAAA",
+      "driver" : {}
+   }
+}

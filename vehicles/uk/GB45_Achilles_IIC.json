@@ -1,0 +1,884 @@
+{
+   "speedLimits" : {
+      "forward" : 48,
+      "backward" : 13
+   },
+   "crew" : {
+      "commander" : {},
+      "loader" : {},
+      "driver" : {},
+      "radioman" : {},
+      "gunner" : {}
+   },
+   "chassis" : {
+      "Chassis_GB45_Achilles_IIC" : {
+         "trackNodes" : {
+            "damping" : 2,
+            "enable" : true,
+            "linkBones" : true,
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1218,
+            "gravity" : -5,
+            "maxOffset" : "0.05",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.02"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.02",
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "2.03",
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "2.03",
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "rightSibling" : "Track_VT_L1"
+               },
+               {
+                  "rightSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "rightSibling" : "Track_VT_L3",
+                  "backwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.3",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L2",
+                  "forwardElastK" : "1.2",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "2.01",
+                  "rightSibling" : "Track_VT_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R1",
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R2",
+                  "forwardElastK" : "1.2",
+                  "backwardElastK" : "0.9"
+               }
+            ]
+         },
+         "terrainResistance" : "1.1 1.3 2",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB45_Achilles_IIC/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB45_Achilles_IIC/collision/Chassis.model"
+         },
+         "trackThickness" : "0",
+         "bulkHealthFactor" : "3.0",
+         "unlocks" : {
+            "chassis" : "Chassis_GB45_Achilles_IIC_2"
+         },
+         "level" : 5,
+         "maxLoad" : 29820,
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.5 0.44",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_02"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB45_Achilles_IIC/normal/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "1.05187 1.89241",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "maxHealth" : 110,
+         "maxRegenHealth" : 85,
+         "maxClimbAngle" : 25,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "brakeForce" : 30000,
+         "weight" : 7000,
+         "splineDesc" : {
+            "segmentOffset" : "0.144",
+            "segmentModelLeft" : "vehicles/british/GB45_Achilles_IIC/track/segment.model",
+            "left" : "vehicles/british/GB45_Achilles_IIC/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segment2ModelRight" : "vehicles/british/GB45_Achilles_IIC/track/segment2.model",
+            "segment2Offset" : "0.078",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.145",
+            "segmentModelRight" : "vehicles/british/GB45_Achilles_IIC/track/segment.model",
+            "right" : "vehicles/british/GB45_Achilles_IIC/track/right.track",
+            "segment2ModelLeft" : "vehicles/british/GB45_Achilles_IIC/track/segment2.model"
+         },
+         "rotationSpeed" : 32,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-3.16",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "price" : 8400,
+         "rotationIsAroundCenter" : true,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "syncAngle" : "27.6923",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L0",
+                  "syncAngle" : "27.6923",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_L4",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "hullPosition" : "0 1 0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "repairCost" : "5.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "maxOffset" : "0.06",
+                  "count" : 6,
+                  "minOffset" : "-0.08",
+                  "startIndex" : "",
+                  "template" : "Track_L"
+               },
+               {
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "minOffset" : "-0.08",
+                  "count" : 6,
+                  "maxOffset" : "0.06",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "userString" : "#gb_vehicles:Chassis_GB45_Achilles_IIC",
+         "tags" : {},
+         "wwsoundPC" : "treads_type_pc"
+      },
+      "Chassis_GB45_Achilles_IIC_2" : {
+         "repairCost" : "5.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "minOffset" : "-0.08",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "maxOffset" : "0.06"
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "isLeft" : false,
+                  "minOffset" : "-0.08",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "userString" : "#gb_vehicles:Chassis_GB45_Achilles_IIC_2",
+         "wwsoundPC" : "treads_type_pc",
+         "tags" : {},
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.24"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L0",
+                  "syncAngle" : "27.6923",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_L4"
+               }
+            ]
+         },
+         "hullPosition" : "0 1 0",
+         "rotationIsAroundCenter" : true,
+         "price" : 16500,
+         "tracks" : {
+            "textureScale" : "-3.16",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "rotationSpeed" : 34,
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "segment2ModelRight" : "vehicles/british/GB45_Achilles_IIC/track/segment2.model",
+            "segment2Offset" : "0.078",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.145",
+            "segmentModelRight" : "vehicles/british/GB45_Achilles_IIC/track/segment.model",
+            "right" : "vehicles/british/GB45_Achilles_IIC/track/right.track",
+            "segment2ModelLeft" : "vehicles/british/GB45_Achilles_IIC/track/segment2.model",
+            "segmentOffset" : "0.144",
+            "segmentModelLeft" : "vehicles/british/GB45_Achilles_IIC/track/segment.model",
+            "left" : "vehicles/british/GB45_Achilles_IIC/track/left.track"
+         },
+         "weight" : 7000,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "brakeForce" : 33000,
+         "maxClimbAngle" : 25,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "maxHealth" : 120,
+         "maxRegenHealth" : 90,
+         "topRightCarryingPoint" : "1.05187 1.89241",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "navmeshGirth" : "6.0",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.5 0.44",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "mediumTank"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB45_Achilles_IIC/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Chassis.model"
+         },
+         "trackThickness" : "0.005",
+         "bulkHealthFactor" : "3.0",
+         "level" : 6,
+         "maxLoad" : 32500,
+         "terrainResistance" : "0.9 1.1 1.8",
+         "trackNodes" : {
+            "gravity" : -5,
+            "maxOffset" : "0.05",
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1218,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "2.02",
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.02",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "2.03"
+               },
+               {
+                  "forwardElastK" : "2.03",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "rightSibling" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_L0",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.9",
+                  "rightSibling" : "Track_VT_L3"
+               },
+               {
+                  "forwardElastK" : "1.2",
+                  "leftSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R2",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R0",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "leftSibling" : "Track_VT_R1",
+                  "forwardElastK" : "1.3",
+                  "rightSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.2",
+                  "leftSibling" : "Track_VT_R2"
+               }
+            ],
+            "damping" : 2,
+            "linkBones" : true,
+            "enable" : true
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB45_Achilles_IIC/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB45_Achilles_IIC/collision_client/Chassis.model"
+         }
+      }
+   },
+   "radios" : {
+      "N19Mk2" : "shared",
+      "N19Mk1" : "shared",
+      "N19Mk3" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_GB45_Achilles_IIC" : {
+         "models" : {
+            "destroyed" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB45_Achilles_IIC/normal/lod0/Turret_01.model"
+         },
+         "rotationSpeed" : 14,
+         "camouflage" : {
+            "tiling" : "1.06 1.06 0.000000 0.000000"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 120,
+            "maxRegenHealth" : 60,
+            "repairCost" : "1.0"
+         },
+         "level" : 5,
+         "weight" : 4000,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1.05523 0.441267 0.115926",
+                  "rayEnd" : "-0.69601 0.299902 0.0111446",
+                  "hideIfDamaged" : false,
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayEnd" : "0.840473 0.351644 0.0216451",
+                  "rayStart" : "0.930226 0.387108 0.0478519",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "size" : "0.28"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB45_Achilles_IIC/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB45_Achilles_IIC/collision_client/Turret_01.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "armor" : {
+            "armor_5" : "19.1",
+            "armor_8" : "50.8",
+            "armor_4" : "25.4",
+            "armor_7" : "25.4",
+            "armor_1" : "19.1",
+            "armor_9" : "50.8",
+            "armor_2" : "",
+            "armor_3" : "25.4",
+            "armor_10" : "57.2",
+            "armor_6" : "63.5"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "guns" : {
+            "_17pdr_OQF_AT_Mk_V" : "shared",
+            "_76mm_AT_Gun_M7_L50" : "shared"
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB45_Achilles_IIC",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80
+         },
+         "maxHealth" : 122,
+         "circularVisionRadius" : 370,
+         "primaryArmor" : "armor_10 armor_3 armor_4",
+         "gunPosition" : "0.000000 0.362378 1.04756",
+         "physicsShape" : "1.000 0.023 1.080 0.000 0.555 0.266 1.000 0.327 0.510 0.500 0.281 0.500 0.084 0.500 0.000",
+         "price" : 9000,
+         "showEmblemsOnGun" : false
+      },
+      "Turret_2_GB45_Achilles_IIC" : {
+         "unlocks" : {
+            "gun" : "_17pdr_OQF_AT_1",
+            "vehicle" : "GB41_Challenger"
+         },
+         "level" : 6,
+         "weight" : 4400,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1.10223 0.56559 -0.595277",
+                  "rayEnd" : "-1 0 -1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "size" : "0.28"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "size" : "0.28",
+                  "isMirrored" : true,
+                  "rayStart" : "1.10223 0.56559 -0.595277",
+                  "rayEnd" : "1 0 -1"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB45_Achilles_IIC/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/british/GB45_Achilles_IIC/collision/Turret_02.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "armor" : {
+            "armor_11" : "57.2",
+            "armor_6" : "63.5",
+            "armor_10" : "25.4",
+            "armor_1" : "19.1",
+            "armor_7" : "25.4",
+            "armor_9" : "50.8",
+            "armor_2" : "",
+            "armor_3" : "25.4",
+            "armor_8" : "50.8",
+            "armor_5" : "19.1",
+            "armor_4" : "25.4"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/british/GB45_Achilles_IIC/normal/lod0/Turret_02.model"
+         },
+         "rotationSpeed" : 16,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120,
+            "repairCost" : "1.0"
+         },
+         "gunPosition" : "0.000000 0.362378 1.04785",
+         "physicsShape" : "1.011 0.068 1.042 0.000 0.570 0.251 1.000 0.316 0.521 0.500 0.110 0.500 0.000 0.500 0.000",
+         "price" : 16100,
+         "showEmblemsOnGun" : false,
+         "tags" : "AAAAAAAAAAAA",
+         "guns" : {
+            "_76mm_AT_Gun_M7_L50" : "shared",
+            "_17pdr_OQF_AT_1" : "shared",
+            "_17pdr_OQF_AT_Mk_V" : "shared"
+         },
+         "userString" : "#gb_vehicles:Turret_2_GB45_Achilles_IIC",
+         "maxHealth" : 152,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40
+         },
+         "circularVisionRadius" : 370,
+         "primaryArmor" : "armor_11 armor_3 armor_4"
+      }
+   },
+   "engines" : {
+      "Ford_GAA" : "shared",
+      "GMC_6046" : "shared"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "1.2",
+      "tiling" : "1 1 0 0"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.847232066"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04",
+      "still" : "0.303",
+      "moving" : "0.182",
+      "firePenalty" : "0.455"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Ford_GAA" : {
+               "smplEnginePower" : "528.6406"
+            },
+            "GMC_6046" : {
+               "smplEnginePower" : "433.4853"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB45_Achilles_IIC_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB45_Achilles_IIC" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "britain_color",
+      "alpha" : "0.88"
+   },
+   "hull" : {
+      "primaryArmor" : "armor_1 armor_3 armor_3",
+      "camouflage" : {
+         "tiling" : "1.78 1.78 0.000000 0.000000"
+      },
+      "maxHealth" : 488,
+      "models" : {
+         "undamaged" : "vehicles/british/GB45_Achilles_IIC/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB45_Achilles_IIC/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 170,
+         "maxRegenHealth" : 120
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.0139751 0.682073 1.7699",
+            "rayEnd" : "-0.0139751 0.518411 1.65494",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.28",
+            "hideIfDamaged" : false
+         },
+         "inscription" : [
+            {
+               "rayStart" : "-1.39601 0.611978 -2.24897",
+               "rayEnd" : "-1.23842 0.48885 -2.24897",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "size" : "0.727"
+            },
+            {
+               "rayEnd" : "1.23842 0.48885 -2.24897",
+               "rayStart" : "1.39601 0.611978 -2.24897",
+               "hideIfDamaged" : false,
+               "size" : "0.727",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ]
+      },
+      "turretPositions" : {
+         "turret" : "0 1 -0"
+      },
+      "weight" : 15063,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "tags" : {
+            "diesel" : "diesel_medium"
+         },
+         "pixie" : "gas_medium"
+      },
+      "armor" : {
+         "armor_14" : "19.1",
+         "armor_10" : "25.4",
+         "armor_6" : "31.8",
+         "armor_11" : "9.5",
+         "armor_13" : "9.5",
+         "armor_8" : "12.7",
+         "armor_5" : "25.4",
+         "armor_4" : "25.4",
+         "armor_1" : "38.1",
+         "armor_7" : "19.1",
+         "armor_9" : "6.4",
+         "armor_2" : "38.1",
+         "armor_12" : "50.8",
+         "armor_3" : "19.1"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB45_Achilles_IIC/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB45_Achilles_IIC/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB45_Achilles_IIC/Achilles_IIC_HangarShadowMap.dds"
+   },
+   "repairCost" : "7.5"
+}

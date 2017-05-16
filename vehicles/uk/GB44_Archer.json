@@ -1,0 +1,1111 @@
+{
+   "crewXpFactor" : "1.0",
+   "engines" : {
+      "GM_6-71_M" : "shared",
+      "GMC_6-71_Mk11" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : 12,
+      "backward" : 32
+   },
+   "turrets0" : {
+      "Turret_1_GB44_Archer" : {
+         "emblemSlots" : {
+            "clan" : {
+               "rayEnd" : "0 1 1",
+               "hideIfDamaged" : false,
+               "size" : "0.22",
+               "rayStart" : "0.400525 0.627709 0.94582",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         },
+         "guns" : {
+            "_17pdr_OQF_AT_Mk_II" : "shared",
+            "_17pdr_OQF_AT_1" : "shared",
+            "QF_6_pounder_Mk_IV_AT" : "shared"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "physicsShape" : "0.931 0.028 0.920 0.000 0.986 -0.006 0.640 0.080 1.000 0.500 0.133 0.500 0.294 0.000 0.177",
+         "models" : {
+            "undamaged" : "vehicles/british/GB44_Archer/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB44_Archer/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB44_Archer/crash/lod0/Turret_01.model"
+         },
+         "gunPosition" : "0 1 1",
+         "userString" : "#gb_vehicles:Turret_1_GB44_Archer",
+         "wwturretRotatorSoundManual" : "tur_man_trav_03",
+         "rotationSpeed" : 32,
+         "showEmblemsOnGun" : false,
+         "tags" : "AAAAAAAAAAAA",
+         "weight" : 100,
+         "circularVisionRadius" : 360,
+         "camouflage" : {
+            "tiling" : "0.715 0.715 0.000000 0.000000"
+         },
+         "level" : 5,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "maxHealth" : 72,
+         "price" : 100,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 35,
+            "maxHealth" : 70
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB44_Archer/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB44_Archer/collision/Turret_01.model"
+         },
+         "notInShop" : true,
+         "armor" : {
+            "armor_4" : 10,
+            "armor_1" : 20,
+            "armor_5" : "",
+            "armor_2" : 20,
+            "armor_3" : 10
+         }
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "GM_6-71_M" : {
+               "smplEnginePower" : "202.998"
+            },
+            "GMC_6-71_Mk11" : {
+               "smplEnginePower" : "174.4514"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB44_Archer_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB44_Archer" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "radios" : {
+      "N19Mk1" : "shared",
+      "N19Mk3" : "shared",
+      "N19Mk2" : "shared"
+   },
+   "invisibility" : {
+      "moving" : "0.215",
+      "still" : "0.358",
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04",
+      "firePenalty" : "0.537"
+   },
+   "chassis" : {
+      "Chassis_GB44_Archer" : {
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "weight" : 3200,
+         "trackNodes" : {
+            "linkBones" : true,
+            "enable" : true,
+            "maxAmplitude" : "0.101",
+            "damping" : 2,
+            "maxOffset" : "0.101",
+            "elasticity" : 1035,
+            "node" : [
+               {
+                  "backwardElastK" : "2.02",
+                  "isLeft" : true,
+                  "offset" : "-0.087",
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : "2.02",
+                  "offset" : "-0.087",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "forwardElastK" : "2.03",
+                  "name" : "Track_VD_L1",
+                  "offset" : "-0.069",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.71"
+               },
+               {
+                  "forwardElastK" : "2.03",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "offset" : "-0.069",
+                  "backwardElastK" : "0.71"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.084",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "offset" : "-0.064",
+                  "backwardElastK" : "0.7",
+                  "leftSibling" : "Track_VT_R0",
+                  "forwardElastK" : "1.9",
+                  "rightSibling" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.088",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.8",
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "offset" : "-0.036",
+                  "forwardElastK" : "1.7",
+                  "leftSibling" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R4"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.068",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R4",
+                  "rightSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R3"
+               },
+               {
+                  "leftSibling" : "Track_VT_R4",
+                  "forwardElastK" : "1.5",
+                  "rightSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R5",
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.024",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R6",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "offset" : "-0.048",
+                  "leftSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true,
+                  "offset" : "-0.084"
+               },
+               {
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : "1.9",
+                  "leftSibling" : "Track_VT_L0",
+                  "offset" : "-0.064",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "leftSibling" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.088",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true,
+                  "offset" : "-0.036",
+                  "name" : "Track_VT_L3",
+                  "rightSibling" : "Track_VT_L4",
+                  "leftSibling" : "Track_VT_L2",
+                  "forwardElastK" : "1.7"
+               },
+               {
+                  "rightSibling" : "Track_VT_L5",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_L3",
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.068",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "name" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "offset" : "-0.024",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_L4",
+                  "rightSibling" : "Track_VT_L6"
+               },
+               {
+                  "forwardElastK" : "1.4",
+                  "leftSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.048",
+                  "isLeft" : true
+               }
+            ],
+            "gravity" : "-9.8"
+         },
+         "maxClimbAngle" : 25,
+         "maxRegenHealth" : 55,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "userString" : "#gb_vehicles:Chassis_GB44_Archer",
+         "tags" : {},
+         "rotationSpeed" : 40,
+         "unlocks" : {
+            "chassis" : "Chassis_GB44_Archer_2"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB44_Archer/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB44_Archer/collision_client/Chassis.model"
+         },
+         "terrainResistance" : "0.8 0.9 1.8",
+         "topRightCarryingPoint" : "1.10405 1.55079",
+         "brakeForce" : 16000,
+         "maxHealth" : 70,
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.5 0.38",
+            "lodDist" : "FAR",
+            "textureSet" : "ussr_01"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0.115",
+                  "count" : 3
+               },
+               {
+                  "count" : 4,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "template" : "W_R",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0.115",
+                  "count" : 3,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 4,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "template" : "W_L",
+                  "isLeft" : true
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_R0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "W_R5",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.3102"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "WD_L4"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_L0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0.3102",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L5"
+               }
+            ]
+         },
+         "maxLoad" : 16000,
+         "level" : 4,
+         "repairCost" : "1.0",
+         "rotationIsAroundCenter" : true,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB44_Archer/track/segment.model",
+            "segmentOffset" : "0.087",
+            "left" : "vehicles/british/GB44_Archer/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.107",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/british/GB44_Archer/track/segment.model",
+            "right" : "vehicles/british/GB44_Archer/track/right.track"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB44_Archer/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB44_Archer/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB44_Archer/crash/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "4.2"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "trackThickness" : "0",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.0833333",
+                  "count" : 1,
+                  "minOffset" : "-0",
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "maxOffset" : "0.0591648",
+                  "count" : 1,
+                  "minOffset" : "-0.0638051"
+               },
+               {
+                  "minOffset" : "-0.15",
+                  "maxOffset" : "0.083",
+                  "count" : 2,
+                  "startIndex" : 2,
+                  "isLeft" : false,
+                  "template" : "Track_R"
+               },
+               {
+                  "startIndex" : 4,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "count" : 1,
+                  "maxOffset" : "0.059",
+                  "minOffset" : "-0.064"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "startIndex" : 5,
+                  "minOffset" : "-0.15",
+                  "maxOffset" : "0.083",
+                  "count" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "minOffset" : "-0.15",
+                  "count" : 1,
+                  "maxOffset" : "0.083"
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : 1,
+                  "minOffset" : "-0.064",
+                  "maxOffset" : "0.059",
+                  "count" : 1
+               },
+               {
+                  "count" : 2,
+                  "maxOffset" : "0.083",
+                  "minOffset" : "-0.15",
+                  "startIndex" : 2,
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "minOffset" : "-0.064",
+                  "maxOffset" : "0.059",
+                  "count" : 1,
+                  "startIndex" : 4,
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "minOffset" : "-0.15",
+                  "maxOffset" : "0.083",
+                  "count" : 1,
+                  "startIndex" : 5,
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               }
+            ]
+         },
+         "hullPosition" : "0 1 0",
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "price" : 4500
+      },
+      "Chassis_GB44_Archer_2" : {
+         "userString" : "#gb_vehicles:Chassis_GB44_Archer_2",
+         "tags" : {},
+         "rotationSpeed" : 46,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 60,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "weight" : 3200,
+         "trackNodes" : {
+            "node" : [
+               {
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : 2,
+                  "isLeft" : false,
+                  "offset" : "-0.084",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.064",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7",
+                  "leftSibling" : "Track_VT_R0",
+                  "forwardElastK" : "1.9",
+                  "rightSibling" : "Track_VT_R2"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.088",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R3",
+                  "forwardElastK" : "1.8",
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "rightSibling" : "Track_VT_R4",
+                  "forwardElastK" : "1.7",
+                  "leftSibling" : "Track_VT_R2",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "offset" : "-0.036",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.068",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_R4",
+                  "rightSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R3"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "forwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "offset" : "-0.024",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "name" : "Track_VT_R6",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "offset" : "-0.048",
+                  "leftSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "forwardElastK" : "0.7",
+                  "backwardElastK" : "2.02",
+                  "isLeft" : true,
+                  "offset" : "-0.087",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VD_R0",
+                  "offset" : "-0.087",
+                  "isLeft" : false,
+                  "backwardElastK" : "2.02"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.069",
+                  "backwardElastK" : "0.71",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "2.03"
+               },
+               {
+                  "forwardElastK" : "2.03",
+                  "isLeft" : false,
+                  "offset" : "-0.069",
+                  "backwardElastK" : "0.71",
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.084",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true,
+                  "offset" : "-0.064",
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "1.9"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true,
+                  "offset" : "-0.088",
+                  "name" : "Track_VT_L2",
+                  "rightSibling" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "rightSibling" : "Track_VT_L4",
+                  "forwardElastK" : "1.7",
+                  "leftSibling" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "offset" : "-0.036",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "offset" : "-0.068",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_L4",
+                  "rightSibling" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L3",
+                  "forwardElastK" : "1.6"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.024",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_L5",
+                  "rightSibling" : "Track_VT_L6",
+                  "leftSibling" : "Track_VT_L4",
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "forwardElastK" : "1.4",
+                  "leftSibling" : "Track_VT_L5",
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.048",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L6"
+               }
+            ],
+            "elasticity" : 1035,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "linkBones" : true,
+            "maxAmplitude" : "0.101",
+            "maxOffset" : "0.101",
+            "damping" : 2
+         },
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.5 0.38",
+            "lodDist" : "FAR",
+            "textureSet" : "ussr_01"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 3,
+                  "radius" : "0.126",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "template" : "WD_R"
+               },
+               {
+                  "count" : 4,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "radius" : "0.126"
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 4,
+                  "radius" : "0"
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "syncAngle" : 18,
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "syncAngle" : 18,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R4"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "W_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "W_R5",
+                  "radius" : "0.3102"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "syncAngle" : 18,
+                  "name" : "WD_L0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "syncAngle" : 18
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_L0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L5",
+                  "radius" : "0.3102"
+               }
+            ]
+         },
+         "maxHealth" : 80,
+         "topRightCarryingPoint" : "1.10405 1.55079",
+         "terrainResistance" : "0.7 0.7 1.7",
+         "brakeForce" : 18000,
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB44_Archer/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB44_Archer/collision_client/Chassis.model"
+         },
+         "tracks" : {
+            "textureScale" : "4.2",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "navmeshGirth" : "6.0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "models" : {
+            "exploded" : "vehicles/british/GB44_Archer/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB44_Archer/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB44_Archer/normal/lod0/Chassis.model"
+         },
+         "level" : 5,
+         "repairCost" : "1.0",
+         "rotationIsAroundCenter" : true,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB44_Archer/track/segment.model",
+            "segmentOffset" : "0.087",
+            "left" : "vehicles/british/GB44_Archer/track/left.track",
+            "segmentModelRight" : "vehicles/british/GB44_Archer/track/segment.model",
+            "right" : "vehicles/british/GB44_Archer/track/right.track",
+            "segmentLength" : "0.107",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            }
+         },
+         "maxLoad" : 17500,
+         "price" : 8700,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "maxOffset" : "0.0833333",
+                  "count" : 1,
+                  "minOffset" : "-0"
+               },
+               {
+                  "count" : 1,
+                  "maxOffset" : "0.0591648",
+                  "minOffset" : "-0.0638051",
+                  "startIndex" : 1,
+                  "template" : "Track_R",
+                  "isLeft" : false
+               },
+               {
+                  "maxOffset" : "0.083",
+                  "count" : 2,
+                  "minOffset" : "-0.15",
+                  "startIndex" : 2,
+                  "template" : "Track_R",
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : 4,
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "minOffset" : "-0.064",
+                  "maxOffset" : "0.059",
+                  "count" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "startIndex" : 5,
+                  "minOffset" : "-0.15",
+                  "count" : 1,
+                  "maxOffset" : "0.083"
+               },
+               {
+                  "maxOffset" : "0.083",
+                  "count" : 1,
+                  "minOffset" : "-0.15",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "minOffset" : "-0.064",
+                  "count" : 1,
+                  "maxOffset" : "0.059",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : 1
+               },
+               {
+                  "minOffset" : "-0.15",
+                  "maxOffset" : "0.083",
+                  "count" : 2,
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : 2
+               },
+               {
+                  "maxOffset" : "0.059",
+                  "count" : 1,
+                  "minOffset" : "-0.064",
+                  "startIndex" : 4,
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : 5,
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "count" : 1,
+                  "maxOffset" : "0.083",
+                  "minOffset" : "-0.15"
+               }
+            ]
+         },
+         "hullPosition" : "0 1 0",
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "trackThickness" : "0"
+      }
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM",
+      "default" : "britain_color"
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.1344 0.702162 -0.907147",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1 1 -1",
+               "size" : "0.48"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "1.1344 0.702162 -0.907147",
+               "size" : "0.48",
+               "hideIfDamaged" : false,
+               "rayEnd" : "1 1 -1"
+            }
+         ],
+         "player" : [
+            {
+               "hideIfDamaged" : false,
+               "size" : "0.2",
+               "rayEnd" : "-0.944319 0.643598 -1.30571",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.13669 0.69831 -1.30513"
+            },
+            {
+               "size" : "0.2",
+               "hideIfDamaged" : true,
+               "rayEnd" : "0.947322 0.632861 -1.28868",
+               "isMirrored" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "1.13969 0.687574 -1.28811"
+            }
+         ]
+      },
+      "primaryArmor" : "armor_2 armor_7 armor_11",
+      "models" : {
+         "destroyed" : "vehicles/british/GB44_Archer/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB44_Archer/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB44_Archer/crash/lod0/Hull.model"
+      },
+      "maxHealth" : 288,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_medium"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB44_Archer/Archer_HangarShadowMap.dds",
+      "swinging" : {
+         "pitchParams" : "0.28 37.00 0.34 1.00 0.05 0.33",
+         "sensitivityToImpulse" : "0.76",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 37.00 0.34 1.00 0.05 0.33"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB44_Archer/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB44_Archer/collision/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 0 -1"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 125,
+         "repairCost" : "1.0",
+         "maxHealth" : 185
+      },
+      "weight" : 10850,
+      "camouflage" : {
+         "tiling" : "1.42 1.42 0.000000 0.000000"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "armor" : {
+         "armor_6" : 20,
+         "armor_8" : 20,
+         "armor_10" : 10,
+         "armor_17" : 10,
+         "armor_3" : 14,
+         "armor_16" : 10,
+         "armor_2" : 20,
+         "armor_12" : 20,
+         "armor_18" : 14,
+         "armor_13" : 10,
+         "armor_20" : 14,
+         "armor_9" : 10,
+         "armor_14" : 10,
+         "armor_15" : 10,
+         "armor_19" : 20,
+         "armor_5" : 10,
+         "armor_1" : 14,
+         "armor_21" : 14,
+         "armor_11" : 20,
+         "armor_7" : 20,
+         "armor_4" : 20
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.089371996"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.0",
+      "exclusionMask" : {}
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "crew" : {
+      "driver" : {},
+      "gunner" : {},
+      "commander" : {},
+      "loader" : "AAAAAAAA"
+   },
+   "repairCost" : "7.0",
+   "fuelTanks" : {
+      "Medium" : "shared"
+   }
+}

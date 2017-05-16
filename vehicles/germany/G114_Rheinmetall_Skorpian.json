@@ -1,0 +1,567 @@
+{
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6",
+      "exclusionMask" : {}
+   },
+   "chassis" : {
+      "Chassis_G114_Rheinmetall_Skorpian" : {
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "rotationIsAroundCenter" : true,
+         "splineDesc" : {
+            "right" : "vehicles/german/G114_Skorpian/track/right.track",
+            "segmentOffset" : "0.214",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentLength" : "0.155",
+            "segmentModelLeft" : "vehicles/german/G114_Skorpian/track/PzV_track.model",
+            "segmentModelRight" : "vehicles/german/G114_Skorpian/track/PzV_track.model",
+            "left" : "vehicles/german/G114_Skorpian/track/left.track"
+         },
+         "weight" : 15000,
+         "bulkHealthFactor" : "3.0",
+         "notInShop" : true,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "minOffset" : "-0.15",
+                  "maxOffset" : "0.15",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : ""
+               },
+               {
+                  "minOffset" : "-0.15",
+                  "count" : 8,
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "maxOffset" : "0.15"
+               }
+            ]
+         },
+         "models" : {
+            "destroyed" : "vehicles/german/G114_Rheinmetall_Skorpian/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G114_Rheinmetall_Skorpian/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G114_Rheinmetall_Skorpian/normal/lod0/Chassis.model"
+         },
+         "hullPosition" : "0.000000 1.23974 0.000000",
+         "tags" : {},
+         "trackThickness" : "-0.05",
+         "wwsoundPC" : "treads_type_pc",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "topRightCarryingPoint" : "1.32129 1.91752",
+         "userString" : "#germany_vehicles:Chassis_G114_Rheinmetall_Skorpian",
+         "maxHealth" : 220,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "maxLoad" : 45000,
+         "terrainResistance" : "1.2 1.5 3",
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_01",
+            "size" : "0.5 0.6",
+            "lodDist" : "FAR"
+         },
+         "navmeshGirth" : "6.0",
+         "price" : 30000,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 -0 0 -0"
+            }
+         },
+         "tracks" : {
+            "textureScale" : "-1.5",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G114_Skorpian/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G114_Skorpian/collision/Chassis.model"
+         },
+         "rotationSpeed" : 30,
+         "trackNodes" : {
+            "gravity" : "-7.4",
+            "linkBones" : true,
+            "maxOffset" : "0.14",
+            "enable" : true,
+            "damping" : 2,
+            "elasticity" : 1094,
+            "maxAmplitude" : "0.14",
+            "node" : [
+               {
+                  "forwardElastK" : 2,
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.165",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "rightSibling" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "1.9",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.22",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "rightSibling" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.8",
+                  "offset" : "-0.238",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "offset" : "-0.217",
+                  "name" : "Track_VT_L3",
+                  "rightSibling" : "Track_VT_L4",
+                  "forwardElastK" : "1.7",
+                  "leftSibling" : "Track_VT_L2"
+               },
+               {
+                  "rightSibling" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L3",
+                  "forwardElastK" : "1.6",
+                  "offset" : "-0.183",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "rightSibling" : "Track_VT_L6",
+                  "forwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_L4",
+                  "offset" : "-0.157",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L5"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.128",
+                  "name" : "Track_VT_L6",
+                  "rightSibling" : "Track_VT_L7",
+                  "forwardElastK" : "1.4",
+                  "leftSibling" : "Track_VT_L5"
+               },
+               {
+                  "name" : "Track_VT_L7",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.098",
+                  "leftSibling" : "Track_VT_L6",
+                  "forwardElastK" : "1.3"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.6"
+               },
+               {
+                  "forwardElastK" : "0.6",
+                  "isLeft" : true,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.6",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.6"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "offset" : "-0.165",
+                  "forwardElastK" : 2,
+                  "rightSibling" : "Track_VT_R1"
+               },
+               {
+                  "forwardElastK" : "1.9",
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.22"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.238",
+                  "forwardElastK" : "1.8",
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3"
+               },
+               {
+                  "rightSibling" : "Track_VT_R4",
+                  "leftSibling" : "Track_VT_R2",
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "offset" : "-0.217",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "offset" : "-0.183",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R4",
+                  "rightSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_R3"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "forwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_R4",
+                  "offset" : "-0.157",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "name" : "Track_VT_R6",
+                  "offset" : "-0.128",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.4",
+                  "rightSibling" : "Track_VT_R7"
+               },
+               {
+                  "offset" : "-0.098",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R7",
+                  "forwardElastK" : "1.3",
+                  "leftSibling" : "Track_VT_R6"
+               }
+            ]
+         },
+         "level" : 8,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "syncAngle" : "21.1764",
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.3435",
+                  "syncAngle" : "21.1764",
+                  "name" : "WD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "21.1764",
+                  "name" : "WD_L0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L1",
+                  "syncAngle" : "21.1764",
+                  "radius" : "0.3435",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "count" : 8
+               },
+               {
+                  "count" : 8,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "maxRegenHealth" : 165,
+         "maxClimbAngle" : 25,
+         "brakeForce" : 40000,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.26",
+            "vehicleRotation" : "0.26"
+         },
+         "repairCost" : "5.0"
+      }
+   },
+   "crewXpFactor" : "1.5",
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM"
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G114_Rheinmetall_Skorpian" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Maybach_HL_210_TRM_P30_A" : {
+               "smplEnginePower" : 850
+            }
+         }
+      }
+   },
+   "radios" : {
+      "FuG_FA" : "shared"
+   },
+   "hull" : {
+      "models" : {
+         "destroyed" : "vehicles/german/G114_Rheinmetall_Skorpian/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G114_Rheinmetall_Skorpian/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G114_Rheinmetall_Skorpian/crash/lod0/Hull.model"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : {}
+      },
+      "swinging" : {
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.48",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30",
+         "lodDist" : "FAR"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 135,
+         "maxHealth" : 200,
+         "repairCost" : "1.0"
+      },
+      "armor" : {
+         "armor_8" : 10,
+         "armor_11" : 16,
+         "armor_3" : 16,
+         "armor_5" : 10,
+         "armor_2" : 30,
+         "armor_9" : 30,
+         "armor_4" : 20,
+         "armor_1" : 30,
+         "armor_10" : 20,
+         "armor_6" : 10,
+         "armor_7" : 16
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G114_Skorpian/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G114_Skorpian/collision_client/Hull.model"
+      },
+      "maxHealth" : 920,
+      "hangarShadowTexture" : "vehicles/german/G114_Skorpian/Skorpian_HangarShadowMap.dds",
+      "weight" : 15865,
+      "camouflage" : {
+         "tiling" : "1.72 1.72 0.03 0.000000"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 -0"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayStart" : "-1.73471 0.504984 -0.180665",
+               "hideIfDamaged" : true,
+               "size" : "0.68",
+               "rayEnd" : "-1.53471 0.504917 -0.180693",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "rayEnd" : "1.53471 0.504917 -0.180693",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "rayStart" : "1.73471 0.504984 -0.180665",
+               "size" : "0.68"
+            }
+         ],
+         "clan" : {
+            "rayEnd" : "-0.510113 0.177848 2.58695",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.510113 0.341291 2.70221",
+            "hideIfDamaged" : true,
+            "size" : "0.26"
+         }
+      }
+   },
+   "crew" : {
+      "commander" : "loader",
+      "driver" : {},
+      "gunner" : {},
+      "radioman" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.850624002"
+   },
+   "repairCost" : "6.0",
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_G114_Rheinmetall_Skorpian" : {
+         "rotationSpeed" : 18,
+         "level" : 8,
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50
+         },
+         "models" : {
+            "exploded" : "vehicles/german/G114_Rheinmetall_Skorpian/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G114_Rheinmetall_Skorpian/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G114_Rheinmetall_Skorpian/crash/lod0/Turret_01.model"
+         },
+         "physicsShape" : "1.030 0.216 1.053 0.000 1.006 0.000 0.581 0.401 0.622 0.500 0.075 0.500 0.312 0.000 0.000",
+         "tags" : "AAAAAAAAAAAA",
+         "showEmblemsOnGun" : false,
+         "userString" : "#germany_vehicles:Turret_1_G114_Rheinmetall_Skorpian",
+         "maxHealth" : 230,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "gunPosition" : "0.000000 0.26241 -0.114005",
+         "armor" : {
+            "armor_1" : "14.5",
+            "armor_4" : "14.5",
+            "armor_2" : "",
+            "armor_5" : 10,
+            "armor_3" : "14.5"
+         },
+         "guns" : {
+            "_128mm_K43_L55" : "shared"
+         },
+         "price" : 100,
+         "circularVisionRadius" : 360,
+         "weight" : 3150,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1.24143 0.352097 -0.049547",
+                  "size" : "0.26",
+                  "rayEnd" : "-1.20143 0.352096 -0.0495469",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayStart" : "1.24218 0.350598 -0.0473717",
+                  "hideIfDamaged" : true,
+                  "size" : "0.26",
+                  "rayEnd" : "1.20218 0.350596 -0.0473717",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "camouflage" : {
+            "tiling" : "1.96 0.82 0.52 0.06"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G114_Skorpian/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G114_Skorpian/collision_client/Turret_01.model"
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : 60,
+      "backward" : 20
+   },
+   "invisibility" : {
+      "moving" : "0.138",
+      "firePenalty" : "0.245",
+      "camouflageBonus" : "0.04",
+      "still" : "0.203",
+      "camouflageNetBonus" : "0.15"
+   },
+   "customDefaultCamouflage" : true,
+   "premiumVehicleXPFactor" : "0.1",
+   "engines" : {
+      "Maybach_HL_210_TRM_P30_A" : "shared"
+   }
+}

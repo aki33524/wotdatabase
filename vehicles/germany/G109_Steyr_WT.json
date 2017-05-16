@@ -1,0 +1,573 @@
+{
+   "turrets0" : {
+      "Turret_1_G109_Steyr_WT" : {
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.795113 0.362144 0.33316",
+                  "rayStart" : "-1 0 0",
+                  "size" : "0.6",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "0.795113 0.362144 0.33316",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.6",
+                  "rayStart" : "1 0 0"
+               }
+            ],
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1 0 -0",
+                  "rayStart" : "-1 0 -0",
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.24",
+                  "rayStart" : "0.825475 0.412538 -0.49155",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "1 0 -0"
+               }
+            ]
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "rotationSpeed" : 27,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G109_Steyr_WT/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G109_Steyr_WT/collision_client/Turret_01.model"
+         },
+         "weight" : 2000,
+         "maxHealth" : 160,
+         "gunPosition" : "0.000000 0.391832 0.70423",
+         "circularVisionRadius" : 360,
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G109_Steyr_WT/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G109_Steyr_WT/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G109_Steyr_WT/crash/lod0/Turret_01.model"
+         },
+         "showEmblemsOnGun" : false,
+         "price" : 100,
+         "armor" : {
+            "armor_1" : 20,
+            "armor_8" : 4,
+            "armor_6" : 4,
+            "armor_3" : 10,
+            "armor_2" : 10,
+            "armor_4" : 10,
+            "armor_9" : "",
+            "armor_5" : 4,
+            "armor_7" : 15
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.039 -0.030 0.500 0.500 0.500 0.500 0.239 0.500 0.000 0.000 0.000",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 90,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 45
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "tags" : "AAAAAAAAAAAA",
+         "guns" : {
+            "_88mm_KwK_43_L71A" : "shared"
+         },
+         "notInShop" : true,
+         "level" : 7,
+         "userString" : "#germany_vehicles:Turret_1_G109_Steyr_WT"
+      }
+   },
+   "crewXpFactor" : "1.5",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.703179268"
+   },
+   "radios" : {
+      "FuG7A" : "shared"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "chassis" : {
+      "Chassis_G109_Steyr_WT" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "weight" : 3000,
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "size" : "0.5 0.52",
+            "bufferPrefs" : "mediumTank"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.22",
+            "vehicleMovement" : "0.22"
+         },
+         "trackThickness" : "-0.0243",
+         "wwsoundPC" : "treads_type_pc",
+         "price" : 20000,
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "maxClimbAngle" : 25,
+         "maxRegenHealth" : 135,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 4,
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "minOffset" : "-0.06",
+                  "isLeft" : true
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "count" : 4,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "isLeft" : false,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "splineDesc" : {
+            "segmentLength" : "0.11",
+            "segmentModelRight" : "vehicles/german/G109_Steyr_WT/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/german/G109_Steyr_WT/track/right.track",
+            "segmentModelLeft" : "vehicles/german/G109_Steyr_WT/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.053",
+            "left" : "vehicles/german/G109_Steyr_WT/track/left.track"
+         },
+         "rotationIsAroundCenter" : true,
+         "userString" : "#germany_vehicles:Chassis_G109_Steyr_WT",
+         "level" : 7,
+         "topRightCarryingPoint" : "1.32187 1.50788",
+         "hullPosition" : "0.000000 0.76081 0.000000",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.3",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 4
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 4
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 30,
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : 30,
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : 30,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R1",
+                  "isLeading" : true,
+                  "syncAngle" : 30
+               }
+            ]
+         },
+         "rotationSpeed" : 40,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G109_Steyr_WT/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G109_Steyr_WT/collision_client/Chassis.model"
+         },
+         "trackNodes" : {
+            "backwardElastK" : 1,
+            "linkBones" : true,
+            "offset" : "0",
+            "forwardElastK" : 1,
+            "maxAmplitude" : "0.1",
+            "enable" : true,
+            "gravity" : -9,
+            "elasticity" : 1400,
+            "maxOffset" : "0.1",
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.5"
+               },
+               {
+                  "forwardElastK" : "0.5",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.5",
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.5"
+               },
+               {
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.8",
+                  "rightSibling" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "leftSibling" : "Track_VT_L0"
+               },
+               {
+                  "rightSibling" : "Track_VT_L3",
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.6",
+                  "leftSibling" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.5",
+                  "rightSibling" : "Track_VT_L4"
+               },
+               {
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.4",
+                  "rightSibling" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L4",
+                  "leftSibling" : "Track_VT_L3"
+               },
+               {
+                  "leftSibling" : "Track_VT_L4",
+                  "name" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L6",
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.68"
+               },
+               {
+                  "name" : "Track_VT_L6",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L5",
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.2",
+                  "rightSibling" : "Track_VT_L7"
+               },
+               {
+                  "forwardElastK" : "1.1",
+                  "backwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L7",
+                  "leftSibling" : "Track_VT_L6"
+               },
+               {
+                  "name" : "Track_VT_L8",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L7",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.68"
+               },
+               {
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.68",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0"
+               },
+               {
+                  "leftSibling" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R3",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.68"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R2",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R4"
+               },
+               {
+                  "rightSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.3",
+                  "leftSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R5",
+                  "isLeft" : false
+               },
+               {
+                  "leftSibling" : "Track_VT_R5",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R6",
+                  "rightSibling" : "Track_VT_R7",
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VT_R7",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R6",
+                  "backwardElastK" : "0.68",
+                  "forwardElastK" : "1.1",
+                  "rightSibling" : "Track_VT_R8"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_R7",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R8"
+               }
+            ],
+            "damping" : 2
+         },
+         "maxHealth" : 180,
+         "models" : {
+            "exploded" : "vehicles/german/G109_Steyr_WT/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G109_Steyr_WT/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G109_Steyr_WT/crash/lod0/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "repairCost" : "0.5",
+         "terrainResistance" : "1 1.1 2.1",
+         "tags" : {},
+         "navmeshGirth" : "6.0",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "brakeForce" : 16000,
+         "notInShop" : true,
+         "maxLoad" : 16000
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 35
+   },
+   "repairCost" : "6.5",
+   "engines" : {
+      "V12_cylinder_Boxer_Motor" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.4",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "germany_cross"
+   },
+   "hull" : {
+      "swinging" : {
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.74"
+      },
+      "camouflage" : {
+         "tiling" : "1.36 1.36 0.000000 0.000000"
+      },
+      "maxHealth" : 640,
+      "weight" : 5493,
+      "turretPositions" : {
+         "turret" : "0.000000 0.556249 -1.11991"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G109_Steyr_WT/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G109_Steyr_WT/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 130,
+         "repairCost" : "1.0",
+         "maxHealth" : 190
+      },
+      "armor" : {
+         "armor_2" : 20,
+         "armor_3" : 10,
+         "armor_6" : 15,
+         "armor_10" : 10,
+         "armor_8" : 10,
+         "armor_1" : 20,
+         "armor_11" : 4,
+         "armor_5" : 15,
+         "armor_12" : 4,
+         "armor_7" : 10,
+         "armor_4" : 8,
+         "armor_13" : 20,
+         "armor_9" : 5
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.24",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "0.849367 0.500482 2.78098",
+            "rayEnd" : "0.849367 -0.206669 2.07394",
+            "hideIfDamaged" : false
+         }
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : {}
+      },
+      "hangarShadowTexture" : "vehicles/german/G109_Steyr_WT/Steyr_WT_HangarShadowMap.dds",
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G109_Steyr_WT/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G109_Steyr_WT/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G109_Steyr_WT/crash/lod0/Hull.model"
+      }
+   },
+   "premiumVehicleXPFactor" : "0.2",
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G109_Steyr_WT" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "V12_cylinder_Boxer_Motor" : {
+               "smplEnginePower" : 220
+            }
+         }
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.596",
+      "camouflageBonus" : "0.04",
+      "still" : "0.397",
+      "camouflageNetBonus" : "0.15",
+      "moving" : "0.238"
+   },
+   "crew" : {
+      "gunner" : {},
+      "loader" : {},
+      "driver" : {},
+      "commander" : "AAAAAAAA"
+   }
+}

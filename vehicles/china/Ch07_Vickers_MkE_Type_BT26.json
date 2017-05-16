@@ -1,0 +1,593 @@
+{
+   "chassis" : {
+      "Chassis_Ch07_Vickers_MkE_Type_BT26_2" : {
+         "wwsoundPC" : "treads_type_pc",
+         "wwsoundNPC" : "trds_med_npc",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R5",
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L5"
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 4,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_R",
+                  "count" : 8,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 4,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 8,
+                  "template" : "W_L"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision_client/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "maxRegenHealth" : 45,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "level" : 2,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.23",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "userString" : "#china_vehicles:Chassis_Ch07_Vickers_MkE_Type_BT26_2",
+         "hullPosition" : "0 1 0",
+         "maxHealth" : 60,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "tags" : {},
+         "maxLoad" : 10000,
+         "topRightCarryingPoint" : "1.02531 1.38191",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "maxClimbAngle" : 25,
+         "terrainResistance" : "1.1 1.2 2.1",
+         "traces" : {
+            "size" : "0.44 0.28",
+            "lodDist" : "FAR",
+            "textureSet" : "ussr_01",
+            "bufferPrefs" : "smallTank"
+         },
+         "models" : {
+            "exploded" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod0/Chassis.model"
+         },
+         "brakeForce" : 8500,
+         "repairCost" : "2.5",
+         "rotationSpeed" : 48,
+         "price" : 620,
+         "weight" : 1880,
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "rotationIsAroundCenter" : false,
+         "navmeshGirth" : "6.0"
+      },
+      "Chassis_Ch07_Vickers_MkE_Type_BT26" : {
+         "repairCost" : "2.5",
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.28",
+            "vehicleRotation" : "0.28"
+         },
+         "rotationSpeed" : 44,
+         "price" : "340.0",
+         "weight" : 1880,
+         "navmeshGirth" : "6.0",
+         "rotationIsAroundCenter" : false,
+         "drivingWheels" : "WD_L0 WD_L5",
+         "topRightCarryingPoint" : "1.02531 1.38191",
+         "maxClimbAngle" : 25,
+         "terrainResistance" : "1.2 1.3 2.3",
+         "unlocks" : {
+            "chassis" : "Chassis_Ch07_Vickers_MkE_Type_BT26_2"
+         },
+         "brakeForce" : 7500,
+         "models" : {
+            "exploded" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod0/Chassis.model"
+         },
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "ussr_01",
+            "size" : "0.44 0.28",
+            "lodDist" : "FAR"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "level" : 1,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.23",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "userString" : "#china_vehicles:Chassis_Ch07_Vickers_MkE_Type_BT26",
+         "maxRegenHealth" : 40,
+         "hullPosition" : "0 1 0",
+         "tags" : {},
+         "maxLoad" : 7500,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "maxHealth" : 50,
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R5",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L5"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 4,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "count" : 8
+               },
+               {
+                  "count" : 4,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 8,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_med_npc"
+      }
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "driver" : {},
+      "gunner" : "loader"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Ch07_Vickers_MkE_Type_BT26" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            },
+            "Chassis_Ch07_Vickers_MkE_Type_BT26_2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Armstrong_Siddeley" : {
+               "smplEnginePower" : "97.26987"
+            },
+            "Franklin" : {
+               "smplEnginePower" : "105.7281"
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "engines" : {
+      "Franklin" : "shared",
+      "Armstrong_Siddeley" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "0.4",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/Vickers_MkE_Type_BT26_CM.dds"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.746555606"
+   },
+   "emblems" : {
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM",
+      "default" : "china_star"
+   },
+   "hull" : {
+      "weight" : 3736,
+      "armor" : {
+         "armor_5" : 8,
+         "armor_10" : "",
+         "armor_8" : 5,
+         "armor_9" : "",
+         "armor_4" : "12.7",
+         "armor_3" : "12.7",
+         "armor_6" : "12.7",
+         "armor_11" : 5,
+         "armor_2" : "12.7",
+         "armor_7" : 5,
+         "armor_12" : 5,
+         "armor_1" : "12.7"
+      },
+      "camouflage" : {
+         "tiling" : "0.895 0.7 0.000000 0.000000"
+      },
+      "maxHealth" : 124,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_small"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxHealth" : 75,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 50
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 37.00 0.34 1.00 0.05 0.33",
+         "sensitivityToImpulse" : "0.76",
+         "rollParams" : "1.00 0.28 37.00 0.34 1.00 0.05 0.33",
+         "lodDist" : "FAR"
+      },
+      "turretPositions" : {
+         "turret" : "-0 1 -0"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.523866 -0.0249602 1.49858",
+            "size" : "0.28",
+            "rayStart" : "-0.52387 0.368338 1.57149",
+            "rayUp" : "0.000000 0.000000 -1"
+         },
+         "inscription" : {
+            "rayEnd" : "0.306823 -0.0268712 1.50891",
+            "hideIfDamaged" : true,
+            "size" : "0.64",
+            "rayStart" : "0.306822 0.366426 1.58182",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "models" : {
+         "undamaged" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod0/Hull.model",
+         "exploded" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/Vickers_MkE_Type_BT26_HangarShadowMap.dds"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.374",
+      "moving" : "0.187",
+      "camouflageNetBonus" : "0.1",
+      "still" : "0.249"
+   },
+   "radios" : {
+      "_71-TK-3" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Ch07_Vickers_MkE_Type_BT26" : {
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "armor" : {
+            "armor_4" : "12.7",
+            "armor_3" : "12.7",
+            "armor_6" : 5,
+            "armor_5" : 5,
+            "armor_8" : "",
+            "armor_1" : "12.7",
+            "armor_2" : 8,
+            "armor_7" : "12.7"
+         },
+         "price" : 160,
+         "rotationSpeed" : 24,
+         "weight" : 650,
+         "physicsShape" : "1.000 0.006 1.000 0.000 0.486 0.359 0.599 0.500 0.500 0.500 0.134 0.500 0.149 0.500 0.000",
+         "models" : {
+            "undamaged" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Turret_01.model"
+         },
+         "unlocks" : {
+            "turret" : "Turret_2_Ch07_Vickers_MkE_Type_BT26",
+            "vehicle" : "Ch08_Type97_Chi_Ha"
+         },
+         "showEmblemsOnGun" : false,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "tags" : {},
+         "maxHealth" : 31,
+         "camouflage" : {
+            "tiling" : "1 0.835 0.000000 0.000000"
+         },
+         "userString" : "#china_vehicles:Turret_1_Ch07_Vickers_MkE_Type_BT26",
+         "level" : 1,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "maxRegenHealth" : 20,
+            "repairCost" : "1.0"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0.205377 0.308224 0.41096",
+         "emblemSlots" : {
+            "inscription" : {
+               "hideIfDamaged" : true,
+               "rayEnd" : "-0 0 -0",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1 0 -0",
+               "size" : "0.54"
+            },
+            "player" : {
+               "hideIfDamaged" : true,
+               "rayEnd" : "0.378432 0.348124 -0.04916",
+               "isMirrored" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "0.775916 0.392914 -0.0491512",
+               "size" : "0.28"
+            }
+         },
+         "circularVisionRadius" : 280,
+         "guns" : {
+            "_47mm_QFSA" : "shared"
+         }
+      },
+      "Turret_2_Ch07_Vickers_MkE_Type_BT26" : {
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "showEmblemsOnGun" : false,
+         "unlocks" : {
+            "gun" : [
+               "_45mm_20K",
+               "_40mm_Pom_Pom"
+            ]
+         },
+         "invisibilityFactor" : "1.011",
+         "models" : {
+            "destroyed" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod0/Turret_02.model"
+         },
+         "physicsShape" : "0.936 -0.064 1.000 0.000 0.404 0.255 0.878 0.633 0.415 0.500 0.000 0.500 0.000 0.100 0.000",
+         "armor" : {
+            "armor_1" : 30,
+            "armor_7" : "",
+            "armor_2" : 15,
+            "armor_6" : 6,
+            "armor_3" : 15,
+            "armor_4" : 15,
+            "armor_9" : 10,
+            "armor_8" : 10,
+            "armor_10" : 15,
+            "armor_5" : 10
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "weight" : 1050,
+         "rotationSpeed" : 24,
+         "price" : 500,
+         "guns" : {
+            "_47mm_QFSA" : "shared",
+            "_45mm_20K" : "shared",
+            "_40mm_Pom_Pom" : "shared"
+         },
+         "circularVisionRadius" : 310,
+         "emblemSlots" : {
+            "player" : {
+               "hideIfDamaged" : true,
+               "rayEnd" : "0 0 -1",
+               "isMirrored" : true,
+               "size" : "0.28",
+               "rayStart" : "1 0 -1",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            "inscription" : {
+               "rayEnd" : "-0 0 -1",
+               "hideIfDamaged" : true,
+               "size" : "0.54",
+               "rayStart" : "-1 0 -1",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         },
+         "gunPosition" : "0 0 1",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/collision/Turret_02.model"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 20,
+            "maxHealth" : 40
+         },
+         "level" : 2,
+         "userString" : "#china_vehicles:Turret_2_Ch07_Vickers_MkE_Type_BT26",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "tags" : {},
+         "maxHealth" : 46
+      }
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 35
+   },
+   "repairCost" : "2.35"
+}

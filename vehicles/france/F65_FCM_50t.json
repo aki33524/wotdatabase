@@ -1,0 +1,504 @@
+{
+   "crew" : {
+      "driver" : {},
+      "radioman" : {},
+      "gunner" : {},
+      "commander" : {},
+      "loader" : {}
+   },
+   "speedLimits" : {
+      "forward" : 51,
+      "backward" : 20
+   },
+   "hull" : {
+      "maxHealth" : 1200,
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.26",
+            "rayStart" : "-0.912495 0.363186 2.95047",
+            "rayEnd" : "-0.912495 0.229784 2.80146"
+         }
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/french/F65_FCM_50t/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/french/F65_FCM_50t/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/french/F65_FCM_50t/FCM_50t_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "camouflage" : {
+         "tiling" : "1.96 1.96 0.28 0.000000"
+      },
+      "turretPositions" : {
+         "turret" : "0 0 1"
+      },
+      "armor" : {
+         "armor_7" : 60,
+         "armor_10" : 15,
+         "armor_3" : 80,
+         "armor_1" : 120,
+         "armor_8" : 20,
+         "armor_2" : 50,
+         "armor_6" : 110,
+         "armor_4" : 80,
+         "armor_11" : 20,
+         "armor_9" : "",
+         "armor_5" : 20
+      },
+      "weight" : 31360,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "swinging" : {
+         "sensitivityToImpulse" : "0.3",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 38.00 0.34 1.00 0.04 0.27",
+         "rollParams" : "1.00 0.26 38.00 0.34 1.00 0.04 0.27"
+      },
+      "models" : {
+         "exploded" : "vehicles/french/F65_FCM_50t/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F65_FCM_50t/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F65_FCM_50t/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 250,
+         "maxRegenHealth" : 200,
+         "repairCost" : "1.0"
+      }
+   },
+   "repairCost" : "5.13",
+   "turrets0" : {
+      "Turret_1_FCM_50t" : {
+         "gunPosition" : "0.000000 0.459195 1.05069",
+         "userString" : "#france_vehicles:Turret_1_FCM_50t",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F65_FCM_50t/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F65_FCM_50t/collision/Turret_01.model"
+         },
+         "price" : "31320.0",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "2.0",
+            "maxRegenHealth" : 55,
+            "maxHealth" : 110
+         },
+         "armor" : {
+            "armor_5" : 80,
+            "armor_9" : 20,
+            "armor_11" : 80,
+            "armor_4" : 60,
+            "armor_6" : 80,
+            "armor_12" : 20,
+            "armor_2" : 80,
+            "armor_8" : 20,
+            "armor_10" : "",
+            "armor_7" : 40,
+            "armor_1" : 120,
+            "armor_3" : 80
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "notInShop" : true,
+         "circularVisionRadius" : 400,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "showEmblemsOnGun" : false,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120
+         },
+         "guns" : {
+            "_90mm_canon_DCA_45A" : "shared"
+         },
+         "maxHealth" : 300,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1 0 -0",
+                  "rayStart" : "-1.14757 0.537429 -0.277868",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.78"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.78",
+                  "rayEnd" : "1 0 -1",
+                  "rayStart" : "1.02571 0.50395 -0.539202",
+                  "hideIfDamaged" : false
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "-0.772922 0.493089 -1.61376",
+                  "rayEnd" : "-0.736683 0.478093 -1.6059",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayStart" : "0.76911 0.485953 -1.64516",
+                  "rayEnd" : "0.732873 0.470955 -1.63729",
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "level" : 8,
+         "physicsShape" : "1.000 0.000 1.034 0.000 0.763 -0.045 0.766 0.636 0.434 0.500 0.254 0.500 0.126 0.549 0.000",
+         "camouflage" : {
+            "tiling" : "0.97 0.97 0.000000 0.000000"
+         },
+         "weight" : 9000,
+         "rotationSpeed" : 36,
+         "tags" : {},
+         "models" : {
+            "destroyed" : "vehicles/french/F65_FCM_50t/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F65_FCM_50t/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F65_FCM_50t/normal/lod0/Turret_01.model"
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.898946663"
+   },
+   "invisibility" : {
+      "still" : "0.076",
+      "camouflageBonus" : "0.02",
+      "camouflageNetBonus" : "0.05",
+      "moving" : "0.038",
+      "firePenalty" : "0.114"
+   },
+   "engines" : {
+      "Maybach_HL_234P45A" : "shared"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "french_rose"
+   },
+   "radios" : {
+      "SCR_528A" : "shared"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "premiumVehicleXPFactor" : "0.1",
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6"
+   },
+   "chassis" : {
+      "Chassis_FCM_50t" : {
+         "notInShop" : true,
+         "navmeshGirth" : "6.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F65_FCM_50t/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F65_FCM_50t/collision_client/Chassis.model"
+         },
+         "terrainResistance" : "1.1 1.2 2.4",
+         "rotationIsAroundCenter" : true,
+         "userString" : "#france_vehicles:Chassis_FCM_50t",
+         "brakeForce" : 50000,
+         "repairCost" : "5.0",
+         "price" : "37520.0",
+         "maxLoad" : 57500,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 9 0 0 0"
+            }
+         },
+         "tags" : {},
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F65_FCM_50t/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F65_FCM_50t/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F65_FCM_50t/crash/lod0/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "topRightCarryingPoint" : "1.45769 2.04529",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.05",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 32,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "syncAngle" : 30,
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "syncAngle" : 32
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "syncAngle" : 30
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 3
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 8
+               },
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 3
+               },
+               {
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 8,
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "level" : 8,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "maxClimbAngle" : 25,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "maxOffset" : "0.2",
+                  "startIndex" : "",
+                  "minOffset" : "-0.2"
+               },
+               {
+                  "minOffset" : "-0.2",
+                  "isLeft" : false,
+                  "maxOffset" : "0.2",
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "count" : 8
+               }
+            ]
+         },
+         "trackThickness" : "-0.0219",
+         "maxRegenHealth" : 175,
+         "traces" : {
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "largeTank",
+            "size" : "0.42 0.6",
+            "lodDist" : "FAR"
+         },
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/french/F65_FCM_50t/track/B2_track.model",
+            "segmentModelRight" : "vehicles/french/F65_FCM_50t/track/B2_track.model",
+            "segmentOffset" : "0",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.212",
+            "right" : "vehicles/french/F65_FCM_50t/track/right.track",
+            "left" : "vehicles/french/F65_FCM_50t/track/left.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            }
+         },
+         "trackNodes" : {
+            "maxAmplitude" : "0.015",
+            "elasticity" : 1035,
+            "offset" : "0",
+            "forwardElastK" : 1,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.6",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.5",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VT_L1",
+                  "offset" : "-0.067"
+               },
+               {
+                  "offset" : "-0.067",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "0.7",
+                  "offset" : "-0.067",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.5"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.074",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.067",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "offset" : "-0.067",
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "offset" : "-0.067",
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VT_R3"
+               }
+            ],
+            "backwardElastK" : 1,
+            "gravity" : -9,
+            "linkBones" : false,
+            "maxOffset" : "0.01",
+            "enable" : true,
+            "damping" : 2
+         },
+         "bulkHealthFactor" : "3.0",
+         "armor" : {
+            "rightTrack" : 30,
+            "leftTrack" : 30
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationSpeed" : 40,
+         "maxHealth" : 230,
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0.000000 1.29843 0.000000",
+         "weight" : 10000
+      }
+   },
+   "crewXpFactor" : "1.5",
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_FCM_50t" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Maybach_HL_234P45A" : {
+               "smplEnginePower" : "1057.281"
+            }
+         }
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   }
+}

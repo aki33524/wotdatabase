@@ -1,0 +1,527 @@
+{
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "chassis" : {
+      "Matilda" : {
+         "trackThickness" : "-0.0099",
+         "maxRegenHealth" : 85,
+         "maxClimbAngle" : 25,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.32 0.36",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_02"
+         },
+         "trackNodes" : {
+            "elasticity" : 1300,
+            "maxOffset" : "0.01",
+            "gravity" : "-9.8",
+            "linkBones" : false,
+            "maxAmplitude" : "0.01",
+            "node" : [
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : 2
+               }
+            ],
+            "enable" : true,
+            "damping" : 2
+         },
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "notInShop" : true,
+         "weight" : 7000,
+         "splineDesc" : {
+            "left" : "vehicles/russian/R32_Matilda_II_LL/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/russian/R32_Matilda_II_LL/track/segment.model",
+            "right" : "vehicles/russian/R32_Matilda_II_LL/track/right.track",
+            "segmentModelRight" : "vehicles/russian/R32_Matilda_II_LL/track/segment.model",
+            "segmentLength" : "0.182",
+            "segmentOffset" : "0.263"
+         },
+         "terrainResistance" : "1.03 1.26 2.29",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "syncAngle" : 30
+               },
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_L0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L1",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "W_L2",
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_L3",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L4",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L5",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L6",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_L7",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "W_L8"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L9",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "W_L10"
+               },
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "syncAngle" : 30,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "W_R0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "W_R1",
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "W_R2",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "W_R3",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "W_R4",
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "W_R5",
+                  "radius" : "0.11141"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "W_R6",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "W_R7",
+                  "isLeading" : false,
+                  "radius" : "0.11141"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "W_R8",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "W_R9",
+                  "isLeading" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_R10",
+                  "isLeading" : false,
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "tracks" : {
+            "textureScale" : "-2.1",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wwsoundNPC" : "trds_med_npc",
+         "topRightCarryingPoint" : "1.02912 1.79094",
+         "level" : 5,
+         "brakeForce" : 42800,
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R32_Matilda_II_LL/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/russian/R32_Matilda_II_LL/collision/Chassis.model"
+         },
+         "maxHealth" : 110,
+         "userString" : "#ussr_vehicles:Matilda",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.18",
+            "vehicleMovement" : "0.18"
+         },
+         "repairCost" : "5.0",
+         "hullPosition" : "0.000000 0.94351 0.000000",
+         "price" : 9380,
+         "rotationSpeed" : 35,
+         "wwsoundPC" : "treads_type_pc",
+         "maxLoad" : 31000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "minOffset" : "-0.03",
+                  "count" : 11,
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "maxOffset" : "0.03"
+               },
+               {
+                  "template" : "Track_R",
+                  "maxOffset" : "0.03",
+                  "count" : 11,
+                  "startIndex" : "",
+                  "minOffset" : "-0.03",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : false,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "models" : {
+            "exploded" : "vehicles/russian/R32_Matilda_II_LL/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R32_Matilda_II_LL/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R32_Matilda_II_LL/normal/lod0/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "navmeshGirth" : "6.0",
+         "bulkHealthFactor" : "3.0"
+      }
+   },
+   "repairCost" : "3.0",
+   "premiumVehicleXPFactor" : "0.4",
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Matilda" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "AEC3" : {
+               "smplEnginePower" : "289.695"
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.042627815"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "still" : "0.265",
+      "firePenalty" : "0.398",
+      "moving" : "0.199"
+   },
+   "hull" : {
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.4",
+         "pitchParams" : "0.24 36.00 0.42 1.00 0.06 0.38",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.26 36.00 0.42 1.00 0.06 0.38"
+      },
+      "turretPositions" : {
+         "turret" : "-0.00866 0.58264 0.55971"
+      },
+      "hangarShadowTexture" : "vehicles/russian/R32_Matilda_II_LL/Matilda_II_LL_HangarShadowMap.dds",
+      "maxHealth" : 488,
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/russian/R32_Matilda_II_LL/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/russian/R32_Matilda_II_LL/collision/Hull.model"
+      },
+      "armor" : {
+         "armor_3" : 70,
+         "armor_8" : 20,
+         "armor_9" : 13,
+         "armor_10" : "",
+         "armor_13" : 55,
+         "armor_11" : 10,
+         "armor_12" : 25,
+         "armor_6" : 40,
+         "armor_16" : 47,
+         "armor_14" : 13,
+         "armor_1" : 75,
+         "armor_2" : 78,
+         "armor_15" : 47,
+         "armor_4" : 55,
+         "armor_7" : 20,
+         "armor_5" : 47
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.225",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-0.319858 0.217046 1.85356",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.327243 0.240243 2.25282"
+         },
+         "inscription" : {
+            "rayStart" : "-1.35954 0.488767 0.552063",
+            "size" : "0.58",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-1.00176 0.309898 0.552063",
+            "hideIfDamaged" : true
+         }
+      },
+      "models" : {
+         "undamaged" : "vehicles/russian/R32_Matilda_II_LL/normal/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R32_Matilda_II_LL/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/russian/R32_Matilda_II_LL/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 150,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 100
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "weight" : 15000,
+      "camouflage" : {
+         "tiling" : "5 5 0.000000 0.000000"
+      }
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : {},
+      "commander" : "AAAAAAAA",
+      "gunner" : {}
+   },
+   "emblems" : {
+      "default" : "ussr_star",
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM"
+   },
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : 25
+   },
+   "turrets0" : {
+      "Matilda_II_LL" : {
+         "models" : {
+            "undamaged" : "vehicles/russian/R32_Matilda_II_LL/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/russian/R32_Matilda_II_LL/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/russian/R32_Matilda_II_LL/crash/lod0/Turret_01.model"
+         },
+         "gunPosition" : "-0.05857 0.41794 0.76615",
+         "circularVisionRadius" : 350,
+         "weight" : 3500,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80,
+            "repairCost" : "1.0"
+         },
+         "tags" : {},
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "level" : 5,
+         "userString" : "#ussr_vehicles:Matilda_II_LL",
+         "maxHealth" : 122,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R32_Matilda_II_LL/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/russian/R32_Matilda_II_LL/collision/Turret_01.model"
+         },
+         "emblemSlots" : {
+            "player" : {
+               "size" : "0.28",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1 1 -0",
+               "hideIfDamaged" : false,
+               "rayStart" : "-1 1 -0"
+            }
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120,
+            "repairCost" : "1.0"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "physicsShape" : "0.913 -0.076 0.908 0.000 0.525 0.141 0.773 0.453 0.261 0.500 0.187 0.371 0.120 0.558 0.000",
+         "camouflage" : {
+            "tiling" : "2.3 2.3 0.000000 0.000000"
+         },
+         "price" : 9670,
+         "guns" : {
+            "_76mm_ZiS-96" : "shared"
+         },
+         "rotationSpeed" : "34.13",
+         "notInShop" : true,
+         "showEmblemsOnGun" : false,
+         "armor" : {
+            "armor_4" : 75,
+            "armor_12" : "",
+            "armor_2" : 75,
+            "armor_1" : 75,
+            "armor_6" : 20,
+            "armor_3" : 75,
+            "armor_8" : ""
+         }
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "engines" : {
+      "AEC3" : "shared"
+   },
+   "radios" : {
+      "Mk19R" : "shared"
+   },
+   "crewXpFactor" : "1.5"
+}

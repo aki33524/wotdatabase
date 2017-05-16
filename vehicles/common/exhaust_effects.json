@@ -1,0 +1,349 @@
+{
+   "templates" : {
+      "template" : [
+         {
+            "name" : "GearUp",
+            "selector" : {
+               "type" : "AAAAAAAA",
+               "selector" : {
+                  "key" : 1,
+                  "type" : "effect",
+                  "name" : "particles/Tank/exhaust/{0}/gear_up.xml",
+                  "ttl" : "0.7"
+               },
+               "variable" : "_gearUp"
+            }
+         },
+         {
+            "selector" : {
+               "variable" : "_engineStart",
+               "selector" : {
+                  "ttl" : "5.2",
+                  "name" : "particles/Tank/exhaust/{0}/start.xml",
+                  "type" : "effect",
+                  "key" : 1
+               },
+               "type" : "AAAAAAAA"
+            },
+            "name" : "EngineStart"
+         },
+         {
+            "selector" : {
+               "type" : "range",
+               "variable" : "_physicLoad",
+               "selector" : [
+                  {
+                     "key" : "",
+                     "type" : "range",
+                     "selector" : [
+                        {
+                           "key" : "0.00",
+                           "type" : "effect",
+                           "name" : "particles/Tank/exhaust/{0}/rpm2.xml"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/rpm1.xml",
+                           "type" : "effect",
+                           "key" : "0.03"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/idle.xml",
+                           "type" : "effect",
+                           "key" : "0.20"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/rpm4.xml",
+                           "type" : "effect",
+                           "key" : "1.05"
+                        }
+                     ],
+                     "variable" : "_rpm"
+                  },
+                  {
+                     "key" : "0.45",
+                     "type" : "range",
+                     "variable" : "_rpm",
+                     "selector" : [
+                        {
+                           "type" : "effect",
+                           "key" : "0.00",
+                           "name" : "particles/Tank/exhaust/{0}/rpm3.xml"
+                        },
+                        {
+                           "type" : "effect",
+                           "key" : "0.10",
+                           "name" : "particles/Tank/exhaust/{0}/rpm2.xml"
+                        },
+                        {
+                           "key" : "0.40",
+                           "type" : "effect",
+                           "name" : "particles/Tank/exhaust/{0}/rpm1.xml"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/rpm4.xml",
+                           "type" : "effect",
+                           "key" : "1.05"
+                        }
+                     ]
+                  },
+                  {
+                     "selector" : [
+                        {
+                           "type" : "effect",
+                           "key" : "0.00",
+                           "name" : "particles/Tank/exhaust/{0}/rpm4.xml"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/rpm3.xml",
+                           "key" : "0.30",
+                           "type" : "effect"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/rpm2.xml",
+                           "key" : "0.80",
+                           "type" : "effect"
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/{0}/rpm4.xml",
+                           "key" : "1.05",
+                           "type" : "effect"
+                        }
+                     ],
+                     "variable" : "_rpm",
+                     "type" : "range",
+                     "key" : "0.55"
+                  },
+                  {
+                     "variable" : "_rpm",
+                     "selector" : {
+                        "type" : "effect",
+                        "key" : "0.00",
+                        "name" : "particles/Tank/exhaust/{0}/rpm4.xml"
+                     },
+                     "type" : "range",
+                     "key" : "0.95"
+                  }
+               ]
+            },
+            "name" : "PhysicLoad"
+         },
+         {
+            "selector" : {
+               "variable" : "_engine_load",
+               "selector" : [
+                  {
+                     "name" : "particles/Tank/exhaust/{0}/idle.xml",
+                     "key" : 1,
+                     "type" : "effect"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "key" : 2,
+                     "name" : "PhysicLoad"
+                  }
+               ],
+               "type" : "range"
+            },
+            "name" : "ExhaustLoad"
+         },
+         {
+            "name" : "Exhaust",
+            "selector" : {
+               "type" : "union",
+               "selector" : [
+                  {
+                     "type" : "AAAAAAAA",
+                     "name" : "ExhaustLoad",
+                     "parameters" : "_engine_load:engineLoad;\n\n\t\t\t\t_physicLoad:physicLoad;\n\n\t\t\t\t_rpm:RPM"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_gearUp:gearUp",
+                     "name" : "GearUp"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_engineStart:engineStart",
+                     "name" : "EngineStart"
+                  }
+               ]
+            }
+         },
+         {
+            "name" : "AAQAAAAA",
+            "selector" : {
+               "variable" : "engineState",
+               "selector" : [
+                  {
+                     "type" : "AAAAAAAA",
+                     "key" : "0.0",
+                     "selector" : [
+                        {
+                           "key" : "",
+                           "type" : "range",
+                           "variable" : "_engine_load",
+                           "selector" : [
+                              {
+                                 "key" : 1,
+                                 "type" : "effect",
+                                 "name" : "particles/Tank/exhaust/{0}/idle.xml"
+                              },
+                              {
+                                 "name" : "PhysicLoad",
+                                 "key" : 2,
+                                 "type" : "AAAAAAAA"
+                              }
+                           ]
+                        },
+                        {
+                           "name" : "particles/Tank/exhaust/strv_change_exhaust.xml",
+                           "type" : "effect",
+                           "key" : 1
+                        }
+                     ],
+                     "variable" : "siegeProgress"
+                  },
+                  {
+                     "name" : "particles/Tank/exhaust/strv_engine_crit.xml",
+                     "type" : "effect",
+                     "key" : "1.0"
+                  },
+                  {
+                     "key" : "3.5",
+                     "type" : "effect",
+                     "name" : "particles/Tank/exhaust/strv_engine_crit.xml"
+                  }
+               ],
+               "type" : "range"
+            }
+         },
+         {
+            "name" : "ExhaustSTRV",
+            "selector" : {
+               "selector" : [
+                  {
+                     "name" : "AAQAAAAA",
+                     "parameters" : "_engine_load:engineLoad;\n\n\t\t\t\t_physicLoad:physicLoad;\n\n\t\t\t\t_rpm:RPM",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "parameters" : "_gearUp:gearUp",
+                     "name" : "GearUp",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_engineStart:engineStart",
+                     "name" : "EngineStart"
+                  }
+               ],
+               "type" : "union"
+            }
+         }
+      ]
+   },
+   "effects" : {
+      "diesel_medium" : {
+         "selector" : {
+            "name" : "Exhaust",
+            "type" : "AAAAAAAA",
+            "constantsGroup" : "diesel_medium"
+         }
+      },
+      "diesel_strv" : {
+         "selector" : {
+            "type" : "AAAAAAAA",
+            "constantsGroup" : "diesel_large",
+            "name" : "ExhaustSTRV"
+         }
+      },
+      "gas_large" : {
+         "selector" : {
+            "type" : "AAAAAAAA",
+            "constantsGroup" : "gas_large",
+            "name" : "Exhaust"
+         }
+      },
+      "gas_medium" : {
+         "selector" : {
+            "constantsGroup" : "gas_medium",
+            "type" : "AAAAAAAA",
+            "name" : "Exhaust"
+         }
+      },
+      "gas_small" : {
+         "selector" : {
+            "type" : "AAAAAAAA",
+            "constantsGroup" : "gas_small",
+            "name" : "Exhaust"
+         }
+      },
+      "default" : {
+         "selector" : {
+            "type" : "AAAAAAAA",
+            "constantsGroup" : "gas_medium",
+            "name" : "Exhaust"
+         }
+      },
+      "diesel_small" : {
+         "selector" : {
+            "type" : "AAAAAAAA",
+            "constantsGroup" : "diesel_small",
+            "name" : "Exhaust"
+         }
+      },
+      "diesel_large" : {
+         "selector" : {
+            "constantsGroup" : "diesel_large",
+            "type" : "AAAAAAAA",
+            "name" : "Exhaust"
+         }
+      }
+   },
+   "constants" : {
+      "constantsGroup" : [
+         {
+            "name" : "diesel_small",
+            "constant" : {
+               "value" : "small_diesel",
+               "name" : "_fileDescriptor"
+            }
+         },
+         {
+            "name" : "diesel_medium",
+            "constant" : {
+               "value" : "medium_diesel",
+               "name" : "_fileDescriptor"
+            }
+         },
+         {
+            "name" : "diesel_large",
+            "constant" : {
+               "name" : "_fileDescriptor",
+               "value" : "large_diesel"
+            }
+         },
+         {
+            "name" : "gas_small",
+            "constant" : {
+               "value" : "small_gas",
+               "name" : "_fileDescriptor"
+            }
+         },
+         {
+            "name" : "gas_medium",
+            "constant" : {
+               "value" : "medium_gas",
+               "name" : "_fileDescriptor"
+            }
+         },
+         {
+            "constant" : {
+               "value" : "large_gas",
+               "name" : "_fileDescriptor"
+            },
+            "name" : "gas_large"
+         }
+      ]
+   }
+}

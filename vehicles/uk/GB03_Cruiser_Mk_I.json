@@ -1,0 +1,936 @@
+{
+   "camouflage" : {
+      "priceFactor" : "0.4",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "crew" : {
+      "radioman" : {},
+      "loader" : {},
+      "gunner" : [
+         {},
+         {}
+      ],
+      "driver" : {},
+      "commander" : {}
+   },
+   "engines" : {
+      "AEC_Type_179" : "shared",
+      "Rolls_Royse_Phantom" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : 40,
+      "backward" : 15
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.776028923",
+      "guns" : {
+         "_40mm_Pom_Pom" : {
+            "delta" : "1.7142857"
+         }
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "AEC_Type_179" : {
+               "smplEnginePower" : "158.5922"
+            },
+            "Rolls_Royse_Phantom" : {
+               "smplEnginePower" : "126.8737"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB03_Cruiser_Mk_I" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB03_Cruiser_Mk_I_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "crewXpFactor" : "1.0",
+   "invisibility" : {
+      "moving" : "0.167",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.335",
+      "still" : "0.223"
+   },
+   "chassis" : {
+      "Chassis_GB03_Cruiser_Mk_I_2" : {
+         "rotationSpeed" : 34,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.26",
+            "vehicleRotation" : "0.26"
+         },
+         "maxRegenHealth" : 45,
+         "wwsoundNPC" : "trds_chf_npc",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "tags" : {},
+         "level" : 2,
+         "brakeForce" : 12500,
+         "maxClimbAngle" : 25,
+         "maxHealth" : 60,
+         "repairCost" : "5.0",
+         "userString" : "#gb_vehicles:Chassis_GB03_Cruiser_Mk_I_2",
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/british/GB03_Cruiser_Mk_I/track/left.track",
+            "segmentLength" : "0.136",
+            "segmentModelRight" : "vehicles/british/GB03_Cruiser_Mk_I/track/segment.model",
+            "segmentOffset" : "0.127",
+            "right" : "vehicles/british/GB03_Cruiser_Mk_I/track/right.track",
+            "segmentModelLeft" : "vehicles/british/GB03_Cruiser_Mk_I/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            }
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "size" : "0.25 0.3"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "maxOffset" : "0.06"
+               },
+               {
+                  "count" : 6,
+                  "isLeft" : false,
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "weight" : 3000,
+         "maxLoad" : 14100,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "terrainResistance" : "1 1.2 1.8",
+         "trackNodes" : {
+            "backwardElastK" : 1,
+            "enable" : true,
+            "linkBones" : false,
+            "maxAmplitude" : "0.02",
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "node" : [
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "offset" : "-0.057"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.75"
+               },
+               {
+                  "offset" : "-0.057",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "offset" : "-0.057",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.057",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.75",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.75",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.75",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.5",
+                  "offset" : "-0.057",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "offset" : "-0.057"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.8",
+                  "offset" : "-0.057",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.057",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : 2
+               }
+            ],
+            "elasticity" : 1000,
+            "forwardElastK" : 1,
+            "maxOffset" : "0.02",
+            "offset" : "0"
+         },
+         "navmeshGirth" : "6.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "bulkHealthFactor" : "3.0",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.3",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB03_Cruiser_Mk_I/normal/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : false,
+         "wheels" : {
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 4
+               },
+               {
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 4,
+                  "template" : "W_L",
+                  "startIndex" : 1,
+                  "radius" : "0"
+               }
+            ],
+            "wheel" : [
+               {
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "name" : "W_R0"
+               },
+               {
+                  "name" : "W_R5",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_L4",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L5",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "1.10307 1.48891",
+         "wwsoundPC" : "treads_type_pc",
+         "trackThickness" : "-0.0042",
+         "unlocks" : {
+            "vehicle" : "GB69_Cruiser_Mk_II"
+         },
+         "price" : 600,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB03_Cruiser_Mk_I/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB03_Cruiser_Mk_I/collision/Chassis.model"
+         },
+         "hullPosition" : "0 1 0"
+      },
+      "Chassis_GB03_Cruiser_Mk_I" : {
+         "maxHealth" : 50,
+         "maxClimbAngle" : 25,
+         "tags" : {},
+         "brakeForce" : 11500,
+         "level" : 1,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "rotationSpeed" : 31,
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxRegenHealth" : 40,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.28",
+            "vehicleMovement" : "0.28"
+         },
+         "trackNodes" : {
+            "maxAmplitude" : "0.02",
+            "gravity" : "-9.8",
+            "enable" : true,
+            "linkBones" : false,
+            "backwardElastK" : 1,
+            "offset" : "0",
+            "maxOffset" : "0.02",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.057",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "backwardElastK" : "1.75",
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.057",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.057",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : 2,
+                  "offset" : "-0.057",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.75",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.75",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.75",
+                  "backwardElastK" : "0.75",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.5",
+                  "offset" : "-0.057",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.057",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.057",
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : 2,
+                  "offset" : "-0.057",
+                  "isLeft" : false
+               }
+            ],
+            "elasticity" : 1000,
+            "forwardElastK" : 1,
+            "damping" : 2
+         },
+         "terrainResistance" : "1.1 1.4 2",
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "weight" : 3000,
+         "maxLoad" : 13000,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB03_Cruiser_Mk_I/track/segment.model",
+            "right" : "vehicles/british/GB03_Cruiser_Mk_I/track/right.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.127",
+            "left" : "vehicles/british/GB03_Cruiser_Mk_I/track/left.track",
+            "segmentModelRight" : "vehicles/british/GB03_Cruiser_Mk_I/track/segment.model",
+            "segmentLength" : "0.136",
+            "lodDist" : "MEDIUM"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB03_Cruiser_Mk_I",
+         "repairCost" : "5.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "isLeft" : true,
+                  "count" : 6
+               },
+               {
+                  "count" : 6,
+                  "isLeft" : false,
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "traces" : {
+            "size" : "0.25 0.3",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_R0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R4",
+                  "syncAngle" : "25.7142",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "W_R0",
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "W_R5",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "25.7142",
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "name" : "W_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L5",
+                  "isLeading" : false
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "count" : 4,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 4
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "1.10307 1.48891",
+         "models" : {
+            "destroyed" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB03_Cruiser_Mk_I/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : false,
+         "tracks" : {
+            "textureScale" : "-2.3",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "hullPosition" : "0 1 0",
+         "price" : "330.0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB03_Cruiser_Mk_I/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB03_Cruiser_Mk_I/collision/Chassis.model"
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_GB03_Cruiser_Mk_I_2"
+         },
+         "trackThickness" : "-0.0042",
+         "wwsoundPC" : "treads_type_pc"
+      }
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "repairCost" : "4.58",
+   "turrets0" : {
+      "Turret_2_GB03_Cruiser_Mk_I" : {
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "userString" : "#gb_vehicles:Turret_2_GB03_Cruiser_Mk_I",
+         "weight" : 2250,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 20
+         },
+         "gunPosition" : "-0 0 1",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB03_Cruiser_Mk_I/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/british/GB03_Cruiser_Mk_I/collision/Turret_02.model"
+         },
+         "guns" : {
+            "_2pdr_Gun_Mk_IX" : "shared",
+            "_40mm_Pom_Pom" : "shared"
+         },
+         "physicsShape" : "0.981 -0.038 1.010 0.000 0.461 0.224 0.006 0.100 0.419 0.500 0.296 0.500 0.092 0.100 0.000",
+         "price" : 500,
+         "armor" : {
+            "armor_8" : "",
+            "armor_4" : 14,
+            "armor_2" : 10,
+            "armor_7" : 4,
+            "armor_9" : 14,
+            "armor_10" : 10,
+            "armor_1" : 14,
+            "armor_5" : 4,
+            "armor_6" : 10,
+            "armor_3" : 14
+         },
+         "showEmblemsOnGun" : false,
+         "rotationSpeed" : 36,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "level" : 2,
+         "models" : {
+            "undamaged" : "vehicles/british/GB03_Cruiser_Mk_I/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Turret_02.model"
+         },
+         "tags" : {},
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         },
+         "maxHealth" : 46,
+         "circularVisionRadius" : 320,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.64",
+                  "rayEnd" : "-0.629691 0.349531 0.0380767",
+                  "rayStart" : "-0.818218 0.416291 0.0373934"
+               },
+               {
+                  "size" : "0.58",
+                  "rayStart" : "1 0 0",
+                  "rayEnd" : "1 0 0",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "1 0 -1",
+                  "rayEnd" : "0.60657 0.422774 -0.778576",
+                  "isMirrored" : true,
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayStart" : "-1 0 -1",
+                  "rayEnd" : "-0.60657 0.422774 -0.778576",
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true
+               }
+            ]
+         },
+         "camouflage" : {
+            "tiling" : "0.475 0.475 0.000000 0.000000"
+         }
+      },
+      "Turret_1_GB03_Cruiser_Mk_I" : {
+         "physicsShape" : "0.943 -0.070 1.010 0.000 0.507 0.182 1.000 1.000 0.000 0.500 0.306 0.500 0.057 0.100 0.000",
+         "armor" : {
+            "armor_10" : 4,
+            "armor_1" : 14,
+            "armor_9" : 14,
+            "armor_7" : 4,
+            "armor_3" : 12,
+            "armor_5" : 4,
+            "armor_6" : 10,
+            "armor_8" : "",
+            "armor_4" : 14,
+            "armor_2" : 10
+         },
+         "price" : "120.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB03_Cruiser_Mk_I/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB03_Cruiser_Mk_I/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0.000000 0.359504 0.51262",
+         "guns" : {
+            "_2pdr_Gun_Mk_IX" : "shared",
+            "_40mm_Pom_Pom" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#gb_vehicles:Turret_1_GB03_Cruiser_Mk_I",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 20
+         },
+         "weight" : 2000,
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0"
+         },
+         "tags" : {},
+         "models" : {
+            "destroyed" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB03_Cruiser_Mk_I/normal/lod0/Turret_01.model"
+         },
+         "level" : 1,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "isMirrored" : true,
+                  "rayStart" : "1 0 -1",
+                  "rayEnd" : "1 0 -1"
+               },
+               {
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "rayEnd" : "-0.628736 0.3467 -0.751454",
+                  "rayStart" : "-0.816912 0.41445 -0.751456"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayStart" : "-0.831735 0.378297 0.0288361",
+                  "rayEnd" : "-0.643543 0.310594 0.0288727",
+                  "size" : "0.64",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "rayStart" : "0.831735 0.378297 0.0288361",
+                  "rayEnd" : "0.643543 0.310594 0.0288727",
+                  "size" : "0.64",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true
+               }
+            ]
+         },
+         "camouflage" : {
+            "tiling" : "0.43 0.43 0.000000 0.000000"
+         },
+         "circularVisionRadius" : 300,
+         "maxHealth" : 31,
+         "rotationSpeed" : 36,
+         "wwturretRotatorSoundManual" : "tur_mech_trav"
+      }
+   },
+   "radios" : {
+      "N11" : "shared"
+   },
+   "hull" : {
+      "weight" : 7043,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_medium"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0",
+         "maxHealth" : 85
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.24",
+            "rayEnd" : "1.15538 0.00764459 2.65068",
+            "rayStart" : "1.35461 0.0243129 2.65619"
+         }
+      },
+      "maxHealth" : 124,
+      "models" : {
+         "undamaged" : "vehicles/british/GB03_Cruiser_Mk_I/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB03_Cruiser_Mk_I/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_9" : 14,
+         "armor_7" : 7,
+         "armor_10" : 14,
+         "armor_1" : 10,
+         "armor_5" : 6,
+         "armor_6" : 10,
+         "armor_3" : 10,
+         "armor_8" : "",
+         "armor_4" : 10,
+         "armor_2" : 14
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.714842 0.46278"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB03_Cruiser_Mk_I/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB03_Cruiser_Mk_I/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB03_Cruiser_Mk_I/Cruiser_Mk_I_HangarShadowMap.dds",
+      "swinging" : {
+         "pitchParams" : "0.28 37.00 0.34 1.00 0.05 0.33",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 37.00 0.34 1.00 0.05 0.33",
+         "sensitivityToImpulse" : "0.76"
+      }
+   }
+}

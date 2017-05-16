@@ -1,0 +1,276 @@
+{
+   "turret_touchdown_large" : {
+      "effects" : {
+         "sound" : {
+            "wwsound" : "turret_drop_soft",
+            "startKey" : "impact"
+         },
+         "pixie" : {
+            "file" : "particles/Tank/destruction/turret_touchdown_large.xml",
+            "startKey" : "impact",
+            "force" : 1
+         }
+      },
+      "stages" : {
+         "impact" : "2.0"
+      }
+   },
+   "turret_flaming_small" : {
+      "effects" : {
+         "sound" : {
+            "wwsound" : "turret_sparks",
+            "startKey" : "static"
+         },
+         "pixie" : [
+            {
+               "startKey" : "start",
+               "file" : "particles/Tank/destruction/turret_flaming_small.xml"
+            },
+            {
+               "file" : "particles/Tank/destruction/turret_smoking_small.xml",
+               "startKey" : "static"
+            }
+         ]
+      },
+      "timeline" : {
+         "end" : 36000,
+         "static" : "0.015"
+      }
+   },
+   "himmelball_empty" : {
+      "timeline" : {
+         "static" : "0.015",
+         "end" : 1
+      },
+      "effects" : {
+         "pixie" : [
+            {
+               "file" : "particles/Tank/empty.xml",
+               "startKey" : "start"
+            },
+            {
+               "file" : "particles/Tank/empty.xml",
+               "startKey" : "static"
+            }
+         ]
+      }
+   },
+   "turret_pull_sand" : {
+      "effects" : {
+         "pixie" : {
+            "startKey" : "AAAA",
+            "file" : "particles/Tank/sand_dust_small.xml"
+         }
+      },
+      "timeline" : {
+         "fire" : "0.0",
+         "end" : 36000
+      }
+   },
+   "turret_touchdown_medium" : {
+      "effects" : {
+         "pixie" : {
+            "file" : "particles/Tank/destruction/turret_touchdown_medium.xml",
+            "startKey" : "impact",
+            "force" : 1
+         },
+         "sound" : {
+            "startKey" : "impact",
+            "wwsound" : "turret_drop_soft"
+         }
+      },
+      "stages" : {
+         "impact" : "2.0"
+      }
+   },
+   "turret_pull_water" : {
+      "timeline" : {
+         "end" : 36000,
+         "fire" : "0.0"
+      },
+      "effects" : {
+         "pixie" : {
+            "file" : "particles/Tank/water_trail_small_l.xml",
+            "startKey" : "AAAA"
+         }
+      }
+   },
+   "turret_touchdown_small" : {
+      "stages" : {
+         "impact" : "2.0"
+      },
+      "effects" : {
+         "sound" : {
+            "startKey" : "impact",
+            "wwsound" : "turret_drop_soft"
+         },
+         "pixie" : {
+            "file" : "particles/Tank/destruction/turret_touchdown_small.xml",
+            "startKey" : "impact",
+            "force" : 1
+         }
+      }
+   },
+   "turret_pull_ground" : {
+      "effects" : {
+         "pixie" : {
+            "startKey" : "AAAA",
+            "file" : "particles/Tank/ground_dust_small.xml"
+         }
+      },
+      "timeline" : {
+         "end" : 36000,
+         "fire" : "0.0"
+      }
+   },
+   "turret_touchdown_medium_water" : {
+      "effects" : {
+         "pixie" : {
+            "startKey" : "impact",
+            "file" : "particles/Tank/tank_collision_water.xml",
+            "force" : 1
+         },
+         "sound" : {
+            "startKey" : "impact",
+            "wwsound" : "water_coll_heavy"
+         }
+      },
+      "stages" : {
+         "impact" : "2.0"
+      }
+   },
+   "turret_flying_large" : {
+      "effects" : {
+         "pixie" : {
+            "startKey" : "AAAA",
+            "file" : "particles/Tank/destruction/turret_flying_large.xml"
+         },
+         "sound" : {
+            "wwsound" : "turret_whoosh",
+            "startKey" : "AAAA"
+         }
+      },
+      "stages" : {
+         "end" : 36000,
+         "fire" : "0.0"
+      }
+   },
+   "turret_pull_snow" : {
+      "effects" : {
+         "pixie" : {
+            "file" : "particles/Tank/snow_dust_small.xml",
+            "startKey" : "AAAA"
+         }
+      },
+      "timeline" : {
+         "fire" : "0.0",
+         "end" : 36000
+      }
+   },
+   "turret_flying_small" : {
+      "effects" : {
+         "sound" : {
+            "wwsound" : "turret_whoosh",
+            "startKey" : "AAAA"
+         },
+         "pixie" : {
+            "file" : "particles/Tank/destruction/turret_flying_small.xml",
+            "startKey" : "AAAA"
+         }
+      },
+      "stages" : {
+         "end" : 36000,
+         "fire" : "0.0"
+      }
+   },
+   "turret_flying_medium" : {
+      "effects" : {
+         "sound" : {
+            "wwsound" : "turret_whoosh",
+            "startKey" : "AAAA"
+         },
+         "pixie" : {
+            "file" : "particles/Tank/destruction/turret_flying_medium.xml",
+            "startKey" : "AAAA"
+         }
+      },
+      "stages" : {
+         "fire" : "0.0",
+         "end" : 36000
+      }
+   },
+   "turret_flaming_medium" : [
+      {
+         "timeline" : {
+            "end" : 36000,
+            "static" : "0.015"
+         },
+         "effects" : {
+            "pixie" : [
+               {
+                  "startKey" : "start",
+                  "file" : "particles/Tank/destruction/turret_flaming_medium.xml"
+               },
+               {
+                  "file" : "particles/Tank/destruction/turret_smoking_medium.xml",
+                  "startKey" : "static"
+               }
+            ],
+            "sound" : {
+               "startKey" : "static",
+               "wwsound" : "turret_sparks"
+            }
+         }
+      },
+      {
+         "timeline" : {
+            "end" : 36000,
+            "static" : "0.015"
+         },
+         "effects" : {
+            "sound" : {
+               "startKey" : "static",
+               "wwsound" : "turret_sparks"
+            },
+            "pixie" : [
+               {
+                  "startKey" : "start",
+                  "file" : "particles/Tank/destruction/turret_flaming_medium.xml"
+               },
+               {
+                  "file" : "particles/Tank/destruction/turret_smoking_medium.xml",
+                  "startKey" : "static"
+               }
+            ]
+         }
+      }
+   ],
+   "turret_pull_stone" : {
+      "timeline" : {
+         "fire" : "0.0",
+         "end" : 36000
+      },
+      "effects" : {
+         "pixie" : {
+            "startKey" : "AAAA",
+            "file" : "particles/Tank/stone_dust_small.xml"
+         }
+      }
+   },
+   "turret_touchdown_medium_solid" : {
+      "stages" : {
+         "impact" : "2.0"
+      },
+      "effects" : {
+         "pixie" : {
+            "file" : "particles/Tank/destruction/turret_touchdown_medium.xml",
+            "startKey" : "impact",
+            "force" : 1
+         },
+         "sound" : {
+            "startKey" : "impact",
+            "wwsound" : "turret_drop_solid"
+         }
+      }
+   }
+}

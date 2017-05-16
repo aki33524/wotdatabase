@@ -1,0 +1,507 @@
+{
+   "chassis" : {
+      "ISU-152_mod_1945_IGR" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "count" : 6,
+                  "template" : "Track_L",
+                  "minOffset" : "-0.1",
+                  "maxOffset" : "0.07",
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.07",
+                  "minOffset" : "-0.1",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "count" : 6
+               }
+            ]
+         },
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "wheels" : {
+            "leadingWheelSyncAngle" : "25.71428571428571",
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "syncAngle" : "25.7143",
+                  "name" : "WD_L4",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "syncAngle" : "25.7143",
+                  "isLeading" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "radius" : "0.2751",
+                  "isLeft" : false,
+                  "count" : 6,
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0.2751",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "count" : 6
+               },
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "count" : 3
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "terrainResistance" : "1.1 1.4 2.3",
+         "trackThickness" : [
+            "0.012",
+            "0"
+         ],
+         "hullPosition" : "0 1 0",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "trackNodes" : {
+            "enable" : true,
+            "damping" : 2,
+            "elasticity" : 1500,
+            "gravity" : -4,
+            "linkBones" : true,
+            "maxAmplitude" : "0.01",
+            "maxOffset" : "0.01",
+            "node" : [
+               {
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.85",
+                  "rightSibling" : "Track_VT_L1",
+                  "offset" : "-0.05"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : 2,
+                  "offset" : "-0.05",
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "0.83",
+                  "rightSibling" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "2.5",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "rightSibling" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L1",
+                  "offset" : "-0.05"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "offset" : "-0.05",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : 3
+               },
+               {
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : "0.85",
+                  "isLeft" : false,
+                  "offset" : "-0.05",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R2",
+                  "forwardElastK" : "0.83",
+                  "offset" : "-0.05",
+                  "leftSibling" : "Track_VT_R0",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "leftSibling" : "Track_VT_R1",
+                  "offset" : "-0.05",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R3",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "2.5",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "leftSibling" : "Track_VT_R2",
+                  "offset" : "-0.05",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "backwardElastK" : 3,
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.6",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.6",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "0.9"
+               }
+            ]
+         },
+         "rotationSpeed" : 21,
+         "notInShop" : true,
+         "brakeForce" : 39500,
+         "maxLoad" : 54400,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/russian/R47_ISU-152/track/segment.model",
+            "segmentLength" : "0.156",
+            "left" : "vehicles/russian/R47_ISU-152/track/left.track",
+            "segmentModelLeft" : "vehicles/russian/R47_ISU-152/track/segment.model",
+            "right" : "vehicles/russian/R47_ISU-152/track/right.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.072",
+            "lodDist" : "MEDIUM"
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.45"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "repairCost" : "5.0",
+         "traces" : {
+            "textureSet" : "ussr_01",
+            "size" : "0.48 0.68",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "weight" : 12000,
+         "level" : 8,
+         "price" : "34100.0",
+         "userString" : "#igr_vehicles:Chassis_ISU-152_IGR",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "rotationIsAroundCenter" : true,
+         "models" : {
+            "destroyed" : "vehicles/russian/R47_ISU-152/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/russian/R47_ISU-152/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R47_ISU-152/normal/lod0/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_med_npc",
+         "maxRegenHealth" : 150,
+         "topRightCarryingPoint" : "1.20331 2.22833",
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R47_ISU-152/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/russian/R47_ISU-152/collision_client/Chassis.model"
+         },
+         "maxHealth" : 200
+      }
+   },
+   "turrets0" : {
+      "ISU-152_01_IGR" : {
+         "level" : 8,
+         "price" : 1200,
+         "userString" : "#igr_vehicles:Turret_1_ISU-152_IGR",
+         "guns" : {
+            "_152mm_BL-10_IGR" : "shared"
+         },
+         "weight" : 100,
+         "emblemSlots" : {},
+         "circularVisionRadius" : 350,
+         "tags" : "AAAAAAAAAAAA",
+         "rotationSpeed" : 26,
+         "notInShop" : true,
+         "gunPosition" : "0 0 0",
+         "models" : {
+            "destroyed" : "vehicles/russian/R47_ISU-152/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/russian/R47_ISU-152/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/russian/R47_ISU-152/normal/lod0/Turret_01.model"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R47_ISU-152/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/russian/R47_ISU-152/collision/Turret_01.model"
+         },
+         "showEmblemsOnGun" : false,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "maxHealth" : 202,
+         "wwturretRotatorSoundManual" : "tur_man_trav_06",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "armor" : {
+            "armor_1" : ""
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500"
+      }
+   },
+   "engines" : {
+      "V-2-54IS_IGR" : "shared"
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "emblems" : {
+      "default" : "ussr_star",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.6",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "9.658",
+   "speedLimits" : {
+      "forward" : 43,
+      "backward" : 12
+   },
+   "hull" : {
+      "turretPositions" : {
+         "turret" : "0.2299 0.851027 2.31209"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 135,
+         "repairCost" : "1.0",
+         "maxHealth" : 200
+      },
+      "armor" : {
+         "armor_7" : 20,
+         "armor_8" : "",
+         "armor_13" : 30,
+         "armor_6" : 30,
+         "armor_15" : 100,
+         "armor_14" : 90,
+         "armor_10" : 90,
+         "armor_3" : 75,
+         "armor_2" : 60,
+         "armor_1" : 90,
+         "armor_5" : 90,
+         "armor_9" : 85,
+         "armor_16" : 115,
+         "armor_4" : 60
+      },
+      "maxHealth" : 808,
+      "emblemSlots" : {
+         "player" : [
+            {
+               "size" : "0.34",
+               "rayEnd" : "-1 1 -0",
+               "rayStart" : "-1.31137 0.947923 -0.171441",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "hideIfDamaged" : false,
+               "rayStart" : "1.31137 0.947923 -0.171441",
+               "rayEnd" : "1 1 -0",
+               "size" : "0.34",
+               "rayUp" : "0.000000 1 0.000000",
+               "isMirrored" : true
+            }
+         ],
+         "inscription" : [
+            {
+               "size" : "0.74",
+               "hideIfDamaged" : false,
+               "rayStart" : "-1.36437 1.08017 0.416526",
+               "rayEnd" : "-1 1 0",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "rayStart" : "1.39486 0.950075 0.692103",
+               "rayEnd" : "1.01129 0.842985 0.729493",
+               "size" : "0.76"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.34",
+            "rayEnd" : "-0.806372 0.907191 1.7845",
+            "rayStart" : "-0.806372 1.10721 2.13089",
+            "hideIfDamaged" : true
+         }
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.35"
+      },
+      "primaryArmor" : "armor_1 armor_5 armor_4",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/russian/R47_ISU-152/collision/Hull.model",
+         "collisionModelClient" : "vehicles/russian/R47_ISU-152/collision_client/Hull.model"
+      },
+      "models" : {
+         "destroyed" : "vehicles/russian/R47_ISU-152/crash/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R47_ISU-152/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/russian/R47_ISU-152/normal/lod0/Hull.model"
+      },
+      "weight" : 30000,
+      "hangarShadowTexture" : "vehicles/russian/R47_ISU-152/ISU-152_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "diesel_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "camouflage" : {
+         "tiling" : "1.18 1.18 0.000000 0.000000"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "gunner" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "commander" : "AAAAAAAA",
+      "driver" : {}
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "V-2-54IS_IGR" : {
+               "smplEnginePower" : "740.0968"
+            }
+         },
+         "chassis" : {
+            "ISU-152_mod_1945_IGR" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.949442544"
+   },
+   "effects" : {
+      "collision" : "sandCollisionLight",
+      "damagedStateGroup" : "large"
+   },
+   "invisibility" : {
+      "firePenalty" : "0.396",
+      "moving" : "0.159",
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04",
+      "still" : "0.264"
+   },
+   "radios" : {
+      "_12RT_IGR" : "shared"
+   }
+}

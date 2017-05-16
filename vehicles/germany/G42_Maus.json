@@ -1,0 +1,462 @@
+{
+   "crew" : {
+      "driver" : {},
+      "radioman" : {},
+      "gunner" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "commander" : {}
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "radios" : {
+      "_10WSc" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.012500612"
+   },
+   "engines" : {
+      "MB507" : "shared"
+   },
+   "hull" : {
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxHealth" : 280,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 190
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.90625 -1.1447"
+      },
+      "armor" : {
+         "armor_7" : 55,
+         "armor_9" : 105,
+         "armor_10" : 55,
+         "armor_2" : 200,
+         "armor_3" : 185,
+         "armor_4" : 160,
+         "armor_5" : 140,
+         "armor_13" : 60,
+         "armor_12" : 100,
+         "armor_1" : 200,
+         "armor_8" : 160,
+         "armor_14" : 100,
+         "armor_15" : "",
+         "armor_11" : 250,
+         "armor_16" : 100,
+         "armor_6" : 50
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G42_Maus/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G42_Maus/collision/Hull.model"
+      },
+      "weight" : 89040,
+      "swinging" : {
+         "sensitivityToImpulse" : "0.08",
+         "rollParams" : "1.00 0.20 36.00 0.34 1.00 0.04 0.26",
+         "pitchParams" : "0.20 36.00 0.34 1.00 0.04 0.26",
+         "lodDist" : "FAR"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : true,
+            "size" : "0.34",
+            "rayStart" : "-0.938728 0.889875 3.86733",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.938728 0.563397 3.63622"
+         }
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G42_Maus/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G42_Maus/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G42_Maus/crash/lod0/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "1 1 1 0.8"
+      },
+      "hangarShadowTexture" : "vehicles/german/G42_Maus/Maus_HangarShadowMap.dds",
+      "maxHealth" : 2560
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 20
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "alpha" : "0.86",
+      "lodDist" : "MEDIUM"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "repairCost" : "9.465",
+   "invisibility" : {
+      "camouflageNetBonus" : "0.05",
+      "moving" : "0.012",
+      "firePenalty" : "0.038",
+      "camouflageBonus" : "0.02",
+      "still" : "0.025"
+   },
+   "chassis" : {
+      "Mausketten" : {
+         "hullPosition" : "0.000000 1.20215 0.000000",
+         "rotationSpeed" : 15,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "count" : 10,
+                  "radius" : "0",
+                  "template" : "W_L"
+               },
+               {
+                  "count" : 10,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "startIndex" : 1,
+                  "isLeft" : false
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0.43901",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : 60,
+                  "name" : "WD_L0"
+               },
+               {
+                  "name" : "WD_L1",
+                  "syncAngle" : 45,
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "W_L0",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "W_L11"
+               },
+               {
+                  "radius" : "0.43901",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 60,
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : 45,
+                  "name" : "WD_R1"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "W_R0"
+               },
+               {
+                  "name" : "W_R11",
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "tags" : {},
+         "notInShop" : true,
+         "topRightCarryingPoint" : "1.17927 2.92483",
+         "userString" : "#germany_vehicles:Mausketten",
+         "weight" : 37250,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G42_Maus/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G42_Maus/collision_client/Chassis.model"
+         },
+         "models" : {
+            "destroyed" : "vehicles/german/G42_Maus/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G42_Maus/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G42_Maus/normal/lod0/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 11 0 0 0"
+            }
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "trackThickness" : "0.019",
+         "price" : 82500,
+         "bulkHealthFactor" : "3.0",
+         "trackNodes" : {
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.7",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.7",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5"
+               }
+            ],
+            "elasticity" : 998,
+            "maxAmplitude" : "0.14",
+            "gravity" : "-9.8",
+            "maxOffset" : "0.14",
+            "damping" : 2,
+            "linkBones" : true,
+            "enable" : true
+         },
+         "traces" : {
+            "textureSet" : "germany_02",
+            "size" : "0.7 1.1",
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR"
+         },
+         "maxLoad" : 192900,
+         "rotationIsAroundCenter" : true,
+         "splineDesc" : {
+            "segmentLength" : "0.318",
+            "segment2ModelRight" : "vehicles/german/G42_Maus/track/segment2.model",
+            "right" : "vehicles/german/G42_Maus/track/right.track",
+            "segmentModelRight" : "vehicles/german/G42_Maus/track/segment1.model",
+            "segment2ModelLeft" : "vehicles/german/G42_Maus/track/segment2.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.106",
+            "segment2Offset" : "0.153",
+            "segmentModelLeft" : "vehicles/german/G42_Maus/track/segment1.model",
+            "left" : "vehicles/german/G42_Maus/track/left.track"
+         },
+         "armor" : {
+            "leftTrack" : 50,
+            "rightTrack" : 50
+         },
+         "maxClimbAngle" : 25,
+         "level" : 10,
+         "navmeshGirth" : "6.0",
+         "maxRegenHealth" : 225,
+         "repairCost" : "5.0",
+         "terrainResistance" : "1.1 1.3 2.1",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "count" : 12,
+                  "maxOffset" : "0.06",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "minOffset" : "-0.08"
+               },
+               {
+                  "minOffset" : "-0.08",
+                  "maxOffset" : "0.06",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 12,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "maxHealth" : 300,
+         "brakeForce" : 37800,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.08",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "drivingWheels" : "WD_L0 WD_L1"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Mausketten" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "MB507" : {
+               "smplEnginePower" : "1850.242"
+            }
+         }
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "2.0"
+   },
+   "turrets0" : {
+      "Mausturm" : {
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "armor" : {
+            "armor_10" : 60,
+            "armor_6" : 60,
+            "armor_4" : 210,
+            "armor_3" : 210,
+            "armor_5" : 90,
+            "armor_13" : 55,
+            "armor_1" : 260,
+            "armor_12" : 210,
+            "armor_7" : 210,
+            "armor_8" : "",
+            "armor_9" : 60
+         },
+         "notInShop" : true,
+         "level" : 10,
+         "showEmblemsOnGun" : false,
+         "weight" : 58000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G42_Maus/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G42_Maus/collision/Turret_01.model"
+         },
+         "userString" : "#germany_vehicles:Mausturm",
+         "camouflage" : {
+            "tiling" : "0.8 0.4 0.5 0.4"
+         },
+         "tags" : {},
+         "rotationSpeed" : 16,
+         "physicsShape" : "0.962 -0.112 1.103 0.000 0.867 -0.102 0.500 0.100 0.000 0.500 0.470 0.500 0.095 0.733 0.000",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "2.0",
+            "maxHealth" : 120,
+            "maxRegenHealth" : 60
+         },
+         "circularVisionRadius" : 400,
+         "price" : 66000,
+         "gunPosition" : "0.073553 0.661651 1.51396",
+         "models" : {
+            "destroyed" : "vehicles/german/G42_Maus/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G42_Maus/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G42_Maus/normal/lod0/Turret_01.model"
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "size" : "0.98",
+                  "rayStart" : "-1.46089 0.679779 -0.130098",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1.11342 0.481637 -0.130098",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1.11342 0.481637 -0.130098",
+                  "hideIfDamaged" : false,
+                  "size" : "0.98",
+                  "rayStart" : "1.46089 0.679779 -0.130098"
+               }
+            ],
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1.08781 0.52652 0.728544",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1.43527 0.724693 0.728556",
+                  "size" : "0.34"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayEnd" : "1.09533 0.513344 0.735717",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.34",
+                  "rayStart" : "1.44279 0.711522 0.735732",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "maxHealth" : 640,
+         "guns" : {
+            "_128mm_KwK44_L55" : "shared"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 180,
+            "maxRegenHealth" : 90
+         }
+      }
+   }
+}

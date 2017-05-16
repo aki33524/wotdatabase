@@ -1,0 +1,532 @@
+{
+   "chassis" : {
+      "SU-5" : {
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "ussr_01",
+            "size" : "0.32 0.28"
+         },
+         "maxClimbAngle" : 25,
+         "hullPosition" : "0 1 -0",
+         "brakeForce" : 10000,
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "terrainResistance" : "1.3 1.5 2.5",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "navmeshGirth" : "6.0",
+         "level" : 3,
+         "drivingWheels" : "WD_L0 WD_L5",
+         "maxLoad" : 10490,
+         "price" : 1800,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R14_SU-5/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/russian/R14_SU-5/collision/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "1.36"
+         },
+         "models" : {
+            "exploded" : "vehicles/russian/R14_SU-5/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R14_SU-5/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R14_SU-5/normal/lod0/Chassis.model"
+         },
+         "rotationSpeed" : 24,
+         "unlocks" : {
+            "chassis" : "SU-5bis"
+         },
+         "maxRegenHealth" : 45,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.31833",
+                  "isLeading" : false,
+                  "name" : "WD_L5"
+               },
+               {
+                  "isLeading" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0.31833",
+                  "isLeading" : false,
+                  "name" : "WD_R5"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 8,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 4,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 4
+               }
+            ]
+         },
+         "weight" : 1880,
+         "userString" : "#ussr_vehicles:SU-5",
+         "tags" : {},
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "1.03781 1.50414",
+         "repairCost" : "2.5",
+         "wwsoundNPC" : "trds_med_npc",
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 60
+      },
+      "SU-5bis" : {
+         "price" : 4750,
+         "maxLoad" : 12500,
+         "level" : 4,
+         "navmeshGirth" : "6.0",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "brakeForce" : 11000,
+         "hullPosition" : "0 1 -0",
+         "terrainResistance" : "1.2 1.4 2.3",
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "textureSet" : "ussr_01",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.32 0.28",
+            "lodDist" : "FAR"
+         },
+         "models" : {
+            "exploded" : "vehicles/russian/R14_SU-5/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R14_SU-5/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R14_SU-5/normal/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "textureScale" : "1.36",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "rotationIsAroundCenter" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R14_SU-5/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/russian/R14_SU-5/collision_client/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "weight" : 1880,
+         "userString" : "#ussr_vehicles:SU-5bis",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 8,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 8
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 4,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_L"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 4
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.31833",
+                  "name" : "WD_L5",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0.31833",
+                  "name" : "WD_R5",
+                  "isLeading" : false
+               }
+            ]
+         },
+         "maxRegenHealth" : 55,
+         "rotationSpeed" : 26,
+         "wwsoundNPC" : "trds_med_npc",
+         "repairCost" : "2.5",
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 70,
+         "topRightCarryingPoint" : "1.03781 1.50414",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "tags" : {}
+      }
+   },
+   "emblems" : {
+      "alpha" : "0.86",
+      "lodDist" : "MEDIUM",
+      "default" : "ussr_star"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "hull" : {
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "emblemSlots" : {
+         "inscription" : {
+            "hideIfDamaged" : true,
+            "rayStart" : "0.265138 0.307918 1.70055",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "0.265138 -0.085594 1.62881",
+            "size" : "0.78"
+         },
+         "clan" : {
+            "size" : "0.32",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "-1 0 1",
+            "rayEnd" : "-1 0 0",
+            "hideIfDamaged" : true
+         },
+         "player" : [
+            {
+               "size" : "0.32",
+               "hideIfDamaged" : true,
+               "rayEnd" : "-0.575895 1.13648 -0.9946",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-0.575892 1.33857 -0.649406"
+            },
+            {
+               "size" : "0.32",
+               "isMirrored" : true,
+               "rayStart" : "1.09918 0.770948 -0.959298",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.03034 0.770948 -1.00005",
+               "hideIfDamaged" : true
+            }
+         ]
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/russian/R14_SU-5/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/russian/R14_SU-5/collision/Hull.model"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "models" : {
+         "undamaged" : "vehicles/russian/R14_SU-5/normal/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R14_SU-5/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/russian/R14_SU-5/crash/lod0/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/russian/R14_SU-5/SU-5_HangarShadowMap.dds",
+      "maxHealth" : 128,
+      "swinging" : {
+         "pitchParams" : "0.30 36.00 0.38 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.92",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.30 36.00 0.38 1.00 0.05 0.32"
+      },
+      "turretPositions" : {
+         "turret" : "-0 0 -1"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 30,
+         "maxHealth" : 60,
+         "repairCost" : "1.0"
+      },
+      "armor" : {
+         "armor_5" : 8,
+         "armor_8" : 15,
+         "armor_3" : 15,
+         "armor_7" : 15,
+         "armor_9" : 15,
+         "armor_10" : 15,
+         "armor_1" : 7,
+         "armor_11" : "",
+         "armor_6" : 6,
+         "armor_4" : 15,
+         "armor_2" : 15
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_small"
+      },
+      "weight" : 7086
+   },
+   "turrets0" : {
+      "SU-5" : {
+         "maxHealth" : 32,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "circularVisionRadius" : 250,
+         "userString" : "#ussr_vehicles:SU-18",
+         "wwturretRotatorSoundManual" : "tur_man_trav_03",
+         "weight" : 100,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.000 0.500 0.230 1.000 0.162",
+         "rotationSpeed" : 16,
+         "ceilless" : true,
+         "models" : {
+            "undamaged" : "vehicles/russian/R14_SU-5/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/russian/R14_SU-5/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/russian/R14_SU-5/crash/lod0/Turret_01.model"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R14_SU-5/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/russian/R14_SU-5/collision_client/Turret_01.model"
+         },
+         "emblemSlots" : {},
+         "notInShop" : true,
+         "guns" : {
+            "_152mm_mortar_NM_mod1931" : "shared",
+            "_122mm_cannon_mod_1930" : "shared",
+            "_76mm_cannon_mod_1905_30" : "shared",
+            "_76mm_cannon_mod_1905_40" : "shared"
+         },
+         "level" : 4,
+         "price" : 100,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 25,
+            "maxHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "gunPosition" : "0 1 -0",
+         "armor" : {
+            "armor_9" : 15,
+            "armor_1" : 15,
+            "armor_6" : "",
+            "armor_4" : "",
+            "armor_2" : 6,
+            "armor_7" : "",
+            "armor_5" : "",
+            "armor_3" : "",
+            "armor_8" : 15
+         },
+         "showEmblemsOnGun" : false
+      }
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "guns" : {
+         "_122mm_cannon_mod_1930" : {
+            "delta" : "1.3"
+         }
+      },
+      "armour" : "0.803567176"
+   },
+   "crewXpFactor" : "1.0",
+   "invisibility" : {
+      "camouflageNetBonus" : "0.05",
+      "moving" : "0.131",
+      "still" : "0.263",
+      "camouflageBonus" : "0.02",
+      "firePenalty" : "0.395"
+   },
+   "speedLimits" : {
+      "forward" : 30,
+      "backward" : 8
+   },
+   "radios" : {
+      "_12LL" : "shared",
+      "_9RK" : "shared",
+      "_71-TK-3" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "SU-5bis" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "SU-5" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "T-26M" : {
+               "smplEnginePower" : "105.7281"
+            },
+            "T-26F" : {
+               "smplEnginePower" : "137.4465"
+            },
+            "T-26" : {
+               "smplEnginePower" : "95.1553"
+            }
+         }
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/russian/R14_SU-5/SU-5_CM.dds",
+      "priceFactor" : "0.8"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "engines" : {
+      "T-26M" : "shared",
+      "T-26" : "shared",
+      "T-26F" : "shared"
+   },
+   "repairCost" : "8.88",
+   "crew" : {
+      "loader" : [
+         {},
+         {}
+      ],
+      "commander" : "AAAAAAAA",
+      "gunner" : {},
+      "driver" : {}
+   }
+}

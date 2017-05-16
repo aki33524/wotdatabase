@@ -1,0 +1,436 @@
+{
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "camouflage" : {
+      "exclusionMask" : "vehicles/german/G98_Waffentrager_E100/Waffentrager_E100_CM.dds",
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.043115808"
+   },
+   "invisibility" : {
+      "firePenalty" : "0.011",
+      "still" : "0.007",
+      "camouflageNetBonus" : "0.15",
+      "moving" : "0.004",
+      "camouflageBonus" : "0.04"
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G98_Waffentrager_E100/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G98_Waffentrager_E100/collision_client/Hull.model"
+      },
+      "armor" : {
+         "armor_5" : 120,
+         "armor_7" : 30,
+         "armor_11" : 40,
+         "armor_13" : 30,
+         "armor_4" : 150,
+         "armor_1" : 200,
+         "armor_8" : 30,
+         "armor_10" : 40,
+         "armor_12" : 40,
+         "armor_3" : 120,
+         "armor_9" : 80,
+         "armor_2" : 150
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G98_Waffentrager_E100/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G98_Waffentrager_E100/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G98_Waffentrager_E100/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.379118 -1.71333"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "rayStart" : "1.19989 0.804709 3.81663",
+            "size" : "0.3",
+            "rayEnd" : "1.19989 0.455477 3.6216"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hangarShadowTexture" : "vehicles/german/G98_Waffentrager_E100/Waffentrager_E100_HangarShadowMap.dds",
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 190,
+         "repairCost" : "1.0",
+         "maxHealth" : 280
+      },
+      "weight" : 38490,
+      "maxHealth" : 1600,
+      "swinging" : {
+         "pitchParams" : "0.18 36.00 0.34 1.00 0.04 0.26",
+         "rollParams" : "1.00 0.18 36.00 0.34 1.00 0.04 0.26",
+         "sensitivityToImpulse" : "0.08",
+         "lodDist" : "FAR"
+      }
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "crew" : {
+      "commander" : {},
+      "gunner" : {},
+      "radioman" : {},
+      "driver" : {},
+      "loader" : [
+         {},
+         {}
+      ]
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Engine_VK4502P" : {
+               "smplEnginePower" : "1268.737"
+            }
+         },
+         "chassis" : {
+            "Chassis_Waffentrager_E100" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.92",
+      "default" : "germany_cross"
+   },
+   "radios" : {
+      "Radio_VK4502P" : "shared"
+   },
+   "chassis" : {
+      "Chassis_Waffentrager_E100" : {
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "maxLoad" : 150000,
+         "maxHealth" : 300,
+         "rotationSpeed" : 26,
+         "level" : 10,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "maxRegenHealth" : 225,
+         "drivingWheels" : "WD_L0 WD_L1",
+         "price" : 82500,
+         "weight" : 42000,
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "maxClimbAngle" : 25,
+         "brakeForce" : 100000,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G98_Waffentrager_E100/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G98_Waffentrager_E100/collision_client/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true,
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR",
+            "size" : "0.48 1.04",
+            "textureSet" : "germany_02"
+         },
+         "notInShop" : true,
+         "topRightCarryingPoint" : "1.50593 2.50488",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "1",
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_R1"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "W_R0"
+               },
+               {
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "W_R1"
+               },
+               {
+                  "name" : "W_R2",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "name" : "W_R3",
+                  "radius" : "0.49021",
+                  "isLeft" : false,
+                  "isLeading" : false
+               },
+               {
+                  "name" : "W_R4",
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "W_R5"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "W_R6"
+               },
+               {
+                  "name" : "W_R7",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "1",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L1"
+               },
+               {
+                  "name" : "W_L0",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L1"
+               },
+               {
+                  "name" : "W_L2",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "W_L3",
+                  "isLeft" : true,
+                  "radius" : "0.49021",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "W_L4"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "W_L5"
+               },
+               {
+                  "name" : "W_L6",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L7"
+               }
+            ]
+         },
+         "userString" : "#germany_vehicles:Chassis_Waffentrager_E100",
+         "tags" : {},
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-0.46",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "repairCost" : "5.0",
+         "terrainResistance" : "1 1.2 2.1",
+         "bulkHealthFactor" : "3.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "6 0 0 0 2 0 0 0 10 0 0 0"
+            }
+         },
+         "armor" : {
+            "rightTrack" : 40,
+            "leftTrack" : 40
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G98_Waffentrager_E100/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G98_Waffentrager_E100/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G98_Waffentrager_E100/crash/lod0/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "hullPosition" : "0.000000 1 0.000000"
+      }
+   },
+   "turrets0" : {
+      "Turret_1_Waffentrager_E100" : {
+         "gunPosition" : "0.000000 1.37102 -0.690134",
+         "guns" : {
+            "Gun_VK4502P" : "shared"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.3",
+                  "rayStart" : "-2.06969 1.13418 -2.28508",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-1.66969 1.13418 -2.28508"
+               },
+               {
+                  "rayEnd" : "1.66969 1.13418 -2.28508",
+                  "size" : "0.3",
+                  "rayStart" : "2.06969 1.13418 -2.28508",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false
+               }
+            ],
+            "inscription" : [
+               {
+                  "size" : "1.2",
+                  "rayStart" : "-1.71519 1.05882 -0.320252",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1.34447 1.05869 -0.470481"
+               },
+               {
+                  "rayEnd" : "1.34447 1.05869 -0.470481",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1.71519 1.05882 -0.320252",
+                  "size" : "1.2"
+               }
+            ]
+         },
+         "showEmblemsOnGun" : false,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G98_Waffentrager_E100/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G98_Waffentrager_E100/collision/Turret_01.model"
+         },
+         "ceilless" : true,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "notInShop" : true,
+         "camouflage" : {
+            "exclusionMask" : "vehicles/german/G98_Waffentrager_E100/Waffentrager_E100_1_CM.dds",
+            "tiling" : "0.895 0.895 0.000000 0.000000"
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120,
+            "repairCost" : "2.0"
+         },
+         "circularVisionRadius" : 380,
+         "maxHealth" : 400,
+         "rotationSpeed" : 22,
+         "level" : 10,
+         "price" : 100,
+         "weight" : 10000,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100,
+            "repairCost" : "1.0"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "armor" : {
+            "armor_2" : 20,
+            "armor_8" : 5,
+            "armor_3" : 10,
+            "armor_4" : 8,
+            "armor_1" : 20,
+            "armor_5" : 20,
+            "armor_6" : "",
+            "armor_7" : 4
+         },
+         "models" : {
+            "exploded" : "vehicles/german/G98_Waffentrager_E100/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G98_Waffentrager_E100/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G98_Waffentrager_E100/normal/lod0/Turret_01.model"
+         },
+         "userString" : "#germany_vehicles:Turret_1_Waffentrager_E100",
+         "tags" : "AAAAAAAAAAAA",
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.674 0.000 0.500 0.500 0.019 0.500 0.000 0.000 0.454"
+      }
+   },
+   "repairCost" : "10.50",
+   "engines" : {
+      "Engine_VK4502P" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "forward" : 40,
+      "backward" : 15
+   }
+}

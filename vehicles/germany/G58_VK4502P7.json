@@ -1,0 +1,353 @@
+{
+   "engines" : {
+      "Porsche_Typ_100_3A" : "shared"
+   },
+   "camouflage" : {
+      "exclusionMask" : "vehicles/german/G58_VK4502P7/VK4502P_CM.dds",
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.4"
+   },
+   "invisibility" : {
+      "moving" : "0.054",
+      "still" : "0.107",
+      "firePenalty" : "0.161",
+      "camouflageBonus" : "0.02",
+      "camouflageNetBonus" : "0.05"
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "radioman" : {},
+      "commander" : {},
+      "loader" : {}
+   },
+   "chassis" : {
+      "Chassis_G58_VK4502P" : {
+         "tracks" : {
+            "textureScale" : "-0.84",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G58_VK4502P7/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G58_VK4502P7/collision/Chassis.model"
+         },
+         "brakeForce" : 70000,
+         "rotationIsAroundCenter" : true,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.18",
+            "vehicleMovement" : "0.18"
+         },
+         "rotationSpeed" : 28,
+         "topRightCarryingPoint" : "1.32677 1.98117",
+         "maxClimbAngle" : 25,
+         "bulkHealthFactor" : "3.0",
+         "notInShop" : true,
+         "price" : 20000,
+         "userString" : "#germany_vehicles:Chassis_G58_VK4502P",
+         "shortUserString" : "#germany_vehicles:Chassis_G58_VK4502P_short",
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "size" : "0.44 0.6"
+         },
+         "terrainResistance" : "1.1 1.3 2.2",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 -0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "maxLoad" : 69690,
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 15000,
+         "armor" : {
+            "leftTrack" : 25,
+            "rightTrack" : 25
+         },
+         "repairCost" : "5.0",
+         "models" : {
+            "undamaged" : "vehicles/german/G58_VK4502P7/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G58_VK4502P7/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G58_VK4502P7/crash/lod0/Chassis.model"
+         },
+         "level" : 7,
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.35788",
+                  "count" : 6
+               },
+               {
+                  "template" : "W_R",
+                  "radius" : "0.35788",
+                  "isLeft" : false,
+                  "count" : 6,
+                  "startIndex" : ""
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L1",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R1"
+               }
+            ]
+         },
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "maxHealth" : 190,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "maxRegenHealth" : 145,
+         "navmeshGirth" : "6.0",
+         "tags" : {}
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_G58_VK4502P" : {
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.32",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-0.837556 0.445403 0.18601",
+                  "rayStart" : "-1.20896 0.581034 0.246526",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "1.20896 0.581034 0.246526",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false,
+                  "size" : "0.32",
+                  "rayEnd" : "0.837556 0.445403 0.18601"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayEnd" : "-1 0 -0",
+                  "hideIfDamaged" : true,
+                  "size" : "0.92",
+                  "rayStart" : "-1.21816 0.583865 -0.553578",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "1.21816 0.583865 -0.553578",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "1 0 -0",
+                  "size" : "0.92"
+               }
+            ]
+         },
+         "tags" : {},
+         "showEmblemsOnGun" : false,
+         "shortUserString" : "#germany_vehicles:Turret_1_G58_VK4502P_short",
+         "userString" : "#germany_vehicles:Turret_1_G58_VK4502P",
+         "price" : 20000,
+         "gunPosition" : "0.032003 0.350083 1.22245",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 370,
+         "notInShop" : true,
+         "maxHealth" : 300,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 90,
+            "repairCost" : "2.0",
+            "maxRegenHealth" : 45
+         },
+         "rotationSpeed" : 24,
+         "level" : 7,
+         "guns" : {
+            "_88mm_KwK_43_L71B" : "shared"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G58_VK4502P7/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G58_VK4502P7/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G58_VK4502P7/crash/lod0/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 70,
+            "maxHealth" : 140
+         },
+         "physicsShape" : "1.030 -0.042 1.025 0.000 0.622 0.096 0.882 0.488 0.391 0.500 0.267 0.500 0.152 0.581 0.000",
+         "armor" : {
+            "armor_10" : 20,
+            "armor_6" : 25,
+            "armor_13" : 40,
+            "armor_2" : 100,
+            "armor_4" : 80,
+            "armor_1" : 100,
+            "armor_3" : 80,
+            "armor_5" : 25,
+            "armor_9" : 60,
+            "armor_12" : 60,
+            "armor_8" : "",
+            "armor_11" : 90,
+            "armor_7" : 40
+         },
+         "weight" : 9500,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G58_VK4502P7/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G58_VK4502P7/collision_client/Turret_01.model"
+         }
+      }
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "radios" : {
+      "FuG7A" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.89",
+      "default" : "germany_cross"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/german/G58_VK4502P7/VK4502P_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "-0.010441 0.904588 -1.5514"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.968479 0.84938 2.57136",
+            "hideIfDamaged" : false,
+            "size" : "0.32",
+            "rayEnd" : "-0.968479 0.528914 2.33197"
+         }
+      },
+      "maxHealth" : 1200,
+      "swinging" : {
+         "sensitivityToImpulse" : "0.22",
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G58_VK4502P7/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G58_VK4502P7/collision/Hull.model"
+      },
+      "weight" : 36873,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "armor" : {
+         "armor_1" : 80,
+         "armor_2" : 80,
+         "armor_4" : 80,
+         "armor_10" : 100,
+         "armor_6" : 40,
+         "armor_7" : 20,
+         "armor_8" : "",
+         "armor_11" : 100,
+         "armor_3" : 80,
+         "armor_5" : 80,
+         "armor_9" : 80
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G58_VK4502P7/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G58_VK4502P7/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G58_VK4502P7/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 135,
+         "repairCost" : "1.0",
+         "maxHealth" : 200
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G58_VK4502P" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Porsche_Typ_100_3A" : {
+               "smplEnginePower" : "740.0968"
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {},
+   "speedLimits" : {
+      "forward" : 35,
+      "backward" : 15
+   },
+   "premiumVehicleXPFactor" : "0.2",
+   "repairCost" : "4.5",
+   "crewXpFactor" : "1.5"
+}

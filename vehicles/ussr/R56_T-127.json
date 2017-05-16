@@ -1,0 +1,485 @@
+{
+   "turrets0" : {
+      "Turret_1_T-127" : {
+         "rotationSpeed" : "45.5",
+         "price" : 1820,
+         "models" : {
+            "exploded" : "vehicles/russian/R56_T-127/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/russian/R56_T-127/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/russian/R56_T-127/crash/lod0/Turret_01.model"
+         },
+         "notInShop" : true,
+         "guns" : {
+            "_45mm_20KL" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.64 0.31 0.000000 0.000000"
+         },
+         "showEmblemsOnGun" : false,
+         "gunPosition" : "0 0 1",
+         "armor" : {
+            "armor_1" : 40,
+            "armor_3" : 30,
+            "armor_6" : 15,
+            "armor_8" : "",
+            "armor_5" : 15,
+            "armor_2" : 70
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 0 -0",
+                  "hideIfDamaged" : false,
+                  "size" : "0.55",
+                  "rayEnd" : "-0 0 -0"
+               },
+               {
+                  "rayEnd" : "0 0 -0",
+                  "hideIfDamaged" : false,
+                  "size" : "0.55",
+                  "rayStart" : "1 0 -0",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "-1 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "size" : "0.26",
+                  "rayEnd" : "-1 0 0"
+               },
+               {
+                  "size" : "0.26",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "1 0 0",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1 0 0"
+               }
+            ]
+         },
+         "maxHealth" : 50,
+         "weight" : 1100,
+         "primaryArmor" : "armor_1 armor_3 armor_3",
+         "physicsShape" : "0.944 -0.037 0.972 0.000 0.478 0.105 0.694 0.542 0.412 0.500 0.276 0.500 0.155 0.677 0.000",
+         "level" : 3,
+         "tags" : {},
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 320,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         },
+         "userString" : "#ussr_vehicles:Turret_1_T-127",
+         "turretRotatorHealth" : {
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R56_T-127/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/russian/R56_T-127/collision/Turret_01.model"
+         }
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "0.6",
+      "exclusionMask" : "vehicles/russian/R56_T-127/T-127_chassis_01_AM.dds",
+      "tiling" : "1 1 0 0"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "radios" : {
+      "_71-TK-3A" : "shared"
+   },
+   "crewXpFactor" : "1.5",
+   "chassis" : {
+      "Chassis_T-127" : {
+         "hullPosition" : "0 1 0",
+         "weight" : 3200,
+         "trackThickness" : "-0.0032",
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "rotationIsAroundCenter" : false,
+         "notInShop" : true,
+         "models" : {
+            "exploded" : "vehicles/russian/R56_T-127/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R56_T-127/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/russian/R56_T-127/crash/lod0/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "trackNodes" : {
+            "offset" : "0",
+            "forwardElastK" : 1,
+            "linkBones" : false,
+            "damping" : 2,
+            "node" : [
+               {
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.69"
+               },
+               {
+                  "backwardElastK" : "1.69",
+                  "forwardElastK" : "0.89",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.81",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.88",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "1.97",
+                  "forwardElastK" : "0.89"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.81"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.88",
+                  "forwardElastK" : "0.89"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.97"
+               },
+               {
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 1
+               }
+            ],
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1",
+            "enable" : true,
+            "elasticity" : 1096,
+            "gravity" : "-9.8",
+            "backwardElastK" : 1
+         },
+         "rotationSpeed" : 34,
+         "maxRegenHealth" : 55,
+         "maxLoad" : 14000,
+         "wwsoundPC" : "treads_type_pc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R56_T-127/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/russian/R56_T-127/collision_client/Chassis.model"
+         },
+         "repairCost" : "2.5",
+         "level" : 3,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.0608592",
+                  "minOffset" : "-0.0608592",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "template" : "Track_L"
+               },
+               {
+                  "template" : "Track_R",
+                  "maxOffset" : "0.0608592",
+                  "count" : 6,
+                  "minOffset" : "-0.0608592",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "tags" : {},
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "brakeForce" : 34500,
+         "maxHealth" : 70,
+         "maxClimbAngle" : 25,
+         "bulkHealthFactor" : "3.0",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.9",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.054",
+            "segmentLength" : "0.107",
+            "left" : "vehicles/russian/R56_T-127/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/russian/R56_T-127/track/segment.model",
+            "segmentModelLeft" : "vehicles/russian/R56_T-127/track/segment.model",
+            "right" : "vehicles/russian/R56_T-127/track/right.track"
+         },
+         "price" : 1840,
+         "wheels" : {
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "radius" : "0.13012",
+                  "isLeft" : false,
+                  "count" : 3,
+                  "template" : "WD_R"
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "count" : 6,
+                  "radius" : "0",
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0.13012",
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "isLeft" : true
+               },
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "22.5"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "22.5",
+                  "name" : "WD_R4",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "22.5",
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L4",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "22.5"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "userString" : "#ussr_vehicles:Chassis_T-127",
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "textureSet" : "ussr_01",
+            "size" : "0.38 0.44"
+         },
+         "topRightCarryingPoint" : "1.04265 1.46757",
+         "navmeshGirth" : "6.0",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "1.26 1.49 2.51",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "wwsoundNPC" : "trds_med_npc"
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "engines" : {
+      "D-744" : "shared"
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 38
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_T-127" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "D-744" : {
+               "smplEnginePower" : "264.3203"
+            }
+         }
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "emblems" : {
+      "default" : "ussr_star",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.86"
+   },
+   "repairCost" : "2.1",
+   "premiumVehicleXPFactor" : "0.6",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.877402172"
+   },
+   "crew" : {
+      "driver" : {},
+      "gunner" : "loader",
+      "radioman" : {},
+      "commander" : {}
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/russian/R56_T-127/T-127_HangarShadowMap.dds",
+      "weight" : 7250,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/russian/R56_T-127/collision/Hull.model",
+         "collisionModelClient" : "vehicles/russian/R56_T-127/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "turretPositions" : {
+         "turret" : "0.00356 0.490642 0.444087"
+      },
+      "maxHealth" : 200,
+      "armor" : {
+         "armor_3" : 30,
+         "armor_8" : "",
+         "armor_6" : 20,
+         "armor_7" : 15,
+         "armor_4" : 30,
+         "armor_5" : 30,
+         "armor_9" : 10,
+         "armor_2" : 30,
+         "armor_1" : 40,
+         "armor_10" : 25,
+         "armor_11" : 25
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "0.37516 0.0198899 1.70035",
+            "hideIfDamaged" : true,
+            "size" : "0.3",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "0.37516 0.355126 1.91856"
+         }
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_small"
+      },
+      "camouflage" : {
+         "tiling" : "1.3 1.3 0.000000 0.000000"
+      },
+      "models" : {
+         "destroyed" : "vehicles/russian/R56_T-127/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/russian/R56_T-127/normal/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R56_T-127/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 32.00 0.35 1.00 0.05 0.29",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.32 32.00 0.35 1.00 0.06 0.35",
+         "sensitivityToImpulse" : "0.74"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 100,
+         "maxRegenHealth" : 70,
+         "repairCost" : "1.0"
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.473",
+      "still" : "0.315",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.236",
+      "camouflageBonus" : "0.03"
+   }
+}

@@ -1,0 +1,3280 @@
+{
+   "effectLists" : {
+      "strv_change_hull_sand" : {
+         "timeline" : {
+            "impactEnd" : "0.7"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/strv_change_hull_sand.xml",
+               "startKey" : "start"
+            }
+         }
+      },
+      "strv_change_hull_ground" : {
+         "effects" : {
+            "pixie" : {
+               "startKey" : "start",
+               "force" : 1,
+               "file" : "particles/Tank/strv_change_hull_ground.xml"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "0.7"
+         }
+      },
+      "strv_change_hull_water" : {
+         "effects" : {
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/strv_change_hull_water.xml",
+               "force" : 1
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "0.7"
+         }
+      },
+      "strv_change_hull_snow" : {
+         "timeline" : {
+            "impactEnd" : "0.7"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/strv_change_hull_snow.xml",
+               "startKey" : "start"
+            }
+         }
+      },
+      "strv_change_hull_stone" : {
+         "timeline" : {
+            "impactEnd" : "0.7"
+         },
+         "effects" : {
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/strv_change_hull_stone.xml",
+               "force" : 1
+            }
+         }
+      }
+   },
+   "nodes" : {
+      "node" : [
+         {
+            "name" : "HP_Track_LFront",
+            "drawOrder" : -30,
+            "waterY" : "AAAA",
+            "model" : "chassis"
+         },
+         {
+            "name" : "HP_Track_RFront",
+            "drawOrder" : 40,
+            "waterY" : "AAAA",
+            "model" : "chassis"
+         },
+         {
+            "model" : "chassis",
+            "waterY" : "AAAA",
+            "name" : "HP_Track_LRear",
+            "drawOrder" : -40
+         },
+         {
+            "waterY" : "AAAA",
+            "model" : "chassis",
+            "name" : "HP_Track_RRear",
+            "drawOrder" : 30
+         },
+         {
+            "name" : "HP_TrackUp_LFront",
+            "drawOrder" : -10,
+            "model" : "AAAA",
+            "waterY" : "False"
+         },
+         {
+            "drawOrder" : 20,
+            "name" : "HP_TrackUp_RFront",
+            "model" : "AAAA",
+            "waterY" : "False"
+         },
+         {
+            "drawOrder" : -20,
+            "name" : "HP_TrackUp_LRear",
+            "waterY" : "False",
+            "model" : "AAAA"
+         },
+         {
+            "waterY" : "False",
+            "model" : "AAAA",
+            "name" : "HP_TrackUp_RRear",
+            "drawOrder" : 10
+         },
+         {
+            "waterY" : "False",
+            "model" : "AAAA",
+            "drawOrder" : "",
+            "name" : "DM_Mid_Trail"
+         },
+         {
+            "waterY" : "False",
+            "model" : "AAAA",
+            "drawOrder" : "",
+            "name" : "gun"
+         },
+         {
+            "waterY" : "False",
+            "model" : "AAAA",
+            "drawOrder" : "",
+            "name" : "HP_gui"
+         },
+         {
+            "waterY" : "False",
+            "model" : "chassis",
+            "name" : "chassis",
+            "drawOrder" : ""
+         }
+      ]
+   },
+   "constants" : {
+      "constantsGroup" : [
+         {
+            "constant" : [
+               {
+                  "name" : "_fileDescriptor",
+                  "value" : "small"
+               },
+               {
+                  "value" : "0.2",
+                  "name" : "_hullAngle1"
+               },
+               {
+                  "name" : "_hullAngle2",
+                  "value" : "0.8"
+               },
+               {
+                  "name" : "_hullAngle3",
+                  "value" : "1.3"
+               },
+               {
+                  "name" : "_hullAngle4",
+                  "value" : "1.9"
+               },
+               {
+                  "value" : "2.4",
+                  "name" : "_hullAngle5"
+               },
+               {
+                  "value" : "2.9",
+                  "name" : "_hullAngle6"
+               },
+               {
+                  "value" : "-0.7",
+                  "name" : "_rotSpeedMaxCcw"
+               },
+               {
+                  "name" : "_rotSpeedMedCcw",
+                  "value" : "-0.4"
+               },
+               {
+                  "value" : "0.4",
+                  "name" : "_rotSpeedMedCw"
+               },
+               {
+                  "name" : "_rotSpeedMaxCw",
+                  "value" : "0.7"
+               },
+               {
+                  "name" : "_sandDustStartSpeedOp",
+                  "value" : -8
+               },
+               {
+                  "name" : "_sandDustStartSpeedPos",
+                  "value" : 8
+               },
+               {
+                  "name" : "_sandSlipMinStart",
+                  "value" : "0.5"
+               },
+               {
+                  "value" : 1,
+                  "name" : "_sandSlipMedStart"
+               },
+               {
+                  "value" : 3,
+                  "name" : "_sandSlipMaxStart"
+               },
+               {
+                  "name" : "_groundDustStartSpeedOp",
+                  "value" : -12
+               },
+               {
+                  "name" : "_groundDustStartSpeedPos",
+                  "value" : 12
+               },
+               {
+                  "value" : "0.6",
+                  "name" : "_groundSlipMinStart"
+               },
+               {
+                  "value" : "1.5",
+                  "name" : "_groundSlipMedStart"
+               },
+               {
+                  "value" : "3.5",
+                  "name" : "_groundSlipMaxStart"
+               },
+               {
+                  "name" : "_snowDustStartSpeedOp",
+                  "value" : -10
+               },
+               {
+                  "value" : 10,
+                  "name" : "_snowDustStartSpeedPos"
+               },
+               {
+                  "name" : "_snowSlipMinStart",
+                  "value" : "0.4"
+               },
+               {
+                  "name" : "_snowSlipMedStart",
+                  "value" : 2
+               },
+               {
+                  "value" : "3.5",
+                  "name" : "_snowSlipMaxStart"
+               },
+               {
+                  "value" : -16,
+                  "name" : "_stoneDustStartSpeedOp"
+               },
+               {
+                  "value" : 16,
+                  "name" : "_stoneDustStartSpeedPos"
+               },
+               {
+                  "value" : 1,
+                  "name" : "_stoneSlipMinStart"
+               },
+               {
+                  "name" : "_stoneSlipMedStart",
+                  "value" : 3
+               },
+               {
+                  "name" : "_stoneSlipMaxStart",
+                  "value" : 6
+               }
+            ],
+            "name" : "small"
+         },
+         {
+            "name" : "medium",
+            "constant" : [
+               {
+                  "value" : "medium",
+                  "name" : "_fileDescriptor"
+               },
+               {
+                  "name" : "_hullAngle1",
+                  "value" : "0.2"
+               },
+               {
+                  "name" : "_hullAngle2",
+                  "value" : "0.8"
+               },
+               {
+                  "name" : "_hullAngle3",
+                  "value" : "1.3"
+               },
+               {
+                  "value" : "1.9",
+                  "name" : "_hullAngle4"
+               },
+               {
+                  "name" : "_hullAngle5",
+                  "value" : "2.4"
+               },
+               {
+                  "name" : "_hullAngle6",
+                  "value" : "2.9"
+               },
+               {
+                  "name" : "_rotSpeedMaxCcw",
+                  "value" : "-0.7"
+               },
+               {
+                  "name" : "_rotSpeedMedCcw",
+                  "value" : "-0.4"
+               },
+               {
+                  "value" : "0.4",
+                  "name" : "_rotSpeedMedCw"
+               },
+               {
+                  "name" : "_rotSpeedMaxCw",
+                  "value" : "0.7"
+               },
+               {
+                  "value" : -6,
+                  "name" : "_sandDustStartSpeedOp"
+               },
+               {
+                  "name" : "_sandDustStartSpeedPos",
+                  "value" : 6
+               },
+               {
+                  "value" : "0.5",
+                  "name" : "_sandSlipMinStart"
+               },
+               {
+                  "value" : 1,
+                  "name" : "_sandSlipMedStart"
+               },
+               {
+                  "value" : 3,
+                  "name" : "_sandSlipMaxStart"
+               },
+               {
+                  "value" : -9,
+                  "name" : "_groundDustStartSpeedOp"
+               },
+               {
+                  "value" : 9,
+                  "name" : "_groundDustStartSpeedPos"
+               },
+               {
+                  "name" : "_groundSlipMinStart",
+                  "value" : "0.6"
+               },
+               {
+                  "value" : "1.5",
+                  "name" : "_groundSlipMedStart"
+               },
+               {
+                  "value" : "3.5",
+                  "name" : "_groundSlipMaxStart"
+               },
+               {
+                  "value" : "-7.5",
+                  "name" : "_snowDustStartSpeedOp"
+               },
+               {
+                  "value" : "7.5",
+                  "name" : "_snowDustStartSpeedPos"
+               },
+               {
+                  "value" : "0.4",
+                  "name" : "_snowSlipMinStart"
+               },
+               {
+                  "value" : 2,
+                  "name" : "_snowSlipMedStart"
+               },
+               {
+                  "name" : "_snowSlipMaxStart",
+                  "value" : "3.5"
+               },
+               {
+                  "name" : "_stoneDustStartSpeedOp",
+                  "value" : -12
+               },
+               {
+                  "name" : "_stoneDustStartSpeedPos",
+                  "value" : 12
+               },
+               {
+                  "value" : 1,
+                  "name" : "_stoneSlipMinStart"
+               },
+               {
+                  "name" : "_stoneSlipMedStart",
+                  "value" : 3
+               },
+               {
+                  "value" : 6,
+                  "name" : "_stoneSlipMaxStart"
+               }
+            ]
+         },
+         {
+            "name" : "large",
+            "constant" : [
+               {
+                  "value" : "large",
+                  "name" : "_fileDescriptor"
+               },
+               {
+                  "name" : "_hullAngle1",
+                  "value" : "0.2"
+               },
+               {
+                  "name" : "_hullAngle2",
+                  "value" : "0.8"
+               },
+               {
+                  "name" : "_hullAngle3",
+                  "value" : "1.3"
+               },
+               {
+                  "name" : "_hullAngle4",
+                  "value" : "1.9"
+               },
+               {
+                  "name" : "_hullAngle5",
+                  "value" : "2.4"
+               },
+               {
+                  "value" : "2.9",
+                  "name" : "_hullAngle6"
+               },
+               {
+                  "name" : "_rotSpeedMaxCcw",
+                  "value" : "-0.7"
+               },
+               {
+                  "value" : "-0.4",
+                  "name" : "_rotSpeedMedCcw"
+               },
+               {
+                  "value" : "0.4",
+                  "name" : "_rotSpeedMedCw"
+               },
+               {
+                  "value" : "0.7",
+                  "name" : "_rotSpeedMaxCw"
+               },
+               {
+                  "name" : "_sandDustStartSpeedOp",
+                  "value" : -5
+               },
+               {
+                  "name" : "_sandDustStartSpeedPos",
+                  "value" : 5
+               },
+               {
+                  "value" : "0.5",
+                  "name" : "_sandSlipMinStart"
+               },
+               {
+                  "name" : "_sandSlipMedStart",
+                  "value" : 1
+               },
+               {
+                  "name" : "_sandSlipMaxStart",
+                  "value" : 3
+               },
+               {
+                  "value" : "-7.5",
+                  "name" : "_groundDustStartSpeedOp"
+               },
+               {
+                  "value" : "7.5",
+                  "name" : "_groundDustStartSpeedPos"
+               },
+               {
+                  "name" : "_groundSlipMinStart",
+                  "value" : "0.6"
+               },
+               {
+                  "name" : "_groundSlipMedStart",
+                  "value" : "1.5"
+               },
+               {
+                  "value" : "3.5",
+                  "name" : "_groundSlipMaxStart"
+               },
+               {
+                  "name" : "_snowDustStartSpeedOp",
+                  "value" : -6
+               },
+               {
+                  "name" : "_snowDustStartSpeedPos",
+                  "value" : 6
+               },
+               {
+                  "name" : "_snowSlipMinStart",
+                  "value" : "0.4"
+               },
+               {
+                  "value" : 2,
+                  "name" : "_snowSlipMedStart"
+               },
+               {
+                  "name" : "_snowSlipMaxStart",
+                  "value" : "3.5"
+               },
+               {
+                  "value" : -10,
+                  "name" : "_stoneDustStartSpeedOp"
+               },
+               {
+                  "value" : 10,
+                  "name" : "_stoneDustStartSpeedPos"
+               },
+               {
+                  "value" : 1,
+                  "name" : "_stoneSlipMinStart"
+               },
+               {
+                  "name" : "_stoneSlipMedStart",
+                  "value" : 3
+               },
+               {
+                  "name" : "_stoneSlipMaxStart",
+                  "value" : 6
+               }
+            ]
+         }
+      ]
+   },
+   "effects" : {
+      "smallTankMud" : {
+         "selector" : {
+            "type" : "union",
+            "selector" : [
+               {
+                  "type" : "AAAAAAAA",
+                  "name" : "AAAAAAAAAAAA",
+                  "constantsGroup" : "small"
+               },
+               {
+                  "constantsGroup" : "small",
+                  "name" : "TrackEffect1_NPC",
+                  "type" : "AAAAAAAA"
+               }
+            ]
+         }
+      },
+      "strvMud" : {
+         "selector" : {
+            "type" : "union",
+            "selector" : [
+               {
+                  "constantsGroup" : "large",
+                  "type" : "AAAAAAAA",
+                  "name" : "AAAAAAAAAAAA"
+               },
+               {
+                  "constantsGroup" : "large",
+                  "type" : "AAAAAAAA",
+                  "name" : "TrackEffect1_NPC"
+               },
+               {
+                  "type" : "AAAAAAAA",
+                  "variable" : "siegeStart",
+                  "selector" : {
+                     "type" : "matkind",
+                     "key" : 1,
+                     "variable" : "AAAAAAAA",
+                     "selector" : [
+                        {
+                           "effectHP" : "chassis",
+                           "name" : "strv_change_hull_ground",
+                           "type" : "effectList",
+                           "key" : "ground"
+                        },
+                        {
+                           "key" : "stone",
+                           "type" : "effectList",
+                           "name" : "strv_change_hull_stone",
+                           "effectHP" : "chassis"
+                        },
+                        {
+                           "effectHP" : "chassis",
+                           "type" : "effectList",
+                           "name" : "strv_change_hull_ground",
+                           "key" : "AAAA"
+                        },
+                        {
+                           "effectHP" : "chassis",
+                           "type" : "effectList",
+                           "name" : "strv_change_hull_stone",
+                           "key" : "metal"
+                        },
+                        {
+                           "effectHP" : "chassis",
+                           "key" : "AAAA",
+                           "type" : "effectList",
+                           "name" : "strv_change_hull_snow"
+                        },
+                        {
+                           "key" : "AAAA",
+                           "type" : "effectList",
+                           "name" : "strv_change_hull_sand",
+                           "effectHP" : "chassis"
+                        },
+                        {
+                           "effectHP" : "chassis",
+                           "key" : "water",
+                           "name" : "strv_change_hull_water",
+                           "type" : "effectList"
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      },
+      "mediumTankMud" : {
+         "selector" : {
+            "selector" : [
+               {
+                  "constantsGroup" : "medium",
+                  "name" : "AAAAAAAAAAAA",
+                  "type" : "AAAAAAAA"
+               },
+               {
+                  "constantsGroup" : "medium",
+                  "name" : "TrackEffect1_NPC",
+                  "type" : "AAAAAAAA"
+               }
+            ],
+            "type" : "union"
+         }
+      },
+      "default" : {
+         "selector" : {
+            "selector" : [
+               {
+                  "type" : "AAAAAAAA",
+                  "name" : "AAAAAAAAAAAA",
+                  "constantsGroup" : "medium"
+               },
+               {
+                  "constantsGroup" : "medium",
+                  "name" : "TrackEffect1_NPC",
+                  "type" : "AAAAAAAA"
+               }
+            ],
+            "type" : "union"
+         }
+      },
+      "largeTankMud" : {
+         "selector" : {
+            "selector" : [
+               {
+                  "constantsGroup" : "large",
+                  "type" : "AAAAAAAA",
+                  "name" : "AAAAAAAAAAAA"
+               },
+               {
+                  "type" : "AAAAAAAA",
+                  "name" : "TrackEffect1_NPC",
+                  "constantsGroup" : "large"
+               }
+            ],
+            "type" : "union"
+         }
+      }
+   },
+   "templates" : {
+      "template" : [
+         {
+            "name" : "Drift",
+            "selector" : {
+               "type" : "AAAAAAAA",
+               "variable" : "_direction",
+               "selector" : {
+                  "key" : "_const1",
+                  "type" : "matkind",
+                  "selector" : [
+                     {
+                        "type" : "range",
+                        "key" : "AAAA",
+                        "variable" : "_hullAngle",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackfront_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackrear_spd1.xml",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_hullAngle1"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackfront_spd2.xml",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackrear_spd2.xml"
+                                 }
+                              ],
+                              "key" : "_hullAngle2",
+                              "type" : "union"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_hullAngle3",
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackfront_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackrear_spd3.xml",
+                                    "type" : "effect"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackfront_spd2.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackrear_spd2.xml"
+                                 }
+                              ],
+                              "key" : "_hullAngle4",
+                              "type" : "union"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_hullAngle5",
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackfront_spd1.xml",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/drift_{0}_trackrear_spd1.xml",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ]
+                           },
+                           {
+                              "key" : "_hullAngle6",
+                              "type" : "union"
+                           }
+                        ]
+                     },
+                     {
+                        "selector" : [
+                           {
+                              "type" : "union",
+                              "key" : "_hullAngle1",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackfront_spd1.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackrear_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ]
+                           },
+                           {
+                              "key" : "_hullAngle2",
+                              "type" : "union",
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackfront_spd2.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackrear_spd2.xml"
+                                 }
+                              ]
+                           },
+                           {
+                              "key" : "_hullAngle3",
+                              "type" : "union",
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackfront_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackrear_spd3.xml",
+                                    "type" : "effect"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackfront_spd2.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackrear_spd2.xml",
+                                    "type" : "effect"
+                                 }
+                              ],
+                              "key" : "_hullAngle4",
+                              "type" : "union"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_hullAngle5",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackfront_spd1.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/ground/drift_{0}_trackrear_spd1.xml",
+                                    "type" : "effect"
+                                 }
+                              ]
+                           },
+                           {
+                              "key" : "_hullAngle6",
+                              "type" : "union"
+                           }
+                        ],
+                        "variable" : "_hullAngle",
+                        "key" : "ground",
+                        "type" : "range"
+                     },
+                     {
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackfront_spd1.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackrear_spd1.xml",
+                                    "type" : "effect"
+                                 }
+                              ],
+                              "key" : "_hullAngle1",
+                              "type" : "union"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_hullAngle2",
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackfront_spd2.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackrear_spd2.xml",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackfront_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackrear_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ],
+                              "key" : "_hullAngle3",
+                              "type" : "union"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackfront_spd2.xml",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackrear_spd2.xml"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_hullAngle4"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackfront_spd1.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/drift_{0}_trackrear_spd1.xml"
+                                 }
+                              ],
+                              "key" : "_hullAngle5",
+                              "type" : "union"
+                           },
+                           {
+                              "key" : "_hullAngle6",
+                              "type" : "union"
+                           }
+                        ],
+                        "variable" : "_hullAngle",
+                        "key" : "AAAA",
+                        "type" : "range"
+                     },
+                     {
+                        "type" : "range",
+                        "key" : "stone",
+                        "variable" : "_hullAngle",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackfront_spd1.xml"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackrear_spd1.xml",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ],
+                              "key" : "_hullAngle1",
+                              "type" : "union"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackfront_spd2.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackrear_spd2.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_hullAngle2"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackfront_spd3.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackrear_spd3.xml"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_hullAngle3"
+                           },
+                           {
+                              "key" : "_hullAngle4",
+                              "type" : "union",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackfront_spd2.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackrear_spd2.xml"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackfront_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/drift_{0}_trackrear_spd1.xml"
+                                 }
+                              ],
+                              "key" : "_hullAngle5",
+                              "type" : "union"
+                           },
+                           {
+                              "key" : "_hullAngle6",
+                              "type" : "union"
+                           }
+                        ]
+                     }
+                  ],
+                  "variable" : "_matkind"
+               }
+            }
+         },
+         {
+            "name" : "AAAA",
+            "selector" : {
+               "selector" : [
+                  {
+                     "variable" : "_direction",
+                     "selector" : {
+                        "type" : "range",
+                        "key" : "_const1",
+                        "variable" : "_speed",
+                        "selector" : [
+                           {
+                              "variable" : "_rotSpeed",
+                              "selector" : [
+                                 {
+                                    "key" : -10,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd2.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd2.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMedCcw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "0.1",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMedCw"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCw"
+                                 }
+                              ],
+                              "type" : "range",
+                              "key" : 65036
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ],
+                                    "key" : -10,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "0.1",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd1.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_rotSpeed",
+                              "key" : -2,
+                              "type" : "range"
+                           },
+                           {
+                              "variable" : "_rotSpeed",
+                              "selector" : [
+                                 {
+                                    "type" : "union",
+                                    "key" : -10,
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd3.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd3.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd2.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMedCcw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "-0.1"
+                                 },
+                                 {
+                                    "key" : "0.1",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd1.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd1.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMedCw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd2.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/turn_{0}_trackrear_out_spd3.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCw"
+                                 }
+                              ],
+                              "type" : "range",
+                              "key" : 2
+                           }
+                        ]
+                     },
+                     "type" : "AAAAAAAA",
+                     "key" : "AAAA"
+                  },
+                  {
+                     "key" : "ground",
+                     "type" : "AAAAAAAA",
+                     "selector" : {
+                        "variable" : "_speed",
+                        "selector" : [
+                           {
+                              "variable" : "_rotSpeed",
+                              "selector" : [
+                                 {
+                                    "key" : -10,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd3.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd2.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd2.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMedCcw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd1.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd1.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "0.1"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMedCw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd3.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMaxCw",
+                                    "type" : "union"
+                                 }
+                              ],
+                              "type" : "range",
+                              "key" : 65036
+                           },
+                           {
+                              "key" : -2,
+                              "type" : "range",
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd1.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : -10,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "-0.1"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "0.1",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_rotSpeed"
+                           },
+                           {
+                              "type" : "range",
+                              "key" : 2,
+                              "variable" : "_rotSpeed",
+                              "selector" : [
+                                 {
+                                    "key" : -10,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCcw"
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMedCcw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd1.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "0.1"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd2.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMedCw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMaxCw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/ground/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 }
+                              ]
+                           }
+                        ],
+                        "type" : "range",
+                        "key" : "_const1"
+                     },
+                     "variable" : "_direction"
+                  },
+                  {
+                     "variable" : "_direction",
+                     "selector" : {
+                        "key" : "_const1",
+                        "type" : "range",
+                        "selector" : [
+                           {
+                              "type" : "range",
+                              "key" : 65036,
+                              "variable" : "_rotSpeed",
+                              "selector" : [
+                                 {
+                                    "type" : "union",
+                                    "key" : -10,
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd3.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd1.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMedCcw"
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "0.1",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMedCw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd2.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMaxCw",
+                                    "type" : "union"
+                                 }
+                              ]
+                           },
+                           {
+                              "key" : -2,
+                              "type" : "range",
+                              "selector" : [
+                                 {
+                                    "type" : "union",
+                                    "key" : -10,
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd1.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect"
+                                       }
+                                    ],
+                                    "key" : "0.1",
+                                    "type" : "union"
+                                 }
+                              ],
+                              "variable" : "_rotSpeed"
+                           },
+                           {
+                              "type" : "range",
+                              "key" : 2,
+                              "variable" : "_rotSpeed",
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : -10,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMedCcw"
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "0.1",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd1.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMedCw",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd2.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "key" : "_rotSpeedMaxCw",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackfront_out_spd3.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/turn_{0}_trackrear_out_spd3.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 }
+                              ]
+                           }
+                        ],
+                        "variable" : "_speed"
+                     },
+                     "type" : "AAAAAAAA",
+                     "key" : "AAAA"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "key" : "stone",
+                     "variable" : "_direction",
+                     "selector" : {
+                        "type" : "range",
+                        "key" : "_const1",
+                        "variable" : "_speed",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "type" : "union",
+                                    "key" : -10,
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd3.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd2.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMedCcw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "-0.1"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd1.xml"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "0.1"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMedCw",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd2.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCw",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd3.xml"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_rotSpeed",
+                              "key" : 65036,
+                              "type" : "range"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect"
+                                       }
+                                    ],
+                                    "key" : -10,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "-0.1",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "0.1",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_rotSpeed",
+                              "key" : -2,
+                              "type" : "range"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "key" : -10,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd3.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMaxCcw",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd2.xml"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd1.xml"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_rotSpeedMedCcw"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "-0.1"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd1.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd1.xml",
+                                          "type" : "effect"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "0.1"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd2.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd2.xml"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMedCw",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackfront_out_spd3.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/stone/turn_{0}_trackrear_out_spd3.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_rotSpeedMaxCw",
+                                    "type" : "union"
+                                 }
+                              ],
+                              "variable" : "_rotSpeed",
+                              "key" : 2,
+                              "type" : "range"
+                           }
+                        ]
+                     }
+                  }
+               ],
+               "variable" : "_matkind",
+               "type" : "matkind"
+            }
+         },
+         {
+            "name" : "AAAA",
+            "selector" : {
+               "selector" : [
+                  {
+                     "variable" : "_direction",
+                     "selector" : {
+                        "selector" : [
+                           {
+                              "variable" : "_speed",
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/sand/trail_{0}_front.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/dust_{0}.xml",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : 65036
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_sandDustStartSpeedOp",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}_front.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                          "type" : "effect"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : -2
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : 2,
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}_front.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_sandDustStartSpeedPos",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}_front.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/sand/dust_{0}.xml",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "type" : "range",
+                              "key" : ""
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_sandSlipMinStart",
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackfront_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackrear_spd1.xml"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackfront_spd2.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackrear_spd2.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpFront",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackupfront_spd2.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackuprear_spd2.xml",
+                                    "effectHP" : "_TrackUpRear"
+                                 }
+                              ],
+                              "key" : "_sandSlipMedStart",
+                              "type" : "union"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_sandSlipMaxStart",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackfront_spd3.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackrear_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpFront",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackupfront_spd3.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/slip_{0}_trackuprear_spd3.xml"
+                                 }
+                              ]
+                           }
+                        ],
+                        "variable" : "_delta",
+                        "key" : "_const1",
+                        "type" : "range"
+                     },
+                     "type" : "AAAAAAAA",
+                     "key" : "AAAA"
+                  },
+                  {
+                     "selector" : {
+                        "type" : "range",
+                        "key" : "_const1",
+                        "variable" : "_delta",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "key" : 65036,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}_front.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/dust_{0}.xml",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}_front.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : "_groundDustStartSpeedOp",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : -2,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}_front.xml"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/ground/trail_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : 2
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : "_groundDustStartSpeedPos",
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}_front.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/trail_{0}.xml"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/ground/dust_{0}.xml",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_speed",
+                              "key" : "",
+                              "type" : "range"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackfront_spd1.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackrear_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_groundSlipMinStart"
+                           },
+                           {
+                              "key" : "_groundSlipMedStart",
+                              "type" : "union",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackfront_spd2.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackrear_spd2.xml",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackupfront_spd2.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackUpFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpRear",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackuprear_spd2.xml",
+                                    "type" : "effect"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackfront_spd3.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackrear_spd3.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackupfront_spd3.xml",
+                                    "effectHP" : "_TrackUpFront"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/slip_{0}_trackuprear_spd3.xml",
+                                    "effectHP" : "_TrackUpRear"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_groundSlipMaxStart"
+                           }
+                        ]
+                     },
+                     "variable" : "_direction",
+                     "key" : "ground",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "selector" : {
+                        "type" : "range",
+                        "key" : "_const1",
+                        "variable" : "_delta",
+                        "selector" : [
+                           {
+                              "key" : "",
+                              "type" : "range",
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/snow/trail_{0}_front.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TankDust",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/dust_{0}.xml"
+                                       }
+                                    ],
+                                    "key" : 65036,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}_front.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}.xml"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : "_snowDustStartSpeedOp"
+                                 },
+                                 {
+                                    "key" : -2,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}_front.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ],
+                                    "key" : 2,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : "_snowDustStartSpeedPos",
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}_front.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/snow/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/snow/dust_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_speed"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackfront_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackrear_spd1.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_snowSlipMinStart"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_snowSlipMedStart",
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackfront_spd2.xml",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackrear_spd2.xml",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackupfront_spd2.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpRear",
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackuprear_spd2.xml",
+                                    "type" : "effect"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackfront_spd3.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackrear_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackupfront_spd3.xml",
+                                    "effectHP" : "_TrackUpFront"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/snow/slip_{0}_trackuprear_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackUpRear"
+                                 }
+                              ],
+                              "key" : "_snowSlipMaxStart",
+                              "type" : "union"
+                           }
+                        ]
+                     },
+                     "variable" : "_direction",
+                     "key" : "AAAA",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "key" : "stone",
+                     "type" : "AAAAAAAA",
+                     "selector" : {
+                        "variable" : "_delta",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "key" : 65036,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/trail_{0}_front.xml",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/trail_{0}.xml"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/stone/dust_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/trail_{0}_front.xml"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackRear",
+                                          "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                          "type" : "effect"
+                                       }
+                                    ],
+                                    "key" : "_stoneDustStartSpeedOp",
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : -2,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "type" : "union",
+                                    "key" : 2,
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/stone/trail_{0}_front.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackFront"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       }
+                                    ]
+                                 },
+                                 {
+                                    "selector" : [
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "name" : "particles/Tank/movement/stone/trail_{0}_front.xml",
+                                          "type" : "effect"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                          "effectHP" : "_TrackRear"
+                                       },
+                                       {
+                                          "name" : "particles/Tank/movement/stone/dust_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TankDust"
+                                       }
+                                    ],
+                                    "key" : "_stoneDustStartSpeedPos",
+                                    "type" : "union"
+                                 }
+                              ],
+                              "variable" : "_speed",
+                              "key" : "",
+                              "type" : "range"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackfront_spd1.xml",
+                                    "effectHP" : "_TrackFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackrear_spd1.xml",
+                                    "type" : "effect"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_stoneSlipMinStart"
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackfront_spd2.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackrear_spd2.xml"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackupfront_spd2.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackuprear_spd2.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackUpRear"
+                                 }
+                              ],
+                              "key" : "_stoneSlipMedStart",
+                              "type" : "union"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_stoneSlipMaxStart",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackFront",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackfront_spd3.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackrear_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackupfront_spd3.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackUpFront"
+                                 },
+                                 {
+                                    "effectHP" : "_TrackUpRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/slip_{0}_trackuprear_spd3.xml"
+                                 }
+                              ]
+                           }
+                        ],
+                        "type" : "range",
+                        "key" : "_const1"
+                     },
+                     "variable" : "_direction"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "key" : "water",
+                     "variable" : "_direction",
+                     "selector" : {
+                        "variable" : "_isUnderWater",
+                        "selector" : {
+                           "variable" : "_delta",
+                           "selector" : {
+                              "key" : "",
+                              "type" : "range",
+                              "selector" : [
+                                 {
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/water/trail_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       },
+                                       {
+                                          "effectHP" : "_TrackFront",
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/water/trail_{0}_front.xml"
+                                       }
+                                    ],
+                                    "type" : "union",
+                                    "key" : 65036
+                                 },
+                                 {
+                                    "key" : -2,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : 2,
+                                    "type" : "union",
+                                    "selector" : [
+                                       {
+                                          "name" : "particles/Tank/movement/water/trail_{0}.xml",
+                                          "type" : "effect",
+                                          "effectHP" : "_TrackRear"
+                                       },
+                                       {
+                                          "type" : "effect",
+                                          "name" : "particles/Tank/movement/water/trail_{0}_front.xml",
+                                          "effectHP" : "_TrackFront"
+                                       }
+                                    ]
+                                 }
+                              ],
+                              "variable" : "_speed"
+                           },
+                           "type" : "range",
+                           "key" : ""
+                        },
+                        "type" : "AAAAAAAA",
+                        "key" : "_const1"
+                     }
+                  }
+               ],
+               "variable" : "_matkind",
+               "type" : "matkind"
+            }
+         },
+         {
+            "selector" : {
+               "type" : "matkind",
+               "selector" : [
+                  {
+                     "type" : "AAAAAAAA",
+                     "key" : "AAAA",
+                     "variable" : "_direction",
+                     "selector" : {
+                        "variable" : "_speed",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/sand/dust_{0}.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TankDust"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : 65036
+                           },
+                           {
+                              "selector" : {
+                                 "type" : "effect",
+                                 "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                 "effectHP" : "_TrackRear"
+                              },
+                              "type" : "union",
+                              "key" : "_sandDustStartSpeedOp"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : -2
+                           },
+                           {
+                              "type" : "union",
+                              "key" : 2,
+                              "selector" : {
+                                 "name" : "particles/Tank/movement/sand/trail_{0}.xml",
+                                 "type" : "effect",
+                                 "effectHP" : "_TrackRear"
+                              }
+                           },
+                           {
+                              "type" : "union",
+                              "key" : "_sandDustStartSpeedPos",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/sand/trail_{0}.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/sand/dust_{0}.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TankDust"
+                                 }
+                              ]
+                           }
+                        ],
+                        "type" : "range",
+                        "key" : "_const1"
+                     }
+                  },
+                  {
+                     "selector" : {
+                        "selector" : [
+                           {
+                              "key" : 65036,
+                              "type" : "union",
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/trail_{0}.xml",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/ground/dust_{0}.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TankDust"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : {
+                                 "type" : "effect",
+                                 "name" : "particles/Tank/movement/ground/trail_{0}.xml",
+                                 "effectHP" : "_TrackRear"
+                              },
+                              "type" : "union",
+                              "key" : "_groundDustStartSpeedOp"
+                           },
+                           {
+                              "type" : "union",
+                              "key" : -2
+                           },
+                           {
+                              "selector" : {
+                                 "name" : "particles/Tank/movement/ground/trail_{0}.xml",
+                                 "type" : "effect",
+                                 "effectHP" : "_TrackRear"
+                              },
+                              "type" : "union",
+                              "key" : 2
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/ground/trail_{0}.xml"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/ground/dust_{0}.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TankDust"
+                                 }
+                              ],
+                              "key" : "_groundDustStartSpeedPos",
+                              "type" : "union"
+                           }
+                        ],
+                        "variable" : "_speed",
+                        "key" : "_const1",
+                        "type" : "range"
+                     },
+                     "variable" : "_direction",
+                     "key" : "ground",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "key" : "AAAA",
+                     "variable" : "_direction",
+                     "selector" : {
+                        "type" : "range",
+                        "key" : "_const1",
+                        "variable" : "_speed",
+                        "selector" : [
+                           {
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/snow/trail_{0}.xml",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "effectHP" : "_TankDust",
+                                    "name" : "particles/Tank/movement/snow/dust_{0}.xml",
+                                    "type" : "effect"
+                                 }
+                              ],
+                              "key" : 65036,
+                              "type" : "union"
+                           },
+                           {
+                              "selector" : {
+                                 "effectHP" : "_TrackRear",
+                                 "name" : "particles/Tank/movement/snow/trail_{0}.xml",
+                                 "type" : "effect"
+                              },
+                              "type" : "union",
+                              "key" : "_snowDustStartSpeedOp"
+                           },
+                           {
+                              "key" : -2,
+                              "type" : "union"
+                           },
+                           {
+                              "key" : 2,
+                              "type" : "union",
+                              "selector" : {
+                                 "type" : "effect",
+                                 "name" : "particles/Tank/movement/snow/trail_{0}.xml",
+                                 "effectHP" : "_TrackRear"
+                              }
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "name" : "particles/Tank/movement/snow/trail_{0}.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "name" : "particles/Tank/movement/snow/dust_{0}.xml",
+                                    "type" : "effect",
+                                    "effectHP" : "_TankDust"
+                                 }
+                              ],
+                              "type" : "union",
+                              "key" : "_snowDustStartSpeedPos"
+                           }
+                        ]
+                     }
+                  },
+                  {
+                     "variable" : "_direction",
+                     "selector" : {
+                        "selector" : [
+                           {
+                              "key" : 65036,
+                              "type" : "union",
+                              "selector" : [
+                                 {
+                                    "effectHP" : "_TrackRear",
+                                    "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                    "type" : "effect"
+                                 },
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/dust_{0}.xml",
+                                    "effectHP" : "_TankDust"
+                                 }
+                              ]
+                           },
+                           {
+                              "selector" : {
+                                 "type" : "effect",
+                                 "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                 "effectHP" : "_TrackRear"
+                              },
+                              "key" : "_stoneDustStartSpeedOp",
+                              "type" : "union"
+                           },
+                           {
+                              "key" : -2,
+                              "type" : "union"
+                           },
+                           {
+                              "key" : 2,
+                              "type" : "union",
+                              "selector" : {
+                                 "effectHP" : "_TrackRear",
+                                 "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                 "type" : "effect"
+                              }
+                           },
+                           {
+                              "selector" : [
+                                 {
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/trail_{0}.xml",
+                                    "effectHP" : "_TrackRear"
+                                 },
+                                 {
+                                    "effectHP" : "_TankDust",
+                                    "type" : "effect",
+                                    "name" : "particles/Tank/movement/stone/dust_{0}.xml"
+                                 }
+                              ],
+                              "key" : "_stoneDustStartSpeedPos",
+                              "type" : "union"
+                           }
+                        ],
+                        "variable" : "_speed",
+                        "key" : "_const1",
+                        "type" : "range"
+                     },
+                     "type" : "AAAAAAAA",
+                     "key" : "stone"
+                  },
+                  {
+                     "key" : "water",
+                     "type" : "AAAAAAAA",
+                     "selector" : {
+                        "key" : "_const1",
+                        "type" : "AAAAAAAA",
+                        "selector" : {
+                           "variable" : "_delta",
+                           "selector" : {
+                              "variable" : "_speed",
+                              "selector" : [
+                                 {
+                                    "selector" : {
+                                       "effectHP" : "_TrackRear",
+                                       "type" : "effect",
+                                       "name" : "particles/Tank/movement/water/trail_{0}.xml"
+                                    },
+                                    "type" : "union",
+                                    "key" : 65036
+                                 },
+                                 {
+                                    "key" : -2,
+                                    "type" : "union"
+                                 },
+                                 {
+                                    "key" : 2,
+                                    "type" : "union",
+                                    "selector" : {
+                                       "type" : "effect",
+                                       "name" : "particles/Tank/movement/water/trail_{0}.xml",
+                                       "effectHP" : "_TrackRear"
+                                    }
+                                 }
+                              ],
+                              "type" : "range",
+                              "key" : ""
+                           },
+                           "type" : "range",
+                           "key" : ""
+                        },
+                        "variable" : "_isUnderWater"
+                     },
+                     "variable" : "_direction"
+                  }
+               ],
+               "variable" : "_matkind"
+            },
+            "name" : "Slip_NPC"
+         },
+         {
+            "selector" : {
+               "selector" : [
+                  {
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_hullAngle:hullAngle;\n\n\t\t\t\t_TrackFront:HP_Track_RFront;\n\n\t\t\t\t_TrackRear:HP_Track_RRear;\n\n\t\t\t\t_Turret:DM_Mid_Trail",
+                     "name" : "Drift",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "name" : "Drift",
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_hullAngle:hullAngle;\n\n\t\t\t\t_TrackFront:HP_Track_LFront;\n\n\t\t\t\t_TrackRear:HP_Track_LRear;\n\n\t\t\t\t_Turret:DM_Mid_Trail"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_hullAngle:hullAngle;\n\n\t\t\t\t_TrackFront:HP_Track_RRear;\n\n\t\t\t\t_TrackRear:HP_Track_RFront;\n\n\t\t\t\t_Turret:DM_Mid_Trail",
+                     "type" : "AAAAAAAA",
+                     "name" : "Drift"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_hullAngle:hullAngle;\n\n\t\t\t\t_TrackFront:HP_Track_LRear;\n\n\t\t\t\t_TrackRear:HP_Track_LFront;\n\n\t\t\t\t_Turret:DM_Mid_Trail",
+                     "name" : "Drift",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "name" : "AAAA",
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_TrackFront:HP_Track_RFront;\n\n\t\t\t\t_TrackRear:HP_Track_RRear;\n\n\t\t\t\t_rotSpeed:rotSpeed"
+                  },
+                  {
+                     "name" : "AAAA",
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_TrackFront:HP_Track_LFront;\n\n\t\t\t\t_TrackRear:HP_Track_LRear;\n\n\t\t\t\t_rotSpeed:rotSpeed"
+                  },
+                  {
+                     "name" : "AAAA",
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_TrackFront:HP_Track_LRear;\n\n\t\t\t\t_TrackRear:HP_Track_LFront;\n\n\t\t\t\t_rotSpeed:rotSpeed"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_TrackFront:HP_Track_RRear;\n\n\t\t\t\t_TrackRear:HP_Track_RFront;\n\n\t\t\t\t_rotSpeed:rotSpeed",
+                     "name" : "AAAA",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_RRear;\n\n\t\t\t\t_TrackFront:HP_Track_RFront;\n\n\t\t\t\t_TrackUpRear:HP_TrackUp_RRear;\n\n\t\t\t\t_TrackUpFront:HP_TrackUp_RFront;\n\n\t\t\t\t_TankDust:DM_Mid_Trail",
+                     "name" : "AAAA",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_LRear;\n\n\t\t\t\t_TrackFront:HP_Track_LFront;\n\n\t\t\t\t_TrackUpRear:HP_TrackUp_LRear;\n\n\t\t\t\t_TrackUpFront:HP_TrackUp_LFront;\n\n\t\t\t\t_TankDust:DM_Mid_Trail",
+                     "type" : "AAAAAAAA",
+                     "name" : "AAAA"
+                  },
+                  {
+                     "type" : "AAAAAAAA",
+                     "name" : "AAAA",
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_RFront;\n\n\t\t\t\t_TrackFront:HP_Track_RRear;\n\n\t\t\t\t_TrackUpRear:HP_TrackUp_RFront;\n\n\t\t\t\t_TrackUpFront:HP_TrackUp_RRear;\n\n\t\t\t\t_TankDust:DM_Mid_Trail"
+                  },
+                  {
+                     "name" : "AAAA",
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_LFront;\n\n\t\t\t\t_TrackFront:HP_Track_LRear;\n\n\t\t\t\t_TrackUpRear:HP_TrackUp_LFront;\n\n\t\t\t\t_TrackUpFront:HP_TrackUp_LRear;\n\n\t\t\t\t_TankDust:DM_Mid_Trail"
+                  }
+               ],
+               "isPC" : true,
+               "type" : "union"
+            },
+            "name" : "AAAAAAAAAAAA"
+         },
+         {
+            "name" : "TrackEffect1_NPC",
+            "selector" : {
+               "selector" : [
+                  {
+                     "name" : "Slip_NPC",
+                     "type" : "AAAAAAAA",
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_RRear;\n\n\t\t\t\t_TankDust:DM_Mid_Trail"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_const1:1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_LRear;\n\n\t\t\t\t_TankDust:DM_Mid_Trail",
+                     "name" : "Slip_NPC",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindR;\n\n\t\t\t\t_direction:directionR;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaR;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_RFront;\n\n\t\t\t\t_TankDust:DM_Mid_Trail",
+                     "name" : "Slip_NPC",
+                     "type" : "AAAAAAAA"
+                  },
+                  {
+                     "parameters" : "_matkind:matkindL;\n\n\t\t\t\t_direction:directionL;\n\n\t\t\t\t_const1:-1;\n\n\t\t\t\t_delta:deltaL;\n\n\t\t\t\t_speed:speed;\n\n\t\t\t\t_isUnderWater:isUnderWater;\n\n\t\t\t\t_TrackRear:HP_Track_LFront;\n\n\t\t\t\t_TankDust:DM_Mid_Trail",
+                     "type" : "AAAAAAAA",
+                     "name" : "Slip_NPC"
+                  }
+               ],
+               "type" : "union",
+               "isPC" : false
+            }
+         }
+      ]
+   }
+}

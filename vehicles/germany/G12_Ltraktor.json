@@ -1,0 +1,495 @@
+{
+   "radios" : {
+      "FuG2" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.84",
+      "lodDist" : "MEDIUM",
+      "default" : "germany_cross"
+   },
+   "turrets0" : {
+      "Swedish_Bofors" : {
+         "models" : {
+            "exploded" : "vehicles/german/G12_Ltraktor/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G12_Ltraktor/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G12_Ltraktor/normal/lod0/Turret_01.model"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G12_Ltraktor/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G12_Ltraktor/collision_client/Turret_01.model"
+         },
+         "weight" : 700,
+         "tags" : {},
+         "notInShop" : true,
+         "circularVisionRadius" : 310,
+         "physicsShape" : "0.926 0.000 1.032 0.000 0.511 0.116 0.601 0.457 0.500 0.500 0.186 0.500 0.160 0.399 0.000",
+         "level" : 1,
+         "camouflage" : {
+            "tiling" : "0.6 0.6 0.000000 0.000000"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1 0 0",
+                  "size" : "0.3",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.459057 0.254394 0.0981061",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "1 0 0",
+                  "size" : "0.3",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "0.459057 0.254392 0.0981058",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "showEmblemsOnGun" : false,
+         "maxHealth" : 26,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 50,
+            "maxRegenHealth" : 25
+         },
+         "userString" : "#germany_vehicles:Swedish_Bofors",
+         "gunPosition" : "0 0 1",
+         "armor" : {
+            "armor_2" : 14,
+            "armor_5" : 5,
+            "armor_8" : "",
+            "armor_6" : 5,
+            "armor_3" : 14,
+            "armor_9" : 14,
+            "armor_1" : 14,
+            "armor_4" : 14
+         },
+         "price" : "",
+         "guns" : {
+            "_37mm_KwK_L46" : "shared",
+            "_20mm_Breda" : "shared"
+         },
+         "rotationSpeed" : 39,
+         "wwturretRotatorSoundManual" : "tur_man_trav_05",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 30,
+            "maxRegenHealth" : 15,
+            "repairCost" : "2.0"
+         }
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.336",
+      "moving" : "0.168",
+      "still" : "0.224"
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : {},
+      "commander" : "radioman\n\n\t\t\tgunner"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Krupp_M311" : {
+               "smplEnginePower" : "89.8689"
+            }
+         },
+         "chassis" : {
+            "LeichtertaktorkettenB" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "0.2",
+      "tiling" : "1 1 0 0"
+   },
+   "chassis" : {
+      "LeichtertaktorkettenB" : {
+         "models" : {
+            "exploded" : "vehicles/german/G12_Ltraktor/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G12_Ltraktor/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G12_Ltraktor/normal/lod0/Chassis.model"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G12_Ltraktor/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G12_Ltraktor/collision/Chassis.model"
+         },
+         "tags" : {},
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 1,
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/german/G12_Ltraktor/track/segment.model",
+            "segmentOffset" : "0.156",
+            "left" : "vehicles/german/G12_Ltraktor/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/german/G12_Ltraktor/track/segment.model",
+            "right" : "vehicles/german/G12_Ltraktor/track/right.track",
+            "segmentLength" : "0.133"
+         },
+         "tracks" : {
+            "textureScale" : "-2.5",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.36",
+            "vehicleMovement" : "0.36"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "size" : "0.34 0.24"
+         },
+         "rotationIsAroundCenter" : false,
+         "trackThickness" : "-0.0091",
+         "maxClimbAngle" : 25,
+         "brakeForce" : 35500,
+         "armor" : {
+            "rightTrack" : 5,
+            "leftTrack" : 5
+         },
+         "rotationSpeed" : 66,
+         "hullPosition" : "0 1 0",
+         "weight" : 2000,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 40,
+         "notInShop" : true,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.03",
+                  "startIndex" : "",
+                  "count" : 12,
+                  "minOffset" : "-0.03",
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "count" : 12,
+                  "minOffset" : "-0.03",
+                  "maxOffset" : "0.03",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "userString" : "#germany_vehicles:LeichtertaktorkettenB",
+         "maxHealth" : 50,
+         "topRightCarryingPoint" : "0.894281 1.41138",
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxLoad" : 9500,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 2,
+                  "startIndex" : 2
+               },
+               {
+                  "count" : 12,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "startIndex" : 2,
+                  "count" : 2
+               },
+               {
+                  "count" : 12,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0"
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : 20
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 20,
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "isLeft" : true
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 20,
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : false,
+                  "name" : "WD_R1",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : 20
+               }
+            ]
+         },
+         "price" : "",
+         "terrainResistance" : "0.9 1.2 2.1",
+         "trackNodes" : {
+            "elasticity" : 1096,
+            "damping" : 2,
+            "maxAmplitude" : "0.005",
+            "enable" : true,
+            "maxOffset" : "0.005",
+            "gravity" : "-8.9",
+            "linkBones" : false,
+            "node" : [
+               {
+                  "backwardElastK" : 3,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : 3,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : 1,
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : 3
+               },
+               {
+                  "offset" : "-0.045",
+                  "backwardElastK" : "2.2",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.2"
+               },
+               {
+                  "backwardElastK" : "2.4",
+                  "offset" : "-0.045",
+                  "forwardElastK" : 1,
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "backwardElastK" : "2.8",
+                  "offset" : "-0.045",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : 3,
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "2.2",
+                  "offset" : "-0.045",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "offset" : "-0.045",
+                  "backwardElastK" : "2.4",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "2.8",
+                  "offset" : "-0.045",
+                  "forwardElastK" : 1,
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2"
+               }
+            ]
+         }
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "engines" : {
+      "Krupp_M311" : "shared"
+   },
+   "hull" : {
+      "camouflage" : {
+         "tiling" : "1.6 1.6 0.000000 0.000000"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_small"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.89",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.30 36.00 0.34 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.30 36.00 0.34 1.00 0.05 0.32"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.193142 0.450262 1.42425",
+            "size" : "0.3",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : true,
+            "rayEnd" : "-0.193142 0.273766 1.3889"
+         },
+         "inscription" : [
+            {
+               "hideIfDamaged" : false,
+               "rayEnd" : "0.942152 -0.2227 0.77752",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.64",
+               "rayStart" : "1.14215 -0.2227 0.77752"
+            },
+            {
+               "rayEnd" : "-0.942152 -0.2227 0.77752",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.64",
+               "rayStart" : "-1.14215 -0.2227 0.77752"
+            }
+         ]
+      },
+      "armor" : {
+         "armor_8" : "",
+         "armor_5" : 5,
+         "armor_6" : 6,
+         "armor_2" : 19,
+         "armor_3" : 14,
+         "armor_7" : 14,
+         "armor_12" : 14,
+         "armor_11" : 14,
+         "armor_10" : 5,
+         "armor_16" : 6,
+         "armor_9" : 14,
+         "armor_4" : 14,
+         "armor_1" : 14
+      },
+      "weight" : 4300,
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 45,
+         "maxHealth" : 65,
+         "repairCost" : "1.0"
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G12_Ltraktor/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G12_Ltraktor/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G12_Ltraktor/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.644204 -0.90199"
+      },
+      "hangarShadowTexture" : "vehicles/german/G12_Ltraktor/Ltraktor_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G12_Ltraktor/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G12_Ltraktor/collision/Hull.model"
+      },
+      "maxHealth" : 104
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : 36,
+      "backward" : 9
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.779134266"
+   },
+   "repairCost" : ""
+}

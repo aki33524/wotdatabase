@@ -1,0 +1,511 @@
+{
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 50
+   },
+   "hull" : {
+      "weight" : 18650,
+      "ammoBayHealth" : {
+         "maxHealth" : 160,
+         "maxRegenHealth" : 110,
+         "repairCost" : "1.0"
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.48",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.021549 0.271598 2.77969",
+            "size" : "0.26",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.021549 0.0930842 2.68951",
+            "hideIfDamaged" : false
+         }
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/czech/Cz01_Skoda_T40/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/czech/Cz01_Skoda_T40/collision/Hull.model"
+      },
+      "maxHealth" : 560,
+      "hangarShadowTexture" : "vehicles/czech/Cz01_Skoda_T40/Skoda_T40_HangarShadowMap.dds",
+      "armor" : {
+         "armor_1" : 65,
+         "armor_10" : 20,
+         "armor_13" : 20,
+         "armor_14" : 40,
+         "armor_5" : 15,
+         "armor_9" : 40,
+         "armor_12" : 30,
+         "armor_2" : 40,
+         "armor_4" : 30,
+         "armor_8" : "",
+         "armor_7" : 40,
+         "armor_11" : 30,
+         "armor_6" : 20,
+         "armor_3" : 30
+      },
+      "primaryArmor" : "armor_1 armor_7 armor_4",
+      "camouflage" : {
+         "tiling" : "2.02 2.02 0.75 0.48"
+      },
+      "exhaust" : {
+         "pixie" : "diesel_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "models" : {
+         "exploded" : "vehicles/czech/Cz01_Skoda_T40/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/czech/Cz01_Skoda_T40/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/czech/Cz01_Skoda_T40/normal/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 1"
+      }
+   },
+   "chassis" : {
+      "Chassis_Cz01_Skoda_T40" : {
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/czech/Cz01_Skoda_T40/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/czech/Cz01_Skoda_T40/collision_client/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "models" : {
+            "exploded" : "vehicles/czech/Cz01_Skoda_T40/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/czech/Cz01_Skoda_T40/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/czech/Cz01_Skoda_T40/normal/lod0/Chassis.model"
+         },
+         "terrainResistance" : "0.8 0.9 2",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "tracks" : {
+            "textureScale" : "-1.5",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "price" : 12000,
+         "bulkHealthFactor" : "3.0",
+         "trackNodes" : {
+            "maxOffset" : "0.01",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.6"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.6",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.85",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "0.83",
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "leftSibling" : "Track_VT_L1",
+                  "backwardElastK" : "2.5",
+                  "name" : "Track_VT_L2",
+                  "rightSibling" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R0",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.83"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R1",
+                  "backwardElastK" : "2.5",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R3"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R2",
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false
+               }
+            ],
+            "damping" : 8,
+            "offset" : "0",
+            "backwardElastK" : 1,
+            "forwardElastK" : 1,
+            "linkBones" : true,
+            "enable" : true,
+            "elasticity" : 1500,
+            "maxAmplitude" : "0.015",
+            "gravity" : -4
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "notInShop" : true,
+         "tags" : {},
+         "rotationSpeed" : 38,
+         "wwsoundPC" : "treads_type_pc",
+         "brakeForce" : 39000,
+         "maxRegenHealth" : 105,
+         "repairCost" : "5.0",
+         "topRightCarryingPoint" : "1.24002 2.31079",
+         "maxLoad" : 41500,
+         "maxHealth" : 140,
+         "level" : 6,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/czech/Cz01_Skoda_T40/track/T40_track.model",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/czech/Cz01_Skoda_T40/track/right.track",
+            "segmentModelRight" : "vehicles/czech/Cz01_Skoda_T40/track/T40_track.model",
+            "segmentOffset" : "0.076",
+            "segmentLength" : "0.112",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "left" : "vehicles/czech/Cz01_Skoda_T40/track/left.track"
+         },
+         "weight" : 11730,
+         "trackThickness" : "0",
+         "traces" : {
+            "size" : "0.5 0.7",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank"
+         },
+         "hullPosition" : "0.000000 1.05719 0.000000",
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0.375",
+                  "count" : 6,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 6,
+                  "template" : "W_L",
+                  "radius" : "0.375",
+                  "startIndex" : ""
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "25.714",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : "22.5"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "22.5",
+                  "isLeading" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0"
+               }
+            ]
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.07",
+                  "isLeft" : true,
+                  "minOffset" : "-0.1",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "template" : "Track_L"
+               },
+               {
+                  "count" : 6,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "minOffset" : "-0.1",
+                  "maxOffset" : "0.07",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : true,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "userString" : "#czech_vehicles:Chassis_Cz01_Skoda_T40"
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.344",
+      "still" : "0.229",
+      "camouflageBonus" : "0.03",
+      "moving" : "0.172",
+      "camouflageNetBonus" : "0.1"
+   },
+   "crewXpFactor" : "1.5",
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Cz01_Skoda_T40" : {
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "price" : 12000,
+         "notInShop" : true,
+         "physicsShape" : "1.003 -0.005 1.099 0.000 0.501 0.127 0.636 0.484 0.378 0.500 0.308 0.500 0.178 0.500 0.000",
+         "userString" : "#czech_vehicles:Turret_1_Cz01_Skoda_T40",
+         "armor" : {
+            "armor_8" : "",
+            "armor_4" : 40,
+            "armor_6" : 30,
+            "armor_11" : 15,
+            "armor_3" : 40,
+            "armor_7" : 40,
+            "armor_1" : 65,
+            "armor_10" : 40,
+            "armor_2" : 40,
+            "armor_12" : 40,
+            "armor_5" : 20,
+            "armor_9" : 40
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayEnd" : "-0.885808 0.267168 -1.0865",
+                  "hideIfDamaged" : false,
+                  "size" : "0.76",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-0.970187 0.311199 -1.11718"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "0.885808 0.267168 -1.0865",
+                  "rayStart" : "0.970187 0.311199 -1.11718",
+                  "size" : "0.76",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "player" : [
+               {
+                  "rayEnd" : "-1 0 1",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1 0 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.24"
+               },
+               {
+                  "rayEnd" : "1 0 1",
+                  "hideIfDamaged" : true,
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.24",
+                  "rayStart" : "1 0 1"
+               }
+            ]
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40
+         },
+         "gunPosition" : "0.000000 0.369643 1.12886",
+         "level" : 6,
+         "guns" : {
+            "_88mm_Vz_37N_A" : "shared"
+         },
+         "weight" : 6200,
+         "camouflage" : {
+            "tiling" : "1 1 0.72 0.3"
+         },
+         "models" : {
+            "destroyed" : "vehicles/czech/Cz01_Skoda_T40/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/czech/Cz01_Skoda_T40/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/czech/Cz01_Skoda_T40/normal/lod0/Turret_01.model"
+         },
+         "maxHealth" : 140,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120,
+            "repairCost" : "1.0"
+         },
+         "showEmblemsOnGun" : false,
+         "rotationSpeed" : 32,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/czech/Cz01_Skoda_T40/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/czech/Cz01_Skoda_T40/collision_client/Turret_01.model"
+         },
+         "tags" : {},
+         "circularVisionRadius" : 370
+      }
+   },
+   "repairCost" : "4.00",
+   "crew" : {
+      "commander" : {},
+      "radioman" : {},
+      "driver" : {},
+      "gunner" : {},
+      "loader" : {}
+   },
+   "camouflage" : {
+      "priceFactor" : "1.2",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "engines" : {
+      "Skoda_16_ADH_140" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Skoda_16_ADH_140" : {
+               "smplEnginePower" : "740.0968"
+            }
+         },
+         "chassis" : {
+            "Chassis_Cz01_Skoda_T40" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "premiumVehicleXPFactor" : "0.3",
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "radios" : {
+      "Fu7A" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.752201376"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "czech_round"
+   }
+}

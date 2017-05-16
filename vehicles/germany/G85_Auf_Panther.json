@@ -1,0 +1,358 @@
+{
+   "chassis" : {
+      "Chassis_Auf_Panther" : {
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G85_Auf_Panther/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G85_Auf_Panther/collision/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "rotationIsAroundCenter" : true,
+         "price" : 15000,
+         "repairCost" : "5.0",
+         "maxHealth" : 165,
+         "bulkHealthFactor" : "3.0",
+         "tags" : {},
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.88"
+         },
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.44 0.58",
+            "lodDist" : "FAR"
+         },
+         "brakeForce" : 40000,
+         "weight" : 12500,
+         "wwsoundNPC" : "trds_chf_npc",
+         "userString" : "#germany_vehicles:Chassis_Auf_Panther",
+         "navmeshGirth" : "6.0",
+         "models" : {
+            "undamaged" : "vehicles/german/G85_Auf_Panther/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G85_Auf_Panther/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G85_Auf_Panther/crash/lod0/Chassis.model"
+         },
+         "rotationSpeed" : 36,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.18",
+            "vehicleMovement" : "0.18"
+         },
+         "maxLoad" : 40000,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 8,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "radius" : "0.44"
+               },
+               {
+                  "template" : "W_R",
+                  "count" : 8,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0.44"
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "radius" : "0.39926",
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L1"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L2"
+               },
+               {
+                  "radius" : "0.39926",
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R1"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R2",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "maxRegenHealth" : 130,
+         "wwsoundPC" : "treads_type_pc",
+         "notInShop" : true,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "1.31 1.96459",
+         "terrainResistance" : "0.8 0.9 1.8",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "level" : 6,
+         "armor" : {
+            "leftTrack" : 25,
+            "rightTrack" : 25
+         }
+      }
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "alpha" : "0.92",
+      "lodDist" : "MEDIUM"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Auf_Panther" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.07245"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Engine_Auf_Panther" : {
+               "smplEnginePower" : "951.553"
+            }
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "radioman" : {},
+      "driver" : {},
+      "gunner" : {},
+      "commander" : {},
+      "loader" : {}
+   },
+   "hull" : {
+      "weight" : 21275,
+      "armor" : {
+         "armor_1" : 85,
+         "armor_10" : 25,
+         "armor_9" : "",
+         "armor_6" : 16,
+         "armor_2" : 50,
+         "armor_4" : 40,
+         "armor_5" : 40,
+         "armor_3" : 50,
+         "armor_7" : 16,
+         "armor_8" : 16
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.964648 -0.3674"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.28",
+            "hideIfDamaged" : true,
+            "rayEnd" : "0.530927 -0.0446565 2.55106",
+            "rayStart" : "0.530927 0.775022 3.12388"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 680,
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "hangarShadowTexture" : "vehicles/german/G85_Auf_Panther/Auf_Panther_HangarShadowMap.dds",
+      "models" : {
+         "exploded" : "vehicles/german/G85_Auf_Panther/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G85_Auf_Panther/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G85_Auf_Panther/normal/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 130,
+         "maxHealth" : 190
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.48",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G85_Auf_Panther/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G85_Auf_Panther/collision_client/Hull.model"
+      }
+   },
+   "speedLimits" : {
+      "backward" : 22,
+      "forward" : 60
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "repairCost" : 8,
+   "camouflage" : {
+      "priceFactor" : "1.4",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/german/G85_Auf_Panther/Auf_Panther_CM.dds"
+   },
+   "radios" : {
+      "Radio_Auf_Panther" : "shared"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Auf_Panther" : {
+         "showEmblemsOnGun" : false,
+         "userString" : "#germany_vehicles:Turret_1_Auf_Panther",
+         "weight" : 2000,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1.10124 0.523381 0.413551",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.248977 0.0897331 0.12099",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "0.248977 0.0897331 0.12099",
+                  "rayStart" : "1.10124 0.523381 0.413551",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayStart" : "-1.02786 0.460718 -0.586176",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.23717 0.068478 -0.116125",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.64"
+               },
+               {
+                  "size" : "0.64",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1.02786 0.460718 -0.586176",
+                  "rayEnd" : "0.23717 0.068478 -0.116125",
+                  "hideIfDamaged" : true
+               }
+            ]
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 65,
+            "repairCost" : "1.0",
+            "maxHealth" : 130
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "tags" : {},
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "guns" : {
+            "Gun_Auf_Panther" : "shared"
+         },
+         "maxHealth" : 170,
+         "price" : 9380,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G85_Auf_Panther/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G85_Auf_Panther/collision/Turret_01.model"
+         },
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 90,
+            "maxRegenHealth" : 45,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_6" : 30,
+            "armor_10" : 16,
+            "armor_9" : "",
+            "armor_1" : 50,
+            "armor_4" : 30,
+            "armor_2" : 75,
+            "armor_7" : 16,
+            "armor_3" : 30,
+            "armor_5" : 50,
+            "armor_8" : 16
+         },
+         "physicsShape" : "1.025 -0.014 1.000 0.000 0.440 0.225 0.827 0.468 0.362 0.500 0.301 0.500 0.290 0.682 0.000",
+         "gunPosition" : "0.03672 0.218864 0.839626",
+         "level" : 5,
+         "circularVisionRadius" : 380,
+         "notInShop" : true,
+         "rotationSpeed" : 44,
+         "models" : {
+            "undamaged" : "vehicles/german/G85_Auf_Panther/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G85_Auf_Panther/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G85_Auf_Panther/crash/lod0/Turret_01.model"
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "clientAdjustmentFactors" : {},
+   "invisibility" : {
+      "moving" : "0.205",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.308",
+      "camouflageBonus" : "0.03",
+      "still" : "0.205"
+   },
+   "engines" : {
+      "Engine_Auf_Panther" : "shared"
+   }
+}

@@ -1,0 +1,449 @@
+{
+   "emblems" : {
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM",
+      "default" : "usa_star"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : 41
+   },
+   "radios" : {
+      "Alarm_flags_bot" : "shared"
+   },
+   "turrets0" : {
+      "Cunningham_D1_bot" : {
+         "rotationSpeed" : 39,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "size" : "0.26",
+                  "rayEnd" : "-0 0 0",
+                  "rayStart" : "-1 0 0"
+               },
+               {
+                  "hideIfDamaged" : true,
+                  "size" : "0.26",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0 0 0",
+                  "rayStart" : "0.58066 0.267611 0.193771"
+               }
+            ]
+         },
+         "notInShop" : true,
+         "tags" : {},
+         "armor" : {
+            "armor_5" : "6.4",
+            "armor_1" : "9.5",
+            "armor_8" : ""
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A01_T1_Cunningham/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A01_T1_Cunningham/collision_client/Turret_01.model"
+         },
+         "weight" : 700,
+         "primaryArmor" : "armor_1 armor_1 armor_1",
+         "models" : {
+            "destroyed" : "vehicles/american/A01_T1_Cunningham/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A01_T1_Cunningham/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A01_T1_Cunningham/normal/lod0/Turret_01.model"
+         },
+         "gunPosition" : "0 0 1",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 25,
+            "maxHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "price" : "",
+         "userString" : "#usa_vehicles:Cunningham_D1_bot",
+         "physicsShape" : "0.903 -0.047 0.963 0.000 0.609 0.200 0.601 0.391 0.617 0.609 0.000 0.500 0.000 0.100 0.000",
+         "circularVisionRadius" : 240,
+         "guns" : {
+            "_37mm_Gun_M1916_bot" : "shared"
+         },
+         "level" : 1,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 15,
+            "maxHealth" : 30,
+            "repairCost" : "2.0"
+         },
+         "showEmblemsOnGun" : false,
+         "maxHealth" : 21
+      }
+   },
+   "chassis" : {
+      "Cunningham_E1_bot" : {
+         "trackThickness" : "-0.008",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "traces" : {
+            "size" : "0.4 0.32",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_01"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.03",
+                  "maxOffset" : "0.03",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "count" : 8
+               },
+               {
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "maxOffset" : "0.03",
+                  "minOffset" : "-0.03",
+                  "count" : 8
+               }
+            ]
+         },
+         "level" : 1,
+         "tracks" : {
+            "textureScale" : "-3.6",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxClimbAngle" : 25,
+         "userString" : "#usa_vehicles:Cunningham_E1_bot",
+         "price" : "",
+         "rotationIsAroundCenter" : false,
+         "topRightCarryingPoint" : "0.743125 1.02269",
+         "brakeForce" : 35500,
+         "weight" : 2000,
+         "hullPosition" : "0 1 0",
+         "wheels" : {
+            "group" : [
+               {
+                  "radius" : "0",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "W_L"
+               },
+               {
+                  "count" : 8,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 2,
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "startIndex" : 1
+               },
+               {
+                  "radius" : "0",
+                  "count" : 2,
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "syncAngle" : "23.2258",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "23.2258",
+                  "name" : "WD_L3",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "23.2258",
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R3",
+                  "syncAngle" : "23.2258",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true
+               }
+            ]
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.42",
+            "vehicleMovement" : "0.42"
+         },
+         "notInShop" : true,
+         "repairCost" : "1.0",
+         "splineDesc" : {
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.038",
+            "segmentModelRight" : "vehicles/american/A01_T1_Cunningham/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.166",
+            "left" : "vehicles/american/A01_T1_Cunningham/track/left.track",
+            "right" : "vehicles/american/A01_T1_Cunningham/track/right.track",
+            "segmentModelLeft" : "vehicles/american/A01_T1_Cunningham/track/segment.model"
+         },
+         "maxRegenHealth" : 30,
+         "wwsoundPC" : "treads_type_pc",
+         "maxLoad" : 7600,
+         "maxHealth" : 40,
+         "terrainResistance" : "1.1 1.4 2.3",
+         "trackNodes" : {
+            "maxAmplitude" : "0.1",
+            "linkBones" : false,
+            "maxOffset" : "0.1",
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "node" : [
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.88",
+                  "backwardElastK" : "1.38",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.88",
+                  "backwardElastK" : "1.38",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "backwardElastK" : "1.38",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.88"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.38",
+                  "forwardElastK" : "0.88",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.88",
+                  "backwardElastK" : "1.38",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.38",
+                  "forwardElastK" : "0.88",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               }
+            ],
+            "enable" : true,
+            "elasticity" : 1108
+         },
+         "models" : {
+            "exploded" : "vehicles/american/A01_T1_Cunningham/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A01_T1_Cunningham/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A01_T1_Cunningham/normal/lod0/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A01_T1_Cunningham/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A01_T1_Cunningham/collision/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "armor" : {
+            "leftTrack" : 5,
+            "rightTrack" : 5
+         },
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L3",
+         "bulkHealthFactor" : "3.0",
+         "rotationSpeed" : 34
+      }
+   },
+   "clientAdjustmentFactors" : {},
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Cunningham_E1_bot" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Cunningham_bot" : {
+               "smplEnginePower" : "116.3009"
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "engines" : {
+      "Cunningham_bot" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "armor" : {
+         "armor_8" : "",
+         "armor_3" : "6.3",
+         "armor_4" : "6.3",
+         "armor_2" : "6.3",
+         "armor_16" : "9.5",
+         "armor_1" : "9.5",
+         "armor_5" : "6.3",
+         "armor_6" : "6.3",
+         "armor_15" : "6.3"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.32 34.00 0.32 1.00 0.05 0.30",
+         "pitchParams" : "0.32 34.00 0.32 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.91"
+      },
+      "hangarShadowTexture" : "vehicles/american/A01_T1_Cunningham/T1_Cunningham_HangarShadowMap.dds",
+      "models" : {
+         "destroyed" : "vehicles/american/A01_T1_Cunningham/crash/lod0/Hull.model",
+         "exploded" : "vehicles/american/A01_T1_Cunningham/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A01_T1_Cunningham/normal/lod0/Hull.model"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.26",
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "0.0262288 0.170632 1.82587",
+            "rayEnd" : "0.0262288 0.170608 1.66587"
+         },
+         "inscription" : [
+            {
+               "rayStart" : "0.972806 0.430871 -1.08261",
+               "rayEnd" : "0.772807 0.430871 -1.08261",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "size" : "0.52"
+            },
+            {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.52",
+               "rayEnd" : "-0.772807 0.430871 -1.08261",
+               "rayStart" : "-0.972806 0.430871 -1.08261"
+            }
+         ]
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 70,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 48
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A01_T1_Cunningham/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A01_T1_Cunningham/collision_client/Hull.model"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_small"
+      },
+      "weight" : 4000,
+      "turretPositions" : {
+         "turret" : "-0.004522 0.703017 -0.7504"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 84
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "radioman\n\n\t\t\tgunner\n\n\t\t\tloader"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "invisibility" : {
+      "firePenalty" : "0.338",
+      "camouflageBonus" : "0.03",
+      "still" : "0.225",
+      "moving" : "0.169",
+      "camouflageNetBonus" : "0.1"
+   },
+   "repairCost" : "",
+   "camouflage" : {
+      "exclusionMask" : "vehicles/american/A01_T1_Cunningham/T1_Cunningham_chassis_01_AM.dds",
+      "priceFactor" : "0.2",
+      "tiling" : "1 1 0 0"
+   }
+}

@@ -1,0 +1,530 @@
+{
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Ford_GAF" : {
+               "smplEnginePower" : 670
+            },
+            "Ford_GAFM2" : {
+               "smplEnginePower" : 780
+            }
+         },
+         "chassis" : {
+            "Chassis_T28_2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_T28" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A39_T28/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A39_T28/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "maxHealth" : 1200,
+      "weight" : 44050,
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "hangarShadowTexture" : "vehicles/american/A39_T28/T28_HangarShadowMap.dds",
+      "swinging" : {
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.32",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 240,
+         "maxRegenHealth" : 160
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.2752 0.584858 0.777178",
+               "hideIfDamaged" : false,
+               "rayStart" : "1.6752 0.584858 0.777178",
+               "size" : "0.3",
+               "isMirrored" : true
+            },
+            {
+               "size" : "0.3",
+               "rayStart" : "-1.6752 0.584858 0.777178",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.2752 0.584858 0.777178",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.0142205 0.0600716 3.02466",
+            "size" : "0.34",
+            "rayStart" : "-0.0142211 0.265517 3.36787"
+         },
+         "inscription" : [
+            {
+               "size" : "0.82",
+               "rayStart" : "1.6752 0.564426 -0.585975",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "rayEnd" : "1.2752 0.564426 -0.585975"
+            },
+            {
+               "rayStart" : "-1.6752 0.564426 -0.585975",
+               "size" : "0.82",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "rayEnd" : "-1.2752 0.564426 -0.585975"
+            }
+         ]
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.580625 2.16574"
+      },
+      "models" : {
+         "destroyed" : "vehicles/american/A39_T28/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A39_T28/normal/lod0/Hull.model",
+         "exploded" : "vehicles/american/A39_T28/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_9" : "101.6",
+         "armor_4" : "50.8",
+         "armor_3" : "50.8",
+         "armor_10" : "203.2",
+         "armor_2" : "203.2",
+         "armor_1" : 254,
+         "armor_12" : "",
+         "armor_6" : "133.35",
+         "armor_11" : "25.4",
+         "armor_8" : "25.4",
+         "armor_5" : "101.6",
+         "armor_13" : "101.6",
+         "armor_7" : "25.4"
+      },
+      "camouflage" : {
+         "tiling" : "0.97 0.97 0.000000 0.000000"
+      }
+   },
+   "radios" : {
+      "SCR_508" : "shared",
+      "SCR_528" : "shared"
+   },
+   "engines" : {
+      "Ford_GAF" : "shared",
+      "Ford_GAFM2" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_T28" : {
+         "models" : {
+            "destroyed" : "vehicles/american/A39_T28/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A39_T28/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A39_T28/crash/lod0/Turret_01.model"
+         },
+         "rotationSpeed" : 26,
+         "showEmblemsOnGun" : false,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "userString" : "#usa_vehicles:Turret_1_T28",
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "price" : 1200,
+         "maxHealth" : 300,
+         "gunPosition" : "0 0 0",
+         "notInShop" : true,
+         "wwturretRotatorSoundManual" : "tur_man_trav_04",
+         "emblemSlots" : {},
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "guns" : {
+            "_105mm_AT_Gun_T5E1" : "shared",
+            "_90mm_AT_Gun_T15E2" : "shared",
+            "_120mm_AT_Gun_T53" : "shared"
+         },
+         "level" : 8,
+         "armor" : {
+            "armor_6" : "",
+            "armor_8" : "",
+            "armor_7" : "",
+            "armor_5" : "",
+            "armor_3" : "",
+            "armor_4" : "",
+            "armor_2" : "",
+            "armor_1" : 18
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A39_T28/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/american/A39_T28/collision/Turret_01.model"
+         },
+         "circularVisionRadius" : 370,
+         "weight" : 170
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "repairCost" : "8.91",
+   "emblems" : {
+      "default" : "usa_star",
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM"
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : {},
+      "commander" : "AAAAAAAA",
+      "gunner" : {}
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "forward" : 22,
+      "backward" : 10
+   },
+   "invisibility" : {
+      "still" : "0.319",
+      "camouflageBonus" : "0.04",
+      "camouflageNetBonus" : "0.15",
+      "firePenalty" : "0.479",
+      "moving" : "0.191"
+   },
+   "chassis" : {
+      "Chassis_T28_2" : {
+         "traces" : {
+            "size" : "0.52 0.44",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_01",
+            "lodDist" : "FAR"
+         },
+         "maxLoad" : 62450,
+         "models" : {
+            "undamaged" : "vehicles/american/A39_T28/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A39_T28/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A39_T28/crash/lod0/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 10 0 0 0"
+            }
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.19",
+            "vehicleRotation" : "0.19"
+         },
+         "rotationSpeed" : 24,
+         "maxRegenHealth" : 150,
+         "brakeForce" : 35500,
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R5",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L5",
+                  "isLeft" : true
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 4,
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0.12745"
+               },
+               {
+                  "count" : 8,
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0"
+               },
+               {
+                  "startIndex" : 1,
+                  "radius" : "0.12745",
+                  "count" : 4,
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "count" : 8
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : true,
+         "maxHealth" : 200,
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "tags" : {},
+         "topRightCarryingPoint" : "1.25008 2.61456",
+         "userString" : "#usa_vehicles:Chassis_T28_2",
+         "price" : 33300,
+         "level" : 8,
+         "repairCost" : "5.0",
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "maxClimbAngle" : 25,
+         "terrainResistance" : "1.1 1.4 2.9",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "weight" : 12000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A39_T28/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A39_T28/collision/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.78"
+         },
+         "navmeshGirth" : "6.0"
+      },
+      "Chassis_T28" : {
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "tags" : {},
+         "userString" : "#usa_vehicles:Chassis_T28",
+         "topRightCarryingPoint" : "1.25008 2.61456",
+         "price" : 16500,
+         "rotationIsAroundCenter" : true,
+         "maxHealth" : 180,
+         "brakeForce" : 35500,
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 4,
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0.12745"
+               },
+               {
+                  "count" : 8,
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0.12745",
+                  "startIndex" : 1,
+                  "count" : 4,
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 8
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L5",
+                  "isLeading" : true,
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.52 0.44",
+            "textureSet" : "usa_01"
+         },
+         "maxLoad" : 59800,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 10 0 0 0"
+            }
+         },
+         "models" : {
+            "exploded" : "vehicles/american/A39_T28/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A39_T28/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A39_T28/crash/lod0/Chassis.model"
+         },
+         "rotationSpeed" : 20,
+         "maxRegenHealth" : 135,
+         "unlocks" : {
+            "chassis" : "Chassis_T28_2"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A39_T28/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A39_T28/collision/Chassis.model"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.78"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "navmeshGirth" : "6.0",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "weight" : 12000,
+         "maxClimbAngle" : 25,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "1.3 1.7 3.4",
+         "repairCost" : "5.0",
+         "level" : 7,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         }
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "1.6",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/american/A39_T28/T28_CM.dds"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.00693691"
+   }
+}

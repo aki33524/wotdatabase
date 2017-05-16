@@ -1,0 +1,369 @@
+{
+   "invisibility" : {
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.212",
+      "moving" : "0.071",
+      "camouflageBonus" : "0.02",
+      "still" : "0.141"
+   },
+   "crew" : {
+      "driver" : {},
+      "gunner" : {},
+      "loader" : {},
+      "radioman" : {},
+      "commander" : {}
+   },
+   "premiumVehicleXPFactor" : "0.4",
+   "camouflage" : {
+      "exclusionMask" : "vehicles/russian/R33_Churchill_LL/Churchill_LL_CM.dds",
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.0"
+   },
+   "radios" : {
+      "Mk19R" : "shared"
+   },
+   "crewXpFactor" : "1.5",
+   "chassis" : {
+      "Churchll" : {
+         "userString" : "#ussr_vehicles:Churchll",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 2 0 0 0 6 0 0 0"
+            }
+         },
+         "topRightCarryingPoint" : "1.05597 1.57548",
+         "bulkHealthFactor" : "3.0",
+         "brakeForce" : 42500,
+         "maxLoad" : 41950,
+         "repairCost" : "5.0",
+         "rotationSpeed" : 20,
+         "wwsoundNPC" : "trds_med_npc",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "isLeading" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.16704",
+                  "count" : 8,
+                  "template" : "W_L"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0.16704",
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "count" : 8
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0.16704",
+                  "template" : "WD_L",
+                  "count" : 3
+               },
+               {
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0.16704",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "terrainResistance" : "1.14 1.26 2.29",
+         "models" : {
+            "destroyed" : "vehicles/russian/R33_Churchill_LL/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/russian/R33_Churchill_LL/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/russian/R33_Churchill_LL/normal/lod0/Chassis.model"
+         },
+         "hullPosition" : "0.000000 1.15966 0.000000",
+         "traces" : {
+            "size" : "0.42 0.48",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/russian/R33_Churchill_LL/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/russian/R33_Churchill_LL/collision_client/Chassis.model"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "level" : 5,
+         "rotationIsAroundCenter" : false,
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L4",
+         "weight" : 9000,
+         "notInShop" : true,
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-0.96"
+         },
+         "maxRegenHealth" : 105,
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.19",
+            "vehicleRotation" : "0.19"
+         },
+         "price" : "4150.0",
+         "maxHealth" : 140,
+         "navmeshGirth" : "6.0"
+      }
+   },
+   "speedLimits" : {
+      "backward" : 14,
+      "forward" : 28
+   },
+   "emblems" : {
+      "default" : "ussr_star",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.86"
+   },
+   "hull" : {
+      "swinging" : {
+         "sensitivityToImpulse" : "0.4",
+         "pitchParams" : "0.24 34.00 0.40 1.00 0.05 0.30",
+         "rollParams" : "1.00 0.26 34.00 0.40 1.00 0.05 0.30",
+         "lodDist" : "FAR"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayStart" : "1.03892 0.640199 2.81966",
+            "rayEnd" : "1.03892 0.240276 2.82749",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.32"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "diesel_large"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.364959 0.41676"
+      },
+      "models" : {
+         "destroyed" : "vehicles/russian/R33_Churchill_LL/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/russian/R33_Churchill_LL/normal/lod0/Hull.model",
+         "exploded" : "vehicles/russian/R33_Churchill_LL/crash/lod0/Hull.model"
+      },
+      "maxHealth" : 560,
+      "hangarShadowTexture" : "vehicles/russian/R33_Churchill_LL/Churchill_LL_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/russian/R33_Churchill_LL/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/russian/R33_Churchill_LL/collision/Hull.model"
+      },
+      "armor" : {
+         "armor_3" : "76.2",
+         "armor_10" : "19.05",
+         "armor_13" : "",
+         "armor_8" : "50.6",
+         "armor_16" : "15.87",
+         "armor_11" : "15.87",
+         "armor_1" : 176,
+         "armor_2" : 88,
+         "armor_15" : "25.4",
+         "armor_5" : "114.3",
+         "armor_9" : "25.4",
+         "armor_14" : "38.1",
+         "armor_7" : 63,
+         "armor_4" : "50.8",
+         "armor_12" : "15.87",
+         "armor_6" : "38.1"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 160,
+         "maxRegenHealth" : 100
+      },
+      "weight" : 20869
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.743615214"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "engines" : {
+      "Bedford_Twin-Six" : "shared"
+   },
+   "turrets0" : {
+      "Churchll_mk_III" : {
+         "physicsShape" : "1.030 0.015 1.022 0.000 0.708 0.175 0.967 0.376 0.296 0.595 0.000 0.500 0.000 0.000 0.172",
+         "circularVisionRadius" : 350,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80,
+            "repairCost" : "1.0"
+         },
+         "gunPosition" : "-0 0 1",
+         "models" : {
+            "exploded" : "vehicles/russian/R33_Churchill_LL/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/russian/R33_Churchill_LL/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/russian/R33_Churchill_LL/crash/lod0/Turret_01.model"
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.74",
+                  "rayStart" : "0.90473 0.627039 -0.72801",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "0.53854 0.627039 -0.567062"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.74",
+                  "rayStart" : "-1.09763 0.407792 0.0309681",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0.702959 0.406776 -0.0341008"
+               }
+            ],
+            "player" : [
+               {
+                  "isMirrored" : true,
+                  "rayEnd" : "0.6389 0.451599 0.355151",
+                  "hideIfDamaged" : true,
+                  "rayStart" : "1.03357 0.452614 0.42022",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32"
+               },
+               {
+                  "size" : "0.32",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 1",
+                  "hideIfDamaged" : true,
+                  "rayStart" : "-1 0 1"
+               }
+            ]
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 65,
+            "maxHealth" : 130,
+            "repairCost" : "1.0"
+         },
+         "rotationSpeed" : "34.13",
+         "userString" : "#ussr_vehicles:Churchll_mk_III",
+         "guns" : {
+            "QF_6_pounder_Mk_III" : "shared"
+         },
+         "maxHealth" : 140,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "price" : "9450.0",
+         "weight" : 7500,
+         "notInShop" : true,
+         "tags" : {},
+         "armor" : {
+            "armor_4" : "76.2",
+            "armor_10" : "19.05",
+            "armor_9" : "",
+            "armor_3" : 88,
+            "armor_7" : "25.4",
+            "armor_6" : "25.4",
+            "armor_5" : "76.2",
+            "armor_2" : 88,
+            "armor_1" : 88,
+            "armor_8" : "19.05"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/russian/R33_Churchill_LL/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/russian/R33_Churchill_LL/collision/Turret_01.model"
+         },
+         "showEmblemsOnGun" : false,
+         "level" : 5
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Churchll" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10143"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Bedford_Twin-Six" : {
+               "smplEnginePower" : "395.4232"
+            }
+         }
+      }
+   },
+   "repairCost" : "3.5"
+}

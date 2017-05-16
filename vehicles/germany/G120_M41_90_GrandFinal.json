@@ -1,0 +1,514 @@
+{
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_AOS-895-3" : {
+               "smplEnginePower" : "528.6406"
+            }
+         },
+         "chassis" : {
+            "Chassis_G120_M41_90_GrandFinal" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "1.6",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "hull" : {
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "camouflage" : {
+         "tiling" : "1.96 1.96 0.000000 0.000000"
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 34.00 0.42 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.4",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 34.00 0.42 1.00 0.05 0.30"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_10",
+      "weight" : 10702,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G120_M41_90/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G120_M41_90/collision_client/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "2.0",
+         "maxRegenHealth" : 135,
+         "maxHealth" : 200
+      },
+      "maxHealth" : 880,
+      "models" : {
+         "destroyed" : "vehicles/german/G120_M41_90_GrandFinal/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G120_M41_90_GrandFinal/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G120_M41_90_GrandFinal/normal/lod0/Hull.model"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.24",
+            "rayStart" : "0.43928 0.419706 2.07636",
+            "rayEnd" : "0.439328 0.245881 1.97744",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false
+         },
+         "fixedEmblem" : {
+            "rayStart" : "-0.0413545 0.347731 2.20276",
+            "emblemId" : 822,
+            "size" : "0.465",
+            "rayEnd" : "-0.0413329 0.173883 2.10389",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false
+         }
+      },
+      "turretPositions" : {
+         "turret" : "-0.00047 0.598844 0.268222"
+      },
+      "hangarShadowTexture" : "vehicles/german/G120_M41_90/M41_90_HangarShadowMap.dds",
+      "armor" : {
+         "armor_8" : "12.7",
+         "armor_6" : "25.4",
+         "armor_2" : "31.8",
+         "armor_14" : "19.1",
+         "armor_15" : "",
+         "armor_10" : "19.1",
+         "armor_5" : "19.1",
+         "armor_3" : "25.4",
+         "armor_12" : "19.1",
+         "armor_1" : "25.4",
+         "armor_13" : "25.4",
+         "armor_4" : "12.7",
+         "armor_7" : "25.4",
+         "armor_9" : "38.1",
+         "armor_16" : "25.4",
+         "armor_11" : "9.5"
+      }
+   },
+   "chassis" : {
+      "Chassis_G120_M41_90_GrandFinal" : {
+         "brakeForce" : 28000,
+         "maxClimbAngle" : 25,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.06",
+                  "count" : 5,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "count" : 5,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "level" : 8,
+         "topRightCarryingPoint" : "1.2626 1.5715",
+         "splineDesc" : {
+            "segmentLength" : "0.139",
+            "segmentModelLeft" : "vehicles/german/G120_M41_90/track/segment.model",
+            "left" : "vehicles/german/G120_M41_90/track/left.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.122",
+            "right" : "vehicles/german/G120_M41_90/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/german/G120_M41_90/track/segment.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "traces" : {
+            "size" : "0.5 0.58",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_04",
+            "bufferPrefs" : "mediumTank"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G120_M41_90/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G120_M41_90/collision/Chassis.model"
+         },
+         "tags" : {},
+         "wwsoundNPC" : "trds_chf_npc",
+         "repairCost" : "7.5",
+         "price" : 32000,
+         "rotationSpeed" : 54,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.14",
+            "vehicleRotation" : "0.14"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "terrainResistance" : "0.6 0.7 1.2",
+         "rotationIsAroundCenter" : true,
+         "maxHealth" : 220,
+         "models" : {
+            "exploded" : "vehicles/german/G120_M41_90_GrandFinal/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G120_M41_90_GrandFinal/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G120_M41_90_GrandFinal/crash/lod0/Chassis.model"
+         },
+         "maxLoad" : 26000,
+         "trackNodes" : {
+            "damping" : 2,
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.056",
+                  "backwardElastK" : 2,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "offset" : "-0.056",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.056",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.4",
+                  "offset" : "-0.056",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.75"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.056",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "offset" : "-0.056",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               }
+            ],
+            "maxOffset" : "0.02",
+            "elasticity" : 950,
+            "maxAmplitude" : "0.02",
+            "gravity" : "-9.8",
+            "offset" : "0",
+            "forwardElastK" : 1,
+            "linkBones" : false,
+            "enable" : true,
+            "backwardElastK" : 1
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "maxRegenHealth" : 165,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "notInShop" : true,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : 30,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0.28536"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 30,
+                  "isLeading" : true,
+                  "name" : "WD_R4"
+               },
+               {
+                  "syncAngle" : 30,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0.28536"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "isLeading" : true,
+                  "syncAngle" : 30
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0.13994",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 3
+               },
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0.13994",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 3
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 5
+               }
+            ]
+         },
+         "weight" : 6000,
+         "navmeshGirth" : "6.0",
+         "wwsoundPC" : "treads_type_pc",
+         "userString" : "#germany_vehicles:Chassis_G120_M41_90_GrandFinal",
+         "trackThickness" : "-0.0107",
+         "tracks" : {
+            "textureScale" : "-2.7",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "hullPosition" : "0 1 0"
+      }
+   },
+   "crewXpFactor" : "1.5",
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "engines" : {
+      "Continental_AOS-895-3" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.817789876"
+   },
+   "repairCost" : 5,
+   "premiumVehicleXPFactor" : "0.2",
+   "radios" : {
+      "AN_GRC_8" : "shared"
+   },
+   "emblems" : {
+      "default" : "germany_bundecross",
+      "alpha" : "0.8",
+      "lodDist" : "MEDIUM"
+   },
+   "customDefaultCamouflage" : true,
+   "invisibility" : {
+      "moving" : "0.279",
+      "camouflageBonus" : "0.03",
+      "still" : "0.279",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.374"
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "AAAAAAAA",
+      "loader" : {},
+      "gunner" : {}
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : "72.4",
+      "backward" : 24
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "turrets0" : {
+      "Turret_1_G120_M41_90_GrandFinal" : {
+         "guns" : {
+            "_90_76mm_US_Kanone_M_32" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "armor" : {
+            "armor_8" : "19.1",
+            "armor_6" : "25.4",
+            "armor_14" : "25.4",
+            "armor_2" : "25.4",
+            "armor_10" : "",
+            "armor_15" : "12.7",
+            "armor_3" : "25.4",
+            "armor_5" : "12.7",
+            "armor_13" : "12.7",
+            "armor_12" : "25.4",
+            "armor_1" : "25.4",
+            "armor_7" : "25.4",
+            "armor_4" : "25.4",
+            "armor_11" : "12.7",
+            "armor_16" : "25.4",
+            "armor_9" : "19.1"
+         },
+         "level" : 8,
+         "emblemSlots" : {
+            "fixedInscription" : {
+               "rayEnd" : "1 1 0",
+               "size" : "0.885",
+               "rayStart" : "0.908542 0.608978 0.25097",
+               "emblemId" : 823,
+               "hideIfDamaged" : true,
+               "rayUp" : "-0.0132425 0.998901 0.0449607"
+            },
+            "fixedEmblem" : [
+               {
+                  "emblemId" : 822,
+                  "rayStart" : "1.01903 0.609395 -0.340351",
+                  "size" : "0.274",
+                  "rayEnd" : "1 1 -0",
+                  "rayUp" : "-0.00739915 0.996596 0.0821128",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "size" : "0.334",
+                  "rayStart" : "-1.03701 0.452683 -0.254885",
+                  "emblemId" : 822,
+                  "rayEnd" : "-1 0 -0"
+               }
+            ]
+         },
+         "gunPosition" : "0.00047 0.323531 0.998643",
+         "showEmblemsOnGun" : false,
+         "models" : {
+            "exploded" : "vehicles/german/G120_M41_90_GrandFinal/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G120_M41_90_GrandFinal/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G120_M41_90_GrandFinal/crash/lod0/Turret_01.model"
+         },
+         "maxHealth" : 220,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "physicsShape" : "1.138 -0.237 1.120 0.000 0.597 0.016 0.829 0.576 0.424 0.535 0.312 0.500 0.000 0.100 0.000",
+         "circularVisionRadius" : 400,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 70,
+            "maxHealth" : 140,
+            "repairCost" : "1.0"
+         },
+         "camouflage" : {
+            "tiling" : "1.48 1.48 0.000000 0.000000"
+         },
+         "price" : 32000,
+         "rotationSpeed" : 50,
+         "userString" : "#germany_vehicles:Turret_1_G120_M41_90_GrandFinal",
+         "notInShop" : true,
+         "weight" : 5022,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G120_M41_90/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G120_M41_90/collision/Turret_01.model"
+         },
+         "tags" : {}
+      }
+   }
+}

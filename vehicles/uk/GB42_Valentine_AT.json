@@ -1,0 +1,595 @@
+{
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.92",
+      "default" : "britain_color"
+   },
+   "engines" : {
+      "GMC_6-71_Mk11" : "shared",
+      "AEC_A1909" : "shared",
+      "AEC_A189" : "shared",
+      "GMC_6-71_Mk10" : "shared"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.04",
+      "moving" : "0.211",
+      "camouflageNetBonus" : "0.15",
+      "still" : "0.351",
+      "firePenalty" : "0.527"
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.636157347"
+   },
+   "radios" : {
+      "N19Mk1" : "shared",
+      "N9" : "shared",
+      "N19Mk2" : "shared",
+      "N11" : "shared"
+   },
+   "hull" : {
+      "maxHealth" : 136,
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "hangarShadowTexture" : "vehicles/british/GB42_Valentine_AT/Valentine_AT_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB42_Valentine_AT/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB42_Valentine_AT/collision_client/Hull.model"
+      },
+      "weight" : 9960,
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 70,
+         "maxHealth" : 100,
+         "repairCost" : "1.0"
+      },
+      "primaryArmor" : "armor_1 armor_7 armor_4",
+      "turretPositions" : {
+         "turret" : "-0.007222 0.608988 1.49326"
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 37.00 0.34 1.00 0.05 0.33",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 37.00 0.34 1.00 0.05 0.33",
+         "sensitivityToImpulse" : "0.76"
+      },
+      "armor" : {
+         "armor_1" : 60,
+         "armor_2" : 30,
+         "armor_9" : 17,
+         "armor_4" : 60,
+         "armor_5" : 10,
+         "armor_10" : 20,
+         "armor_13" : 14,
+         "armor_11" : 40,
+         "armor_7" : 60,
+         "armor_12" : 20,
+         "armor_6" : 7,
+         "armor_14" : 14,
+         "armor_8" : "",
+         "armor_3" : 30
+      },
+      "models" : {
+         "exploded" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB42_Valentine_AT/normal/lod0/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : {
+            "rayEnd" : "1 1 1",
+            "size" : "0.74",
+            "rayStart" : "1.2872 0.588301 0.710746",
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 1 0.000000"
+         },
+         "player" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true,
+            "rayStart" : "1.28719 0.919194 0.120553",
+            "size" : "0.28",
+            "isMirrored" : true,
+            "rayEnd" : "1 1 0"
+         },
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayStart" : "0.26352 0.322764 2.20735",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "0.26352 0.322764 1.80735",
+            "size" : "0.2"
+         }
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_small"
+      }
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_GB42_Valentine_AT_2" : {
+         "price" : "2100.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "topRightCarryingPoint" : "1.098 1.52779",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "WD_R4",
+                  "radius" : "0"
+               },
+               {
+                  "name" : "W_R0",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_R5",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "name" : "W_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L4",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L5"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "count" : 3
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "count" : 4,
+                  "radius" : "0"
+               },
+               {
+                  "count" : 3,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "template" : "W_L"
+               }
+            ]
+         },
+         "userString" : "#gb_vehicles:Chassis_GB42_Valentine_AT_2",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "maxClimbAngle" : 25,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB42_Valentine_AT/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB42_Valentine_AT/collision_client/Chassis.model"
+         },
+         "weight" : 3200,
+         "rotationIsAroundCenter" : true,
+         "maxHealth" : 70,
+         "terrainResistance" : "0.9 1.1 1.8",
+         "tags" : {},
+         "bulkHealthFactor" : "3.0",
+         "maxLoad" : 17000,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "models" : {
+            "undamaged" : "vehicles/british/GB42_Valentine_AT/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Chassis.model"
+         },
+         "brakeForce" : 17000,
+         "repairCost" : "5.0",
+         "traces" : {
+            "textureSet" : "ussr_01",
+            "size" : "0.44 0.3",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank"
+         },
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 55,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.06",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "level" : 3,
+         "rotationSpeed" : 38
+      },
+      "Chassis_GB42_Valentine_AT" : {
+         "price" : "1420.0",
+         "topRightCarryingPoint" : "1.098 1.52779",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "W_R0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "W_R5",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "W_L0",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "W_L4",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "W_L5"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 3,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "template" : "WD_R"
+               },
+               {
+                  "count" : 4,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 3
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "radius" : "0"
+               }
+            ]
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_GB42_Valentine_AT_2"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB42_Valentine_AT",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundPC" : "treads_type_pc",
+         "maxClimbAngle" : 25,
+         "rotationIsAroundCenter" : true,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB42_Valentine_AT/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB42_Valentine_AT/collision/Chassis.model"
+         },
+         "weight" : 3200,
+         "maxHealth" : 60,
+         "terrainResistance" : "1 1.2 2",
+         "tags" : {},
+         "bulkHealthFactor" : "3.0",
+         "maxLoad" : 15000,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "brakeForce" : 14500,
+         "models" : {
+            "exploded" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB42_Valentine_AT/normal/lod0/Chassis.model"
+         },
+         "traces" : {
+            "textureSet" : "ussr_01",
+            "size" : "0.44 0.3",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank"
+         },
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "repairCost" : "5.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 45,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.06",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "level" : 3,
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "rotationSpeed" : 34
+      }
+   },
+   "repairCost" : 6,
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "GMC_6-71_Mk11" : {
+               "smplEnginePower" : "174.4514"
+            },
+            "AEC_A189" : {
+               "smplEnginePower" : "142.733"
+            },
+            "AEC_A1909" : {
+               "smplEnginePower" : "138.5038"
+            },
+            "GMC_6-71_Mk10" : {
+               "smplEnginePower" : "145.9048"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB42_Valentine_AT_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB42_Valentine_AT" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 24
+   },
+   "camouflage" : {
+      "exclusionMask" : "vehicles/british/GB42_Valentine_AT/Valentine_AT_CM.dds",
+      "priceFactor" : "0.6",
+      "tiling" : "1 1 0 0"
+   },
+   "turrets0" : {
+      "Turret_1_GB42_Valentine_AT" : {
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50
+         },
+         "price" : 100,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 50,
+            "maxRegenHealth" : 25
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB42_Valentine_AT",
+         "gunPosition" : "0 0 -0",
+         "wwturretRotatorSoundManual" : "tur_man_trav_02",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB42_Valentine_AT/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB42_Valentine_AT/collision_client/Turret_01.model"
+         },
+         "weight" : 100,
+         "maxHealth" : 34,
+         "tags" : "AAAAAAAAAAAA",
+         "circularVisionRadius" : 320,
+         "notInShop" : true,
+         "emblemSlots" : {
+            "inscription" : {
+               "rayEnd" : "-0.63583 0.131958 -0.0971043",
+               "size" : "0.64",
+               "rayStart" : "-0.7349 0.28338 0.259624",
+               "hideIfDamaged" : true,
+               "rayUp" : "-0.0624389 0.997913 -0.0164546"
+            },
+            "player" : {
+               "hideIfDamaged" : true,
+               "rayStart" : "-0.841524 0.669887 0.06595",
+               "rayUp" : "-0.0624389 0.997913 -0.0164546",
+               "rayEnd" : "-1 1 -0",
+               "size" : "0.28"
+            }
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB42_Valentine_AT/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB42_Valentine_AT/crash/lod0/Turret_01.model"
+         },
+         "armor" : {
+            "armor_2" : "",
+            "armor_1" : 14,
+            "armor_5" : "",
+            "armor_4" : "",
+            "armor_6" : "",
+            "armor_3" : "",
+            "armor_8" : "",
+            "armor_7" : ""
+         },
+         "showEmblemsOnGun" : false,
+         "guns" : {
+            "QF_6_pounder_Mk_IV_AT" : "shared",
+            "_3.7inch_AT_Howitzer" : "shared",
+            "QF_6_pounder_Mk_II_AT" : "shared"
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.046 0.500 0.710 0.000 0.000",
+         "rotationSpeed" : 44,
+         "level" : 3,
+         "ceilless" : true
+      }
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : {},
+      "commander" : "gunner\n\n\t\t\tradioman"
+   }
+}

@@ -1,0 +1,866 @@
+{
+   "invisibility" : {
+      "moving" : "0.215",
+      "still" : "0.286",
+      "firePenalty" : "0.429",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "french_rose",
+      "alpha" : "0.88"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.913338886"
+   },
+   "repairCost" : "3.0",
+   "chassis" : {
+      "Chassis_RenaultR35" : {
+         "maxHealth" : 50,
+         "maxRegenHealth" : 40,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.32",
+            "vehicleMovement" : "0.32"
+         },
+         "hullPosition" : "0 1 0",
+         "bulkHealthFactor" : "3.0",
+         "terrainResistance" : "1.3 1.4 2.7",
+         "rotationIsAroundCenter" : false,
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/french/F49_RenaultR35/track/segment.model",
+            "segmentLength" : "0.07",
+            "segmentModelRight" : "vehicles/french/F49_RenaultR35/track/segment.model",
+            "segmentOffset" : "0.072",
+            "left" : "vehicles/french/F49_RenaultR35/track/left.track",
+            "right" : "vehicles/french/F49_RenaultR35/track/right.track",
+            "lodDist" : "MEDIUM"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-4.5",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_RenaultR35_2"
+         },
+         "tags" : {},
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "userString" : "#france_vehicles:Chassis_RenaultR35",
+         "trackThickness" : "-0.0119",
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "size" : "0.5 0.3",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR"
+         },
+         "level" : 1,
+         "maxLoad" : 10700,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "repairCost" : "1.0",
+         "navmeshGirth" : "6.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.0268595",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "minOffset" : "-0.05",
+                  "count" : 5
+               },
+               {
+                  "maxOffset" : "0.027",
+                  "isLeft" : false,
+                  "minOffset" : "-0.05",
+                  "count" : 5,
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "brakeForce" : 35500,
+         "trackNodes" : {
+            "offset" : "0",
+            "enable" : true,
+            "maxOffset" : "0.095",
+            "forwardElastK" : 1,
+            "backwardElastK" : 1,
+            "gravity" : "-8.9",
+            "node" : [
+               {
+                  "offset" : "-0.018",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.79",
+                  "backwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.79",
+                  "backwardElastK" : 2,
+                  "offset" : "-0.018"
+               },
+               {
+                  "offset" : "-0.018",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "offset" : "-0.018"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : 2,
+                  "offset" : "-0.032"
+               },
+               {
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.59"
+               },
+               {
+                  "offset" : "-0.022",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.4",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "offset" : "-0.032",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.59",
+                  "offset" : "-0.032"
+               },
+               {
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.7",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "offset" : "-0.022"
+               }
+            ],
+            "maxAmplitude" : "0.102",
+            "damping" : 2,
+            "linkBones" : false,
+            "elasticity" : 1203
+         },
+         "topRightCarryingPoint" : "0.788163 1.08905",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F49_RenaultR35/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F49_RenaultR35/collision_client/Chassis.model"
+         },
+         "maxClimbAngle" : 25,
+         "rotationSpeed" : 30,
+         "models" : {
+            "exploded" : "vehicles/french/F49_RenaultR35/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F49_RenaultR35/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F49_RenaultR35/crash/lod0/Chassis.model"
+         },
+         "price" : 250,
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 2500,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0.33628",
+                  "isLeading" : true,
+                  "syncAngle" : "12.8571",
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.275",
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "syncAngle" : "12.8571"
+               },
+               {
+                  "syncAngle" : "12.8571",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0.33628",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "12.8571",
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0.275",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 3,
+                  "radius" : "0.0876263",
+                  "template" : "WD_R",
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 5,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.0876263",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_L"
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 5,
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         }
+      },
+      "Chassis_RenaultR35_2" : {
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "tags" : {},
+         "userString" : "#france_vehicles:Chassis_RenaultR35_2",
+         "trackThickness" : "-0.0119",
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "splineDesc" : {
+            "left" : "vehicles/french/F49_RenaultR35/track/left.track",
+            "right" : "vehicles/french/F49_RenaultR35/track/right.track",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/french/F49_RenaultR35/track/segment.model",
+            "segmentModelRight" : "vehicles/french/F49_RenaultR35/track/segment.model",
+            "segmentLength" : "0.07",
+            "segmentOffset" : "0.072"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-4.5",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "maxHealth" : 60,
+         "maxRegenHealth" : 45,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.3",
+            "vehicleMovement" : "0.3"
+         },
+         "hullPosition" : "0 1 0",
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : false,
+         "terrainResistance" : "1.2 1.3 2.5",
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 2500,
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0.0876263",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_R"
+               },
+               {
+                  "count" : 5,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "radius" : "0.0876263"
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 5,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "startIndex" : ""
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0.33628",
+                  "isLeading" : true,
+                  "syncAngle" : "12.8571",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.275",
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "syncAngle" : "12.8571"
+               },
+               {
+                  "radius" : "0.33628",
+                  "isLeading" : true,
+                  "syncAngle" : "12.8571",
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : "12.8571",
+                  "name" : "WD_L4",
+                  "isLeft" : true,
+                  "radius" : "0.275",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "0.788163 1.08905",
+         "maxClimbAngle" : 25,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F49_RenaultR35/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F49_RenaultR35/collision_client/Chassis.model"
+         },
+         "rotationSpeed" : 34,
+         "models" : {
+            "destroyed" : "vehicles/french/F49_RenaultR35/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F49_RenaultR35/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F49_RenaultR35/crash/lod0/Chassis.model"
+         },
+         "price" : 550,
+         "level" : 2,
+         "maxLoad" : 11700,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "repairCost" : "1.0",
+         "navmeshGirth" : "6.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.0268595",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "minOffset" : "-0.05",
+                  "count" : 5
+               },
+               {
+                  "isLeft" : false,
+                  "maxOffset" : "0.027",
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.05",
+                  "count" : 5
+               }
+            ]
+         },
+         "trackNodes" : {
+            "elasticity" : 1203,
+            "damping" : 2,
+            "linkBones" : false,
+            "maxAmplitude" : "0.102",
+            "node" : [
+               {
+                  "offset" : "-0.018",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.79",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.79",
+                  "offset" : "-0.018"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "offset" : "-0.018"
+               },
+               {
+                  "offset" : "-0.018",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : 2
+               },
+               {
+                  "offset" : "-0.032",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "1.59",
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "offset" : "-0.022",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "offset" : "-0.032",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.7",
+                  "offset" : "-0.032"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.59",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.032"
+               },
+               {
+                  "offset" : "-0.022",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.7"
+               }
+            ],
+            "gravity" : "-8.9",
+            "backwardElastK" : 1,
+            "forwardElastK" : 1,
+            "maxOffset" : "0.095",
+            "enable" : true,
+            "offset" : "0"
+         },
+         "brakeForce" : 35500,
+         "traces" : {
+            "size" : "0.5 0.3",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR"
+         }
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "0.4"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "speedLimits" : {
+      "forward" : 23,
+      "backward" : 12
+   },
+   "turrets0" : {
+      "Turret_2_RenaultR35" : {
+         "price" : 650,
+         "unlocks" : {
+            "vehicle" : "F13_AMX38"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "models" : {
+            "undamaged" : "vehicles/french/F49_RenaultR35/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/french/F49_RenaultR35/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/french/F49_RenaultR35/crash/lod0/Turret_02.model"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F49_RenaultR35/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/french/F49_RenaultR35/collision/Turret_02.model"
+         },
+         "showEmblemsOnGun" : false,
+         "rotationSpeed" : 24,
+         "circularVisionRadius" : 300,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "2.0",
+            "maxHealth" : 40
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         },
+         "weight" : 1250,
+         "userString" : "#france_vehicles:Turret_2_RenaultR35",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.525 0.081 0.507 0.500 0.312 0.500 0.321 0.500 0.371 0.575 0.000",
+         "tags" : {},
+         "armor" : {
+            "armor_6" : 25,
+            "armor_10" : 40,
+            "armor_1" : 40,
+            "armor_4" : 40,
+            "armor_5" : 40,
+            "armor_2" : 40,
+            "armor_9" : 25,
+            "armor_11" : 40,
+            "armor_7" : 25,
+            "armor_8" : "",
+            "armor_3" : 40,
+            "armor_12" : 40
+         },
+         "guns" : {
+            "_25mm_Canon_Raccourci_Mle.1934" : "shared",
+            "_37mm_SA38" : "shared",
+            "_37mm_APX_SA18" : "shared"
+         },
+         "maxHealth" : 43,
+         "camouflage" : {
+            "tiling" : "0.475 0.25 0.000000 0.000000"
+         },
+         "gunPosition" : "0 0 0",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-0 0 0",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1 0 0",
+                  "size" : "0.18",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayEnd" : "0 0 0",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1 0 0",
+                  "size" : "0.18",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "level" : 2
+      },
+      "Turret_1_RenaultR35" : {
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-0 0 0",
+                  "rayStart" : "-1 0 0",
+                  "size" : "0.18",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "0 0 0",
+                  "rayEnd" : "0 0 0",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.18"
+               }
+            ]
+         },
+         "level" : 1,
+         "camouflage" : {
+            "tiling" : "0.55 0.28 0.000000 0.000000"
+         },
+         "gunPosition" : "0 0 0",
+         "guns" : {
+            "_37mm_SA38" : "shared",
+            "_25mm_Canon_Raccourci_Mle.1934" : "shared",
+            "_37mm_APX_SA18" : "shared"
+         },
+         "maxHealth" : 28,
+         "weight" : 1250,
+         "userString" : "#france_vehicles:Turret_1_RenaultR35",
+         "physicsShape" : "1.095 0.000 0.896 0.027 0.507 0.081 0.448 0.500 0.416 0.500 0.258 0.500 0.416 0.480 0.000",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "armor" : {
+            "armor_1" : 40,
+            "armor_4" : 40,
+            "armor_5" : 40,
+            "armor_2" : 40,
+            "armor_10" : 40,
+            "armor_6" : 25,
+            "armor_3" : 40,
+            "armor_12" : 40,
+            "armor_11" : 40,
+            "armor_9" : 25,
+            "armor_7" : 25,
+            "armor_8" : ""
+         },
+         "tags" : {},
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30,
+            "maxHealth" : 60
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F49_RenaultR35/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F49_RenaultR35/collision/Turret_01.model"
+         },
+         "rotationSpeed" : 24,
+         "showEmblemsOnGun" : false,
+         "circularVisionRadius" : 280,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "2.0",
+            "maxHealth" : 40
+         },
+         "price" : 300,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "models" : {
+            "exploded" : "vehicles/french/F49_RenaultR35/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F49_RenaultR35/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F49_RenaultR35/crash/lod0/Turret_01.model"
+         }
+      }
+   },
+   "crew" : {
+      "commander" : "gunner\n\n\t\t\tradioman\n\n\t\t\tloader",
+      "driver" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "radios" : {
+      "ER_54" : "shared"
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "inscription" : {
+            "rayUp" : "0.0834559 -0.00128149 -0.996511",
+            "size" : "0.4",
+            "rayStart" : "-0.250127 0.0970242 1.48576",
+            "rayEnd" : "-0.250658 -0.094486 1.42814",
+            "hideIfDamaged" : false
+         },
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.2",
+            "rayStart" : "0 0 1",
+            "hideIfDamaged" : false,
+            "rayEnd" : "0 0 1"
+         }
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.68"
+      },
+      "armor" : {
+         "armor_13" : "",
+         "armor_12" : 10,
+         "armor_3" : 40,
+         "armor_8" : 40,
+         "armor_7" : 40,
+         "armor_14" : 40,
+         "armor_9" : 32,
+         "armor_11" : 10,
+         "armor_2" : 40,
+         "armor_5" : 25,
+         "armor_4" : 32,
+         "armor_15" : 25,
+         "armor_1" : 40,
+         "armor_6" : 25,
+         "armor_10" : 15
+      },
+      "weight" : 6283,
+      "camouflage" : {
+         "tiling" : "1 0.61 0.000000 0.000000"
+      },
+      "hangarShadowTexture" : "vehicles/french/F49_RenaultR35/RenaultR35_HangarShadowMap.dds",
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0",
+         "maxHealth" : 80
+      },
+      "maxHealth" : 112,
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/french/F49_RenaultR35/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/french/F49_RenaultR35/collision/Hull.model"
+      },
+      "models" : {
+         "destroyed" : "vehicles/french/F49_RenaultR35/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F49_RenaultR35/normal/lod0/Hull.model",
+         "exploded" : "vehicles/french/F49_RenaultR35/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 0 -0"
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Renault_S4B" : {
+               "smplEnginePower" : "78.23881"
+            },
+            "Renault_V4" : {
+               "smplEnginePower" : "86.69705"
+            }
+         },
+         "chassis" : {
+            "Chassis_RenaultR35_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            },
+            "Chassis_RenaultR35" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "engines" : {
+      "Renault_V4" : "shared",
+      "Renault_S4B" : "shared"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   }
+}

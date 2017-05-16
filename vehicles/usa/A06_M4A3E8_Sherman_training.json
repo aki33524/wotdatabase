@@ -1,0 +1,378 @@
+{
+   "engines" : {
+      "Development_Engine" : "shared"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/american/A06_M4A3E8_Sherman/M4A3_Sherman_CM.DDS",
+      "priceFactor" : "1.2"
+   },
+   "speedLimits" : {
+      "backward" : 7,
+      "forward" : 32
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : "collision"
+   },
+   "clientAdjustmentFactors" : {},
+   "hull" : {
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 70,
+         "maxRegenHealth" : 60
+      },
+      "hangarShadowTexture" : "vehicles/american/A06_M4A3E8_Sherman/M4A3_Sherman_HangarShadowMap.dds",
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_small"
+      },
+      "models" : {
+         "exploded" : "vehicles/american/A06_M4A3E8_Sherman_training/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A06_M4A3E8_Sherman_training/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A06_M4A3E8_Sherman_training/crash/lod0/Hull.model"
+      },
+      "emblemSlots" : {},
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A06_M4A3E8_Sherman_training/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A06_M4A3E8_Sherman_training/collision_client/Hull.model"
+      },
+      "weight" : 2750,
+      "turretPositions" : {
+         "turret" : "-0.018056 1.01692 -0.08262"
+      },
+      "maxHealth" : 800,
+      "armor" : {
+         "armor_4" : 16,
+         "armor_6" : 8,
+         "armor_5" : 16,
+         "armor_7" : 8,
+         "armor_8" : 8,
+         "armor_1" : 18,
+         "armor_3" : 16,
+         "armor_2" : 16
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.34 38.00 0.36 1.00 0.06 0.40",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.94",
+         "pitchParams" : "0.34 38.00 0.36 1.00 0.05 0.34"
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "",
+   "chassis" : {
+      "NVSS_T801" : {
+         "rotationIsAroundCenter" : false,
+         "userString" : "#usa_vehicles:NVSS_T80",
+         "price" : "16300.0",
+         "maxLoad" : 34500,
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "count" : 6,
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_L1",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L2",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L3",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L5",
+                  "isLeading" : true,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L6",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R2",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R6",
+                  "isLeading" : true,
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "rotationSpeed" : 40,
+         "repairCost" : "5.0",
+         "hullPosition" : "0 1 0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "wwsoundPC" : "treads_type_pc",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.19",
+            "vehicleMovement" : "0.19"
+         },
+         "drivingWheels" : "WD_L0 WD_L6",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "maxHealth" : 120,
+         "traces" : {
+            "textureSet" : "usa_01",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.54 0.62"
+         },
+         "notInShop" : true,
+         "tags" : {},
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "navmeshGirth" : "6.0",
+         "brakeForce" : 36500,
+         "level" : 6,
+         "maxClimbAngle" : 25,
+         "terrainResistance" : "1 1.1 1.7",
+         "bulkHealthFactor" : "3.0",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-0.6",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A06_M4A3E8_Sherman/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A06_M4A3E8_Sherman/collision_client/Chassis.model"
+         },
+         "maxRegenHealth" : 90,
+         "weight" : 8300,
+         "topRightCarryingPoint" : "1.10719 1.88969",
+         "models" : {
+            "undamaged" : "vehicles/american/A06_M4A3E8_Sherman/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A06_M4A3E8_Sherman/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A06_M4A3E8_Sherman/crash/lod0/Chassis.model"
+         }
+      }
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.98",
+      "default" : "usa_star"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "NVSS_T801" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Development_Engine" : {
+               "smplEnginePower" : "570.9318"
+            }
+         }
+      }
+   },
+   "crew" : {
+      "radioman" : {},
+      "loader" : {},
+      "commander" : {},
+      "gunner" : {},
+      "driver" : {}
+   },
+   "turrets0" : {
+      "Turret_1_M4A3E8_Sherman_training" : {
+         "showEmblemsOnGun" : false,
+         "level" : 1,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 270,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "tags" : {},
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 19,
+            "repairCost" : "1.0",
+            "maxHealth" : 40
+         },
+         "weight" : 170,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A06_M4A3E8_Sherman_training/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A06_M4A3E8_Sherman_training/collision_client/Turret_01.model"
+         },
+         "models" : {
+            "destroyed" : "vehicles/american/A06_M4A3E8_Sherman_training/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A06_M4A3E8_Sherman_training/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A06_M4A3E8_Sherman_training/crash/lod0/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 50,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 25
+         },
+         "rotationSpeed" : 50,
+         "gunPosition" : "0 0 1",
+         "price" : "120.0",
+         "userString" : "Turret_1_M4A3E8_Sherman_training",
+         "physicsShape" : "0.966 -0.028 1.000 0.000 0.852 -0.073 0.705 0.552 0.410 0.522 0.077 0.500 0.000 0.100 0.000",
+         "armor" : {
+            "armor_6" : 16,
+            "armor_4" : 16,
+            "armor_5" : 16,
+            "armor_8" : "",
+            "armor_7" : 8,
+            "armor_1" : 18,
+            "armor_2" : 16,
+            "armor_3" : 16
+         },
+         "guns" : {
+            "Gun_1_M4A3E8_Sherman_training" : "shared"
+         },
+         "notInShop" : true,
+         "maxHealth" : 30,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1.14924 0.449995 0.0768659",
+                  "hideIfDamaged" : true,
+                  "size" : "0.32",
+                  "rayEnd" : "-0.759066 0.413758 -0.0034362",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "rayStart" : "1.14924 0.449995 0.0768659",
+                  "hideIfDamaged" : true,
+                  "size" : "0.32",
+                  "rayEnd" : "0.759066 0.413758 -0.0034362"
+               }
+            ]
+         }
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.3",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.05",
+      "moving" : "0.3",
+      "still" : "0.48"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "radios" : {
+      "Development_Radio" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   }
+}

@@ -1,0 +1,525 @@
+{
+   "engines" : {
+      "_6F11SRY" : "shared",
+      "SOFAM_8Gxb" : "shared"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "hull" : {
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "models" : {
+         "undamaged" : "vehicles/french/F22_AMX_105AM/normal/lod0/Hull.model",
+         "exploded" : "vehicles/french/F22_AMX_105AM/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F22_AMX_105AM/crash/lod0/Hull.model"
+      },
+      "weight" : 10830,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_small"
+      },
+      "hangarShadowTexture" : "vehicles/french/F22_AMX_105AM/AMX_105AM_HangarShadowMap.dds",
+      "swinging" : {
+         "pitchParams" : "0.26 34.00 0.36 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.68",
+         "rollParams" : "1.00 0.26 34.00 0.36 1.00 0.05 0.30"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F22_AMX_105AM/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F22_AMX_105AM/collision_client/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.8",
+               "rayStart" : "1.44998 0.739219 -1.76082",
+               "hideIfDamaged" : false,
+               "rayEnd" : "1.04998 0.739219 -1.76082"
+            },
+            {
+               "size" : "0.8",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "rayEnd" : "-1.04998 0.737405 -1.87973",
+               "rayStart" : "-1.44998 0.737405 -1.87973"
+            }
+         ],
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.26",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.04998 0.7429 -1.27229",
+               "rayStart" : "-1.44998 0.7429 -1.27229"
+            },
+            {
+               "isMirrored" : true,
+               "rayEnd" : "1.04998 0.734201 -0.719082",
+               "hideIfDamaged" : true,
+               "rayStart" : "1.44998 0.734201 -0.719083",
+               "size" : "0.26",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "clan" : {
+            "size" : "0.26",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "0.550438 0.449915 1.18576",
+            "hideIfDamaged" : false,
+            "rayEnd" : "0.550438 0.302162 1.12437"
+         }
+      },
+      "armor" : {
+         "armor_1" : 15,
+         "armor_10" : "",
+         "armor_2" : 40,
+         "armor_4" : 15,
+         "armor_7" : 10,
+         "armor_8" : 10,
+         "armor_6" : 15,
+         "armor_5" : 20,
+         "armor_3" : 20,
+         "armor_11" : 15,
+         "armor_9" : 10
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 40,
+         "maxHealth" : 80
+      },
+      "turretPositions" : {
+         "turret" : "0 0 -0"
+      },
+      "maxHealth" : 176
+   },
+   "speedLimits" : {
+      "backward" : 14,
+      "forward" : 60
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "radios" : {
+      "SCR_528" : "shared",
+      "SCR_508" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/french/F22_AMX_105AM/AMX_105AM_CM.dds"
+   },
+   "turrets0" : {
+      "Turret_1_AMX_105AM" : {
+         "guns" : {
+            "Canon_de_105_mle_1930_Schneider_AM" : "shared",
+            "Canon_de_105_court_mle_1934S" : "shared"
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.808 -0.113 0.500 0.100 0.500 0.500 0.000 0.500 0.600 0.100 0.500",
+         "rotationSpeed" : 22,
+         "models" : {
+            "undamaged" : "vehicles/french/F22_AMX_105AM/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F22_AMX_105AM/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F22_AMX_105AM/crash/lod0/Turret_01.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_02",
+         "circularVisionRadius" : 265,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F22_AMX_105AM/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F22_AMX_105AM/collision_client/Turret_01.model"
+         },
+         "emblemSlots" : {},
+         "armor" : {
+            "armor_5" : "",
+            "armor_3" : "",
+            "armor_4" : "",
+            "armor_2" : 10,
+            "armor_1" : 10,
+            "armor_6" : "",
+            "armor_8" : "",
+            "armor_7" : ""
+         },
+         "price" : "",
+         "notInShop" : true,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "ceilless" : true,
+         "showEmblemsOnGun" : false,
+         "userString" : "#france_vehicles:Turret_1_AMX_105AM",
+         "weight" : 170,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 50,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 25
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "gunPosition" : "0 1 -0",
+         "level" : 5,
+         "maxHealth" : 44
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_AMX_105AM" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_AMX_105AM_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "_6F11SRY" : {
+               "smplEnginePower" : "296.0387"
+            },
+            "SOFAM_8Gxb" : {
+               "smplEnginePower" : "264.3203"
+            }
+         }
+      }
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : "AAAAAAAA",
+      "loader" : {},
+      "driver" : {}
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "invisibility" : {
+      "still" : "0.253",
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.38",
+      "moving" : "0.127",
+      "camouflageBonus" : "0.02"
+   },
+   "repairCost" : "6.25",
+   "chassis" : {
+      "Chassis_AMX_105AM" : {
+         "hullPosition" : "0.000000 0.83523 0.000000",
+         "unlocks" : {
+            "chassis" : "Chassis_AMX_105AM_2"
+         },
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "topRightCarryingPoint" : "1.05059 1.36694",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 5,
+                  "template" : "W_R"
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 3,
+                  "template" : "WD_L"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "radius" : "0.2918",
+                  "isLeading" : false
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0.2918",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               }
+            ]
+         },
+         "repairCost" : "1.0",
+         "price" : 3600,
+         "wwsoundNPC" : "trds_chf_npc",
+         "navmeshGirth" : "6.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F22_AMX_105AM/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F22_AMX_105AM/collision_client/Chassis.model"
+         },
+         "rotationSpeed" : 27,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "wwsoundPC" : "treads_type_pc",
+         "terrainResistance" : "1.2 1.4 2.3",
+         "maxRegenHealth" : 50,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : -1,
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F22_AMX_105AM/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F22_AMX_105AM/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F22_AMX_105AM/normal/lod0/Chassis.model"
+         },
+         "level" : 4,
+         "brakeForce" : 14000,
+         "maxHealth" : 70,
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.44 0.38"
+         },
+         "bulkHealthFactor" : "3.0",
+         "weight" : 4000,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "userString" : "#france_vehicles:Chassis_AMX_105AM",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.38",
+            "vehicleRotation" : "0.38"
+         },
+         "maxLoad" : 16300
+      },
+      "Chassis_AMX_105AM_2" : {
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F22_AMX_105AM/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F22_AMX_105AM/collision_client/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "models" : {
+            "undamaged" : "vehicles/french/F22_AMX_105AM/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F22_AMX_105AM/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F22_AMX_105AM/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : -1
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "maxRegenHealth" : 60,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "terrainResistance" : "1.1 1.3 2.1",
+         "rotationSpeed" : 30,
+         "hullPosition" : "0.000000 0.83523 0.000000",
+         "price" : 9000,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 5
+               },
+               {
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 5
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "radius" : "0.2918",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0.2918",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               }
+            ]
+         },
+         "repairCost" : "1.0",
+         "topRightCarryingPoint" : "1.05059 1.36694",
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "traces" : {
+            "size" : "0.44 0.38",
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank"
+         },
+         "bulkHealthFactor" : "3.0",
+         "weight" : 4000,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.34",
+            "vehicleMovement" : "0.34"
+         },
+         "maxLoad" : 18300,
+         "userString" : "#france_vehicles:Chassis_AMX_105AM_2",
+         "maxHealth" : 80,
+         "brakeForce" : 16000,
+         "level" : 5,
+         "maxClimbAngle" : 25,
+         "rotationIsAroundCenter" : true,
+         "tags" : {}
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.673501918"
+   }
+}

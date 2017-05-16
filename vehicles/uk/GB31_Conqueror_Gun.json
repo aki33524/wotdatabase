@@ -1,0 +1,513 @@
+{
+   "crewXpFactor" : "1.0",
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "turrets0" : {
+      "Turret_1_GB31_Conqueror_Gun" : {
+         "weight" : 100,
+         "userString" : "#gb_vehicles:Turret_1_GB31_Conqueror_Gun",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB31_Conqueror_Gun/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB31_Conqueror_Gun/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB31_Conqueror_Gun/crash/lod0/Turret_01.model"
+         },
+         "showEmblemsOnGun" : false,
+         "level" : 10,
+         "guns" : {
+            "_9.2inch_SPG_Howitzer" : "shared"
+         },
+         "circularVisionRadius" : 290,
+         "price" : 100,
+         "rotationSpeed" : 8,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB31_Conqueror_Gun/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB31_Conqueror_Gun/collision/Turret_01.model"
+         },
+         "emblemSlots" : {},
+         "camouflage" : {
+            "tiling" : "1 0.4 0.000000 0.000000"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "gunPosition" : "0 1 0",
+         "maxHealth" : 106,
+         "notInShop" : true,
+         "physicsShape" : "0.900 -0.065 0.940 0.000 0.813 -0.045 0.500 0.500 0.500 0.500 0.000 0.500 0.000 0.100 0.000",
+         "wwturretRotatorSoundManual" : "tur_man_trav_07",
+         "armor" : {
+            "armor_8" : "31.8",
+            "armor_1" : "50.8",
+            "armor_3" : "50.8"
+         }
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Rolls_Royse_Meteor_M120" : {
+               "smplEnginePower" : "856.3977"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB31_Conqueror_Gun" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : "34.3",
+      "backward" : 10
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "repairCost" : "60.00",
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "2.0",
+      "exclusionMask" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.826293121"
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "chassis" : {
+      "Chassis_GB31_Conqueror_Gun" : {
+         "trackThickness" : "-0.0046",
+         "price" : 80000,
+         "rotationIsAroundCenter" : true,
+         "navmeshGirth" : "6.0",
+         "tracks" : {
+            "textureScale" : "-1.8",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "syncAngle" : 20,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 20
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "syncAngle" : 20,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 20,
+                  "isLeading" : true,
+                  "name" : "WD_L5"
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 4,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 8,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "count" : 4,
+                  "radius" : "0"
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "template" : "W_L"
+               }
+            ]
+         },
+         "hullPosition" : "0.000000 1.15967 0.000000",
+         "weight" : 22000,
+         "maxClimbAngle" : 25,
+         "userString" : "#gb_vehicles:Chassis_GB31_Conqueror_Gun",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "maxOffset" : "0.06",
+                  "isLeft" : true,
+                  "count" : 8,
+                  "minOffset" : "-0.06",
+                  "startIndex" : ""
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "isLeft" : false,
+                  "count" : 8,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "minOffset" : "-0.06"
+               }
+            ]
+         },
+         "armor" : {
+            "leftTrack" : 25,
+            "rightTrack" : 25
+         },
+         "brakeForce" : 60000,
+         "bulkHealthFactor" : "3.0",
+         "notInShop" : true,
+         "wwsoundNPC" : "trds_chf_npc",
+         "repairCost" : "5.0",
+         "tags" : {},
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.3",
+            "vehicleRotation" : "0.3"
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "topRightCarryingPoint" : "1.38425 2.485",
+         "level" : 10,
+         "maxRegenHealth" : 135,
+         "maxLoad" : 60000,
+         "terrainResistance" : "1.3 1.5 2.5",
+         "trackNodes" : {
+            "maxOffset" : "0.03",
+            "elasticity" : 1100,
+            "enable" : true,
+            "maxAmplitude" : "0.03",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 2
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : 2
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.105",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.3",
+                  "offset" : "-0.105",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.105",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.105",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.8",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L4",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.105",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.105",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "1.3",
+                  "offset" : "-0.105",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.105",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.105",
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.105",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false
+               }
+            ],
+            "linkBones" : false,
+            "gravity" : "-9.8",
+            "damping" : 2
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB31_Conqueror_Gun/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB31_Conqueror_Gun/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB31_Conqueror_Gun/normal/lod0/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 9 0 0 0"
+            }
+         },
+         "maxHealth" : 180,
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "size" : "0.44 0.8",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR"
+         },
+         "splineDesc" : {
+            "left" : "vehicles/british/GB31_Conqueror_Gun/track/left.track",
+            "segmentModelLeft" : "vehicles/british/GB31_Conqueror_Gun/track/segment.model",
+            "segmentModelRight" : "vehicles/british/GB31_Conqueror_Gun/track/segment.model",
+            "right" : "vehicles/british/GB31_Conqueror_Gun/track/right.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.285",
+            "segmentLength" : "0.137"
+         },
+         "rotationSpeed" : 24,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB31_Conqueror_Gun/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB31_Conqueror_Gun/collision/Chassis.model"
+         }
+      }
+   },
+   "engines" : {
+      "Rolls_Royse_Meteor_M120" : "shared"
+   },
+   "emblems" : {
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.92"
+   },
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "gunner" : [
+         {},
+         {}
+      ],
+      "driver" : {},
+      "loader" : [
+         {},
+         {}
+      ]
+   },
+   "hull" : {
+      "swinging" : {
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.22 34.00 0.40 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.64",
+         "pitchParams" : "0.22 34.00 0.40 1.00 0.05 0.30"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB31_Conqueror_Gun/Conqueror_Gun_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 -1"
+      },
+      "armor" : {
+         "armor_15" : "31.8",
+         "armor_5" : "31.8",
+         "armor_12" : 20,
+         "armor_16" : 6,
+         "armor_2" : "76.2",
+         "armor_3" : "50.8",
+         "armor_1" : 130,
+         "armor_6" : 36,
+         "armor_13" : "38.1",
+         "armor_14" : 6,
+         "armor_11" : "50.8",
+         "armor_4" : "76.2"
+      },
+      "weight" : 28922,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB31_Conqueror_Gun/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB31_Conqueror_Gun/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "player" : [
+            {
+               "rayEnd" : "-1.13954 1.70151 -3.46754",
+               "size" : "0.32",
+               "hideIfDamaged" : false,
+               "rayStart" : "-1.47873 1.91351 -3.46754",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "rayStart" : "1.47873 1.91351 -3.46754",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.32",
+               "rayEnd" : "1.13954 1.70151 -3.46754",
+               "isMirrored" : true,
+               "hideIfDamaged" : false
+            }
+         ],
+         "clan" : {
+            "hideIfDamaged" : false,
+            "size" : "0.28",
+            "rayEnd" : "1.64713 0.0428014 3.12769",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "2.04601 0.0636937 3.14904"
+         },
+         "inscription" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.58602 1.74185 -2.12622",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.24682 1.52986 -2.12622",
+               "size" : "1.2"
+            },
+            {
+               "size" : "1.2",
+               "rayEnd" : "1.24682 1.52986 -2.12622",
+               "hideIfDamaged" : true,
+               "rayStart" : "1.58602 1.74185 -2.12622",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ]
+      },
+      "camouflage" : {
+         "tiling" : "2 2 0.000000 0.000000"
+      },
+      "models" : {
+         "destroyed" : "vehicles/british/GB31_Conqueror_Gun/crash/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB31_Conqueror_Gun/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB31_Conqueror_Gun/normal/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 170,
+         "maxRegenHealth" : 85,
+         "repairCost" : "1.0"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "maxHealth" : 424
+   },
+   "radios" : {
+      "C45" : "shared"
+   },
+   "invisibility" : {
+      "still" : "0.079",
+      "camouflageBonus" : "0.02",
+      "moving" : "0.04",
+      "firePenalty" : "0.119",
+      "camouflageNetBonus" : "0.05"
+   }
+}

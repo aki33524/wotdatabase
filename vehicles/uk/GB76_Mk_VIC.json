@@ -1,0 +1,352 @@
+{
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "commander" : "radioman\n\n\t\t\tloader"
+   },
+   "repairCost" : "2.00",
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "engines" : {
+      "Meadows_ESTB" : "shared"
+   },
+   "invisibility" : {
+      "moving" : "0.206",
+      "still" : "0.275",
+      "firePenalty" : "0.413",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1"
+   },
+   "chassis" : {
+      "Chassis_GB76_Mk_VIC" : {
+         "topRightCarryingPoint" : "0.895306 1.01086",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB76_Mk_VIC/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB76_Mk_VIC/collision_client/Chassis.model"
+         },
+         "terrainResistance" : "1.1 1.3 2.3",
+         "maxLoad" : 7200,
+         "userString" : "#gb_vehicles:Chassis_GB76_Mk_VIC",
+         "repairCost" : "1.0",
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.2 0.28",
+            "lodDist" : "FAR"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB76_Mk_VIC/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB76_Mk_VIC/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB76_Mk_VIC/normal/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.32",
+            "vehicleMovement" : "0.32"
+         },
+         "brakeForce" : 5200,
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0 1 0",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "armor" : {
+            "leftTrack" : 5,
+            "rightTrack" : 5
+         },
+         "rotationIsAroundCenter" : false,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "bulkHealthFactor" : "3.0",
+         "price" : 500,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "tags" : {},
+         "notInShop" : true,
+         "maxRegenHealth" : 45,
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxHealth" : 60,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.56"
+         },
+         "weight" : 2000,
+         "level" : 2,
+         "rotationSpeed" : 40,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "WD_R1"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 4,
+                  "isLeft" : true
+               },
+               {
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 4,
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "maxClimbAngle" : 25
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "emblems" : {
+      "default" : "britain_color",
+      "alpha" : "0.92",
+      "lodDist" : "MEDIUM"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Meadows_ESTB" : {
+               "smplEnginePower" : "93.04074"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB76_Mk_VIC" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.785039432"
+   },
+   "camouflage" : {
+      "priceFactor" : "0.4",
+      "exclusionMask" : "vehicles/british/GB76_Mk_VIC/Mk_VIC_CM.dds",
+      "tiling" : "1 1 0 0"
+   },
+   "crewXpFactor" : "1.5",
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : "52.5"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "hull" : {
+      "swinging" : {
+         "pitchParams" : "0.28 34.00 0.36 1.00 0.05 0.30",
+         "rollParams" : "1.00 0.28 34.00 0.36 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.71"
+      },
+      "maxHealth" : 120,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_small"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0",
+         "maxHealth" : 85
+      },
+      "models" : {
+         "undamaged" : "vehicles/british/GB76_Mk_VIC/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB76_Mk_VIC/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB76_Mk_VIC/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "-0.01411 0.728701 -0.43524"
+      },
+      "weight" : 1840,
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.32",
+            "rayEnd" : "0.540882 0.235111 1.62441",
+            "hideIfDamaged" : false,
+            "rayStart" : "0.540882 0.568577 1.84532"
+         },
+         "inscription" : {
+            "rayStart" : "0.449146 0.900458 1.36656",
+            "hideIfDamaged" : true,
+            "rayEnd" : "0.449146 0.529236 1.21759",
+            "size" : "0.58",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "hangarShadowTexture" : "vehicles/british/GB76_Mk_VIC/Mk_VIC_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB76_Mk_VIC/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB76_Mk_VIC/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "armor" : {
+         "armor_10" : 11,
+         "armor_6" : 11,
+         "armor_5" : 14,
+         "armor_4" : 6,
+         "armor_11" : "",
+         "armor_3" : 13,
+         "armor_8" : 6,
+         "armor_1" : 11,
+         "armor_2" : 14,
+         "armor_13" : 3,
+         "armor_12" : 4,
+         "armor_9" : 14,
+         "armor_7" : 11
+      }
+   },
+   "turrets0" : {
+      "Turret_1_GB76_Mk_VIC" : {
+         "physicsShape" : "0.956 -0.033 1.029 0.000 0.502 0.180 1.000 0.585 0.167 0.500 0.000 0.500 0.142 0.000 0.000",
+         "notInShop" : true,
+         "tags" : "AAAAAAAAAAAA",
+         "guns" : {
+            "_15mm_Machine_gun_BESA_" : "shared"
+         },
+         "maxHealth" : 30,
+         "rotationSpeed" : 36,
+         "level" : 2,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "repairCost" : "2.0",
+            "maxRegenHealth" : 20
+         },
+         "weight" : 800,
+         "showEmblemsOnGun" : false,
+         "primaryArmor" : "armor_2 armor_3 armor_4",
+         "armor" : {
+            "armor_14" : "",
+            "armor_13" : "3.5",
+            "armor_12" : "3.5",
+            "armor_9" : 14,
+            "armor_7" : 14,
+            "armor_2" : 14,
+            "armor_8" : 11,
+            "armor_11" : "3.5",
+            "armor_15" : 11,
+            "armor_3" : 14,
+            "armor_4" : 11,
+            "armor_10" : 11,
+            "armor_6" : 11,
+            "armor_5" : 14
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "price" : 500,
+         "userString" : "#gb_vehicles:Turret_1_GB76_Mk_VIC",
+         "models" : {
+            "exploded" : "vehicles/british/GB76_Mk_VIC/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB76_Mk_VIC/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB76_Mk_VIC/normal/lod0/Turret_01.model"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1 0 -1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-0 0 -1",
+                  "size" : "0.28"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "isMirrored" : true,
+                  "rayEnd" : "0 0 -1",
+                  "hideIfDamaged" : true,
+                  "rayStart" : "1 0 -1"
+               }
+            ],
+            "inscription" : {
+               "rayStart" : "1 0 0",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.52",
+               "rayEnd" : "1 0 0",
+               "hideIfDamaged" : true
+            }
+         },
+         "circularVisionRadius" : 300,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB76_Mk_VIC/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB76_Mk_VIC/collision_client/Turret_01.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "gunPosition" : "0.01411 0.360525 0.502194"
+      }
+   },
+   "radios" : {
+      "N9A" : "shared"
+   },
+   "premiumVehicleXPFactor" : "0.7"
+}

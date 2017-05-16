@@ -1,0 +1,826 @@
+{
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "emblems" : {
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.92"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB75_AT7" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1449"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1449"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1449"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1449"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1449"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1449"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB75_AT7_2" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Ford_GAA" : {
+               "smplEnginePower" : "528.6406"
+            },
+            "Nuffield_liberty_MKIV" : {
+               "smplEnginePower" : "417.626"
+            },
+            "Nuffield_liberty_MKV" : {
+               "smplEnginePower" : "433.4853"
+            }
+         }
+      }
+   },
+   "invisibility" : {
+      "moving" : "0.181",
+      "firePenalty" : "0.453",
+      "still" : "0.302",
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04"
+   },
+   "radios" : {
+      "N19Mk2" : "shared",
+      "N19Mk3" : "shared",
+      "N22" : "shared"
+   },
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : 20
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.909361795"
+   },
+   "engines" : {
+      "Nuffield_liberty_MKV" : "shared",
+      "Nuffield_liberty_MKIV" : "shared",
+      "Ford_GAA" : "shared"
+   },
+   "hull" : {
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "swinging" : {
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26",
+         "sensitivityToImpulse" : "0.22",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26"
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "size" : "0.24",
+               "rayStart" : "-1.7386 0.7577 0.665489",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.3386 0.7577 0.665489",
+               "hideIfDamaged" : false
+            },
+            {
+               "rayStart" : "1.71458 0.760145 -0.331206",
+               "size" : "0.24",
+               "hideIfDamaged" : true,
+               "rayEnd" : "1.36258 0.760145 -0.331206",
+               "isMirrored" : true,
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "inscription" : [
+            {
+               "size" : "0.64",
+               "rayStart" : "-1.7386 0.463839 0.618867",
+               "rayEnd" : "-1.3386 0.463839 0.618867",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true
+            },
+            {
+               "rayStart" : "1.72387 0.532057 0.602989",
+               "size" : "0.64",
+               "hideIfDamaged" : true,
+               "rayEnd" : "1.32387 0.532057 0.603159",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "clan" : {
+            "rayStart" : "-0.00527994 0.4451 2.24054",
+            "size" : "0.28",
+            "hideIfDamaged" : true,
+            "rayEnd" : "-0.00527994 0.374129 1.94083",
+            "rayUp" : "0.000000 1 0.000000"
+         }
+      },
+      "maxHealth" : 1000,
+      "models" : {
+         "destroyed" : "vehicles/british/GB75_AT7/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB75_AT7/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB75_AT7/crash/lod0/Hull.model"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB75_AT7/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB75_AT7/collision_client/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 150,
+         "maxHealth" : 220
+      },
+      "turretPositions" : {
+         "turret" : "1.08254 0.626851 1.28621"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_3",
+      "hangarShadowTexture" : "vehicles/british/GB75_AT7/AT7_HangarShadowMap.dds",
+      "armor" : {
+         "armor_12" : "101.6",
+         "armor_10" : "38.1",
+         "armor_11" : "101.6",
+         "armor_5" : "38.1",
+         "armor_14" : "76.2",
+         "armor_9" : 127,
+         "armor_6" : "31.8",
+         "armor_3" : "101.6",
+         "armor_8" : "",
+         "armor_2" : "76.2",
+         "armor_4" : "63.5",
+         "armor_13" : "31.8",
+         "armor_1" : "203.2",
+         "armor_15" : "279.4",
+         "armor_7" : "101.6"
+      },
+      "camouflage" : {
+         "tiling" : "1.6 1.6 0.000000 0.000000"
+      },
+      "weight" : 31182
+   },
+   "repairCost" : 7,
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "1.4",
+      "tiling" : "1 1 0 0"
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "commander" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "radioman" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "turrets0" : {
+      "Turret_1_GB75_AT7" : {
+         "tags" : "AAAAAAAAAAAA",
+         "weight" : 170,
+         "rotationSpeed" : 26,
+         "userString" : "#gb_vehicles:Turret_1_GB75_AT7",
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "price" : 100,
+         "notInShop" : true,
+         "guns" : {
+            "_20pdr_AT_Gun_Type_A" : "shared",
+            "QF_6_pounder_Mk_V_AT" : "shared",
+            "OQF_77mm_AT_Gun_MkII" : "shared",
+            "_17pdr_OQF_AT_1" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB75_AT7/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB75_AT7/collision_client/Turret_01.model"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB75_AT7/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB75_AT7/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB75_AT7/crash/lod0/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "level" : 7,
+         "circularVisionRadius" : 350,
+         "maxHealth" : 250,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 90,
+            "maxRegenHealth" : 45,
+            "repairCost" : "1.0"
+         },
+         "emblemSlots" : {},
+         "gunPosition" : "0 0 0",
+         "armor" : {
+            "armor_8" : "",
+            "armor_6" : 16,
+            "armor_3" : 16,
+            "armor_4" : 16,
+            "armor_1" : 18,
+            "armor_7" : 8,
+            "armor_2" : 16,
+            "armor_5" : 16
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_05"
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "chassis" : {
+      "Chassis_GB75_AT7" : {
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : 30
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "isLeading" : true,
+                  "syncAngle" : 30
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0.30892",
+                  "syncAngle" : 30
+               },
+               {
+                  "syncAngle" : 30,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R4",
+                  "isLeading" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 3
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 6,
+                  "template" : "W_L",
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_R"
+               },
+               {
+                  "count" : 6,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "maxClimbAngle" : 25,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB75_AT7/track/segment.model",
+            "segmentOffset" : "0.165",
+            "right" : "vehicles/british/GB75_AT7/track/right.track",
+            "segmentLength" : "0.179",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "left" : "vehicles/british/GB75_AT7/track/left.track",
+            "segmentModelRight" : "vehicles/british/GB75_AT7/track/segment.model",
+            "lodDist" : "MEDIUM"
+         },
+         "trackNodes" : {
+            "gravity" : "-9.8",
+            "backwardElastK" : 1,
+            "node" : [
+               {
+                  "damping" : 2,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "damping" : 2,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "damping" : 2,
+                  "backwardElastK" : "0.6",
+                  "forwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "damping" : 2,
+                  "backwardElastK" : "0.6",
+                  "forwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "damping" : 2,
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.065"
+               },
+               {
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.8",
+                  "damping" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "damping" : 2,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "2.2",
+                  "damping" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75",
+                  "damping" : 2,
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "damping" : 2,
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.065"
+               },
+               {
+                  "damping" : 2,
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "backwardElastK" : "2.2",
+                  "damping" : 2,
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75"
+               }
+            ],
+            "offset" : "0",
+            "linkBones" : false,
+            "maxAmplitude" : "0.1",
+            "elasticity" : 1200,
+            "damping" : 2,
+            "forwardElastK" : 1,
+            "enable" : true,
+            "maxOffset" : "0.1"
+         },
+         "maxLoad" : 44000,
+         "weight" : 11000,
+         "hullPosition" : "0 1 0",
+         "userString" : "#gb_vehicles:Chassis_GB75_AT7",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.41",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.32",
+            "vehicleRotation" : "0.32"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "size" : "0.44 0.7",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "largeTank"
+         },
+         "bulkHealthFactor" : "3.0",
+         "armor" : {
+            "rightTrack" : 30,
+            "leftTrack" : 30
+         },
+         "trackThickness" : "-0.0333",
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "price" : 8600,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_GB75_AT7_2"
+         },
+         "rotationSpeed" : 20,
+         "repairCost" : "5.0",
+         "maxHealth" : 170,
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB75_AT7/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB75_AT7/collision_client/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.26498 1.90377",
+         "level" : 6,
+         "models" : {
+            "undamaged" : "vehicles/british/GB75_AT7/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB75_AT7/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB75_AT7/crash/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 130,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "minOffset" : "-0",
+                  "count" : 6
+               },
+               {
+                  "count" : 6,
+                  "minOffset" : "-0.0691574",
+                  "isLeft" : false,
+                  "maxOffset" : "0",
+                  "startIndex" : "",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "brakeForce" : 44000,
+         "terrainResistance" : "1.6 1.8 3"
+      },
+      "Chassis_GB75_AT7_2" : {
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/british/GB75_AT7/track/segment.model",
+            "left" : "vehicles/british/GB75_AT7/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.179",
+            "right" : "vehicles/british/GB75_AT7/track/right.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/british/GB75_AT7/track/segment.model",
+            "segmentOffset" : "0.271"
+         },
+         "maxClimbAngle" : 25,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 3
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 6
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "syncAngle" : 30
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 30
+               },
+               {
+                  "syncAngle" : 30,
+                  "name" : "WD_R0",
+                  "radius" : "0.30892",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 30,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4"
+               }
+            ]
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0 1 0",
+         "userString" : "#gb_vehicles:Chassis_GB75_AT7_2",
+         "weight" : 11000,
+         "maxLoad" : 48000,
+         "trackNodes" : {
+            "offset" : "0",
+            "backwardElastK" : 1,
+            "node" : [
+               {
+                  "forwardElastK" : "0.8",
+                  "damping" : 2,
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "damping" : 2
+               },
+               {
+                  "backwardElastK" : "0.6",
+                  "damping" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 2
+               },
+               {
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "damping" : 2,
+                  "backwardElastK" : "0.6"
+               },
+               {
+                  "damping" : 2,
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.8",
+                  "damping" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.065",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : 2,
+                  "damping" : 2
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.065",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "damping" : 2,
+                  "backwardElastK" : "2.2"
+               },
+               {
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.6",
+                  "damping" : 2,
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "damping" : 2,
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.75",
+                  "offset" : "-0.065"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "damping" : 2,
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "damping" : 2,
+                  "backwardElastK" : "2.2",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "offset" : "-0.065",
+                  "forwardElastK" : "0.75"
+               }
+            ],
+            "gravity" : "-9.8",
+            "maxOffset" : "0.1",
+            "enable" : true,
+            "forwardElastK" : 1,
+            "damping" : 2,
+            "linkBones" : false,
+            "maxAmplitude" : "0.1",
+            "elasticity" : 1200
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "trackThickness" : "-0.0333",
+         "bulkHealthFactor" : "3.0",
+         "armor" : {
+            "leftTrack" : 30,
+            "rightTrack" : 30
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR",
+            "size" : "0.44 0.7",
+            "textureSet" : "usa_02"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.3",
+            "vehicleRotation" : "0.3"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.41",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "rotationIsAroundCenter" : true,
+         "tags" : {},
+         "navmeshGirth" : "6.0",
+         "repairCost" : "5.0",
+         "rotationSpeed" : 22,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "price" : 19000,
+         "maxRegenHealth" : 145,
+         "models" : {
+            "destroyed" : "vehicles/british/GB75_AT7/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB75_AT7/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB75_AT7/crash/lod0/Chassis.model"
+         },
+         "level" : 7,
+         "topRightCarryingPoint" : "1.26498 1.90377",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB75_AT7/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB75_AT7/collision_client/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxHealth" : 190,
+         "terrainResistance" : "1.4 1.6 2.8",
+         "brakeForce" : 48000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0",
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "count" : 6,
+                  "minOffset" : "-0",
+                  "isLeft" : true
+               },
+               {
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "maxOffset" : "0",
+                  "minOffset" : "-0.0691574",
+                  "isLeft" : false,
+                  "count" : 6
+               }
+            ]
+         }
+      }
+   }
+}

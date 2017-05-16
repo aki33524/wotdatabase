@@ -1,0 +1,510 @@
+{
+   "crew" : {
+      "driver" : {},
+      "gunner" : {},
+      "loader" : {},
+      "commander" : "AAAAAAAA"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "turrets0" : {
+      "Turret_1_RenaultUE57" : {
+         "level" : 2,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.500 0.045 0.500 0.314 0.000 0.020",
+         "notInShop" : true,
+         "maxHealth" : 30,
+         "guns" : {
+            "_57mm_6_pdr_AT_Gun_Mk_IV" : "shared",
+            "_47mm_SA-L_Mle.37" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 50,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 25
+         },
+         "circularVisionRadius" : 320,
+         "gunPosition" : "0.000014 0.49722 0.020961",
+         "userString" : "#france_vehicles:Turret_1_RenaultUE57",
+         "weight" : 40,
+         "wwturretRotatorSoundManual" : "tur_man_trav_01",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F52_RenaultUE57/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/french/F52_RenaultUE57/collision/Turret_02.model"
+         },
+         "emblemSlots" : {
+            "player" : {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "1 1 -0",
+               "size" : "0.22",
+               "isMirrored" : true,
+               "hideIfDamaged" : false,
+               "rayEnd" : "1 1 -0"
+            },
+            "inscription" : {
+               "size" : "0.54",
+               "rayStart" : "-1 1 -0",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1 1 -0",
+               "hideIfDamaged" : false
+            }
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "price" : "120.0",
+         "models" : {
+            "exploded" : "vehicles/french/F52_RenaultUE57/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/french/F52_RenaultUE57/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/french/F52_RenaultUE57/normal/lod0/Turret_02.model"
+         },
+         "ceilless" : true,
+         "tags" : "AAAAAAAAAAAA",
+         "armor" : {
+            "armor_1" : 9,
+            "armor_3" : 6,
+            "armor_7" : "",
+            "armor_5" : "",
+            "armor_4" : "",
+            "armor_9" : 6,
+            "armor_8" : "",
+            "armor_2" : 6,
+            "armor_6" : ""
+         },
+         "rotationSpeed" : 44
+      }
+   },
+   "engines" : {
+      "Renault_ACL" : "shared",
+      "Renault_EU" : "shared"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "alpha" : "0.9",
+      "lodDist" : "MEDIUM"
+   },
+   "chassis" : {
+      "Chassis_RenaultUE57" : {
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.28",
+            "vehicleRotation" : "0.28"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F52_RenaultUE57/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F52_RenaultUE57/collision/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.3 0.22"
+         },
+         "topRightCarryingPoint" : "1 1",
+         "price" : 440,
+         "repairCost" : "5.0",
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L3",
+         "bulkHealthFactor" : "3.0",
+         "models" : {
+            "undamaged" : "vehicles/french/F52_RenaultUE57/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F52_RenaultUE57/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F52_RenaultUE57/crash/lod0/Chassis.model"
+         },
+         "rotationSpeed" : 28,
+         "terrainResistance" : "1.2 1.5 2.7",
+         "armor" : {
+            "rightTrack" : 5,
+            "leftTrack" : 5
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.08",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R3",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "name" : "WD_L3"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "count" : 2
+               },
+               {
+                  "count" : 6,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "count" : 2
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "level" : 2,
+         "unlocks" : {
+            "chassis" : "Chassis_RenaultUE57_2"
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundPC" : "treads_type_pc",
+         "maxHealth" : 60,
+         "brakeForce" : 35500,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 2 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 45,
+         "weight" : 500,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "maxLoad" : 7800,
+         "userString" : "#france_vehicles:Chassis_RenaultUE57",
+         "hullPosition" : "0 1 0",
+         "rotationIsAroundCenter" : true
+      },
+      "Chassis_RenaultUE57_2" : {
+         "userString" : "#france_vehicles:Chassis_RenaultUE57_2",
+         "hullPosition" : "0 1 0",
+         "rotationIsAroundCenter" : true,
+         "maxLoad" : 7800,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "weight" : 500,
+         "brakeForce" : 35500,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 2 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 55,
+         "wwsoundPC" : "treads_type_pc",
+         "maxHealth" : 70,
+         "level" : 3,
+         "navmeshGirth" : "6.0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 2,
+                  "isLeft" : false,
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 6
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "count" : 2,
+                  "template" : "WD_L",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R3",
+                  "isLeft" : false,
+                  "isLeading" : false
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "isLeading" : false,
+                  "isLeft" : true
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "armor" : {
+            "leftTrack" : 5,
+            "rightTrack" : 5
+         },
+         "terrainResistance" : "1.1 1.3 2.3",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.08",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "rotationSpeed" : 30,
+         "bulkHealthFactor" : "3.0",
+         "drivingWheels" : "WD_L0 WD_L3",
+         "models" : {
+            "exploded" : "vehicles/french/F52_RenaultUE57/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F52_RenaultUE57/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F52_RenaultUE57/normal/lod0/Chassis.model"
+         },
+         "tags" : {},
+         "repairCost" : "5.0",
+         "price" : 1800,
+         "topRightCarryingPoint" : "1 1",
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.3 0.22"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.26",
+            "vehicleRotation" : "0.26"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F52_RenaultUE57/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F52_RenaultUE57/collision_client/Chassis.model"
+         }
+      }
+   },
+   "hull" : {
+      "armor" : {
+         "armor_2" : 9,
+         "armor_6" : 6,
+         "armor_9" : "",
+         "armor_8" : 6,
+         "armor_4" : 6,
+         "armor_11" : 9,
+         "armor_7" : 9,
+         "armor_10" : "",
+         "armor_5" : 6,
+         "armor_1" : 9,
+         "armor_3" : 6
+      },
+      "hangarShadowTexture" : "vehicles/french/F52_RenaultUE57/RenaultUE57_HangarShadowMap.dds",
+      "weight" : 1000,
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 70,
+         "maxHealth" : 100,
+         "repairCost" : "1.0"
+      },
+      "models" : {
+         "exploded" : "vehicles/french/F52_RenaultUE57/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F52_RenaultUE57/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F52_RenaultUE57/normal/lod0/Hull.model"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.67",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.26 32.00 0.38 1.00 0.05 0.29",
+         "pitchParams" : "0.26 32.00 0.38 1.00 0.05 0.29"
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "maxHealth" : 120,
+      "turretPositions" : {
+         "turret" : "-0 0 -1"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.22",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "0 1 0",
+            "rayEnd" : "0.426343 0.28947 0.254337",
+            "hideIfDamaged" : true
+         }
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F52_RenaultUE57/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F52_RenaultUE57/collision_client/Hull.model"
+      }
+   },
+   "repairCost" : "6.9",
+   "invisibility" : {
+      "still" : "0.471",
+      "camouflageNetBonus" : "0.15",
+      "firePenalty" : "0.707",
+      "moving" : "0.283",
+      "camouflageBonus" : "0.04"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.988567898"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/french/F52_RenaultUE57/RenaultUE57_CM.dds",
+      "priceFactor" : "0.6"
+   },
+   "radios" : {
+      "ER_53" : "shared",
+      "ER_56" : "shared",
+      "ER_52" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Renault_EU" : {
+               "smplEnginePower" : "40.17668"
+            },
+            "Renault_ACL" : {
+               "smplEnginePower" : "50.7495"
+            }
+         },
+         "chassis" : {
+            "Chassis_RenaultUE57_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            },
+            "Chassis_RenaultUE57" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "forward" : 36,
+      "backward" : 12
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   }
+}

@@ -1,0 +1,606 @@
+{
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.15",
+      "still" : "0.305",
+      "camouflageBonus" : "0.04",
+      "moving" : "0.183",
+      "firePenalty" : "0.458"
+   },
+   "repairCost" : "8.15",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.80599386"
+   },
+   "engines" : {
+      "Wright_Continental_R-975C1" : "shared",
+      "GMC_6046" : "shared",
+      "Wright_Continental_R-975EC2" : "shared"
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "radios" : {
+      "SCR_506" : "shared",
+      "SCR_508" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "usa_star",
+      "alpha" : "0.82"
+   },
+   "speedLimits" : {
+      "backward" : 11,
+      "forward" : 42
+   },
+   "turrets0" : {
+      "Turret_1_M36_Slagger_4" : {
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A31_M36_Slagger/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/american/A31_M36_Slagger/collision/Turret_01.model"
+         },
+         "weight" : 4500,
+         "gunPosition" : "-0 0 1",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80
+         },
+         "price" : 9000,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "models" : {
+            "undamaged" : "vehicles/american/A31_M36_Slagger/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A31_M36_Slagger/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A31_M36_Slagger/crash/lod0/Turret_01.model"
+         },
+         "maxHealth" : 112,
+         "ceilless" : true,
+         "rotationSpeed" : 16,
+         "guns" : {
+            "_76mm_AT_Gun_M1A2" : "shared",
+            "_90mm_AT_Gun_M3" : "shared"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 120,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 60
+         },
+         "circularVisionRadius" : 370,
+         "unlocks" : {
+            "turret" : "Turret_2_M36_Slagger_4"
+         },
+         "level" : 5,
+         "armor" : {
+            "armor_2" : "",
+            "armor_8" : "",
+            "armor_6" : 57,
+            "armor_4" : 25,
+            "armor_7" : "",
+            "armor_1" : 76,
+            "armor_5" : 19,
+            "armor_3" : 25
+         },
+         "physicsShape" : "0.920 0.000 1.023 0.000 0.710 0.170 0.804 0.662 0.457 0.500 0.153 0.500 0.034 0.100 0.000",
+         "userString" : "#usa_vehicles:Turret_1_M36_Slagger_4",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "showEmblemsOnGun" : false,
+         "emblemSlots" : {
+            "inscription" : {
+               "size" : "0.64",
+               "rayStart" : "1.16734 0.306637 -0.251812",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1 0 -0"
+            },
+            "player" : [
+               {
+                  "size" : "0.24",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 0",
+                  "rayStart" : "1.13015 0.306004 0.340467",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 0",
+                  "rayStart" : "-1.13806 0.332794 0.334029",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "tags" : "AAAAAAAAAAAA"
+      },
+      "Turret_2_M36_Slagger_4" : {
+         "physicsShape" : "0.938 0.000 1.000 0.000 0.722 0.182 0.798 0.668 0.500 0.500 0.134 0.500 0.085 0.100 0.000",
+         "armor" : {
+            "armor_8" : 50,
+            "armor_2" : "",
+            "armor_7" : "",
+            "armor_4" : 25,
+            "armor_6" : 57,
+            "armor_3" : 25,
+            "armor_5" : 19,
+            "armor_1" : 76
+         },
+         "level" : 6,
+         "circularVisionRadius" : 370,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120
+         },
+         "guns" : {
+            "_76mm_AT_Gun_M1A2" : "shared",
+            "_90mm_AT_Gun_M3" : "shared"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "emblemSlots" : {
+            "inscription" : {
+               "rayEnd" : "1 0 -0",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "rayStart" : "1.18464 0.267733 -0.193274",
+               "size" : "0.64"
+            },
+            "player" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayStart" : "1.12366 0.284996 0.380717",
+                  "rayEnd" : "1 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.24",
+                  "isMirrored" : true
+               },
+               {
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 0",
+                  "rayStart" : "-1.15846 0.325273 0.267295",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "showEmblemsOnGun" : false,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "userString" : "#usa_vehicles:Turret_2_M36_Slagger_4",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "price" : 16100,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0",
+            "maxHealth" : 80
+         },
+         "gunPosition" : "-0 0 1",
+         "weight" : 4800,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A31_M36_Slagger/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/american/A31_M36_Slagger/collision_client/Turret_02.model"
+         },
+         "rotationSpeed" : 16,
+         "invisibilityFactor" : "0.878",
+         "ceilless" : true,
+         "maxHealth" : 142,
+         "models" : {
+            "undamaged" : "vehicles/american/A31_M36_Slagger/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/american/A31_M36_Slagger/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/american/A31_M36_Slagger/crash/lod0/Turret_02.model"
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "hull" : {
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "armor" : {
+         "armor_6" : 51,
+         "armor_10" : 20,
+         "armor_4" : 25,
+         "armor_7" : 20,
+         "armor_2" : 114,
+         "armor_9" : 19,
+         "armor_8" : 10,
+         "armor_1" : 60,
+         "armor_5" : 25,
+         "armor_3" : 25
+      },
+      "hangarShadowTexture" : "vehicles/american/A31_M36_Slagger/M36_Slagger_HangarShadowMap.dds",
+      "swinging" : {
+         "lodDist" : "FAR",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.32"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A31_M36_Slagger/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A31_M36_Slagger/collision_client/Hull.model"
+      },
+      "weight" : 14300,
+      "turretPositions" : {
+         "turret" : "0 1 -0"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 180,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 120
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "0.0109767 -0.0597738 2.27377",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "rayStart" : "0.0109767 0.283427 2.47922",
+            "size" : "0.3"
+         },
+         "inscription" : {
+            "rayStart" : "-1.42756 0.619274 0.798536",
+            "hideIfDamaged" : true,
+            "rayEnd" : "-1.12122 0.362071 0.798536",
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.72"
+         }
+      },
+      "maxHealth" : 448,
+      "models" : {
+         "destroyed" : "vehicles/american/A31_M36_Slagger/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A31_M36_Slagger/normal/lod0/Hull.model",
+         "exploded" : "vehicles/american/A31_M36_Slagger/crash/lod0/Hull.model"
+      },
+      "exhaust" : {
+         "tags" : {
+            "diesel" : "particles/Tank/engine_exit_diesel.xml"
+         },
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "GMC_6046" : {
+               "smplEnginePower" : "444.0581"
+            },
+            "Wright_Continental_R-975EC2" : {
+               "smplEnginePower" : "370.0484"
+            },
+            "Wright_Continental_R-975C1" : {
+               "smplEnginePower" : "422.9124"
+            }
+         },
+         "chassis" : {
+            "Chassis_M36_Slagger_4" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            },
+            "Chassis_M36_Slagger_5" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "radioman" : {},
+      "loader" : {},
+      "commander" : {}
+   },
+   "camouflage" : {
+      "exclusionMask" : "vehicles/american/A31_M36_Slagger/M36_Slagger_CM.dds",
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.2"
+   },
+   "chassis" : {
+      "Chassis_M36_Slagger_5" : {
+         "maxRegenHealth" : 90,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_R",
+                  "count" : 6,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0",
+                  "count" : 3,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 6,
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R4"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "name" : "WD_L4",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "navmeshGirth" : "6.0",
+         "hullPosition" : "0 1 0",
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "level" : 6,
+         "bulkHealthFactor" : "3.0",
+         "userString" : "#usa_vehicles:Chassis_M36_Slagger_5",
+         "tags" : {},
+         "brakeForce" : 35500,
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "usa_02",
+            "size" : "0.44 0.48",
+            "lodDist" : "FAR"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "repairCost" : "5.0",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A31_M36_Slagger/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A31_M36_Slagger/collision_client/Chassis.model"
+         },
+         "weight" : 7000,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.98",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "terrainResistance" : "1.1 1.3 2.3",
+         "wwsoundPC" : "treads_type_pc",
+         "price" : 22100,
+         "topRightCarryingPoint" : "1.05129 1.88969",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.23",
+            "vehicleMovement" : "0.23"
+         },
+         "maxHealth" : 120,
+         "models" : {
+            "destroyed" : "vehicles/american/A31_M36_Slagger/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A31_M36_Slagger/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A31_M36_Slagger/crash/lod0/Chassis.model"
+         },
+         "rotationSpeed" : 30,
+         "rotationIsAroundCenter" : true,
+         "maxLoad" : 30500
+      },
+      "Chassis_M36_Slagger_4" : {
+         "topRightCarryingPoint" : "1.05129 1.88969",
+         "price" : 6400,
+         "wwsoundPC" : "treads_type_pc",
+         "terrainResistance" : "1.3 1.7 2.5",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "repairCost" : "5.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-0.98",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "weight" : 7000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A31_M36_Slagger/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A31_M36_Slagger/collision/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "rotationSpeed" : 28,
+         "rotationIsAroundCenter" : true,
+         "maxLoad" : 28890,
+         "maxHealth" : 110,
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "models" : {
+            "undamaged" : "vehicles/american/A31_M36_Slagger/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A31_M36_Slagger/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A31_M36_Slagger/crash/lod0/Chassis.model"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 3,
+                  "template" : "WD_R"
+               },
+               {
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 6,
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 3,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 6,
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L4",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "hullPosition" : "0 1 0",
+         "navmeshGirth" : "6.0",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "level" : 5,
+         "unlocks" : {
+            "chassis" : "Chassis_M36_Slagger_5"
+         },
+         "maxRegenHealth" : 85,
+         "brakeForce" : 35500,
+         "tags" : {},
+         "traces" : {
+            "size" : "0.4 0.48",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR"
+         },
+         "bulkHealthFactor" : "3.0",
+         "userString" : "#usa_vehicles:Chassis_M36_Slagger_4"
+      }
+   }
+}

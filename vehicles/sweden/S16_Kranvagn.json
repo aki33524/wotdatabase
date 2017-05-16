@@ -1,0 +1,493 @@
+{
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "SFA_F12" : {
+               "smplEnginePower" : 700
+            }
+         },
+         "chassis" : {
+            "Chassis_S16_Kranvagn" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "engines" : {
+      "SFA_F12" : "shared"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "invisibility" : {
+      "still" : "0.093",
+      "moving" : "0.046",
+      "firePenalty" : "0.14",
+      "camouflageNetBonus" : "0.05",
+      "camouflageBonus" : "0.02"
+   },
+   "crewXpFactor" : "1.0",
+   "radios" : {
+      "Ra_421_1" : "shared"
+   },
+   "repairCost" : "11.0",
+   "clientAdjustmentFactors" : {
+      "engines" : {
+         "SFA_F12" : {
+            "bravo" : "237.8882"
+         }
+      },
+      "chassis" : {
+         "Chassis_S16_Kranvagn" : {
+            "alpha" : "0"
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_S16_Kranvagn" : {
+         "showEmblemsOnGun" : false,
+         "notInShop" : true,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 160,
+            "maxRegenHealth" : 80
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/sweden/S16_Kranvagn/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/sweden/S16_Kranvagn/collision/Turret_01.model"
+         },
+         "models" : {
+            "destroyed" : "vehicles/sweden/S16_Kranvagn/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/sweden/S16_Kranvagn/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/sweden/S16_Kranvagn/crash/lod0/Turret_01.model"
+         },
+         "maxHealth" : 400,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-1 0 0",
+                  "rayStart" : "-1 1 0",
+                  "size" : "0.3",
+                  "rayUp" : "0 0 -1",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "isMirrored" : true,
+                  "rayStart" : "1 1 0",
+                  "rayEnd" : "1 0 0",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "-0.29936 0.0972483 -0.949171",
+                  "size" : "0.3"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayStart" : "-1.20815 0.26737 -0.120592",
+                  "rayEnd" : "-1.01372 0.232676 -0.152113",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.722",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.722",
+                  "rayStart" : "1.20815 0.26737 -0.120592",
+                  "rayEnd" : "1.01372 0.232676 -0.152113"
+               }
+            ]
+         },
+         "level" : 10,
+         "price" : 66000,
+         "userString" : "#sweden_vehicles:Turret_1_S16_Kranvagn",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 120,
+            "maxRegenHealth" : 60
+         },
+         "rotationSpeed" : 25,
+         "camouflage" : {
+            "tiling" : "1 2 0.000000 0.000000"
+         },
+         "guns" : {
+            "_120mm_akan_L_40" : "shared"
+         },
+         "gunPosition" : "0 0 -0",
+         "tags" : {},
+         "circularVisionRadius" : 390,
+         "armor" : {
+            "armor_4" : 37,
+            "armor_6" : 30,
+            "armor_2" : 380,
+            "armor_5" : 20,
+            "armor_1" : 225,
+            "armor_7" : 70,
+            "armor_9" : 120,
+            "armor_8" : "",
+            "armor_3" : 70
+         },
+         "weight" : 15000,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "physicsShape" : "1.708 -0.774 1.000 0.000 0.953 -0.019 0.736 0.726 0.373 0.500 0.116 0.500 0.347 0.000 0.000",
+         "wwturretRotatorSoundManual" : "tur_mech_trav"
+      }
+   },
+   "chassis" : {
+      "Chassis_S16_Kranvagn" : {
+         "repairCost" : "5.0",
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/sweden/S16_Kranvagn/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/sweden/S16_Kranvagn/collision/Chassis.model"
+         },
+         "userString" : "#sweden_vehicles:Chassis_S16_Kranvagn",
+         "trackThickness" : "-0.0107",
+         "hullPosition" : "0.000000 1.02538 0.000000",
+         "maxHealth" : 300,
+         "models" : {
+            "exploded" : "vehicles/sweden/S16_Kranvagn/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/sweden/S16_Kranvagn/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/sweden/S16_Kranvagn/crash/lod0/Chassis.model"
+         },
+         "level" : 10,
+         "tags" : {},
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 3
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 6
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765",
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "syncAngle" : "21.1765",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "21.1765",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L4"
+               }
+            ]
+         },
+         "weight" : 9000,
+         "armor" : {
+            "rightTrack" : 30,
+            "leftTrack" : 30
+         },
+         "maxClimbAngle" : 25,
+         "navmeshGirth" : "6.0",
+         "rotationIsAroundCenter" : false,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 0"
+            }
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.52 0.74",
+            "bufferPrefs" : "largeTank"
+         },
+         "trackNodes" : {
+            "maxOffset" : "0.133",
+            "node" : [
+               {
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : 1,
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.3"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : 1,
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.3",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "0.75"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               }
+            ],
+            "enable" : true,
+            "maxAmplitude" : "0.133",
+            "gravity" : -9,
+            "elasticity" : 1100,
+            "linkBones" : false,
+            "damping" : 2
+         },
+         "bulkHealthFactor" : "3.0",
+         "splineDesc" : {
+            "segmentLength" : "0.128",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "right" : "vehicles/sweden/S16_Kranvagn/track/right.track",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/sweden/S16_Kranvagn/track/left.track",
+            "segmentOffset" : "0.111",
+            "segmentModelRight" : "vehicles/sweden/S16_Kranvagn/track/segment.model",
+            "segmentModelLeft" : "vehicles/sweden/S16_Kranvagn/track/segment.model"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.2"
+         },
+         "terrainResistance" : "1.3 1.4 2.3",
+         "price" : 82500,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "tracks" : {
+            "textureScale" : "-1.82",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "rotationSpeed" : 30,
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxLoad" : 48000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "minOffset" : "-0.09",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "maxOffset" : "0.09",
+                  "template" : "Track_L"
+               },
+               {
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "minOffset" : "-0.09",
+                  "isLeft" : false,
+                  "maxOffset" : "0.09",
+                  "count" : 6
+               }
+            ]
+         },
+         "maxRegenHealth" : 225,
+         "brakeForce" : 45000,
+         "topRightCarryingPoint" : "1.23176 2.21837",
+         "drivingWheels" : "WD_L0 WD_L4"
+      }
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "swedish_flag",
+      "alpha" : "0.88"
+   },
+   "crew" : {
+      "driver" : {},
+      "gunner" : "loader",
+      "commander" : "radioman\n\n\t\t\tloader"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/sweden/S16_Kranvagn/Kranvagn_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "4 4 0.000000 0.000000"
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2 HP_Track_Exhaus_3 HP_Track_Exhaus_4"
+      },
+      "armor" : {
+         "armor_2" : 115,
+         "armor_15" : 37,
+         "armor_16" : 30,
+         "armor_14" : 60,
+         "armor_6" : 15,
+         "armor_8" : "",
+         "armor_3" : 70,
+         "armor_10" : 40,
+         "armor_12" : 380,
+         "armor_9" : 25,
+         "armor_4" : 37,
+         "armor_11" : 70,
+         "armor_13" : 150,
+         "armor_5" : 18,
+         "armor_1" : 90,
+         "armor_7" : 80
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 180,
+         "maxHealth" : 260
+      },
+      "weight" : 17398,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/sweden/S16_Kranvagn/collision/Hull.model",
+         "collisionModelClient" : "vehicles/sweden/S16_Kranvagn/collision_client/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "models" : {
+         "exploded" : "vehicles/sweden/S16_Kranvagn/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/sweden/S16_Kranvagn/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/sweden/S16_Kranvagn/crash/lod0/Hull.model"
+      },
+      "maxHealth" : 1600,
+      "swinging" : {
+         "rollParams" : "1.00 0.20 36.00 0.34 1.00 0.04 0.26",
+         "sensitivityToImpulse" : "0.13",
+         "pitchParams" : "0.20 36.00 0.34 1.00 0.04 0.26",
+         "lodDist" : "FAR"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "0.360996 -0.0324251 2.87131",
+            "rayStart" : "0.412605 0.148878 2.93814",
+            "size" : "0.3",
+            "rayUp" : "-0.111119 0.0291899 -0.993378",
+            "hideIfDamaged" : false
+         }
+      },
+      "turretPositions" : {
+         "turret" : "-0 0 1"
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "system/maps/null_exclusion_mask.dds",
+      "priceFactor" : "2.0"
+   },
+   "speedLimits" : {
+      "backward" : 18,
+      "forward" : 60
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   }
+}

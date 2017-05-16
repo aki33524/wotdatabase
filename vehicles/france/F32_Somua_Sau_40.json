@@ -1,0 +1,547 @@
+{
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "repairCost" : 6,
+   "speedLimits" : {
+      "forward" : 37,
+      "backward" : 12
+   },
+   "crewXpFactor" : "1.0",
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.857849041"
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "alpha" : "0.85",
+      "lodDist" : "MEDIUM"
+   },
+   "turrets0" : {
+      "Turret_1_Somua_Sau_40" : {
+         "price" : 100,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30,
+            "maxHealth" : 60
+         },
+         "weight" : 170,
+         "guns" : {
+            "Canon_de_105_court_mle_1934S_AC" : "shared",
+            "_75mm_Long_44_AC" : "shared",
+            "_75mm_APX" : "shared"
+         },
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F32_Somua_Sau_40/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F32_Somua_Sau_40/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0 0 0",
+         "armor" : {
+            "armor_2" : "",
+            "armor_6" : "",
+            "armor_8" : "",
+            "armor_5" : 10,
+            "armor_4" : "",
+            "armor_3" : "",
+            "armor_7" : "",
+            "armor_1" : 18
+         },
+         "userString" : "#france_vehicles:Turret_1_Somua_Sau_40",
+         "maxHealth" : 56,
+         "wwturretRotatorSoundManual" : "tur_man_trav_02",
+         "showEmblemsOnGun" : false,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "rotationSpeed" : 44,
+         "level" : 4,
+         "tags" : "AAAAAAAAAAAA",
+         "emblemSlots" : {},
+         "circularVisionRadius" : 330,
+         "models" : {
+            "destroyed" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F32_Somua_Sau_40/normal/lod0/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         }
+      }
+   },
+   "crew" : {
+      "commander" : {},
+      "radioman" : {},
+      "loader" : {},
+      "driver" : {},
+      "gunner" : {}
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "0.8",
+      "exclusionMask" : "vehicles/french/F32_Somua_Sau_40/F32_Somua_Sau_40_CM.dds",
+      "tiling" : "1 1 0 0"
+   },
+   "chassis" : {
+      "Chassis_Somua_Sau_40" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 55,
+         "drivingWheels" : "WD_L0 WD_L5",
+         "repairCost" : "0.5",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "brakeForce" : 34000,
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F32_Somua_Sau_40/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F32_Somua_Sau_40/collision/Chassis.model"
+         },
+         "maxLoad" : 24500,
+         "maxClimbAngle" : 25,
+         "unlocks" : {
+            "chassis" : "Chassis_Somua_Sau_40_2"
+         },
+         "navmeshGirth" : "6.0",
+         "weight" : 5350,
+         "topRightCarryingPoint" : "1.00959 1.58207",
+         "price" : "1660.0",
+         "wwsoundPC" : "treads_type_pc",
+         "tags" : {},
+         "hullPosition" : "0 1 0",
+         "models" : {
+            "exploded" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F32_Somua_Sau_40/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Chassis.model"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R5",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.36715"
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L4"
+               },
+               {
+                  "radius" : "0.36715",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "WD_L5"
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 3
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 9
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 3,
+                  "template" : "WD_L",
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "count" : 9,
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationSpeed" : 28,
+         "level" : 3,
+         "maxHealth" : 70,
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : true,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "userString" : "#france_vehicles:Chassis_Somua_Sau_40",
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "size" : "0.25 0.33",
+            "bufferPrefs" : "mediumTank"
+         },
+         "terrainResistance" : "1.4 1.6 2.7",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.05",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         }
+      },
+      "Chassis_Somua_Sau_40_2" : {
+         "wwsoundPC" : "treads_type_pc",
+         "topRightCarryingPoint" : "1.00959 1.58207",
+         "price" : "4760.0",
+         "weight" : 5350,
+         "unlocks" : {
+            "vehicle" : "F33_S_35CA"
+         },
+         "navmeshGirth" : "6.0",
+         "maxClimbAngle" : 25,
+         "maxLoad" : 26000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F32_Somua_Sau_40/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F32_Somua_Sau_40/collision/Chassis.model"
+         },
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "brakeForce" : 34000,
+         "repairCost" : "0.5",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "maxRegenHealth" : 60,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.09"
+         },
+         "terrainResistance" : "1.3 1.5 2.5",
+         "traces" : {
+            "size" : "0.25 0.33",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02"
+         },
+         "userString" : "#france_vehicles:Chassis_Somua_Sau_40_2",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.24",
+            "vehicleRotation" : "0.24"
+         },
+         "rotationIsAroundCenter" : true,
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 80,
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationSpeed" : 30,
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_R"
+               },
+               {
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 9
+               },
+               {
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 3
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 9,
+                  "startIndex" : "",
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R4"
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.36715",
+                  "name" : "WD_R5"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "WD_L0"
+               },
+               {
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : false
+               },
+               {
+                  "name" : "WD_L5",
+                  "radius" : "0.36715",
+                  "isLeading" : false,
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "level" : 4,
+         "models" : {
+            "exploded" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F32_Somua_Sau_40/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Chassis.model"
+         },
+         "hullPosition" : "0 1 0",
+         "tags" : {}
+      }
+   },
+   "engines" : {
+      "Somua_S-40Bis" : "shared",
+      "Somua_S-40" : "shared"
+   },
+   "hull" : {
+      "maxHealth" : 224,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.20 32.00 0.36 1.00 0.05 0.29",
+         "pitchParams" : "0.20 32.00 0.36 1.00 0.05 0.29",
+         "sensitivityToImpulse" : "0.32"
+      },
+      "weight" : 16800,
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 85,
+         "maxHealth" : 125
+      },
+      "hangarShadowTexture" : "vehicles/french/F32_Somua_Sau_40/F32_Somua_Sau_40_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-0.514021 0.0566741 2.18485",
+            "rayStart" : "-0.514021 0.110696 2.41869",
+            "hideIfDamaged" : true,
+            "size" : "0.25"
+         },
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.07401 1.50276 0.712546",
+               "rayEnd" : "-0.843193 1.43701 0.712546",
+               "hideIfDamaged" : true,
+               "size" : "0.25"
+            },
+            {
+               "isMirrored" : true,
+               "rayStart" : "1.24933 0.647233 -0.130325",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.00933 0.647228 -0.130321",
+               "size" : "0.25",
+               "hideIfDamaged" : true
+            }
+         ],
+         "inscription" : {
+            "hideIfDamaged" : true,
+            "size" : "0.75",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "1.24934 0.644661 0.506931",
+            "rayEnd" : "1.00934 0.644656 0.506934"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "models" : {
+         "destroyed" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Hull.model",
+         "exploded" : "vehicles/french/F32_Somua_Sau_40/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F32_Somua_Sau_40/normal/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_13" : 35,
+         "armor_1" : 36,
+         "armor_7" : 20,
+         "armor_12" : 10,
+         "armor_3" : 35,
+         "armor_4" : 35,
+         "armor_8" : 12,
+         "armor_11" : "",
+         "armor_5" : 35,
+         "armor_10" : 25,
+         "armor_9" : 20,
+         "armor_6" : 25,
+         "armor_2" : 36
+      },
+      "turretPositions" : {
+         "turret" : "0.140733 0.567264 2.01108"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F32_Somua_Sau_40/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F32_Somua_Sau_40/collision_client/Hull.model"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Somua_Sau_40" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  }
+               }
+            },
+            "Chassis_Somua_Sau_40_2" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Somua_S-40Bis" : {
+               "smplEnginePower" : "274.8931"
+            },
+            "Somua_S-40" : {
+               "smplEnginePower" : "232.6019"
+            }
+         }
+      }
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.15",
+      "firePenalty" : "0.423",
+      "camouflageBonus" : "0.04",
+      "moving" : "0.169",
+      "still" : "0.282"
+   },
+   "radios" : {
+      "ER_56" : "shared",
+      "ER_53" : "shared",
+      "ER_52" : "shared"
+   }
+}

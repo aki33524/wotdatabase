@@ -1,0 +1,505 @@
+{
+   "radios" : {
+      "Kdo_Funkstation_SE_407" : "shared"
+   },
+   "repairCost" : "5.7",
+   "premiumVehicleXPFactor" : "0.1",
+   "hull" : {
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G119_Panzer58_BF/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G119_Panzer58_BF/collision_client/Hull.model"
+      },
+      "weight" : 14652,
+      "maxHealth" : 1040,
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.28",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.036092 0.110228 2.90563",
+            "rayStart" : "-0.036092 0.254795 3.04383"
+         }
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 200,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 135
+      },
+      "hangarShadowTexture" : "vehicles/german/G119_Panzer58_BF/Panzer58_BF_HangarShadowMap.dds",
+      "models" : {
+         "exploded" : "vehicles/german/G119_Panzer58_BF/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G119_Panzer58_BF/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G119_Panzer58_BF/normal/lod0/Hull.model"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.48",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "armor" : {
+         "armor_6" : 15,
+         "armor_11" : 120,
+         "armor_3" : 30,
+         "armor_14" : 50,
+         "armor_8" : "",
+         "armor_15" : 40,
+         "armor_2" : 60,
+         "armor_4" : 40,
+         "armor_9" : 55,
+         "armor_5" : 30,
+         "armor_16" : 30,
+         "armor_12" : 90,
+         "armor_1" : 200,
+         "armor_10" : 50,
+         "armor_7" : 120,
+         "armor_13" : 70
+      },
+      "camouflage" : {
+         "tiling" : "1.12 1.12 0.76 0.84"
+      },
+      "exhaust" : {
+         "pixie" : "diesel_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "primaryArmor" : "armor_12 armor_3 armor_4"
+   },
+   "engines" : {
+      "MB-837-Ba-600" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.919060182"
+   },
+   "invisibility" : {
+      "still" : "0.278",
+      "firePenalty" : "0.372",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.216"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "1.6"
+   },
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 50
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "turrets0" : {
+      "Turret_1_G119_Panzer58_BF" : {
+         "userString" : "#germany_vehicles:Turret_1_G119_Panzer58_BF",
+         "guns" : {
+            "_9cm_Kan" : "shared"
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "size" : "0.65",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0.898333 0.320227 -0.19692",
+                  "rayStart" : "-1.07957 0.404315 -0.205958"
+               },
+               {
+                  "rayStart" : "1.07957 0.404315 -0.205958",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.65",
+                  "rayEnd" : "0.898333 0.320227 -0.19692"
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "-0.95447 0.418095 0.511467",
+                  "rayEnd" : "-0.80568 0.297357 0.45417",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28"
+               },
+               {
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "0.804084 0.29805 0.455571",
+                  "isMirrored" : true,
+                  "rayStart" : "0.95941 0.40897 0.515316"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G119_Panzer58_BF/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G119_Panzer58_BF/collision/Turret_01.model"
+         },
+         "physicsShape" : "0.985 0.049 1.000 0.000 0.512 0.010 0.640 0.502 0.498 0.500 0.374 0.500 0.128 0.000 0.000",
+         "price" : 30000,
+         "circularVisionRadius" : 380,
+         "models" : {
+            "exploded" : "vehicles/german/G119_Panzer58_BF/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G119_Panzer58_BF/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G119_Panzer58_BF/normal/lod0/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "weight" : 9000,
+         "maxHealth" : 260,
+         "level" : 8,
+         "rotationSpeed" : 36,
+         "notInShop" : true,
+         "showEmblemsOnGun" : false,
+         "turretRotatorHealth" : {
+            "maxHealth" : 140,
+            "maxRegenHealth" : 70,
+            "repairCost" : "1.0"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "tags" : {},
+         "gunPosition" : "0.000000 0.267142 1.13856",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "camouflage" : {
+            "tiling" : "0.565 0.565 0.000000 0.000000"
+         },
+         "armor" : {
+            "armor_11" : 90,
+            "armor_3" : 65,
+            "armor_14" : 40,
+            "armor_8" : "",
+            "armor_6" : 15,
+            "armor_1" : 120,
+            "armor_12" : 75,
+            "armor_7" : 80,
+            "armor_10" : 40,
+            "armor_13" : 70,
+            "armor_4" : 40,
+            "armor_9" : 30,
+            "armor_16" : 60,
+            "armor_5" : 30,
+            "armor_15" : 50,
+            "armor_2" : 100
+         }
+      }
+   },
+   "chassis" : {
+      "Chassis_G119_Panzer58_BF" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.083",
+                  "maxOffset" : "0.0585216",
+                  "count" : 6,
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "Track_R",
+                  "maxOffset" : "0.059",
+                  "count" : 6,
+                  "minOffset" : "-0.083",
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 6,
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 3,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 6
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "syncAngle" : "22.5",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "22.5",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "syncAngle" : "22.5",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "22.5"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "maxHealth" : 200,
+         "weight" : 8000,
+         "splineDesc" : {
+            "right" : "vehicles/german/G119_Panzer58_BF/track/right.track",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.088",
+            "left" : "vehicles/german/G119_Panzer58_BF/track/left.track",
+            "segmentModelRight" : "vehicles/german/G119_Panzer58_BF/track/segment.model",
+            "segmentModelLeft" : "vehicles/german/G119_Panzer58_BF/track/segment.model",
+            "segmentLength" : "0.14"
+         },
+         "rotationSpeed" : 45,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.5",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "trackThickness" : "-0.0063",
+         "maxLoad" : 40000,
+         "navmeshGirth" : "6.0",
+         "repairCost" : "1.0",
+         "rotationIsAroundCenter" : true,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 2 0 0 0 7 0 0 -0"
+            }
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G119_Panzer58_BF/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G119_Panzer58_BF/collision_client/Chassis.model"
+         },
+         "maxRegenHealth" : 150,
+         "terrainResistance" : "0.5 0.7 1.4",
+         "tags" : {},
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.4 0.48"
+         },
+         "topRightCarryingPoint" : "1.24276 1.96289",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "bulkHealthFactor" : "3.0",
+         "wwsoundPC" : "treads_type_pc",
+         "maxClimbAngle" : 25,
+         "level" : 8,
+         "trackNodes" : {
+            "maxAmplitude" : "0.1",
+            "offset" : "0",
+            "elasticity" : 1137,
+            "damping" : 2,
+            "forwardElastK" : 1,
+            "gravity" : "-9.8",
+            "maxOffset" : "0.1",
+            "linkBones" : false,
+            "node" : [
+               {
+                  "backwardElastK" : "1.7",
+                  "offset" : "-0.023",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.79",
+                  "offset" : "-0.023"
+               },
+               {
+                  "offset" : "-0.023",
+                  "backwardElastK" : "1.9",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : 2,
+                  "offset" : "-0.023"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.023",
+                  "backwardElastK" : "1.7"
+               },
+               {
+                  "backwardElastK" : "1.79",
+                  "offset" : "-0.023",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "offset" : "-0.023",
+                  "backwardElastK" : "1.9"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.023",
+                  "backwardElastK" : 2
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               }
+            ],
+            "enable" : true,
+            "backwardElastK" : 1
+         },
+         "notInShop" : true,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.18",
+            "vehicleRotation" : "0.18"
+         },
+         "models" : {
+            "exploded" : "vehicles/german/G119_Panzer58_BF/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G119_Panzer58_BF/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G119_Panzer58_BF/normal/lod0/Chassis.model"
+         },
+         "brakeForce" : 35000,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "hullPosition" : "0.000000 0.95558 0.000000",
+         "userString" : "#germany_vehicles:Chassis_G119_Panzer58_BF",
+         "wwsoundNPC" : "trds_chf_npc",
+         "price" : 30000
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM",
+      "default" : "germany_bundecross"
+   },
+   "customDefaultCamouflage" : true,
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "crew" : {
+      "loader" : {},
+      "gunner" : {},
+      "commander" : "AAAAAAAA",
+      "driver" : {}
+   },
+   "crewXpFactor" : "1.5",
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G119_Panzer58_BF" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "MB-837-Ba-600" : {
+               "smplEnginePower" : "634.3687"
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,923 @@
+{
+   "hull" : {
+      "turretPositions" : {
+         "turret" : "0.000000 1.21671 0.175305"
+      },
+      "maxHealth" : 760,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 220,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 150
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.20 36.00 0.34 1.00 0.04 0.26",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.20 36.00 0.34 1.00 0.04 0.26",
+         "sensitivityToImpulse" : "0.08"
+      },
+      "hangarShadowTexture" : "vehicles/japan/J24_Mi_To_130_tons/Mi_To_130_tons_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "1.48 1.48 0.000000 0.000000"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayStart" : "-2.51549 0.748503 -0.568497",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.8",
+               "rayEnd" : "-2.31549 0.748503 -0.568497",
+               "hideIfDamaged" : false
+            },
+            {
+               "size" : "0.8",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "2.51549 0.748503 -0.568497",
+               "rayEnd" : "2.31549 0.748503 -0.568497",
+               "hideIfDamaged" : true
+            }
+         ],
+         "clan" : {
+            "rayStart" : "0.846058 0.244038 4.19869",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.28",
+            "hideIfDamaged" : true,
+            "rayEnd" : "0.846058 0.0776235 4.08776"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "models" : {
+         "exploded" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/japan/J24_Mi_To_130_tons/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Hull.model"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/japan/J24_Mi_To_130_tons/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/japan/J24_Mi_To_130_tons/collision/Hull.model"
+      },
+      "weight" : 110208,
+      "armor" : {
+         "armor_10" : 150,
+         "armor_8" : "",
+         "armor_15" : 70,
+         "armor_6" : 30,
+         "armor_5" : 50,
+         "armor_3" : 70,
+         "armor_13" : 150,
+         "armor_12" : 150,
+         "armor_4" : 150,
+         "armor_14" : 150,
+         "armor_7" : 35,
+         "armor_1" : 150,
+         "armor_2" : 150,
+         "armor_11" : 150,
+         "armor_16" : 105,
+         "armor_9" : 35
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "_Type98_V12_x2_1200" : {
+               "smplEnginePower" : "1268.737"
+            },
+            "_Type98_V12_x2_1100" : {
+               "smplEnginePower" : "1163.009"
+            }
+         },
+         "chassis" : {
+            "Chassis_J24_Mi_To_130_tons" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_J24_Mi_To_130_tons_2" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "chassis" : {
+      "Chassis_J24_Mi_To_130_tons" : {
+         "trackNodes" : {
+            "offset" : "0",
+            "maxOffset" : "0.1",
+            "elasticity" : 630,
+            "backwardElastK" : 1,
+            "maxAmplitude" : "0.09",
+            "node" : [
+               {
+                  "backwardElastK" : "1.65",
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.074",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.06"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "1.06",
+                  "isLeft" : false,
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.65"
+               },
+               {
+                  "backwardElastK" : "1.37",
+                  "forwardElastK" : "1.81",
+                  "isLeft" : true,
+                  "offset" : "-0.074",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.81",
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.37"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.1"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "offset" : "-0.074",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : "1.3"
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "name" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VT_L7",
+                  "offset" : "-0.074",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "backwardElastK" : "1.1",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.074",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "backwardElastK" : "1.3",
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.074",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "name" : "Track_VT_R6",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VT_R7",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.6"
+               }
+            ],
+            "damping" : 2,
+            "gravity" : -8,
+            "forwardElastK" : 1,
+            "enable" : true,
+            "linkBones" : false
+         },
+         "rotationSpeed" : 16,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.08",
+                  "template" : "Track_L",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "Track_R",
+                  "maxOffset" : "0.08",
+                  "minOffset" : "-0.06",
+                  "startIndex" : "",
+                  "count" : 8,
+                  "isLeft" : false
+               }
+            ]
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_J24_Mi_To_130_tons_2"
+         },
+         "maxLoad" : 150500,
+         "hullPosition" : "0.000000 1.37077 0.000000",
+         "navmeshGirth" : "6.0",
+         "maxHealth" : 190,
+         "maxClimbAngle" : 25,
+         "topRightCarryingPoint" : "1.90313 3.3228",
+         "bulkHealthFactor" : "3.0",
+         "trackThickness" : "-0.0364",
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.55 0.71",
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "germany_01"
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.5",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "repairCost" : "5.0",
+         "weight" : 25000,
+         "price" : 10000,
+         "maxRegenHealth" : 145,
+         "wwsoundNPC" : "trds_chf_npc",
+         "tags" : {},
+         "splineDesc" : {
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.223",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/japan/J24_Mi_To_130_tons/track/left.track",
+            "segmentModelRight" : "vehicles/japan/J24_Mi_To_130_tons/track/Mi_To_track.model",
+            "segmentModelLeft" : "vehicles/japan/J24_Mi_To_130_tons/track/Mi_To_track.model",
+            "segmentOffset" : "0.032",
+            "right" : "vehicles/japan/J24_Mi_To_130_tons/track/right.track"
+         },
+         "models" : {
+            "destroyed" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/japan/J24_Mi_To_130_tons/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Chassis.model"
+         },
+         "brakeForce" : 150000,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J24_Mi_To_130_tons/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/japan/J24_Mi_To_130_tons/collision_client/Chassis.model"
+         },
+         "rotationIsAroundCenter" : false,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "6 0 0 0 2 0 0 0 12 0 0 0"
+            }
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "terrainResistance" : "1.2 1.4 1.9",
+         "level" : 5,
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 7,
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_R"
+               },
+               {
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "count" : 8,
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "count" : 7,
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 8,
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : "27.692",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R8",
+                  "radius" : "1",
+                  "isLeading" : true,
+                  "syncAngle" : "27.692"
+               },
+               {
+                  "syncAngle" : "27.692",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "syncAngle" : "27.692",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "1",
+                  "name" : "WD_L8"
+               }
+            ]
+         },
+         "armor" : {
+            "leftTrack" : 40,
+            "rightTrack" : 40
+         },
+         "drivingWheels" : "WD_L0 WD_L8",
+         "userString" : "#japan_vehicles:Chassis_J24_Mi_To_130_tons"
+      },
+      "Chassis_J24_Mi_To_130_tons_2" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "maxOffset" : "0.08",
+                  "minOffset" : "-0.06",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "maxOffset" : "0.08",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.06",
+                  "count" : 8,
+                  "isLeft" : false,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "rotationSpeed" : 18,
+         "trackNodes" : {
+            "elasticity" : 630,
+            "backwardElastK" : 1,
+            "damping" : 2,
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.06",
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.65"
+               },
+               {
+                  "backwardElastK" : "1.65",
+                  "offset" : "-0.074",
+                  "forwardElastK" : "1.06",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "backwardElastK" : "1.37",
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.81",
+                  "offset" : "-0.074"
+               },
+               {
+                  "backwardElastK" : "1.37",
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.81",
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.1"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.074"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074"
+               },
+               {
+                  "offset" : "-0.074",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : "1.3"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L5",
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "offset" : "-0.074",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_L7"
+               },
+               {
+                  "backwardElastK" : "1.1",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_R3"
+               },
+               {
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.074",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.3"
+               },
+               {
+                  "name" : "Track_VT_R5",
+                  "forwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.074",
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VT_R6",
+                  "offset" : "-0.074",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.074",
+                  "name" : "Track_VT_R7",
+                  "backwardElastK" : "1.6"
+               }
+            ],
+            "maxAmplitude" : "0.09",
+            "maxOffset" : "0.1",
+            "offset" : "0",
+            "linkBones" : false,
+            "enable" : true,
+            "forwardElastK" : 1,
+            "gravity" : -8
+         },
+         "navmeshGirth" : "6.0",
+         "hullPosition" : "0.000000 1.37077 0.000000",
+         "maxLoad" : 155000,
+         "trackThickness" : "-0.0364",
+         "traces" : {
+            "size" : "0.55 0.71",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "germany_01"
+         },
+         "maxHealth" : 210,
+         "bulkHealthFactor" : "3.0",
+         "maxClimbAngle" : 25,
+         "topRightCarryingPoint" : "1.90313 3.3228",
+         "maxRegenHealth" : 160,
+         "price" : 19800,
+         "repairCost" : "5.0",
+         "weight" : 25000,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.5",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "tags" : {},
+         "splineDesc" : {
+            "left" : "vehicles/japan/J24_Mi_To_130_tons/track/left.track",
+            "segmentModelRight" : "vehicles/japan/J24_Mi_To_130_tons/track/Mi_To_track.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.223",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.032",
+            "right" : "vehicles/japan/J24_Mi_To_130_tons/track/right.track",
+            "segmentModelLeft" : "vehicles/japan/J24_Mi_To_130_tons/track/Mi_To_track.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.2",
+            "vehicleRotation" : "0.22"
+         },
+         "terrainResistance" : "1.1 1.3 1.8",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "6 0 0 0 2 0 0 0 12 0 0 -0"
+            }
+         },
+         "rotationIsAroundCenter" : false,
+         "models" : {
+            "exploded" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/japan/J24_Mi_To_130_tons/normal/lod0/Chassis.model"
+         },
+         "brakeForce" : 150000,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J24_Mi_To_130_tons/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/japan/J24_Mi_To_130_tons/collision_client/Chassis.model"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "count" : 7,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "count" : 8,
+                  "startIndex" : "",
+                  "radius" : "0"
+               },
+               {
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 7,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 8,
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : "27.692",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.692",
+                  "isLeft" : false,
+                  "name" : "WD_R8",
+                  "radius" : "1"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.692",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "syncAngle" : "27.692",
+                  "isLeading" : true,
+                  "name" : "WD_L8",
+                  "radius" : "1",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 6,
+         "drivingWheels" : "WD_L0 WD_L8",
+         "userString" : "#japan_vehicles:Chassis_J24_Mi_To_130_tons_2",
+         "armor" : {
+            "rightTrack" : 40,
+            "leftTrack" : 40
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_J24_Mi_To_130_tons" : {
+         "gunPosition" : "0.000000 0.512621 1.10612",
+         "showEmblemsOnGun" : false,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "camouflage" : {
+            "tiling" : "0.79 0.415 0.000000 0.000000"
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1.28515 0.564722 0.400923",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.3",
+                  "hideIfDamaged" : true,
+                  "rayEnd" : "-1.08515 0.564722 0.400923"
+               },
+               {
+                  "hideIfDamaged" : true,
+                  "isMirrored" : true,
+                  "rayEnd" : "1.09038 0.432858 -0.00387596",
+                  "size" : "0.3",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1.29038 0.432858 -0.00387596"
+               }
+            ]
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 140,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 70
+         },
+         "models" : {
+            "destroyed" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/japan/J24_Mi_To_130_tons/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/japan/J24_Mi_To_130_tons/crash/lod0/Turret_01.model"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/japan/J24_Mi_To_130_tons/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/japan/J24_Mi_To_130_tons/collision/Turret_01.model"
+         },
+         "physicsShape" : "1.000 0.000 0.997 0.000 0.749 -0.016 0.500 0.500 0.500 0.500 0.000 0.500 0.000 0.500 0.000",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 45,
+            "repairCost" : "1.0",
+            "maxHealth" : 90
+         },
+         "tags" : {},
+         "rotationSpeed" : 18,
+         "circularVisionRadius" : 370,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "price" : 12000,
+         "userString" : "#japan_vehicles:Turret_1_J24_Mi_To_130_tons",
+         "weight" : 12000,
+         "armor" : {
+            "armor_1" : 150,
+            "armor_6" : 30,
+            "armor_7" : 150,
+            "armor_8" : "",
+            "armor_9" : 150,
+            "armor_4" : 150,
+            "armor_5" : 50,
+            "armor_3" : 150,
+            "armor_2" : 70
+         },
+         "notInShop" : true,
+         "maxHealth" : 190,
+         "level" : 6,
+         "guns" : {
+            "_150mm_Howitzer_Type96" : "shared",
+            "_105mm_Cannon_Type92" : "shared"
+         }
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "1.2",
+      "tiling" : "1 1 0 0"
+   },
+   "crew" : {
+      "driver" : {},
+      "gunner" : {},
+      "commander" : {},
+      "radioman" : [
+         {},
+         {}
+      ],
+      "loader" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.022502039"
+   },
+   "engines" : {
+      "_Type98_V12_x2_1100" : "shared",
+      "_Type98_V12_x2_1200" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "invisibility" : {
+      "moving" : "0.002",
+      "still" : "0.004",
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.006",
+      "camouflageBonus" : "0.02"
+   },
+   "radios" : {
+      "_Type94_Otsu" : "shared",
+      "_Type94_Hei" : "shared",
+      "_Type96_Bo" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : "29.4"
+   },
+   "repairCost" : "5.10",
+   "emblems" : {
+      "alpha" : 1,
+      "default" : "japanese_sun",
+      "lodDist" : "MEDIUM"
+   }
+}

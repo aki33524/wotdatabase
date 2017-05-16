@@ -1,0 +1,582 @@
+{
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Renault" : {
+               "smplEnginePower" : "41.23396"
+            },
+            "Franklin" : {
+               "smplEnginePower" : "105.7281"
+            }
+         },
+         "chassis" : {
+            "Chassis_RenaultBS2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_RenaultBS" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "backward" : 6,
+      "forward" : 19
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "hull" : {
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "armor" : {
+         "armor_5" : 8,
+         "armor_3" : 16,
+         "armor_2" : 16,
+         "armor_9" : 8,
+         "armor_1" : 16,
+         "armor_4" : 16,
+         "armor_6" : 8,
+         "armor_7" : 6,
+         "armor_8" : "",
+         "armor_10" : 16
+      },
+      "weight" : 4224,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F20_RenaultBS/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F20_RenaultBS/collision_client/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.120499 0.4602 0.610404"
+      },
+      "maxHealth" : 64,
+      "hangarShadowTexture" : "vehicles/french/F20_RenaultBS/RenaultBS_HangarShadowMap.dds",
+      "models" : {
+         "exploded" : "vehicles/french/F20_RenaultBS/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F20_RenaultBS/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F20_RenaultBS/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.30 38.00 0.36 1.00 0.05 0.34",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.94",
+         "pitchParams" : "0.30 38.00 0.36 1.00 0.05 0.34"
+      },
+      "camouflage" : {
+         "tiling" : "0.97 0.97 0.000000 0.000000"
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true,
+            "size" : "0.22",
+            "rayEnd" : "-0.000889916 -0.117691 1.43972",
+            "rayStart" : "-0.000889775 0.0808609 1.78696"
+         },
+         "player" : [
+            {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1 1 1",
+               "rayEnd" : "-0 1 0",
+               "size" : "0.28"
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "isMirrored" : true,
+               "size" : "0.28",
+               "rayEnd" : "0.26677 0.792611 0.459622",
+               "rayStart" : "1 1 1"
+            }
+         ],
+         "inscription" : [
+            {
+               "rayEnd" : "0.267993 0.511787 -0.76112",
+               "rayStart" : "0.387862 0.893405 -0.76112",
+               "size" : "0.55",
+               "hideIfDamaged" : false,
+               "rayUp" : "-1 0 0"
+            },
+            {
+               "size" : "0.55",
+               "rayStart" : "-0.686083 0.432739 0.0398308",
+               "rayEnd" : "-0.286082 0.432739 0.0398308",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            }
+         ]
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 50,
+         "maxRegenHealth" : 25
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.926794616"
+   },
+   "chassis" : {
+      "Chassis_RenaultBS2" : {
+         "userString" : "#france_vehicles:Chassis_RenaultBS2",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "hullPosition" : "0 1 0",
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F20_RenaultBS/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F20_RenaultBS/collision/Chassis.model"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.3",
+            "vehicleRotation" : "0.3"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.6"
+         },
+         "armor" : {
+            "leftTrack" : 5,
+            "rightTrack" : 5
+         },
+         "rotationSpeed" : 14,
+         "drivingWheels" : "WD_L0 WD_L7",
+         "repairCost" : "1.0",
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0.085",
+                  "startIndex" : 4
+               },
+               {
+                  "radius" : "0.11",
+                  "startIndex" : 5,
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "count" : 4
+               },
+               {
+                  "radius" : "0.0849999",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 3
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0.11",
+                  "count" : 5,
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "count" : 3,
+                  "radius" : "0.085",
+                  "startIndex" : 4
+               },
+               {
+                  "startIndex" : 5,
+                  "radius" : "0.11",
+                  "count" : 4,
+                  "template" : "W_L",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "radius" : "0.0849999",
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0.11",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "name" : "WD_R7"
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "radius" : "0.43",
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_L7",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0.43",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "WD_L0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "maxClimbAngle" : 25,
+         "maxLoad" : 9300,
+         "price" : 560,
+         "level" : 2,
+         "wwsoundNPC" : "trds_chf_npc",
+         "traces" : {
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.36 0.38"
+         },
+         "unlocks" : {
+            "vehicle" : "F21_Lorraine39_L_AM"
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F20_RenaultBS/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F20_RenaultBS/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F20_RenaultBS/crash/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true,
+         "maxHealth" : 50,
+         "maxRegenHealth" : 40,
+         "weight" : 2200,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 4 0 0 -0"
+            }
+         },
+         "brakeForce" : 7000,
+         "tags" : {},
+         "terrainResistance" : "1.2 1.4 2.3",
+         "topRightCarryingPoint" : "1 1",
+         "navmeshGirth" : "6.0",
+         "wwsoundPC" : "treads_type_pc"
+      },
+      "Chassis_RenaultBS" : {
+         "terrainResistance" : "1.3 1.5 2.5",
+         "tags" : {},
+         "topRightCarryingPoint" : "1 1",
+         "navmeshGirth" : "6.0",
+         "wwsoundPC" : "treads_type_pc",
+         "maxHealth" : 40,
+         "rotationIsAroundCenter" : true,
+         "maxRegenHealth" : 30,
+         "weight" : 2200,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "brakeForce" : 6000,
+         "repairCost" : "1.0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0.085",
+                  "startIndex" : 4
+               },
+               {
+                  "radius" : "0.11",
+                  "startIndex" : 5,
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "count" : 4
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "radius" : "0.0849999",
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "count" : 5,
+                  "radius" : "0.11",
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : 4,
+                  "radius" : "0.085",
+                  "count" : 3,
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "radius" : "0.11",
+                  "startIndex" : 5,
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "count" : 4
+               },
+               {
+                  "radius" : "0.0849999",
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "count" : 3
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 5,
+                  "radius" : "0.11",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R7",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0.43",
+                  "isLeft" : false,
+                  "isLeading" : false
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "WD_L7"
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0.43",
+                  "isLeft" : true,
+                  "isLeading" : false
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "maxLoad" : 7300,
+         "level" : 1,
+         "price" : 250,
+         "wwsoundNPC" : "trds_chf_npc",
+         "traces" : {
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "size" : "0.36 0.38",
+            "bufferPrefs" : "smallTank"
+         },
+         "models" : {
+            "destroyed" : "vehicles/french/F20_RenaultBS/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F20_RenaultBS/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F20_RenaultBS/crash/lod0/Chassis.model"
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_RenaultBS2"
+         },
+         "userString" : "#france_vehicles:Chassis_RenaultBS",
+         "hullPosition" : "0 1 0",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F20_RenaultBS/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F20_RenaultBS/collision/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.33",
+            "vehicleMovement" : "0.33"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-1.6"
+         },
+         "armor" : {
+            "leftTrack" : 5,
+            "rightTrack" : 5
+         },
+         "rotationSpeed" : 12,
+         "drivingWheels" : "WD_L0 WD_L7"
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "0.4",
+      "exclusionMask" : "vehicles/french/F20_RenaultBS/RenaultBS_CM.dds",
+      "tiling" : "1 1 0 0"
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "gunner\n\n\t\t\tradioman\n\n\t\t\tloader"
+   },
+   "repairCost" : "4.95",
+   "turrets0" : {
+      "Turret_1_RenaultBS" : {
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 20,
+            "maxHealth" : 40
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "notInShop" : true,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "circularVisionRadius" : 250,
+         "maxHealth" : 16,
+         "weight" : 100,
+         "wwturretRotatorSoundManual" : "tur_man_trav_06",
+         "guns" : {
+            "_76mm_Schneider" : "shared"
+         },
+         "level" : 2,
+         "price" : "120.0",
+         "models" : {
+            "undamaged" : "vehicles/french/F20_RenaultBS/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F20_RenaultBS/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F20_RenaultBS/crash/lod0/Turret_01.model"
+         },
+         "emblemSlots" : {},
+         "rotationSpeed" : 18,
+         "armor" : {
+            "armor_7" : "",
+            "armor_8" : "",
+            "armor_6" : "",
+            "armor_4" : "",
+            "armor_1" : "",
+            "armor_5" : "",
+            "armor_3" : "",
+            "armor_2" : ""
+         },
+         "gunPosition" : "0.000000 0.51608 0.000000",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#france_vehicles:Turret_1_RenaultBS",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F20_RenaultBS/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F20_RenaultBS/collision/Turret_01.model"
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "invisibility" : {
+      "moving" : "0.122",
+      "still" : "0.243",
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.365",
+      "camouflageBonus" : "0.02"
+   },
+   "engines" : {
+      "Franklin" : "shared",
+      "Renault" : "shared"
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   },
+   "radios" : {
+      "ER_53" : "shared",
+      "ER_52" : "shared"
+   }
+}

@@ -1,0 +1,786 @@
+{
+   "camouflage" : {
+      "priceFactor" : "0.6",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Wespeketten_ausf_B" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Wespeketten_ausf_A" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Maybach_HL62TR" : {
+               "smplEnginePower" : "148.0194"
+            },
+            "Maybach_HL57TR" : {
+               "smplEnginePower" : "137.4465"
+            },
+            "Maybach_HL_45P" : {
+               "smplEnginePower" : "158.5922"
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Wespeturm" : {
+         "maxHealth" : 26,
+         "guns" : {
+            "_105mm_leFH16_L22" : "shared",
+            "_105mm_leFH18_L28" : "shared"
+         },
+         "models" : {
+            "exploded" : "vehicles/german/G19_Wespe/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G19_Wespe/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G19_Wespe/crash/lod0/Turret_01.model"
+         },
+         "physicsShape" : "1.000 0.000 1.074 0.000 0.840 0.106 1.000 0.489 0.346 0.500 0.282 0.500 0.340 0.100 0.000",
+         "wwturretRotatorSoundManual" : "tur_man_trav_02",
+         "weight" : 100,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "1.0",
+            "maxHealth" : 40
+         },
+         "level" : 3,
+         "armor" : {
+            "armor_5" : "",
+            "armor_4" : "",
+            "armor_7" : "",
+            "armor_1" : 10,
+            "armor_3" : 5,
+            "armor_8" : "",
+            "armor_6" : "",
+            "armor_2" : 5
+         },
+         "rotationSpeed" : 16,
+         "emblemSlots" : {},
+         "circularVisionRadius" : 250,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G19_Wespe/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G19_Wespe/collision/Turret_01.model"
+         },
+         "price" : 150,
+         "userString" : "#germany_vehicles:Wespeturm",
+         "notInShop" : true,
+         "ceilless" : true,
+         "showEmblemsOnGun" : false,
+         "tags" : "AAAAAAAAAAAA",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "camouflage" : {
+            "tiling" : "0.46 0.46 0.000000 0.000000"
+         },
+         "gunPosition" : "0 1 -0"
+      }
+   },
+   "engines" : {
+      "Maybach_HL62TR" : "shared",
+      "Maybach_HL57TR" : "shared",
+      "Maybach_HL_45P" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.528511401"
+   },
+   "crew" : {
+      "loader" : [
+         {},
+         {}
+      ],
+      "gunner" : {},
+      "commander" : "AAAAAAAA",
+      "driver" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "chassis" : {
+      "Wespeketten_ausf_A" : {
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G19_Wespe/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G19_Wespe/collision/Chassis.model"
+         },
+         "rotationSpeed" : 22,
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "maxHealth" : 50,
+         "trackThickness" : "-0.0147",
+         "repairCost" : "0.5",
+         "wwsoundPC" : "treads_type_pc",
+         "maxRegenHealth" : 40,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "hullPosition" : "0 1 0",
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_01",
+            "size" : "0.4 0.32",
+            "lodDist" : "FAR"
+         },
+         "maxLoad" : 11000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.0646817",
+                  "count" : 5,
+                  "maxOffset" : "0.0626283",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "Track_L"
+               },
+               {
+                  "template" : "Track_R",
+                  "minOffset" : "-0.0646817",
+                  "count" : 5,
+                  "maxOffset" : "0.0605749",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "unlocks" : {
+            "chassis" : "Wespeketten_ausf_B"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/german/G19_Wespe/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/german/G19_Wespe/track/left.track",
+            "right" : "vehicles/german/G19_Wespe/track/right.track",
+            "segmentLength" : "0.09",
+            "segmentOffset" : "0.008",
+            "segmentModelLeft" : "vehicles/german/G19_Wespe/track/segment.model"
+         },
+         "weight" : 5000,
+         "level" : 2,
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : true,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : "13.8462",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "13.8462"
+               },
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "syncAngle" : "13.8462",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "13.8462",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_R4"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : true
+               },
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "count" : 3,
+                  "isLeft" : false,
+                  "startIndex" : 1
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "models" : {
+            "exploded" : "vehicles/german/G19_Wespe/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G19_Wespe/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G19_Wespe/normal/lod0/Chassis.model"
+         },
+         "brakeForce" : 10000,
+         "topRightCarryingPoint" : "0.942364 1.19578",
+         "terrainResistance" : "1.3 1.5 2.5",
+         "tags" : {},
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-3.6",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "userString" : "#germany_vehicles:Wespeketten_ausf_A",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.44",
+            "vehicleMovement" : "0.44"
+         },
+         "price" : 600,
+         "trackNodes" : {
+            "maxAmplitude" : "0.1",
+            "offset" : "0",
+            "forwardElastK" : 1,
+            "gravity" : "-9.8",
+            "maxOffset" : "0.1",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.026",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.84",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.89",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.84"
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.026",
+                  "backwardElastK" : "0.84",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.7",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.84"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.026",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84"
+               },
+               {
+                  "forwardElastK" : "1.89",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.84",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.026",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "1.7"
+               }
+            ],
+            "elasticity" : 1203,
+            "backwardElastK" : 1,
+            "enable" : true,
+            "linkBones" : false,
+            "damping" : 2
+         }
+      },
+      "Wespeketten_ausf_B" : {
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-3.6"
+         },
+         "terrainResistance" : "1.2 1.4 2.3",
+         "topRightCarryingPoint" : "0.942364 1.19578",
+         "tags" : {},
+         "brakeForce" : 11000,
+         "price" : 1860,
+         "trackNodes" : {
+            "damping" : 2,
+            "enable" : true,
+            "linkBones" : false,
+            "backwardElastK" : 1,
+            "elasticity" : 1203,
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "0.84",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.026",
+                  "forwardElastK" : 2
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.84",
+                  "forwardElastK" : "1.89",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.026",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.84",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.84",
+                  "isLeft" : true,
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "1.7"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2
+               },
+               {
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "1.89",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.84",
+                  "forwardElastK" : "1.7",
+                  "offset" : "-0.026",
+                  "name" : "Track_VT_R3"
+               }
+            ],
+            "maxOffset" : "0.1",
+            "gravity" : "-9.8",
+            "forwardElastK" : 1,
+            "offset" : "0",
+            "maxAmplitude" : "0.1"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.4",
+            "vehicleRotation" : "0.4"
+         },
+         "userString" : "#germany_vehicles:Wespeketten_ausf_B",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/german/G19_Wespe/track/segment.model",
+            "segmentOffset" : "0.008",
+            "segmentLength" : "0.09",
+            "right" : "vehicles/german/G19_Wespe/track/right.track",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/german/G19_Wespe/track/left.track",
+            "segmentModelRight" : "vehicles/german/G19_Wespe/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            }
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "models" : {
+            "undamaged" : "vehicles/german/G19_Wespe/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G19_Wespe/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G19_Wespe/crash/lod0/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : true,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : "13.8462",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "13.8462",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_L4"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "syncAngle" : "13.8462",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R4",
+                  "radius" : "0",
+                  "syncAngle" : "13.8462",
+                  "isLeading" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 5
+               },
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "count" : 3,
+                  "isLeft" : true,
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "count" : 3,
+                  "radius" : "0",
+                  "template" : "WD_R"
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "weight" : 5000,
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "level" : 3,
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_01",
+            "size" : "0.4 0.32"
+         },
+         "maxLoad" : 13100,
+         "hullPosition" : "0 1 0",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "wwsoundPC" : "treads_type_pc",
+         "maxRegenHealth" : 45,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "minOffset" : "-0.0646817",
+                  "count" : 5,
+                  "maxOffset" : "0.0626283"
+               },
+               {
+                  "template" : "Track_R",
+                  "maxOffset" : "0.0605749",
+                  "minOffset" : "-0.0646817",
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "rotationSpeed" : 24,
+         "navmeshGirth" : "6.0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G19_Wespe/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G19_Wespe/collision/Chassis.model"
+         },
+         "repairCost" : "0.5",
+         "maxHealth" : 60,
+         "trackThickness" : "-0.0147"
+      }
+   },
+   "invisibility" : {
+      "moving" : "0.142",
+      "camouflageNetBonus" : "0.05",
+      "camouflageBonus" : "0.02",
+      "still" : "0.284",
+      "firePenalty" : "0.426"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "hull" : {
+      "swinging" : {
+         "sensitivityToImpulse" : "0.92",
+         "rollParams" : "1.00 0.28 36.00 0.36 1.00 0.05 0.32",
+         "pitchParams" : "0.28 36.00 0.36 1.00 0.05 0.32",
+         "lodDist" : "FAR"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.238262 0.249132 1.89553",
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.238262 0.056195 1.84285",
+            "size" : "0.3"
+         },
+         "inscription" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-0.980853 0.873838 -1.6744",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-0.96176 0.867886 -1.67456",
+               "size" : "0.74"
+            },
+            {
+               "size" : "0.74",
+               "rayEnd" : "0.96176 0.867886 -1.67456",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "0.980853 0.873838 -1.6744"
+            }
+         ],
+         "player" : [
+            {
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1 1 -0",
+               "size" : "0.28",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1 1 -0"
+            },
+            {
+               "isMirrored" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "1 1 -0",
+               "hideIfDamaged" : true,
+               "rayEnd" : "1 1 -0",
+               "size" : "0.28"
+            }
+         ]
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G19_Wespe/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G19_Wespe/collision/Hull.model"
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "maxHealth" : 104,
+      "hangarShadowTexture" : "vehicles/german/G19_Wespe/Wespe_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "0.0001 0.287191 -0.72731"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G19_Wespe/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G19_Wespe/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G19_Wespe/crash/lod0/Hull.model"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "weight" : 4515,
+      "armor" : {
+         "armor_1" : 30,
+         "armor_10" : 5,
+         "armor_7" : 10,
+         "armor_9" : 10,
+         "armor_4" : "14.5",
+         "armor_5" : 10,
+         "armor_11" : 5,
+         "armor_2" : 20,
+         "armor_6" : "14.5",
+         "armor_8" : 10,
+         "armor_16" : 35,
+         "armor_12" : 5,
+         "armor_3" : "14.5",
+         "armor_13" : ""
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 60,
+         "maxRegenHealth" : 30
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : 40
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "radios" : {
+      "FuG_Spr.1" : "shared",
+      "FuG5" : "shared"
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM"
+   },
+   "repairCost" : "6.12"
+}

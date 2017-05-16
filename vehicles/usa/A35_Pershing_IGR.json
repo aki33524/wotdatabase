@@ -1,0 +1,518 @@
+{
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/american/A35_Pershing/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/american/A35_Pershing/collision/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "1.42 1.42 0.63 0.84"
+      },
+      "hangarShadowTexture" : "vehicles/american/A35_Pershing/Pershing_HangarShadowMap.dds",
+      "maxHealth" : 1080,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_large"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 220,
+         "maxRegenHealth" : 150
+      },
+      "swinging" : {
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.32",
+         "lodDist" : "FAR"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.407087 0.497543 2.26241",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.28",
+            "rayEnd" : "0.402525 0.229834 1.96525"
+         },
+         "inscription" : {
+            "rayEnd" : "-0.0054512 -0.0741714 2.10561",
+            "size" : "0.7",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.0054512 0.306623 2.56927"
+         }
+      },
+      "turretPositions" : {
+         "turret" : "0 1 1"
+      },
+      "armor" : {
+         "armor_4" : "50.8",
+         "armor_1" : "101.6",
+         "armor_6" : "19.1",
+         "armor_13" : "41.3",
+         "armor_9" : "41.3",
+         "armor_2" : "76.2",
+         "armor_3" : "76.2",
+         "armor_11" : "139.7",
+         "armor_5" : "22.2",
+         "armor_7" : "25.4",
+         "armor_10" : "",
+         "armor_8" : "12.7"
+      },
+      "models" : {
+         "exploded" : "vehicles/american/A35_Pershing/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A35_Pershing/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A35_Pershing/normal/lod0/Hull.model"
+      },
+      "weight" : 20050
+   },
+   "turrets0" : {
+      "Turret_2_Pershing_IGR" : {
+         "primaryArmor" : "armor_2 armor_3 armor_4",
+         "invisibilityFactor" : "1.008",
+         "tags" : {},
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "showEmblemsOnGun" : false,
+         "physicsShape" : "0.969 -0.024 1.023 0.015 0.694 0.069 0.895 0.571 0.421 0.526 0.102 0.500 0.000 0.100 0.069",
+         "models" : {
+            "undamaged" : "vehicles/american/A35_Pershing/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/american/A35_Pershing/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/american/A35_Pershing/crash/lod0/Turret_02.model"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 70,
+            "maxHealth" : 140,
+            "repairCost" : "1.0"
+         },
+         "price" : 46000,
+         "guns" : {
+            "_90mm_Gun_T15E2M2_IGR" : "shared"
+         },
+         "gunPosition" : "0 0 1",
+         "notInShop" : true,
+         "maxHealth" : 360,
+         "emblemSlots" : {
+            "player" : {
+               "rayEnd" : "1 1 -0",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.28",
+               "hideIfDamaged" : false,
+               "isMirrored" : true,
+               "rayStart" : "1.25441 0.772955 -0.122696"
+            }
+         },
+         "armor" : {
+            "armor_6" : "41.3",
+            "armor_16" : "41.3",
+            "armor_4" : "63.5",
+            "armor_14" : "41.3",
+            "armor_10" : "76.2",
+            "armor_15" : "76.2",
+            "armor_8" : "",
+            "armor_7" : 10,
+            "armor_12" : "76.2",
+            "armor_5" : "25.4",
+            "armor_11" : "111.1",
+            "armor_3" : "76.2",
+            "armor_2" : 127,
+            "armor_9" : "25.4"
+         },
+         "rotationSpeed" : 38,
+         "userString" : "#igr_vehicles:Turret_2_Pershing_IGR",
+         "level" : 8,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "weight" : 9700,
+         "camouflage" : {
+            "tiling" : "0.79 0.79 0.86 0.74"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A35_Pershing/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/american/A35_Pershing/collision_client/Turret_02.model"
+         },
+         "circularVisionRadius" : 400
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "engines" : {
+      "Continental_AV-1790-1_IGR" : "shared"
+   },
+   "chassis" : {
+      "Pershingchassis2_IGR" : {
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.2"
+         },
+         "trackThickness" : "-0.0176",
+         "navmeshGirth" : "6.0",
+         "maxLoad" : 45050,
+         "maxRegenHealth" : 150,
+         "wwsoundNPC" : "trds_chf_npc",
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "largeTank",
+            "size" : "0.44 0.62"
+         },
+         "userString" : "#igr_vehicles:Pershingchassis2_IGR",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 1,
+                  "minOffset" : "-0.059",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "maxOffset" : "0",
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : 1,
+                  "maxOffset" : "0",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "count" : 5,
+                  "minOffset" : "-0.059"
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 1,
+                  "minOffset" : "-0.059",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.174",
+                  "startIndex" : ""
+               },
+               {
+                  "maxOffset" : "0.161",
+                  "template" : "Track_R",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "minOffset" : "-0.059",
+                  "count" : 5
+               }
+            ]
+         },
+         "rotationSpeed" : 38,
+         "topRightCarryingPoint" : "1.397 1.88998",
+         "hullPosition" : "0.000000 1.0706 0.000000",
+         "price" : 30250,
+         "wheels" : {
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "count" : 5
+               },
+               {
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0.34519",
+                  "count" : 6,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "count" : 5
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 6,
+                  "radius" : "0.34519",
+                  "startIndex" : "",
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "syncAngle" : "27.6923",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R6",
+                  "radius" : "0",
+                  "syncAngle" : "27.6923",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "27.6923",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L6",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "27.6923"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "1.1 1.3 2.1",
+         "splineDesc" : {
+            "left" : "vehicles/american/A35_Pershing/track/left.track",
+            "segmentModelLeft" : "vehicles/american/A35_Pershing/track/segment.model",
+            "right" : "vehicles/american/A35_Pershing/track/right.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/american/A35_Pershing/track/segment.model",
+            "segmentLength" : "0.143",
+            "segmentOffset" : "0.001"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 -0"
+            }
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A35_Pershing/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/american/A35_Pershing/collision/Chassis.model"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "brakeForce" : 36500,
+         "weight" : 10000,
+         "repairCost" : "7.5",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.15",
+            "vehicleMovement" : "0.15"
+         },
+         "level" : 8,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "maxClimbAngle" : 25,
+         "maxHealth" : 200,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "notInShop" : true,
+         "trackNodes" : {
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.25",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.25",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "forwardElastK" : "2.02",
+                  "backwardElastK" : "0.81",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.81",
+                  "forwardElastK" : "2.02"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.91",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R4",
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R5",
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.91",
+                  "backwardElastK" : 2,
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.91"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.91",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.91",
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "name" : "Track_VT_L5",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.91",
+                  "isLeft" : true
+               }
+            ],
+            "damping" : 2,
+            "maxOffset" : "0.1",
+            "linkBones" : false,
+            "elasticity" : 1038,
+            "gravity" : "-9.7",
+            "maxAmplitude" : "0.1",
+            "enable" : true
+         },
+         "models" : {
+            "destroyed" : "vehicles/american/A35_Pershing/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A35_Pershing/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A35_Pershing/normal/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true,
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L6"
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.966014424"
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "radioman" : {},
+      "loader" : {},
+      "commander" : {}
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.169",
+      "camouflageBonus" : "0.03",
+      "still" : "0.226",
+      "firePenalty" : "0.339"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "usa_star"
+   },
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 48
+   },
+   "radios" : {
+      "SCR_528_IGR" : "shared"
+   },
+   "repairCost" : "8.5",
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_AV-1790-1_IGR" : {
+               "smplEnginePower" : "744.3259"
+            }
+         },
+         "chassis" : {
+            "Pershingchassis2_IGR" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0"
+}

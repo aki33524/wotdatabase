@@ -1,0 +1,534 @@
+{
+   "engines" : {
+      "Weiss_Manfred_V_8H" : "shared"
+   },
+   "crewXpFactor" : "1.5",
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Weiss_Manfred_V_8H" : {
+               "smplEnginePower" : "274.8931"
+            }
+         },
+         "chassis" : {
+            "Chassis_G116_Turan_III_prot" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.817159088"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "chassis" : {
+      "Chassis_G116_Turan_III_prot" : {
+         "level" : 5,
+         "wwsoundNPC" : "trds_chf_npc",
+         "models" : {
+            "exploded" : "vehicles/german/G116_Turan_III_prot/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G116_Turan_III_prot/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G116_Turan_III_prot/crash/lod0/Chassis.model"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "trackNodes" : {
+            "offset" : "0",
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "backwardElastK" : 1,
+            "linkBones" : false,
+            "enable" : true,
+            "node" : [
+               {
+                  "offset" : "-0.036",
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_L1",
+                  "offset" : "-0.036"
+               },
+               {
+                  "offset" : "-0.036",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "1.96",
+                  "forwardElastK" : "0.89",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.036",
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "0.89",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89",
+                  "offset" : "-0.036"
+               },
+               {
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_L5",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89",
+                  "offset" : "-0.036"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.89",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.96",
+                  "offset" : "-0.036"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.036"
+               },
+               {
+                  "offset" : "-0.036",
+                  "forwardElastK" : "0.89",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "1.96"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "1.96",
+                  "forwardElastK" : "0.89",
+                  "isLeft" : false,
+                  "offset" : "-0.036"
+               },
+               {
+                  "offset" : "-0.036",
+                  "forwardElastK" : "0.89",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "offset" : "-0.036",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.89",
+                  "backwardElastK" : "1.96",
+                  "name" : "Track_VT_R5"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               }
+            ],
+            "elasticity" : 1203,
+            "maxAmplitude" : "0.1",
+            "maxOffset" : "0.1",
+            "forwardElastK" : 1
+         },
+         "notInShop" : true,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 2 0 0 0 6 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L7",
+         "weight" : 7000,
+         "tags" : {},
+         "maxHealth" : 90,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-2.15",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.4 0.4",
+            "lodDist" : "FAR"
+         },
+         "price" : 8000,
+         "wheels" : {
+            "group" : [
+               {
+                  "startIndex" : 2,
+                  "template" : "WD_R",
+                  "count" : 5,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "count" : 8,
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "startIndex" : 2,
+                  "template" : "WD_L"
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "count" : 8,
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "syncAngle" : 20,
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 30,
+                  "name" : "WD_R1",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 20,
+                  "radius" : "0",
+                  "name" : "WD_R7",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : 20,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 30,
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : 20,
+                  "radius" : "0",
+                  "name" : "WD_L7",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G116_Turan_III_prot/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G116_Turan_III_prot/collision/Chassis.model"
+         },
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "maxLoad" : 23000,
+         "maxClimbAngle" : 25,
+         "maxRegenHealth" : 70,
+         "terrainResistance" : "1 1.2 1.8",
+         "navmeshGirth" : "6.0",
+         "wwsoundPC" : "treads_type_pc",
+         "repairCost" : "1.0",
+         "topRightCarryingPoint" : "0.980754 1.63793",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "splineDesc" : {
+            "right" : "vehicles/german/G116_Turan_III_prot/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.105",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/german/G116_Turan_III_prot/track/segment.model",
+            "segmentOffset" : "0.075",
+            "left" : "vehicles/german/G116_Turan_III_prot/track/left.track",
+            "segmentModelLeft" : "vehicles/german/G116_Turan_III_prot/track/segment.model"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "maxOffset" : "0.0441478",
+                  "isLeft" : true,
+                  "minOffset" : "-0.0420945",
+                  "startIndex" : "",
+                  "template" : "Track_L"
+               },
+               {
+                  "minOffset" : "-0.0441478",
+                  "isLeft" : false,
+                  "maxOffset" : "0.0400411",
+                  "count" : 8,
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "trackThickness" : "-0.0167",
+         "rotationSpeed" : 34,
+         "rotationIsAroundCenter" : false,
+         "hullPosition" : "0.000000 1.00264 0.000000",
+         "bulkHealthFactor" : "3.0",
+         "userString" : "#germany_vehicles:Chassis_G116_Turan_III_prot",
+         "brakeForce" : 20000
+      }
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "germany_cross"
+   },
+   "hull" : {
+      "turretPositions" : {
+         "turret" : "-0.009293 0.560031 0.55409"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "camouflage" : {
+         "tiling" : "4 4 0.48 0.82"
+      },
+      "maxHealth" : 456,
+      "models" : {
+         "destroyed" : "vehicles/german/G116_Turan_III_prot/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G116_Turan_III_prot/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G116_Turan_III_prot/crash/lod0/Hull.model"
+      },
+      "weight" : 7309,
+      "armor" : {
+         "armor_1" : 50,
+         "armor_2" : 25,
+         "armor_6" : 13,
+         "armor_3" : 25,
+         "armor_4" : 25,
+         "armor_8" : "",
+         "armor_5" : 13,
+         "armor_7" : 35
+      },
+      "hangarShadowTexture" : "vehicles/german/G116_Turan_III_prot/Turan_III_prot_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.593651 0.446677 1.96112",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "0.593723 0.387231 1.77015",
+            "size" : "0.22",
+            "hideIfDamaged" : false
+         }
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G116_Turan_III_prot/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G116_Turan_III_prot/collision/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 90,
+         "maxHealth" : 150,
+         "repairCost" : "1.0"
+      },
+      "swinging" : {
+         "pitchParams" : "0.34 38.00 0.36 1.00 0.05 0.34",
+         "rollParams" : "1.00 0.34 38.00 0.36 1.00 0.06 0.40",
+         "sensitivityToImpulse" : "0.94",
+         "lodDist" : "FAR"
+      }
+   },
+   "premiumVehicleXPFactor" : "0.4",
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 40
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "repairCost" : "3.50",
+   "turrets0" : {
+      "Turret_1_G116_Turan_III_prot" : {
+         "guns" : {
+            "_75mm_43_M_L43" : "shared"
+         },
+         "maxHealth" : 114,
+         "rotationSpeed" : 28,
+         "userString" : "#germany_vehicles:Turret_1_G116_Turan_III_prot",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "camouflage" : {
+            "tiling" : "2.32 2.32 0.15 0.35"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 330,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "hideIfDamaged" : true,
+                  "size" : "0.558",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 0 0",
+                  "rayEnd" : "-1 0 0"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 0",
+                  "rayStart" : "1 0 0",
+                  "hideIfDamaged" : true,
+                  "size" : "0.558"
+               }
+            ],
+            "player" : [
+               {
+                  "rayEnd" : "-0.460153 0.493459 -1.07194",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-0.645859 0.527787 -1.13778",
+                  "hideIfDamaged" : true,
+                  "size" : "0.24"
+               },
+               {
+                  "size" : "0.24",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0.460153 0.493459 -1.07194",
+                  "rayStart" : "0.645859 0.527787 -1.13778"
+               }
+            ]
+         },
+         "physicsShape" : "1.000 0.000 0.995 0.000 0.640 0.079 1.000 0.645 0.393 0.500 0.148 0.500 0.150 0.241 0.315",
+         "tags" : {},
+         "showEmblemsOnGun" : false,
+         "weight" : 4000,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35,
+            "repairCost" : "1.0"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G116_Turan_III_prot/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G116_Turan_III_prot/collision_client/Turret_01.model"
+         },
+         "price" : 8000,
+         "models" : {
+            "undamaged" : "vehicles/german/G116_Turan_III_prot/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G116_Turan_III_prot/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G116_Turan_III_prot/crash/lod0/Turret_01.model"
+         },
+         "armor" : {
+            "armor_4" : 55,
+            "armor_5" : 13,
+            "armor_8" : "",
+            "armor_7" : 35,
+            "armor_10" : 35,
+            "armor_1" : 75,
+            "armor_2" : 75,
+            "armor_11" : 60,
+            "armor_12" : 35,
+            "armor_9" : 55,
+            "armor_6" : 13,
+            "armor_3" : 35
+         },
+         "level" : 5,
+         "gunPosition" : "0 0 1"
+      }
+   },
+   "radios" : {
+      "R_4_T" : "shared"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.363",
+      "camouflageBonus" : "0.03",
+      "still" : "0.242",
+      "moving" : "0.181"
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "radioman" : {},
+      "loader" : {},
+      "commander" : {}
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.0"
+   }
+}

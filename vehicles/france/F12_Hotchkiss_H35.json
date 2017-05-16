@@ -1,0 +1,755 @@
+{
+   "radios" : {
+      "ER_52" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.9",
+      "default" : "french_rose"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.4"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.99358596"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "maxHealth" : 128,
+      "camouflage" : {
+         "tiling" : "3 3 0.000000 0.000000"
+      },
+      "armor" : {
+         "armor_3" : 40,
+         "surveyingDevice" : 50,
+         "armor_1" : 40,
+         "armor_9" : "",
+         "armor_7" : 12,
+         "armor_11" : 25,
+         "armor_10" : 30,
+         "armor_4" : 40,
+         "armor_6" : 30,
+         "armor_2" : 40,
+         "armor_8" : 12,
+         "armor_5" : 40
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_small"
+      },
+      "turretPositions" : {
+         "turret" : "-0 1 0"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "weight" : 4900,
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 80,
+         "maxRegenHealth" : 55
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/french/F12_Hotchkiss_H35/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/french/F12_Hotchkiss_H35/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/french/F12_Hotchkiss_H35/Hotchkiss_H35_HangarShadowMap.dds",
+      "models" : {
+         "destroyed" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Hull.model",
+         "exploded" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F12_Hotchkiss_H35/normal/lod0/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : {
+            "rayEnd" : "0.455357 0.39042 0.285225",
+            "size" : "0.465",
+            "hideIfDamaged" : true,
+            "rayStart" : "1 1 0",
+            "rayUp" : "0.000000 1 0.000000"
+         },
+         "clan" : {
+            "rayUp" : "0.000000 1 0.000000",
+            "rayStart" : "0.383335 0.138065 2.08082",
+            "rayEnd" : "0.383335 -0.0909285 1.75285",
+            "hideIfDamaged" : true,
+            "size" : "0.198"
+         }
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.68",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30"
+      }
+   },
+   "chassis" : {
+      "Chassis_Hotchkiss_H35" : {
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationIsAroundCenter" : false,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "maxOffset" : "0.0243328",
+                  "count" : 6,
+                  "minOffset" : "-0",
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "minOffset" : "-0",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "maxOffset" : "0.0243328"
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.32",
+            "vehicleMovement" : "0.32"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "size" : "0.36 0.28",
+            "textureSet" : "germany_01"
+         },
+         "hullPosition" : "0 1 0",
+         "tracks" : {
+            "textureScale" : "-3.65",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "weight" : 3000,
+         "maxRegenHealth" : 40,
+         "maxLoad" : 9600,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "rotationSpeed" : 32,
+         "topRightCarryingPoint" : "0.7825 1.29268",
+         "trackThickness" : "-0.0233",
+         "price" : 250,
+         "models" : {
+            "destroyed" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F12_Hotchkiss_H35/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Chassis.model"
+         },
+         "level" : 1,
+         "userString" : "#france_vehicles:Chassis_Hotchkiss_H35",
+         "brakeForce" : 35500,
+         "maxHealth" : 50,
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/french/F12_Hotchkiss_H35/track/segment1.model",
+            "segmentOffset" : "0.112",
+            "left" : "vehicles/french/F12_Hotchkiss_H35/track/left.track",
+            "right" : "vehicles/french/F12_Hotchkiss_H35/track/right.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/french/F12_Hotchkiss_H35/track/segment1.model",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.077"
+         },
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F12_Hotchkiss_H35/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F12_Hotchkiss_H35/collision_client/Chassis.model"
+         },
+         "repairCost" : "1.0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : "16.3636",
+                  "isLeading" : true,
+                  "radius" : "0.31924",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R3",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : "16.3636"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.31924",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "syncAngle" : "16.3636"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "16.3636"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0.10731",
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "count" : 2,
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 6,
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "radius" : "0.10731",
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "W_L"
+               }
+            ]
+         },
+         "trackNodes" : {
+            "damping" : 2,
+            "node" : [
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 2,
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : 2,
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "isLeft" : false,
+                  "offset" : "-0.061",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.047",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.061",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.061",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8",
+                  "offset" : "-0.047",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.061",
+                  "isLeft" : true
+               }
+            ],
+            "maxAmplitude" : "0.03",
+            "enable" : true,
+            "gravity" : "-9.8",
+            "elasticity" : 1100,
+            "maxOffset" : "0.03",
+            "linkBones" : false
+         },
+         "terrainResistance" : "1.3 1.4 2.7",
+         "drivingWheels" : "WD_L0 WD_L3",
+         "unlocks" : {
+            "chassis" : "Chassis_Hotchkiss_H35_2"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "tags" : {}
+      },
+      "Chassis_Hotchkiss_H35_2" : {
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationIsAroundCenter" : false,
+         "wwsoundPC" : "treads_type_pc",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.3",
+            "vehicleRotation" : "0.3"
+         },
+         "maxClimbAngle" : 25,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "maxOffset" : "0.0243328",
+                  "startIndex" : "",
+                  "minOffset" : "-0"
+               },
+               {
+                  "count" : 6,
+                  "maxOffset" : "0.0243328",
+                  "startIndex" : "",
+                  "minOffset" : "-0",
+                  "template" : "Track_R",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "maxLoad" : 10500,
+         "maxRegenHealth" : 45,
+         "weight" : 3000,
+         "hullPosition" : "0 1 0",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-3.65"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "size" : "0.36 0.28",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR"
+         },
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 34,
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "level" : 2,
+         "price" : 560,
+         "models" : {
+            "undamaged" : "vehicles/french/F12_Hotchkiss_H35/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Chassis.model"
+         },
+         "trackThickness" : "-0.0233",
+         "topRightCarryingPoint" : "0.7825 1.29268",
+         "splineDesc" : {
+            "right" : "vehicles/french/F12_Hotchkiss_H35/track/right.track",
+            "segmentModelLeft" : "vehicles/french/F12_Hotchkiss_H35/track/segment1.model",
+            "segmentOffset" : "0.112",
+            "left" : "vehicles/french/F12_Hotchkiss_H35/track/left.track",
+            "segmentModelRight" : "vehicles/french/F12_Hotchkiss_H35/track/segment1.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.077"
+         },
+         "maxHealth" : 60,
+         "brakeForce" : 35500,
+         "userString" : "#france_vehicles:Chassis_Hotchkiss_H35_2",
+         "drivingWheels" : "WD_L0 WD_L3",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : "16.3636",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0.31924",
+                  "name" : "WD_R0"
+               },
+               {
+                  "syncAngle" : "16.3636",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R3",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0.31924",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "syncAngle" : "16.3636"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "syncAngle" : "16.3636"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0.10731",
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 2
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "count" : 6
+               },
+               {
+                  "startIndex" : 1,
+                  "count" : 2,
+                  "isLeft" : true,
+                  "radius" : "0.10731",
+                  "template" : "WD_L"
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "trackNodes" : {
+            "maxAmplitude" : "0.05",
+            "enable" : true,
+            "elasticity" : 1100,
+            "gravity" : "-9.8",
+            "node" : [
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : 1,
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "backwardElastK" : 1,
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.061",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.047",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.061",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.061",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8",
+                  "offset" : "-0.047",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.061",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8"
+               }
+            ],
+            "damping" : 2,
+            "linkBones" : false,
+            "maxOffset" : "0.05"
+         },
+         "terrainResistance" : "1.2 1.3 2.5",
+         "repairCost" : "1.0",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F12_Hotchkiss_H35/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F12_Hotchkiss_H35/collision/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "tags" : {},
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_Hotchkiss_H35" : {
+         "level" : 1,
+         "notInShop" : true,
+         "price" : 450,
+         "models" : {
+            "destroyed" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/french/F12_Hotchkiss_H35/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F12_Hotchkiss_H35/crash/lod0/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         },
+         "maxHealth" : 32,
+         "camouflage" : {
+            "tiling" : "2 1 0.000000 0.000000"
+         },
+         "userString" : "#france_vehicles:Turret_1_Hotchkiss_H35",
+         "physicsShape" : "1.054 0.000 1.092 0.000 0.822 -0.073 0.430 0.376 0.439 0.500 0.437 0.500 0.306 0.768 0.196",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 0 0",
+                  "hideIfDamaged" : true,
+                  "size" : "0.214",
+                  "rayEnd" : "-0 0 0"
+               },
+               {
+                  "rayEnd" : "0 0 0",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : true,
+                  "size" : "0.214",
+                  "rayStart" : "0.59558 0.391751 0.186059",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "guns" : {
+            "_37mm_SA38" : "shared",
+            "_25mm_Canon_Raccourci_Mle.1934" : "shared",
+            "_37mm_APX_SA18" : "shared"
+         },
+         "weight" : 900,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F12_Hotchkiss_H35/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/french/F12_Hotchkiss_H35/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0 0 0",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "maxHealth" : 40,
+            "repairCost" : "2.0"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "rotationSpeed" : 24,
+         "showEmblemsOnGun" : false,
+         "tags" : {},
+         "armor" : {
+            "armor_2" : 35,
+            "armor_8" : "",
+            "armor_5" : 40,
+            "armor_4" : 40,
+            "armor_6" : 12,
+            "armor_9" : 30,
+            "armor_11" : 30,
+            "armor_7" : 12,
+            "armor_10" : 30,
+            "armor_3" : 40,
+            "surveyingDevice" : 50,
+            "armor_1" : 40
+         },
+         "unlocks" : {
+            "gun" : "_37mm_SA38"
+         },
+         "circularVisionRadius" : 300
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "still" : "0.276",
+      "moving" : "0.207",
+      "firePenalty" : "0.414"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "speedLimits" : {
+      "forward" : 27,
+      "backward" : 11
+   },
+   "engines" : {
+      "Renault_V4" : "shared",
+      "Hotchkiss_35" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Hotchkiss_H35" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_Hotchkiss_H35_2" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Hotchkiss_35" : {
+               "smplEnginePower" : "79.29608"
+            },
+            "Renault_V4" : {
+               "smplEnginePower" : "86.69705"
+            }
+         }
+      }
+   },
+   "crew" : {
+      "commander" : "gunner\n\t\t\tradioman\n\t\t\tloader",
+      "driver" : {}
+   },
+   "repairCost" : "4.58"
+}

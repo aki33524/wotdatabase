@@ -1,0 +1,1783 @@
+{
+   "shot_env_artillery" : {
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_huge_npc",
+            "wwsoundPC" : "wpn_huge_pc",
+            "startKey" : "start"
+         }
+      },
+      "timeline" : {
+         "end" : "0.4",
+         "endpixie" : 2,
+         "lighting2" : "0.1",
+         "soundplaystop" : 6
+      }
+   },
+   "shot_MTLS_auto" : {
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_automatic_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_automatic_PC"
+         },
+         "light" : {
+            "endKey" : "lighting2",
+            "castShadows" : false,
+            "outerRadius" : "2.5",
+            "innerRadius" : "0.125",
+            "animation" : [
+               {
+                  "multiplier" : 3,
+                  "color" : "255 150 0",
+                  "time" : "0.0"
+               },
+               {
+                  "time" : "0.15",
+                  "color" : "255 200 100",
+                  "multiplier" : 5
+               },
+               {
+                  "multiplier" : 3,
+                  "time" : "0.65",
+                  "color" : "170 65 25"
+               },
+               {
+                  "multiplier" : 1,
+                  "time" : "1.0",
+                  "color" : "0 0 0 0"
+               }
+            ],
+            "startKey" : "start",
+            "position" : "HP_gunFire"
+         },
+         "pixie" : {
+            "file" : "particles/Tank/shots/shot_MTLS.xml",
+            "position" : "HP_gunFire",
+            "startKey" : "start",
+            "force" : 1,
+            "endKey" : "AAAAAAAA"
+         }
+      },
+      "timeline" : {
+         "end" : "0.3",
+         "endpixie" : "0.1",
+         "lighting2" : "0.075",
+         "soundplaystop" : 8
+      }
+   },
+   "shot_main_mb" : {
+      "timeline" : {
+         "end" : "0.4",
+         "endpixie" : 1,
+         "lighting2" : "0.085",
+         "soundplaystop" : 4
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_ground_mb.xml",
+                     "surfaceMatKind" : "default",
+                     "force" : 1
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_ground_mb.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "ground",
+                     "force" : 1
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "stone",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_stone_mb.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_sand_mb.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_main_snow_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  }
+               ]
+            }
+         }
+      },
+      "effects" : {
+         "pixie" : {
+            "force" : 1,
+            "endKey" : "AAAAAAAA",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_main_02.xml",
+            "startKey" : "start"
+         },
+         "light" : {
+            "position" : "HP_gunFire",
+            "animation" : [
+               {
+                  "color" : "255 150 0",
+                  "time" : "0.0",
+                  "multiplier" : 10
+               },
+               {
+                  "color" : "255 200 100",
+                  "time" : "0.25",
+                  "multiplier" : 15
+               },
+               {
+                  "multiplier" : 10,
+                  "time" : "0.75",
+                  "color" : "170 65 25"
+               },
+               {
+                  "color" : "0 0 0 0",
+                  "time" : "1.0",
+                  "multiplier" : 5
+               }
+            ],
+            "startKey" : "start",
+            "innerRadius" : 1,
+            "castShadows" : false,
+            "outerRadius" : 6,
+            "endKey" : "lighting2"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_main_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_main_PC"
+         }
+      }
+   },
+   "shot_small" : {
+      "effects" : {
+         "shotSound" : {
+            "startKey" : "start",
+            "wwsoundNPC" : "wpn_small_NPC",
+            "wwsoundPC" : "wpn_small_PC"
+         },
+         "light" : {
+            "endKey" : "lighting2",
+            "castShadows" : false,
+            "outerRadius" : 3,
+            "startKey" : "start",
+            "animation" : [
+               {
+                  "multiplier" : 4,
+                  "time" : "0.0",
+                  "color" : "255 150 0"
+               },
+               {
+                  "multiplier" : 6,
+                  "color" : "255 200 100",
+                  "time" : "0.15"
+               },
+               {
+                  "time" : "0.65",
+                  "color" : "170 65 25",
+                  "multiplier" : 4
+               },
+               {
+                  "time" : "1.0",
+                  "color" : "0 0 0 0",
+                  "multiplier" : 2
+               }
+            ],
+            "innerRadius" : "0.125",
+            "position" : "HP_gunFire"
+         },
+         "pixie" : {
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_small_01.xml",
+            "startKey" : "start",
+            "force" : 1,
+            "endKey" : "AAAAAAAA"
+         }
+      },
+      "timeline" : {
+         "lighting2" : "0.075",
+         "soundplaystop" : 5,
+         "end" : "0.4",
+         "endpixie" : "0.5"
+      }
+   },
+   "shot_huge_mb" : {
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_ground_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "default"
+                  },
+                  {
+                     "surfaceMatKind" : "ground",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_ground_mb.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_stone_mb.xml",
+                     "surfaceMatKind" : "stone",
+                     "force" : 1
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_large_sand_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_large_snow_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  }
+               ]
+            }
+         }
+      },
+      "timeline" : {
+         "lighting2" : "0.1",
+         "soundplaystop" : 6,
+         "end" : "0.4",
+         "endpixie" : 2
+      },
+      "effects" : {
+         "light" : {
+            "animation" : [
+               {
+                  "color" : "255 150 0",
+                  "time" : "0.0",
+                  "multiplier" : 35
+               },
+               {
+                  "multiplier" : 55,
+                  "color" : "255 200 100",
+                  "time" : "0.25"
+               },
+               {
+                  "multiplier" : 30,
+                  "color" : "170 65 25",
+                  "time" : "0.75"
+               },
+               {
+                  "time" : "1.0",
+                  "color" : "0 0 0 0",
+                  "multiplier" : 15
+               }
+            ],
+            "startKey" : "start",
+            "innerRadius" : 3,
+            "position" : "HP_gunFire",
+            "endKey" : "lighting2",
+            "outerRadius" : 15,
+            "castShadows" : false
+         },
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_huge_01.xml"
+         },
+         "shotSound" : {
+            "wwsoundPC" : "wpn_huge_PC",
+            "wwsoundNPC" : "wpn_huge_NPC",
+            "startKey" : "start"
+         }
+      }
+   },
+   "shot_medium" : {
+      "effects" : {
+         "light" : {
+            "castShadows" : false,
+            "outerRadius" : 5,
+            "endKey" : "lighting2",
+            "position" : "HP_gunFire",
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 10
+               },
+               {
+                  "multiplier" : 13,
+                  "time" : "0.25",
+                  "color" : "255 200 100"
+               },
+               {
+                  "multiplier" : 10,
+                  "color" : "170 65 25",
+                  "time" : "0.75"
+               },
+               {
+                  "time" : "1.0",
+                  "color" : "0 0 0 0",
+                  "multiplier" : 5
+               }
+            ],
+            "innerRadius" : 1,
+            "startKey" : "start"
+         },
+         "pixie" : {
+            "force" : 1,
+            "endKey" : "AAAAAAAA",
+            "file" : "particles/Tank/shots/shot_medium_01.xml",
+            "position" : "HP_gunFire",
+            "startKey" : "start"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_meduim_NPC",
+            "wwsoundPC" : "wpn_meduim_PC",
+            "startKey" : "start"
+         }
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_medium_ground.xml",
+                     "surfaceMatKind" : "default",
+                     "force" : 1
+                  },
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_medium_ground.xml",
+                     "surfaceMatKind" : "ground",
+                     "force" : 1
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_medium_stone.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "stone",
+                     "force" : 1
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_medium_sand.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_medium_snow.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  }
+               ]
+            }
+         }
+      },
+      "timeline" : {
+         "soundplaystop" : 4,
+         "lighting2" : "0.075",
+         "endpixie" : 1,
+         "end" : "0.4"
+      }
+   },
+   "shot_huge2" : {
+      "effects" : {
+         "light" : {
+            "position" : "HP_gunFire",
+            "animation" : [
+               {
+                  "multiplier" : 35,
+                  "time" : "0.0",
+                  "color" : "255 150 0"
+               },
+               {
+                  "multiplier" : 55,
+                  "color" : "255 200 100",
+                  "time" : "0.25"
+               },
+               {
+                  "multiplier" : 30,
+                  "color" : "170 65 25",
+                  "time" : "0.75"
+               },
+               {
+                  "multiplier" : 15,
+                  "time" : "1.0",
+                  "color" : "0 0 0 0"
+               }
+            ],
+            "innerRadius" : 3,
+            "startKey" : "start",
+            "castShadows" : false,
+            "outerRadius" : 15,
+            "endKey" : "lighting2"
+         },
+         "pixie" : {
+            "force" : 1,
+            "endKey" : "AAAAAAAA",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_huge_01.xml",
+            "startKey" : "start"
+         },
+         "shotSound" : {
+            "wwsoundPC" : "wpn_huge_PC",
+            "wwsoundNPC" : "wpn_huge_NPC",
+            "startKey" : "start"
+         }
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "effects" : {
+               "pixie" : [
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "default"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "ground",
+                     "force" : 1
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_stone.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "stone"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_sand.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_snow.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  }
+               ]
+            },
+            "timeline" : {
+               "shooting" : 1
+            }
+         }
+      },
+      "timeline" : {
+         "endpixie" : 2,
+         "end" : "0.4",
+         "soundplaystop" : 6,
+         "lighting2" : "0.1"
+      }
+   },
+   "shot_superhuge_mb" : {
+      "effects" : {
+         "light" : {
+            "startKey" : "start",
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 35
+               },
+               {
+                  "time" : "0.25",
+                  "color" : "255 200 100",
+                  "multiplier" : 55
+               },
+               {
+                  "multiplier" : 30,
+                  "color" : "170 65 25",
+                  "time" : "0.75"
+               },
+               {
+                  "color" : "0 0 0 0",
+                  "time" : "1.0",
+                  "multiplier" : 15
+               }
+            ],
+            "innerRadius" : 3,
+            "position" : "HP_gunFire",
+            "endKey" : "lighting2",
+            "outerRadius" : 15,
+            "castShadows" : false
+         },
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_huge_01.xml"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_huge_NPC",
+            "wwsoundPC" : "wpn_huge_PC",
+            "startKey" : "start"
+         }
+      },
+      "timeline" : {
+         "soundplaystop" : 6,
+         "lighting2" : "0.1",
+         "endpixie" : 2,
+         "end" : "0.4"
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "effects" : {
+               "pixie" : [
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "default",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "ground",
+                     "force" : 1
+                  },
+                  {
+                     "surfaceMatKind" : "stone",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_stone.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_sand.xml"
+                  },
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_snow.xml",
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1
+                  }
+               ]
+            },
+            "timeline" : {
+               "shooting" : 1
+            }
+         }
+      }
+   },
+   "shot_mainext" : {
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_main_extra_NPC",
+            "wwsoundPC" : "wpn_main_extra_PC",
+            "startKey" : "start"
+         },
+         "pixie" : {
+            "startKey" : "start",
+            "file" : "particles/Tank/shots/shot_main_01.xml",
+            "position" : "HP_gunFire",
+            "endKey" : "AAAAAAAA",
+            "force" : 1
+         },
+         "light" : {
+            "endKey" : "lighting2",
+            "outerRadius" : 6,
+            "castShadows" : false,
+            "innerRadius" : 1,
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 10
+               },
+               {
+                  "multiplier" : 15,
+                  "color" : "255 200 100",
+                  "time" : "0.25"
+               },
+               {
+                  "color" : "170 65 25",
+                  "time" : "0.75",
+                  "multiplier" : 10
+               },
+               {
+                  "multiplier" : 5,
+                  "time" : "1.0",
+                  "color" : "0 0 0 0"
+               }
+            ],
+            "startKey" : "start",
+            "position" : "HP_gunFire"
+         }
+      },
+      "timeline" : {
+         "endpixie" : 1,
+         "end" : "0.4",
+         "soundplaystop" : 4,
+         "lighting2" : "0.085"
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "default",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_ground.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_ground.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "ground",
+                     "force" : 1
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "stone",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_stone.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_sand.xml",
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_snow.xml",
+                     "position" : "Scene Root"
+                  }
+               ]
+            }
+         }
+      }
+   },
+   "shot_large" : {
+      "effects" : {
+         "pixie" : {
+            "file" : "particles/Tank/shots/shot_large_01.xml",
+            "position" : "HP_gunFire",
+            "startKey" : "start",
+            "force" : 1,
+            "endKey" : "AAAAAAAA"
+         },
+         "light" : {
+            "animation" : [
+               {
+                  "multiplier" : 20,
+                  "time" : "0.0",
+                  "color" : "255 150 0"
+               },
+               {
+                  "multiplier" : 25,
+                  "time" : "0.15",
+                  "color" : "255 200 100"
+               },
+               {
+                  "time" : "0.65",
+                  "color" : "170 65 25",
+                  "multiplier" : 15
+               },
+               {
+                  "multiplier" : 5,
+                  "color" : "0 0 0 0",
+                  "time" : "1.0"
+               }
+            ],
+            "startKey" : "start",
+            "innerRadius" : "1.5",
+            "position" : "HP_gunFire",
+            "endKey" : "lighting2",
+            "outerRadius" : 8,
+            "castShadows" : false
+         },
+         "shotSound" : {
+            "wwsoundPC" : "wpn_large_PC",
+            "wwsoundNPC" : "wpn_large_NPC",
+            "startKey" : "start"
+         }
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "effects" : {
+               "pixie" : [
+                  {
+                     "surfaceMatKind" : "default",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "ground"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_stone.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "stone"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_sand.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_large_snow.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  }
+               ]
+            },
+            "timeline" : {
+               "shooting" : 1
+            }
+         }
+      },
+      "timeline" : {
+         "end" : "0.5",
+         "endpixie" : 2,
+         "lighting2" : "0.09",
+         "soundplaystop" : 9
+      }
+   },
+   "shot_large_mb" : {
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground_mb.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "default"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground_mb.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_stone_mb.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "stone",
+                     "force" : 1
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_sand_mb.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_snow_mb.xml",
+                     "position" : "Scene Root"
+                  }
+               ]
+            }
+         }
+      },
+      "timeline" : {
+         "soundplaystop" : 9,
+         "lighting2" : "0.09",
+         "endpixie" : 2,
+         "end" : "0.5"
+      },
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_large_NPC",
+            "wwsoundPC" : "wpn_large_PC",
+            "startKey" : "start"
+         },
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_large_02.xml"
+         },
+         "light" : {
+            "position" : "HP_gunFire",
+            "startKey" : "start",
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 20
+               },
+               {
+                  "color" : "255 200 100",
+                  "time" : "0.15",
+                  "multiplier" : 25
+               },
+               {
+                  "color" : "170 65 25",
+                  "time" : "0.75",
+                  "multiplier" : 15
+               },
+               {
+                  "multiplier" : 5,
+                  "time" : "1.0",
+                  "color" : "0 0 0 0"
+               }
+            ],
+            "innerRadius" : "1.5",
+            "castShadows" : false,
+            "outerRadius" : 8,
+            "endKey" : "lighting2"
+         }
+      }
+   },
+   "shot_largeext" : {
+      "timeline" : {
+         "lighting2" : "0.09",
+         "soundplaystop" : 9,
+         "end" : "0.5",
+         "endpixie" : 2
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "surfaceMatKind" : "default",
+                     "force" : 1
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "surfaceMatKind" : "stone",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_stone.xml"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_large_sand.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_snow.xml",
+                     "position" : "Scene Root"
+                  }
+               ]
+            }
+         }
+      },
+      "effects" : {
+         "light" : {
+            "endKey" : "lighting2",
+            "outerRadius" : 8,
+            "castShadows" : false,
+            "innerRadius" : "1.5",
+            "animation" : [
+               {
+                  "multiplier" : 20,
+                  "time" : "0.0",
+                  "color" : "255 150 0"
+               },
+               {
+                  "time" : "0.15",
+                  "color" : "255 200 100",
+                  "multiplier" : 25
+               },
+               {
+                  "time" : "0.65",
+                  "color" : "170 65 25",
+                  "multiplier" : 15
+               },
+               {
+                  "multiplier" : 5,
+                  "color" : "0 0 0 0",
+                  "time" : "1.0"
+               }
+            ],
+            "startKey" : "start",
+            "position" : "HP_gunFire"
+         },
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "file" : "particles/Tank/shots/shot_large_01.xml",
+            "position" : "HP_gunFire"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_large_extra_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_large_extra_PC"
+         }
+      }
+   },
+   "shot_huge" : {
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "default"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_large_stone.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "stone",
+                     "force" : 1
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_large_sand.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_snow.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  }
+               ]
+            }
+         }
+      },
+      "timeline" : {
+         "soundplaystop" : 6,
+         "lighting2" : "0.1",
+         "endpixie" : 2,
+         "end" : "0.4"
+      },
+      "effects" : {
+         "pixie" : {
+            "force" : 1,
+            "endKey" : "AAAAAAAA",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_huge_01.xml",
+            "startKey" : "start"
+         },
+         "light" : {
+            "position" : "HP_gunFire",
+            "innerRadius" : 3,
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 35
+               },
+               {
+                  "color" : "255 200 100",
+                  "time" : "0.25",
+                  "multiplier" : 55
+               },
+               {
+                  "multiplier" : 30,
+                  "color" : "170 65 25",
+                  "time" : "0.75"
+               },
+               {
+                  "color" : "0 0 0 0",
+                  "time" : "1.0",
+                  "multiplier" : 15
+               }
+            ],
+            "startKey" : "start",
+            "outerRadius" : 15,
+            "castShadows" : false,
+            "endKey" : "lighting2"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_huge_NPC",
+            "wwsoundPC" : "wpn_huge_PC",
+            "startKey" : "start"
+         }
+      }
+   },
+   "shot_superhuge" : {
+      "relatedEffects" : {
+         "groundWave" : {
+            "effects" : {
+               "pixie" : [
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "default",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "file" : "particles/Tank/shots/groundwave_large_ground.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_stone.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "stone"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_sand.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_snow.xml"
+                  }
+               ]
+            },
+            "timeline" : {
+               "shooting" : 1
+            }
+         }
+      },
+      "timeline" : {
+         "soundplaystop" : 6,
+         "lighting2" : "0.1",
+         "endpixie" : 2,
+         "end" : "0.4"
+      },
+      "effects" : {
+         "light" : {
+            "endKey" : "lighting2",
+            "castShadows" : false,
+            "outerRadius" : 15,
+            "animation" : [
+               {
+                  "color" : "255 150 0",
+                  "time" : "0.0",
+                  "multiplier" : 35
+               },
+               {
+                  "color" : "255 200 100",
+                  "time" : "0.25",
+                  "multiplier" : 55
+               },
+               {
+                  "time" : "0.75",
+                  "color" : "170 65 25",
+                  "multiplier" : 30
+               },
+               {
+                  "multiplier" : 15,
+                  "time" : "1.0",
+                  "color" : "0 0 0 0"
+               }
+            ],
+            "startKey" : "start",
+            "innerRadius" : 3,
+            "position" : "HP_gunFire"
+         },
+         "pixie" : {
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_huge_01.xml",
+            "endKey" : "AAAAAAAA",
+            "force" : 1
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_huge_NPC",
+            "wwsoundPC" : "wpn_huge_PC",
+            "startKey" : "start"
+         }
+      }
+   },
+   "shot_largeext_mb" : {
+      "timeline" : {
+         "lighting2" : "0.09",
+         "soundplaystop" : 9,
+         "end" : "0.5",
+         "endpixie" : 2
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "effects" : {
+               "pixie" : [
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "default",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground_mb.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_ground_mb.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_large_stone_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "stone"
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_sand_mb.xml"
+                  },
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_large_snow_mb.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  }
+               ]
+            },
+            "timeline" : {
+               "shooting" : 1
+            }
+         }
+      },
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_large_extra_NPC",
+            "wwsoundPC" : "wpn_large_extra_PC",
+            "startKey" : "start"
+         },
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_large_02.xml"
+         },
+         "light" : {
+            "innerRadius" : "1.5",
+            "animation" : [
+               {
+                  "color" : "255 150 0",
+                  "time" : "0.0",
+                  "multiplier" : 20
+               },
+               {
+                  "time" : "0.15",
+                  "color" : "255 200 100",
+                  "multiplier" : 25
+               },
+               {
+                  "color" : "170 65 25",
+                  "time" : "0.75",
+                  "multiplier" : 15
+               },
+               {
+                  "multiplier" : 5,
+                  "color" : "0 0 0 0",
+                  "time" : "1.0"
+               }
+            ],
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "endKey" : "lighting2",
+            "castShadows" : false,
+            "outerRadius" : 8
+         }
+      }
+   },
+   "shot_mainext_mb" : {
+      "effects" : {
+         "light" : {
+            "animation" : [
+               {
+                  "color" : "255 150 0",
+                  "time" : "0.0",
+                  "multiplier" : 10
+               },
+               {
+                  "time" : "0.25",
+                  "color" : "255 200 100",
+                  "multiplier" : 15
+               },
+               {
+                  "multiplier" : 10,
+                  "color" : "170 65 25",
+                  "time" : "0.75"
+               },
+               {
+                  "time" : "1.0",
+                  "color" : "0 0 0 0",
+                  "multiplier" : 5
+               }
+            ],
+            "innerRadius" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "endKey" : "lighting2",
+            "outerRadius" : 6,
+            "castShadows" : false
+         },
+         "pixie" : {
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_main_02.xml",
+            "endKey" : "AAAAAAAA",
+            "force" : 1
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_main_extra_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_main_extra_PC"
+         }
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "surfaceMatKind" : "default",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_ground_mb.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "file" : "particles/Tank/shots/groundwave_main_ground_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "stone",
+                     "file" : "particles/Tank/shots/groundwave_main_stone_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_sand_mb.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "file" : "particles/Tank/shots/groundwave_main_snow_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  }
+               ]
+            }
+         }
+      },
+      "timeline" : {
+         "soundplaystop" : 4,
+         "lighting2" : "0.085",
+         "endpixie" : 1,
+         "end" : "0.4"
+      }
+   },
+   "shot_KwK_L46" : {
+      "effects" : {
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "file" : "particles/Tank/shots/shot_medium_01.xml",
+            "position" : "HP_gunFire"
+         },
+         "light" : {
+            "position" : "HP_gunFire",
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 10
+               },
+               {
+                  "time" : "0.15",
+                  "color" : "255 200 100",
+                  "multiplier" : 13
+               },
+               {
+                  "time" : "0.65",
+                  "color" : "170 65 25",
+                  "multiplier" : 10
+               },
+               {
+                  "color" : "0 0 0 0",
+                  "time" : "1.0",
+                  "multiplier" : 5
+               }
+            ],
+            "innerRadius" : 1,
+            "startKey" : "start",
+            "outerRadius" : 5,
+            "castShadows" : false,
+            "endKey" : "lighting2"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_small_NPC",
+            "wwsoundPC" : "wpn_small_PC",
+            "startKey" : "start"
+         }
+      },
+      "timeline" : {
+         "endpixie" : "0.5",
+         "end" : "0.4",
+         "soundplaystop" : 4,
+         "lighting2" : "0.075"
+      }
+   },
+   "shot_small_mb" : {
+      "timeline" : {
+         "end" : "0.4",
+         "endpixie" : "0.5",
+         "lighting2" : "0.075",
+         "soundplaystop" : 5
+      },
+      "effects" : {
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_small_02.xml"
+         },
+         "light" : {
+            "outerRadius" : 3,
+            "castShadows" : false,
+            "endKey" : "lighting2",
+            "position" : "HP_gunFire",
+            "innerRadius" : "0.125",
+            "animation" : [
+               {
+                  "color" : "255 150 0",
+                  "time" : "0.0",
+                  "multiplier" : 4
+               },
+               {
+                  "multiplier" : 6,
+                  "time" : "0.15",
+                  "color" : "255 200 100"
+               },
+               {
+                  "multiplier" : 4,
+                  "time" : "0.65",
+                  "color" : "170 65 25"
+               },
+               {
+                  "multiplier" : 2,
+                  "color" : "0 0 0 0",
+                  "time" : "1.0"
+               }
+            ],
+            "startKey" : "start"
+         },
+         "shotSound" : {
+            "startKey" : "start",
+            "wwsoundNPC" : "wpn_small_NPC",
+            "wwsoundPC" : "wpn_small_PC"
+         }
+      }
+   },
+   "shot_main" : {
+      "effects" : {
+         "pixie" : {
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_main_01.xml",
+            "startKey" : "start",
+            "force" : 1,
+            "endKey" : "AAAAAAAA"
+         },
+         "light" : {
+            "endKey" : "lighting2",
+            "castShadows" : false,
+            "outerRadius" : 6,
+            "startKey" : "start",
+            "animation" : [
+               {
+                  "multiplier" : 10,
+                  "time" : "0.0",
+                  "color" : "255 150 0"
+               },
+               {
+                  "multiplier" : 15,
+                  "color" : "255 200 100",
+                  "time" : "0.25"
+               },
+               {
+                  "color" : "170 65 25",
+                  "time" : "0.75",
+                  "multiplier" : 10
+               },
+               {
+                  "multiplier" : 5,
+                  "time" : "1.0",
+                  "color" : "0 0 0 0"
+               }
+            ],
+            "innerRadius" : 1,
+            "position" : "HP_gunFire"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_main_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_main_PC"
+         }
+      },
+      "timeline" : {
+         "lighting2" : "0.085",
+         "soundplaystop" : 4,
+         "end" : "0.4",
+         "endpixie" : 1
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "timeline" : {
+               "shooting" : 1
+            },
+            "effects" : {
+               "pixie" : [
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_ground.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "default",
+                     "force" : 1
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_ground.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "ground",
+                     "force" : 1
+                  },
+                  {
+                     "surfaceMatKind" : "stone",
+                     "force" : 1,
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_main_stone.xml",
+                     "position" : "Scene Root"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_main_sand.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA",
+                     "file" : "particles/Tank/shots/groundwave_main_snow.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  }
+               ]
+            }
+         }
+      }
+   },
+   "shot_TNSH_auto" : {
+      "timeline" : {
+         "lighting2" : "0.075",
+         "soundplaystop" : 8,
+         "end" : "0.3",
+         "endpixie" : "0.1"
+      },
+      "effects" : {
+         "pixie" : {
+            "file" : "particles/Tank/shots/shot_auto_01.xml",
+            "position" : "HP_gunFire",
+            "startKey" : "start",
+            "force" : 1,
+            "endKey" : "AAAAAAAA"
+         },
+         "shotSound" : {
+            "wwsoundPC" : "wpn_automatic_PC",
+            "wwsoundNPC" : "wpn_automatic_NPC",
+            "startKey" : "start"
+         }
+      }
+   },
+   "shot_Gochkins_auto" : {
+      "effects" : {
+         "pixie" : {
+            "endKey" : "AAAAAAAA",
+            "force" : 1,
+            "startKey" : "start",
+            "file" : "particles/Tank/shots/shot_auto_01.xml",
+            "position" : "HP_gunFire"
+         },
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_automatic_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_automatic_PC"
+         }
+      },
+      "timeline" : {
+         "lighting2" : "0.075",
+         "soundplaystop" : 8,
+         "end" : "0.3",
+         "endpixie" : "0.1"
+      }
+   },
+   "shot_auto" : {
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_automatic_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_automatic_PC"
+         },
+         "pixie" : {
+            "startKey" : "start",
+            "file" : "particles/Tank/shots/shot_auto_01.xml",
+            "position" : "HP_gunFire",
+            "endKey" : "AAAAAAAA",
+            "force" : 1
+         }
+      },
+      "timeline" : {
+         "endpixie" : "0.1",
+         "end" : "0.3",
+         "soundplaystop" : 8,
+         "lighting2" : "0.075"
+      }
+   },
+   "shot_Breda_auto" : {
+      "effects" : {
+         "shotSound" : {
+            "wwsoundNPC" : "wpn_automatic_NPC",
+            "startKey" : "start",
+            "wwsoundPC" : "wpn_automatic_PC"
+         },
+         "pixie" : {
+            "startKey" : "start",
+            "file" : "particles/Tank/shots/shot_auto_01.xml",
+            "position" : "HP_gunFire",
+            "endKey" : "AAAAAAAA",
+            "force" : 1
+         }
+      },
+      "timeline" : {
+         "end" : "0.3",
+         "endpixie" : "0.1",
+         "lighting2" : "0.075",
+         "soundplaystop" : 8
+      }
+   },
+   "shot_medium_mb" : {
+      "effects" : {
+         "light" : {
+            "animation" : [
+               {
+                  "time" : "0.0",
+                  "color" : "255 150 0",
+                  "multiplier" : 10
+               },
+               {
+                  "time" : "0.25",
+                  "color" : "255 200 100",
+                  "multiplier" : 13
+               },
+               {
+                  "time" : "0.75",
+                  "color" : "170 65 25",
+                  "multiplier" : 10
+               },
+               {
+                  "time" : "1.0",
+                  "color" : "0 0 0 0",
+                  "multiplier" : 5
+               }
+            ],
+            "innerRadius" : 1,
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "endKey" : "lighting2",
+            "outerRadius" : 5,
+            "castShadows" : false
+         },
+         "pixie" : {
+            "startKey" : "start",
+            "position" : "HP_gunFire",
+            "file" : "particles/Tank/shots/shot_medium_02.xml",
+            "endKey" : "AAAAAAAA",
+            "force" : 1
+         },
+         "shotSound" : {
+            "startKey" : "start",
+            "wwsoundNPC" : "wpn_meduim_NPC",
+            "wwsoundPC" : "wpn_meduim_PC"
+         }
+      },
+      "relatedEffects" : {
+         "groundWave" : {
+            "effects" : {
+               "pixie" : [
+                  {
+                     "file" : "particles/Tank/shots/groundwave_medium_ground_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "default"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "ground",
+                     "file" : "particles/Tank/shots/groundwave_medium_ground_mb.xml",
+                     "position" : "Scene Root",
+                     "startKey" : "start"
+                  },
+                  {
+                     "force" : 1,
+                     "surfaceMatKind" : "stone",
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_medium_stone_mb.xml",
+                     "startKey" : "start"
+                  },
+                  {
+                     "startKey" : "start",
+                     "file" : "particles/Tank/shots/groundwave_medium_sand_mb.xml",
+                     "position" : "Scene Root",
+                     "surfaceMatKind" : "AAAA",
+                     "force" : 1
+                  },
+                  {
+                     "position" : "Scene Root",
+                     "file" : "particles/Tank/shots/groundwave_medium_snow_mb.xml",
+                     "startKey" : "start",
+                     "force" : 1,
+                     "surfaceMatKind" : "AAAA"
+                  }
+               ]
+            },
+            "timeline" : {
+               "shooting" : 1
+            }
+         }
+      },
+      "timeline" : {
+         "end" : "0.4",
+         "endpixie" : 1,
+         "lighting2" : "0.075",
+         "soundplaystop" : 4
+      }
+   }
+}

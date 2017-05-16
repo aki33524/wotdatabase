@@ -1,0 +1,796 @@
+{
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_A108_T18_HMC_2" : {
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : 2,
+                  "template" : "WD_R",
+                  "count" : 2,
+                  "isLeft" : false,
+                  "radius" : "0.11"
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 5
+               },
+               {
+                  "startIndex" : 2,
+                  "template" : "WD_L",
+                  "radius" : "0.11",
+                  "count" : 2,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 5,
+                  "template" : "W_L",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "syncAngle" : "51.4",
+                  "radius" : "0.11",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R1"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "radius" : "0.11",
+                  "isLeading" : true,
+                  "name" : "WD_L1",
+                  "isLeft" : true,
+                  "syncAngle" : "51.4"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A108_T18_HMC/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A108_T18_HMC/collision_client/Chassis.model"
+         },
+         "hullPosition" : "0 1 0",
+         "trackThickness" : "0.0167",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "terrainResistance" : "2 2.2 2.9",
+         "topRightCarryingPoint" : "0.9332 1.55085",
+         "rotationSpeed" : 23,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.08",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "minOffset" : "-0.06",
+                  "count" : 4
+               },
+               {
+                  "maxOffset" : "0.05",
+                  "startIndex" : 4,
+                  "template" : "Track_R",
+                  "minOffset" : "-0.2",
+                  "isLeft" : false,
+                  "count" : 1
+               },
+               {
+                  "maxOffset" : "0.08",
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "minOffset" : "-0.06",
+                  "isLeft" : true,
+                  "count" : 4
+               },
+               {
+                  "startIndex" : 4,
+                  "maxOffset" : "0.05",
+                  "minOffset" : "-0.2",
+                  "count" : 1,
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               }
+            ]
+         },
+         "userString" : "#usa_vehicles:Chassis_A108_T18_HMC_2",
+         "trackNodes" : {
+            "offset" : "-0.05",
+            "maxOffset" : "0",
+            "linkBones" : true,
+            "elasticity" : 1500,
+            "gravity" : "-5.7",
+            "damping" : 2,
+            "forwardElastK" : 3,
+            "maxAmplitude" : "0.1",
+            "backwardElastK" : 1,
+            "enable" : true,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : 3
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "backwardElastK" : 3
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "rightSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L0"
+               },
+               {
+                  "backwardElastK" : "2.5",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L3",
+                  "offset" : "-0.04"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "rightSibling" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R0",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.04",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3",
+                  "backwardElastK" : "2.5"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R2"
+               }
+            ]
+         },
+         "weight" : 3000,
+         "navmeshGirth" : "6.0",
+         "maxRegenHealth" : 45,
+         "wwsoundPC" : "treads_type_pc",
+         "maxLoad" : 15000,
+         "tags" : {},
+         "AODecals" : {
+            "decal" : {
+               "transform" : "2 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "rotationIsAroundCenter" : true,
+         "traces" : {
+            "size" : "0.35 0.3",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank"
+         },
+         "brakeForce" : 35500,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.36",
+            "vehicleRotation" : "0.36"
+         },
+         "maxHealth" : 60,
+         "level" : 3,
+         "repairCost" : "1.0",
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/american/A108_T18_HMC/track/segment1.model",
+            "left" : "vehicles/american/A108_T18_HMC/track/left.track",
+            "segmentLength" : "0.126",
+            "segment2Offset" : "0.008",
+            "right" : "vehicles/american/A108_T18_HMC/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segment2ModelRight" : "vehicles/american/A108_T18_HMC/track/segment2.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.119",
+            "segment2ModelLeft" : "vehicles/american/A108_T18_HMC/track/segment2.model",
+            "segmentModelRight" : "vehicles/american/A108_T18_HMC/track/segment1.model"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "bulkHealthFactor" : "3.0",
+         "tracks" : {
+            "textureScale" : "-1.85",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "maxClimbAngle" : 25,
+         "models" : {
+            "undamaged" : "vehicles/american/A108_T18_HMC/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A108_T18_HMC/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A108_T18_HMC/crash/lod0/Chassis.model"
+         },
+         "price" : 1850,
+         "drivingWheels" : "WD_L0 WD_L1"
+      },
+      "Chassis_A108_T18_HMC" : {
+         "bulkHealthFactor" : "3.0",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.85"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "maxClimbAngle" : 25,
+         "models" : {
+            "exploded" : "vehicles/american/A108_T18_HMC/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A108_T18_HMC/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A108_T18_HMC/crash/lod0/Chassis.model"
+         },
+         "price" : 600,
+         "drivingWheels" : "WD_L0 WD_L1",
+         "maxLoad" : 15000,
+         "tags" : {},
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 -0"
+            }
+         },
+         "rotationIsAroundCenter" : true,
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "size" : "0.35 0.3"
+         },
+         "brakeForce" : 35500,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.36",
+            "vehicleRotation" : "0.36"
+         },
+         "maxHealth" : 60,
+         "repairCost" : "1.0",
+         "level" : 2,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/american/A108_T18_HMC/track/segment1.model",
+            "segment2ModelLeft" : "vehicles/american/A108_T18_HMC/track/segment2.model",
+            "segmentOffset" : "0.119",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segment2ModelRight" : "vehicles/american/A108_T18_HMC/track/segment2.model",
+            "right" : "vehicles/american/A108_T18_HMC/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segment2Offset" : "0.008",
+            "segmentLength" : "0.126",
+            "segmentModelLeft" : "vehicles/american/A108_T18_HMC/track/segment1.model",
+            "left" : "vehicles/american/A108_T18_HMC/track/left.track"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "terrainResistance" : "2 2.2 2.9",
+         "topRightCarryingPoint" : "0.9332 1.55085",
+         "rotationSpeed" : 23,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.08",
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.06",
+                  "isLeft" : false,
+                  "count" : 4
+               },
+               {
+                  "startIndex" : 4,
+                  "maxOffset" : "0.05",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "minOffset" : "-0.2",
+                  "count" : 1
+               },
+               {
+                  "maxOffset" : "0.08",
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "count" : 4,
+                  "minOffset" : "-0.06",
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : 4,
+                  "maxOffset" : "0.05",
+                  "minOffset" : "-0.2",
+                  "count" : 1,
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               }
+            ]
+         },
+         "userString" : "#usa_vehicles:Chassis_A108_T18_HMC",
+         "trackNodes" : {
+            "offset" : "-0.05",
+            "linkBones" : true,
+            "maxOffset" : "0",
+            "gravity" : "-5.7",
+            "elasticity" : 1500,
+            "damping" : 2,
+            "forwardElastK" : 3,
+            "maxAmplitude" : "0.1",
+            "backwardElastK" : 1,
+            "enable" : true,
+            "node" : [
+               {
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "backwardElastK" : 3,
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L0"
+               },
+               {
+                  "backwardElastK" : "2.5",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L3",
+                  "offset" : "-0.04"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R0"
+               },
+               {
+                  "offset" : "-0.04",
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "2.5"
+               },
+               {
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "weight" : 3000,
+         "navmeshGirth" : "6.0",
+         "maxRegenHealth" : 45,
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "group" : [
+               {
+                  "startIndex" : 2,
+                  "template" : "WD_R",
+                  "radius" : "0.11",
+                  "isLeft" : false,
+                  "count" : 2
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "count" : 5,
+                  "radius" : "0",
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "count" : 2,
+                  "radius" : "0.11",
+                  "startIndex" : 2
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 5,
+                  "radius" : "0",
+                  "template" : "W_L"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "25.714"
+               },
+               {
+                  "syncAngle" : "51.4",
+                  "radius" : "0.11",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R1"
+               },
+               {
+                  "syncAngle" : "25.714",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : "51.4",
+                  "isLeading" : true,
+                  "radius" : "0.11",
+                  "isLeft" : true,
+                  "name" : "WD_L1"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A108_T18_HMC/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A108_T18_HMC/collision_client/Chassis.model"
+         },
+         "hullPosition" : "0 1 0",
+         "unlocks" : {
+            "chassis" : "Chassis_A108_T18_HMC_2"
+         },
+         "trackThickness" : "0.0167",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         }
+      }
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "size" : "0.55",
+               "rayStart" : "-1.22 0.533935 0.0332963",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.02 0.533935 0.0332962",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            {
+               "rayEnd" : "1.02 0.533935 0.0332962",
+               "hideIfDamaged" : false,
+               "rayStart" : "1.22 0.533935 0.0332963",
+               "size" : "0.55",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.173819 -0.0289111 1.64423",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.173812 0.157651 1.7163",
+            "size" : "0.26"
+         },
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.02 0.907281 0.0624999",
+               "hideIfDamaged" : false,
+               "size" : "0.26",
+               "rayStart" : "-1.22 0.907282 0.0625"
+            },
+            {
+               "rayEnd" : "1.02 0.907281 0.0624999",
+               "hideIfDamaged" : false,
+               "rayStart" : "1.22 0.907282 0.0625",
+               "size" : "0.26",
+               "rayUp" : "0.000000 1 0.000000",
+               "isMirrored" : true
+            }
+         ]
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 35,
+         "maxHealth" : 70
+      },
+      "camouflage" : {
+         "tiling" : "2.14 2.14 0.000000 0.000000"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.28 36.00 0.38 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.64",
+         "pitchParams" : "0.28 36.00 0.38 1.00 0.05 0.32",
+         "lodDist" : "FAR"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "hangarShadowTexture" : "vehicles/american/A108_T18_HMC/T18_HMC_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/american/A108_T18_HMC/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/american/A108_T18_HMC/collision/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "models" : {
+         "destroyed" : "vehicles/american/A108_T18_HMC/crash/lod0/Hull.model",
+         "exploded" : "vehicles/american/A108_T18_HMC/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A108_T18_HMC/normal/lod0/Hull.model"
+      },
+      "weight" : 9784,
+      "armor" : {
+         "armor_5" : "31.8",
+         "armor_1" : "50.8",
+         "armor_9" : "25.4",
+         "armor_10" : "15.9",
+         "armor_2" : "44.5",
+         "armor_12" : "6.4",
+         "armor_3" : "31.8",
+         "armor_7" : 46,
+         "armor_14" : "12.7",
+         "armor_11" : "9.5",
+         "armor_13" : "25.4",
+         "armor_6" : "9.5",
+         "armor_4" : "25.4",
+         "armor_8" : ""
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "tags" : {
+            "diesel" : "diesel_small"
+         },
+         "pixie" : "gas_small"
+      },
+      "turretPositions" : {
+         "turret" : "0.320658 0.35686 0.668212"
+      },
+      "maxHealth" : 88
+   },
+   "turrets0" : {
+      "Turret_1_A108_T18_HMC" : {
+         "maxHealth" : 22,
+         "circularVisionRadius" : 250,
+         "wwturretRotatorSoundManual" : "tur_man_trav_02",
+         "armor" : {
+            "armor_2" : "25.4",
+            "armor_1" : "50.8"
+         },
+         "level" : 3,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A108_T18_HMC/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A108_T18_HMC/collision_client/Turret_01.model"
+         },
+         "gunPosition" : "0 0 0",
+         "camouflage" : {
+            "tiling" : "0.865 0.25 0.000000 0.000000"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "guns" : {
+            "_75mm_Howitzer_M1A1_SPG" : "shared"
+         },
+         "weight" : 100,
+         "showEmblemsOnGun" : false,
+         "physicsShape" : "0.890 0.135 1.014 0.000 0.907 -0.039 0.693 0.000 0.648 0.515 0.000 0.500 0.000 0.100 0.152",
+         "price" : 100,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "models" : {
+            "exploded" : "vehicles/american/A108_T18_HMC/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A108_T18_HMC/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A108_T18_HMC/crash/lod0/Turret_01.model"
+         },
+         "rotationSpeed" : 16,
+         "userString" : "#usa_vehicles:Turret_1_A108_T18_HMC",
+         "notInShop" : true,
+         "primaryArmor" : "armor_1 armor_1 armor_1",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : "22.0",
+            "maxHealth" : 45
+         },
+         "emblemSlots" : {}
+      }
+   },
+   "speedLimits" : {
+      "forward" : 48,
+      "backward" : 6
+   },
+   "radios" : {
+      "SCR_200" : "shared",
+      "SCR_506" : "shared",
+      "SCR_210" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "engines" : {
+      "Continental_W-670" : "shared",
+      "Guiberson_T-1020-4" : "shared"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "0.6"
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : "radioman loader",
+      "driver" : {}
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_W-670" : {
+               "smplEnginePower" : "277.0077"
+            },
+            "Guiberson_T-1020-4" : {
+               "smplEnginePower" : "259.0339"
+            }
+         },
+         "chassis" : {
+            "Chassis_A108_T18_HMC_2" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  }
+               }
+            },
+            "Chassis_A108_T18_HMC" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1771"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.447",
+      "camouflageBonus" : "0.02",
+      "moving" : "0.149",
+      "still" : "0.298"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "usa_star",
+      "alpha" : "0.88"
+   },
+   "repairCost" : "6.5",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.822853989"
+   }
+}

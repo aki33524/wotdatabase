@@ -1,0 +1,428 @@
+{
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/french/F28_105_leFH18B2/105_leFH18B2_HangarShadowMap.dds",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F28_105_leFH18B2/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F28_105_leFH18B2/collision_client/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "-0.000001 0.376416 1.4391"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "maxHealth" : 208,
+      "models" : {
+         "undamaged" : "vehicles/french/F28_105_leFH18B2/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F28_105_leFH18B2/crash/lod0/Hull.model",
+         "exploded" : "vehicles/french/F28_105_leFH18B2/crash/lod0/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "0.91 0.91 0.000000 0.000000"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "weight" : 21000,
+      "armor" : {
+         "armor_9" : 10,
+         "armor_8" : "",
+         "armor_5" : 25,
+         "armor_4" : 55,
+         "armor_1" : 60,
+         "armor_6" : 25,
+         "armor_7" : 20,
+         "armor_11" : 45,
+         "armor_3" : 60,
+         "armor_2" : 45
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 55,
+         "maxHealth" : 80
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "size" : "0.28",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-0.655844 0.809303 1.33013",
+               "rayStart" : "-0.829332 0.852585 1.41973"
+            },
+            {
+               "rayStart" : "0.829332 0.852585 1.41973",
+               "isMirrored" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "0.655844 0.809303 1.33013",
+               "hideIfDamaged" : false,
+               "size" : "0.28"
+            }
+         ],
+         "clan" : {
+            "rayEnd" : "-0.243849 -0.438722 2.31431",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true,
+            "rayStart" : "-0.243849 -0.30415 2.46226",
+            "size" : "0.22"
+         },
+         "inscription" : [
+            {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1 1 0",
+               "rayStart" : "1 1 0",
+               "size" : "0.8"
+            },
+            {
+               "rayStart" : "-0.885528 0.7589 0.480268",
+               "rayEnd" : "-1 1 1",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "size" : "0.8"
+            }
+         ]
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.35",
+         "lodDist" : "FAR"
+      }
+   },
+   "crewXpFactor" : "1.5",
+   "invisibility" : {
+      "moving" : "0.068",
+      "firePenalty" : "0.203",
+      "still" : "0.135",
+      "camouflageNetBonus" : "0.05",
+      "camouflageBonus" : "0.02"
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "alpha" : "0.86",
+      "lodDist" : "MEDIUM"
+   },
+   "radios" : {
+      "FuG8f_IGR" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_105_leFH18B2_IGR" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Renault_A_IGR" : {
+               "smplEnginePower" : "324.5853"
+            }
+         }
+      }
+   },
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "driver" : {},
+      "loader" : {},
+      "gunner" : {}
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "chassis" : {
+      "Chassis_105_leFH18B2_IGR" : {
+         "drivingWheels" : "WD_L0 WD_L1",
+         "trackNodes" : {
+            "elasticity" : 1500,
+            "maxAmplitude" : "0.1",
+            "damping" : 2,
+            "linkBones" : false,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : 1
+               },
+               {
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : 1,
+                  "isLeft" : false
+               }
+            ],
+            "maxOffset" : "0.1",
+            "enable" : true,
+            "gravity" : "-9.8"
+         },
+         "rotationSpeed" : 22,
+         "maxLoad" : 34000,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.04",
+                  "isLeft" : true,
+                  "maxOffset" : "0.04",
+                  "count" : 16,
+                  "startIndex" : "",
+                  "template" : "Track_L"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 16,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "minOffset" : "-0.04",
+                  "maxOffset" : "0.04"
+               }
+            ]
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "size" : "0.36 0.48",
+            "bufferPrefs" : "mediumTank"
+         },
+         "splineDesc" : {
+            "right" : "vehicles/french/F28_105_leFH18B2/track/right.track",
+            "segmentLength" : "0.224",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.113",
+            "segmentModelRight" : "vehicles/french/F28_105_leFH18B2/track/segment.model",
+            "segmentModelLeft" : "vehicles/french/F28_105_leFH18B2/track/segment.model",
+            "left" : "vehicles/french/F28_105_leFH18B2/track/left.track"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F28_105_leFH18B2/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/french/F28_105_leFH18B2/collision/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "repairCost" : "1.0",
+         "topRightCarryingPoint" : "0.989686 1.85858",
+         "trackThickness" : "-0.0425",
+         "navmeshGirth" : "6.0",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-2.2",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 5,
+         "hullPosition" : "0.000000 1.43419 0.000000",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "weight" : 8050,
+         "maxRegenHealth" : 90,
+         "brakeForce" : 35500,
+         "userString" : "#igr_vehicles:Chassis_105_leFH18B2_IGR",
+         "terrainResistance" : "1.3 1.4 2.1",
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 16,
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 16,
+                  "startIndex" : ""
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R1",
+                  "syncAngle" : 12
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 12,
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "syncAngle" : 12,
+                  "name" : "WD_L1"
+               },
+               {
+                  "syncAngle" : 12,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true
+               }
+            ]
+         },
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "models" : {
+            "exploded" : "vehicles/french/F28_105_leFH18B2/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F28_105_leFH18B2/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F28_105_leFH18B2/normal/lod0/Chassis.model"
+         },
+         "price" : 240,
+         "notInShop" : true,
+         "maxHealth" : 120
+      }
+   },
+   "engines" : {
+      "Renault_A_IGR" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.0",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "premiumVehicleXPFactor" : "0.4",
+   "turrets0" : {
+      "Turret_1_105_leFH18B2_IGR" : {
+         "emblemSlots" : {},
+         "circularVisionRadius" : 390,
+         "ceilless" : true,
+         "armor" : {
+            "armor_3" : 15,
+            "armor_7" : "",
+            "armor_2" : 20,
+            "armor_5" : "",
+            "armor_8" : "",
+            "armor_6" : "",
+            "armor_4" : "",
+            "armor_1" : 20
+         },
+         "showEmblemsOnGun" : false,
+         "wwturretRotatorSoundManual" : "tur_man_trav_05",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "camouflage" : {
+            "tiling" : "0.58 0.25 0.000000 0.000000"
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F28_105_leFH18B2/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F28_105_leFH18B2/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F28_105_leFH18B2/crash/lod0/Turret_01.model"
+         },
+         "price" : "120.0",
+         "maxHealth" : 52,
+         "notInShop" : true,
+         "level" : 5,
+         "rotationSpeed" : 22,
+         "weight" : 300,
+         "gunPosition" : "0 1 0",
+         "guns" : {
+            "_105mm_leFH18_L28_IGR" : "shared"
+         },
+         "physicsShape" : "1.209 0.000 1.000 0.000 0.932 0.068 0.816 0.785 0.500 0.500 0.359 0.500 0.376 0.100 0.031",
+         "userString" : "#igr_vehicles:Turret_1_105_leFH18B2_IGR",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 30,
+            "maxHealth" : 60,
+            "repairCost" : "1.0"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F28_105_leFH18B2/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F28_105_leFH18B2/collision/Turret_01.model"
+         }
+      }
+   },
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : 28
+   },
+   "repairCost" : 4,
+   "clientAdjustmentFactors" : {
+      "armour" : "0.799230536"
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   }
+}

@@ -1,0 +1,836 @@
+{
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.2",
+      "exclusionMask" : "vehicles/german/G40_Nashorn/Nashorn_chassis_01_AM.dds"
+   },
+   "crew" : {
+      "radioman" : {},
+      "commander" : {},
+      "gunner" : {},
+      "loader" : {},
+      "driver" : {}
+   },
+   "turrets0" : {
+      "Turret_1_Nashorn" : {
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100,
+            "repairCost" : "1.0"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G40_Nashorn/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G40_Nashorn/collision/Turret_01.model"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "rotationSpeed" : 26,
+         "models" : {
+            "exploded" : "vehicles/german/G40_Nashorn/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G40_Nashorn/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G40_Nashorn/normal/lod0/Turret_01.model"
+         },
+         "armor" : {
+            "armor_8" : "",
+            "armor_2" : 10,
+            "armor_1" : 15
+         },
+         "physicsShape" : "1.030 0.015 1.000 0.000 1.059 -0.030 0.500 0.100 0.500 0.500 0.358 0.500 0.389 0.000 0.000",
+         "circularVisionRadius" : 360,
+         "gunPosition" : "-0.000421 0.649511 -0.07975",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0",
+            "maxHealth" : 80
+         },
+         "maxHealth" : 120,
+         "wwturretRotatorSoundManual" : "tur_man_trav_04",
+         "level" : 6,
+         "emblemSlots" : {},
+         "notInShop" : true,
+         "guns" : {
+            "_88mm_PaK_43_L71" : "shared",
+            "_88mm_PaK_36_L56" : "shared",
+            "_75mm_StuK42_L70" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.325 0.325 0.000000 0.000000"
+         },
+         "weight" : 100,
+         "userString" : "#germany_vehicles:Turret_1_Nashorn",
+         "showEmblemsOnGun" : false,
+         "ceilless" : true,
+         "price" : 100
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "engines" : {
+      "Maybach_HL_108_TR_R" : "shared",
+      "Maybach_HL_120_TRM_R" : "shared",
+      "Maybach_HL_120_TRM_112_R" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.634307731",
+      "guns" : {
+         "_88mm_PaK_36_L56" : {
+            "delta" : "1"
+         }
+      }
+   },
+   "invisibility" : {
+      "firePenalty" : "0.326",
+      "still" : "0.217",
+      "camouflageBonus" : "0.04",
+      "camouflageNetBonus" : "0.15",
+      "moving" : "0.13"
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Maybach_HL_108_TR_R" : {
+               "smplEnginePower" : "264.3203"
+            },
+            "Maybach_HL_120_TRM_R" : {
+               "smplEnginePower" : "317.1843"
+            },
+            "Maybach_HL_120_TRM_112_R" : {
+               "smplEnginePower" : "287.5805"
+            }
+         },
+         "chassis" : {
+            "Chassis_Nashorn_2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            },
+            "Chassis_Nashorn" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G40_Nashorn/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G40_Nashorn/collision/Hull.model"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.32",
+            "hideIfDamaged" : true,
+            "rayEnd" : "-0.0140762 0.201067 2.5935",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.0140762 0.239035 2.60609"
+         },
+         "player" : [
+            {
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.19351 0.876667 -2.20198",
+               "rayStart" : "-1.38683 0.927871 -2.20403",
+               "size" : "0.32"
+            },
+            {
+               "isMirrored" : true,
+               "rayStart" : "1.38683 0.927871 -2.20403",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "rayEnd" : "1.19351 0.876667 -2.20198",
+               "size" : "0.32"
+            }
+         ],
+         "inscription" : [
+            {
+               "size" : "0.82",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.26321 0.908381 -0.570075",
+               "rayStart" : "-1.34058 0.928756 -0.570075"
+            },
+            {
+               "size" : "0.82",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "rayEnd" : "1.26321 0.908381 -0.570075",
+               "rayStart" : "1.34058 0.928756 -0.570075"
+            }
+         ]
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 100,
+         "repairCost" : "1.0",
+         "maxHealth" : 150
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "camouflage" : {
+         "tiling" : "0.61 0.61 0.61 0.63"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "weight" : 10128,
+      "models" : {
+         "exploded" : "vehicles/german/G40_Nashorn/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G40_Nashorn/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G40_Nashorn/normal/lod0/Hull.model"
+      },
+      "maxHealth" : 480,
+      "hangarShadowTexture" : "vehicles/german/G40_Nashorn/Nashorn_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "0.000357 0.697303 -0.19443"
+      },
+      "swinging" : {
+         "pitchParams" : "0.20 32.00 0.36 1.00 0.05 0.29",
+         "sensitivityToImpulse" : "0.3",
+         "rollParams" : "1.00 0.20 32.00 0.36 1.00 0.05 0.29",
+         "lodDist" : "FAR"
+      },
+      "armor" : {
+         "armor_5" : 10,
+         "armor_10" : 15,
+         "armor_9" : 10,
+         "armor_7" : 10,
+         "armor_11" : 10,
+         "armor_6" : 15,
+         "armor_12" : 5,
+         "armor_13" : 10,
+         "armor_2" : 30,
+         "armor_16" : 10,
+         "armor_8" : "",
+         "armor_15" : 35,
+         "armor_4" : 20,
+         "armor_3" : 20,
+         "armor_1" : 15
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "7.30",
+   "chassis" : {
+      "Chassis_Nashorn" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "brakeForce" : 24000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G40_Nashorn/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G40_Nashorn/collision/Chassis.model"
+         },
+         "tags" : {},
+         "maxClimbAngle" : 25,
+         "unlocks" : {
+            "chassis" : "Chassis_Nashorn_2"
+         },
+         "camouflage" : {
+            "tiling" : "1.9 1.9 0.000000 0.000000"
+         },
+         "hullPosition" : "0.000000 1.02108 0.000000",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "maxOffset" : "0.04",
+                  "minOffset" : "-0.04",
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "maxOffset" : "0.04",
+                  "minOffset" : "-0.04",
+                  "isLeft" : false,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "1.24239 1.79659",
+         "rotationIsAroundCenter" : true,
+         "bulkHealthFactor" : "3.0",
+         "weight" : 10000,
+         "userString" : "#germany_vehicles:Chassis_Nashorn",
+         "splineDesc" : {
+            "segmentOffset" : "0.19",
+            "segmentLength" : "0.117",
+            "segmentModelLeft" : "vehicles/german/G40_Nashorn/track/g40_track.model",
+            "right" : "vehicles/german/G40_Nashorn/track/right.track",
+            "segmentModelRight" : "vehicles/german/G40_Nashorn/track/g40_track.model",
+            "left" : "vehicles/german/G40_Nashorn/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationSpeed" : 32,
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.32 0.42",
+            "bufferPrefs" : "mediumTank"
+         },
+         "repairCost" : "0.5",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "count" : 4,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 8,
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : 1,
+                  "count" : 4,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 8,
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "syncAngle" : "17.1428"
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "syncAngle" : "17.1428"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "17.1428",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "17.1428",
+                  "name" : "WD_L5",
+                  "isLeading" : true
+               }
+            ]
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "trackNodes" : {
+            "enable" : true,
+            "maxAmplitude" : "0.1",
+            "forwardElastK" : 1,
+            "maxOffset" : "0.1",
+            "node" : [
+               {
+                  "offset" : "-0.058",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "1.4",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8",
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.058",
+                  "forwardElastK" : "1.3",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.058"
+               },
+               {
+                  "offset" : "-0.058",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.1"
+               },
+               {
+                  "offset" : "-0.058",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true,
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.2",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.4",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.058"
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.058"
+               },
+               {
+                  "offset" : "-0.058",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.058",
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 1,
+                  "isLeft" : false,
+                  "offset" : "-0.058",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R4"
+               }
+            ],
+            "damping" : 2,
+            "linkBones" : false,
+            "backwardElastK" : 1,
+            "offset" : "0",
+            "elasticity" : 1100,
+            "gravity" : "-9.8"
+         },
+         "trackThickness" : "0.0083",
+         "maxLoad" : 24000,
+         "maxRegenHealth" : 85,
+         "maxHealth" : 110,
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G40_Nashorn/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G40_Nashorn/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G40_Nashorn/crash/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "terrainResistance" : "1.1 1.3 2.4",
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 5,
+         "price" : 9000,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.8",
+            "leftMaterial" : "track_mat_L_skinned"
+         }
+      },
+      "Chassis_Nashorn_2" : {
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : "17.1428",
+                  "isLeading" : true,
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R5",
+                  "isLeading" : true,
+                  "syncAngle" : "17.1428",
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : "17.1428",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "17.1428",
+                  "isLeading" : true,
+                  "name" : "WD_L5"
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "count" : 4
+               },
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 8
+               }
+            ]
+         },
+         "trackNodes" : {
+            "forwardElastK" : 1,
+            "maxOffset" : "0.1",
+            "damping" : 2,
+            "node" : [
+               {
+                  "offset" : "-0.058",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "1.4",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.058",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.3"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.058",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.1",
+                  "offset" : "-0.058",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "offset" : "-0.058",
+                  "name" : "Track_VT_L4",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.8",
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "1.2",
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.058",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "forwardElastK" : "1.3",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.058"
+               },
+               {
+                  "offset" : "-0.058",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.2"
+               },
+               {
+                  "offset" : "-0.058",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "1.1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : 1,
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.058"
+               }
+            ],
+            "linkBones" : false,
+            "enable" : true,
+            "maxAmplitude" : "0.1",
+            "elasticity" : 1100,
+            "gravity" : "-9.8",
+            "backwardElastK" : 1,
+            "offset" : "0"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.32 0.42"
+         },
+         "rotationSpeed" : 36,
+         "repairCost" : "0.5",
+         "trackThickness" : "0.0083",
+         "maxLoad" : 27000,
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "maxRegenHealth" : 90,
+         "maxHealth" : 120,
+         "navmeshGirth" : "6.0",
+         "terrainResistance" : "1 1.2 2.2",
+         "models" : {
+            "destroyed" : "vehicles/german/G40_Nashorn/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G40_Nashorn/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G40_Nashorn/normal/lod0/Chassis.model"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "level" : 6,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.8",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "price" : 14500,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "brakeForce" : 26000,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "maxClimbAngle" : 25,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G40_Nashorn/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G40_Nashorn/collision_client/Chassis.model"
+         },
+         "tags" : {},
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 8,
+                  "startIndex" : "",
+                  "maxOffset" : "0.04",
+                  "minOffset" : "-0.04",
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 8,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "maxOffset" : "0.04",
+                  "minOffset" : "-0.04"
+               }
+            ]
+         },
+         "hullPosition" : "0.000000 1.02108 0.000000",
+         "rotationIsAroundCenter" : true,
+         "bulkHealthFactor" : "3.0",
+         "topRightCarryingPoint" : "1.24239 1.79659",
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/german/G40_Nashorn/track/g40_track.model",
+            "right" : "vehicles/german/G40_Nashorn/track/right.track",
+            "left" : "vehicles/german/G40_Nashorn/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.19",
+            "segmentLength" : "0.117",
+            "segmentModelLeft" : "vehicles/german/G40_Nashorn/track/g40_track.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 10000,
+         "userString" : "#germany_vehicles:Chassis_Nashorn_2"
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   },
+   "radios" : {
+      "FuG8" : "shared",
+      "FuG_F" : "shared"
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 40
+   }
+}

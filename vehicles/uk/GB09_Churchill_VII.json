@@ -1,0 +1,787 @@
+{
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Meadows_DAV" : {
+               "smplEnginePower" : "317.1843"
+            },
+            "Vauxhall_Bedford_Twin_Six" : {
+               "smplEnginePower" : "370.0484"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB09_Churchill_VII_2" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB09_Churchill_VII" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "radioman" : {},
+      "commander" : {},
+      "driver" : {},
+      "gunner" : {},
+      "loader" : {}
+   },
+   "turrets0" : {
+      "Turret_1_GB09_Churchill_VII" : {
+         "guns" : {
+            "_3.7inch_Howitzer" : "shared",
+            "_75mm_Gun_Mk_V" : "shared",
+            "QF_6_pounder_Mk_V" : "shared",
+            "_75mm_Gun_Vickers_HV" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "emblemSlots" : {
+            "inscription" : {
+               "size" : "0.64",
+               "hideIfDamaged" : true,
+               "rayStart" : "1 0 0",
+               "rayEnd" : "1 0 0",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            "player" : {
+               "size" : "0.26",
+               "hideIfDamaged" : false,
+               "rayStart" : "-1 0 0",
+               "rayEnd" : "-0.771987 0.488608 0.0858254",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 130,
+            "maxRegenHealth" : 65,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_11" : "76.2",
+            "armor_12" : "50.8",
+            "armor_5" : "34.9",
+            "armor_3" : "76.2",
+            "armor_2" : "88.9",
+            "armor_7" : "82.6",
+            "armor_4" : "76.2",
+            "armor_10" : "34.9",
+            "armor_13" : "34.9",
+            "armor_8" : "",
+            "armor_6" : "31.8",
+            "armor_14" : "44.5",
+            "armor_1" : "88.9",
+            "armor_9" : "34.9"
+         },
+         "showEmblemsOnGun" : false,
+         "tags" : {},
+         "weight" : 7500,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB09_Churchill_VII/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Turret_01.model"
+         },
+         "rotationSpeed" : 30,
+         "circularVisionRadius" : 350,
+         "gunPosition" : "-0.09783 0.38214 0.85253",
+         "userString" : "#gb_vehicles:Turret_1_GB09_Churchill_VII",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB09_Churchill_VII/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB09_Churchill_VII/collision_client/Turret_01.model"
+         },
+         "maxHealth" : 172,
+         "level" : 5,
+         "price" : 8350,
+         "physicsShape" : "1.001 -0.008 1.004 0.000 0.507 0.373 0.814 0.384 0.312 0.513 0.000 0.500 0.000 0.100 0.000"
+      },
+      "Turret_2_GB09_Churchill_VII" : {
+         "price" : 17000,
+         "level" : 6,
+         "userString" : "#gb_vehicles:Turret_2_GB09_Churchill_VII",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB09_Churchill_VII/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/british/GB09_Churchill_VII/collision/Turret_02.model"
+         },
+         "maxHealth" : 272,
+         "unlocks" : {
+            "gun" : "OQF_77mm_Gun_MkII"
+         },
+         "physicsShape" : "0.978 -0.018 1.007 -0.008 0.499 0.357 0.727 0.428 0.369 0.539 0.000 0.500 0.000 0.100 0.000",
+         "circularVisionRadius" : 360,
+         "rotationSpeed" : 30,
+         "gunPosition" : "-0 0 1",
+         "weight" : 8000,
+         "tags" : {},
+         "models" : {
+            "undamaged" : "vehicles/british/GB09_Churchill_VII/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Turret_02.model"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "emblemSlots" : {
+            "inscription" : {
+               "rayStart" : "0.852269 0.359817 -0.5651",
+               "size" : "0.62",
+               "hideIfDamaged" : true,
+               "rayEnd" : "1 0 -1",
+               "rayUp" : "0.000000 1 0.000000"
+            },
+            "player" : {
+               "rayStart" : "1 1 -1",
+               "isMirrored" : true,
+               "hideIfDamaged" : false,
+               "size" : "0.26",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1 1 -1"
+            }
+         },
+         "guns" : {
+            "OQF_77mm_Gun_MkII" : "shared",
+            "_3.7inch_Howitzer" : "shared",
+            "_75mm_Gun_Mk_V" : "shared",
+            "_75mm_Gun_Vickers_HV" : "shared",
+            "QF_6_pounder_Mk_V" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "armor" : {
+            "armor_11" : "69.9",
+            "armor_13" : 20,
+            "armor_8" : "",
+            "armor_1" : "152.4",
+            "armor_6" : "28.6",
+            "armor_16" : "115.3",
+            "armor_12" : "63.5",
+            "armor_5" : 20,
+            "armor_3" : "95.3",
+            "armor_4" : "95.3",
+            "armor_7" : "123.8",
+            "armor_2" : "152.4",
+            "armor_15" : "203.2",
+            "armor_10" : "25.4",
+            "armor_14" : "95.3",
+            "armor_9" : 20
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 65,
+            "maxHealth" : 130
+         }
+      }
+   },
+   "invisibility" : {
+      "still" : "0.131",
+      "camouflageNetBonus" : "0.05",
+      "moving" : "0.065",
+      "firePenalty" : "0.197",
+      "camouflageBonus" : "0.02"
+   },
+   "repairCost" : "6.5",
+   "chassis" : {
+      "Chassis_GB09_Churchill_VII_2" : {
+         "maxLoad" : 43000,
+         "topRightCarryingPoint" : "1.10026 1.96462",
+         "terrainResistance" : "1.1 1.3 2.3",
+         "bulkHealthFactor" : "3.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 6 0 0 0"
+            }
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "count" : 11,
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "count" : 11,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "minOffset" : "-0.06"
+               }
+            ]
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.18",
+            "vehicleMovement" : "0.18"
+         },
+         "trackThickness" : "0.0166",
+         "maxHealth" : 140,
+         "wwsoundPC" : "treads_type_pc",
+         "brakeForce" : 39000,
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 11,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 11,
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "syncAngle" : "31.3043",
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "name" : "WD_R3",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "isLeft" : true
+               }
+            ]
+         },
+         "hullPosition" : "0.000000 1.26197 0.000000",
+         "maxClimbAngle" : 25,
+         "trackNodes" : {
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "2.5",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "2.5",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "2.5",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "2.5"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               }
+            ],
+            "offset" : "0",
+            "maxAmplitude" : "0.095",
+            "gravity" : "-9.8",
+            "elasticity" : 1050,
+            "forwardElastK" : 1,
+            "enable" : true,
+            "linkBones" : false,
+            "maxOffset" : "0.095",
+            "backwardElastK" : 1,
+            "damping" : 2
+         },
+         "repairCost" : "5.0",
+         "maxRegenHealth" : 105,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "tags" : {},
+         "weight" : 8150,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.5"
+         },
+         "models" : {
+            "destroyed" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB09_Churchill_VII/normal/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 20,
+         "rotationIsAroundCenter" : false,
+         "level" : 6,
+         "price" : 18000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB09_Churchill_VII/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB09_Churchill_VII/collision/Chassis.model"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB09_Churchill_VII_2",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "traces" : {
+            "size" : "0.4 0.56",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "largeTank"
+         },
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB09_Churchill_VII/track/segment.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentLength" : "0.193",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/british/GB09_Churchill_VII/track/right.track",
+            "segmentOffset" : "0.018",
+            "segmentModelRight" : "vehicles/british/GB09_Churchill_VII/track/segment.model",
+            "left" : "vehicles/british/GB09_Churchill_VII/track/left.track"
+         }
+      },
+      "Chassis_GB09_Churchill_VII" : {
+         "topRightCarryingPoint" : "1.10026 1.96462",
+         "maxLoad" : 40150,
+         "bulkHealthFactor" : "3.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "terrainResistance" : "1.2 1.4 2.5",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "isLeft" : true,
+                  "count" : 11,
+                  "template" : "Track_L",
+                  "minOffset" : "-0.06"
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "count" : 11,
+                  "template" : "Track_R",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "trackThickness" : "0.0166",
+         "brakeForce" : 36000,
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "name" : "WD_R3",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L0",
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : "31.3043",
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "isLeading" : true,
+                  "isLeft" : true
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 11,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 11,
+                  "startIndex" : "",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_GB09_Churchill_VII_2"
+         },
+         "hullPosition" : "0.000000 1.26197 0.000000",
+         "maxHealth" : 130,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "trackNodes" : {
+            "forwardElastK" : 1,
+            "enable" : true,
+            "linkBones" : false,
+            "maxOffset" : "0.095",
+            "backwardElastK" : 1,
+            "damping" : 2,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "2.5"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "2.5",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "2.5",
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "forwardElastK" : "2.5",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               }
+            ],
+            "offset" : "0",
+            "gravity" : "-9.8",
+            "maxAmplitude" : "0.095",
+            "elasticity" : 1050
+         },
+         "repairCost" : "5.0",
+         "maxClimbAngle" : 25,
+         "maxRegenHealth" : 100,
+         "tracks" : {
+            "textureScale" : "-2.5",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB09_Churchill_VII/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "weight" : 8150,
+         "rotationIsAroundCenter" : false,
+         "rotationSpeed" : 18,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "usa_02",
+            "size" : "0.4 0.56",
+            "lodDist" : "FAR"
+         },
+         "splineDesc" : {
+            "left" : "vehicles/british/GB09_Churchill_VII/track/left.track",
+            "segmentOffset" : "0.018",
+            "segmentModelRight" : "vehicles/british/GB09_Churchill_VII/track/segment.model",
+            "right" : "vehicles/british/GB09_Churchill_VII/track/right.track",
+            "segmentLength" : "0.193",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/british/GB09_Churchill_VII/track/segment.model"
+         },
+         "price" : 8600,
+         "level" : 5,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB09_Churchill_VII/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB09_Churchill_VII/collision_client/Chassis.model"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB09_Churchill_VII"
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "camouflage" : {
+      "priceFactor" : "1.2",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "engines" : {
+      "Vauxhall_Bedford_Twin_Six" : "shared",
+      "Meadows_DAV" : "shared"
+   },
+   "hull" : {
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB09_Churchill_VII/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB09_Churchill_VII/collision/Hull.model"
+      },
+      "maxHealth" : 688,
+      "weight" : 22050,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.22",
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26",
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.286228 0.132"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "models" : {
+         "undamaged" : "vehicles/british/GB09_Churchill_VII/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB09_Churchill_VII/crash/lod0/Hull.model"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "0.0482075 -0.239615 2.42127",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "0.0519819 -0.0512202 2.4883",
+            "size" : "0.22",
+            "hideIfDamaged" : false
+         }
+      },
+      "hangarShadowTexture" : "vehicles/british/GB09_Churchill_VII/Churchill_VII_HangarShadowMap.dds",
+      "armor" : {
+         "armor_11" : "82.6",
+         "armor_13" : "101.6",
+         "armor_8" : "",
+         "armor_1" : "152.4",
+         "armor_6" : "25.4",
+         "armor_16" : "95.3",
+         "armor_12" : "95.3",
+         "armor_5" : "19.1",
+         "armor_3" : "95.3",
+         "armor_4" : "50.8",
+         "armor_2" : "139.7",
+         "armor_7" : "57.2",
+         "armor_15" : "38.1",
+         "armor_10" : "63.5",
+         "armor_14" : "115.3",
+         "armor_9" : "15.9"
+      },
+      "camouflage" : {
+         "tiling" : "2.08 2.08 0.000000 0.000000"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 200,
+         "maxRegenHealth" : 135
+      }
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   },
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 20
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "radios" : {
+      "N19Mk3" : "shared",
+      "N19Mk2" : "shared",
+      "N19Mk1" : "shared"
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.871424538"
+   }
+}

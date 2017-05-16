@@ -1,0 +1,792 @@
+{
+   "chassis" : {
+      "PzJgd_ketten_I" : {
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "size" : "0.4 0.3"
+         },
+         "hullPosition" : "0 1 0",
+         "maxHealth" : 50,
+         "maxClimbAngle" : 25,
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationIsAroundCenter" : true,
+         "maxRegenHealth" : 40,
+         "splineDesc" : {
+            "segmentOffset" : "0.07",
+            "segmentModelLeft" : "vehicles/german/G21_PanzerJager_I/track/segment1.model",
+            "left" : "vehicles/german/G21_PanzerJager_I/track/left.track",
+            "right" : "vehicles/german/G21_PanzerJager_I/track/right.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentLength" : "0.088",
+            "segmentModelRight" : "vehicles/german/G21_PanzerJager_I/track/segment1.model",
+            "lodDist" : "MEDIUM"
+         },
+         "repairCost" : "0.5",
+         "navmeshGirth" : "6.0",
+         "price" : "280.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.9",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "maxLoad" : 6400,
+         "topRightCarryingPoint" : "0.749454 1.2081",
+         "brakeForce" : 6500,
+         "bulkHealthFactor" : "3.0",
+         "userString" : "#germany_vehicles:PzJgd_ketten_I",
+         "rotationSpeed" : 32,
+         "wwsoundPC" : "treads_type_pc",
+         "terrainResistance" : "1.2 1.4 2.5",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.34",
+            "vehicleRotation" : "0.34"
+         },
+         "trackThickness" : "-0.01",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.03",
+                  "startIndex" : "",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.03"
+               },
+               {
+                  "minOffset" : "-0.03",
+                  "startIndex" : "",
+                  "count" : 5,
+                  "isLeft" : false,
+                  "maxOffset" : "0.03",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "trackNodes" : {
+            "damping" : 2,
+            "elasticity" : 900,
+            "maxAmplitude" : "0.05",
+            "offset" : "0",
+            "backwardElastK" : "1.3",
+            "gravity" : "-9.9",
+            "linkBones" : false,
+            "node" : [
+               {
+                  "offset" : "-0.064",
+                  "backwardElastK" : 3,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.064",
+                  "backwardElastK" : 3,
+                  "isLeft" : true,
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "offset" : "-0.045",
+                  "backwardElastK" : "1.1",
+                  "isLeft" : true,
+                  "forwardElastK" : 3
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : 3,
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : "1.1",
+                  "offset" : "-0.045"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.07",
+                  "backwardElastK" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.03"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.061",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.055",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R4",
+                  "backwardElastK" : 1,
+                  "offset" : "-0.08",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.07",
+                  "backwardElastK" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.03",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.061"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.055",
+                  "name" : "Track_VT_L3"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 1,
+                  "offset" : "-0.08",
+                  "name" : "Track_VT_L4"
+               }
+            ],
+            "enable" : true,
+            "maxOffset" : "0",
+            "forwardElastK" : 3
+         },
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "count" : 5,
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 5,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "count" : 4,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "startIndex" : 1,
+                  "count" : 4,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "WD_R"
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 18,
+                  "name" : "WD_L5",
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 18,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "syncAngle" : 18,
+                  "radius" : "0",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G21_PanzerJager_I/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G21_PanzerJager_I/collision_client/Chassis.model"
+         },
+         "level" : 1,
+         "weight" : 2000,
+         "unlocks" : {
+            "chassis" : "PzJgd_ketten_II"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G21_PanzerJager_I/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Chassis.model"
+         },
+         "tags" : {}
+      },
+      "PzJgd_ketten_II" : {
+         "bulkHealthFactor" : "3.0",
+         "topRightCarryingPoint" : "0.749454 1.2081",
+         "brakeForce" : 7000,
+         "terrainResistance" : "1.1 1.3 2.3",
+         "rotationSpeed" : 36,
+         "userString" : "#germany_vehicles:PzJgd_ketten_II",
+         "wwsoundPC" : "treads_type_pc",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.32",
+            "vehicleRotation" : "0.32"
+         },
+         "trackThickness" : "-0.01",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.03",
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "maxOffset" : "0.03",
+                  "template" : "Track_L"
+               },
+               {
+                  "isLeft" : false,
+                  "maxOffset" : "0.03",
+                  "template" : "Track_R",
+                  "minOffset" : "-0.03",
+                  "startIndex" : "",
+                  "count" : 5
+               }
+            ]
+         },
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "trackNodes" : {
+            "maxOffset" : "0",
+            "forwardElastK" : 3,
+            "linkBones" : false,
+            "node" : [
+               {
+                  "name" : "Track_VD_R0",
+                  "offset" : "-0.064",
+                  "backwardElastK" : 3,
+                  "isLeft" : false,
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.064",
+                  "backwardElastK" : 3,
+                  "isLeft" : true,
+                  "forwardElastK" : 1
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "offset" : "-0.045",
+                  "backwardElastK" : "1.1",
+                  "isLeft" : true,
+                  "forwardElastK" : 3
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "offset" : "-0.045",
+                  "backwardElastK" : "1.1",
+                  "isLeft" : false,
+                  "forwardElastK" : 3
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.07",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.03"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.061",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.055",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.08",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "offset" : "-0.07",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.03",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.061"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.055",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.08",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VT_L4"
+               }
+            ],
+            "enable" : true,
+            "gravity" : "-9.9",
+            "damping" : 2,
+            "maxAmplitude" : "0.05",
+            "elasticity" : 900,
+            "offset" : "0",
+            "backwardElastK" : "1.3"
+         },
+         "weight" : 2000,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 18,
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L5",
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : 18
+               },
+               {
+                  "syncAngle" : 18,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R5"
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "count" : 5,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "W_L"
+               },
+               {
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 5,
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "startIndex" : 1,
+                  "count" : 4
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 4,
+                  "startIndex" : 1
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "level" : 2,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G21_PanzerJager_I/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G21_PanzerJager_I/collision_client/Chassis.model"
+         },
+         "models" : {
+            "exploded" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G21_PanzerJager_I/normal/lod0/Chassis.model"
+         },
+         "tags" : {},
+         "maxHealth" : 60,
+         "hullPosition" : "0 1 0",
+         "maxClimbAngle" : 25,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "size" : "0.4 0.3"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/german/G21_PanzerJager_I/track/segment1.model",
+            "segmentLength" : "0.088",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "right" : "vehicles/german/G21_PanzerJager_I/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/german/G21_PanzerJager_I/track/segment1.model",
+            "segmentOffset" : "0.07",
+            "left" : "vehicles/german/G21_PanzerJager_I/track/left.track"
+         },
+         "repairCost" : "0.5",
+         "maxRegenHealth" : 45,
+         "rotationIsAroundCenter" : true,
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "price" : "570.0",
+         "tracks" : {
+            "textureScale" : "-2.9",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxLoad" : 8400
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "0.4"
+   },
+   "radios" : {
+      "FuG2" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "PzJgd_ketten_II" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            },
+            "PzJgd_ketten_I" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Maybach_NL38TR" : {
+               "smplEnginePower" : "105.7281"
+            },
+            "Krupp_M311" : {
+               "smplEnginePower" : "89.8689"
+            }
+         }
+      }
+   },
+   "engines" : {
+      "Maybach_NL38TR" : "shared",
+      "Krupp_M311" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.890551251"
+   },
+   "hull" : {
+      "models" : {
+         "undamaged" : "vehicles/german/G21_PanzerJager_I/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "2.2 2.2 0.000000 0.000000"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_small"
+      },
+      "weight" : 3250,
+      "hangarShadowTexture" : "vehicles/german/G21_PanzerJager_I/PanzerJager_I_HangarShadowMap.dds",
+      "swinging" : {
+         "rollParams" : "1.00 0.26 32.00 0.38 1.00 0.05 0.29",
+         "pitchParams" : "0.26 32.00 0.38 1.00 0.05 0.29",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.7"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G21_PanzerJager_I/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G21_PanzerJager_I/collision/Hull.model"
+      },
+      "primaryArmor" : "armor_6 armor_6 armor_4",
+      "armor" : {
+         "armor_16" : "14.5",
+         "armor_15" : 13,
+         "armor_7" : 8,
+         "armor_3" : 13,
+         "armor_2" : "14.5",
+         "armor_1" : 13,
+         "armor_8" : "14.5",
+         "armor_10" : 13,
+         "armor_5" : 8,
+         "armor_9" : 5,
+         "armor_6" : 13,
+         "armor_12" : 5,
+         "armor_4" : 13
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.22",
+               "hideIfDamaged" : false,
+               "rayStart" : "-0.66486 1.11065 0.433867",
+               "rayEnd" : "-0.630006 1.10249 0.416016"
+            },
+            {
+               "size" : "0.22",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "isMirrored" : true,
+               "rayStart" : "0.665996 1.10878 0.406028",
+               "rayEnd" : "0.631146 1.10062 0.388172"
+            }
+         ],
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.22",
+            "rayStart" : "0.260289 0.209694 1.70949",
+            "rayEnd" : "0.261577 0.0216469 1.6414"
+         },
+         "inscription" : [
+            {
+               "rayEnd" : "-0.552659 0.870699 0.00734404",
+               "rayStart" : "-0.940779 0.967455 0.00734404",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.5"
+            },
+            {
+               "rayEnd" : "0.552659 0.870699 0.00734404",
+               "rayStart" : "0.940779 0.967455 0.00734404",
+               "hideIfDamaged" : true,
+               "size" : "0.5",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ]
+      },
+      "maxHealth" : 96,
+      "ammoBayHealth" : {
+         "maxHealth" : 80,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 55
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "2.5",
+   "speedLimits" : {
+      "backward" : 8,
+      "forward" : 40
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "alpha" : "0.86",
+      "lodDist" : "MEDIUM"
+   },
+   "turrets0" : {
+      "PanzerJager" : {
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 20
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "wwturretRotatorSoundManual" : "tur_man_trav_01",
+         "emblemSlots" : {},
+         "showEmblemsOnGun" : false,
+         "maxHealth" : 24,
+         "gunPosition" : "-0.00794 0.258104 0.001407",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "rotationSpeed" : 26,
+         "userString" : "#germany_vehicles:PanzerJager",
+         "ceilless" : true,
+         "armor" : {
+            "armor_2" : 5
+         },
+         "circularVisionRadius" : 300,
+         "guns" : {
+            "_47mm_PaK_38t_L43AT" : "shared",
+            "_37mm_PaK_38t_L47" : "shared"
+         },
+         "price" : 100,
+         "tags" : "AAAAAAAAAAAA",
+         "models" : {
+            "destroyed" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G21_PanzerJager_I/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G21_PanzerJager_I/normal/lod0/Turret_01.model"
+         },
+         "camouflage" : {
+            "tiling" : "0.94 0.94 0.000000 0.000000"
+         },
+         "weight" : 100,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G21_PanzerJager_I/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G21_PanzerJager_I/collision/Turret_01.model"
+         },
+         "level" : 2,
+         "notInShop" : true
+      }
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.04",
+      "camouflageNetBonus" : "0.15",
+      "still" : "0.34",
+      "moving" : "0.204",
+      "firePenalty" : "0.51"
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "radioman\n\n\t\t\tloader",
+      "gunner" : {}
+   }
+}

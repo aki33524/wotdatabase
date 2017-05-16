@@ -1,0 +1,507 @@
+{
+   "engines" : {
+      "Development_Engine" : "shared"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "chassis" : {
+      "Chassis_Env_Artillery" : {
+         "hullPosition" : "0.000000 1.02225 0.000000",
+         "wwsoundPC" : "treads_type_pc",
+         "price" : 9000,
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.38",
+            "vehicleRotation" : "0.38"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "brakeForce" : 21000,
+         "wwsoundNPC" : "trds_chf_npc",
+         "navmeshGirth" : "6.0",
+         "trackThickness" : "-0.0075",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.98",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "terrainResistance" : "1.3 1.5 2.5",
+         "tags" : {},
+         "maxLoad" : 23000,
+         "level" : 5,
+         "notInShop" : true,
+         "splineDesc" : {
+            "right" : "vehicles/german/G02_Hummel/track/right.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/german/G02_Hummel/track/segment.model",
+            "segmentLength" : "0.122",
+            "segmentOffset" : "0.149",
+            "left" : "vehicles/german/G02_Hummel/track/left.track",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/german/G02_Hummel/track/segment.model"
+         },
+         "models" : {
+            "destroyed" : "vehicles/german/G02_Hummel/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G02_Hummel/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G02_Hummel/normal/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 70,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.06",
+                  "template" : "Track_L",
+                  "minOffset" : "-0.08",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "count" : 8
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "minOffset" : "-0.08",
+                  "startIndex" : "",
+                  "count" : 8
+               }
+            ]
+         },
+         "maxClimbAngle" : 25,
+         "traces" : {
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR",
+            "size" : "0.6 0.44",
+            "bufferPrefs" : "mediumTank"
+         },
+         "trackNodes" : {
+            "gravity" : "-9.8",
+            "backwardElastK" : 1,
+            "enable" : true,
+            "maxOffset" : "0.3",
+            "forwardElastK" : 1,
+            "offset" : "0",
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.039",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.039",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.039",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.85",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.039",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "1.65",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.39",
+                  "offset" : "-0.039",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "forwardElastK" : "1.19",
+                  "name" : "Track_VT_L4",
+                  "offset" : "-0.039",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.85",
+                  "offset" : "-0.039",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.039",
+                  "forwardElastK" : "1.65"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : "1.39",
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.039"
+               },
+               {
+                  "forwardElastK" : "1.19",
+                  "offset" : "-0.039",
+                  "name" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "1.5"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               }
+            ],
+            "linkBones" : false,
+            "maxAmplitude" : "0.05",
+            "damping" : 2,
+            "elasticity" : 1049
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "radius" : "0.26",
+                  "startIndex" : "",
+                  "count" : 8,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 8,
+                  "startIndex" : "",
+                  "radius" : "0.26",
+                  "template" : "W_R"
+               },
+               {
+                  "template" : "WD_L",
+                  "radius" : "0.15",
+                  "isLeft" : true,
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "radius" : "0.15",
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "count" : 4,
+                  "startIndex" : 1
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0.4",
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : "18.9474",
+                  "isLeft" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L5",
+                  "radius" : "0.39",
+                  "isLeft" : true,
+                  "syncAngle" : "18.9474"
+               },
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0.4",
+                  "isLeading" : true,
+                  "syncAngle" : "18.9474",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "radius" : "0.39",
+                  "isLeft" : false,
+                  "syncAngle" : "18.9474"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G02_Hummel/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G02_Hummel/collision/Chassis.model"
+         },
+         "weight" : 10000,
+         "userString" : "#germany_vehicles:Chassis_Env_Artillery",
+         "maxHealth" : 90,
+         "rotationSpeed" : 24,
+         "repairCost" : "0.5",
+         "topRightCarryingPoint" : "1.26711 1.78935",
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : true
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Env_Artillery" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Development_Engine" : {
+               "smplEnginePower" : "570.9318"
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {},
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.2",
+      "exclusionMask" : {}
+   },
+   "repairCost" : "6.57",
+   "invisibility" : {
+      "firePenalty" : "0.321",
+      "camouflageBonus" : "0.02",
+      "moving" : "0.107",
+      "still" : "0.214",
+      "camouflageNetBonus" : "0.05"
+   },
+   "speedLimits" : {
+      "backward" : "0",
+      "forward" : "0"
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : {},
+      "driver" : {},
+      "radioman" : {},
+      "loader" : [
+         {},
+         {}
+      ]
+   },
+   "hull" : {
+      "weight" : 9700,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G02_Hummel/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G02_Hummel/collision_client/Hull.model"
+      },
+      "maxHealth" : 240,
+      "hangarShadowTexture" : "vehicles/german/G02_Hummel/Hummel_HangarShadowMap.dds",
+      "armor" : {
+         "armor_10" : 6,
+         "armor_1" : 30,
+         "armor_6" : 15,
+         "armor_3" : 20,
+         "armor_9" : 6,
+         "armor_5" : 15,
+         "armor_7" : 10,
+         "armor_4" : 20,
+         "armor_8" : "",
+         "armor_2" : 15
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : true,
+            "size" : "0.28",
+            "rayStart" : "-0.00298952 0.574702 2.1748",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-0.00247027 0.487172 1.99497"
+         },
+         "inscription" : [
+            {
+               "rayStart" : "-1.29636 1.02755 -0.555693",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.23855 1.01147 -0.555695",
+               "hideIfDamaged" : true,
+               "size" : "0.88"
+            },
+            {
+               "size" : "0.88",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.24169 1.00547 -0.551013",
+               "rayStart" : "1.2995 1.02154 -0.551011"
+            }
+         ],
+         "player" : [
+            {
+               "rayStart" : "-1.30419 0.999523 -1.65247",
+               "rayEnd" : "-1.24638 0.983444 -1.65247",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true,
+               "size" : "0.3"
+            },
+            {
+               "size" : "0.3",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.26742 0.987752 -1.65444",
+               "rayStart" : "1.28669 0.993111 -1.65444",
+               "isMirrored" : true
+            }
+         ]
+      },
+      "turretPositions" : {
+         "turret" : "0.000154 1.0552 -0.166347"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 45,
+         "maxHealth" : 90,
+         "repairCost" : "1.0"
+      },
+      "camouflage" : {
+         "exclusionMask" : {}
+      },
+      "models" : {
+         "destroyed" : "vehicles/german/G02_Hummel/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G02_Hummel/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G02_Hummel/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.68",
+         "rollParams" : "1.00 0.26 34.00 0.36 1.00 0.05 0.30",
+         "pitchParams" : "0.26 34.00 0.36 1.00 0.05 0.30",
+         "lodDist" : "FAR"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "primaryArmor" : "armor_1 armor_6 armor_8"
+   },
+   "emblems" : {
+      "alpha" : "0.84",
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "radios" : {
+      "Development_Radio" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_Env_Artillery" : {
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "weight" : 100,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G02_Hummel/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/german/G02_Hummel/collision_client/Turret_02.model"
+         },
+         "userString" : "#germany_vehicles:Turret_1_Env_Artillery",
+         "physicsShape" : "0.798 0.234 1.000 0.000 1.000 0.000 0.500 0.023 0.471 0.500 0.268 0.500 0.649 0.082 0.000",
+         "maxHealth" : 60,
+         "gunPosition" : "0 1 -0",
+         "ceilless" : true,
+         "tags" : "AAAAAAAAAAAA",
+         "rotationSpeed" : 16,
+         "armor" : {
+            "armor_2" : 6,
+            "armor_1" : 10
+         },
+         "emblemSlots" : {},
+         "price" : 200,
+         "level" : 6,
+         "notInShop" : true,
+         "circularVisionRadius" : 360,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30
+         },
+         "showEmblemsOnGun" : false,
+         "models" : {
+            "destroyed" : "vehicles/german/G02_Hummel/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/german/G02_Hummel/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/german/G02_Hummel/crash/lod0/Turret_02.model"
+         },
+         "guns" : {
+            "Gun_Env_Artillery" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav"
+      }
+   }
+}

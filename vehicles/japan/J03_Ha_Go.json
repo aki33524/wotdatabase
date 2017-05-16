@@ -1,0 +1,844 @@
+{
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "engines" : {
+      "_A6120VDe" : "shared",
+      "_A6120VDe_S" : "shared"
+   },
+   "radios" : {
+      "_Type94_Hei" : "shared"
+   },
+   "chassis" : {
+      "Chassis_Ha_Go_2" : {
+         "maxLoad" : 10100,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "count" : 4,
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.0842451",
+                  "minOffset" : "-0.0820569"
+               },
+               {
+                  "template" : "Track_R",
+                  "minOffset" : "-0.0820569",
+                  "maxOffset" : "0.0820569",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 4
+               }
+            ]
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "weight" : 2500,
+         "splineDesc" : {
+            "right" : "vehicles/japan/J03_Ha_Go/track/right.track",
+            "segmentLength" : "0.092",
+            "segmentModelRight" : "vehicles/japan/J03_Ha_Go/track/segment.model",
+            "left" : "vehicles/japan/J03_Ha_Go/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.036",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/japan/J03_Ha_Go/track/segment.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "userString" : "#japan_vehicles:Chassis_Ha_Go_2",
+         "trackThickness" : "-0.0142",
+         "wwsoundNPC" : "trds_chf_npc",
+         "tracks" : {
+            "textureScale" : "-3.5",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "maxRegenHealth" : 45,
+         "drivingWheels" : "WD_L0 WD_L3",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "maxClimbAngle" : 25,
+         "brakeForce" : 8200,
+         "models" : {
+            "destroyed" : "vehicles/japan/J03_Ha_Go/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/japan/J03_Ha_Go/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/japan/J03_Ha_Go/crash/lod0/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J03_Ha_Go/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/japan/J03_Ha_Go/collision_client/Chassis.model"
+         },
+         "rotationSpeed" : 44,
+         "repairCost" : "5.0",
+         "price" : 810,
+         "hullPosition" : "0 1 0",
+         "maxHealth" : 60,
+         "level" : 2,
+         "rotationIsAroundCenter" : false,
+         "topRightCarryingPoint" : "0.899746 1.12284",
+         "traces" : {
+            "size" : "0.34 0.25",
+            "textureSet" : "germany_02",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "0.8 1 1.9",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "count" : 2
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 4,
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "count" : 2,
+                  "startIndex" : 1
+               },
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "count" : 4,
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "syncAngle" : "18.9474",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "syncAngle" : "18.9474",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "18.9474"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "18.9474",
+                  "isLeft" : true,
+                  "name" : "WD_L3"
+               }
+            ]
+         },
+         "trackNodes" : {
+            "node" : [
+               {
+                  "offset" : "-0.029",
+                  "forwardElastK" : "2.01",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "offset" : "-0.029",
+                  "forwardElastK" : "1.86",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "forwardElastK" : "1.7",
+                  "offset" : "-0.029",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "2.01",
+                  "offset" : "-0.029",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "forwardElastK" : "1.86",
+                  "offset" : "-0.029",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.029",
+                  "forwardElastK" : "1.7"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               }
+            ],
+            "maxAmplitude" : "0.1",
+            "backwardElastK" : 1,
+            "elasticity" : 1124,
+            "offset" : "0",
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "maxOffset" : "0.1",
+            "forwardElastK" : 1,
+            "enable" : true,
+            "linkBones" : false
+         }
+      },
+      "Chassis_Ha_Go" : {
+         "maxLoad" : 7400,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 4,
+                  "startIndex" : "",
+                  "minOffset" : "-0.0820569",
+                  "maxOffset" : "0.0842451",
+                  "template" : "Track_L",
+                  "isLeft" : true
+               },
+               {
+                  "template" : "Track_R",
+                  "maxOffset" : "0.0820569",
+                  "minOffset" : "-0.0820569",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 4
+               }
+            ]
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "weight" : 2500,
+         "splineDesc" : {
+            "right" : "vehicles/japan/J03_Ha_Go/track/right.track",
+            "segmentLength" : "0.092",
+            "segmentModelRight" : "vehicles/japan/J03_Ha_Go/track/segment.model",
+            "left" : "vehicles/japan/J03_Ha_Go/track/left.track",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentOffset" : "0.036",
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/japan/J03_Ha_Go/track/segment.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 4 0 0 0"
+            }
+         },
+         "userString" : "#japan_vehicles:Chassis_Ha_Go",
+         "wwsoundNPC" : "trds_chf_npc",
+         "trackThickness" : "-0.0142",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.5",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxRegenHealth" : 40,
+         "drivingWheels" : "WD_L0 WD_L3",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "maxClimbAngle" : 25,
+         "brakeForce" : 7400,
+         "models" : {
+            "destroyed" : "vehicles/japan/J03_Ha_Go/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/japan/J03_Ha_Go/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/japan/J03_Ha_Go/crash/lod0/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J03_Ha_Go/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/japan/J03_Ha_Go/collision_client/Chassis.model"
+         },
+         "rotationSpeed" : 40,
+         "repairCost" : "5.0",
+         "price" : 600,
+         "hullPosition" : "0 1 0",
+         "level" : 2,
+         "maxHealth" : 50,
+         "topRightCarryingPoint" : "0.899746 1.12284",
+         "rotationIsAroundCenter" : false,
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "germany_02",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.34 0.25"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "0.9 1.1 2.1",
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "unlocks" : {
+            "chassis" : "Chassis_Ha_Go_2"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 4,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "count" : 2,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 4,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "isLeft" : true
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "18.9474"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R3",
+                  "syncAngle" : "18.9474",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "18.9474"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "18.9474",
+                  "isLeft" : true,
+                  "name" : "WD_L3"
+               }
+            ]
+         },
+         "trackNodes" : {
+            "elasticity" : 1124,
+            "backwardElastK" : 1,
+            "maxAmplitude" : "0.1",
+            "node" : [
+               {
+                  "forwardElastK" : "2.01",
+                  "offset" : "-0.029",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.86",
+                  "offset" : "-0.029"
+               },
+               {
+                  "offset" : "-0.029",
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.029",
+                  "forwardElastK" : "2.01"
+               },
+               {
+                  "offset" : "-0.029",
+                  "forwardElastK" : "1.86",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.7",
+                  "offset" : "-0.029"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               }
+            ],
+            "offset" : "0",
+            "gravity" : "-9.8",
+            "maxOffset" : "0.1",
+            "damping" : 2,
+            "enable" : true,
+            "forwardElastK" : 1,
+            "linkBones" : false
+         }
+      }
+   },
+   "emblems" : {
+      "default" : "japanese_sun",
+      "alpha" : "0.92",
+      "lodDist" : "MEDIUM"
+   },
+   "turrets0" : {
+      "Turret_2_Ha_Go" : {
+         "maxHealth" : 47,
+         "level" : 2,
+         "weight" : 1300,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "rotationSpeed" : 36,
+         "guns" : {
+            "_57mm_Gun_Type97" : "shared",
+            "_37mm_Type_94" : "shared",
+            "_37mm_Type_98" : "shared"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J03_Ha_Go/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/japan/J03_Ha_Go/collision_client/Turret_02.model"
+         },
+         "tags" : {},
+         "price" : 840,
+         "models" : {
+            "undamaged" : "vehicles/japan/J03_Ha_Go/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/japan/J03_Ha_Go/crash/lod0/Turret_02.model",
+            "destroyed" : "vehicles/japan/J03_Ha_Go/crash/lod0/Turret_02.model"
+         },
+         "camouflage" : {
+            "tiling" : "0.55 0.37 0.000000 0.000000"
+         },
+         "invisibilityFactor" : "1.01",
+         "physicsShape" : "1.050 -0.011 1.000 0.000 0.348 0.264 0.669 0.628 0.603 0.232 0.132 0.500 0.098 0.527 0.066",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "gunPosition" : "0.048904 0.225779 0.64212",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "2.0",
+            "maxHealth" : 40
+         },
+         "circularVisionRadius" : 300,
+         "armor" : {
+            "armor_8" : "",
+            "armor_1" : 35,
+            "armor_6" : 10,
+            "armor_7" : 25,
+            "armor_3" : 25,
+            "armor_9" : 25,
+            "armor_4" : 25,
+            "armor_13" : 25,
+            "armor_15" : 25,
+            "armor_14" : 20,
+            "armor_12" : 10,
+            "armor_11" : 10,
+            "armor_2" : 25,
+            "armor_5" : 25,
+            "armor_10" : 10
+         },
+         "unlocks" : {
+            "vehicle" : "J04_Ke_Ni"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "showEmblemsOnGun" : false,
+         "userString" : "#japan_vehicles:Turret_2_Ha_Go",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-0 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true,
+                  "size" : "0.22",
+                  "rayStart" : "-1 0 0"
+               },
+               {
+                  "size" : "0.22",
+                  "rayStart" : "1 0 0",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "rayEnd" : "1 0 0"
+               }
+            ],
+            "inscription" : {
+               "rayEnd" : "-0 0 -0",
+               "size" : "0.42",
+               "rayStart" : "-1 0 -0",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         }
+      },
+      "Turret_1_Ha_Go" : {
+         "gunPosition" : "0 0 1",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 20,
+            "repairCost" : "2.0",
+            "maxHealth" : 40
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "unlocks" : {
+            "turret" : "Turret_2_Ha_Go"
+         },
+         "armor" : {
+            "armor_1" : 12,
+            "armor_8" : "",
+            "armor_16" : 12,
+            "armor_3" : 12,
+            "armor_7" : 12,
+            "armor_14" : 18,
+            "armor_13" : 6,
+            "armor_10" : 6,
+            "armor_2" : 12,
+            "armor_11" : 6,
+            "armor_12" : 12,
+            "armor_6" : 9,
+            "armor_4" : 12,
+            "armor_9" : 12,
+            "armor_15" : 15,
+            "armor_5" : 9
+         },
+         "circularVisionRadius" : 300,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.22",
+                  "rayStart" : "-0.625877 0.308675 0.0512373",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-0.236532 0.234436 -0.0025715"
+               },
+               {
+                  "size" : "0.22",
+                  "rayStart" : "1 0 0",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0 0 0",
+                  "isMirrored" : true
+               }
+            ],
+            "inscription" : {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "0.529579 0.278113 -0.0950924",
+               "size" : "0.36",
+               "rayEnd" : "0.336838 0.239977 -0.0577271"
+            }
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#japan_vehicles:Turret_1_Ha_Go",
+         "turretRotatorHealth" : {
+            "maxHealth" : 60,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 30
+         },
+         "maxHealth" : 32,
+         "weight" : 600,
+         "level" : 2,
+         "price" : 600,
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/japan/J03_Ha_Go/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/japan/J03_Ha_Go/collision_client/Turret_01.model"
+         },
+         "guns" : {
+            "_37mm_Type_94" : "shared",
+            "_57mm_Gun_Type97" : "shared",
+            "_37mm_Type_98" : "shared"
+         },
+         "rotationSpeed" : 36,
+         "models" : {
+            "destroyed" : "vehicles/japan/J03_Ha_Go/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/japan/J03_Ha_Go/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/japan/J03_Ha_Go/normal/lod0/Turret_01.model"
+         },
+         "physicsShape" : "0.916 0.024 1.011 0.000 0.376 0.210 0.652 0.467 0.365 0.550 0.251 0.500 0.230 0.638 0.000",
+         "camouflage" : {
+            "tiling" : "0.475 0.25 0.000000 0.000000"
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.716041208"
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 40
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.399",
+      "still" : "0.266",
+      "moving" : "0.2"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.4",
+      "exclusionMask" : "vehicles/japan/J03_Ha_Go/Ha_Go_chassis_01_AM.dds"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_Ha_Go" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_Ha_Go_2" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "_A6120VDe" : {
+               "smplEnginePower" : "126.8737"
+            },
+            "_A6120VDe_S" : {
+               "smplEnginePower" : "142.733"
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "repairCost" : "3.00",
+   "crew" : {
+      "driver" : {},
+      "commander" : "gunner\n\n\t\t\tloader",
+      "radioman" : {}
+   },
+   "hull" : {
+      "swinging" : {
+         "sensitivityToImpulse" : "0.74",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "lodDist" : "FAR"
+      },
+      "models" : {
+         "undamaged" : "vehicles/japan/J03_Ha_Go/normal/lod0/Hull.model",
+         "exploded" : "vehicles/japan/J03_Ha_Go/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/japan/J03_Ha_Go/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_4" : 10,
+         "armor_9" : 12,
+         "armor_7" : 9,
+         "armor_3" : 10,
+         "armor_1" : 12,
+         "armor_6" : 9,
+         "armor_8" : "",
+         "armor_10" : 9,
+         "armor_5" : 6,
+         "armor_11" : 9,
+         "armor_2" : 9,
+         "armor_12" : 6,
+         "armor_14" : 12,
+         "armor_13" : 10
+      },
+      "hangarShadowTexture" : "vehicles/japan/J03_Ha_Go/Ha_Go_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "-0 1 0"
+      },
+      "exhaust" : {
+         "pixie" : "diesel_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "0.34496 0.0903251 1.06115",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.2",
+            "rayStart" : "0.34496 0.283552 1.11275"
+         },
+         "inscription" : {
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.6",
+            "rayStart" : "1 0 0",
+            "rayEnd" : "1 0 0"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_9 armor_4",
+      "weight" : 3188,
+      "maxHealth" : 128,
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/japan/J03_Ha_Go/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/japan/J03_Ha_Go/collision/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0",
+         "maxHealth" : 80
+      }
+   }
+}

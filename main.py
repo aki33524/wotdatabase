@@ -1,4 +1,5 @@
-import xml.etree.ElementTree as ET
+#encode:utf-8
+import json
 import os
 import copy
 
@@ -78,123 +79,109 @@ class Vehicle:
 
 				print(", ".join(gl))
 
-def shell_detail(sroot):
+def shell_detail(sjson):
 	d = {}
-	d["damage"] = int(sroot.find("damage").find("armor").text)
-	d["caliber"] = float(sroot.find("caliber").text)
+	d["damage"] = sjson["damage"]["armor"]
+	d["caliber"] = float(sjson["caliber"])
 	kindd = {
 		"ARMOR_PIERCING":"AP",
 		"ARMOR_PIERCING_CR":"APCR",
 		"HIGH_EXPLOSIVE":"HE",
 		"HOLLOW_CHARGE":"HEAT"
 	}
-	d["kind"] = kindd[sroot.find("kind").text]
+	d["kind"] = kindd[sjson["kind"]]
 
 	return d
 
-def gun_detail(groot):
+def gun_detail(gjson):
 	# Bug?? incorrect?
-	reload_time = float(groot.find("reloadTime").text)
+	reload_time = float(gjson["reloadTime"])
 	gun = Gun(reload_time)
 
 	# rotationSpeed
 	# turretYawLimits
 	
-	for shoot in groot.find("shots"):
-		shell = shell_detail(shell_root.find(shoot.tag))
+	# FV206?
+	if isinstance(gjson["shots"], unicode):
+		return gun
+
+	for shootk, shootv in gjson["shots"].items():
+		shell = shell_detail(shell_json[shootk])
 		
-		p100, p500 = shoot.find("piercingPower").text.split()
+		p100, p500 = shootv["piercingPower"].split()
 		shell["p100"] = float(p100)
 		shell["p500"] = float(p500)
 
-		shell["speed"] = int(shoot.find("speed").text)
+		shell["speed"] = shootv["speed"]
 		gun.shells.append(shell)
 
-	if groot.find("clip") is not None:
+	if "clip"in gjson:
 		# auto loader
 		gun.is_autoloader = True
-		gun.clip_count = int(groot.find("clip").find("count").text)
-		gun.clip_rate = int(groot.find("clip").find("rate").text)
+		gun.clip_count = gjson["clip"]["count"]
+		gun.clip_rate = gjson["clip"]["rate"]
 
 	return gun
 
-def vehicle_detail(vehicle, vroot, groot, tunk_type):
-	hull = vroot.find("hull")
-	front, sides, rear = hull.find("primaryArmor").text.split()
-	armor = hull.find("armor")
-	health = int(hull.find("maxHealth").text)
+def vehicle_detail(vehicle, vjson, tunk_type):
+	front, sides, rear =  vjson["hull"]["primaryArmor"].split()
+	armor = vjson["hull"]["armor"]
+	
+	vehicle.health = vjson["hull"]["maxHealth"]
+	vehicle.front = armor[front]
+	vehicle.sides = armor[sides]
+	vehicle.rear = armor[rear]
 
-	front = float(armor.find(front).text)
-	sides = float(armor.find(sides).text)
-	rear = float(armor.find(rear).text)
-
-	vehicle.health = health
-	vehicle.front = front
-	vehicle.sides = sides
-	vehicle.rear = rear
-
-	turrets = vroot.find("turrets0")
-	if turrets is None:
-		# Obserer?
-		return
+	turrets = vjson["turrets0"]
+	# if turrets is None:
+	# 	# Obserer?
+	# 	return
 
 	unleaf_guns = []
 	unleaf_turrets = []
 	max_gun_level = 0
 	max_turret_level = 0
 
-	for turret in turrets:
-		level = int(float(turret.find("level").text))
-		max_turret_level = max(max_turret_level, level)
-				
-
-		for gun in turret.find("guns"):
-			level = int(groot.find("shared").find(gun.tag).find("level").text)
+	for turretk, turret in turrets.items():
+		max_turret_level = max(max_turret_level, turret["level"])
+		
+		for gunk, gunv in turret["guns"].items():
+			level = guns_json["shared"][gunk]["level"]
 			max_gun_level = max(max_gun_level, level)
 		
-			unlocks = gun.findall("unlocks")
-			if len(unlocks) != 0:
-				unlock = unlocks[0]
-				if len(unlock.findall("gun")) != 0:
-					unleaf_guns.append(gun.tag)
+			if "unlocks" in gunv:
+				if "gun" in gunv["unlocks"]:
+					unleaf_guns.append(gunk)
 
-		unlocks = turret.findall("unlocks")
-		if len(unlocks) != 0:
-			unlock = unlocks[0]
-			if len(unlock.findall("turret")) != 0:
-				unleaf_turrets.append(turret.tag)
+		if "unlocks" in turret:
+			if "turret" in turret["unlocks"]:
+				unleaf_turrets.append(turretk)
 
-
-
-	for turret in turrets:
-		if turret.tag in unleaf_turrets or int(float(turret.find("level").text)) != max_turret_level:
+	for turretk, turret in turrets.items():
+		if turretk in unleaf_turrets or turret["level"] != max_turret_level:
 			continue
 
-		# level = int(turret.find("level").text)
-		# print(level)
-		health = float(turret.find("maxHealth").text)
-		view = float(turret.find("circularVisionRadius").text)
-		vturret = Turret(health, view, -1, -1, -1)
-		parmor = turret.find("primaryArmor")
+		health = turret["maxHealth"]
+		view = turret["circularVisionRadius"]	
 		
-		if tunk_type not in ("SPG", "TD") and parmor is not None:
-			front, sides, rear = parmor.text.split()
-			armor = turret.find("armor")
-
-			front = float(armor.find(front).text)
-			sides = float(armor.find(sides).text)
-			rear = float(armor.find(rear).text)
+		if tunk_type not in ("SPG", "TD") and "primaryArmor" in turret:
+			front, sides, rear = turret["primaryArmor"].split()
+			
+			front = turret["armor"][front]
+			sides = turret["armor"][sides]
+			rear = turret["armor"][rear]
 			vturret = Turret(health, view, front, sides, rear)
-
+		else:
+			vturret = Turret(health, view, -1, -1, -1)
 		
-		for gun in turret.find("guns"):
-			if gun.tag in unleaf_guns or int(groot.find("shared").find(gun.tag).find("level").text) != max_gun_level:
+		for gunk, gunv in turret["guns"].items():
+			if gunk in unleaf_guns or guns_json["shared"][gunk]["level"] != max_gun_level:
 				continue
 			
-			vgun = gun_detail(groot.find("shared").find(gun.tag))
+			vgun = gun_detail(guns_json["shared"][gunk])
 			
-			if gun.find("reloadTime") is not None:
-				vgun.reload_time = float(gun.find("reloadTime").text)
+			if "reloadTime" in turret:
+				vgun.reload_time = float(gunv["reloadTime"])
 
 			vturret.guns.append(vgun)
 
@@ -237,17 +224,16 @@ if __name__ == "__main__":
 		if d == "common":
 			continue
 
-		global guns_root
-		global shell_root
+		global guns_json
+		global shells_json
 
-		guns_root = ET.parse(os.path.join(base_dir, d, 'components', 'guns.xml')).getroot()
-		shell_root = ET.parse(os.path.join(base_dir, d, 'components', 'shells.xml')).getroot()
+		guns_json = json.load(open(os.path.join(base_dir, d, 'components', 'guns.json')))
+		shell_json = json.load(open(os.path.join(base_dir, d, 'components', 'shells.json')))
 
-		list_xml = os.path.join(base_dir, d, "list.xml")
-		list_root = ET.parse(list_xml).getroot()
-
-		for child in list_root:
-			tags = child.find("tags").text.split()
+		list_json = json.load(open(os.path.join(base_dir, d, "list.json")))
+		
+		for vk, vv in list_json.items():
+			tags = vv["tags"].split()
 			if "secret" in tags:
 				continue
 
@@ -263,11 +249,9 @@ if __name__ == "__main__":
 				if v in td:
 					tk = td[v]
 
-			vehicle = Vehicle(d, tk, int(child.find("level").text), child.find("userString").text)
+			vehicle = Vehicle(d, tk, vv["level"], vv["userString"])
+			vjson = json.load(open(os.path.join(base_dir, d, vk + ".json")))
+			vehicle_detail(vehicle, vjson, tk)
 
-			vroot = ET.parse(os.path.join(base_dir, d, child.tag.lower() + ".xml")).getroot()
-			vehicle_detail(vehicle, vroot, guns_root, tk)
-
-			# print(sum([len(t.guns) for t in vehicle.turrets]))
 			vehicle.line()
 			

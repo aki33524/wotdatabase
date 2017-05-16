@@ -1,0 +1,376 @@
+{
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "loader" : {},
+      "driver" : {},
+      "gunner" : {}
+   },
+   "crewXpFactor" : "1.0",
+   "hull" : {
+      "swinging" : {
+         "rollParams" : "1.00 0.26 38.00 0.34 1.00 0.04 0.27",
+         "pitchParams" : "0.26 38.00 0.34 1.00 0.04 0.27",
+         "sensitivityToImpulse" : "0.3",
+         "lodDist" : "FAR"
+      },
+      "maxHealth" : 1080,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hangarShadowTexture" : "vehicles/american/A90_T69/T69_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "1 1 0.24 0.58"
+      },
+      "models" : {
+         "exploded" : "vehicles/american/A90_T69/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A90_T69/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A90_T69/crash/lod0/Hull.model"
+      },
+      "weight" : 17332,
+      "armor" : {
+         "armor_11" : "25.4",
+         "armor_3" : "76.2",
+         "armor_4" : "38.1",
+         "armor_6" : "12.7",
+         "armor_5" : "50.8",
+         "armor_2" : "63.5",
+         "armor_1" : "101.6",
+         "armor_10" : "63.5",
+         "armor_7" : "63.5",
+         "armor_8" : "",
+         "armor_14" : "63.5",
+         "armor_9" : "63.5",
+         "armor_13" : "101.6",
+         "armor_12" : "25.4"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 150,
+         "repairCost" : "1.0",
+         "maxHealth" : 220
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.32",
+            "rayStart" : "-0.00349473 0.285863 2.78349",
+            "rayEnd" : "-0.00349485 -0.0352801 2.54503",
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/american/A90_T69/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/american/A90_T69/collision/Hull.model"
+      },
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_AOSI-895-5_IGR" : {
+               "smplEnginePower" : "581.5046"
+            }
+         },
+         "chassis" : {
+            "Chassis_T69_2_IGR" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "engines" : {
+      "Continental_AOSI-895-5_IGR" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "speedLimits" : {
+      "forward" : "51.5",
+      "backward" : 20
+   },
+   "emblems" : {
+      "default" : "usa_star",
+      "alpha" : 1,
+      "lodDist" : "MEDIUM"
+   },
+   "radios" : {
+      "SCR_619_IGR" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "guns" : {
+         "_90mm_Gun_T178_IGR" : {
+            "delta" : "1.1093117"
+         }
+      },
+      "armour" : "1.030878528"
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "still" : "0.222",
+      "firePenalty" : "0.333",
+      "moving" : "0.167",
+      "camouflageNetBonus" : "0.1"
+   },
+   "turrets0" : {
+      "Turret_1_T69_IGR" : {
+         "showEmblemsOnGun" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A90_T69/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A90_T69/collision_client/Turret_01.model"
+         },
+         "circularVisionRadius" : 400,
+         "weight" : 7000,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50
+         },
+         "models" : {
+            "exploded" : "vehicles/american/A90_T69/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A90_T69/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A90_T69/normal/lod0/Turret_01.model"
+         },
+         "maxHealth" : 270,
+         "physicsShape" : "1.457 -0.287 1.000 0.000 1.473 0.149 0.705 0.726 0.245 0.500 0.293 0.500 0.386 0.194 0.000",
+         "guns" : {
+            "_90mm_Gun_T178_IGR" : "shared"
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "rayStart" : "-1.14211 0.238441 -0.983196",
+                  "rayEnd" : "-1 0 -1",
+                  "size" : "0.58",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "size" : "0.58",
+                  "rayStart" : "1.14211 0.238441 -0.983196",
+                  "rayEnd" : "1 0 -1",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "player" : [
+               {
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0.74315 0.20865 -1.5934",
+                  "rayStart" : "-1.14251 0.231247 -1.59341",
+                  "size" : "0.28"
+               },
+               {
+                  "rayStart" : "1.14251 0.231247 -1.59341",
+                  "rayEnd" : "0.74315 0.20865 -1.5934",
+                  "size" : "0.28",
+                  "isMirrored" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true
+               }
+            ]
+         },
+         "tags" : {},
+         "level" : 8,
+         "gunPosition" : "0 0 0",
+         "userString" : "#igr_vehicles:Turret_1_T69_IGR",
+         "rotationSpeed" : 38,
+         "price" : 46000,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 70,
+            "repairCost" : "1.0",
+            "maxHealth" : 140
+         },
+         "primaryArmor" : "armor_12 armor_7 armor_13",
+         "notInShop" : true,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "armor" : {
+            "armor_3" : "63.5",
+            "armor_11" : "",
+            "armor_2" : "69.9",
+            "armor_6" : "76.2",
+            "armor_4" : "50.8",
+            "armor_5" : "101.6",
+            "armor_1" : "82.6",
+            "armor_10" : "25.4",
+            "armor_7" : "76.2",
+            "armor_8" : "25.4",
+            "armor_9" : "27.9",
+            "armor_13" : "114.3",
+            "armor_12" : "152.4"
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "effects" : {
+      "collision" : "collision",
+      "damagedStateGroup" : "medium"
+   },
+   "chassis" : {
+      "Chassis_T69_2_IGR" : {
+         "userString" : "#igr_vehicles:Chassis_T69_IGR",
+         "rotationSpeed" : 42,
+         "brakeForce" : 35000,
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR",
+            "size" : "0.48 0.62",
+            "textureSet" : "germany_01"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "price" : 33000,
+         "level" : 8,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L4"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R4",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 3,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "count" : 5,
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "radius" : "0.3487"
+               },
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 3
+               },
+               {
+                  "count" : 5,
+                  "template" : "W_R",
+                  "radius" : "0.3487",
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "maxLoad" : 36560,
+         "notInShop" : true,
+         "topRightCarryingPoint" : "1.4348 1.62175",
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "maxClimbAngle" : 25,
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0.000000 1.08475 0.000000",
+         "rotationIsAroundCenter" : true,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 6 0 0 0"
+            }
+         },
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A90_T69/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A90_T69/collision_client/Chassis.model"
+         },
+         "tags" : {},
+         "terrainResistance" : "1.1 1.2 2.1",
+         "maxRegenHealth" : 150,
+         "repairCost" : "7.5",
+         "models" : {
+            "exploded" : "vehicles/american/A90_T69/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A90_T69/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A90_T69/crash/lod0/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-0.62",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "weight" : 8000,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "maxHealth" : 200
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6",
+      "exclusionMask" : "vehicles/american/A90_T69/T69_CM.dds"
+   },
+   "repairCost" : "8.5"
+}

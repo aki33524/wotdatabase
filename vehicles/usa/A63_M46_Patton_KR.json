@@ -1,0 +1,506 @@
+{
+   "premiumVehicleXPFactor" : "0.1",
+   "chassis" : {
+      "Chassis_M46_Patton_KR" : {
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "traces" : {
+            "size" : "0.42 0.62",
+            "textureSet" : "usa_01",
+            "decalGroup" : "trace",
+            "lodDist" : "FAR",
+            "decalTexture" : "trace",
+            "bufferPrefs" : "largeTank"
+         },
+         "brakeForce" : 35500,
+         "maxClimbAngle" : 25,
+         "trackThickness" : "-0.0231",
+         "models" : {
+            "destroyed" : "vehicles/american/A63_M46_Patton_KR/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A63_M46_Patton_KR/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A63_M46_Patton_KR/normal/lod0/Chassis.model"
+         },
+         "hullPosition" : "0.000000 1.11414 0.000000",
+         "splineDesc" : {
+            "right" : "vehicles/american/A63_M46_Patton/track/right.track",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.067",
+            "segmentLength" : "0.135",
+            "left" : "vehicles/american/A63_M46_Patton/track/left.track",
+            "segmentModelLeft" : "vehicles/american/A63_M46_Patton/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segment2ModelLeft" : "vehicles/american/A63_M46_Patton/track/segment2.model",
+            "segment2ModelRight" : "vehicles/american/A63_M46_Patton/track/segment2.model",
+            "segment2Offset" : "0.063",
+            "segmentModelRight" : "vehicles/american/A63_M46_Patton/track/segment.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.12",
+            "vehicleMovement" : "0.12"
+         },
+         "notInShop" : true,
+         "maxHealth" : 240,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A63_M46_Patton_KR/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A63_M46_Patton_KR/collision_client/Chassis.model"
+         },
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L7",
+         "topRightCarryingPoint" : "1.38024 1.80757",
+         "bulkHealthFactor" : "3.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.1",
+                  "startIndex" : "",
+                  "maxOffset" : "0.07",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "count" : 6
+               },
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.07",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "count" : 6,
+                  "minOffset" : "-0.1"
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : true,
+         "maxRegenHealth" : 180,
+         "terrainResistance" : "1.3 1.5 2.5",
+         "repairCost" : "5.0",
+         "weight" : 10000,
+         "maxLoad" : 47000,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 5
+               },
+               {
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "count" : 6
+               },
+               {
+                  "count" : 5,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "template" : "WD_L"
+               },
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0"
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "name" : "WD_R6",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "name" : "WD_R7"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L6",
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L7"
+               }
+            ]
+         },
+         "userString" : "#usa_vehicles:Chassis_M46_Patton_KR",
+         "rotationSpeed" : 38,
+         "level" : 8,
+         "navmeshGirth" : "6.0",
+         "trackNodes" : {
+            "maxAmplitude" : "0.015",
+            "enable" : true,
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "linkBones" : false,
+            "forwardElastK" : 1,
+            "node" : [
+               {
+                  "offset" : "-0.052",
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VD_L0",
+                  "elasticity" : 1237
+               },
+               {
+                  "forwardElastK" : "0.85",
+                  "elasticity" : 1237,
+                  "name" : "Track_VD_R0",
+                  "offset" : "-0.052",
+                  "backwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.056",
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.9",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.8",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "0.85",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.7",
+                  "offset" : "-0.056"
+               },
+               {
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L4",
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.6",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L5",
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "backwardElastK" : "1.9",
+                  "isLeft" : false,
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.056",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.7",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_R4",
+                  "forwardElastK" : "0.85"
+               },
+               {
+                  "offset" : "-0.056",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_R5"
+               }
+            ],
+            "elasticity" : 1000,
+            "maxOffset" : "0.01",
+            "backwardElastK" : 1,
+            "offset" : "0"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "price" : "16300.0",
+         "wwsoundPC" : "treads_type_pc",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-0.9"
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "commander" : {},
+      "driver" : {},
+      "loader" : {},
+      "gunner" : {},
+      "radioman" : {}
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.2",
+            "rayEnd" : "-0.64665 -0.102909 2.44177",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.64665 0.0457252 2.57558"
+         }
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A63_M46_Patton_KR/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A63_M46_Patton_KR/collision_client/Hull.model"
+      },
+      "maxHealth" : 1160,
+      "armor" : {
+         "armor_10" : "",
+         "armor_13" : "41.3",
+         "armor_4" : "50.8",
+         "armor_3" : "76.2",
+         "armor_2" : "76.2",
+         "armor_6" : "19.1",
+         "armor_8" : "12.7",
+         "armor_11" : "139.7",
+         "armor_9" : "101.6",
+         "armor_1" : "101.6",
+         "armor_5" : "22.2",
+         "armor_7" : "25.4",
+         "armor_12" : "76.2"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hangarShadowTexture" : "vehicles/american/A63_M46_Patton_KR/M46_Patton_HangarShadowMap.dds",
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "models" : {
+         "destroyed" : "vehicles/american/A63_M46_Patton_KR/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A63_M46_Patton_KR/normal/lod0/Hull.model",
+         "exploded" : "vehicles/american/A63_M46_Patton_KR/crash/lod0/Hull.model"
+      },
+      "weight" : 23407,
+      "swinging" : {
+         "sensitivityToImpulse" : "0.4",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 38.00 0.34 1.00 0.04 0.27",
+         "rollParams" : "1.00 0.26 38.00 0.34 1.00 0.04 0.27"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.518977 0.48977"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "2.0",
+         "maxHealth" : 240,
+         "maxRegenHealth" : 160
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "radios" : {
+      "AN_GRC_8" : "shared"
+   },
+   "crewXpFactor" : "1.5",
+   "turrets0" : {
+      "Turret_1_M46_Patton_KR" : {
+         "physicsShape" : "0.931 -0.071 1.000 0.000 0.607 0.080 0.697 0.649 0.394 0.553 0.104 0.500 0.056 0.100 0.000",
+         "gunPosition" : "0.000000 0.44906 0.96952",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 75,
+            "maxHealth" : 150
+         },
+         "circularVisionRadius" : 390,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 110,
+            "maxRegenHealth" : 55,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "destroyed" : "vehicles/american/A63_M46_Patton_KR/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A63_M46_Patton_KR/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/american/A63_M46_Patton_KR/normal/lod0/Turret_01.model"
+         },
+         "weight" : 8000,
+         "userString" : "#usa_vehicles:Turret_1_M46_Patton_KR",
+         "primaryArmor" : "armor_2 armor_3 armor_4",
+         "notInShop" : true,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "maxHealth" : 290,
+         "armor" : {
+            "armor_16" : "76.2",
+            "armor_5" : "25.4",
+            "armor_12" : "76.2",
+            "armor_7" : "76.2",
+            "armor_13" : "88.9",
+            "armor_10" : "76.2",
+            "armor_6" : "41.3",
+            "armor_2" : 127,
+            "armor_3" : "76.2",
+            "armor_4" : "76.2",
+            "armor_11" : "111.1",
+            "armor_8" : "",
+            "armor_9" : "25.4",
+            "armor_14" : "41.3"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A63_M46_Patton_KR/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A63_M46_Patton_KR/collision_client/Turret_01.model"
+         },
+         "rotationSpeed" : 38,
+         "showEmblemsOnGun" : false,
+         "level" : 8,
+         "guns" : {
+            "_90mm_Gun_M3A1" : "shared"
+         },
+         "emblemSlots" : {},
+         "tags" : {},
+         "price" : 21800
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.994753238"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.6",
+      "exclusionMask" : {}
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.164",
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.327",
+      "still" : "0.218"
+   },
+   "customDefaultCamouflage" : true,
+   "emblems" : {
+      "default" : "usa_star",
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM"
+   },
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : "48.3"
+   },
+   "engines" : {
+      "Continental_AV_1790_5A" : "shared"
+   },
+   "repairCost" : "5.7",
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_AV_1790_5A" : {
+               "smplEnginePower" : "856.3977"
+            }
+         },
+         "chassis" : {
+            "Chassis_M46_Patton_KR" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

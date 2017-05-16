@@ -1,0 +1,395 @@
+{
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "crew" : {
+      "commander" : {},
+      "driver" : {},
+      "loader" : {},
+      "radioman" : {},
+      "gunner" : {}
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Vickers-Armstrong" : {
+               "smplEnginePower" : "95.1553"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB01_Medium_Mark_I_2" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_GB01_Medium_Mark_I" : {
+         "weight" : 1360,
+         "gunPosition" : "0.000000 0.3577 0.6059",
+         "level" : 1,
+         "emblemSlots" : {
+            "player" : {
+               "size" : "0.3",
+               "rayEnd" : "-0.698521 0.267379 0.0165975",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.0951 0.26738 0.0688084",
+               "hideIfDamaged" : false
+            },
+            "inscription" : {
+               "size" : "0.64",
+               "rayEnd" : "0.542455 0.421475 -0.0267677",
+               "hideIfDamaged" : true,
+               "rayUp" : "-1 0 0",
+               "rayStart" : "0.739331 0.769667 -0.0267676"
+            }
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 15,
+            "repairCost" : "2.0",
+            "maxHealth" : 30
+         },
+         "guns" : {
+            "QF_6_pounder_8cwt_Mk_II" : "shared",
+            "_3pdr_gun_Hotchkiss" : "shared"
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#gb_vehicles:Turret_1_GB01_Medium_Mark_I",
+         "wwturretRotatorSoundManual" : "tur_man_trav_06",
+         "circularVisionRadius" : 280,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB01_Medium_Mark_I/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB01_Medium_Mark_I/collision/Turret_01.model"
+         },
+         "rotationSpeed" : 32,
+         "tags" : {},
+         "maxHealth" : 28,
+         "notInShop" : true,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 25,
+            "repairCost" : "1.0",
+            "maxHealth" : 50
+         },
+         "armor" : {
+            "armor_9" : "",
+            "armor_1" : "6.35",
+            "armor_11" : "6.35",
+            "armor_7" : "",
+            "armor_4" : "6.35",
+            "armor_10" : "6.35",
+            "armor_2" : "6.35",
+            "armor_5" : "6.35",
+            "armor_8" : "6.35",
+            "armor_6" : "6.35",
+            "armor_3" : "6.35"
+         },
+         "physicsShape" : "1.000 0.043 0.964 0.000 0.562 0.289 0.500 0.500 0.500 0.500 0.000 0.500 0.031 0.100 0.000",
+         "camouflage" : {
+            "tiling" : "1.12 1.12 0.000000 0.000000"
+         },
+         "price" : "",
+         "models" : {
+            "undamaged" : "vehicles/british/GB01_Medium_Mark_I/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB01_Medium_Mark_I/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB01_Medium_Mark_I/crash/lod0/Turret_01.model"
+         }
+      }
+   },
+   "chassis" : {
+      "Chassis_GB01_Medium_Mark_I_2" : {
+         "maxHealth" : 50,
+         "topRightCarryingPoint" : "1.144 1.78927",
+         "tags" : {},
+         "wwsoundNPC" : "trds_chf_npc",
+         "rotationSpeed" : 35,
+         "wwsoundPC" : "treads_type_pc",
+         "traces" : {
+            "textureSet" : "ussr_R11",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR",
+            "size" : "0.4 0.37"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB01_Medium_Mark_I/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB01_Medium_Mark_I/collision_client/Chassis.model"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB01_Medium_Mark_I/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB01_Medium_Mark_I/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB01_Medium_Mark_I/crash/lod0/Chassis.model"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "brakeForce" : 12000,
+         "drivingWheels" : "WD_L0 WD_L6",
+         "price" : "",
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "bulkHealthFactor" : "3.0",
+         "notInShop" : true,
+         "maxLoad" : 13200,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.02"
+         },
+         "rotationIsAroundCenter" : false,
+         "terrainResistance" : "1.1 1.2 2.2",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.36",
+            "vehicleRotation" : "0.36"
+         },
+         "repairCost" : "1.0",
+         "maxClimbAngle" : 25,
+         "weight" : 3000,
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 2,
+                  "startIndex" : 3,
+                  "radius" : "0",
+                  "template" : "WD_R"
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 5,
+                  "startIndex" : 6,
+                  "template" : "W_R",
+                  "radius" : "0"
+               },
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 6,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : 3,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 2,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "startIndex" : 6,
+                  "radius" : "0",
+                  "template" : "W_L",
+                  "count" : 5
+               },
+               {
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "isLeft" : true
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "isLeading" : false,
+                  "name" : "WD_R6",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : false,
+                  "radius" : "0.31171",
+                  "name" : "WD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R5",
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "name" : "WD_L6",
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0.31171",
+                  "isLeading" : false,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "name" : "WD_L5"
+               }
+            ]
+         },
+         "maxRegenHealth" : 40,
+         "level" : 1,
+         "userString" : "#gb_vehicles:Chassis_GB01_Medium_Mark_I_2",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "navmeshGirth" : "6.0"
+      }
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "repairCost" : "",
+   "radios" : {
+      "N14" : "shared"
+   },
+   "engines" : {
+      "Vickers-Armstrong" : "shared"
+   },
+   "camouflage" : {
+      "exclusionMask" : "vehicles/british/GB01_Medium_Mark_I/Medium_Mark_I_CM.dds",
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.2"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.718350009"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "default" : "britain_color",
+      "alpha" : "0.88"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/british/GB01_Medium_Mark_I/Medium_Mark_I_HangarShadowMap.dds",
+      "exhaust" : {
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "emblemSlots" : {
+         "inscription" : {
+            "rayEnd" : "-0.743225 0.818167 -1.94005",
+            "size" : "0.74",
+            "rayStart" : "-1.14323 0.818167 -1.94005",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true
+         },
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayStart" : "0.518639 0.261682 2.3529",
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "0.518639 0.217053 2.2202",
+            "size" : "0.28"
+         }
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 46.00 0.30 1.00 0.04 0.33",
+         "sensitivityToImpulse" : "0.71",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.28 46.00 0.30 1.00 0.04 0.33"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "weight" : 6750,
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 48,
+         "repairCost" : "1.0",
+         "maxHealth" : 70
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB01_Medium_Mark_I/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB01_Medium_Mark_I/collision/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.000209 1.148 -0.524262"
+      },
+      "maxHealth" : 112,
+      "armor" : {
+         "armor_3" : "6.35",
+         "armor_10" : "6.35",
+         "armor_2" : "6.35",
+         "armor_6" : "6.35",
+         "armor_8" : "6.35",
+         "armor_5" : "6.35",
+         "armor_4" : "6.35",
+         "armor_7" : "6.35",
+         "armor_9" : "",
+         "armor_1" : "6.35"
+      },
+      "models" : {
+         "destroyed" : "vehicles/british/GB01_Medium_Mark_I/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB01_Medium_Mark_I/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB01_Medium_Mark_I/crash/lod0/Hull.model"
+      }
+   },
+   "invisibility" : {
+      "still" : "0.141",
+      "firePenalty" : "0.212",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.106"
+   },
+   "speedLimits" : {
+      "backward" : 8,
+      "forward" : 24
+   },
+   "crewXpFactor" : "1.0"
+}

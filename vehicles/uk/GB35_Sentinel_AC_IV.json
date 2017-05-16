@@ -1,0 +1,502 @@
+{
+   "repairCost" : "4.0",
+   "crewXpFactor" : "1.5",
+   "radios" : {
+      "N19Mk2_Aust" : "shared"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   },
+   "crew" : {
+      "loader" : {},
+      "driver" : {},
+      "radioman" : {},
+      "commander" : {},
+      "gunner" : {}
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "speedLimits" : {
+      "forward" : "60.4",
+      "backward" : 20
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Cadillac_75_x_3" : {
+               "smplEnginePower" : "348.9028"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB35_Sentinel_AC_IV" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "engines" : {
+      "Cadillac_75_x_3" : "shared"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "1.2"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "inscription" : {
+            "rayUp" : "0.195378 -0.00702206 -0.980703",
+            "rayEnd" : "0.172174 -0.10089 2.21139",
+            "rayStart" : "0.172174 0.462936 2.41656",
+            "size" : "0.74",
+            "hideIfDamaged" : true
+         },
+         "clan" : {
+            "rayEnd" : "-0.390521 0.0575187 2.34202",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-0.390521 0.237344 2.42955",
+            "hideIfDamaged" : false,
+            "size" : "0.28"
+         }
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.76",
+         "rollParams" : "1.00 0.28 37.00 0.34 1.00 0.05 0.33",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.28 37.00 0.34 1.00 0.05 0.33"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_medium"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB35_Sentinel_AC_IV/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB35_Sentinel_AC_IV/collision/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 0"
+      },
+      "maxHealth" : 600,
+      "hangarShadowTexture" : "vehicles/british/GB35_Sentinel_AC_IV/Sentinel_AC_IV_HangarShadowMap.dds",
+      "armor" : {
+         "armor_2" : 45,
+         "armor_10" : "38.1",
+         "armor_3" : 45,
+         "armor_12" : 55,
+         "armor_5" : "22.2",
+         "armor_6" : "15.9",
+         "armor_4" : 45,
+         "armor_8" : "",
+         "armor_14" : 50,
+         "armor_11" : "38.1",
+         "armor_7" : "25.4",
+         "armor_1" : 65,
+         "armor_9" : 60
+      },
+      "models" : {
+         "undamaged" : "vehicles/british/GB35_Sentinel_AC_IV/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB35_Sentinel_AC_IV/crash/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB35_Sentinel_AC_IV/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 120,
+         "maxHealth" : 180,
+         "repairCost" : "1.0"
+      },
+      "weight" : 16933,
+      "primaryArmor" : "armor_1 armor_3 armor_4"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1"
+   },
+   "turrets0" : {
+      "Turret_1_GB35_Sentinel_AC_IV" : {
+         "camouflage" : {
+            "tiling" : "0.49 0.49 0.000000 0.000000"
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB35_Sentinel_AC_IV",
+         "emblemSlots" : {
+            "inscription" : {
+               "isMirrored" : true,
+               "rayStart" : "1.01997 0.612179 -0.389529",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "0.848706 0.5114 -0.367002",
+               "size" : "0.5",
+               "hideIfDamaged" : true
+            },
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "size" : "0.24",
+                  "rayStart" : "-1.08352 0.68742 -0.377781",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 1 -0"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayStart" : "1.07544 0.61284 0.0118689",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0.901794 0.516704 0.03641",
+                  "size" : "0.24",
+                  "hideIfDamaged" : true
+               }
+            ]
+         },
+         "circularVisionRadius" : 360,
+         "gunPosition" : "0 0 1",
+         "level" : 6,
+         "rotationSpeed" : 44,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB35_Sentinel_AC_IV/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/british/GB35_Sentinel_AC_IV/collision/Turret_01.model"
+         },
+         "maxHealth" : 150,
+         "guns" : {
+            "OQF_17pdr_Gun_Mk_VII_A" : "shared"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 120,
+            "maxRegenHealth" : 60,
+            "repairCost" : "1.0"
+         },
+         "showEmblemsOnGun" : false,
+         "tags" : {},
+         "price" : 12000,
+         "weight" : 4400,
+         "primaryArmor" : "armor_1 armor_1 armor_4",
+         "notInShop" : true,
+         "armor" : {
+            "armor_3" : 45,
+            "armor_6" : "25.4",
+            "armor_5" : "25.4",
+            "armor_10" : "38.1",
+            "armor_2" : 45,
+            "armor_9" : 65,
+            "armor_1" : 65,
+            "armor_7" : "31.8",
+            "armor_11" : 55,
+            "armor_13" : 50,
+            "armor_8" : "",
+            "armor_4" : 65
+         },
+         "physicsShape" : "1.000 -0.015 1.022 0.000 0.585 0.133 0.915 0.633 0.167 0.500 0.122 0.500 0.000 0.100 0.000",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB35_Sentinel_AC_IV/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB35_Sentinel_AC_IV/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/british/GB35_Sentinel_AC_IV/crash/lod0/Turret_01.model"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav"
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "invisibility" : {
+      "still" : "0.241",
+      "moving" : "0.181",
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.362",
+      "camouflageBonus" : "0.03"
+   },
+   "chassis" : {
+      "Chassis_GB35_Sentinel_AC_IV" : {
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "minOffset" : "-0.06",
+                  "count" : 6,
+                  "maxOffset" : "0.06",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR",
+            "size" : "0.38 0.48",
+            "textureSet" : "usa_02"
+         },
+         "repairCost" : "5.0",
+         "brakeForce" : 28000,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "count" : 3
+               },
+               {
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 6,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0.34588",
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923"
+               },
+               {
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0.34588",
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB35_Sentinel_AC_IV/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB35_Sentinel_AC_IV/collision_client/Chassis.model"
+         },
+         "tracks" : {
+            "textureScale" : "-3.05",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "trackThickness" : "-0.0121",
+         "rotationSpeed" : 40,
+         "navmeshGirth" : "6.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "terrainResistance" : "1 1.2 2.2",
+         "tags" : {},
+         "drivingWheels" : "WD_L0 WD_L4",
+         "models" : {
+            "exploded" : "vehicles/british/GB35_Sentinel_AC_IV/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB35_Sentinel_AC_IV/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB35_Sentinel_AC_IV/normal/lod0/Chassis.model"
+         },
+         "maxClimbAngle" : 25,
+         "hullPosition" : "0.000000 1.01817 0.000000",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "topRightCarryingPoint" : "1.14117 1.77881",
+         "splineDesc" : {
+            "right" : "vehicles/british/GB35_Sentinel_AC_IV/track/right.track",
+            "segmentModelRight" : "vehicles/british/GB35_Sentinel_AC_IV/track/segment1.model",
+            "segment2Offset" : "0.083",
+            "segmentModelLeft" : "vehicles/british/GB35_Sentinel_AC_IV/track/segment1.model",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/british/GB35_Sentinel_AC_IV/track/left.track",
+            "segment2ModelLeft" : "vehicles/british/GB35_Sentinel_AC_IV/track/segment2.model",
+            "segment2ModelRight" : "vehicles/british/GB35_Sentinel_AC_IV/track/segment2.model",
+            "segmentLength" : "0.155",
+            "segmentOffset" : "-0.03",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            }
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "maxLoad" : 31000,
+         "maxRegenHealth" : 90,
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 120,
+         "rotationIsAroundCenter" : false,
+         "level" : 6,
+         "userString" : "#gb_vehicles:Chassis_GB35_Sentinel_AC_IV",
+         "wwsoundPC" : "treads_type_pc",
+         "notInShop" : true,
+         "weight" : 5000,
+         "price" : 12000,
+         "trackNodes" : {
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.056",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.4",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "offset" : "-0.056",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.6"
+               },
+               {
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.2",
+                  "offset" : "-0.056",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "forwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "1.2"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.056",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.056",
+                  "forwardElastK" : "1.6"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.4"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.056",
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "1.2"
+               }
+            ],
+            "maxOffset" : "0.1",
+            "enable" : true,
+            "maxAmplitude" : "0.1",
+            "elasticity" : 1100,
+            "damping" : 2,
+            "linkBones" : false,
+            "gravity" : "-9.8"
+         }
+      }
+   },
+   "premiumVehicleXPFactor" : "0.3"
+}

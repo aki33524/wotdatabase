@@ -1,0 +1,896 @@
+{
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_JagdPantherII" : {
+               "grounds" : {
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_JagdPantherII_2" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Maybach_HL_210_TRM_P30" : {
+               "smplEnginePower" : "687.2327"
+            },
+            "Maybach_HL_230_TRM_P30" : {
+               "smplEnginePower" : "740.0968"
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_JagdPantherII" : {
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100,
+            "repairCost" : "1.0"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "userString" : "#germany_vehicles:Turret_1_JagdPantherII",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G71_JagdPantherII/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G71_JagdPantherII/collision/Turret_01.model"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "circularVisionRadius" : 360,
+         "armor" : {
+            "armor_1" : ""
+         },
+         "maxHealth" : 230,
+         "rotationSpeed" : 26,
+         "level" : 8,
+         "showEmblemsOnGun" : false,
+         "guns" : {
+            "_105mm_K18_L52" : "shared",
+            "_88mm_PaK_43_L71" : "shared",
+            "_128mm_PaK44_L55" : "shared"
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "gunPosition" : "0 0 0",
+         "price" : 100,
+         "emblemSlots" : {},
+         "weight" : 100,
+         "wwturretRotatorSoundManual" : "tur_man_trav_06",
+         "notInShop" : true,
+         "models" : {
+            "undamaged" : "vehicles/german/G71_JagdPantherII/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G71_JagdPantherII/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G71_JagdPantherII/crash/lod0/Turret_01.model"
+         }
+      }
+   },
+   "crew" : {
+      "commander" : {},
+      "radioman" : {},
+      "loader" : {},
+      "driver" : {},
+      "gunner" : {}
+   },
+   "repairCost" : "9.2",
+   "crewXpFactor" : "1.0",
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 55
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.04",
+      "still" : "0.179",
+      "moving" : "0.107",
+      "firePenalty" : "0.269",
+      "camouflageNetBonus" : "0.15"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_JagdPantherII" : {
+         "hullPosition" : "0.000000 1.20241 0.000000",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "level" : 7,
+         "unlocks" : {
+            "chassis" : "Chassis_JagdPantherII_2"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G71_JagdPantherII/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G71_JagdPantherII/collision/Chassis.model"
+         },
+         "trackThickness" : "-0.0092",
+         "repairCost" : "5.0",
+         "traces" : {
+            "size" : "0.52 0.62",
+            "textureSet" : "germany_02",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR"
+         },
+         "maxRegenHealth" : 145,
+         "weight" : 16500,
+         "splineDesc" : {
+            "right" : "vehicles/german/G71_JagdPantherII/track/right.track",
+            "segmentModelLeft" : "vehicles/german/G71_JagdPantherII/track/segment_L_1.model",
+            "segment2ModelLeft" : "vehicles/german/G71_JagdPantherII/track/segment_L_2.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.084",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/german/G71_JagdPantherII/track/left.track",
+            "segment2ModelRight" : "vehicles/german/G71_JagdPantherII/track/segment_R_2.model",
+            "segmentLength" : "0.3",
+            "segment2Offset" : "0.154",
+            "segmentModelRight" : "vehicles/german/G71_JagdPantherII/track/segment_R_1.model"
+         },
+         "maxLoad" : 53000,
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 7,
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : false
+               },
+               {
+                  "count" : 7,
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 40,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 45,
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R1"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "syncAngle" : 40,
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "syncAngle" : 45,
+                  "isLeft" : true,
+                  "isLeading" : true
+               }
+            ]
+         },
+         "price" : "18860.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "minOffset" : "-0.08",
+                  "count" : 7,
+                  "template" : "Track_L",
+                  "maxOffset" : "0.08"
+               },
+               {
+                  "maxOffset" : "0.08",
+                  "template" : "Track_R",
+                  "count" : 7,
+                  "minOffset" : "-0.08",
+                  "isLeft" : false,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "maxHealth" : 190,
+         "terrainResistance" : "0.9 1.1 2.3",
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "rotationSpeed" : 34,
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "topRightCarryingPoint" : "1.34318 1.93313",
+         "wwsoundNPC" : "trds_chf_npc",
+         "tags" : {},
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "brakeForce" : 48000,
+         "trackNodes" : {
+            "damping" : 2,
+            "node" : [
+               {
+                  "offset" : "-0.097",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.6",
+                  "backwardElastK" : "1.01"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "offset" : "-0.097",
+                  "forwardElastK" : "0.6",
+                  "backwardElastK" : "1.01",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "offset" : "-0.066"
+               },
+               {
+                  "offset" : "-0.066",
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R1",
+                  "offset" : "-0.062"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.9",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "name" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R2",
+                  "offset" : "-0.108"
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.184",
+                  "rightSibling" : "Track_VT_R3"
+               },
+               {
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.205",
+                  "rightSibling" : "Track_VT_R4",
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.2",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R4",
+                  "leftSibling" : "Track_VT_R3",
+                  "rightSibling" : "Track_VT_R5",
+                  "offset" : "-0.205"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.5",
+                  "offset" : "-0.181",
+                  "rightSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R5",
+                  "leftSibling" : "Track_VT_R4"
+               },
+               {
+                  "leftSibling" : "Track_VT_R5",
+                  "name" : "Track_VT_R6",
+                  "offset" : "-0.146",
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "rightSibling" : "Track_VT_L1",
+                  "offset" : "-0.062",
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1",
+                  "offset" : "-0.108",
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : "1.9",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "leftSibling" : "Track_VT_L1",
+                  "offset" : "-0.184",
+                  "rightSibling" : "Track_VT_L3"
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.205",
+                  "rightSibling" : "Track_VT_L4",
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.6",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L4",
+                  "leftSibling" : "Track_VT_L3",
+                  "rightSibling" : "Track_VT_L5",
+                  "offset" : "-0.205"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.8",
+                  "rightSibling" : "Track_VT_L6",
+                  "offset" : "-0.181",
+                  "name" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L4"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.4",
+                  "offset" : "-0.146",
+                  "leftSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L6"
+               }
+            ],
+            "maxAmplitude" : "0.14",
+            "elasticity" : 1094,
+            "gravity" : "-7.4",
+            "maxOffset" : "0.14",
+            "enable" : true,
+            "linkBones" : true
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "navmeshGirth" : "6.0",
+         "userString" : "#germany_vehicles:Chassis_JagdPantherII",
+         "tracks" : {
+            "textureScale" : -1,
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxClimbAngle" : 25,
+         "models" : {
+            "undamaged" : "vehicles/german/G71_JagdPantherII/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G71_JagdPantherII/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G71_JagdPantherII/crash/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true
+      },
+      "Chassis_JagdPantherII_2" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "traces" : {
+            "size" : "0.52 0.62",
+            "lodDist" : "FAR",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_02"
+         },
+         "trackThickness" : "-0.0092",
+         "repairCost" : "5.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G71_JagdPantherII/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G71_JagdPantherII/collision_client/Chassis.model"
+         },
+         "hullPosition" : "0.000000 1.20241 0.000000",
+         "level" : 8,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 7,
+                  "radius" : "0",
+                  "template" : "W_R"
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 7,
+                  "radius" : "0",
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "syncAngle" : 40,
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R1",
+                  "radius" : "0",
+                  "syncAngle" : 45,
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "syncAngle" : 40,
+                  "isLeading" : true
+               },
+               {
+                  "syncAngle" : 45,
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.08",
+                  "template" : "Track_L",
+                  "count" : 7,
+                  "isLeft" : true,
+                  "minOffset" : "-0.08",
+                  "startIndex" : ""
+               },
+               {
+                  "minOffset" : "-0.08",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "maxOffset" : "0.08",
+                  "count" : 7,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "price" : 34200,
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.084",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segment2ModelRight" : "vehicles/german/G71_JagdPantherII/track/segment_R_2.model",
+            "left" : "vehicles/german/G71_JagdPantherII/track/left.track",
+            "segment2ModelLeft" : "vehicles/german/G71_JagdPantherII/track/segment_L_2.model",
+            "right" : "vehicles/german/G71_JagdPantherII/track/right.track",
+            "segmentModelLeft" : "vehicles/german/G71_JagdPantherII/track/segment_L_1.model",
+            "segment2Offset" : "0.154",
+            "segmentModelRight" : "vehicles/german/G71_JagdPantherII/track/segment_R_1.model",
+            "segmentLength" : "0.3"
+         },
+         "maxRegenHealth" : 160,
+         "weight" : 16500,
+         "maxLoad" : 56000,
+         "trackNodes" : {
+            "gravity" : "-7.4",
+            "elasticity" : 1094,
+            "damping" : 2,
+            "node" : [
+               {
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.097",
+                  "forwardElastK" : "0.6",
+                  "backwardElastK" : "1.01",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.097",
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.6",
+                  "backwardElastK" : "1.01"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.066",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1",
+                  "offset" : "-0.066"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.062",
+                  "rightSibling" : "Track_VT_R1",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.9",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.108",
+                  "rightSibling" : "Track_VT_R2"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8",
+                  "offset" : "-0.184",
+                  "rightSibling" : "Track_VT_R3",
+                  "name" : "Track_VT_R2",
+                  "leftSibling" : "Track_VT_R1"
+               },
+               {
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.205",
+                  "rightSibling" : "Track_VT_R4",
+                  "forwardElastK" : "1.7",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : false
+               },
+               {
+                  "leftSibling" : "Track_VT_R3",
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.205",
+                  "rightSibling" : "Track_VT_R5",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.2",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.8",
+                  "offset" : "-0.181",
+                  "rightSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R5",
+                  "leftSibling" : "Track_VT_R4"
+               },
+               {
+                  "offset" : "-0.146",
+                  "name" : "Track_VT_R6",
+                  "leftSibling" : "Track_VT_R5",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1",
+                  "offset" : "-0.062",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.108",
+                  "rightSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L1",
+                  "leftSibling" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.9",
+                  "backwardElastK" : "0.8"
+               },
+               {
+                  "rightSibling" : "Track_VT_L3",
+                  "offset" : "-0.184",
+                  "leftSibling" : "Track_VT_L1",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L2",
+                  "offset" : "-0.205",
+                  "rightSibling" : "Track_VT_L4",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.7",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.6",
+                  "offset" : "-0.205",
+                  "rightSibling" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "leftSibling" : "Track_VT_L4",
+                  "name" : "Track_VT_L5",
+                  "offset" : "-0.181",
+                  "rightSibling" : "Track_VT_L6",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.5",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.146",
+                  "leftSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L6",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.8"
+               }
+            ],
+            "maxAmplitude" : "0.14",
+            "linkBones" : true,
+            "maxOffset" : "0.14",
+            "enable" : true
+         },
+         "brakeForce" : 53000,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.18",
+            "vehicleMovement" : "0.18"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "tags" : {},
+         "topRightCarryingPoint" : "1.34318 1.93313",
+         "userString" : "#germany_vehicles:Chassis_JagdPantherII_2",
+         "navmeshGirth" : "6.0",
+         "drivingWheels" : "WD_L0 WD_L1",
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "terrainResistance" : "0.8 1 2.1",
+         "maxHealth" : 210,
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0",
+         "rotationSpeed" : 38,
+         "rotationIsAroundCenter" : true,
+         "tracks" : {
+            "textureScale" : -1,
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G71_JagdPantherII/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G71_JagdPantherII/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G71_JagdPantherII/crash/lod0/Chassis.model"
+         },
+         "maxClimbAngle" : 25
+      }
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "engines" : {
+      "Maybach_HL_210_TRM_P30" : "shared",
+      "Maybach_HL_230_TRM_P30" : "shared"
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.89"
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "radios" : {
+      "FuG7" : "shared",
+      "FuG12" : "shared",
+      "FuG5" : "shared"
+   },
+   "hull" : {
+      "camouflage" : {
+         "tiling" : "1.48 1.48 0.000000 0.000000"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G71_JagdPantherII/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G71_JagdPantherII/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G71_JagdPantherII/normal/lod0/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayStart" : "-0.00404555 0.181989 2.96559",
+               "size" : "0.78",
+               "hideIfDamaged" : true,
+               "rayEnd" : "-0.00404555 0.0181633 2.85087",
+               "rayUp" : "0.000000 0.000000 -1"
+            },
+            {
+               "rayStart" : "1.26617 0.920205 -1.5295",
+               "size" : "0.78",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.09284 0.820429 -1.52953",
+               "hideIfDamaged" : false
+            }
+         ],
+         "player" : [
+            {
+               "rayStart" : "-1.27311 0.908506 -2.49344",
+               "size" : "0.32",
+               "rayEnd" : "-1.09985 0.808605 -2.49345",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.09985 0.808605 -2.49345",
+               "isMirrored" : true,
+               "hideIfDamaged" : false,
+               "rayStart" : "1.27311 0.908506 -2.49344",
+               "size" : "0.32"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "1.01852 0.39149 2.31773",
+            "hideIfDamaged" : false,
+            "rayStart" : "1.01852 0.555323 2.43244",
+            "size" : "0.32"
+         }
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 1.1112 -0.20541"
+      },
+      "armor" : {
+         "armor_19" : 100,
+         "armor_11" : 30,
+         "armor_2" : 60,
+         "armor_20" : 30,
+         "armor_9" : 60,
+         "armor_6" : 180,
+         "armor_13" : 16,
+         "armor_16" : 5,
+         "armor_7" : 150,
+         "armor_3" : 60,
+         "armor_4" : 40,
+         "armor_12" : 25,
+         "armor_1" : 100,
+         "armor_5" : 150,
+         "armor_8" : "",
+         "armor_14" : 120
+      },
+      "maxHealth" : 920,
+      "weight" : 31395,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 220,
+         "maxRegenHealth" : 150
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G71_JagdPantherII/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G71_JagdPantherII/collision_client/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/german/G71_JagdPantherII/JagdPantherII_HangarShadowMap.dds",
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "swinging" : {
+         "pitchParams" : "0.20 32.00 0.36 1.00 0.05 0.29",
+         "rollParams" : "1.00 0.20 32.00 0.36 1.00 0.05 0.29",
+         "sensitivityToImpulse" : "0.3",
+         "lodDist" : "FAR"
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.238083447"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "1.6",
+      "tiling" : "1 1 0 0"
+   }
+}

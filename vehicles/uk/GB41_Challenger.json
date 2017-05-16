@@ -1,0 +1,1164 @@
+{
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB41_Challenger_2" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB41_Challenger" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Rolls_Royse_Meteor" : {
+               "smplEnginePower" : "634.3687"
+            },
+            "Rolls_Royse_Meteor_MkIV" : {
+               "smplEnginePower" : "687.2327"
+            }
+         }
+      }
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.4"
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.64427038"
+   },
+   "engines" : {
+      "Rolls_Royse_Meteor" : "shared",
+      "Rolls_Royse_Meteor_MkIV" : "shared"
+   },
+   "chassis" : {
+      "Chassis_GB41_Challenger_2" : {
+         "maxHealth" : 190,
+         "level" : 7,
+         "navmeshGirth" : "6.0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 18,
+                  "radius" : "0",
+                  "name" : "WD_R0"
+               },
+               {
+                  "name" : "WD_R1",
+                  "radius" : "0",
+                  "syncAngle" : 18,
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.4015",
+                  "name" : "W_R5"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.30387",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "syncAngle" : 18
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 18
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 5
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0.4015",
+                  "isLeft" : true,
+                  "count" : 6
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "trackThickness" : "0.005",
+         "repairCost" : "5.0",
+         "maxLoad" : 36800,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "weight" : 7500,
+         "drivingWheels" : "WD_L0 WD_L1",
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "size" : "0.45 0.38"
+         },
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 9 0 0 0"
+            }
+         },
+         "userString" : "#gb_vehicles:Chassis_GB41_Challenger_2",
+         "wwsoundNPC" : "trds_chf_npc",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "3.11",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "bulkHealthFactor" : "3.0",
+         "models" : {
+            "undamaged" : "vehicles/british/GB41_Challenger/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB41_Challenger/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB41_Challenger/crash/lod0/Chassis.model"
+         },
+         "rotationIsAroundCenter" : true,
+         "topRightCarryingPoint" : "1.18661 2.27722",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB41_Challenger/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB41_Challenger/collision_client/Chassis.model"
+         },
+         "maxClimbAngle" : 25,
+         "brakeForce" : 35000,
+         "wwsoundPC" : "treads_type_pc",
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/british/GB41_Challenger/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.085",
+            "segmentModelRight" : "vehicles/british/GB41_Challenger/track/segment.model",
+            "left" : "vehicles/british/GB41_Challenger/track/left.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "right" : "vehicles/british/GB41_Challenger/track/right.track",
+            "segmentOffset" : "0.059"
+         },
+         "maxRegenHealth" : 145,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.1",
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "maxOffset" : "0.07"
+               },
+               {
+                  "minOffset" : "-0.1",
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "maxOffset" : "0.07"
+               }
+            ]
+         },
+         "terrainResistance" : "1 1.1 1.7",
+         "tags" : {},
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.24"
+         },
+         "price" : 21000,
+         "hullPosition" : "0 1 0",
+         "trackNodes" : {
+            "forwardElastK" : 1,
+            "damping" : 5,
+            "elasticity" : 1000,
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : true,
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "1.1",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L1",
+                  "leftSibling" : "Track_VT_L0",
+                  "forwardElastK" : "0.68"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "leftSibling" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L3",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.3",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L4",
+                  "leftSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L3",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L6",
+                  "leftSibling" : "Track_VT_L4",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L5",
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "rightSibling" : "Track_VT_L7",
+                  "name" : "Track_VT_L6",
+                  "leftSibling" : "Track_VT_L5",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L8",
+                  "leftSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L7",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "1.7"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L9",
+                  "leftSibling" : "Track_VT_L7",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L8",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "backwardElastK" : "1.9",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L10",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_L8",
+                  "name" : "Track_VT_L9"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_L11",
+                  "leftSibling" : "Track_VT_L9",
+                  "name" : "Track_VT_L10"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L12",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_L10",
+                  "name" : "Track_VT_L11",
+                  "backwardElastK" : "2.1"
+               },
+               {
+                  "backwardElastK" : "2.2",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L12",
+                  "leftSibling" : "Track_VT_L11",
+                  "forwardElastK" : "0.68"
+               },
+               {
+                  "backwardElastK" : 1,
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R1",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "backwardElastK" : "1.1",
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "rightSibling" : "Track_VT_R3",
+                  "leftSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.3",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.68"
+               },
+               {
+                  "leftSibling" : "Track_VT_R3",
+                  "rightSibling" : "Track_VT_R5",
+                  "name" : "Track_VT_R4",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "rightSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R5",
+                  "leftSibling" : "Track_VT_R4",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "name" : "Track_VT_R6",
+                  "rightSibling" : "Track_VT_R7",
+                  "leftSibling" : "Track_VT_R5",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R7",
+                  "rightSibling" : "Track_VT_R8",
+                  "leftSibling" : "Track_VT_R6",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.7"
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "rightSibling" : "Track_VT_R9",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_R7",
+                  "name" : "Track_VT_R8",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R9",
+                  "rightSibling" : "Track_VT_R10",
+                  "leftSibling" : "Track_VT_R8",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "1.9"
+               },
+               {
+                  "rightSibling" : "Track_VT_R11",
+                  "name" : "Track_VT_R10",
+                  "leftSibling" : "Track_VT_R9",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : 2
+               },
+               {
+                  "backwardElastK" : "2.1",
+                  "leftSibling" : "Track_VT_R10",
+                  "rightSibling" : "Track_VT_R12",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R11",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_R11",
+                  "name" : "Track_VT_R12",
+                  "backwardElastK" : "2.2"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "linkBones" : true,
+            "offset" : "0",
+            "gravity" : -9,
+            "enable" : true,
+            "backwardElastK" : 1,
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1"
+         },
+         "rotationSpeed" : 30
+      },
+      "Chassis_GB41_Challenger" : {
+         "trackNodes" : {
+            "elasticity" : 1000,
+            "node" : [
+               {
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : true,
+                  "backwardElastK" : 1
+               },
+               {
+                  "backwardElastK" : "1.1",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_L0",
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "rightSibling" : "Track_VT_L3",
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "leftSibling" : "Track_VT_L2",
+                  "rightSibling" : "Track_VT_L4",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.3"
+               },
+               {
+                  "backwardElastK" : "1.4",
+                  "rightSibling" : "Track_VT_L5",
+                  "leftSibling" : "Track_VT_L3",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "leftSibling" : "Track_VT_L4",
+                  "rightSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L7",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_L5",
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "1.6"
+               },
+               {
+                  "backwardElastK" : "1.7",
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L8",
+                  "name" : "Track_VT_L7",
+                  "leftSibling" : "Track_VT_L6",
+                  "forwardElastK" : "0.68"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L9",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_L7",
+                  "name" : "Track_VT_L8",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L10",
+                  "name" : "Track_VT_L9",
+                  "leftSibling" : "Track_VT_L8",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "1.9"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "leftSibling" : "Track_VT_L9",
+                  "rightSibling" : "Track_VT_L11",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_L10",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "2.1",
+                  "leftSibling" : "Track_VT_L10",
+                  "rightSibling" : "Track_VT_L12",
+                  "name" : "Track_VT_L11",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L11",
+                  "name" : "Track_VT_L12",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "2.2"
+               },
+               {
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : 1
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0",
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "0.68",
+                  "backwardElastK" : "1.1"
+               },
+               {
+                  "backwardElastK" : "1.2",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1",
+                  "rightSibling" : "Track_VT_R3",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "backwardElastK" : "1.3",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R4",
+                  "leftSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "rightSibling" : "Track_VT_R5",
+                  "leftSibling" : "Track_VT_R3",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.4"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R6",
+                  "leftSibling" : "Track_VT_R4",
+                  "name" : "Track_VT_R5",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R5",
+                  "rightSibling" : "Track_VT_R7",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R6"
+               },
+               {
+                  "backwardElastK" : "1.7",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.68",
+                  "rightSibling" : "Track_VT_R8",
+                  "leftSibling" : "Track_VT_R6",
+                  "name" : "Track_VT_R7"
+               },
+               {
+                  "rightSibling" : "Track_VT_R9",
+                  "leftSibling" : "Track_VT_R7",
+                  "name" : "Track_VT_R8",
+                  "forwardElastK" : "0.68",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "backwardElastK" : "1.9",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R9",
+                  "rightSibling" : "Track_VT_R10",
+                  "leftSibling" : "Track_VT_R8",
+                  "forwardElastK" : "0.68"
+               },
+               {
+                  "backwardElastK" : 2,
+                  "rightSibling" : "Track_VT_R11",
+                  "forwardElastK" : "0.68",
+                  "leftSibling" : "Track_VT_R9",
+                  "name" : "Track_VT_R10",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "2.1",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R12",
+                  "leftSibling" : "Track_VT_R10",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R11"
+               },
+               {
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R11",
+                  "forwardElastK" : "0.68",
+                  "name" : "Track_VT_R12",
+                  "backwardElastK" : "2.2"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "forwardElastK" : 1,
+            "damping" : 5,
+            "backwardElastK" : 1,
+            "enable" : true,
+            "maxOffset" : "0.1",
+            "maxAmplitude" : "0.1",
+            "linkBones" : true,
+            "offset" : "0",
+            "gravity" : -9
+         },
+         "hullPosition" : "0 1 0",
+         "rotationSpeed" : 28,
+         "tags" : {},
+         "terrainResistance" : "1.1 1.2 1.8",
+         "price" : 15000,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.24"
+         },
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/british/GB41_Challenger/track/right.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentOffset" : "0.059",
+            "segmentModelRight" : "vehicles/british/GB41_Challenger/track/segment.model",
+            "segmentLength" : "0.085",
+            "left" : "vehicles/british/GB41_Challenger/track/left.track",
+            "segmentModelLeft" : "vehicles/british/GB41_Challenger/track/segment.model"
+         },
+         "maxRegenHealth" : 130,
+         "wwsoundPC" : "treads_type_pc",
+         "brakeForce" : 30000,
+         "maxClimbAngle" : 25,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.07",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "minOffset" : "-0.1"
+               },
+               {
+                  "minOffset" : "-0.1",
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "count" : 6,
+                  "maxOffset" : "0.07"
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "1.18661 2.27722",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB41_Challenger/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB41_Challenger/collision/Chassis.model"
+         },
+         "bulkHealthFactor" : "3.0",
+         "rotationIsAroundCenter" : true,
+         "models" : {
+            "undamaged" : "vehicles/british/GB41_Challenger/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB41_Challenger/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB41_Challenger/crash/lod0/Chassis.model"
+         },
+         "traces" : {
+            "textureSet" : "germany_02",
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR",
+            "size" : "0.45 0.38"
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "weight" : 7500,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "tracks" : {
+            "textureScale" : "3.11",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB41_Challenger",
+         "wwsoundNPC" : "trds_chf_npc",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 9 0 0 0"
+            }
+         },
+         "repairCost" : "5.0",
+         "trackThickness" : "0.005",
+         "unlocks" : {
+            "chassis" : "Chassis_GB41_Challenger_2"
+         },
+         "maxLoad" : 33500,
+         "maxHealth" : 170,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "syncAngle" : 18,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "syncAngle" : 18,
+                  "radius" : "0",
+                  "name" : "WD_R1",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : false,
+                  "isLeft" : false,
+                  "radius" : "0.4015",
+                  "name" : "W_R5"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "radius" : "0.30387"
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : 18,
+                  "name" : "WD_L1",
+                  "radius" : "0",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "count" : 5
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0.4015",
+                  "count" : 6
+               }
+            ]
+         },
+         "navmeshGirth" : "6.0",
+         "level" : 6
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "turrets0" : {
+      "Turret_2_GB41_Challenger" : {
+         "circularVisionRadius" : 370,
+         "level" : 7,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB41_Challenger/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/british/GB41_Challenger/collision/Turret_02.model"
+         },
+         "maxHealth" : 228,
+         "gunPosition" : "-0.003579 0.497747 1.10468",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 45,
+            "maxHealth" : 90,
+            "repairCost" : "1.0"
+         },
+         "invisibilityFactor" : "0.935",
+         "primaryArmor" : "armor_1 armor_3 armor_14",
+         "unlocks" : {
+            "vehicle" : "GB80_Charioteer"
+         },
+         "physicsShape" : "0.926 -0.039 1.000 0.000 0.576 0.412 0.500 0.500 0.500 0.500 0.000 0.500 0.000 0.000 0.000",
+         "armor" : {
+            "armor_5" : "50.8",
+            "armor_12" : 16,
+            "armor_4" : 40,
+            "armor_8" : "",
+            "armor_7" : 10,
+            "armor_13" : 20,
+            "armor_2" : 40,
+            "armor_6" : 16,
+            "armor_1" : "50.8",
+            "armor_16" : 40,
+            "armor_10" : 10,
+            "armor_14" : 200,
+            "armor_3" : 40,
+            "armor_9" : 30,
+            "armor_15" : "50.8",
+            "armor_11" : 20
+         },
+         "price" : 21000,
+         "userString" : "#gb_vehicles:Turret_2_GB41_Challenger",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "guns" : {
+            "_17pdr_OQF_AT_Mk_II" : "shared",
+            "_17pdr_OQF_AT_1" : "shared"
+         },
+         "weight" : 5476,
+         "tags" : {},
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "size" : "0.55",
+                  "rayStart" : "-1.09183 0.312355 0.163142",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1.03896 0.312355 0.163142",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayEnd" : "1.03179 0.657006 0.164543",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1.08466 0.657006 0.164543",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.55"
+               }
+            ],
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1.03897 0.462804 -0.36202",
+                  "size" : "0.26",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1.09184 0.462804 -0.36202"
+               },
+               {
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayEnd" : "1.03897 0.462804 -0.36202",
+                  "size" : "0.26",
+                  "rayStart" : "1.09184 0.462804 -0.36202",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "showEmblemsOnGun" : false,
+         "models" : {
+            "destroyed" : "vehicles/british/GB41_Challenger/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/british/GB41_Challenger/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/british/GB41_Challenger/normal/lod0/Turret_02.model"
+         },
+         "rotationSpeed" : 16,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         }
+      },
+      "Turret_1_GB41_Challenger" : {
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 90,
+            "maxRegenHealth" : 45
+         },
+         "gunPosition" : "-0 1 1",
+         "maxHealth" : 168,
+         "level" : 6,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB41_Challenger/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB41_Challenger/collision_client/Turret_01.model"
+         },
+         "circularVisionRadius" : 360,
+         "models" : {
+            "exploded" : "vehicles/british/GB41_Challenger/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB41_Challenger/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB41_Challenger/normal/lod0/Turret_01.model"
+         },
+         "rotationSpeed" : 14,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1 0 0",
+                  "size" : "0.7",
+                  "rayStart" : "-1.00022 0.376955 0.121083",
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayEnd" : "1 0 0",
+                  "hideIfDamaged" : false,
+                  "size" : "0.7",
+                  "rayStart" : "1.00022 0.376955 0.121083",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "-0.613225 0.806547 -1.0979",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.3",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-0.594981 0.80651 -1.0897"
+               },
+               {
+                  "rayStart" : "0.592164 0.789982 -1.10793",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.3",
+                  "rayEnd" : "0.573933 0.789982 -1.09971",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "showEmblemsOnGun" : false,
+         "weight" : 7000,
+         "tags" : {},
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "guns" : {
+            "_17pdr_OQF_AT_Mk_II" : "shared",
+            "_17pdr_OQF_AT_1" : "shared"
+         },
+         "price" : 17500,
+         "armor" : {
+            "armor_13" : 63,
+            "armor_4" : 40,
+            "armor_7" : 20,
+            "armor_8" : "",
+            "armor_12" : 20,
+            "armor_5" : 40,
+            "armor_1" : "101.6",
+            "armor_6" : 20,
+            "armor_2" : "88.4",
+            "armor_14" : 40,
+            "armor_10" : "22.2",
+            "armor_16" : 20,
+            "armor_15" : "101.6",
+            "armor_11" : 20,
+            "armor_3" : 40,
+            "armor_9" : 40
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB41_Challenger",
+         "physicsShape" : "1.000 -0.070 1.004 0.000 0.545 0.381 0.642 0.716 0.447 0.500 0.000 0.510 0.074 0.089 0.000"
+      }
+   },
+   "crew" : {
+      "gunner" : {},
+      "commander" : {},
+      "driver" : {},
+      "loader" : [
+         {},
+         "AAAAAAAA"
+      ]
+   },
+   "radios" : {
+      "N22" : "shared",
+      "N19Mk2" : "shared",
+      "N19Mk3" : "shared"
+   },
+   "repairCost" : "7.5",
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 52
+   },
+   "hull" : {
+      "models" : {
+         "undamaged" : "vehicles/british/GB41_Challenger/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB41_Challenger/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB41_Challenger/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.694479 0.39641"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.28",
+            "rayStart" : "-0.00294316 0.0721207 2.9358",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.00294316 0.0227485 2.91689",
+            "hideIfDamaged" : false
+         }
+      },
+      "hangarShadowTexture" : "vehicles/british/GB41_Challenger/Challenger_HangarShadowMap.dds",
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 150,
+         "maxHealth" : 220,
+         "repairCost" : "1.0"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB41_Challenger/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB41_Challenger/collision/Hull.model"
+      },
+      "armor" : {
+         "armor_6" : 25,
+         "armor_1" : "88.9",
+         "armor_2" : "82.6",
+         "armor_13" : "25.4",
+         "armor_12" : 20,
+         "armor_5" : 30,
+         "armor_4" : "38.1",
+         "armor_7" : 10,
+         "armor_8" : "",
+         "armor_15" : "31.8",
+         "armor_11" : 14,
+         "armor_3" : "50.8",
+         "armor_9" : 20,
+         "armor_10" : "28.3",
+         "armor_14" : "63.5",
+         "armor_16" : "63.5"
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.58",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.06 0.36",
+         "rollParams" : "1.00 0.28 38.00 0.42 1.00 0.06 0.40"
+      },
+      "camouflage" : {
+         "tiling" : "1.9 1.9 0.000000 0.000000"
+      },
+      "weight" : 16662,
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "maxHealth" : 672
+   },
+   "invisibility" : {
+      "firePenalty" : "0.377",
+      "moving" : "0.15",
+      "camouflageNetBonus" : "0.15",
+      "still" : "0.251",
+      "camouflageBonus" : "0.04"
+   },
+   "crewXpFactor" : "1.0"
+}

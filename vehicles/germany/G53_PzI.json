@@ -1,0 +1,880 @@
+{
+   "clientAdjustmentFactors" : {
+      "armour" : "0.808382638"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "chassis" : {
+      "Chassis_PzI" : {
+         "terrainResistance" : "1.1 1.4 2.5",
+         "level" : 1,
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 2000,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "trackThickness" : "-0.0113",
+         "wwsoundPC" : "treads_type_pc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G53_PzI/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G53_PzI/collision_client/Chassis.model"
+         },
+         "traces" : {
+            "size" : "0.44 0.3",
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "smallTank"
+         },
+         "repairCost" : "1.0",
+         "unlocks" : {
+            "chassis" : "Chassis_PzI_2"
+         },
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 -0"
+            }
+         },
+         "bulkHealthFactor" : "3.0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : 18,
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_L5"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 18
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "syncAngle" : 18,
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 5,
+                  "template" : "W_L",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "count" : 5,
+                  "startIndex" : "",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G53_PzI/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G53_PzI/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G53_PzI/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-2.9",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/german/G53_PzI/track/segment.model",
+            "right" : "vehicles/german/G53_PzI/track/right.track",
+            "segmentOffset" : "0.116",
+            "segmentModelRight" : "vehicles/german/G53_PzI/track/segment.model",
+            "left" : "vehicles/german/G53_PzI/track/left.track",
+            "segmentLength" : "0.082",
+            "lodDist" : "MEDIUM",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            }
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.3",
+            "vehicleMovement" : "0.3"
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "maxLoad" : 5800,
+         "tags" : {},
+         "brakeForce" : 5500,
+         "rotationSpeed" : 36,
+         "topRightCarryingPoint" : "0.826747 1.22409",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "maxOffset" : "0.0375723",
+                  "startIndex" : "",
+                  "minOffset" : "-0.0722543",
+                  "count" : 5,
+                  "template" : "Track_L"
+               },
+               {
+                  "count" : 5,
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "minOffset" : "-0.0722543",
+                  "maxOffset" : "0.0375723",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : false,
+         "maxClimbAngle" : 25,
+         "trackNodes" : {
+            "linkBones" : false,
+            "elasticity" : 1100,
+            "maxAmplitude" : "0.02",
+            "enable" : true,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.081",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : 2
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.037",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.037",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.4",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.037",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "offset" : "-0.081",
+                  "backwardElastK" : "0.75",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VT_L4"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : 2,
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : 3,
+                  "offset" : "0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : 3,
+                  "offset" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.081",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : 2,
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.037",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.8",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.037",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.4",
+                  "offset" : "-0.037",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.081",
+                  "isLeft" : false
+               }
+            ],
+            "gravity" : "-9.8",
+            "maxOffset" : "0.02",
+            "damping" : 2
+         },
+         "price" : "300.0",
+         "hullPosition" : "0 1 0",
+         "userString" : "#germany_vehicles:Chassis_PzI",
+         "maxRegenHealth" : 40,
+         "maxHealth" : 50
+      },
+      "Chassis_PzI_2" : {
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G53_PzI/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G53_PzI/collision_client/Chassis.model"
+         },
+         "traces" : {
+            "bufferPrefs" : "smallTank",
+            "size" : "0.44 0.3",
+            "lodDist" : "FAR",
+            "textureSet" : "germany_01"
+         },
+         "repairCost" : "1.0",
+         "navmeshGirth" : "6.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 -0"
+            }
+         },
+         "bulkHealthFactor" : "3.0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : 18,
+                  "isLeft" : true,
+                  "name" : "WD_L5",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "syncAngle" : 18,
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R5",
+                  "radius" : "0",
+                  "syncAngle" : 18,
+                  "isLeft" : false
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "count" : 4,
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 5,
+                  "template" : "W_L",
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "count" : 4,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "count" : 5,
+                  "template" : "W_R",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "models" : {
+            "destroyed" : "vehicles/german/G53_PzI/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G53_PzI/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G53_PzI/crash/lod0/Chassis.model"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-2.9",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "terrainResistance" : "1 1.3 2.3",
+         "level" : 2,
+         "wwsoundNPC" : "trds_chf_npc",
+         "weight" : 2000,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "trackThickness" : "-0.0113",
+         "wwsoundPC" : "treads_type_pc",
+         "rotationSpeed" : 38,
+         "topRightCarryingPoint" : "0.826747 1.22409",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 5,
+                  "template" : "Track_L",
+                  "minOffset" : "-0.0722543",
+                  "startIndex" : "",
+                  "maxOffset" : "0.0375723",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "maxOffset" : "0.0375723",
+                  "startIndex" : "",
+                  "minOffset" : "-0.0722543",
+                  "count" : 5,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : false,
+         "maxClimbAngle" : 25,
+         "trackNodes" : {
+            "maxAmplitude" : "0.02",
+            "elasticity" : 1100,
+            "linkBones" : false,
+            "maxOffset" : "0.02",
+            "damping" : 2,
+            "gravity" : "-9.8",
+            "node" : [
+               {
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.081",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.8",
+                  "offset" : "-0.037"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "offset" : "-0.037",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.4",
+                  "offset" : "-0.037",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.081",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_L4",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : 1,
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "0",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : 3,
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "0",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : 3,
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2,
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.081",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.037",
+                  "forwardElastK" : "1.8",
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "offset" : "-0.037",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.4",
+                  "offset" : "-0.037"
+               },
+               {
+                  "offset" : "-0.081",
+                  "forwardElastK" : 1,
+                  "backwardElastK" : "0.75",
+                  "name" : "Track_VT_R4",
+                  "isLeft" : false
+               }
+            ],
+            "enable" : true
+         },
+         "price" : "600.0",
+         "hullPosition" : "0 1 0",
+         "userString" : "#germany_vehicles:Chassis_PzI_2",
+         "maxRegenHealth" : 45,
+         "maxHealth" : 60,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/german/G53_PzI/track/segment.model",
+            "segmentOffset" : "0.116",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentLength" : "0.082",
+            "left" : "vehicles/german/G53_PzI/track/left.track",
+            "segmentModelLeft" : "vehicles/german/G53_PzI/track/segment.model",
+            "right" : "vehicles/german/G53_PzI/track/right.track"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.26",
+            "vehicleRotation" : "0.26"
+         },
+         "drivingWheels" : "WD_L0 WD_L5",
+         "tags" : {},
+         "maxLoad" : 8000,
+         "brakeForce" : 6000
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "0.4",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   },
+   "hull" : {
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hangarShadowTexture" : "vehicles/german/G53_PzI/PzI_HangarShadowMap.dds",
+      "maxHealth" : 116,
+      "emblemSlots" : {
+         "inscription" : {
+            "rayEnd" : "1 0 0",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 1 0.000000",
+            "size" : "0.541",
+            "rayStart" : "1.02947 0.561143 0.0630716"
+         },
+         "clan" : {
+            "size" : "0.22",
+            "rayStart" : "0.403095 0.590254 0.88562",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true,
+            "rayEnd" : "0.403095 0.446278 0.51243"
+         }
+      },
+      "armor" : {
+         "armor_4" : 13,
+         "armor_2" : 13,
+         "armor_16" : "14.5",
+         "armor_5" : 8,
+         "armor_6" : 5,
+         "armor_7" : 8,
+         "armor_1" : 13,
+         "armor_3" : 13,
+         "armor_8" : ""
+      },
+      "models" : {
+         "destroyed" : "vehicles/german/G53_PzI/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G53_PzI/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G53_PzI/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.74"
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G53_PzI/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G53_PzI/collision_client/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 80,
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0"
+      },
+      "turretPositions" : {
+         "turret" : "0.2038 0.630078 -0.01292"
+      },
+      "camouflage" : {
+         "tiling" : "2 2 0.000000 0.000000"
+      },
+      "weight" : 2450
+   },
+   "crewXpFactor" : "1.0",
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   },
+   "emblems" : {
+      "alpha" : "0.92",
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM"
+   },
+   "repairCost" : 4,
+   "turrets0" : {
+      "Turret_2_PzI" : {
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.22",
+                  "rayStart" : "-1 0 -0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-0.256921 0.121842 -0.0962156"
+               },
+               {
+                  "rayStart" : "1 0 -0",
+                  "size" : "0.22",
+                  "isMirrored" : true,
+                  "rayEnd" : "0.256921 0.121842 -0.0962156",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ]
+         },
+         "maxHealth" : 44,
+         "armor" : {
+            "armor_1" : 15,
+            "armor_3" : 13,
+            "armor_8" : 8,
+            "armor_4" : 13,
+            "armor_2" : 14,
+            "armor_7" : "",
+            "armor_5" : 8
+         },
+         "gunPosition" : "0 0 1",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 60,
+            "maxRegenHealth" : 30
+         },
+         "userString" : "#germany_vehicles:Turret_2_PzI",
+         "models" : {
+            "undamaged" : "vehicles/german/G53_PzI/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/german/G53_PzI/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/german/G53_PzI/crash/lod0/Turret_02.model"
+         },
+         "price" : 1580,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "maxRegenHealth" : 20,
+            "repairCost" : "2.0"
+         },
+         "guns" : {
+            "_20mm_KwK_38_L55" : "shared",
+            "_20mm_KwK_30" : "shared",
+            "_20mm_Breda" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "unlocks" : {
+            "vehicle" : "G63_PzI_ausf_C"
+         },
+         "showEmblemsOnGun" : false,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G53_PzI/collision/Turret_02.model",
+            "collisionModelClient" : "vehicles/german/G53_PzI/collision_client/Turret_02.model"
+         },
+         "rotationSpeed" : 24,
+         "physicsShape" : "0.948 -0.040 1.043 0.017 0.559 0.317 0.775 0.406 0.256 0.500 0.395 0.500 0.251 0.559 0.135",
+         "primaryArmor" : "armor_2 armor_3 armor_4",
+         "circularVisionRadius" : 320,
+         "tags" : "AAAAAAAAAAAA",
+         "weight" : 600,
+         "invisibilityFactor" : "0.971",
+         "camouflage" : {
+            "tiling" : "1 0.5 0.000000 0.000000"
+         },
+         "level" : 2
+      },
+      "Turret_1_PzI" : {
+         "guns" : {
+            "_20mm_KwK_38_L55" : "shared",
+            "_20mm_Breda" : "shared",
+            "_20mm_KwK_30" : "shared"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "showEmblemsOnGun" : false,
+         "unlocks" : {
+            "turret" : "Turret_2_PzI"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G53_PzI/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G53_PzI/collision/Turret_01.model"
+         },
+         "rotationSpeed" : 24,
+         "armor" : {
+            "armor_5" : 8,
+            "armor_1" : 15,
+            "armor_3" : 13,
+            "armor_8" : "",
+            "armor_4" : 13,
+            "armor_9" : 8,
+            "armor_2" : 14
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.22",
+                  "rayStart" : "-0.722661 0.28882 0.234401",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0 0 0",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "rayEnd" : "0 0 0",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "0.722661 0.28882 0.234401",
+                  "size" : "0.22",
+                  "isMirrored" : true
+               }
+            ]
+         },
+         "maxHealth" : 29,
+         "gunPosition" : "-0 0 1",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "maxHealth" : 60,
+            "repairCost" : "1.0"
+         },
+         "userString" : "#germany_vehicles:Turret_1_PzI",
+         "models" : {
+            "exploded" : "vehicles/german/G53_PzI/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G53_PzI/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G53_PzI/crash/lod0/Turret_01.model"
+         },
+         "price" : "310.0",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "2.0",
+            "maxHealth" : 40,
+            "maxRegenHealth" : 20
+         },
+         "circularVisionRadius" : 310,
+         "tags" : "AAAAAAAAAAAA",
+         "weight" : 600,
+         "camouflage" : {
+            "tiling" : "1 0.5 0.000000 0.000000"
+         },
+         "level" : 1,
+         "physicsShape" : "1.014 -0.029 1.095 0.017 0.450 0.248 0.473 0.769 0.337 0.500 0.153 0.500 0.190 0.352 0.127",
+         "primaryArmor" : "armor_2 armor_3 armor_4"
+      }
+   },
+   "engines" : {
+      "Maybach_NL38TR" : "shared",
+      "Krupp_M305" : "shared"
+   },
+   "crew" : {
+      "commander" : "gunner\n\n\t\t\tradioman\n\n\t\t\tloader",
+      "driver" : {}
+   },
+   "invisibility" : {
+      "firePenalty" : "0.438",
+      "moving" : "0.219",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1",
+      "still" : "0.292"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Krupp_M305" : {
+               "smplEnginePower" : "63.43687"
+            },
+            "Maybach_NL38TR" : {
+               "smplEnginePower" : "105.7281"
+            }
+         },
+         "chassis" : {
+            "Chassis_PzI" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_PzI_2" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : 40,
+      "backward" : 15
+   },
+   "radios" : {
+      "FuG5" : "shared"
+   }
+}

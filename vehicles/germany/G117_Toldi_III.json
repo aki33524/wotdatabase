@@ -1,0 +1,476 @@
+{
+   "engines" : {
+      "Ganz_VIII_VGT_107" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G117_Toldi_III" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Ganz_VIII_VGT_107" : {
+               "smplEnginePower" : "163.8786"
+            }
+         }
+      }
+   },
+   "radios" : {
+      "R_5a" : "shared"
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "0.6"
+   },
+   "invisibility" : {
+      "moving" : "0.338",
+      "firePenalty" : "0.507",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "still" : "0.338"
+   },
+   "crewXpFactor" : "1.5",
+   "turrets0" : {
+      "Turret_1_G117_Toldi_III" : {
+         "maxHealth" : 46,
+         "primaryArmor" : "armor_12 armor_3 armor_4",
+         "yawLimits" : "-180 180",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-0.45365 0.325158 -0.257324",
+                  "rayStart" : "-1 0 -0",
+                  "size" : "0.24",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1 0 -0",
+                  "rayEnd" : "0.45365 0.325158 -0.257324",
+                  "size" : "0.24",
+                  "isMirrored" : true
+               }
+            ]
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 40,
+            "maxHealth" : 80
+         },
+         "tags" : {},
+         "rotationSpeed" : 30,
+         "price" : 2000,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G117_Toldi_III/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G117_Toldi_III/collision/Turret_01.model"
+         },
+         "physicsShape" : "0.913 0.051 0.964 0.000 0.472 0.182 0.739 0.595 0.252 0.500 0.275 0.500 0.000 0.500 0.000",
+         "camouflage" : {
+            "tiling" : "2.8 1.66 0.000000 0.000000"
+         },
+         "armor" : {
+            "armor_4" : 25,
+            "armor_8" : "",
+            "armor_12" : 35,
+            "armor_5" : 10,
+            "armor_1" : 20,
+            "armor_6" : 6,
+            "armor_9" : 13,
+            "armor_7" : 13,
+            "armor_10" : 10,
+            "armor_3" : 25,
+            "armor_2" : 25,
+            "armor_11" : 13
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 30,
+            "maxHealth" : 60,
+            "repairCost" : "1.0"
+         },
+         "level" : 3,
+         "showEmblemsOnGun" : false,
+         "weight" : 2000,
+         "notInShop" : true,
+         "circularVisionRadius" : 270,
+         "models" : {
+            "exploded" : "vehicles/german/G117_Toldi_III/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G117_Toldi_III/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G117_Toldi_III/crash/lod0/Turret_01.model"
+         },
+         "userString" : "#germany_vehicles:Turret_1_G117_Toldi_III",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "gunPosition" : "-0 0 1",
+         "guns" : {
+            "_40mm_37_42_M_L45_A" : "shared"
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "emblems" : {
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88",
+      "default" : "germany_cross"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.592518163"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "small"
+   },
+   "chassis" : {
+      "Chassis_G117_Toldi_III" : {
+         "level" : 3,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.3",
+            "vehicleMovement" : "0.3"
+         },
+         "armor" : {
+            "leftTrack" : 10,
+            "rightTrack" : 10
+         },
+         "navmeshGirth" : "6.0",
+         "wwsoundNPC" : "trds_chf_npc",
+         "trackNodes" : {
+            "enable" : true,
+            "maxAmplitude" : "0.3",
+            "elasticity" : 1300,
+            "node" : [
+               {
+                  "forwardElastK" : "1.99",
+                  "isLeft" : true,
+                  "offset" : "-0.012",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : 1,
+                  "offset" : "-0.012",
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.91",
+                  "isLeft" : false
+               },
+               {
+                  "offset" : "-0.012",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.012",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "0.91",
+                  "offset" : "-0.012",
+                  "backwardElastK" : 1,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.012",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.99"
+               },
+               {
+                  "offset" : "-0.012",
+                  "name" : "Track_VT_R1",
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.8",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "offset" : "-0.012",
+                  "name" : "Track_VT_R2"
+               }
+            ],
+            "maxOffset" : "0.3",
+            "damping" : 2,
+            "linkBones" : false,
+            "gravity" : -9
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "wwsoundPC" : "treads_type_pc",
+         "models" : {
+            "exploded" : "vehicles/german/G117_Toldi_III/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G117_Toldi_III/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G117_Toldi_III/normal/lod0/Chassis.model"
+         },
+         "userString" : "#germany_vehicles:Chassis_G117_Toldi_III",
+         "maxRegenHealth" : 55,
+         "brakeForce" : 9500,
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/german/G117_Toldi_III/track/segment.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "left" : "vehicles/german/G117_Toldi_III/track/left.track",
+            "right" : "vehicles/german/G117_Toldi_III/track/right.track",
+            "segmentModelLeft" : "vehicles/german/G117_Toldi_III/track/segment.model",
+            "segmentOffset" : "0.05",
+            "segmentLength" : "0.078",
+            "lodDist" : "MEDIUM"
+         },
+         "rotationIsAroundCenter" : true,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "terrainResistance" : "0.9 1.1 1.7",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G117_Toldi_III/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G117_Toldi_III/collision/Chassis.model"
+         },
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : "12.8571",
+                  "isLeft" : true,
+                  "radius" : "0.41411",
+                  "isLeading" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L3",
+                  "isLeft" : true,
+                  "syncAngle" : "12.8571",
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0.41411",
+                  "syncAngle" : "12.8571",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R3",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : "12.8571"
+               }
+            ],
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 2
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 4,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "count" : 2
+               },
+               {
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 4,
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "hullPosition" : "0 1 -0",
+         "repairCost" : "1.0",
+         "maxClimbAngle" : 25,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.3",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "maxLoad" : 12000,
+         "trackThickness" : "0",
+         "weight" : 2500,
+         "notInShop" : true,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 -0"
+            }
+         },
+         "topRightCarryingPoint" : "0.894914 1.3509",
+         "maxHealth" : 70,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.0499093",
+                  "count" : 5,
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "maxOffset" : "0"
+               },
+               {
+                  "minOffset" : "-0.0499093",
+                  "count" : 5,
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "maxOffset" : "0"
+               }
+            ]
+         },
+         "price" : 2000,
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "lodDist" : "FAR",
+            "size" : "0.32 0.3"
+         },
+         "rotationSpeed" : 45,
+         "tags" : {}
+      }
+   },
+   "premiumVehicleXPFactor" : "0.6",
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 45
+   },
+   "repairCost" : "2.5",
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "crew" : {
+      "gunner" : "loader",
+      "driver" : {},
+      "commander" : "AAAAAAAA"
+   },
+   "hull" : {
+      "swinging" : {
+         "rollParams" : "1.00 0.30 32.00 0.38 1.00 0.06 0.34",
+         "sensitivityToImpulse" : "0.78",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.30 32.00 0.38 1.00 0.06 0.34"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G117_Toldi_III/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G117_Toldi_III/collision/Hull.model"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_small"
+      },
+      "weight" : 3938,
+      "hangarShadowTexture" : "vehicles/german/G117_Toldi_III/Toldi_III_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.26",
+            "rayEnd" : "0.262252 -0.0567218 1.97876",
+            "rayStart" : "0.262252 0.112142 2.08594",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : true
+         },
+         "inscription" : [
+            {
+               "rayEnd" : "-0.341332 -0.0622203 1.98749",
+               "rayStart" : "-0.341332 0.106644 2.09466",
+               "size" : "0.509",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 0.000000 -1"
+            },
+            {
+               "rayEnd" : "1 0 1",
+               "rayStart" : "0.902041 0.336547 0.85176",
+               "size" : "0.421",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            }
+         ]
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G117_Toldi_III/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G117_Toldi_III/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G117_Toldi_III/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxHealth" : 100,
+         "maxRegenHealth" : 80
+      },
+      "armor" : {
+         "armor_4" : 10,
+         "armor_5" : 6,
+         "armor_8" : "",
+         "armor_9" : 6,
+         "armor_10" : 6,
+         "armor_3" : 13,
+         "armor_7" : 35,
+         "armor_6" : 6,
+         "armor_1" : 35,
+         "armor_11" : 35,
+         "armor_2" : 20
+      },
+      "camouflage" : {
+         "tiling" : "4 4 0.000000 0.000000"
+      },
+      "turretPositions" : {
+         "turret" : "-0 0 0"
+      },
+      "maxHealth" : 184,
+      "primaryArmor" : "armor_1 armor_3 armor_4"
+   }
+}

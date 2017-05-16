@@ -1,0 +1,490 @@
+{
+   "camouflage" : {
+      "tiling" : "1 1 0.000000 0.000000",
+      "priceFactor" : "1.6",
+      "exclusionMask" : {}
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "invisibility" : {
+      "firePenalty" : "0.285",
+      "camouflageBonus" : "0.03",
+      "still" : "0.19",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.143"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.97400431"
+   },
+   "radios" : {
+      "SCR_528A" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_M4A1_Revalorise" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Cummins_VT8-460" : {
+               "smplEnginePower" : 550
+            }
+         }
+      }
+   },
+   "engines" : {
+      "Cummins_VT8-460" : "shared"
+   },
+   "repairCost" : "6.0",
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "loader" : {},
+      "driver" : {},
+      "gunner" : {}
+   },
+   "turrets0" : {
+      "Turret_1_M4A1_Revalorise" : {
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/french/F73_M4A1_Revalorise/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/french/F73_M4A1_Revalorise/collision/Turret_01.model"
+         },
+         "maxHealth" : 280,
+         "level" : 8,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "circularVisionRadius" : 390,
+         "tags" : {},
+         "price" : 30000,
+         "rotationSpeed" : 42,
+         "physicsShape" : "0.937 -0.051 0.943 0.000 0.392 0.392 0.823 0.500 0.418 0.500 0.000 0.500 0.000 0.500 0.000",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "gunPosition" : "0 0 1",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayStart" : "-1 0 1",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 0",
+                  "size" : "0.22"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayStart" : "1 0 1",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 0",
+                  "size" : "0.22"
+               }
+            ],
+            "inscription" : {
+               "size" : "0.55",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1 1 -0",
+               "rayStart" : "1.06862 0.591934 -0.439505"
+            }
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "userString" : "#france_vehicles:Turret_1_M4A1_Revalorise",
+         "camouflage" : {
+            "tiling" : "0.88 0.88 0.34 0.76"
+         },
+         "guns" : {
+            "_105mm_D1504_L51" : "shared"
+         },
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "models" : {
+            "undamaged" : "vehicles/french/F73_M4A1_Revalorise/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/french/F73_M4A1_Revalorise/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/french/F73_M4A1_Revalorise/crash/lod0/Turret_01.model"
+         },
+         "notInShop" : true,
+         "showEmblemsOnGun" : false,
+         "weight" : 6000,
+         "armor" : {
+            "armor_3" : "63.5",
+            "armor_1" : "63.5",
+            "armor_7" : "44.5",
+            "armor_8" : "",
+            "armor_2" : "63.5",
+            "armor_9" : "38.1",
+            "armor_5" : "25.4",
+            "armor_4" : "63.5",
+            "armor_10" : "19.1",
+            "armor_6" : "25.4"
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : 40,
+      "backward" : 16
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "hull" : {
+      "swinging" : {
+         "pitchParams" : "0.26 36.00 0.42 1.00 0.05 0.32",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.26 36.00 0.42 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.36"
+      },
+      "models" : {
+         "exploded" : "vehicles/french/F73_M4A1_Revalorise/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/french/F73_M4A1_Revalorise/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/french/F73_M4A1_Revalorise/normal/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_8" : "",
+         "armor_11" : "25.4",
+         "armor_1" : "50.8",
+         "armor_13" : "34.9",
+         "armor_2" : "50.8",
+         "armor_16" : "31.8",
+         "armor_10" : "38.1",
+         "armor_6" : "12.7",
+         "armor_14" : "63.5",
+         "armor_7" : "19.1",
+         "armor_3" : "38.1",
+         "armor_12" : "9.5",
+         "armor_4" : "38.1",
+         "armor_5" : "12.7",
+         "armor_15" : "63.5",
+         "armor_9" : "34.9"
+      },
+      "emblemSlots" : {
+         "inscription" : {
+            "size" : "0.52",
+            "rayStart" : "-0.0752983 0.290084 2.28889",
+            "hideIfDamaged" : false,
+            "rayUp" : "0.0766339 -0.00159369 -0.997058",
+            "rayEnd" : "-0.0752983 0.114231 2.19363"
+         },
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "-0.447739 0.662742 1.58307",
+            "rayStart" : "-0.447739 0.789826 1.7375",
+            "size" : "0.22"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "weight" : 17595,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/french/F73_M4A1_Revalorise/collision/Hull.model",
+         "collisionModelClient" : "vehicles/french/F73_M4A1_Revalorise/collision_client/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/french/F73_M4A1_Revalorise/M4A1_Revalorise_HangarShadowMap.dds",
+      "maxHealth" : 1120,
+      "turretPositions" : {
+         "turret" : "-0 1 -0"
+      },
+      "camouflage" : {
+         "tiling" : "1.42 1.42 0.000000 0.75"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 160,
+         "maxHealth" : 240,
+         "repairCost" : "1.0"
+      }
+   },
+   "emblems" : {
+      "default" : "french_rose",
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM"
+   },
+   "crewXpFactor" : "1.5",
+   "chassis" : {
+      "Chassis_M4A1_Revalorise" : {
+         "trackThickness" : "-0.0221",
+         "rotationIsAroundCenter" : false,
+         "maxClimbAngle" : 25,
+         "models" : {
+            "exploded" : "vehicles/french/F73_M4A1_Revalorise/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/french/F73_M4A1_Revalorise/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/french/F73_M4A1_Revalorise/normal/lod0/Chassis.model"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "maxOffset" : "0.06",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "count" : 6,
+                  "minOffset" : "-0.06",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "trackNodes" : {
+            "linkBones" : false,
+            "damping" : 2,
+            "gravity" : "-9.8",
+            "maxAmplitude" : "0.05",
+            "maxOffset" : "0.05",
+            "node" : [
+               {
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "backwardElastK" : 2,
+                  "forwardElastK" : "0.7",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.7",
+                  "forwardElastK" : 2
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L0",
+                  "offset" : "-0.04",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_L1",
+                  "offset" : "-0.04"
+               },
+               {
+                  "offset" : "-0.04",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "1.3",
+                  "backwardElastK" : "0.8",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.04",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : 2
+               },
+               {
+                  "isLeft" : false,
+                  "offset" : "-0.04",
+                  "forwardElastK" : "1.6",
+                  "backwardElastK" : "0.8",
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "offset" : "-0.04",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.8",
+                  "forwardElastK" : "1.3",
+                  "isLeft" : false
+               }
+            ],
+            "elasticity" : 1200,
+            "enable" : true
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.16",
+            "vehicleRotation" : "0.16"
+         },
+         "userString" : "#france_vehicles:Chassis_M4A1_Revalorise",
+         "wwsoundNPC" : "trds_chf_npc",
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0 1 0",
+         "level" : 8,
+         "maxHealth" : 240,
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "WD_R"
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 6,
+                  "startIndex" : "",
+                  "radius" : "0.254",
+                  "template" : "W_R"
+               },
+               {
+                  "count" : 3,
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "template" : "WD_L"
+               },
+               {
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "radius" : "0.254"
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "radius" : "0.2995",
+                  "name" : "WD_R4"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "radius" : "0.2995",
+                  "name" : "WD_L4"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/french/F73_M4A1_Revalorise/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/french/F73_M4A1_Revalorise/collision_client/Chassis.model"
+         },
+         "weight" : 8000,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "notInShop" : true,
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.4 0.46",
+            "bufferPrefs" : "mediumTank",
+            "textureSet" : "germany_01"
+         },
+         "navmeshGirth" : "6.0",
+         "bulkHealthFactor" : "3.0",
+         "maxRegenHealth" : 180,
+         "tracks" : {
+            "textureScale" : "-2.25",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "maxLoad" : 40200,
+         "terrainResistance" : "1 1.1 2.1",
+         "rotationSpeed" : 40,
+         "price" : 30000,
+         "tags" : {},
+         "repairCost" : "7.5",
+         "topRightCarryingPoint" : "1.06037 1.89415",
+         "brakeForce" : 35500,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "splineDesc" : {
+            "segment2ModelRight" : "vehicles/french/F73_M4A1_Revalorise/track/segment_2.model",
+            "segment2Offset" : "0.09",
+            "left" : "vehicles/french/F73_M4A1_Revalorise/track/left.track",
+            "segmentModelRight" : "vehicles/french/F73_M4A1_Revalorise/track/segment.model",
+            "segmentOffset" : "0.074",
+            "segment2ModelLeft" : "vehicles/french/F73_M4A1_Revalorise/track/segment_2.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelLeft" : "vehicles/french/F73_M4A1_Revalorise/track/segment.model",
+            "segmentLength" : "0.16",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/french/F73_M4A1_Revalorise/track/right.track"
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 -0"
+            }
+         }
+      }
+   },
+   "premiumVehicleXPFactor" : "0.1"
+}

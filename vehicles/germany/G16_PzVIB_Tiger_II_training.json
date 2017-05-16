@@ -1,0 +1,592 @@
+{
+   "engines" : {
+      "Maybach_HL_230P45_T" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Maybach_HL_230P45_T" : {
+               "smplEnginePower" : "792.9609"
+            }
+         },
+         "chassis" : {
+            "PzVIB_Vetstaerktketten_T" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : 28,
+      "backward" : 12
+   },
+   "chassis" : {
+      "PzVIB_Vetstaerktketten_T" : {
+         "notInShop" : true,
+         "topRightCarryingPoint" : "1.39764 2.05133",
+         "traces" : {
+            "size" : "0.6 0.8",
+            "lodDist" : "FAR",
+            "textureSet" : "germany_02",
+            "bufferPrefs" : "mediumTank"
+         },
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G16_PzVIB_Tiger_II_training/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G16_PzVIB_Tiger_II_training/collision_client/Chassis.model"
+         },
+         "weight" : 19000,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 0"
+            }
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "tags" : {},
+         "repairCost" : "5.0",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-1.6"
+         },
+         "splineDesc" : {
+            "segmentModelRight" : "vehicles/german/G16_PzVIB_Tiger_II/track/segment1_L.model",
+            "segmentLength" : "0.29",
+            "segment2Offset" : "0.142",
+            "segment2ModelRight" : "vehicles/german/G16_PzVIB_Tiger_II/track/segment2_R.model",
+            "segment2ModelLeft" : "vehicles/german/G16_PzVIB_Tiger_II/track/segment2_L.model",
+            "segmentOffset" : "0.058",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/german/G16_PzVIB_Tiger_II/track/right.track",
+            "left" : "vehicles/german/G16_PzVIB_Tiger_II/track/left.track",
+            "segmentModelLeft" : "vehicles/german/G16_PzVIB_Tiger_II/track/segment1_R.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            }
+         },
+         "level" : 8,
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.19",
+            "vehicleMovement" : "0.19"
+         },
+         "hullPosition" : "0.000000 1.18716 0.000000",
+         "models" : {
+            "exploded" : "vehicles/german/G16_PzVIB_Tiger_II_training/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G16_PzVIB_Tiger_II_training/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G16_PzVIB_Tiger_II_training/crash/lod0/Chassis.model"
+         },
+         "navmeshGirth" : "6.0",
+         "rotationIsAroundCenter" : true,
+         "terrainResistance" : "1.1 1.4 2.3",
+         "trackThickness" : "-0.0288",
+         "userString" : "#germany_vehicles:PzVIB_Vetstaerktketten",
+         "rotationSpeed" : 26,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "minOffset" : "-0",
+                  "maxOffset" : "0.0995893",
+                  "count" : 9,
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : false,
+                  "minOffset" : "-0.1",
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "maxOffset" : "0.1",
+                  "count" : 9
+               }
+            ]
+         },
+         "drivingWheels" : "WD_L0 WD_L1",
+         "shortUserString" : "#germany_vehicles:PzVIB_Vetstaerktketten_short",
+         "maxHealth" : 240,
+         "price" : "37520.0",
+         "brakeForce" : 36500,
+         "maxLoad" : 72970,
+         "trackNodes" : {
+            "enable" : true,
+            "elasticity" : 1094,
+            "maxOffset" : "0.1",
+            "offset" : "0",
+            "node" : [
+               {
+                  "forwardElastK" : "0.89",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.5",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "backwardElastK" : "1.5",
+                  "isLeft" : true,
+                  "forwardElastK" : "0.89"
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VD_R1"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "offset" : "-0.18",
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1",
+                  "forwardElastK" : "1.6",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.89"
+               },
+               {
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_L0",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.98",
+                  "rightSibling" : "Track_VT_L2",
+                  "name" : "Track_VT_L1",
+                  "offset" : "-0.232"
+               },
+               {
+                  "rightSibling" : "Track_VT_L3",
+                  "forwardElastK" : "1.9",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "backwardElastK" : "0.89",
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.245"
+               },
+               {
+                  "isLeft" : true,
+                  "forwardElastK" : "1.79",
+                  "rightSibling" : "Track_VT_L4",
+                  "leftSibling" : "Track_VT_L2",
+                  "backwardElastK" : "0.89",
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.252"
+               },
+               {
+                  "name" : "Track_VT_L4",
+                  "offset" : "-0.252",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.7",
+                  "rightSibling" : "Track_VT_L5",
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_L3"
+               },
+               {
+                  "offset" : "-0.232",
+                  "name" : "Track_VT_L5",
+                  "forwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_L6",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_L4"
+               },
+               {
+                  "offset" : "-0.212",
+                  "name" : "Track_VT_L6",
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_L5",
+                  "forwardElastK" : "1.5",
+                  "rightSibling" : "Track_VT_L7",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "rightSibling" : "Track_VT_L8",
+                  "forwardElastK" : "1.41",
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_L6",
+                  "name" : "Track_VT_L7",
+                  "offset" : "-0.175"
+               },
+               {
+                  "offset" : "-0.129",
+                  "name" : "Track_VT_L8",
+                  "leftSibling" : "Track_VT_L7",
+                  "backwardElastK" : "0.89",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.3"
+               },
+               {
+                  "backwardElastK" : "0.89",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_R1",
+                  "offset" : "-0.18",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "offset" : "-0.232",
+                  "name" : "Track_VT_R1",
+                  "leftSibling" : "Track_VT_R0",
+                  "backwardElastK" : "0.89",
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R2",
+                  "forwardElastK" : "1.98"
+               },
+               {
+                  "offset" : "-0.245",
+                  "name" : "Track_VT_R2",
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.9",
+                  "rightSibling" : "Track_VT_R3"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.252",
+                  "forwardElastK" : "1.79",
+                  "rightSibling" : "Track_VT_R4",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_R2"
+               },
+               {
+                  "isLeft" : false,
+                  "rightSibling" : "Track_VT_R5",
+                  "forwardElastK" : "1.7",
+                  "leftSibling" : "Track_VT_R3",
+                  "backwardElastK" : "0.89",
+                  "name" : "Track_VT_R4",
+                  "offset" : "-0.252"
+               },
+               {
+                  "offset" : "-0.232",
+                  "name" : "Track_VT_R5",
+                  "isLeft" : false,
+                  "forwardElastK" : "1.6",
+                  "rightSibling" : "Track_VT_R6",
+                  "leftSibling" : "Track_VT_R4",
+                  "backwardElastK" : "0.89"
+               },
+               {
+                  "name" : "Track_VT_R6",
+                  "offset" : "-0.212",
+                  "forwardElastK" : "1.5",
+                  "rightSibling" : "Track_VT_R7",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.89",
+                  "leftSibling" : "Track_VT_R5"
+               },
+               {
+                  "name" : "Track_VT_R7",
+                  "offset" : "-0.175",
+                  "forwardElastK" : "1.41",
+                  "rightSibling" : "Track_VT_R8",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R6",
+                  "backwardElastK" : "0.89"
+               },
+               {
+                  "isLeft" : false,
+                  "forwardElastK" : "1.3",
+                  "leftSibling" : "Track_VT_R7",
+                  "backwardElastK" : "0.89",
+                  "name" : "Track_VT_R8",
+                  "offset" : "-0.129"
+               }
+            ],
+            "backwardElastK" : 1,
+            "forwardElastK" : 1,
+            "gravity" : "-9.8",
+            "linkBones" : true,
+            "damping" : 2,
+            "maxAmplitude" : "0.1"
+         },
+         "armor" : {
+            "leftTrack" : "",
+            "rightTrack" : ""
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "group" : [
+               {
+                  "count" : 9,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "radius" : "0.435"
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "radius" : "0.435",
+                  "count" : 9,
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "radius" : "0.45857",
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "syncAngle" : 40
+               },
+               {
+                  "syncAngle" : 40,
+                  "name" : "WD_R1",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.45857",
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : 40
+               },
+               {
+                  "name" : "WD_L1",
+                  "syncAngle" : 40,
+                  "radius" : "0",
+                  "isLeading" : true,
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxRegenHealth" : 180
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "1.6"
+   },
+   "clientAdjustmentFactors" : {},
+   "turrets0" : {
+      "PzVIB_Porsche_Turm_T" : {
+         "gunPosition" : "0.000000 0.4625 1.5291",
+         "notInShop" : true,
+         "rotationSpeed" : 30,
+         "circularVisionRadius" : 400,
+         "weight" : 11200,
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G16_PzVIB_Tiger_II_training/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G16_PzVIB_Tiger_II_training/collision/Turret_01.model"
+         },
+         "maxHealth" : 100,
+         "shortUserString" : "#germany_vehicles:PzVIB_Porsche_Turm_short",
+         "price" : "28320.0",
+         "turretRotatorHealth" : {
+            "maxHealth" : 150,
+            "maxRegenHealth" : 75,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_3" : 65,
+            "armor_13" : 200,
+            "armor_16" : 65,
+            "armor_15" : 200,
+            "armor_5" : "",
+            "armor_12" : 200,
+            "armor_11" : 60,
+            "armor_6" : 200,
+            "armor_9" : "",
+            "armor_1" : 200,
+            "armor_7" : 20,
+            "armor_10" : 200,
+            "armor_2" : 200,
+            "armor_8" : 25,
+            "armor_4" : 20
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "level" : 8,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "-1 0 1",
+                  "size" : "0.32",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 1 1"
+               },
+               {
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "1 0 1",
+                  "rayStart" : "1 1 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32"
+               }
+            ],
+            "inscription" : {
+               "hideIfDamaged" : true,
+               "rayEnd" : "1 0 -1",
+               "size" : "0.78",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "1 1 -1"
+            }
+         },
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "2.0",
+            "maxRegenHealth" : 50
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "physicsShape" : "0.979 -0.088 1.064 0.000 0.842 -0.070 1.000 0.622 0.322 0.500 0.420 0.500 0.149 1.000 0.000",
+         "models" : {
+            "destroyed" : "vehicles/german/G16_PzVIB_Tiger_II_training/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G16_PzVIB_Tiger_II_training/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G16_PzVIB_Tiger_II_training/normal/lod0/Turret_01.model"
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#germany_vehicles:PzVIB_Porsche_Turm",
+         "camouflage" : {
+            "tiling" : "0.7 0.7 0.000000 0.000000"
+         },
+         "guns" : {
+            "_88mm_KwK_43_L71_T" : "shared"
+         }
+      }
+   },
+   "radios" : {
+      "FuG5_T" : "shared"
+   },
+   "emblems" : {
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.82"
+   },
+   "crewXpFactor" : "1.0",
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "repairCost" : "7.524",
+   "hull" : {
+      "armor" : {
+         "armor_1" : 200,
+         "armor_9" : "",
+         "armor_11" : 25,
+         "armor_6" : 40,
+         "armor_4" : 20,
+         "armor_8" : 40,
+         "armor_2" : 200,
+         "armor_7" : 40,
+         "armor_5" : 65,
+         "armor_3" : 65,
+         "armor_12" : 40
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "maxHealth" : 700,
+      "turretPositions" : {
+         "turret" : "0.000000 0.682545 -0.1731"
+      },
+      "weight" : 33400,
+      "models" : {
+         "destroyed" : "vehicles/german/G16_PzVIB_Tiger_II_training/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G16_PzVIB_Tiger_II_training/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G16_PzVIB_Tiger_II_training/crash/lod0/Hull.model"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G16_PzVIB_Tiger_II_training/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G16_PzVIB_Tiger_II_training/collision/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/german/G16_PzVIB_Tiger_II/PzVIB_Tiger_II_HangarShadowMap.dds",
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 150,
+         "maxHealth" : 220
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.22",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26",
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "inscription" : {
+            "hideIfDamaged" : false,
+            "rayEnd" : "-0.0289962 -0.0332205 2.89737",
+            "rayStart" : "-0.0289963 0.277136 3.1497",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.78"
+         },
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayEnd" : "-1.03489 0.402678 2.51943",
+            "size" : "0.32",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayStart" : "-1.03478 0.557954 2.64548"
+         }
+      }
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "crew" : {
+      "driver" : {},
+      "gunner" : {},
+      "loader" : {},
+      "radioman" : {},
+      "commander" : {}
+   },
+   "invisibility" : {
+      "moving" : "0.02",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.05",
+      "firePenalty" : "0.3",
+      "still" : "0.08"
+   }
+}

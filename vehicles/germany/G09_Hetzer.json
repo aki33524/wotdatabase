@@ -1,0 +1,710 @@
+{
+   "emblems" : {
+      "alpha" : "0.82",
+      "lodDist" : "MEDIUM",
+      "default" : "germany_cross"
+   },
+   "engines" : {
+      "Tatra_V-103" : "shared",
+      "Scania_Vabis1664" : "shared",
+      "Praga_TN_100" : "shared",
+      "Praga_TNPS" : "shared"
+   },
+   "invisibility" : {
+      "firePenalty" : "0.632",
+      "camouflageNetBonus" : "0.15",
+      "camouflageBonus" : "0.04",
+      "still" : "0.421",
+      "moving" : "0.253"
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/german/G09_Hetzer/Hetzer_chassis_01_AM.dds",
+      "priceFactor" : "0.8"
+   },
+   "crewXpFactor" : "1.0",
+   "clientAdjustmentFactors" : {
+      "armour" : "1.049737287"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Praga_TNPS" : {
+               "smplEnginePower" : "126.8737"
+            },
+            "Tatra_V-103" : {
+               "smplEnginePower" : "232.6019"
+            },
+            "Praga_TN_100" : {
+               "smplEnginePower" : "105.7281"
+            },
+            "Scania_Vabis1664" : {
+               "smplEnginePower" : "174.4514"
+            }
+         },
+         "chassis" : {
+            "Hetzer_Ausf_B" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            },
+            "Hetzer_Ausf_A" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1288"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "turrets0" : {
+      "Hetzer_0" : {
+         "gunPosition" : "0 0 0",
+         "circularVisionRadius" : 260,
+         "showEmblemsOnGun" : false,
+         "armor" : {
+            "armor_1" : ""
+         },
+         "emblemSlots" : {},
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "guns" : {
+            "_75mm_StuK_40_L43" : "shared",
+            "_105mm_StuH42_L28" : "shared",
+            "_75mm_PaK_39_L48" : "shared"
+         },
+         "level" : 4,
+         "camouflage" : {
+            "tiling" : "2.74 2.74 0.000000 0.000000"
+         },
+         "userString" : "#germany_vehicles:Hetzer_0",
+         "weight" : "",
+         "tags" : "AAAAAAAAAAAA",
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G09_Hetzer/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G09_Hetzer/collision_client/Turret_01.model"
+         },
+         "price" : 100,
+         "maxHealth" : 54,
+         "wwturretRotatorSoundManual" : "tur_man_trav_04",
+         "rotationSpeed" : 44,
+         "models" : {
+            "undamaged" : "vehicles/german/G09_Hetzer/normal/lod0/turret_01.model",
+            "destroyed" : "vehicles/german/G09_Hetzer/crash/lod0/turret_01.model",
+            "exploded" : "vehicles/german/G09_Hetzer/crash/lod0/turret_01.model"
+         }
+      }
+   },
+   "chassis" : {
+      "Hetzer_Ausf_B" : {
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0.35",
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : 18,
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0.105",
+                  "isLeft" : true,
+                  "name" : "WD_L1",
+                  "syncAngle" : 45,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.31",
+                  "name" : "WD_L2",
+                  "isLeft" : true,
+                  "syncAngle" : 18
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 18,
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "radius" : "0.35"
+               },
+               {
+                  "isLeading" : true,
+                  "syncAngle" : 45,
+                  "radius" : "0.105",
+                  "name" : "WD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.31",
+                  "isLeft" : false,
+                  "name" : "WD_R2",
+                  "syncAngle" : 18
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 4,
+                  "isLeft" : true,
+                  "radius" : "0.425",
+                  "template" : "W_L",
+                  "startIndex" : ""
+               },
+               {
+                  "count" : 4,
+                  "radius" : "0.425",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.12",
+                  "count" : 4,
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "maxOffset" : "0.1"
+               },
+               {
+                  "count" : 4,
+                  "minOffset" : "-0.12039",
+                  "maxOffset" : "0.1",
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G09_Hetzer/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G09_Hetzer/collision/Chassis.model"
+         },
+         "maxLoad" : 18500,
+         "rotationSpeed" : 30,
+         "trackThickness" : "-0.013",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "userString" : "#germany_vehicles:Hetzer_Ausf_B",
+         "maxClimbAngle" : 25,
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "terrainResistance" : "1.1 1.5 2.5",
+         "bulkHealthFactor" : "3.0",
+         "wwsoundPC" : "treads_type_pc",
+         "drivingWheels" : "WD_L0 WD_L2",
+         "traces" : {
+            "textureSet" : "germany_01",
+            "size" : "0.4 0.34",
+            "bufferPrefs" : "smallTank",
+            "lodDist" : "FAR"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.23",
+            "vehicleRotation" : "0.23"
+         },
+         "maxHealth" : 80,
+         "price" : 4370,
+         "models" : {
+            "undamaged" : "vehicles/german/G09_Hetzer/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G09_Hetzer/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G09_Hetzer/crash/lod0/Chassis.model"
+         },
+         "trackNodes" : {
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "maxAmplitude" : "0.15",
+            "maxOffset" : "0.15",
+            "gravity" : "-9.8",
+            "elasticity" : 1100,
+            "enable" : true,
+            "damping" : 2,
+            "linkBones" : false
+         },
+         "topRightCarryingPoint" : "1.09528 1.47148",
+         "level" : 4,
+         "weight" : 2500,
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "segmentModelLeft" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "segmentOffset" : "0.03",
+            "segment2ModelRight" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/german/G09_Hetzer/track/left.track",
+            "segmentLength" : "0.104",
+            "right" : "vehicles/german/G09_Hetzer/track/right.track",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segment2ModelLeft" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "segmentModelRight" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "segment2Offset" : "0"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.1",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "repairCost" : "0.5",
+         "maxRegenHealth" : 60,
+         "brakeForce" : 33000,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "hullPosition" : "0 1 0"
+      },
+      "Hetzer_Ausf_A" : {
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "lodDist" : "MEDIUM",
+            "segment2ModelRight" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "segmentOffset" : "0.03",
+            "segmentModelLeft" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "segment2Offset" : "0",
+            "segment2ModelLeft" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "segmentModelRight" : "vehicles/german/G09_Hetzer/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segmentLength" : "0.104",
+            "right" : "vehicles/german/G09_Hetzer/track/right.track",
+            "left" : "vehicles/german/G09_Hetzer/track/left.track"
+         },
+         "trackNodes" : {
+            "enable" : true,
+            "damping" : 2,
+            "linkBones" : false,
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R1"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R1"
+               }
+            ],
+            "maxAmplitude" : "0.15",
+            "maxOffset" : "0.15",
+            "elasticity" : 1100,
+            "gravity" : "-9.8"
+         },
+         "topRightCarryingPoint" : "1.09528 1.47148",
+         "level" : 3,
+         "weight" : 2500,
+         "models" : {
+            "destroyed" : "vehicles/german/G09_Hetzer/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G09_Hetzer/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G09_Hetzer/normal/lod0/Chassis.model"
+         },
+         "price" : 1950,
+         "maxHealth" : 70,
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "unlocks" : {
+            "chassis" : "Hetzer_Ausf_B"
+         },
+         "hullPosition" : "0 1 0",
+         "repairCost" : "0.5",
+         "maxRegenHealth" : 55,
+         "brakeForce" : 33000,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-3.1",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "tags" : {},
+         "terrainResistance" : "1.3 1.6 2.9",
+         "rotationIsAroundCenter" : true,
+         "trackThickness" : "-0.013",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "userString" : "#germany_vehicles:Hetzer_Ausf_A",
+         "rotationSpeed" : 28,
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0.35",
+                  "syncAngle" : 18
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L1",
+                  "isLeft" : true,
+                  "radius" : "0.105",
+                  "syncAngle" : 45
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_L2",
+                  "isLeft" : true,
+                  "radius" : "0.31",
+                  "syncAngle" : 18
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0.35",
+                  "syncAngle" : 18
+               },
+               {
+                  "syncAngle" : 45,
+                  "name" : "WD_R1",
+                  "isLeft" : false,
+                  "radius" : "0.105",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R2",
+                  "radius" : "0.31",
+                  "syncAngle" : 18
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0.425",
+                  "isLeft" : true,
+                  "startIndex" : "",
+                  "template" : "W_L",
+                  "count" : 4
+               },
+               {
+                  "count" : 4,
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "radius" : "0.425",
+                  "isLeft" : false
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G09_Hetzer/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G09_Hetzer/collision_client/Chassis.model"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "startIndex" : "",
+                  "maxOffset" : "0.1",
+                  "minOffset" : "-0.12",
+                  "count" : 4
+               },
+               {
+                  "minOffset" : "-0.12039",
+                  "count" : 4,
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "maxOffset" : "0.1",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "maxLoad" : 16800,
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.4 0.34",
+            "textureSet" : "germany_01"
+         },
+         "drivingWheels" : "WD_L0 WD_L2",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.25",
+            "vehicleMovement" : "0.25"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "bulkHealthFactor" : "3.0"
+      }
+   },
+   "repairCost" : "4.75",
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "speedLimits" : {
+      "forward" : 42,
+      "backward" : 11
+   },
+   "crew" : {
+      "loader" : {},
+      "driver" : {},
+      "gunner" : {},
+      "commander" : "AAAAAAAA"
+   },
+   "hull" : {
+      "turretPositions" : {
+         "turret" : "0.35421 0.446651 1.37028"
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G09_Hetzer/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G09_Hetzer/crash/lod0/Hull.model",
+         "exploded" : "vehicles/german/G09_Hetzer/crash/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 125,
+         "maxRegenHealth" : 85,
+         "repairCost" : "1.0"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G09_Hetzer/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G09_Hetzer/collision_client/Hull.model"
+      },
+      "maxHealth" : 216,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "armor" : {
+         "armor_3" : 20,
+         "armor_5" : 8,
+         "armor_8" : "",
+         "armor_9" : 40,
+         "armor_2" : 60,
+         "armor_4" : 8,
+         "armor_7" : 8,
+         "armor_1" : 60,
+         "armor_16" : 13
+      },
+      "hangarShadowTexture" : "vehicles/german/G09_Hetzer/Hetzer_HangarShadowMap.dds",
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.543442 0.627608 1.72015",
+            "rayEnd" : "-0.543442 0.281195 1.52015",
+            "size" : "0.3",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false
+         },
+         "player" : {
+            "rayStart" : "1.18002 0.688233 0.363575",
+            "rayEnd" : "1 0 0",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true,
+            "isMirrored" : true,
+            "size" : "0.3"
+         },
+         "inscription" : {
+            "rayStart" : "-1.16062 0.711344 0.319466",
+            "rayEnd" : "-1 0 0",
+            "size" : "0.78",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : true
+         }
+      },
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.26 32.00 0.38 1.00 0.05 0.29",
+         "sensitivityToImpulse" : "0.7",
+         "pitchParams" : "0.26 32.00 0.38 1.00 0.05 0.29"
+      },
+      "weight" : 11600
+   },
+   "radios" : {
+      "FuG10" : "shared",
+      "FuG37" : "shared",
+      "FuG11" : "shared"
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   }
+}

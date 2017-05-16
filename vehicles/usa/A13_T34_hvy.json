@@ -1,0 +1,479 @@
+{
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "crewXpFactor" : "1.5",
+   "invisibility" : {
+      "camouflageBonus" : "0.02",
+      "camouflageNetBonus" : "0.05",
+      "moving" : "0.034",
+      "still" : "0.069",
+      "firePenalty" : "0.104"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.968169405"
+   },
+   "engines" : {
+      "Continental_AV-1790-3A1" : "shared"
+   },
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 35
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "clan" : {
+            "size" : "0.29",
+            "rayEnd" : "-0.00251027 -0.26826 3.10255",
+            "hideIfDamaged" : true,
+            "rayStart" : "0.00270577 0.0527065 3.34119",
+            "rayUp" : "0.000000 0.000000 -1"
+         }
+      },
+      "hangarShadowTexture" : "vehicles/american/A13_T34_hvy/T34_hvy_HangarShadowMap.dds",
+      "swinging" : {
+         "rollParams" : "1.00 0.26 38.00 0.34 1.00 0.04 0.27",
+         "sensitivityToImpulse" : "0.2",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.10 38.00 0.34 1.00 0.04 0.27"
+      },
+      "maxHealth" : 1200,
+      "camouflage" : {
+         "tiling" : "1.18 1.18 0.06 0.000000"
+      },
+      "models" : {
+         "destroyed" : "vehicles/american/A13_T34_hvy/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A13_T34_hvy/normal/lod0/Hull.model",
+         "exploded" : "vehicles/american/A13_T34_hvy/crash/lod0/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "ammoBayHealth" : {
+         "maxHealth" : 240,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 160
+      },
+      "armor" : {
+         "armor_6" : 38,
+         "armor_7" : 25,
+         "armor_3" : 76,
+         "armor_5" : 51,
+         "armor_4" : 51,
+         "armor_8" : "",
+         "armor_2" : 70,
+         "armor_10" : 30,
+         "armor_12" : 38,
+         "armor_1" : 102,
+         "armor_9" : 19,
+         "armor_16" : 122
+      },
+      "weight" : 38100,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A13_T34_hvy/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A13_T34_hvy/collision_client/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 0.578733 0.58255"
+      },
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_AV-1790-3A1" : {
+               "smplEnginePower" : "856.3977"
+            }
+         },
+         "chassis" : {
+            "T80E3" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "emblems" : {
+      "alpha" : "0.82",
+      "default" : "usa_star",
+      "lodDist" : "MEDIUM"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "crew" : {
+      "loader" : [
+         {},
+         {}
+      ],
+      "driver" : {},
+      "gunner" : {},
+      "radioman" : {},
+      "commander" : {}
+   },
+   "repairCost" : "4.5",
+   "turrets0" : {
+      "T34T7" : {
+         "weight" : 12800,
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A13_T34_hvy/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/american/A13_T34_hvy/collision_client/Turret_01.model"
+         },
+         "notInShop" : true,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "models" : {
+            "undamaged" : "vehicles/american/A13_T34_hvy/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A13_T34_hvy/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A13_T34_hvy/crash/lod0/Turret_01.model"
+         },
+         "primaryArmor" : "armor_16 armor_3 armor_4",
+         "physicsShape" : "0.944 -0.058 1.000 0.000 0.941 0.030 0.753 0.703 0.379 0.500 0.082 0.500 0.030 0.000 0.214",
+         "circularVisionRadius" : 380,
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "userString" : "#usa_vehicles:T34T7",
+         "armor" : {
+            "armor_8" : "",
+            "armor_4" : 203,
+            "armor_16" : "279.4",
+            "armor_9" : 51,
+            "armor_14" : "228.6",
+            "armor_10" : 38,
+            "armor_2" : "203.2",
+            "armor_12" : "203.2",
+            "armor_3" : 127,
+            "armor_13" : "139.7",
+            "armor_7" : 127,
+            "armor_6" : 38,
+            "armor_5" : 178,
+            "armor_15" : "215.9",
+            "armor_11" : "228.6",
+            "armor_1" : 178
+         },
+         "price" : 47700,
+         "emblemSlots" : {
+            "inscription" : [
+               {
+                  "size" : "0.7",
+                  "rayEnd" : "1.16112 0.752444 0.0799486",
+                  "rayStart" : "1.35769 0.770281 0.112205",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000"
+               },
+               {
+                  "rayStart" : "-1.36082 0.777315 -0.0549563",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.7",
+                  "rayEnd" : "-1.16158 0.760157 -0.0513832"
+               }
+            ],
+            "player" : [
+               {
+                  "rayStart" : "1.20552 0.815632 -1.17084",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.3",
+                  "rayEnd" : "1.00789 0.796599 -1.14672",
+                  "isMirrored" : true
+               },
+               {
+                  "rayStart" : "-1.17012 0.818005 -1.13947",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.3",
+                  "rayEnd" : "-1.07153 0.80635 -1.12742"
+               }
+            ]
+         },
+         "maxHealth" : 300,
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 75,
+            "maxHealth" : 150
+         },
+         "rotationSpeed" : 18,
+         "guns" : {
+            "_120mm_Gun_T53A1" : "shared"
+         },
+         "camouflage" : {
+            "tiling" : "0.7 0.7 0.12 0.000000"
+         },
+         "gunPosition" : "0.000000 0.474 1.07551",
+         "showEmblemsOnGun" : false,
+         "level" : 9
+      }
+   },
+   "radios" : {
+      "SCR_528A1" : "shared"
+   },
+   "chassis" : {
+      "T80E3" : {
+         "weight" : 10000,
+         "splineDesc" : {
+            "right" : "vehicles/american/A13_T34_hvy/track/right.track",
+            "segmentLength" : "0.141",
+            "segment2ModelLeft" : "vehicles/american/A13_T34_hvy/track/segment2.model",
+            "segmentModelRight" : "vehicles/american/A13_T34_hvy/track/segment1_R.model",
+            "left" : "vehicles/american/A13_T34_hvy/track/left.track",
+            "segment2ModelRight" : "vehicles/american/A13_T34_hvy/track/segment2_R.model",
+            "segment2Offset" : "0.073",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "segmentModelLeft" : "vehicles/american/A13_T34_hvy/track/segment1.model",
+            "segmentOffset" : "0.103"
+         },
+         "bulkHealthFactor" : "3.0",
+         "trackNodes" : {
+            "linkBones" : false,
+            "offset" : "0",
+            "backwardElastK" : 1,
+            "maxAmplitude" : "0.1",
+            "forwardElastK" : 1,
+            "elasticity" : 1248,
+            "maxOffset" : "0.1",
+            "gravity" : "-9.8",
+            "node" : [
+               {
+                  "offset" : "-0.017",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.37",
+                  "isLeft" : true,
+                  "offset" : "-0.017"
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "offset" : "-0.017",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "offset" : "-0.017",
+                  "forwardElastK" : "0.9",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.37"
+               }
+            ],
+            "damping" : 2,
+            "enable" : true
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.28",
+            "vehicleRotation" : "0.28"
+         },
+         "drivingWheels" : "WD_L0 WD_L9",
+         "topRightCarryingPoint" : "1.47979 2.65597",
+         "maxHealth" : 220,
+         "price" : 31500,
+         "terrainResistance" : "1.4 1.7 3.4",
+         "maxLoad" : 71850,
+         "userString" : "#usa_vehicles:T80E3",
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "usa_03",
+            "size" : "0.65 0.72"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 10 0 0 0"
+            }
+         },
+         "navmeshGirth" : "6.0",
+         "level" : 8,
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "models" : {
+            "destroyed" : "vehicles/american/A13_T34_hvy/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/american/A13_T34_hvy/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A13_T34_hvy/normal/lod0/Chassis.model"
+         },
+         "notInShop" : true,
+         "brakeForce" : 39500,
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A13_T34_hvy/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A13_T34_hvy/collision_client/Chassis.model"
+         },
+         "maxRegenHealth" : 165,
+         "maxClimbAngle" : 25,
+         "hullPosition" : "0.000000 1.11556 0.000000",
+         "wwsoundPC" : "treads_type_pc",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "isLeft" : false,
+                  "count" : 7,
+                  "radius" : "0",
+                  "startIndex" : 1,
+                  "template" : "WD_R"
+               },
+               {
+                  "startIndex" : "",
+                  "template" : "W_R",
+                  "count" : 8,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "count" : 7,
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "template" : "WD_L"
+               },
+               {
+                  "template" : "W_L",
+                  "startIndex" : "",
+                  "radius" : "0.3298",
+                  "count" : 8,
+                  "isLeft" : true
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "syncAngle" : 24,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : false,
+                  "name" : "WD_R8",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "WD_R9",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "syncAngle" : 24,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : 24,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L8",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : false
+               },
+               {
+                  "syncAngle" : 24,
+                  "isLeading" : true,
+                  "name" : "WD_L9",
+                  "radius" : "0",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "trackThickness" : "0.0021",
+         "rotationSpeed" : 22,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : -2,
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "rotationIsAroundCenter" : true,
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "template" : "Track_L",
+                  "maxOffset" : "0.0737705",
+                  "isLeft" : true,
+                  "minOffset" : "-0.0737705",
+                  "count" : 8
+               },
+               {
+                  "template" : "Track_R",
+                  "startIndex" : "",
+                  "maxOffset" : "0.0737705",
+                  "count" : 8,
+                  "minOffset" : "-0.0737705",
+                  "isLeft" : false
+               }
+            ]
+         },
+         "repairCost" : "5.0"
+      }
+   },
+   "premiumVehicleXPFactor" : "0.1",
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "camouflage" : {
+      "priceFactor" : "1.6",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {}
+   }
+}

@@ -1,0 +1,348 @@
+{
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "invisibility" : {
+      "moving" : "0.194",
+      "firePenalty" : "0.387",
+      "camouflageBonus" : "0.03",
+      "still" : "0.258",
+      "camouflageNetBonus" : "0.1"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.137880682"
+   },
+   "turrets0" : {
+      "PzIV_Standart" : {
+         "userString" : "#germany_vehicles:PzIV_Standart",
+         "showEmblemsOnGun" : false,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "level" : 5,
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0"
+         },
+         "physicsShape" : "1.148 -0.206 0.914 0.000 0.429 0.139 0.500 1.000 0.320 0.500 0.262 0.500 0.000 0.100 0.000",
+         "shortUserString" : "#germany_vehicles:PzIV_Standart_short",
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G79_Pz_IV_AusfGH/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G79_Pz_IV_AusfGH/collision_client/Turret_01.model"
+         },
+         "circularVisionRadius" : 330,
+         "emblemSlots" : {
+            "player" : {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1 0 0",
+               "hideIfDamaged" : true,
+               "size" : "0.32",
+               "rayStart" : "-1.016 0.440194 0.33678"
+            },
+            "inscription" : {
+               "rayStart" : "1.00911 0.454426 0.337322",
+               "size" : "0.68",
+               "rayEnd" : "1 0 0",
+               "rayUp" : "-0.0019593 0.99951 0.0312263",
+               "hideIfDamaged" : true
+            }
+         },
+         "notInShop" : true,
+         "price" : "8500.0",
+         "guns" : {
+            "Gun_PzIV" : "shared"
+         },
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35
+         },
+         "rotationSpeed" : 44,
+         "armor" : {
+            "armor_2" : 50,
+            "armor_3" : 30,
+            "armor_13" : 30,
+            "armor_7" : 10,
+            "armor_1" : 50,
+            "armor_4" : 30,
+            "armor_5" : 30,
+            "armor_8" : 10,
+            "armor_9" : "",
+            "armor_11" : 10,
+            "armor_12" : "",
+            "armor_10" : 30,
+            "armor_6" : 30
+         },
+         "wwturretRotatorSoundManual" : "tur_man_trav_03",
+         "gunPosition" : "0.000667 0.311264 0.7177",
+         "weight" : 3000,
+         "maxHealth" : 84,
+         "models" : {
+            "undamaged" : "vehicles/german/G79_Pz_IV_AusfGH/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G79_Pz_IV_AusfGH/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G79_Pz_IV_AusfGH/crash/lod0/Turret_01.model"
+         }
+      }
+   },
+   "repairCost" : "5.66",
+   "crew" : {
+      "driver" : {},
+      "loader" : {},
+      "commander" : {},
+      "gunner" : {},
+      "radioman" : {}
+   },
+   "hull" : {
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G79_Pz_IV_AusfGH/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G79_Pz_IV_AusfGH/collision_client/Hull.model"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G79_Pz_IV_AusfGH/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G79_Pz_IV_AusfGH/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G79_Pz_IV_AusfGH/normal/lod0/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 90,
+         "maxHealth" : 150,
+         "repairCost" : "1.0"
+      },
+      "weight" : 11570,
+      "maxHealth" : 336,
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.24314 0.539997 1.92634",
+            "size" : "0.28",
+            "hideIfDamaged" : true,
+            "rayUp" : "0.000000 1 0.000000",
+            "rayEnd" : "0.242963 0.483462 1.53035"
+         }
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_medium"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "armor" : {
+         "armor_3" : 30,
+         "armor_7" : 50,
+         "armor_2" : 80,
+         "armor_5" : 30,
+         "armor_8" : 25,
+         "armor_1" : 80,
+         "armor_4" : 20,
+         "armor_10" : 10,
+         "armor_9" : 12,
+         "armor_11" : "",
+         "armor_6" : 30
+      },
+      "swinging" : {
+         "sensitivityToImpulse" : "0.48",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "turretPositions" : {
+         "turret" : "-0.07 0.8022 -0.1704"
+      },
+      "hangarShadowTexture" : "vehicles/german/G79_Pz_IV_AusfGH/Pz_IV_AusfGH_HangarShadowMap.dds"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/german/G79_Pz_IV_AusfGH/Pz_IV_AusfGH_CM.dds"
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "distanceFactor" : 1,
+      "priceFactor" : 1
+   },
+   "engines" : {
+      "Engine_PzIV" : "shared"
+   },
+   "chassis" : {
+      "PzIV_Ausf_1940" : {
+         "tags" : {},
+         "maxClimbAngle" : 25,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.22",
+            "vehicleRotation" : "0.22"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 4,
+         "navmeshGirth" : "6.0",
+         "userString" : "#germany_vehicles:PzIV_Ausf_1940",
+         "wwsoundPC" : "treads_type_pc",
+         "notInShop" : true,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.82"
+         },
+         "brakeForce" : 24000,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G79_Pz_IV_AusfGH/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/german/G79_Pz_IV_AusfGH/collision_client/Chassis.model"
+         },
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "terrainResistance" : "1.1 1.3 2.7",
+         "maxLoad" : 25400,
+         "rotationIsAroundCenter" : false,
+         "rotationSpeed" : 30,
+         "maxRegenHealth" : 70,
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "price" : "4510.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "size" : "0.44 0.42",
+            "bufferPrefs" : "smallTank",
+            "textureSet" : "germany_01"
+         },
+         "models" : {
+            "exploded" : "vehicles/german/G79_Pz_IV_AusfGH/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G79_Pz_IV_AusfGH/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G79_Pz_IV_AusfGH/crash/lod0/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.20923 1.88969",
+         "weight" : 7800,
+         "maxHealth" : 90,
+         "bulkHealthFactor" : "3.0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0.5",
+                  "name" : "WD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0.5",
+                  "isLeading" : true,
+                  "name" : "WD_L5",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0.5",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0.5",
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "name" : "WD_R5"
+               }
+            ],
+            "group" : [
+               {
+                  "radius" : "0.25",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 8
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0.25",
+                  "template" : "W_R",
+                  "count" : 8,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0.12773",
+                  "startIndex" : 1,
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 4
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 4,
+                  "template" : "WD_R",
+                  "radius" : "0.12773",
+                  "startIndex" : 1
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "repairCost" : "5.0"
+      }
+   },
+   "speedLimits" : {
+      "backward" : 18,
+      "forward" : 48
+   },
+   "radios" : {
+      "Radio_PzIV" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "emblems" : {
+      "default" : "germany_cross",
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "PzIV_Ausf_1940" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.10465"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Engine_PzIV" : {
+               "smplEnginePower" : "338.33"
+            }
+         }
+      }
+   }
+}

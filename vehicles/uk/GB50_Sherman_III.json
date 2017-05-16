@@ -1,0 +1,899 @@
+{
+   "camouflage" : {
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0",
+      "priceFactor" : "1.0"
+   },
+   "radios" : {
+      "N19Mk3" : "shared",
+      "N19Mk2" : "shared",
+      "N19Mk1" : "shared"
+   },
+   "crew" : {
+      "loader" : {},
+      "radioman" : {},
+      "commander" : {},
+      "gunner" : {},
+      "driver" : {}
+   },
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_GB50_Sherman_III_2" : {
+         "rotationIsAroundCenter" : false,
+         "trackThickness" : "-0.0208",
+         "maxClimbAngle" : 25,
+         "wwsoundPC" : "treads_type_pc",
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "weight" : 8000,
+         "repairCost" : "5.0",
+         "hullPosition" : "0 1 0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "maxOffset" : "0.06",
+                  "template" : "Track_L",
+                  "count" : 6,
+                  "minOffset" : "-0.08",
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : "",
+                  "minOffset" : "-0.08",
+                  "isLeft" : false,
+                  "count" : 6,
+                  "maxOffset" : "0.06",
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "level" : 5,
+         "rotationSpeed" : 37,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "brakeForce" : 34000,
+         "maxLoad" : 34000,
+         "terrainResistance" : "0.9 1.1 1.7",
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "models" : {
+            "exploded" : "vehicles/british/GB50_Sherman_III/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB50_Sherman_III/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB50_Sherman_III/normal/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 75,
+         "userString" : "#gb_vehicles:Chassis_GB50_Sherman_III_2",
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.11",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB50_Sherman_III/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB50_Sherman_III/collision/Chassis.model"
+         },
+         "topRightCarryingPoint" : "1.06832 1.93353",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R4",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L4",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "W_R",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 3,
+                  "radius" : "0",
+                  "startIndex" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 6,
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "price" : 8450,
+         "trackNodes" : {
+            "maxOffset" : "0.05",
+            "linkBones" : false,
+            "damping" : 2,
+            "node" : [
+               {
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VD_L0",
+                  "offset" : "-0.056",
+                  "isLeft" : true,
+                  "backwardElastK" : "2.02"
+               },
+               {
+                  "backwardElastK" : "2.02",
+                  "isLeft" : false,
+                  "offset" : "-0.056",
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true,
+                  "offset" : "-0.031",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "2.03"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "2.03",
+                  "offset" : "-0.031",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.7"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "2.01",
+                  "offset" : "-0.031",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.6",
+                  "offset" : "-0.031"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "1.3",
+                  "offset" : "-0.031"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.031"
+               },
+               {
+                  "offset" : "-0.031",
+                  "name" : "Track_VT_R0",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : "1.6",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.031",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.031",
+                  "forwardElastK" : "1.3",
+                  "name" : "Track_VT_R2"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.031"
+               }
+            ],
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1031,
+            "gravity" : "-9.8",
+            "enable" : true
+         },
+         "maxHealth" : 100,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.5 0.48",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02"
+         },
+         "splineDesc" : {
+            "segment2Offset" : "0.069",
+            "segmentLength" : "0.138",
+            "segmentModelRight" : "vehicles/british/GB50_Sherman_III/track/segment1.model",
+            "segmentOffset" : "0.183",
+            "segmentModelLeft" : "vehicles/british/GB50_Sherman_III/track/segment1.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/british/GB50_Sherman_III/track/right.track",
+            "left" : "vehicles/british/GB50_Sherman_III/track/left.track",
+            "segment2ModelLeft" : "vehicles/british/GB50_Sherman_III/track/segment2.model",
+            "segment2ModelRight" : "vehicles/british/GB50_Sherman_III/track/segment2.model"
+         },
+         "tags" : {}
+      },
+      "Chassis_GB50_Sherman_III" : {
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.26",
+            "vehicleMovement" : "0.26"
+         },
+         "terrainResistance" : "1 1.5 2.3",
+         "models" : {
+            "exploded" : "vehicles/british/GB50_Sherman_III/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB50_Sherman_III/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB50_Sherman_III/normal/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 70,
+         "unlocks" : {
+            "chassis" : "Chassis_GB50_Sherman_III_2"
+         },
+         "drivingWheels" : "WD_L0 WD_L4",
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-3.11",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "userString" : "#gb_vehicles:Chassis_GB50_Sherman_III",
+         "wwsoundNPC" : "trds_chf_npc",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "count" : 3,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : "",
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "count" : 6,
+                  "isLeft" : false
+               },
+               {
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "WD_L",
+                  "count" : 3
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "syncAngle" : "27.6923",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "syncAngle" : "27.6923",
+                  "isLeading" : true,
+                  "radius" : "0"
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "1.06832 1.93353",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB50_Sherman_III/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB50_Sherman_III/collision_client/Chassis.model"
+         },
+         "trackNodes" : {
+            "elasticity" : 1031,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "maxAmplitude" : "0.05",
+            "maxOffset" : "0.05",
+            "linkBones" : false,
+            "damping" : 2,
+            "node" : [
+               {
+                  "backwardElastK" : "2.02",
+                  "isLeft" : true,
+                  "offset" : "-0.056",
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : "0.7"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "2.02",
+                  "forwardElastK" : "0.7",
+                  "name" : "Track_VD_R0",
+                  "offset" : "-0.056"
+               },
+               {
+                  "offset" : "-0.031",
+                  "name" : "Track_VD_L1",
+                  "forwardElastK" : "2.03",
+                  "backwardElastK" : "0.7",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "0.7",
+                  "isLeft" : false,
+                  "offset" : "-0.031",
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "2.03"
+               },
+               {
+                  "offset" : "-0.031",
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "2.01",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.6",
+                  "offset" : "-0.031"
+               },
+               {
+                  "name" : "Track_VT_L2",
+                  "forwardElastK" : "1.3",
+                  "offset" : "-0.031",
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.031"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "2.01",
+                  "name" : "Track_VT_R0",
+                  "offset" : "-0.031"
+               },
+               {
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "1.6",
+                  "offset" : "-0.031"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.031",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.3"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "offset" : "-0.031"
+               }
+            ]
+         },
+         "maxHealth" : 90,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "price" : 4450,
+         "splineDesc" : {
+            "segment2Offset" : "0.069",
+            "segmentLength" : "0.138",
+            "segmentModelRight" : "vehicles/british/GB50_Sherman_III/track/segment1.model",
+            "segmentOffset" : "0.183",
+            "segmentModelLeft" : "vehicles/british/GB50_Sherman_III/track/segment1.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "segment2ModelLeft" : "vehicles/british/GB50_Sherman_III/track/segment2.model",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/british/GB50_Sherman_III/track/right.track",
+            "left" : "vehicles/british/GB50_Sherman_III/track/left.track",
+            "segment2ModelRight" : "vehicles/british/GB50_Sherman_III/track/segment2.model"
+         },
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.5 0.48",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02"
+         },
+         "tags" : {},
+         "maxClimbAngle" : 25,
+         "wwsoundPC" : "treads_type_pc",
+         "trackThickness" : "-0.0208",
+         "rotationIsAroundCenter" : false,
+         "weight" : 8000,
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "hullPosition" : "0 1 0",
+         "repairCost" : "5.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.06",
+                  "template" : "Track_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "minOffset" : "-0.08",
+                  "startIndex" : ""
+               },
+               {
+                  "minOffset" : "-0.08",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "maxOffset" : "0.06",
+                  "count" : 6,
+                  "template" : "Track_R"
+               }
+            ]
+         },
+         "level" : 4,
+         "bulkHealthFactor" : "3.0",
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 35,
+         "maxLoad" : 30200,
+         "brakeForce" : 30000,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         }
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.966105937",
+      "guns" : {
+         "_76mm_Gun_M1A1" : {
+            "delta" : "1"
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_2_GB50_Sherman_III" : {
+         "userString" : "#gb_vehicles:Turret_2_GB50_Sherman_III",
+         "guns" : {
+            "_76mm_Gun_M1A1" : "shared",
+            "_75mm_Gun_M3_L37" : "shared",
+            "QF_6_pounder_Mk_III" : "shared",
+            "_105mm_SPH_M4_L23" : "shared",
+            "QF_6_pounder_Mk_V" : "shared"
+         },
+         "unlocks" : {
+            "gun" : [
+               "_76mm_Gun_M1A1",
+               "QF_6_pounder_Mk_V"
+            ],
+            "vehicle" : "GB19_Sherman_Firefly"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB50_Sherman_III/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/british/GB50_Sherman_III/collision/Turret_02.model"
+         },
+         "showEmblemsOnGun" : false,
+         "circularVisionRadius" : 370,
+         "models" : {
+            "undamaged" : "vehicles/british/GB50_Sherman_III/normal/lod0/Turret_02.model",
+            "destroyed" : "vehicles/british/GB50_Sherman_III/crash/lod0/Turret_02.model",
+            "exploded" : "vehicles/british/GB50_Sherman_III/crash/lod0/Turret_02.model"
+         },
+         "physicsShape" : "0.956 0.029 0.941 0.000 0.559 0.029 0.676 0.654 0.493 0.485 0.059 0.515 0.096 0.066 0.000",
+         "weight" : 5000,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35,
+            "repairCost" : "1.0"
+         },
+         "rotationSpeed" : 37,
+         "camouflage" : {
+            "tiling" : "0.73 0.73 0.000000 0.000000"
+         },
+         "tags" : {},
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-0.87645 0.361784 -0.00562216",
+                  "rayStart" : "-1.07334 0.392135 0.012121"
+               },
+               {
+                  "rayEnd" : "0.775967 0.347621 -0.0263597",
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "isMirrored" : true,
+                  "hideIfDamaged" : false,
+                  "rayStart" : "1.17097 0.410465 -0.0313847"
+               }
+            ]
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "invisibilityFactor" : "0.963",
+         "price" : 11500,
+         "gunPosition" : "0 0 1",
+         "armor" : {
+            "armor_11" : "44.5",
+            "armor_4" : "63.5",
+            "armor_6" : "25.4",
+            "armor_3" : "63.5",
+            "armor_9" : "63.5",
+            "armor_1" : "63.5",
+            "armor_5" : "38.1",
+            "armor_12" : "25.4",
+            "armor_2" : "63.5",
+            "armor_8" : "",
+            "armor_10" : "25.4"
+         },
+         "maxHealth" : 137,
+         "level" : 5,
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50
+         }
+      },
+      "Turret_1_GB50_Sherman_III" : {
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "level" : 4,
+         "armor" : {
+            "armor_10" : "50.8",
+            "armor_2" : "76.2",
+            "armor_8" : "25.4",
+            "armor_5" : "38.1",
+            "armor_1" : "76.2",
+            "armor_9" : "",
+            "armor_4" : "50.8",
+            "armor_3" : "50.8",
+            "armor_6" : "25.4",
+            "armor_11" : "25.4"
+         },
+         "maxHealth" : 82,
+         "gunPosition" : "0 0 1",
+         "price" : 4800,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "camouflage" : {
+            "tiling" : "0.76 0.76 0.000000 0.000000"
+         },
+         "tags" : {},
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.28",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 0",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1.10877 0.253829 0.0610888"
+               },
+               {
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.28",
+                  "rayEnd" : "1 0 0",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayStart" : "1.10877 0.253829 0.0610888"
+               }
+            ]
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 70,
+            "maxRegenHealth" : 35,
+            "repairCost" : "1.0"
+         },
+         "rotationSpeed" : 39,
+         "physicsShape" : "1.000 0.059 0.941 -0.029 0.559 0.088 0.566 0.463 0.515 0.544 0.022 0.419 0.250 0.074 0.000",
+         "models" : {
+            "exploded" : "vehicles/british/GB50_Sherman_III/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB50_Sherman_III/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB50_Sherman_III/normal/lod0/Turret_01.model"
+         },
+         "weight" : 4800,
+         "circularVisionRadius" : 330,
+         "showEmblemsOnGun" : false,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB50_Sherman_III/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB50_Sherman_III/collision_client/Turret_01.model"
+         },
+         "guns" : {
+            "_75mm_Gun_M3_L37" : "shared",
+            "QF_6_pounder_Mk_III" : "shared",
+            "_105mm_SPH_M4_L23" : "shared"
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB50_Sherman_III"
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB50_Sherman_III_2" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB50_Sherman_III" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.12075"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Crysler_A57" : {
+               "smplEnginePower" : "449.3445"
+            },
+            "Wright_Continental_R-975C1" : {
+               "smplEnginePower" : "422.9124"
+            },
+            "Wright_Continental_R-975C4" : {
+               "smplEnginePower" : "486.3493"
+            },
+            "GMC_6046" : {
+               "smplEnginePower" : "433.4853"
+            }
+         }
+      }
+   },
+   "repairCost" : "5.35",
+   "invisibility" : {
+      "moving" : "0.15",
+      "firePenalty" : "0.3",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "still" : "0.2"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   },
+   "effects" : {
+      "damagedStateGroup" : "medium",
+      "collision" : {}
+   },
+   "engines" : {
+      "Wright_Continental_R-975C4" : "shared",
+      "GMC_6046" : "shared",
+      "Wright_Continental_R-975C1" : "shared",
+      "Crysler_A57" : "shared"
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/british/GB50_Sherman_III/Sherman_III_HangarShadowMap.dds",
+      "exhaust" : {
+         "tags" : {
+            "diesel" : "diesel_medium"
+         },
+         "pixie" : "gas_medium",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/british/GB50_Sherman_III/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/british/GB50_Sherman_III/collision/Hull.model"
+      },
+      "camouflage" : {
+         "tiling" : "1.36 1.36 0.000000 0.000000"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "hideIfDamaged" : false,
+               "rayEnd" : "-1.22389 0.658082 0.752317",
+               "size" : "0.78",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.42388 0.658082 0.752317"
+            },
+            {
+               "rayStart" : "1.42389 0.661042 0.73822",
+               "hideIfDamaged" : false,
+               "rayEnd" : "1.22389 0.661042 0.73822",
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.78"
+            }
+         ],
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayEnd" : "-0.000688553 0.211829 2.20266",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.28",
+            "rayStart" : "-0.000688553 0.379235 2.3121"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 328,
+      "armor" : {
+         "armor_2" : "50.8",
+         "armor_8" : "63.5",
+         "armor_10" : "25.4",
+         "armor_15" : "9.5",
+         "armor_1" : "50.8",
+         "armor_5" : "38.1",
+         "armor_9" : "",
+         "armor_7" : "12.7",
+         "armor_11" : "25.4",
+         "armor_6" : "12.7",
+         "armor_16" : "50.8",
+         "armor_3" : "38.1",
+         "armor_14" : "19.1",
+         "armor_4" : "38.1"
+      },
+      "weight" : 16029,
+      "models" : {
+         "undamaged" : "vehicles/british/GB50_Sherman_III/normal/lod0/Hull.model",
+         "exploded" : "vehicles/british/GB50_Sherman_III/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB50_Sherman_III/crash/lod0/Hull.model"
+      },
+      "swinging" : {
+         "pitchParams" : "0.26 36.00 0.48 1.00 0.05 0.33",
+         "rollParams" : "1.00 0.26 36.00 0.48 1.00 0.05 0.33",
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.58"
+      },
+      "ammoBayHealth" : {
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 120,
+         "maxHealth" : 170
+      },
+      "turretPositions" : {
+         "turret" : "0.000000 1.02954 -0.155"
+      }
+   },
+   "speedLimits" : {
+      "forward" : 48,
+      "backward" : 18
+   }
+}

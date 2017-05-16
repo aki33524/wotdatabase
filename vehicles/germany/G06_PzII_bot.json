@@ -1,0 +1,492 @@
+{
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/german/G06_PzII/PzII_turret_01_AM.dds",
+      "priceFactor" : "0.4"
+   },
+   "chassis" : {
+      "PzII_ketten_Ausf_A_bot" : {
+         "topRightCarryingPoint" : "0.93375 1.22588",
+         "maxLoad" : 9500,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 5 0 0 0"
+            }
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-3.9",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.0482546",
+                  "startIndex" : "",
+                  "count" : 5,
+                  "maxOffset" : "0",
+                  "isLeft" : true,
+                  "template" : "Track_L"
+               },
+               {
+                  "minOffset" : "-0.0462012",
+                  "startIndex" : "",
+                  "maxOffset" : "0",
+                  "template" : "Track_R",
+                  "isLeft" : false,
+                  "count" : 5
+               }
+            ]
+         },
+         "notInShop" : true,
+         "wwsoundNPC" : "trds_chf_npc",
+         "wwsoundPC" : "treads_type_pc",
+         "terrainResistance" : "1.1 1.7 2.9",
+         "maxHealth" : 50,
+         "rotationIsAroundCenter" : false,
+         "armor" : {
+            "rightTrack" : 10,
+            "leftTrack" : 10
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "bufferPrefs" : "smallTank",
+            "size" : "0.3 0.34",
+            "textureSet" : "germany_01"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "trackNodes" : {
+            "forwardElastK" : 1,
+            "maxAmplitude" : "0.1",
+            "linkBones" : false,
+            "maxOffset" : "0.1",
+            "node" : [
+               {
+                  "forwardElastK" : "1.5",
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_L0",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true
+               },
+               {
+                  "forwardElastK" : "1.5",
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_R0",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_L1",
+                  "forwardElastK" : "1.69"
+               },
+               {
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_L2",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.9"
+               },
+               {
+                  "forwardElastK" : 2,
+                  "isLeft" : true,
+                  "backwardElastK" : "0.9",
+                  "name" : "Track_VT_L4",
+                  "offset" : "-0.017"
+               },
+               {
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.017",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.9",
+                  "forwardElastK" : "1.69"
+               },
+               {
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_R2",
+                  "forwardElastK" : "1.8"
+               },
+               {
+                  "forwardElastK" : "1.9",
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_R3",
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false
+               },
+               {
+                  "forwardElastK" : 2,
+                  "backwardElastK" : "0.9",
+                  "isLeft" : false,
+                  "offset" : "-0.017",
+                  "name" : "Track_VT_R4"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0",
+                  "forwardElastK" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L0",
+                  "forwardElastK" : 1
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               }
+            ],
+            "damping" : 2,
+            "elasticity" : 1149,
+            "gravity" : "-9.8",
+            "enable" : true,
+            "backwardElastK" : 1,
+            "offset" : "0"
+         },
+         "hullPosition" : "0 1 0",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "trackThickness" : "-0.0073",
+         "shortUserString" : "#germany_vehicles:PzII_ketten_Ausf_A_bot_short",
+         "brakeForce" : 35500,
+         "wheels" : {
+            "group" : [
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0.291",
+                  "count" : 5,
+                  "startIndex" : ""
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 5,
+                  "radius" : "0.291",
+                  "template" : "W_R",
+                  "isLeft" : false
+               },
+               {
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "radius" : "0.119",
+                  "count" : 4,
+                  "startIndex" : 1
+               },
+               {
+                  "radius" : "0.119",
+                  "count" : 4,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "startIndex" : 1
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "syncAngle" : "13.8462",
+                  "radius" : "0.4"
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0.33",
+                  "syncAngle" : "13.8462",
+                  "name" : "WD_L5",
+                  "isLeft" : true
+               },
+               {
+                  "syncAngle" : "13.8462",
+                  "radius" : "0.4",
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0.33",
+                  "syncAngle" : "13.8462",
+                  "name" : "WD_R5"
+               }
+            ]
+         },
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G06_PzII/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G06_PzII/collision/Chassis.model"
+         },
+         "level" : 1,
+         "rotationSpeed" : 35,
+         "maxClimbAngle" : 25,
+         "repairCost" : "1.0",
+         "bulkHealthFactor" : "3.0",
+         "weight" : 2800,
+         "models" : {
+            "exploded" : "vehicles/german/G06_PzII/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G06_PzII/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G06_PzII/normal/lod0/Chassis.model"
+         },
+         "userString" : "#germany_vehicles:PzII_ketten_Ausf_A_bot",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.31",
+            "vehicleRotation" : "0.31"
+         },
+         "maxRegenHealth" : 40,
+         "splineDesc" : {
+            "segmentLength" : "0.088",
+            "right" : "vehicles/german/G06_PzII/track/right.track",
+            "left" : "vehicles/german/G06_PzII/track/left.track",
+            "segmentOffset" : "0.029",
+            "lodDist" : "MEDIUM",
+            "segmentModelRight" : "vehicles/german/G06_PzII/track/segment.model",
+            "segmentModelLeft" : "vehicles/german/G06_PzII/track/segment.model",
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            }
+         },
+         "price" : "300.0"
+      }
+   },
+   "turrets0" : {
+      "PzII_Standartturm_bot" : {
+         "physicsShape" : "1.000 0.000 0.985 0.000 0.828 -0.060 0.867 0.448 0.108 0.500 0.291 0.500 0.182 0.742 0.246",
+         "circularVisionRadius" : 290,
+         "emblemSlots" : {
+            "player" : {
+               "hideIfDamaged" : false,
+               "rayStart" : "-0.73118 0.30574 0.28051",
+               "size" : "0.28",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1 0 0"
+            }
+         },
+         "shortUserString" : "#germany_vehicles:PzII_Standartturm_bot_short",
+         "camouflage" : {
+            "exclusionMask" : "vehicles/german/G06_PzII/PzII_turret_01_AM.dds",
+            "tiling" : "1 0.49 0.000000 0.000000"
+         },
+         "gunPosition" : "0.1458 0.263255 0.6217",
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "notInShop" : true,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G06_PzII/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G06_PzII/collision/Turret_01.model"
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "showEmblemsOnGun" : false,
+         "maxHealth" : 29,
+         "level" : 2,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 30,
+            "maxHealth" : 60,
+            "repairCost" : "1.0"
+         },
+         "armor" : {
+            "armor_3" : 15,
+            "armor_5" : 13,
+            "armor_6" : 10,
+            "armor_7" : 10,
+            "armor_1" : 30,
+            "armor_9" : 15,
+            "armor_10" : 10,
+            "armor_4" : 15,
+            "armor_2" : 15,
+            "armor_8" : ""
+         },
+         "rotationSpeed" : 39,
+         "guns" : {
+            "_20mm_KwK_30_bot" : "shared"
+         },
+         "weight" : 950,
+         "models" : {
+            "undamaged" : "vehicles/german/G06_PzII/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G06_PzII/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G06_PzII/crash/lod0/Turret_01.model"
+         },
+         "userString" : "#germany_vehicles:PzII_Standartturm_bot",
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 40,
+            "repairCost" : "2.0",
+            "maxRegenHealth" : 20
+         },
+         "price" : "640.0"
+      }
+   },
+   "radios" : {
+      "FuG2_bot" : "shared"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Maybach_HL57TR_bot" : {
+               "smplEnginePower" : "137.4465"
+            }
+         },
+         "chassis" : {
+            "PzII_ketten_Ausf_A_bot" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.13685"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "engines" : {
+      "Maybach_HL57TR_bot" : "shared"
+   },
+   "invisibility" : {
+      "moving" : "0.199",
+      "still" : "0.265",
+      "firePenalty" : "0.398",
+      "camouflageBonus" : "0.03",
+      "camouflageNetBonus" : "0.1"
+   },
+   "speedLimits" : {
+      "forward" : 40,
+      "backward" : 15
+   },
+   "effects" : {
+      "damagedStateGroup" : "small",
+      "collision" : {}
+   },
+   "hull" : {
+      "weight" : 4600,
+      "hangarShadowTexture" : "vehicles/german/G06_PzII/PzII_HangarShadowMap.dds",
+      "turretPositions" : {
+         "turret" : "-0.1458 0.569547 0.34976"
+      },
+      "emblemSlots" : {
+         "inscription" : {
+            "rayEnd" : "-0.16511 -0.118428 2.04969",
+            "size" : "0.54",
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.16511 0.26086 2.17672",
+            "rayUp" : "0.000000 0.000000 -1"
+         },
+         "clan" : {
+            "rayEnd" : "-0.226255 0.117566 1.72291",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : true,
+            "rayStart" : "-0.226255 0.269283 1.77373",
+            "size" : "0.22"
+         }
+      },
+      "models" : {
+         "undamaged" : "vehicles/german/G06_PzII/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G06_PzII/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G06_PzII/crash/lod0/Hull.model"
+      },
+      "primaryArmor" : "armor_2 armor_3 armor_4",
+      "camouflage" : {
+         "tiling" : "2.14 2.14 0.000000 0.000000"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G06_PzII/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G06_PzII/collision_client/Hull.model"
+      },
+      "maxHealth" : 116,
+      "exhaust" : {
+         "pixie" : "gas_small",
+         "nodes" : "HP_Track_Exhaus_1"
+      },
+      "swinging" : {
+         "pitchParams" : "0.28 34.00 0.34 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.74",
+         "rollParams" : "1.00 0.28 34.00 0.34 1.00 0.05 0.30",
+         "lodDist" : "FAR"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 55,
+         "repairCost" : "1.0",
+         "maxHealth" : 80
+      },
+      "armor" : {
+         "armor_2" : 30,
+         "armor_12" : 55,
+         "armor_14" : 20,
+         "armor_8" : 15,
+         "armor_3" : 20,
+         "armor_7" : 20,
+         "armor_5" : 20,
+         "armor_6" : 20,
+         "armor_13" : 5,
+         "armor_1" : 35,
+         "armor_4" : 15,
+         "armor_11" : "",
+         "armor_10" : 10,
+         "armor_9" : 15
+      }
+   },
+   "repairCost" : "4.58",
+   "fuelTanks" : {
+      "Small" : "shared"
+   },
+   "crewXpFactor" : "1.0",
+   "clientAdjustmentFactors" : {},
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM"
+   },
+   "crew" : {
+      "driver" : {},
+      "loader" : "AAAAAAAA",
+      "commander" : "gunner"
+   }
+}

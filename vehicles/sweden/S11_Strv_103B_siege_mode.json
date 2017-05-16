@@ -1,0 +1,535 @@
+{
+   "hull_aiming" : {
+      "pitch" : {
+         "wheelsCorrectionAngles" : {
+            "pitchMax" : 11,
+            "pitchMin" : -11
+         },
+         "isEnabled" : "AAAA",
+         "wheelsCorrectionSpeed" : "7.5",
+         "wheelCorrectionCenterZ" : "0.0"
+      }
+   },
+   "crewXpFactor" : "1.0",
+   "engines" : {
+      "Motoraggregat_9" : "shared"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "distanceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : {},
+      "priceFactor" : "2.0"
+   },
+   "crew" : {
+      "commander" : "gunner",
+      "radioman" : "loader",
+      "driver" : "gunner"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "3.309384079"
+   },
+   "chassis" : {
+      "Chassis_S11_Strv_103B" : {
+         "effects" : {
+            "mud" : "strvMud",
+            "lodDist" : "MEDIUM"
+         },
+         "hullAiming" : {
+            "audio" : {
+               "sounds" : {
+                  "downStop" : {
+                     "overLimitSounds" : {
+                        "wwsoundPC" : "tangage_gidro_high_angle_down_stop_PC",
+                        "wwsoundNPC" : "tangage_gidro_high_angle_down_stop_NPC"
+                     },
+                     "underLimitSounds" : {
+                        "wwsoundPC" : "tangage_gidro_small_angle_down_stop_PC",
+                        "wwsoundNPC" : "tangage_gidro_small_angle_down_stop_NPC"
+                     }
+                  },
+                  "upStop" : {
+                     "underLimitSounds" : {
+                        "wwsoundNPC" : "tangage_gidro_small_angle_up_stop_NPC",
+                        "wwsoundPC" : "tangage_gidro_small_angle_up_stop_PC"
+                     },
+                     "overLimitSounds" : {
+                        "wwsoundPC" : "tangage_gidro_high_angle_up_stop_PC",
+                        "wwsoundNPC" : "tangage_gidro_high_angle_up_stop_NPC"
+                     }
+                  },
+                  "upStart" : {
+                     "overLimitSounds" : {
+                        "wwsoundPC" : "tangage_gidro_high_angle_up_start_PC",
+                        "wwsoundNPC" : "tangage_gidro_high_angle_up_start_NPC"
+                     },
+                     "underLimitSounds" : {
+                        "wwsoundNPC" : "tangage_gidro_small_angle_up_start_NPC",
+                        "wwsoundPC" : "tangage_gidro_small_angle_up_start_PC"
+                     }
+                  },
+                  "downStart" : {
+                     "overLimitSounds" : {
+                        "wwsoundNPC" : "tangage_gidro_high_angle_down_start_NPC",
+                        "wwsoundPC" : "tangage_gidro_high_angle_down_start_PC"
+                     },
+                     "underLimitSounds" : {
+                        "wwsoundPC" : "tangage_gidro_small_angle_down_start_PC",
+                        "wwsoundNPC" : "tangage_gidro_small_angle_down_start_NPC"
+                     }
+                  }
+               },
+               "angleLimitValue" : "5.0",
+               "lodDist" : "MEDIUM"
+            }
+         },
+         "maxClimbAngle" : 25,
+         "tags" : {},
+         "maxRegenHealth" : 190,
+         "rotationSpeed" : 35,
+         "wwsoundPC" : "treads_type_pc",
+         "traces" : {
+            "textureSet" : "germany_01",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.4 0.78",
+            "lodDist" : "FAR"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "notInShop" : true,
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.72",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxHealth" : 250,
+         "navmeshGirth" : "6.0",
+         "models" : {
+            "destroyed" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/sweden/S11_Strv_103B/normal/lod0/Chassis.model"
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.40",
+            "vehicleRotation" : "0.01"
+         },
+         "hullPosition" : "0 1 -0",
+         "terrainResistance" : "0.8 0.9 1.6",
+         "leveredSuspension" : {
+            "lodSettings" : {
+               "maxPriority" : 15,
+               "maxLodDistance" : "LEVERED_SUSPENSION"
+            },
+            "lever" : [
+               {
+                  "limits" : "-42.0 62.0",
+                  "trackNode" : "Track_L0",
+                  "jointNode" : "Lever_Joint_L0",
+                  "startNode" : "Lever_Start_L0"
+               },
+               {
+                  "jointNode" : "Lever_Joint_R0",
+                  "startNode" : "Lever_Start_R0",
+                  "limits" : "-42.0 62.0",
+                  "trackNode" : "Track_R0"
+               },
+               {
+                  "jointNode" : "Lever_Joint_L1",
+                  "startNode" : "Lever_Start_L1",
+                  "trackNode" : "Track_L1",
+                  "limits" : "186.5 155.0"
+               },
+               {
+                  "jointNode" : "Lever_Joint_R1",
+                  "startNode" : "Lever_Start_R1",
+                  "trackNode" : "Track_R1",
+                  "limits" : "186.5 155.0"
+               },
+               {
+                  "limits" : "-6.5 25.0",
+                  "trackNode" : "Track_L2",
+                  "startNode" : "Lever_Start_L2",
+                  "jointNode" : "Lever_Joint_L2"
+               },
+               {
+                  "startNode" : "Lever_Start_R2",
+                  "jointNode" : "Lever_Joint_R2",
+                  "trackNode" : "Track_R2",
+                  "limits" : "-6.5 25.0"
+               },
+               {
+                  "startNode" : "Lever_Start_L3",
+                  "jointNode" : "Lever_Joint_L3",
+                  "trackNode" : "Track_L3",
+                  "limits" : "222.0 118.0"
+               },
+               {
+                  "jointNode" : "Lever_Joint_R3",
+                  "startNode" : "Lever_Start_R3",
+                  "trackNode" : "Track_R3",
+                  "limits" : "222.0 118.0"
+               }
+            ]
+         },
+         "brakeForce" : 40000,
+         "weight" : 7000,
+         "price" : 82500,
+         "repairCost" : "5.0",
+         "rotationIsAroundCenter" : true,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "3 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "level" : 10,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/sweden/S11_Strv_103B/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/sweden/S11_Strv_103B/collision/Chassis.model"
+         },
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "bulkHealthFactor" : "3.0",
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L3",
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R3"
+               }
+            ],
+            "group" : [
+               {
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "count" : 2,
+                  "template" : "WD_L",
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0.405",
+                  "count" : 4,
+                  "template" : "W_L",
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0",
+                  "count" : 2,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : false,
+                  "radius" : "0.405",
+                  "startIndex" : "",
+                  "count" : 4,
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "maxLoad" : 43000,
+         "userString" : "#sweden_vehicles:Chassis_S11_Strv_103B",
+         "topRightCarryingPoint" : "1.2989 1.45272"
+      }
+   },
+   "hull" : {
+      "turretPositions" : {
+         "turret" : "0.000000 1.13212 0.652801"
+      },
+      "fakeTurrets" : {
+         "battle" : "",
+         "lobby" : ""
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 180,
+         "maxHealth" : 260,
+         "repairCost" : "1.0"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "swinging" : {
+         "sensitivityToImpulse" : "0.94",
+         "lodDist" : "FAR",
+         "rollParams" : "1.00 0.34 38.00 0.36 1.00 0.06 0.40",
+         "pitchParams" : "0.34 38.00 0.36 1.00 0.05 0.34"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "1.28757 1.14182 2.24091",
+            "rayStart" : "1.28757 1.34182 2.24091",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "size" : "0.3"
+         },
+         "inscription" : [
+            {
+               "rayEnd" : "-1.65429 1.30355 -0.5322",
+               "rayStart" : "-1.71429 1.30366 -0.532222",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false,
+               "size" : "0.4"
+            },
+            {
+               "rayStart" : "1.6703 1.37377 -2.11908",
+               "rayEnd" : "1.6503 1.37347 -2.11908",
+               "size" : "0.449",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : true
+            }
+         ],
+         "player" : [
+            {
+               "size" : "0.2",
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.77053 0.933541 2.85485",
+               "rayStart" : "-1.82853 0.933579 2.85484"
+            },
+            {
+               "hideIfDamaged" : false,
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.2",
+               "rayEnd" : "1.72753 0.933513 2.85485",
+               "rayStart" : "1.87153 0.933608 2.85484"
+            }
+         ]
+      },
+      "hangarShadowTexture" : "vehicles/sweden/S11_Strv_103B/Strv_103B_HangarShadowMap.dds",
+      "camouflage" : {
+         "tiling" : "4.5 4.5 0.000000 0.000000"
+      },
+      "weight" : 30528,
+      "models" : {
+         "exploded" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/sweden/S11_Strv_103B/normal/lod0/Hull.model"
+      },
+      "maxHealth" : 1460,
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/sweden/S11_Strv_103B/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/sweden/S11_Strv_103B/collision/Hull.model"
+      },
+      "armor" : {
+         "armor_8" : 5,
+         "rightTrack" : 20,
+         "armor_6" : 20,
+         "armor_2" : 50,
+         "armor_16" : 30,
+         "armor_9" : 10,
+         "armor_3" : 30,
+         "armor_12" : 60,
+         "armor_14" : 10,
+         "armor_13" : 20,
+         "armor_4" : 30,
+         "armor_11" : 30,
+         "leftTrack" : 20,
+         "armor_1" : 40,
+         "armor_7" : 30,
+         "armor_10" : 40,
+         "armor_5" : 20,
+         "armor_15" : 20
+      },
+      "exhaust" : {
+         "pixie" : "diesel_strv",
+         "nodes" : "HP_Track_Exhaus_1"
+      }
+   },
+   "emblems" : {
+      "alpha" : 1,
+      "lodDist" : "MEDIUM",
+      "default" : "swedish_flag"
+   },
+   "radios" : {
+      "Ra_421_1" : "shared"
+   },
+   "isRotationStill" : "AAAA",
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "useHullZ" : "AAAA",
+   "siege_mode" : {
+      "soundStateChange" : {
+         "off" : "strv_siege_mode_off_PC",
+         "on" : "strv_siege_mode_on_PC"
+      },
+      "engineDamageCoeff" : 2,
+      "switchOnTime" : 2,
+      "switchOffTime" : "1.25"
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_S11_Strv_103B" : {
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "gunPosition" : "0 0 0",
+         "guns" : {
+            "_105mm_kan_strv_103_L_62" : {
+               "staticPitch" : -1,
+               "animateEmblemSlots" : true,
+               "shotDispersionFactors" : {
+                  "whileGunDamaged" : "2.0",
+                  "turretRotation" : "0.01",
+                  "afterShot" : "18.0"
+               },
+               "pitchLimits" : {
+                  "minPitch" : "0 -4 1 -4",
+                  "maxPitch" : "0 2 1 2"
+               },
+               "emblemSlots" : {
+                  "insigniaOnGun" : {
+                     "rayEnd" : "-0.0217769 0.0354918 3.25693",
+                     "rayStart" : "0.000046 -0.00796401 3.25638",
+                     "hideIfDamaged" : false,
+                     "rayUp" : "0.079 0.078 5",
+                     "size" : "0.3"
+                  }
+               },
+               "camouflage" : {
+                  "tiling" : "1.3 1.3 0.000000 0.000000"
+               },
+               "invisibilityFactorAtShot" : "0.209",
+               "models" : {
+                  "destroyed" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Gun_01.model",
+                  "exploded" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Gun_01.model",
+                  "undamaged" : "vehicles/sweden/S11_Strv_103B/normal/lod0/Gun_01.model"
+               },
+               "reloadTime" : 7,
+               "hitTester" : {
+                  "collisionModelServer" : "vehicles/sweden/S11_Strv_103B/collision/Gun_01.model",
+                  "collisionModelClient" : "vehicles/sweden/S11_Strv_103B/collision_client/Gun_01.model"
+               },
+               "armor" : {
+                  "armor_1" : 20,
+                  "armor_2" : 20,
+                  "gun" : 40
+               },
+               "shotDispersionRadius" : "0.25",
+               "turretYawLimits" : "-3 3",
+               "staticTurretYaw" : "",
+               "maxAmmo" : 50,
+               "aimingTime" : 1
+            }
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "circularVisionRadius" : 360,
+         "rotationSpeed" : 16,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 120,
+            "maxRegenHealth" : 60,
+            "repairCost" : "2.0"
+         },
+         "price" : 100,
+         "weight" : 100,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.500 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "primaryArmor" : "armor_1 armor_1 armor_1",
+         "emblemSlots" : {},
+         "showEmblemsOnGun" : false,
+         "userString" : "#sweden_vehicles:Turret_1_S11_Strv_103B",
+         "notInShop" : true,
+         "level" : 10,
+         "models" : {
+            "undamaged" : "vehicles/sweden/S11_Strv_103B/normal/lod0/Turret_01.model",
+            "exploded" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/sweden/S11_Strv_103B/crash/lod0/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 100,
+            "maxRegenHealth" : 50
+         },
+         "armor" : {
+            "armor_1" : ""
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/sweden/S11_Strv_103B/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/sweden/S11_Strv_103B/collision_client/Turret_01.model"
+         },
+         "maxHealth" : 340
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Motoraggregat_9" : {
+               "smplEnginePower" : 700
+            }
+         },
+         "chassis" : {
+            "Chassis_S11_Strv_103B" : {
+               "grounds" : {
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "repairCost" : "11.0",
+   "speedLimits" : {
+      "backward" : 10,
+      "forward" : 10
+   },
+   "invisibility" : {
+      "still" : "0.404",
+      "moving" : "0.242",
+      "camouflageNetBonus" : "0.15",
+      "firePenalty" : "0.606",
+      "camouflageBonus" : "0.04"
+   }
+}

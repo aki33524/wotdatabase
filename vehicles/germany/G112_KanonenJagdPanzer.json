@@ -1,0 +1,500 @@
+{
+   "crewXpFactor" : "1.5",
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 70
+   },
+   "repairCost" : "6.0",
+   "invisibility" : {
+      "firePenalty" : "0.621",
+      "camouflageBonus" : "0.04",
+      "moving" : "0.248",
+      "camouflageNetBonus" : "0.15",
+      "still" : "0.414"
+   },
+   "chassis" : {
+      "Chassis_G112_KanonenJagdPanzer" : {
+         "splineDesc" : {
+            "segmentOffset" : "0.138",
+            "segmentLength" : "0.152",
+            "lodDist" : "MEDIUM",
+            "right" : "vehicles/german/G112_KanonenJagdPanzer/track/right.track",
+            "segmentModelLeft" : "vehicles/german/G112_KanonenJagdPanzer/track/segment1.model",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segmentModelRight" : "vehicles/german/G112_KanonenJagdPanzer/track/segment1.model",
+            "segment2ModelLeft" : "vehicles/german/G112_KanonenJagdPanzer/track/segment2.model",
+            "left" : "vehicles/german/G112_KanonenJagdPanzer/track/left.track",
+            "segment2ModelRight" : "vehicles/german/G112_KanonenJagdPanzer/track/segment2.model",
+            "segment2Offset" : "0.067"
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "mediumTankMud"
+         },
+         "maxHealth" : 220,
+         "terrainResistance" : "0.7 0.8 2",
+         "wwsoundPC" : "treads_type_pc",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "count" : 5,
+                  "isLeft" : true,
+                  "template" : "Track_L",
+                  "minOffset" : "-0.1",
+                  "startIndex" : "",
+                  "maxOffset" : "0.07"
+               },
+               {
+                  "isLeft" : false,
+                  "template" : "Track_R",
+                  "minOffset" : "-0.1",
+                  "startIndex" : "",
+                  "maxOffset" : "0.07",
+                  "count" : 5
+               }
+            ]
+         },
+         "rotationIsAroundCenter" : true,
+         "wheels" : {
+            "group" : [
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_R",
+                  "isLeft" : false,
+                  "count" : 3,
+                  "radius" : "0"
+               },
+               {
+                  "count" : 5,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "template" : "W_R"
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "count" : 3,
+                  "radius" : "0"
+               },
+               {
+                  "count" : 5,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "template" : "W_L"
+               }
+            ],
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0.295",
+                  "syncAngle" : "25.7143",
+                  "isLeading" : true,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "syncAngle" : "25.7143",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_L0",
+                  "radius" : "0.295",
+                  "isLeading" : true,
+                  "syncAngle" : "25.7143",
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "syncAngle" : "25.7143",
+                  "isLeading" : true,
+                  "name" : "WD_L4",
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "hullPosition" : "0.000000 1.00924 0.000000",
+         "tags" : {},
+         "trackThickness" : "0",
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_01",
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.55 0.48"
+         },
+         "trackNodes" : {
+            "elasticity" : 1401,
+            "linkBones" : true,
+            "maxAmplitude" : "0.015",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.5",
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "backwardElastK" : "1.5",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "0.6",
+                  "forwardElastK" : "1.5",
+                  "name" : "Track_VD_L1"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "forwardElastK" : "1.5",
+                  "backwardElastK" : "0.6",
+                  "isLeft" : false
+               },
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : "1.6",
+                  "forwardElastK" : "0.85",
+                  "name" : "Track_VT_L0",
+                  "rightSibling" : "Track_VT_L1"
+               },
+               {
+                  "name" : "Track_VT_L1",
+                  "rightSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.83",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L0",
+                  "backwardElastK" : 2
+               },
+               {
+                  "backwardElastK" : "2.5",
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L1",
+                  "forwardElastK" : "0.8",
+                  "rightSibling" : "Track_VT_L3",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "backwardElastK" : 3,
+                  "isLeft" : true,
+                  "leftSibling" : "Track_VT_L2",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.85",
+                  "rightSibling" : "Track_VT_R1",
+                  "name" : "Track_VT_R0"
+               },
+               {
+                  "rightSibling" : "Track_VT_R2",
+                  "name" : "Track_VT_R1",
+                  "forwardElastK" : "0.83",
+                  "backwardElastK" : 2,
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R0"
+               },
+               {
+                  "name" : "Track_VT_R2",
+                  "rightSibling" : "Track_VT_R3",
+                  "isLeft" : false,
+                  "leftSibling" : "Track_VT_R1",
+                  "backwardElastK" : "2.5",
+                  "forwardElastK" : "0.8"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.8",
+                  "leftSibling" : "Track_VT_R2",
+                  "isLeft" : false,
+                  "backwardElastK" : 3
+               }
+            ],
+            "maxOffset" : "0.01",
+            "gravity" : "-1.6",
+            "backwardElastK" : "1.58",
+            "enable" : true,
+            "forwardElastK" : 1,
+            "damping" : "2.64",
+            "offset" : "0"
+         },
+         "bulkHealthFactor" : "3.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 -0"
+            }
+         },
+         "brakeForce" : 29000,
+         "navmeshGirth" : "6.0",
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 8,
+         "maxRegenHealth" : 165,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.24",
+            "vehicleMovement" : "0.24"
+         },
+         "notInShop" : true,
+         "topRightCarryingPoint" : "1.26839 1.87345",
+         "userString" : "#germany_vehicles:Chassis_G112_KanonenJagdPanzer",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G112_KanonenJagdPanzer/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G112_KanonenJagdPanzer/collision/Chassis.model"
+         },
+         "maxLoad" : 29500,
+         "rotationSpeed" : 46,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-2.15",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G112_KanonenJagdPanzer/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G112_KanonenJagdPanzer/crash/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G112_KanonenJagdPanzer/crash/lod0/Chassis.model"
+         },
+         "repairCost" : "7.5",
+         "price" : 30000,
+         "weight" : 6500,
+         "maxClimbAngle" : 25
+      }
+   },
+   "engines" : {
+      "MB-837-Aa_A" : "shared"
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : "AAAAAAAA",
+      "gunner" : {},
+      "loader" : {}
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.701875139"
+   },
+   "turrets0" : {
+      "Turret_1_G112_KanonenJagdPanzer" : {
+         "primaryArmor" : "armor_1 armor_1 armor_1",
+         "rotationSpeed" : 22,
+         "tags" : "AAAAAAAAAAAA",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G112_KanonenJagdPanzer/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/german/G112_KanonenJagdPanzer/collision/Turret_01.model"
+         },
+         "notInShop" : true,
+         "userString" : "#germany_vehicles:Turret_1_G112_KanonenJagdPanzer",
+         "gunPosition" : "0 0 0",
+         "turretRotatorHealth" : {
+            "maxHealth" : 100,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50
+         },
+         "emblemSlots" : {},
+         "wwturretRotatorSoundManual" : "tur_man_trav_05",
+         "price" : 100,
+         "weight" : 100,
+         "models" : {
+            "destroyed" : "vehicles/german/G112_KanonenJagdPanzer/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G112_KanonenJagdPanzer/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G112_KanonenJagdPanzer/normal/lod0/Turret_01.model"
+         },
+         "guns" : {
+            "_90mm_Rheinmetall_90_L40A" : "shared"
+         },
+         "maxHealth" : 240,
+         "showEmblemsOnGun" : false,
+         "armor" : {
+            "armor_1" : ""
+         },
+         "physicsShape" : "1.000 0.000 1.000 0.000 0.800 0.000 0.500 0.500 0.500 0.500 0.500 0.500 0.387 0.496 0.500",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 50,
+            "maxHealth" : 100
+         },
+         "circularVisionRadius" : 360,
+         "level" : 8
+      }
+   },
+   "premiumVehicleXPFactor" : "0.1",
+   "camouflage" : {
+      "priceFactor" : "1.6",
+      "exclusionMask" : {},
+      "tiling" : "1 1 0 0"
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "germany_bundecross",
+      "lodDist" : "MEDIUM"
+   },
+   "hull" : {
+      "weight" : 16486,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "pitchParams" : "0.24 36.00 0.40 1.00 0.05 0.32",
+         "rollParams" : "1.00 0.24 36.00 0.40 1.00 0.05 0.32",
+         "sensitivityToImpulse" : "0.35"
+      },
+      "turretPositions" : {
+         "turret" : "0.085354 0.365468 2.51558"
+      },
+      "emblemSlots" : {
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-1.23385 0.435076 0.382206",
+               "size" : "0.24",
+               "rayStart" : "-1.40339 0.541171 0.382211",
+               "hideIfDamaged" : false
+            },
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "size" : "0.24",
+               "rayEnd" : "1.23385 0.435076 0.382206",
+               "rayStart" : "1.40339 0.541171 0.382211",
+               "isMirrored" : true,
+               "hideIfDamaged" : false
+            }
+         ],
+         "inscription" : [
+            {
+               "rayStart" : "-1.40678 0.535563 1.19679",
+               "size" : "0.52",
+               "rayEnd" : "-1.23734 0.429318 1.19676",
+               "rayUp" : "0.000000 1 0.000000",
+               "hideIfDamaged" : false
+            },
+            {
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "1.23734 0.429318 1.19676",
+               "size" : "0.52",
+               "rayStart" : "1.40678 0.535563 1.19679"
+            }
+         ],
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.795688 0.529991 2.28688",
+            "size" : "0.24",
+            "rayStart" : "-0.795688 0.574604 2.327"
+         }
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "diesel_medium"
+      },
+      "models" : {
+         "exploded" : "vehicles/german/G112_KanonenJagdPanzer/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/german/G112_KanonenJagdPanzer/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G112_KanonenJagdPanzer/normal/lod0/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "maxHealth" : 960,
+      "hangarShadowTexture" : "vehicles/german/G112_KanonenJagdPanzer/KanonenJagdPanzer_HangarShadowMap.dds",
+      "armor" : {
+         "armor_11" : "14.5",
+         "armor_9" : "14.5",
+         "armor_8" : "",
+         "armor_12" : 8,
+         "armor_1" : 30,
+         "armor_7" : 20,
+         "armor_4" : 8,
+         "armor_2" : 30,
+         "armor_10" : "14.5",
+         "armor_15" : 30,
+         "armor_5" : 8,
+         "armor_14" : 25,
+         "armor_3" : 30,
+         "armor_13" : 28,
+         "armor_6" : 8
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G112_KanonenJagdPanzer/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G112_KanonenJagdPanzer/collision_client/Hull.model"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 220,
+         "maxRegenHealth" : 150,
+         "repairCost" : "1.0"
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_G112_KanonenJagdPanzer" : {
+               "grounds" : {
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "MB-837-Aa_A" : {
+               "smplEnginePower" : "528.6406"
+            }
+         }
+      }
+   },
+   "radios" : {
+      "SEM25_1" : "shared"
+   }
+}

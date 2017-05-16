@@ -1,0 +1,366 @@
+{
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "medium"
+   },
+   "emblems" : {
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM",
+      "default" : "germany_cross"
+   },
+   "hull" : {
+      "ammoBayHealth" : {
+         "maxHealth" : 150,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 90
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/german/G70_PzIV_Hydro/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/german/G70_PzIV_Hydro/collision/Hull.model"
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_medium"
+      },
+      "weight" : 10860,
+      "hangarShadowTexture" : "vehicles/german/G70_PzIV_Hydro/PzIV_Hydro_HangarShadowMap.dds",
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "emblemSlots" : {
+         "inscription" : {
+            "size" : "0.8",
+            "rayEnd" : "-0.000701178 0.0491123 -2.71571",
+            "rayUp" : "0.0997217 0.995003 -0.00486422",
+            "hideIfDamaged" : true,
+            "rayStart" : "-0.000701201 0.328133 -3.00232"
+         },
+         "clan" : {
+            "hideIfDamaged" : true,
+            "rayStart" : "-0.40647 0.362247 2.37632",
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "-0.40647 -0.0156422 2.24518",
+            "size" : "0.24"
+         }
+      },
+      "maxHealth" : 440,
+      "swinging" : {
+         "lodDist" : "FAR",
+         "sensitivityToImpulse" : "0.48",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "models" : {
+         "destroyed" : "vehicles/german/G70_PzIV_Hydro/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G70_PzIV_Hydro/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G70_PzIV_Hydro/crash/lod0/Hull.model"
+      },
+      "armor" : {
+         "armor_3" : 30,
+         "armor_10" : "",
+         "armor_5" : 20,
+         "armor_12" : 30,
+         "armor_16" : 20,
+         "armor_9" : 10,
+         "armor_8" : 10,
+         "armor_13" : 50,
+         "armor_2" : 30,
+         "armor_6" : 50,
+         "armor_7" : 30,
+         "armor_4" : 20,
+         "armor_1" : 50,
+         "armor_14" : 20,
+         "armor_11" : 50,
+         "armor_15" : 8
+      },
+      "turretPositions" : {
+         "turret" : "-0 1 -0"
+      }
+   },
+   "turrets0" : {
+      "Turret_1_PzIV_Hydro" : {
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G70_PzIV_Hydro/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G70_PzIV_Hydro/collision_client/Turret_01.model"
+         },
+         "userString" : "#germany_vehicles:Turret_1_PzIV_Hydro",
+         "circularVisionRadius" : 330,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "price" : 9200,
+         "showEmblemsOnGun" : false,
+         "models" : {
+            "destroyed" : "vehicles/german/G70_PzIV_Hydro/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/german/G70_PzIV_Hydro/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G70_PzIV_Hydro/normal/lod0/Turret_01.model"
+         },
+         "weight" : 3400,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 35,
+            "maxHealth" : 70,
+            "repairCost" : "1.0"
+         },
+         "tags" : {},
+         "notInShop" : true,
+         "guns" : {
+            "_75mm_KwK_40_L48A" : "shared"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.32",
+                  "rayEnd" : "-1 0 1",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "rayStart" : "-1 0 1"
+               },
+               {
+                  "isMirrored" : true,
+                  "rayStart" : "1 0 1",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.32",
+                  "rayEnd" : "1 0 1"
+               }
+            ]
+         },
+         "gunPosition" : "0 0 1",
+         "rotationSpeed" : 44,
+         "physicsShape" : "0.909 0.072 1.000 0.000 0.426 0.133 0.741 0.540 0.369 0.500 0.000 0.500 0.000 0.100 0.000",
+         "maxHealth" : 110,
+         "level" : 5,
+         "armor" : {
+            "armor_10" : 10,
+            "armor_3" : 30,
+            "armor_13" : "",
+            "armor_2" : 50,
+            "armor_6" : 95,
+            "armor_5" : 95,
+            "armor_16" : 16,
+            "armor_12" : 8,
+            "armor_9" : 30,
+            "armor_8" : 10,
+            "armor_7" : 30,
+            "armor_4" : 30,
+            "armor_1" : 50,
+            "armor_14" : 95,
+            "armor_11" : 30,
+            "armor_15" : 8
+         }
+      }
+   },
+   "chassis" : {
+      "Chassis_PzIV_Hydro" : {
+         "terrainResistance" : "0.9 1 2.1",
+         "notInShop" : true,
+         "repairCost" : "5.0",
+         "drivingWheels" : "WD_L0 WD_L5",
+         "maxLoad" : 27000,
+         "tags" : {},
+         "wwsoundPC" : "treads_type_pc",
+         "weight" : 8000,
+         "wwsoundNPC" : "trds_chf_npc",
+         "level" : 6,
+         "armor" : {
+            "leftTrack" : 15,
+            "rightTrack" : 15
+         },
+         "rotationIsAroundCenter" : false,
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "maxHealth" : 90,
+         "tracks" : {
+            "textureScale" : "-0.9",
+            "leftMaterial" : "track_mat_L_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "rightMaterial" : "track_mat_R_skinned"
+         },
+         "navmeshGirth" : "6.0",
+         "traces" : {
+            "bufferPrefs" : "mediumTank",
+            "size" : "0.44 0.43",
+            "textureSet" : "germany_01",
+            "lodDist" : "FAR"
+         },
+         "bulkHealthFactor" : "3.0",
+         "rotationSpeed" : 40,
+         "maxClimbAngle" : 25,
+         "price" : "7910.0",
+         "userString" : "#germany_vehicles:Chassis_PzIV_Hydro",
+         "topRightCarryingPoint" : "1.20923 1.81852",
+         "brakeForce" : 30000,
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G70_PzIV_Hydro/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G70_PzIV_Hydro/collision/Chassis.model"
+         },
+         "effects" : {
+            "mud" : "mediumTankMud",
+            "lodDist" : "MEDIUM"
+         },
+         "wheels" : {
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 4,
+                  "isLeft" : false
+               },
+               {
+                  "radius" : "0",
+                  "template" : "W_R",
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "count" : 8
+               },
+               {
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "radius" : "0",
+                  "count" : 4,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : true,
+                  "count" : 8,
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "startIndex" : ""
+               }
+            ],
+            "wheel" : [
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "isLeading" : true,
+                  "radius" : "0.39171"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R5",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "radius" : "0.39171",
+                  "isLeading" : true
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "WD_L5",
+                  "isLeading" : true,
+                  "radius" : "0"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.18",
+            "vehicleRotation" : "0.18"
+         },
+         "models" : {
+            "undamaged" : "vehicles/german/G70_PzIV_Hydro/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G70_PzIV_Hydro/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/german/G70_PzIV_Hydro/crash/lod0/Chassis.model"
+         },
+         "maxRegenHealth" : 70
+      }
+   },
+   "radios" : {
+      "FuG5A" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "1.0",
+      "exclusionMask" : "vehicles/german/G70_PzIV_Hydro/PzIV_Hydro_CM.dds",
+      "tiling" : "1 1 0 0"
+   },
+   "horns" : {
+      "volumeFactor" : 1,
+      "priceFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "invisibility" : {
+      "firePenalty" : "0.387",
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "moving" : "0.194",
+      "still" : "0.258"
+   },
+   "repairCost" : "3.50",
+   "premiumVehicleXPFactor" : "0.4",
+   "clientAdjustmentFactors" : {
+      "armour" : "0.981478406"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Maybach_HL_120_TRM_C" : {
+               "smplEnginePower" : "317.1843"
+            }
+         },
+         "chassis" : {
+            "Chassis_PzIV_Hydro" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0805"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "speedLimits" : {
+      "forward" : 48,
+      "backward" : 20
+   },
+   "crewXpFactor" : "1.5",
+   "fuelTanks" : {
+      "Average" : "shared"
+   },
+   "engines" : {
+      "Maybach_HL_120_TRM_C" : "shared"
+   },
+   "crew" : {
+      "driver" : {},
+      "radioman" : {},
+      "loader" : {},
+      "commander" : {},
+      "gunner" : {}
+   }
+}

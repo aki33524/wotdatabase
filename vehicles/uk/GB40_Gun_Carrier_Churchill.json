@@ -1,0 +1,534 @@
+{
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.759002106"
+   },
+   "crew" : {
+      "commander" : "AAAAAAAA",
+      "gunner" : {},
+      "driver" : {},
+      "loader" : {}
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "crewXpFactor" : "1.0",
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "speedLimits" : {
+      "forward" : "25.7",
+      "backward" : 12
+   },
+   "emblems" : {
+      "default" : "britain_color",
+      "alpha" : "0.88",
+      "lodDist" : "MEDIUM"
+   },
+   "radios" : {
+      "N19Mk1" : "shared",
+      "N19Mk3" : "shared",
+      "N19Mk2" : "shared"
+   },
+   "engines" : {
+      "Vauxhall_Bedford_Twin_Six" : "shared",
+      "Meadows_DAV" : "shared"
+   },
+   "chassis" : {
+      "Chassis_GB40_Gun_Carrier_Churchill_2" : {
+         "repairCost" : "5.0",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.2",
+            "vehicleMovement" : "0.2"
+         },
+         "maxLoad" : 43000,
+         "rotationSpeed" : 28,
+         "maxRegenHealth" : 105,
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-0.77",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "navmeshGirth" : "6.0",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "name" : "WD_L3",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "name" : "WD_R3"
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "WD_L"
+               },
+               {
+                  "template" : "W_L",
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "startIndex" : "",
+                  "count" : 9
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "count" : 2
+               },
+               {
+                  "startIndex" : "",
+                  "count" : 9,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "weight" : 8150,
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 140,
+         "terrainResistance" : "1 1.2 2.3",
+         "level" : 6,
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "tags" : {},
+         "userString" : "#gb_vehicles:Chassis_GB40_Gun_Carrier_Churchill_2",
+         "wwsoundPC" : "treads_type_pc",
+         "traces" : {
+            "size" : "0.4 0.54",
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "bufferPrefs" : "largeTank"
+         },
+         "models" : {
+            "undamaged" : "vehicles/british/GB40_Gun_Carrier_Churchill/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Chassis.model"
+         },
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "topRightCarryingPoint" : "0.997536 1.79935",
+         "unlocks" : {
+            "vehicle" : "GB75_AT7"
+         },
+         "maxClimbAngle" : 25,
+         "wwsoundNPC" : "trds_chf_npc",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision/Chassis.model"
+         },
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "rotationIsAroundCenter" : true,
+         "drivingWheels" : "WD_L0 WD_L3",
+         "price" : 14500,
+         "brakeForce" : 39000
+      },
+      "Chassis_GB40_Gun_Carrier_Churchill" : {
+         "navmeshGirth" : "6.0",
+         "tracks" : {
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned",
+            "textureScale" : "-0.77",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "rotationSpeed" : 24,
+         "maxLoad" : 40000,
+         "maxRegenHealth" : 100,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.22",
+            "vehicleMovement" : "0.22"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 7 0 0 0"
+            }
+         },
+         "repairCost" : "5.0",
+         "terrainResistance" : "1.1 1.4 2.5",
+         "level" : 5,
+         "maxHealth" : 130,
+         "bulkHealthFactor" : "3.0",
+         "weight" : 8150,
+         "wheels" : {
+            "lodDist" : "MEDIUM",
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "name" : "WD_L0",
+                  "isLeft" : true,
+                  "isLeading" : true
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L3",
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R0",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "name" : "WD_R3"
+               }
+            ],
+            "group" : [
+               {
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "radius" : "0"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "template" : "W_L",
+                  "count" : 9,
+                  "startIndex" : ""
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "template" : "WD_R",
+                  "count" : 2,
+                  "startIndex" : 1
+               },
+               {
+                  "count" : 9,
+                  "startIndex" : "",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "template" : "W_R"
+               }
+            ]
+         },
+         "topRightCarryingPoint" : "0.997536 1.79935",
+         "effects" : {
+            "mud" : "AAAAAAYAAAAA",
+            "lodDist" : "MEDIUM"
+         },
+         "models" : {
+            "exploded" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB40_Gun_Carrier_Churchill/normal/lod0/Chassis.model"
+         },
+         "traces" : {
+            "bufferPrefs" : "largeTank",
+            "textureSet" : "usa_02",
+            "lodDist" : "FAR",
+            "size" : "0.4 0.54"
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "userString" : "#gb_vehicles:Chassis_GB40_Gun_Carrier_Churchill",
+         "tags" : {},
+         "armor" : {
+            "leftTrack" : 20,
+            "rightTrack" : 20
+         },
+         "drivingWheels" : "WD_L0 WD_L3",
+         "price" : 8600,
+         "brakeForce" : 35000,
+         "rotationIsAroundCenter" : true,
+         "hullPosition" : "0.000000 0.9 0.000000",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision/Chassis.model"
+         },
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxClimbAngle" : 25,
+         "unlocks" : {
+            "chassis" : "Chassis_GB40_Gun_Carrier_Churchill_2"
+         }
+      }
+   },
+   "turrets0" : {
+      "Turret_1_GB40_Gun_Carrier_Churchill" : {
+         "price" : 100,
+         "physicsShape" : "1.000 0.000 1.000 0.000 1.000 0.000 0.500 0.100 0.500 0.500 0.500 0.500 0.600 0.100 0.500",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision_client/Turret_01.model"
+         },
+         "emblemSlots" : {},
+         "gunPosition" : "0 0 0",
+         "models" : {
+            "exploded" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB40_Gun_Carrier_Churchill/normal/lod0/Turret_01.model"
+         },
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB40_Gun_Carrier_Churchill",
+         "armor" : {
+            "armor_8" : "",
+            "armor_5" : "",
+            "armor_4" : 112,
+            "armor_6" : "",
+            "armor_3" : 20,
+            "armor_7" : "",
+            "armor_1" : 225,
+            "armor_2" : 33
+         },
+         "tags" : "AAAAAAAAAAAA",
+         "circularVisionRadius" : 340,
+         "level" : 6,
+         "notInShop" : true,
+         "maxHealth" : 130,
+         "showEmblemsOnGun" : false,
+         "surveyingDeviceHealth" : {
+            "maxHealth" : 80,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 40
+         },
+         "weight" : 170,
+         "guns" : {
+            "_3.7inch_QF_AA_MK_1" : "shared",
+            "_3inch_20_cwt_MkIII_AT_Gun" : "shared",
+            "_32-pounder_AT_Gun_OQF" : "shared"
+         },
+         "rotationSpeed" : 26,
+         "wwturretRotatorSoundManual" : "tur_man_trav_04"
+      }
+   },
+   "camouflage" : {
+      "priceFactor" : "1.2",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/british/GB40_Gun_Carrier_Churchill/Gun_Carrier_Churchill_CM.dds"
+   },
+   "repairCost" : 8,
+   "invisibility" : {
+      "firePenalty" : "0.405",
+      "still" : "0.27",
+      "moving" : "0.162",
+      "camouflageBonus" : "0.04",
+      "camouflageNetBonus" : "0.15"
+   },
+   "physics" : {
+      "detailed" : {
+         "chassis" : {
+            "Chassis_GB40_Gun_Carrier_Churchill" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.1127"
+                     }
+                  }
+               }
+            },
+            "Chassis_GB40_Gun_Carrier_Churchill_2" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0966"
+                     }
+                  }
+               }
+            }
+         },
+         "engines" : {
+            "Meadows_DAV" : {
+               "smplEnginePower" : "317.1843"
+            },
+            "Vauxhall_Bedford_Twin_Six" : {
+               "smplEnginePower" : "370.0484"
+            }
+         }
+      }
+   },
+   "hull" : {
+      "maxHealth" : 520,
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB40_Gun_Carrier_Churchill/collision_client/Hull.model"
+      },
+      "weight" : 27813,
+      "emblemSlots" : {
+         "clan" : {
+            "rayEnd" : "1.20257 0.43776 2.7669",
+            "rayUp" : "0.000000 1 0.000000",
+            "hideIfDamaged" : false,
+            "rayStart" : "1.60257 0.43776 2.7669",
+            "size" : "0.28"
+         },
+         "player" : [
+            {
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-0.528542 1.27389 -0.388845",
+               "size" : "0.28",
+               "rayStart" : "-0.928543 1.27389 -0.38882",
+               "hideIfDamaged" : true
+            },
+            {
+               "isMirrored" : true,
+               "rayEnd" : "0.560504 1.25607 0.724711",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "0.960505 1.25608 0.724708",
+               "hideIfDamaged" : false,
+               "size" : "0.28"
+            }
+         ],
+         "inscription" : [
+            {
+               "size" : "0.68",
+               "rayStart" : "-1 1 -0",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayEnd" : "-0.528531 0.92434 -0.207432"
+            },
+            {
+               "hideIfDamaged" : true,
+               "rayStart" : "0.960506 1.0603 1.4888",
+               "size" : "0.68",
+               "rayEnd" : "0.560506 1.0603 1.4888",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ]
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "exhaust" : {
+         "pixie" : "gas_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "fakeTurrets" : {
+         "lobby" : "",
+         "battle" : ""
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 200,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 135
+      },
+      "armor" : {
+         "armor_4" : "50.8",
+         "armor_10" : "15.9",
+         "armor_13" : "",
+         "armor_3" : "63.5",
+         "armor_2" : "38.1",
+         "armor_11" : "50.8",
+         "armor_8" : "25.4",
+         "armor_9" : "15.9",
+         "armor_16" : "88.9",
+         "armor_5" : "76.2",
+         "armor_12" : "15.9",
+         "armor_6" : "50.8",
+         "armor_7" : "38.1",
+         "armor_15" : "15.9",
+         "armor_14" : "50.8",
+         "armor_1" : "88.9"
+      },
+      "swinging" : {
+         "rollParams" : "1.00 0.22 36.00 0.36 1.00 0.04 0.26",
+         "sensitivityToImpulse" : "0.22",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.22 36.00 0.36 1.00 0.04 0.26"
+      },
+      "turretPositions" : {
+         "turret" : "-0.27916 0.590165 1.54572"
+      },
+      "models" : {
+         "exploded" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB40_Gun_Carrier_Churchill/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB40_Gun_Carrier_Churchill/normal/lod0/Hull.model"
+      },
+      "hangarShadowTexture" : "vehicles/british/GB40_Gun_Carrier_Churchill/Gun_Carrier_Churchill_HangarShadowMap.dds"
+   }
+}

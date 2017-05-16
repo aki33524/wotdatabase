@@ -1,0 +1,506 @@
+{
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : "48.3"
+   },
+   "hull" : {
+      "exhaust" : {
+         "pixie" : "diesel_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "hangarShadowTexture" : "vehicles/american/A92_M60/M60_HangarShadowMap.dds",
+      "armor" : {
+         "armor_4" : "25.4",
+         "armor_3" : "63.5",
+         "armor_16" : "76.2",
+         "armor_6" : 143,
+         "armor_7" : "85.1",
+         "armor_10" : "35.8",
+         "armor_13" : "30.5",
+         "armor_5" : 105,
+         "armor_15" : "40.6",
+         "armor_11" : "35.8",
+         "armor_2" : "73.7",
+         "armor_9" : "50.8",
+         "armor_1" : "93.2",
+         "armor_12" : "19.1",
+         "armor_14" : "12.7",
+         "armor_8" : ""
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "0.00654042 0.206062 3.00765",
+            "rayEnd" : "0.0066007 0.023765 2.92538",
+            "rayUp" : "0.000000 0.000000 -1",
+            "hideIfDamaged" : false,
+            "size" : "0.32"
+         }
+      },
+      "primaryArmor" : "armor_1 armor_2 armor_4",
+      "models" : {
+         "exploded" : "vehicles/american/A92_M60/crash/lod0/Hull.model",
+         "destroyed" : "vehicles/american/A92_M60/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/american/A92_M60/normal/lod0/Hull.model"
+      },
+      "weight" : 24593,
+      "ammoBayHealth" : {
+         "maxHealth" : 260,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 180
+      },
+      "camouflage" : {
+         "tiling" : "1.36 1.36 0.22 0.42"
+      },
+      "swinging" : {
+         "pitchParams" : "0.26 38.00 0.34 1.00 0.04 0.27",
+         "sensitivityToImpulse" : "0.3",
+         "rollParams" : "1.00 0.26 38.00 0.34 1.00 0.04 0.27",
+         "lodDist" : "FAR"
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/american/A92_M60/collision/Hull.model",
+         "collisionModelClient" : "vehicles/american/A92_M60/collision_client/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 0 1"
+      },
+      "maxHealth" : 1600
+   },
+   "invisibility" : {
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.183",
+      "still" : "0.122",
+      "camouflageNetBonus" : "0.1",
+      "moving" : "0.091"
+   },
+   "premiumVehicleXPFactor" : "0.05",
+   "horns" : {
+      "distanceFactor" : 1,
+      "priceFactor" : 1,
+      "volumeFactor" : 1
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.117380288"
+   },
+   "crew" : {
+      "gunner" : {},
+      "driver" : {},
+      "commander" : {},
+      "loader" : "AAAAAAAA"
+   },
+   "chassis" : {
+      "Chassis_M60" : {
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.1",
+            "vehicleMovement" : "0.1"
+         },
+         "repairCost" : "5.0",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "level" : 10,
+         "weight" : 8000,
+         "models" : {
+            "exploded" : "vehicles/american/A92_M60/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/american/A92_M60/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/american/A92_M60/crash/lod0/Chassis.model"
+         },
+         "terrainResistance" : "0.7 0.8 1.7",
+         "bulkHealthFactor" : "3.0",
+         "drivingWheels" : "WD_L0 WD_L4",
+         "rotationSpeed" : 52,
+         "trackNodes" : {
+            "elasticity" : 1105,
+            "gravity" : "-9.8",
+            "damping" : 2,
+            "maxAmplitude" : "0.1",
+            "linkBones" : false,
+            "maxOffset" : "0.1",
+            "enable" : true,
+            "node" : [
+               {
+                  "backwardElastK" : "1.69",
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.016",
+                  "name" : "Track_VT_L0",
+                  "isLeft" : true
+               },
+               {
+                  "backwardElastK" : "1.69",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "offset" : "-0.016",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.016",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.8"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "Track_VT_L2",
+                  "offset" : "-0.016",
+                  "forwardElastK" : "0.9",
+                  "backwardElastK" : "1.89"
+               },
+               {
+                  "backwardElastK" : "1.99",
+                  "isLeft" : true,
+                  "name" : "Track_VT_L3",
+                  "offset" : "-0.016",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "name" : "Track_VT_R1",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.016"
+               },
+               {
+                  "backwardElastK" : "1.89",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.016",
+                  "forwardElastK" : "0.9"
+               },
+               {
+                  "backwardElastK" : "1.99",
+                  "isLeft" : false,
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.9",
+                  "offset" : "-0.016"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "Track_VD_R0"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "Track_VD_L0",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               }
+            ]
+         },
+         "price" : 82500,
+         "topRightCarryingPoint" : "1.46178 2.06798",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "syncAngle" : "32.7273"
+               },
+               {
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "isLeading" : true,
+                  "syncAngle" : "32.7273"
+               },
+               {
+                  "syncAngle" : "32.7273",
+                  "radius" : "0",
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "isLeading" : true
+               },
+               {
+                  "name" : "WD_R4",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "syncAngle" : "32.7273"
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "WD_L",
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "count" : 3,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "count" : 6,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : ""
+               },
+               {
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "count" : 3
+               },
+               {
+                  "count" : 6,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "maxRegenHealth" : 190,
+         "maxHealth" : 250,
+         "navmeshGirth" : "6.0",
+         "splineDesc" : {
+            "segment2Offset" : "0.093",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            },
+            "segment2ModelLeft" : "vehicles/american/A92_M60/track/segment2.model",
+            "right" : "vehicles/american/A92_M60/track/right.track",
+            "segmentLength" : "0.184",
+            "segment2ModelRight" : "vehicles/american/A92_M60/track/segment2.model",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.28",
+            "segmentModelLeft" : "vehicles/american/A92_M60/track/segment1.model",
+            "segmentModelRight" : "vehicles/american/A92_M60/track/segment1.model",
+            "left" : "vehicles/american/A92_M60/track/left.track"
+         },
+         "brakeForce" : 46500,
+         "maxClimbAngle" : 25,
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "hullPosition" : "0.000000 1.30344 0.000000",
+         "wwsoundNPC" : "trds_chf_npc",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "maxOffset" : "0.0700197",
+                  "template" : "Track_L",
+                  "isLeft" : true,
+                  "minOffset" : "-0.0700197",
+                  "startIndex" : "",
+                  "count" : 6
+               },
+               {
+                  "count" : 6,
+                  "isLeft" : false,
+                  "minOffset" : "-0.07",
+                  "startIndex" : "",
+                  "template" : "Track_R",
+                  "maxOffset" : "0.07"
+               }
+            ]
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/american/A92_M60/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/american/A92_M60/collision_client/Chassis.model"
+         },
+         "traces" : {
+            "size" : "0.65 0.76",
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR",
+            "textureSet" : "t97",
+            "decalTexture" : "trace",
+            "decalGroup" : "trace"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 2 0 0 0 8 0 0 0"
+            }
+         },
+         "tags" : {},
+         "rotationIsAroundCenter" : true,
+         "trackThickness" : "0.0003",
+         "tracks" : {
+            "textureScale" : "-2.55",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK"
+         },
+         "userString" : "#usa_vehicles:Chassis_M60",
+         "maxLoad" : 49500,
+         "notInShop" : true
+      }
+   },
+   "engines" : {
+      "Continental_AVDS-1790-2" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_M60" : {
+         "userString" : "#usa_vehicles:Turret_1_M60",
+         "notInShop" : true,
+         "showEmblemsOnGun" : false,
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "price" : 66000,
+         "tags" : {},
+         "guns" : {
+            "_105mm_Gun_M68_1" : "shared"
+         },
+         "rotationSpeed" : 42,
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/american/A92_M60/collision_client/Turret_01.model",
+            "collisionModelServer" : "vehicles/american/A92_M60/collision/Turret_01.model"
+         },
+         "physicsShape" : "0.997 0.000 0.997 0.046 0.710 0.070 0.500 0.521 0.560 0.410 0.201 0.651 0.209 0.399 0.000",
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120,
+            "repairCost" : "1.0"
+         },
+         "gunPosition" : "-0.012153 0.345746 1.05718",
+         "armor" : {
+            "armor_14" : "76.2",
+            "armor_12" : "25.4",
+            "armor_8" : "88.9",
+            "armor_2" : "139.7",
+            "armor_9" : "63.5",
+            "armor_1" : "177.8",
+            "armor_5" : 127,
+            "armor_15" : "76.2",
+            "armor_11" : "25.4",
+            "armor_4" : "50.8",
+            "armor_10" : "114.3",
+            "armor_13" : "",
+            "armor_16" : "50.8",
+            "armor_6" : "114.3",
+            "armor_3" : "76.2",
+            "armor_7" : "101.6"
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "turretRotatorHealth" : {
+            "repairCost" : "1.0",
+            "maxHealth" : 170,
+            "maxRegenHealth" : 85
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.32",
+                  "rayStart" : "-1.26237 0.385958 0.421961",
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 0"
+               },
+               {
+                  "isMirrored" : true,
+                  "size" : "0.32",
+                  "rayStart" : "1.27846 0.384704 0.438461",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "0.921039 0.249562 0.32022",
+                  "rayUp" : "0.000000 1 0.000000"
+               }
+            ],
+            "inscription" : [
+               {
+                  "rayStart" : "-1.26309 0.370094 -0.45938",
+                  "rayEnd" : "-1.08484 0.279546 -0.46459",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "size" : "0.793"
+               },
+               {
+                  "rayStart" : "1.30246 0.342253 -0.457964",
+                  "hideIfDamaged" : false,
+                  "rayEnd" : "1.10558 0.307111 -0.459726",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "size" : "0.733"
+               }
+            ]
+         },
+         "level" : 10,
+         "models" : {
+            "undamaged" : "vehicles/american/A92_M60/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/american/A92_M60/crash/lod0/Turret_01.model",
+            "exploded" : "vehicles/american/A92_M60/crash/lod0/Turret_01.model"
+         },
+         "weight" : 8400,
+         "circularVisionRadius" : 420,
+         "camouflage" : {
+            "tiling" : "0.7 0.7 0.44 0.000000"
+         },
+         "maxHealth" : 400
+      }
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Continental_AVDS-1790-2" : {
+               "smplEnginePower" : "792.9609"
+            }
+         },
+         "chassis" : {
+            "Chassis_M60" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.0644"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crewXpFactor" : "1.5",
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "emblems" : {
+      "default" : "usa_star",
+      "alpha" : "0.92",
+      "lodDist" : "MEDIUM"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "repairCost" : "13.000",
+   "radios" : {
+      "AN-VRC-12" : "shared"
+   },
+   "camouflage" : {
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/american/A92_M60/M60_chassis_01_AM.dds"
+   }
+}

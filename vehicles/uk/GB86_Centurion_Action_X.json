@@ -1,0 +1,449 @@
+{
+   "emblems" : {
+      "alpha" : "0.88",
+      "default" : "britain_color",
+      "lodDist" : "MEDIUM"
+   },
+   "engines" : {
+      "Rolls_Royce_Meteor_with_twin_turbo_supercharges" : "shared"
+   },
+   "radios" : {
+      "C45" : "shared"
+   },
+   "repairCost" : "12.50",
+   "speedLimits" : {
+      "backward" : 20,
+      "forward" : 53
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "2.0",
+      "tiling" : "1 1 0 0"
+   },
+   "effects" : {
+      "damagedStateGroup" : "large",
+      "collision" : {}
+   },
+   "horns" : {
+      "priceFactor" : 1,
+      "volumeFactor" : 1,
+      "distanceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_GB86_Centurion_Action_X" : {
+         "topRightCarryingPoint" : "1.31503 1.87808",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R0",
+                  "syncAngle" : "22.5",
+                  "isLeft" : false,
+                  "radius" : "0.34912"
+               },
+               {
+                  "syncAngle" : "22.5",
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "isLeading" : true,
+                  "name" : "WD_R7"
+               },
+               {
+                  "name" : "WD_L0",
+                  "isLeading" : true,
+                  "isLeft" : true,
+                  "radius" : "0.34912",
+                  "syncAngle" : "22.5"
+               },
+               {
+                  "syncAngle" : "22.5",
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "isLeading" : true,
+                  "name" : "WD_L7"
+               }
+            ],
+            "group" : [
+               {
+                  "template" : "WD_R",
+                  "count" : 6,
+                  "startIndex" : 1,
+                  "isLeft" : false,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_R",
+                  "radius" : "0",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : false
+               },
+               {
+                  "template" : "WD_L",
+                  "count" : 6,
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "template" : "W_L",
+                  "radius" : "0",
+                  "count" : 6,
+                  "startIndex" : "",
+                  "isLeft" : true
+               }
+            ],
+            "lodDist" : "MEDIUM"
+         },
+         "price" : 82500,
+         "armor" : {
+            "rightTrack" : 25,
+            "leftTrack" : 25
+         },
+         "rotationIsAroundCenter" : true,
+         "brakeForce" : 50000,
+         "rotationSpeed" : 50,
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.14",
+            "vehicleMovement" : "0.14"
+         },
+         "AODecals" : {
+            "decal" : {
+               "transform" : "5 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "bulkHealthFactor" : "3.0",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB86_Centurion_Action_X/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/british/GB86_Centurion_Action_X/collision_client/Chassis.model"
+         },
+         "traces" : {
+            "textureSet" : "gb_24",
+            "lodDist" : "FAR",
+            "size" : "0.6 0.7",
+            "bufferPrefs" : "largeTank"
+         },
+         "repairCost" : "5.0",
+         "trackThickness" : "-0.0182",
+         "wwsoundPC" : "treads_type_pc",
+         "drivingWheels" : "WD_L0 WD_L7",
+         "level" : 10,
+         "notInShop" : true,
+         "wwsoundNPC" : "trds_chf_npc",
+         "maxHealth" : 250,
+         "trackNodes" : {
+            "maxAmplitude" : "0.05",
+            "elasticity" : 1218,
+            "damping" : 2,
+            "offset" : "0",
+            "forwardElastK" : 1,
+            "enable" : true,
+            "gravity" : "-9.8",
+            "linkBones" : false,
+            "backwardElastK" : 1,
+            "maxOffset" : "0.05",
+            "node" : [
+               {
+                  "isLeft" : true,
+                  "backwardElastK" : 1,
+                  "forwardElastK" : "0.6",
+                  "name" : "Track_VD_L0"
+               },
+               {
+                  "name" : "Track_VD_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : 1,
+                  "forwardElastK" : "0.6"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "backwardElastK" : "0.6",
+                  "isLeft" : true,
+                  "forwardElastK" : "1.2"
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false,
+                  "backwardElastK" : "0.6",
+                  "forwardElastK" : "1.2"
+               }
+            ]
+         },
+         "userString" : "#gb_vehicles:Chassis_GB86_Centurion_Action_X",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "startIndex" : "",
+                  "isLeft" : true,
+                  "count" : 6,
+                  "maxOffset" : "0.06",
+                  "minOffset" : "-0.06",
+                  "template" : "Track_L"
+               },
+               {
+                  "template" : "Track_R",
+                  "minOffset" : "-0.06",
+                  "maxOffset" : "0.06",
+                  "count" : 6,
+                  "isLeft" : false,
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.41",
+            "rightMaterial" : "track_mat_R_skinned",
+            "leftMaterial" : "track_mat_L_skinned"
+         },
+         "maxRegenHealth" : 190,
+         "maxLoad" : 60000,
+         "splineDesc" : {
+            "left" : "vehicles/british/GB86_Centurion_Action_X/track/left.track",
+            "segmentModelLeft" : "vehicles/british/GB86_Centurion_Action_X/track/Centurion_segment.model",
+            "lodDist" : "MEDIUM",
+            "segmentOffset" : "0.132",
+            "segmentModelRight" : "vehicles/british/GB86_Centurion_Action_X/track/Centurion_segment.model",
+            "right" : "vehicles/british/GB86_Centurion_Action_X/track/right.track",
+            "segmentLength" : "0.135",
+            "atlas" : {
+               "UTiles" : 1,
+               "VTiles" : 1
+            }
+         },
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "tags" : {},
+         "hullPosition" : "0.000000 1.14852 0.000000",
+         "models" : {
+            "exploded" : "vehicles/british/GB86_Centurion_Action_X/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/british/GB86_Centurion_Action_X/normal/lod0/Chassis.model",
+            "destroyed" : "vehicles/british/GB86_Centurion_Action_X/crash/lod0/Chassis.model"
+         },
+         "weight" : 11000,
+         "navmeshGirth" : "6.0",
+         "terrainResistance" : "0.6 0.7 1.5",
+         "maxClimbAngle" : 25
+      }
+   },
+   "turrets0" : {
+      "Turret_1_GB86_Centurion_Action_X" : {
+         "showEmblemsOnGun" : false,
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "models" : {
+            "exploded" : "vehicles/british/GB86_Centurion_Action_X/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/british/GB86_Centurion_Action_X/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/british/GB86_Centurion_Action_X/crash/lod0/Turret_01.model"
+         },
+         "weight" : 14000,
+         "tags" : {},
+         "camouflage" : {
+            "tiling" : "1.6 1.6 0.000000 0.000000"
+         },
+         "gunPosition" : "0.000000 0.326263 1.25517",
+         "price" : 66000,
+         "notInShop" : true,
+         "armor" : {
+            "armor_12" : "28.6",
+            "armor_4" : "95.3",
+            "armor_8" : "",
+            "armor_3" : "152.4",
+            "armor_10" : "95.3",
+            "armor_13" : "38.1",
+            "armor_7" : "76.2",
+            "armor_11" : 127,
+            "armor_5" : "30.2",
+            "armor_1" : "198.1",
+            "armor_6" : "38.1",
+            "armor_2" : "198.1",
+            "armor_14" : "50.8",
+            "armor_9" : "85.7"
+         },
+         "maxHealth" : 390,
+         "turretRotatorHealth" : {
+            "maxRegenHealth" : 85,
+            "repairCost" : "1.0",
+            "maxHealth" : 170
+         },
+         "physicsShape" : "1.050 0.052 0.950 0.000 0.466 0.297 0.563 0.633 0.500 0.500 0.157 0.500 0.329 0.041 0.000",
+         "level" : 10,
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "rayEnd" : "-0.89316 0.714472 -1.22438",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false,
+                  "size" : "0.22",
+                  "rayStart" : "-1.08949 0.716887 -1.26243"
+               },
+               {
+                  "size" : "0.22",
+                  "hideIfDamaged" : false,
+                  "isMirrored" : true,
+                  "rayStart" : "1.08294 0.657754 -1.25797",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "0.88582 0.65733 -1.22416"
+               }
+            ]
+         },
+         "guns" : {
+            "_105mm_Gun_L7_HEAT" : "shared"
+         },
+         "userString" : "#gb_vehicles:Turret_1_GB86_Centurion_Action_X",
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/british/GB86_Centurion_Action_X/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/british/GB86_Centurion_Action_X/collision_client/Turret_01.model"
+         },
+         "primaryArmor" : "armor_1 armor_3 armor_4",
+         "surveyingDeviceHealth" : {
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 60,
+            "maxHealth" : 120
+         },
+         "rotationSpeed" : 48,
+         "circularVisionRadius" : 410
+      }
+   },
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "camouflageBonus" : "0.03",
+      "firePenalty" : "0.317",
+      "moving" : "0.158",
+      "still" : "0.211"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.991207891"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "Rolls_Royce_Meteor_with_twin_turbo_supercharges" : {
+               "smplEnginePower" : "1099.572"
+            }
+         },
+         "chassis" : {
+            "Chassis_GB86_Centurion_Action_X" : {
+               "grounds" : {
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.05635"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "fuelTanks" : {
+      "Large" : "shared"
+   },
+   "hull" : {
+      "camouflage" : {
+         "tiling" : "2.62 2.62 0.000000 0.000000"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 180,
+         "repairCost" : "1.0",
+         "maxHealth" : 260
+      },
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2",
+         "pixie" : "gas_large"
+      },
+      "weight" : 27378,
+      "models" : {
+         "exploded" : "vehicles/british/GB86_Centurion_Action_X/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/british/GB86_Centurion_Action_X/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/british/GB86_Centurion_Action_X/crash/lod0/Hull.model"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/british/GB86_Centurion_Action_X/collision/Hull.model",
+         "collisionModelClient" : "vehicles/british/GB86_Centurion_Action_X/collision_client/Hull.model"
+      },
+      "emblemSlots" : {
+         "inscription" : [
+            {
+               "rayEnd" : "-1.57798 -0.0851705 0.246883",
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "-1.77798 -0.0851705 0.246785",
+               "hideIfDamaged" : true,
+               "size" : "0.88"
+            },
+            {
+               "hideIfDamaged" : false,
+               "size" : "0.88",
+               "rayStart" : "1.77798 -0.0851705 0.246785",
+               "rayEnd" : "1.57798 -0.0851705 0.246883",
+               "rayUp" : "0.000000 1 0.000000"
+            }
+         ],
+         "clan" : {
+            "rayUp" : "0.000000 0.000000 -1",
+            "rayEnd" : "0.395118 0.176346 3.03003",
+            "size" : "0.22",
+            "hideIfDamaged" : false,
+            "rayStart" : "0.395118 0.344709 3.13799"
+         }
+      },
+      "hangarShadowTexture" : "vehicles/british/GB86_Centurion_Action_X/Centurion_Action_X_HangarShadowMap.dds",
+      "swinging" : {
+         "sensitivityToImpulse" : "0.34",
+         "rollParams" : "1.00 0.22 32.00 0.38 1.00 0.05 0.28",
+         "pitchParams" : "0.22 32.00 0.38 1.00 0.05 0.28",
+         "lodDist" : "FAR"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 1"
+      },
+      "armor" : {
+         "armor_4" : "31.8",
+         "armor_12" : "133.4",
+         "armor_3" : "50.8",
+         "armor_8" : "",
+         "armor_10" : "76.2",
+         "armor_1" : "120.7",
+         "armor_5" : 10,
+         "armor_6" : 17,
+         "armor_7" : "28.6",
+         "armor_11" : "19.1",
+         "armor_2" : "76.2",
+         "armor_9" : 6
+      },
+      "maxHealth" : 1560
+   },
+   "crewXpFactor" : "1.0",
+   "crew" : {
+      "loader" : "AAAAAAAA",
+      "driver" : {},
+      "gunner" : {},
+      "commander" : {}
+   }
+}

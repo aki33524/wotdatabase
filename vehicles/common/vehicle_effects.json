@@ -1,0 +1,2559 @@
+{
+   "mediumAmmoBayBurnOff" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "explosion" : "0.01"
+         },
+         "effects" : {
+            "sound" : [
+               {
+                  "startKey" : "explosion",
+                  "wwsound" : "expl_burnup_ammo",
+                  "wwsoundPC" : "expl_burnup_ammo_PC",
+                  "wwsoundNPC" : "expl_burnup_ammo_NPC"
+               },
+               {
+                  "startKey" : "flaming",
+                  "wwsound" : "burning_tank_medium"
+               }
+            ],
+            "decal" : {
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM"
+            },
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "position" : "Scene Root",
+                  "file" : "particles/Tank/destruction/burnup_medium.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "explosion",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_01.xml",
+                  "startKey" : "static",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "file" : "particles/Tank/destruction/fire_dead_medium_01.xml",
+                  "startKey" : "flaming",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ]
+         }
+      }
+   },
+   "emptyRammingDestruction" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "20.0",
+            "stopDeath" : 36000,
+            "death" : "0.01",
+            "flaming" : "0.015"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "position" : "Scene Root",
+               "file" : "particles/Tank/empty.xml",
+               "alwaysUpdateModel" : true,
+               "startKey" : "death",
+               "endKey" : "stopDeath"
+            }
+         }
+      }
+   },
+   "snowCollisionLight" : {
+      "variant1" : {
+         "effects" : {
+            "collisionSound" : {
+               "wwsoundPC" : "collision_static_object_hull_snow ; collision_static_object_suspension_snow",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "startKey" : "start"
+            },
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_light_snow.xml",
+               "force" : 1
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "5.0"
+         }
+      }
+   },
+   "explosionCandle1" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "groupName" : "AAAA",
+               "size" : "12 12"
+            },
+            "sound" : [
+               {
+                  "wwsound" : "burning_tank_small",
+                  "startKey" : "flaming"
+               },
+               {
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "wwsound" : "expl_ammo",
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "startKey" : "start"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "start",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "position" : "HP_turretJoint",
+                  "startKey" : "start",
+                  "file" : "particles/Tank/destruction/explosion_turret_01.xml"
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_small_02.xml",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/fire_dead_small_02.xml",
+                  "startKey" : "flaming"
+               }
+            ]
+         }
+      }
+   },
+   "fullDestruction" : {
+      "variant1" : {
+         "timeline" : {
+            "effectEnd" : "10.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "file" : "particles/Tank/destruction/destruction_full.xml",
+               "startKey" : "start",
+               "position" : "Scene Root",
+               "force" : 1
+            },
+            "sound" : {
+               "wwsoundNPC" : "expl_ammo_NPC",
+               "wwsoundPC" : "expl_ammo_PC",
+               "wwsound" : "expl_ammo_l",
+               "startKey" : "start"
+            }
+         }
+      }
+   },
+   "waterCollisionLight" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "2.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_light_water.xml",
+               "force" : 1
+            },
+            "sound" : {
+               "wwsound" : "water_coll_light",
+               "startKey" : "start"
+            }
+         }
+      }
+   },
+   "largeDestruction" : {
+      "variant1" : {
+         "effects" : {
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "groupName" : "AAAA",
+               "size" : "12 12"
+            },
+            "sound" : [
+               {
+                  "startKey" : "death",
+                  "wwsoundPC" : "expl_fuel_PC",
+                  "wwsound" : "expl_fuel",
+                  "wwsoundNPC" : "expl_fuel_NPC"
+               },
+               {
+                  "wwsound" : "burning_tank_large",
+                  "startKey" : "flaming"
+               }
+            ],
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopDeath",
+                  "position" : "Scene Root",
+                  "file" : "particles/Tank/destruction/destruction_large_01.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "death"
+               },
+               {
+                  "endKey" : "stopDeath",
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_large_02.xml"
+               },
+               {
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_large_02.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "death",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            }
+         },
+         "timeline" : {
+            "flaming" : "0.015",
+            "death" : "0.01",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "20.0",
+            "stopDeath" : 36000
+         }
+      }
+   },
+   "smallFuelExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02",
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01"
+         },
+         "effects" : {
+            "sound" : [
+               {
+                  "startKey" : "explosion",
+                  "wwsoundPC" : "expl_fuel_PC",
+                  "wwsound" : "expl_fuel",
+                  "wwsoundNPC" : "expl_fuel_NPC"
+               },
+               {
+                  "startKey" : "flaming",
+                  "wwsound" : "burning_tank_small"
+               }
+            ],
+            "decal" : {
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "smTexName" : "explosion_stone_NO_GMM"
+            },
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "position" : "Scene Root",
+                  "file" : "particles/Tank/destruction/fuel_small.xml",
+                  "startKey" : "explosion",
+                  "alwaysUpdateModel" : true,
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/smoke_dead_small_02.xml",
+                  "startKey" : "static"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "file" : "particles/Tank/destruction/fire_dead_small_02.xml",
+                  "startKey" : "flaming",
+                  "position" : "HP_Fire_1"
+               }
+            ]
+         }
+      }
+   },
+   "largeAmmoBayExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015"
+         },
+         "effects" : {
+            "decal" : {
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM"
+            },
+            "sound" : [
+               {
+                  "startKey" : "explosion",
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "wwsound" : "expl_ammo",
+                  "wwsoundNPC" : "expl_ammo_NPC"
+               },
+               {
+                  "wwsound" : "burning_tank_medium",
+                  "startKey" : "flaming"
+               }
+            ],
+            "pixie" : [
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "Scene Root",
+                  "startKey" : "explosion",
+                  "file" : "particles/Tank/destruction/turret_detach_large.xml",
+                  "alwaysUpdateModel" : true,
+                  "force" : 1
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/smoke_dead_large_02.xml",
+                  "startKey" : "static",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "file" : "particles/Tank/destruction/fire_dead_large_02.xml",
+                  "startKey" : "flaming",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            }
+         }
+      }
+   },
+   "groundCollisionHeavy" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_ground.xml",
+               "force" : 1
+            },
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "wwsoundPC" : "collision_static_object_hull_ground ; collision_static_object_suspension_ground"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "5.0"
+         }
+      }
+   },
+   "mediumCrewDeath" : {
+      "variant1" : {
+         "timeline" : {
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         },
+         "effects" : {
+            "sound" : {
+               "wwsoundNPC" : "expl_crew_death_m_NPC",
+               "wwsoundPC" : "expl_crew_death_m_PC",
+               "wwsound" : "expl_crew_death_m",
+               "startKey" : "explosion"
+            },
+            "pixie" : [
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "Scene Root",
+                  "file" : "particles/Tank/destruction/death_crew_medium.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "explosion",
+                  "force" : 1
+               },
+               {
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_white_small.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "stopExplosion"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "emptyAmmoBayExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "position" : "Scene Root",
+               "startKey" : "explosion",
+               "file" : "particles/Tank/empty.xml",
+               "alwaysUpdateModel" : true,
+               "endKey" : "stopExplosion"
+            }
+         }
+      }
+   },
+   "stoneCollisionHeavy" : {
+      "variant1" : {
+         "effects" : {
+            "collisionSound" : {
+               "wwsoundPC" : "collision_static_object_hull_stone ; collision_static_object_suspension_stone",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "startKey" : "start"
+            },
+            "pixie" : {
+               "force" : 1,
+               "orientBySurfaceNormal" : true,
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_stone.xml"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "5.0"
+         }
+      }
+   },
+   "woodCollisionLight" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "wwsoundPC" : "collision_static_object_hull_wood; collision_static_object_suspension_wood"
+            },
+            "pixie" : {
+               "file" : "particles/Tank/tank_collision_light_wood.xml",
+               "startKey" : "start",
+               "force" : 1
+            }
+         }
+      }
+   },
+   "groundCollisionLight" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_light_ground.xml",
+               "force" : 1
+            },
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundPC" : "collision_static_object_hull_ground ; collision_static_object_suspension_ground",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC"
+            }
+         }
+      }
+   },
+   "smallFlaming" : {
+      "variant1" : {
+         "effects" : {
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            },
+            "sound" : {
+               "wwsoundPC" : "flaming_engine_small_pc",
+               "wwsoundNPC" : "flaming_engine_small_npc",
+               "stopSyncVisual" : true,
+               "startKey" : "AAAA",
+               "endKey" : "noEmission"
+            },
+            "pixie" : {
+               "position" : "HP_Fire_1",
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/destruction/flaming_small_01.xml"
+            }
+         },
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         }
+      },
+      "variant2" : {
+         "effects" : {
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            },
+            "sound" : {
+               "startKey" : "AAAA",
+               "endKey" : "noEmission",
+               "wwsoundPC" : "flaming_engine_medium_pc",
+               "wwsoundNPC" : "flaming_engine_medium_npc",
+               "stopSyncVisual" : true
+            },
+            "pixie" : {
+               "file" : "particles/Tank/destruction/flaming_small_02.xml",
+               "startKey" : "AAAA",
+               "position" : "HP_Fire_1"
+            }
+         },
+         "stages" : {
+            "noEmission" : "4.0",
+            "fire" : "1.0"
+         }
+      }
+   },
+   "largeCrewDeath" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : {
+               "wwsoundNPC" : "expl_crew_death_l_NPC",
+               "wwsoundPC" : "expl_crew_death_l_PC",
+               "wwsound" : "expl_crew_death_l",
+               "startKey" : "explosion"
+            },
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "file" : "particles/Tank/destruction/death_crew_large.xml",
+                  "startKey" : "explosion",
+                  "alwaysUpdateModel" : true,
+                  "position" : "Scene Root",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "file" : "particles/Tank/destruction/smoke_dead_white_large.xml",
+                  "startKey" : "static",
+                  "position" : "HP_Fire_1"
+               }
+            ]
+         },
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "explosion" : "0.01",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         }
+      }
+   },
+   "collisionHeavy" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "2.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_hard1_tank.xml"
+            },
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsound" : "phys_coll_light_npc, phys_friction_after_coll_npc"
+            }
+         }
+      }
+   },
+   "metalCollisionHeavy" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/tank_collision_01.xml",
+               "startKey" : "start"
+            },
+            "collisionSound" : {
+               "wwsoundPC" : "collision_static_object_hull_metal; collision_static_object_suspension_metal",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "startKey" : "start"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "5.0"
+         }
+      }
+   },
+   "dominationLargeRammingDestruction" : {
+      "variant1" : {
+         "timeline" : {
+            "flaming" : "0.015",
+            "death" : "0.01",
+            "static" : "0.02",
+            "stopDeath" : 36000,
+            "waitChangeBurnSound" : "20.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "endKey" : "stopDeath",
+               "position" : "Scene Root",
+               "startKey" : "death",
+               "file" : "particles/Tank/destruction/ram_domination_large.xml",
+               "alwaysUpdateModel" : true,
+               "force" : 1
+            },
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "death"
+            },
+            "sound" : {
+               "wwsoundNPC" : "expl_ram_death_NPC",
+               "wwsoundPC" : "expl_ram_death_PC",
+               "wwsound" : "expl_ram_death",
+               "startKey" : "death"
+            },
+            "decal" : {
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static"
+            }
+         }
+      }
+   },
+   "emptyFuelExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "explosion" : "0.01",
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         },
+         "effects" : {
+            "pixie" : {
+               "position" : "Scene Root",
+               "startKey" : "explosion",
+               "file" : "particles/Tank/empty.xml",
+               "alwaysUpdateModel" : true,
+               "endKey" : "stopExplosion",
+               "force" : 1
+            }
+         }
+      }
+   },
+   "largeAmmoBayBurnOff" : {
+      "variant1" : {
+         "effects" : {
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "groupName" : "AAAA",
+               "size" : "12 12"
+            },
+            "sound" : [
+               {
+                  "startKey" : "explosion",
+                  "wwsoundPC" : "expl_burnup_ammo_PC",
+                  "wwsound" : "expl_burnup_ammo",
+                  "wwsoundNPC" : "expl_burnup_ammo_NPC"
+               },
+               {
+                  "wwsound" : "burning_tank_large",
+                  "startKey" : "flaming"
+               }
+            ],
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopExplosion",
+                  "file" : "particles/Tank/destruction/burnup_large.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "explosion",
+                  "position" : "Scene Root"
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/smoke_dead_large_02.xml",
+                  "startKey" : "static",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "position" : "HP_Fire_1",
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_large_02.xml"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            }
+         },
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         }
+      }
+   },
+   "metalCollisionLight" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "collisionSound" : {
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "wwsoundPC" : "collision_static_object_hull_metal; collision_static_object_suspension_metal",
+               "startKey" : "start"
+            },
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/tank_collision_01.xml",
+               "startKey" : "start"
+            }
+         }
+      }
+   },
+   "smallAmmoBayExplosion" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : [
+               {
+                  "startKey" : "explosion",
+                  "file" : "particles/Tank/destruction/turret_detach_small.xml",
+                  "alwaysUpdateModel" : true,
+                  "position" : "Scene Root",
+                  "endKey" : "stopExplosion",
+                  "force" : 1
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_small_02.xml"
+               },
+               {
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_small_02.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "decal" : {
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "smTexName" : "explosion_stone_NO_GMM",
+               "groupName" : "AAAA",
+               "size" : "12 12",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM"
+            },
+            "sound" : [
+               {
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "wwsound" : "expl_ammo",
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "startKey" : "explosion"
+               },
+               {
+                  "wwsound" : "burning_tank_small",
+                  "startKey" : "flaming"
+               }
+            ]
+         },
+         "timeline" : {
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         }
+      }
+   },
+   "emptySubmersionDeath" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : {
+               "position" : "Scene Root",
+               "alwaysUpdateModel" : true,
+               "file" : "particles/Tank/empty.xml",
+               "startKey" : "explosion",
+               "endKey" : "stopExplosion",
+               "force" : 1
+            }
+         },
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015",
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         }
+      }
+   },
+   "emptyCrewDeath" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : {
+               "file" : "particles/Tank/empty.xml",
+               "alwaysUpdateModel" : true,
+               "startKey" : "explosion",
+               "position" : "Scene Root",
+               "endKey" : "stopExplosion",
+               "force" : 1
+            }
+         },
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "explosion" : "0.01"
+         }
+      }
+   },
+   "mediumAmmoBayExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         },
+         "effects" : {
+            "sound" : [
+               {
+                  "wwsound" : "expl_ammo",
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "startKey" : "explosion"
+               },
+               {
+                  "startKey" : "flaming",
+                  "wwsound" : "burning_tank_medium"
+               }
+            ],
+            "decal" : {
+               "groupName" : "AAAA",
+               "size" : "12 12",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM"
+            },
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopExplosion",
+                  "position" : "Scene Root",
+                  "startKey" : "explosion",
+                  "file" : "particles/Tank/destruction/turret_detach_medium.xml",
+                  "alwaysUpdateModel" : true
+               },
+               {
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_01.xml",
+                  "startKey" : "static",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_medium_01.xml",
+                  "position" : "HP_Fire_1"
+               }
+            ]
+         }
+      }
+   },
+   "woodCollisionHeavy" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : {
+               "file" : "particles/Tank/tank_collision_wood.xml",
+               "startKey" : "start",
+               "force" : 1
+            },
+            "collisionSound" : {
+               "wwsoundPC" : "collision_static_object_hull_wood; collision_static_object_suspension_wood",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "startKey" : "start"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "5.0"
+         }
+      }
+   },
+   "explosionCandle3" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : [
+               {
+                  "wwsound" : "burning_tank_medium",
+                  "startKey" : "flaming"
+               },
+               {
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "wwsound" : "expl_ammo",
+                  "startKey" : "start"
+               }
+            ],
+            "decal" : {
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM"
+            },
+            "flashBang" : {
+               "startKey" : "start",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : [
+               {
+                  "position" : "HP_turretJoint",
+                  "startKey" : "start",
+                  "file" : "particles/Tank/destruction/explosion_turret_03.xml",
+                  "force" : 1
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_02.xml"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/fire_dead_medium_02.xml",
+                  "startKey" : "flaming"
+               }
+            ]
+         },
+         "timeline" : {
+            "impactEnd" : "5.0",
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         }
+      }
+   },
+   "smallAmmoBayBurnOff" : {
+      "variant1" : {
+         "effects" : {
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "position" : "Scene Root",
+                  "startKey" : "explosion",
+                  "file" : "particles/Tank/destruction/burnup_small.xml",
+                  "alwaysUpdateModel" : true,
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_small_02.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "stopExplosion"
+               },
+               {
+                  "file" : "particles/Tank/destruction/fire_dead_small_02.xml",
+                  "startKey" : "flaming",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "groupName" : "AAAA",
+               "size" : "12 12"
+            },
+            "sound" : [
+               {
+                  "startKey" : "explosion",
+                  "wwsoundNPC" : "expl_burnup_ammo_NPC",
+                  "wwsound" : "expl_burnup_ammo",
+                  "wwsoundPC" : "expl_burnup_ammo_PC"
+               },
+               {
+                  "wwsound" : "burning_tank_small",
+                  "startKey" : "flaming"
+               }
+            ]
+         },
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01"
+         }
+      }
+   },
+   "collisionLight" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "2.0"
+         },
+         "effects" : {
+            "collisionSound" : {
+               "wwsoundNPC" : "phys_friction_npc",
+               "wwsoundPC" : "collision_tank_silence_pc",
+               "startKey" : "start"
+            },
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/tank_collision_light_tank.xml",
+               "startKey" : "start"
+            }
+         }
+      }
+   },
+   "emptyFlaming" : {
+      "variant1" : {
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/empty.xml",
+               "position" : "HP_Fire_1"
+            }
+         }
+      }
+   },
+   "collision" : {
+      "variant2" : {
+         "effects" : {
+            "sound" : {
+               "wwsound" : "obj_fuel_barrel_mid",
+               "startKey" : "start"
+            },
+            "pixie" : {
+               "force" : 1,
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_hard2_tank.xml"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "2.0"
+         }
+      },
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "2.0"
+         },
+         "effects" : {
+            "sound" : {
+               "startKey" : "start",
+               "wwsound" : "obj_fuel_barrel_mid"
+            },
+            "pixie" : {
+               "force" : 1,
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_hard1_tank.xml"
+            }
+         }
+      }
+   },
+   "stoneCollisionLight" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "file" : "particles/Tank/tank_collision_light_stone.xml",
+               "startKey" : "start",
+               "force" : 1,
+               "orientBySurfaceNormal" : true
+            },
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundPC" : "collision_static_object_hull_stone ; collision_static_object_suspension_stone",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC"
+            }
+         }
+      }
+   },
+   "emptyAmmoBayBurnOff" : {
+      "variant1" : {
+         "timeline" : {
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "endKey" : "stopExplosion",
+               "position" : "Scene Root",
+               "file" : "particles/Tank/empty.xml",
+               "alwaysUpdateModel" : true,
+               "startKey" : "explosion"
+            }
+         }
+      }
+   },
+   "mediumSubmersionDeath" : {
+      "variant1" : {
+         "timeline" : {
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         },
+         "effects" : {
+            "sound" : {
+               "wwsound" : "expl_submersion_death",
+               "startKey" : "explosion"
+            },
+            "pixie" : {
+               "position" : "Scene Root",
+               "file" : "particles/Tank/destruction/sink_medium.xml",
+               "startKey" : "explosion",
+               "alwaysUpdateModel" : true,
+               "endKey" : "stopExplosion",
+               "force" : 1
+            }
+         }
+      }
+   },
+   "collisionHeavy2" : {
+      "variant1" : {
+         "effects" : {
+            "collisionSound" : {
+               "wwsoundNPC" : "phys_coll_med_npc , phys_friction_after_coll_npc",
+               "wwsoundPC" : "collision_tank_pc",
+               "startKey" : "start"
+            },
+            "pixie" : {
+               "force" : 1,
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_hard2_tank.xml"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "2.0"
+         }
+      }
+   },
+   "dominationLargeAmmoBayExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015",
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         },
+         "effects" : {
+            "decal" : {
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true
+            },
+            "sound" : {
+               "startKey" : "explosion",
+               "wwsoundNPC" : "expl_ammo_NPC",
+               "wwsound" : "expl_ammo_m",
+               "wwsoundPC" : "expl_ammo_PC"
+            },
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            },
+            "pixie" : {
+               "position" : "Scene Root",
+               "file" : "particles/Tank/destruction/turret_detach_domination_large.xml",
+               "alwaysUpdateModel" : true,
+               "startKey" : "explosion",
+               "endKey" : "stopExplosion",
+               "force" : 1
+            }
+         }
+      }
+   },
+   "dominationLargeDestruction" : {
+      "variant1" : {
+         "effects" : {
+            "flashBang" : {
+               "startKey" : "death",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : {
+               "position" : "Scene Root",
+               "startKey" : "death",
+               "file" : "particles/Tank/destruction/destruction_domination_large.xml",
+               "alwaysUpdateModel" : true,
+               "endKey" : "stopDeath",
+               "force" : 1
+            },
+            "sound" : [
+               {
+                  "startKey" : "death",
+                  "wwsoundNPC" : "expl_fuel_NPC",
+                  "wwsoundPC" : "expl_fuel_PC",
+                  "wwsound" : "expl_fuel_l"
+               },
+               {
+                  "startKey" : "death",
+                  "wwsoundPC" : "tank_burning_domination_large",
+                  "wwsound" : "tank_burning_domination_large",
+                  "wwsoundNPC" : "tank_burning_domination_large"
+               }
+            ],
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "size" : "12 12",
+               "groupName" : "AAAA"
+            }
+         },
+         "timeline" : {
+            "flaming" : "0.015",
+            "death" : "0.01",
+            "stopDeath" : 36000,
+            "waitChangeBurnSound" : "20.0",
+            "static" : "0.02"
+         }
+      }
+   },
+   "rammingCollisionLight" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : {
+               "startKey" : "start",
+               "wwsound" : "phys_coll_ramming_light"
+            }
+         },
+         "timeline" : {
+            "impact" : "2.0"
+         }
+      }
+   },
+   "largeFlaming" : {
+      "variant1" : {
+         "stages" : {
+            "noEmission" : "4.0",
+            "fire" : "1.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/destruction/flaming_large_01.xml",
+               "position" : "HP_Fire_1"
+            },
+            "sound" : {
+               "endKey" : "noEmission",
+               "startKey" : "AAAA",
+               "stopSyncVisual" : true,
+               "wwsoundPC" : "flaming_engine_medium_pc",
+               "wwsoundNPC" : "flaming_engine_medium_npc"
+            },
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            }
+         }
+      },
+      "variant2" : {
+         "effects" : {
+            "pixie" : {
+               "position" : "HP_Fire_1",
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/destruction/flaming_large_02.xml"
+            },
+            "sound" : {
+               "wwsoundNPC" : "flaming_engine_large_npc",
+               "wwsoundPC" : "flaming_engine_large_pc",
+               "stopSyncVisual" : true,
+               "startKey" : "AAAA",
+               "endKey" : "noEmission"
+            },
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            }
+         },
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         }
+      }
+   },
+   "dominationLargeAmmoBayBurnOff" : {
+      "variant1" : {
+         "effects" : {
+            "decal" : {
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "smTexName" : "explosion_stone_NO_GMM"
+            },
+            "sound" : {
+               "startKey" : "explosion",
+               "wwsoundPC" : "expl_burnup_ammo_PC",
+               "wwsound" : "expl_burnup_ammo_l",
+               "wwsoundNPC" : "expl_burnup_ammo_NPC"
+            },
+            "pixie" : {
+               "endKey" : "stopExplosion",
+               "file" : "particles/Tank/destruction/burnup_domination_large.xml",
+               "alwaysUpdateModel" : true,
+               "startKey" : "explosion",
+               "position" : "Scene Root",
+               "force" : 1
+            },
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            }
+         },
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015"
+         }
+      }
+   },
+   "mediumFuelExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015"
+         },
+         "effects" : {
+            "sound" : [
+               {
+                  "wwsoundNPC" : "expl_fuel_NPC",
+                  "wwsoundPC" : "expl_fuel_PC",
+                  "wwsound" : "expl_fuel",
+                  "startKey" : "explosion"
+               },
+               {
+                  "wwsound" : "burning_tank_medium",
+                  "startKey" : "flaming"
+               }
+            ],
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "groupName" : "AAAA",
+               "size" : "12 12"
+            },
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopExplosion",
+                  "position" : "Scene Root",
+                  "file" : "particles/Tank/destruction/fuel_medium.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "explosion"
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_01.xml",
+                  "startKey" : "static"
+               },
+               {
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_medium_01.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ]
+         }
+      }
+   },
+   "rammingCollisionHeavy" : {
+      "variant1" : {
+         "timeline" : {
+            "impact" : "2.0"
+         },
+         "effects" : {
+            "sound" : {
+               "startKey" : "start",
+               "wwsound" : "phys_coll_ramming_heavy"
+            }
+         }
+      }
+   },
+   "largeFuelExplosion" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01"
+         },
+         "effects" : {
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            },
+            "pixie" : [
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "Scene Root",
+                  "file" : "particles/Tank/destruction/fuel_large.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "explosion",
+                  "force" : 1
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/smoke_dead_large_02.xml",
+                  "startKey" : "static"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/fire_dead_large_02.xml",
+                  "startKey" : "flaming"
+               }
+            ],
+            "sound" : [
+               {
+                  "startKey" : "explosion",
+                  "wwsoundNPC" : "expl_fuel_NPC",
+                  "wwsound" : "expl_fuel",
+                  "wwsoundPC" : "expl_fuel_PC"
+               },
+               {
+                  "wwsound" : "burning_tank_large",
+                  "startKey" : "flaming"
+               }
+            ],
+            "decal" : {
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM"
+            }
+         }
+      }
+   },
+   "emptyDestruction" : {
+      "variant1" : {
+         "timeline" : {
+            "stopDeath" : 36000,
+            "waitChangeBurnSound" : "20.0",
+            "static" : "0.02",
+            "death" : "0.01",
+            "flaming" : "0.015"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "position" : "Scene Root",
+               "startKey" : "death",
+               "file" : "particles/Tank/empty.xml",
+               "alwaysUpdateModel" : true,
+               "endKey" : "stopDeath"
+            }
+         }
+      }
+   },
+   "waterCollisionHeavy" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : {
+               "startKey" : "start",
+               "wwsound" : "water_coll_heavy"
+            },
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/tank_collision_water.xml",
+               "startKey" : "start"
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "2.0"
+         }
+      }
+   },
+   "empty" : {},
+   "mediumRammingDestruction" : {
+      "variant1" : {
+         "timeline" : {
+            "waitChangeBurnSound" : "20.0",
+            "stopDeath" : 36000,
+            "static" : "0.02",
+            "flaming" : "0.015",
+            "death" : "0.01"
+         },
+         "effects" : {
+            "decal" : {
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static"
+            },
+            "sound" : [
+               {
+                  "wwsound" : "expl_ram_death",
+                  "wwsoundPC" : "expl_ram_death_PC",
+                  "wwsoundNPC" : "expl_ram_death_NPC",
+                  "startKey" : "death"
+               },
+               {
+                  "startKey" : "flaming",
+                  "wwsound" : "burning_tank_medium"
+               }
+            ],
+            "pixie" : [
+               {
+                  "endKey" : "stopDeath",
+                  "alwaysUpdateModel" : true,
+                  "file" : "particles/Tank/destruction/ram_medium.xml",
+                  "startKey" : "death",
+                  "position" : "Scene Root",
+                  "force" : 1
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_01.xml",
+                  "endKey" : "stopDeath"
+               },
+               {
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_medium_01.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "death",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "dominationLargeSubmersionDeath" : {
+      "variant1" : {
+         "timeline" : {
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02",
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015"
+         },
+         "effects" : {
+            "pixie" : {
+               "endKey" : "stopExplosion",
+               "position" : "Scene Root",
+               "alwaysUpdateModel" : true,
+               "file" : "particles/Tank/destruction/sink_domination_large.xml",
+               "startKey" : "explosion",
+               "force" : 1
+            },
+            "sound" : {
+               "startKey" : "explosion",
+               "wwsound" : "tank_submersion_death"
+            }
+         }
+      }
+   },
+   "dominationLargeFuelExplosion" : {
+      "variant1" : {
+         "effects" : {
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : {
+               "force" : 1,
+               "position" : "Scene Root",
+               "startKey" : "explosion",
+               "file" : "particles/Tank/destruction/fuel_domination_large.xml",
+               "alwaysUpdateModel" : true,
+               "endKey" : "stopExplosion"
+            },
+            "sound" : [
+               {
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "wwsound" : "expl_ammo_l",
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "startKey" : "explosion"
+               },
+               {
+                  "wwsound" : "expl_burnup_ammo_l",
+                  "wwsoundPC" : "expl_burnup_ammo_PC",
+                  "wwsoundNPC" : "expl_burnup_ammo_NPC",
+                  "startKey" : "explosion"
+               }
+            ],
+            "decal" : {
+               "groupName" : "AAAA",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "smTexName" : "explosion_stone_NO_GMM"
+            }
+         },
+         "timeline" : {
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02",
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015"
+         }
+      }
+   },
+   "largeSubmersionDeath" : {
+      "variant1" : {
+         "timeline" : {
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015",
+            "explosion" : "0.01"
+         },
+         "effects" : {
+            "pixie" : {
+               "alwaysUpdateModel" : true,
+               "file" : "particles/Tank/destruction/sink_large.xml",
+               "startKey" : "explosion",
+               "position" : "Scene Root",
+               "endKey" : "stopExplosion",
+               "force" : 1
+            },
+            "sound" : {
+               "startKey" : "explosion",
+               "wwsound" : "expl_submersion_death"
+            }
+         }
+      }
+   },
+   "largeRammingDestruction" : {
+      "variant1" : {
+         "timeline" : {
+            "death" : "0.01",
+            "flaming" : "0.015",
+            "waitChangeBurnSound" : "20.0",
+            "stopDeath" : 36000,
+            "static" : "0.02"
+         },
+         "effects" : {
+            "decal" : {
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM"
+            },
+            "sound" : [
+               {
+                  "startKey" : "death",
+                  "wwsound" : "expl_ram_death",
+                  "wwsoundPC" : "expl_ram_death_PC",
+                  "wwsoundNPC" : "expl_ram_death_NPC"
+               },
+               {
+                  "wwsound" : "burning_tank_large",
+                  "startKey" : "flaming"
+               }
+            ],
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopDeath",
+                  "startKey" : "death",
+                  "file" : "particles/Tank/destruction/ram_large.xml",
+                  "alwaysUpdateModel" : true,
+                  "position" : "Scene Root"
+               },
+               {
+                  "endKey" : "stopDeath",
+                  "file" : "particles/Tank/destruction/smoke_dead_large_02.xml",
+                  "startKey" : "static",
+                  "position" : "HP_Fire_1"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "file" : "particles/Tank/destruction/fire_dead_large_02.xml",
+                  "startKey" : "flaming",
+                  "position" : "HP_Fire_1"
+               }
+            ],
+            "flashBang" : {
+               "startKey" : "death",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "sandCollisionHeavy" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "file" : "particles/Tank/tank_collision_sand.xml",
+               "startKey" : "start",
+               "force" : 1
+            },
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "wwsoundPC" : "collision_static_object_hull_sand ; collision_static_object_suspension_sand"
+            }
+         }
+      }
+   },
+   "mediumFlaming" : {
+      "variant1" : {
+         "effects" : {
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            },
+            "sound" : {
+               "wwsoundPC" : "flaming_engine_medium_pc",
+               "wwsoundNPC" : "flaming_engine_medium_npc",
+               "stopSyncVisual" : true,
+               "startKey" : "AAAA",
+               "endKey" : "noEmission"
+            },
+            "pixie" : {
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/destruction/flaming_medium_01.xml",
+               "position" : "HP_Fire_1"
+            }
+         },
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         }
+      },
+      "variant2" : {
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         },
+         "effects" : {
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            },
+            "sound" : {
+               "wwsoundPC" : "flaming_engine_medium_pc",
+               "wwsoundNPC" : "flaming_engine_medium_npc",
+               "stopSyncVisual" : true,
+               "startKey" : "AAAA",
+               "endKey" : "noEmission"
+            },
+            "pixie" : {
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/destruction/flaming_medium_02.xml",
+               "position" : "HP_Fire_1"
+            }
+         }
+      }
+   },
+   "sandCollisionLight" : {
+      "variant1" : {
+         "effects" : {
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "wwsoundPC" : "collision_static_object_hull_sand ; collision_static_object_suspension_sand"
+            },
+            "pixie" : {
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_light_sand.xml",
+               "force" : 1
+            }
+         },
+         "timeline" : {
+            "impactEnd" : "5.0"
+         }
+      }
+   },
+   "snowCollisionHeavy" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundNPC" : "collision_static_object_hull_NPC ; collision_static_object_suspension_NPC",
+               "wwsoundPC" : "collision_static_object_hull_snow ; collision_static_object_suspension_snow"
+            },
+            "pixie" : {
+               "force" : 1,
+               "startKey" : "start",
+               "file" : "particles/Tank/tank_collision_snow.xml"
+            }
+         }
+      }
+   },
+   "collisionHeavy3" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "2.0"
+         },
+         "effects" : {
+            "collisionSound" : {
+               "startKey" : "start",
+               "wwsoundNPC" : "phys_coll_heavy_npc , phys_friction_after_coll_npc",
+               "wwsoundPC" : "collision_tank_pc"
+            },
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/tank_collision_hard3_tank.xml",
+               "startKey" : "start"
+            }
+         }
+      }
+   },
+   "collisionHeavy1" : {
+      "variant1" : {
+         "timeline" : {
+            "impactEnd" : "2.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "force" : 1,
+               "file" : "particles/Tank/tank_collision_hard1_tank.xml",
+               "startKey" : "start"
+            },
+            "collisionSound" : {
+               "wwsoundPC" : "collision_tank_pc",
+               "wwsoundNPC" : "phys_coll_light_npc , phys_friction_after_coll_npc",
+               "startKey" : "start"
+            }
+         }
+      }
+   },
+   "smallSubmersionDeath" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : {
+               "startKey" : "explosion",
+               "wwsound" : "expl_submersion_death"
+            },
+            "pixie" : {
+               "file" : "particles/Tank/destruction/sink_small.xml",
+               "startKey" : "explosion",
+               "alwaysUpdateModel" : true,
+               "position" : "Scene Root",
+               "endKey" : "stopExplosion",
+               "force" : 1
+            }
+         },
+         "timeline" : {
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02",
+            "explosion" : "0.01",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015"
+         }
+      }
+   },
+   "smallRammingDestruction" : {
+      "variant1" : {
+         "effects" : {
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "death"
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopDeath",
+                  "file" : "particles/Tank/destruction/ram_small.xml",
+                  "alwaysUpdateModel" : true,
+                  "startKey" : "death",
+                  "position" : "Scene Root"
+               },
+               {
+                  "endKey" : "stopDeath",
+                  "file" : "particles/Tank/destruction/smoke_dead_small_02.xml",
+                  "startKey" : "static",
+                  "position" : "HP_Fire_1"
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/fire_dead_small_02.xml",
+                  "startKey" : "flaming",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "sound" : [
+               {
+                  "startKey" : "death",
+                  "wwsoundPC" : "expl_ram_death_PC",
+                  "wwsound" : "expl_ram_death",
+                  "wwsoundNPC" : "expl_ram_death_NPC"
+               },
+               {
+                  "wwsound" : "burning_tank_small",
+                  "startKey" : "flaming"
+               }
+            ],
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "bumpTexName" : "explosion_ground_NM",
+               "startKey" : "static",
+               "size" : "12 12",
+               "groupName" : "AAAA"
+            }
+         },
+         "timeline" : {
+            "death" : "0.01",
+            "flaming" : "0.015",
+            "stopDeath" : 36000,
+            "waitChangeBurnSound" : "20.0",
+            "static" : "0.02"
+         }
+      }
+   },
+   "smallCrewDeath" : {
+      "variant1" : {
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015",
+            "waitChangeBurnSound" : "25.0",
+            "static" : "0.02"
+         },
+         "effects" : {
+            "sound" : {
+               "startKey" : "explosion",
+               "wwsound" : "expl_crew_death_s",
+               "wwsoundPC" : "expl_crew_death_s_PC",
+               "wwsoundNPC" : "expl_crew_death_s_NPC"
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopExplosion",
+                  "position" : "Scene Root",
+                  "alwaysUpdateModel" : true,
+                  "file" : "particles/Tank/destruction/death_crew_small.xml",
+                  "startKey" : "explosion"
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_white_small.xml",
+                  "position" : "HP_Fire_1"
+               }
+            ],
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "explosion"
+            }
+         }
+      }
+   },
+   "smallDestruction" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : [
+               {
+                  "wwsoundNPC" : "expl_fuel_NPC",
+                  "wwsound" : "expl_fuel",
+                  "wwsoundPC" : "expl_fuel_PC",
+                  "startKey" : "death"
+               },
+               {
+                  "wwsound" : "burning_tank_small",
+                  "startKey" : "flaming"
+               }
+            ],
+            "decal" : {
+               "smTexName" : "explosion_stone_NO_GMM",
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "size" : "12 12",
+               "groupName" : "AAAA"
+            },
+            "flashBang" : {
+               "startKey" : "death",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            },
+            "pixie" : [
+               {
+                  "endKey" : "stopDeath",
+                  "alwaysUpdateModel" : true,
+                  "file" : "particles/Tank/destruction/destruction_small_01.xml",
+                  "startKey" : "death",
+                  "position" : "Scene Root",
+                  "force" : 1
+               },
+               {
+                  "endKey" : "stopDeath",
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_small_02.xml"
+               },
+               {
+                  "endKey" : "waitChangeBurnSound",
+                  "file" : "particles/Tank/destruction/fire_dead_small_02.xml",
+                  "startKey" : "flaming",
+                  "position" : "HP_Fire_1"
+               }
+            ]
+         },
+         "timeline" : {
+            "flaming" : "0.015",
+            "death" : "0.01",
+            "stopDeath" : 36000,
+            "waitChangeBurnSound" : "20.0",
+            "static" : "0.02"
+         }
+      }
+   },
+   "mediumDestruction" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : [
+               {
+                  "startKey" : "death",
+                  "wwsoundNPC" : "expl_fuel_NPC",
+                  "wwsound" : "expl_fuel",
+                  "wwsoundPC" : "expl_fuel_PC"
+               },
+               {
+                  "wwsound" : "burning_tank_medium",
+                  "startKey" : "flaming"
+               }
+            ],
+            "decal" : {
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "smTexName" : "explosion_stone_NO_GMM",
+               "groupName" : "AAAA",
+               "size" : "12 12",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM"
+            },
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "endKey" : "stopDeath",
+                  "position" : "Scene Root",
+                  "alwaysUpdateModel" : true,
+                  "file" : "particles/Tank/destruction/destruction_medium_01.xml",
+                  "startKey" : "death"
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_01.xml",
+                  "endKey" : "stopDeath"
+               },
+               {
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_medium_01.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "death"
+            }
+         },
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "20.0",
+            "stopDeath" : 36000,
+            "death" : "0.01",
+            "flaming" : "0.015"
+         }
+      }
+   },
+   "explosionCandle2" : {
+      "variant1" : {
+         "effects" : {
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "file" : "particles/Tank/destruction/explosion_turret_02.xml",
+                  "startKey" : "start",
+                  "position" : "HP_turretJoint"
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "startKey" : "static",
+                  "file" : "particles/Tank/destruction/smoke_dead_medium_01.xml",
+                  "position" : "HP_Fire_1"
+               },
+               {
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_medium_01.xml",
+                  "position" : "HP_Fire_1",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "start"
+            },
+            "decal" : {
+               "randomYaw" : true,
+               "texName" : "explosion_ground_AM",
+               "smTexName" : "explosion_stone_NO_GMM",
+               "groupName" : "AAAA",
+               "size" : "12 12",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM"
+            },
+            "sound" : [
+               {
+                  "wwsound" : "burning_tank_medium",
+                  "startKey" : "flaming"
+               },
+               {
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "wwsound" : "expl_ammo",
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "startKey" : "start"
+               }
+            ]
+         },
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "impactEnd" : "5.0",
+            "stopExplosion" : 36000,
+            "flaming" : "0.015"
+         }
+      }
+   },
+   "dominationLargeFlaming" : {
+      "variant2" : {
+         "effects" : {
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            },
+            "sound" : {
+               "wwsoundNPC" : "tank_flaming_large",
+               "wwsoundPC" : "tank_flaming_large",
+               "startKey" : "AAAA",
+               "endKey" : "noEmission"
+            },
+            "pixie" : {
+               "startKey" : "AAAA",
+               "file" : "particles/Tank/destruction/flaming_domination_large_02.xml",
+               "position" : "HP_Fire_1"
+            }
+         },
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         }
+      },
+      "variant1" : {
+         "stages" : {
+            "fire" : "1.0",
+            "noEmission" : "4.0"
+         },
+         "effects" : {
+            "pixie" : {
+               "position" : "HP_Fire_1",
+               "file" : "particles/Tank/destruction/flaming_domination_large_01.xml",
+               "startKey" : "AAAA"
+            },
+            "sound" : {
+               "wwsoundPC" : "tank_flaming_medium",
+               "wwsoundNPC" : "tank_flaming_medium",
+               "endKey" : "noEmission",
+               "startKey" : "AAAA"
+            },
+            "stopEmission" : {
+               "startKey" : "noEmission"
+            }
+         }
+      }
+   },
+   "dominationLargeCrewDeath" : {
+      "variant1" : {
+         "effects" : {
+            "sound" : {
+               "wwsoundNPC" : "expl_crew_death_l_NPC",
+               "wwsoundPC" : "expl_crew_death_l_PC",
+               "wwsound" : "expl_crew_death_l",
+               "startKey" : "explosion"
+            },
+            "pixie" : {
+               "force" : 1,
+               "position" : "Scene Root",
+               "alwaysUpdateModel" : true,
+               "file" : "particles/Tank/destruction/death_crew_domination_large.xml",
+               "startKey" : "explosion",
+               "endKey" : "stopExplosion"
+            },
+            "flashBang" : {
+               "startKey" : "explosion",
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               }
+            }
+         },
+         "timeline" : {
+            "stopExplosion" : 36000,
+            "explosion" : "0.01",
+            "flaming" : "0.015",
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0"
+         }
+      }
+   },
+   "explosionCandle4" : {
+      "variant1" : {
+         "timeline" : {
+            "static" : "0.02",
+            "waitChangeBurnSound" : "25.0",
+            "flaming" : "0.015",
+            "stopExplosion" : 36000,
+            "impactEnd" : "5.0"
+         },
+         "effects" : {
+            "pixie" : [
+               {
+                  "force" : 1,
+                  "position" : "HP_turretJoint",
+                  "startKey" : "start",
+                  "file" : "particles/Tank/destruction/explosion_turret_04.xml"
+               },
+               {
+                  "endKey" : "stopExplosion",
+                  "position" : "HP_Fire_1",
+                  "file" : "particles/Tank/destruction/smoke_dead_large_01.xml",
+                  "startKey" : "static"
+               },
+               {
+                  "position" : "HP_Fire_1",
+                  "startKey" : "flaming",
+                  "file" : "particles/Tank/destruction/fire_dead_large_01.xml",
+                  "endKey" : "waitChangeBurnSound"
+               }
+            ],
+            "flashBang" : {
+               "stages" : {
+                  "stage" : [
+                     "0.1",
+                     "2.0",
+                     "0.0"
+                  ]
+               },
+               "startKey" : "start"
+            },
+            "sound" : [
+               {
+                  "startKey" : "flaming",
+                  "wwsound" : "burning_tank_large"
+               },
+               {
+                  "wwsoundPC" : "expl_ammo_PC",
+                  "wwsound" : "expl_ammo",
+                  "wwsoundNPC" : "expl_ammo_NPC",
+                  "startKey" : "start"
+               }
+            ],
+            "decal" : {
+               "size" : "12 12",
+               "groupName" : "AAAA",
+               "startKey" : "static",
+               "bumpTexName" : "explosion_ground_NM",
+               "texName" : "explosion_ground_AM",
+               "randomYaw" : true,
+               "smTexName" : "explosion_stone_NO_GMM"
+            }
+         }
+      }
+   }
+}

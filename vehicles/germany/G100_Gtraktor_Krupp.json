@@ -1,0 +1,522 @@
+{
+   "speedLimits" : {
+      "backward" : 12,
+      "forward" : 44
+   },
+   "emblems" : {
+      "alpha" : "0.92",
+      "default" : "germany_cross",
+      "lodDist" : "MEDIUM"
+   },
+   "premiumVehicleXPFactor" : "0.6",
+   "invisibility" : {
+      "camouflageNetBonus" : "0.1",
+      "firePenalty" : "0.387",
+      "still" : "0.258",
+      "camouflageBonus" : "0.03",
+      "moving" : "0.194"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "crewXpFactor" : "1.5",
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "camouflage" : {
+      "exclusionMask" : {},
+      "priceFactor" : "0.6",
+      "tiling" : "1 1 0 0"
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "BMW" : {
+               "smplEnginePower" : "264.3203"
+            }
+         },
+         "chassis" : {
+            "Chassis_G100_Gtraktor_Krupp" : {
+               "grounds" : {
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.09177"
+                     }
+                  },
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.09177"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.09177"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.09177"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.09177"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.09177"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "crew" : {
+      "driver" : {},
+      "commander" : {},
+      "radioman" : {},
+      "loader" : [
+         {},
+         {}
+      ],
+      "gunner" : {}
+   },
+   "fuelTanks" : {
+      "Medium" : "shared"
+   },
+   "hull" : {
+      "emblemSlots" : {
+         "clan" : {
+            "hideIfDamaged" : false,
+            "rayStart" : "-0.534728 0.260204 2.68714",
+            "rayUp" : "0.000000 0.000000 -1",
+            "size" : "0.28",
+            "rayEnd" : "-0.534728 -0.131241 2.60485"
+         }
+      },
+      "hitTester" : {
+         "collisionModelServer" : "vehicles/german/G100_Gtraktor_Krupp/collision/Hull.model",
+         "collisionModelClient" : "vehicles/german/G100_Gtraktor_Krupp/collision_client/Hull.model"
+      },
+      "maxHealth" : 256,
+      "hangarShadowTexture" : "vehicles/german/G100_Gtraktor_Krupp/Gtraktor_Krupp_HangarShadowMap.dds",
+      "weight" : 7850,
+      "armor" : {
+         "armor_3" : 8,
+         "armor_2" : 14,
+         "armor_5" : 6,
+         "armor_7" : 14,
+         "armor_1" : 14,
+         "armor_6" : 6,
+         "armor_8" : "",
+         "armor_9" : 6,
+         "armor_4" : 8
+      },
+      "swinging" : {
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 34.00 0.42 1.00 0.05 0.30",
+         "sensitivityToImpulse" : "0.48",
+         "rollParams" : "1.00 0.26 34.00 0.42 1.00 0.05 0.30"
+      },
+      "ammoBayHealth" : {
+         "maxHealth" : 100,
+         "repairCost" : "1.0",
+         "maxRegenHealth" : 80
+      },
+      "models" : {
+         "destroyed" : "vehicles/german/G100_Gtraktor_Krupp/crash/lod0/Hull.model",
+         "undamaged" : "vehicles/german/G100_Gtraktor_Krupp/normal/lod0/Hull.model",
+         "exploded" : "vehicles/german/G100_Gtraktor_Krupp/crash/lod0/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 0 1"
+      },
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "exhaust" : {
+         "nodes" : "HP_Track_Exhaus_1",
+         "pixie" : "gas_large"
+      }
+   },
+   "chassis" : {
+      "Chassis_G100_Gtraktor_Krupp" : {
+         "rotationSpeed" : 36,
+         "repairCost" : "1.0",
+         "bulkHealthFactor" : "3.0",
+         "groundNodes" : {
+            "group" : [
+               {
+                  "minOffset" : "-0.09",
+                  "template" : "Track_L",
+                  "count" : 12,
+                  "startIndex" : "",
+                  "maxOffset" : "0.09",
+                  "isLeft" : true
+               },
+               {
+                  "maxOffset" : "0",
+                  "isLeft" : true,
+                  "minOffset" : "0",
+                  "count" : 1,
+                  "startIndex" : 12,
+                  "template" : "Track_L"
+               },
+               {
+                  "isLeft" : false,
+                  "maxOffset" : "0.095",
+                  "count" : 12,
+                  "minOffset" : "-0.09",
+                  "template" : "Track_R",
+                  "startIndex" : ""
+               },
+               {
+                  "isLeft" : false,
+                  "maxOffset" : "0",
+                  "minOffset" : "0",
+                  "template" : "Track_R",
+                  "count" : 1,
+                  "startIndex" : 12
+               }
+            ]
+         },
+         "tracks" : {
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "lodDist" : "MEDIUM_TRACK",
+            "textureScale" : "-1.9"
+         },
+         "traces" : {
+            "lodDist" : "FAR",
+            "textureSet" : "usa_02",
+            "size" : "0.3 0.43",
+            "bufferPrefs" : "mediumTank"
+         },
+         "maxLoad" : 18000,
+         "navmeshGirth" : "6.0",
+         "tags" : {},
+         "userString" : "#germany_vehicles:Chassis_G100_Gtraktor_Krupp",
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 2 0 0 0 8 0 0 0"
+            }
+         },
+         "rotationIsAroundCenter" : false,
+         "shotDispersionFactors" : {
+            "vehicleMovement" : "0.23",
+            "vehicleRotation" : "0.23"
+         },
+         "splineDesc" : {
+            "atlas" : {
+               "VTiles" : 1,
+               "UTiles" : 1
+            },
+            "right" : "vehicles/german/G100_Gtraktor_Krupp/track/right.track",
+            "segmentModelLeft" : "vehicles/german/G100_Gtraktor_Krupp/track/Gtractor_Krupp_segment_track.model",
+            "lodDist" : "MEDIUM",
+            "left" : "vehicles/german/G100_Gtraktor_Krupp/track/left.track",
+            "segmentOffset" : "0.205",
+            "segmentModelRight" : "vehicles/german/G100_Gtraktor_Krupp/track/Gtractor_Krupp_segment_track.model",
+            "segmentLength" : "0.169"
+         },
+         "maxHealth" : 70,
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "notInShop" : true,
+         "wwsoundNPC" : "trds_chf_npc",
+         "models" : {
+            "destroyed" : "vehicles/german/G100_Gtraktor_Krupp/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/german/G100_Gtraktor_Krupp/normal/lod0/Chassis.model",
+            "exploded" : "vehicles/german/G100_Gtraktor_Krupp/crash/lod0/Chassis.model"
+         },
+         "armor" : {
+            "rightTrack" : 15,
+            "leftTrack" : 15
+         },
+         "price" : 1800,
+         "weight" : 5000,
+         "terrainResistance" : "1.03 1.14 1.71",
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/german/G100_Gtraktor_Krupp/collision_client/Chassis.model",
+            "collisionModelServer" : "vehicles/german/G100_Gtraktor_Krupp/collision/Chassis.model"
+         },
+         "level" : 3,
+         "maxRegenHealth" : 55,
+         "trackNodes" : {
+            "maxOffset" : "0.3",
+            "maxAmplitude" : "0.3",
+            "node" : [
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R0",
+                  "isLeft" : false,
+                  "backwardElastK" : "1.4",
+                  "offset" : "-0.078"
+               },
+               {
+                  "name" : "Track_VT_L0",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : "1.4",
+                  "isLeft" : true,
+                  "offset" : "-0.078"
+               },
+               {
+                  "backwardElastK" : "1.6",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R1",
+                  "offset" : "-0.078"
+               },
+               {
+                  "backwardElastK" : "1.8",
+                  "isLeft" : false,
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_R2",
+                  "offset" : "-0.078"
+               },
+               {
+                  "name" : "Track_VT_R3",
+                  "forwardElastK" : "0.75",
+                  "isLeft" : false,
+                  "backwardElastK" : 2,
+                  "offset" : "-0.078"
+               },
+               {
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L1",
+                  "backwardElastK" : "1.6",
+                  "isLeft" : true,
+                  "offset" : "-0.078"
+               },
+               {
+                  "offset" : "-0.078",
+                  "isLeft" : true,
+                  "backwardElastK" : "1.8",
+                  "forwardElastK" : "0.75",
+                  "name" : "Track_VT_L2"
+               },
+               {
+                  "name" : "Track_VT_L3",
+                  "forwardElastK" : "0.75",
+                  "backwardElastK" : 2,
+                  "isLeft" : true,
+                  "offset" : "-0.078"
+               },
+               {
+                  "name" : "Track_VD_L1",
+                  "isLeft" : true
+               },
+               {
+                  "name" : "Track_VD_R1",
+                  "isLeft" : false
+               }
+            ],
+            "gravity" : "-9.8",
+            "enable" : true,
+            "damping" : 2,
+            "elasticity" : 1000,
+            "linkBones" : false
+         },
+         "wwsoundPC" : "treads_type_pc",
+         "drivingWheels" : "WD_L0 WD_L6",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "syncAngle" : "22.5",
+                  "name" : "WD_L0"
+               },
+               {
+                  "syncAngle" : "22.5",
+                  "name" : "WD_L6",
+                  "isLeft" : true,
+                  "radius" : "0.48",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : false,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "W_L0"
+               },
+               {
+                  "isLeft" : true,
+                  "name" : "W_L12",
+                  "isLeading" : false,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R0",
+                  "syncAngle" : "22.5",
+                  "isLeading" : true,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "name" : "WD_R6",
+                  "syncAngle" : "22.5",
+                  "isLeading" : true,
+                  "radius" : "0.48"
+               },
+               {
+                  "radius" : "0",
+                  "isLeading" : false,
+                  "name" : "W_R0",
+                  "isLeft" : false
+               },
+               {
+                  "name" : "W_R12",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : false
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "radius" : "0",
+                  "template" : "WD_L",
+                  "count" : 2,
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0",
+                  "count" : 3,
+                  "startIndex" : 3,
+                  "template" : "WD_L",
+                  "isLeft" : true
+               },
+               {
+                  "radius" : "0.16",
+                  "template" : "W_L",
+                  "count" : 11,
+                  "startIndex" : 1,
+                  "isLeft" : true
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 2,
+                  "template" : "WD_R",
+                  "startIndex" : 1,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "count" : 3,
+                  "template" : "WD_R",
+                  "startIndex" : 3,
+                  "radius" : "0"
+               },
+               {
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "count" : 11,
+                  "template" : "W_R",
+                  "radius" : "0.16"
+               }
+            ]
+         },
+         "brakeForce" : 38000,
+         "topRightCarryingPoint" : "1.1031 2.18",
+         "maxClimbAngle" : 25,
+         "hullPosition" : "0.000000 1.50153 0.000000",
+         "trackThickness" : "-0.014"
+      }
+   },
+   "engines" : {
+      "BMW" : "shared"
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "0.894389834"
+   },
+   "repairCost" : "2.50",
+   "radios" : {
+      "FuG6" : "shared"
+   },
+   "turrets0" : {
+      "Turret_1_G100_Gtraktor_Krupp" : {
+         "armor" : {
+            "armor_2" : 6,
+            "armor_8" : "",
+            "armor_6" : 6,
+            "armor_3" : 8,
+            "armor_5" : 6,
+            "armor_1" : 14
+         },
+         "weight" : 2000,
+         "price" : 1800,
+         "rotationSpeed" : 41,
+         "level" : 3,
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/german/G100_Gtraktor_Krupp/collision/Turret_01.model",
+            "collisionModelClient" : "vehicles/german/G100_Gtraktor_Krupp/collision_client/Turret_01.model"
+         },
+         "emblemSlots" : {
+            "inscription" : {
+               "size" : "0.64",
+               "rayEnd" : "0.553118 0.270769 -0.0552542",
+               "hideIfDamaged" : true,
+               "rayUp" : "0.000000 1 0.000000",
+               "rayStart" : "0.944236 0.347968 -0.0879343"
+            },
+            "player" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "-1 0 1",
+                  "rayEnd" : "-0 0 0",
+                  "size" : "0.26"
+               },
+               {
+                  "size" : "0.26",
+                  "isMirrored" : true,
+                  "rayEnd" : "0 0 0",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayStart" : "1 0 1"
+               }
+            ]
+         },
+         "camouflage" : {
+            "tiling" : "0.31 0.31 0.000000 0.000000"
+         },
+         "showEmblemsOnGun" : false,
+         "userString" : "#germany_vehicles:Turret_1_G100_Gtraktor_Krupp",
+         "tags" : {},
+         "primaryArmor" : "armor_1 armor_3 armor_3",
+         "guns" : {
+            "_75mm_KwK_37_L24A" : "shared"
+         },
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 30,
+            "repairCost" : "1.0",
+            "maxHealth" : 60
+         },
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "circularVisionRadius" : 330,
+         "maxHealth" : 64,
+         "turretRotatorHealth" : {
+            "maxHealth" : 80,
+            "maxRegenHealth" : 40,
+            "repairCost" : "1.0"
+         },
+         "physicsShape" : "1.116 0.014 1.025 0.000 0.529 0.176 0.763 0.517 0.353 0.500 0.170 0.500 0.234 0.426 0.000",
+         "notInShop" : true,
+         "gunPosition" : "0 0 1",
+         "models" : {
+            "exploded" : "vehicles/german/G100_Gtraktor_Krupp/crash/lod0/Turret_01.model",
+            "undamaged" : "vehicles/german/G100_Gtraktor_Krupp/normal/lod0/Turret_01.model",
+            "destroyed" : "vehicles/german/G100_Gtraktor_Krupp/crash/lod0/Turret_01.model"
+         }
+      }
+   }
+}

@@ -1,0 +1,373 @@
+{
+   "crewXpFactor" : "1.0",
+   "invisibility" : {
+      "firePenalty" : "0.165",
+      "moving" : "0.055",
+      "camouflageBonus" : "0.02",
+      "still" : "0.11",
+      "camouflageNetBonus" : "0.05"
+   },
+   "speedLimits" : {
+      "backward" : 15,
+      "forward" : 40
+   },
+   "horns" : {
+      "distanceFactor" : 1,
+      "volumeFactor" : 1,
+      "priceFactor" : 1
+   },
+   "chassis" : {
+      "Chassis_Ch11_110_2_IGR" : {
+         "AODecals" : {
+            "decal" : {
+               "transform" : "4 0 0 0 1 0 0 0 8 0 0 0"
+            }
+         },
+         "armor" : {
+            "rightTrack" : 20,
+            "leftTrack" : 20
+         },
+         "weight" : 11500,
+         "rotationIsAroundCenter" : false,
+         "navmeshGirth" : "6.0",
+         "rotationSpeed" : 30,
+         "tracks" : {
+            "lodDist" : "MEDIUM_TRACK",
+            "leftMaterial" : "track_mat_L_skinned",
+            "rightMaterial" : "track_mat_R_skinned",
+            "textureScale" : "-0.84"
+         },
+         "shotDispersionFactors" : {
+            "vehicleRotation" : "0.23",
+            "vehicleMovement" : "0.23"
+         },
+         "userString" : "#igr_vehicles:Chassis_Ch11_110_2_IGR",
+         "price" : 35000,
+         "notInShop" : true,
+         "drivingWheels" : "WD_L0 WD_L4",
+         "maxLoad" : 54000,
+         "brakeForce" : 50000,
+         "traces" : {
+            "size" : "0.44 0.68",
+            "textureSet" : "ussr_01",
+            "bufferPrefs" : "largeTank",
+            "lodDist" : "FAR"
+         },
+         "models" : {
+            "exploded" : "vehicles/chinese/Ch11_110/crash/lod0/Chassis.model",
+            "destroyed" : "vehicles/chinese/Ch11_110/crash/lod0/Chassis.model",
+            "undamaged" : "vehicles/chinese/Ch11_110/normal/lod0/Chassis.model"
+         },
+         "hitTester" : {
+            "collisionModelServer" : "vehicles/chinese/Ch11_110/collision/Chassis.model",
+            "collisionModelClient" : "vehicles/chinese/Ch11_110/collision_client/Chassis.model"
+         },
+         "terrainResistance" : "1 1.1 2.2",
+         "wheels" : {
+            "wheel" : [
+               {
+                  "name" : "WD_R0",
+                  "isLeft" : false,
+                  "radius" : "0",
+                  "isLeading" : true
+               },
+               {
+                  "isLeading" : true,
+                  "name" : "WD_R4",
+                  "radius" : "0.38334",
+                  "isLeft" : false
+               },
+               {
+                  "isLeading" : true,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "name" : "WD_L0"
+               },
+               {
+                  "radius" : "0.38334",
+                  "isLeft" : true,
+                  "name" : "WD_L4",
+                  "isLeading" : true
+               }
+            ],
+            "lodDist" : "MEDIUM",
+            "group" : [
+               {
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : 1,
+                  "template" : "WD_R"
+               },
+               {
+                  "count" : 6,
+                  "radius" : "0",
+                  "isLeft" : false,
+                  "startIndex" : "",
+                  "template" : "W_R"
+               },
+               {
+                  "count" : 3,
+                  "radius" : "0",
+                  "isLeft" : true,
+                  "startIndex" : 1,
+                  "template" : "WD_L"
+               },
+               {
+                  "isLeft" : true,
+                  "radius" : "0",
+                  "count" : 6,
+                  "template" : "W_L",
+                  "startIndex" : ""
+               }
+            ]
+         },
+         "repairCost" : "5.0",
+         "level" : 8,
+         "hullPosition" : "0 1 0",
+         "maxClimbAngle" : 25,
+         "wwsoundPC" : "treads_type_pc",
+         "wwsoundNPC" : "trds_med_npc",
+         "tags" : {},
+         "topRightCarryingPoint" : "1.20535 2.23651",
+         "effects" : {
+            "lodDist" : "MEDIUM",
+            "mud" : "AAAAAAYAAAAA"
+         },
+         "maxRegenHealth" : 165,
+         "bulkHealthFactor" : "3.0",
+         "maxHealth" : 220
+      }
+   },
+   "repairCost" : "7.48",
+   "engines" : {
+      "_12150LS_IGR" : "shared"
+   },
+   "emblems" : {
+      "default" : "china_star",
+      "lodDist" : "MEDIUM",
+      "alpha" : "0.88"
+   },
+   "turrets0" : {
+      "Turret_2_Ch11_110_IGR" : {
+         "wwturretRotatorSoundManual" : "tur_mech_trav",
+         "camouflage" : {
+            "tiling" : "1.06 1.06 0.000000 0.000000"
+         },
+         "maxHealth" : 390,
+         "tags" : {},
+         "models" : {
+            "destroyed" : "vehicles/chinese/Ch11_110/crash/lod0/Turret_02.model",
+            "undamaged" : "vehicles/chinese/Ch11_110/normal/lod0/Turret_02.model",
+            "exploded" : "vehicles/chinese/Ch11_110/crash/lod0/Turret_02.model"
+         },
+         "hitTester" : {
+            "collisionModelClient" : "vehicles/chinese/Ch11_110/collision_client/Turret_02.model",
+            "collisionModelServer" : "vehicles/chinese/Ch11_110/collision/Turret_02.model"
+         },
+         "showEmblemsOnGun" : false,
+         "guns" : {
+            "_100mm_62-100T_IGR" : "shared"
+         },
+         "level" : 8,
+         "turretRotatorHealth" : {
+            "maxHealth" : 150,
+            "repairCost" : "1.0",
+            "maxRegenHealth" : 75
+         },
+         "emblemSlots" : {
+            "player" : [
+               {
+                  "size" : "0.28",
+                  "rayStart" : "-1.19775 0.510963 0.397629",
+                  "rayEnd" : "-1 0 0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : true
+               },
+               {
+                  "rayStart" : "1.19775 0.510963 0.397629",
+                  "isMirrored" : true,
+                  "size" : "0.28",
+                  "hideIfDamaged" : true,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "1 0 0"
+               }
+            ],
+            "inscription" : [
+               {
+                  "hideIfDamaged" : false,
+                  "rayUp" : "0.000000 1 0.000000",
+                  "rayEnd" : "-1 0 -0",
+                  "rayStart" : "-1.25434 0.53341 -0.460242",
+                  "size" : "0.58"
+               },
+               {
+                  "size" : "0.58",
+                  "rayStart" : "1.25434 0.53341 -0.460242",
+                  "rayEnd" : "1 0 -0",
+                  "rayUp" : "0.000000 1 0.000000",
+                  "hideIfDamaged" : false
+               }
+            ]
+         },
+         "primaryArmor" : "armor_1 armor_2 armor_4",
+         "price" : 33200,
+         "notInShop" : true,
+         "physicsShape" : "1.000 -0.066 0.979 0.000 0.683 0.151 0.586 0.399 0.535 0.500 0.360 0.500 0.196 0.837 0.350",
+         "rotationSpeed" : 26,
+         "circularVisionRadius" : 380,
+         "surveyingDeviceHealth" : {
+            "maxRegenHealth" : 50,
+            "repairCost" : "1.0",
+            "maxHealth" : 100
+         },
+         "userString" : "#igr_vehicles:Turret_2_Ch11_110_IGR",
+         "gunPosition" : "0.000000 0.285941 1.132",
+         "armor" : {
+            "armor_15" : 75,
+            "armor_13" : "",
+            "armor_14" : 30,
+            "armor_4" : 50,
+            "armor_8" : 148,
+            "armor_3" : 129,
+            "armor_7" : 102,
+            "armor_1" : 201,
+            "armor_10" : 102,
+            "armor_9" : 148,
+            "armor_11" : 40,
+            "armor_6" : 102,
+            "armor_2" : 148,
+            "armor_5" : 129,
+            "armor_12" : 50
+         },
+         "weight" : 11000
+      }
+   },
+   "hull" : {
+      "hangarShadowTexture" : "vehicles/chinese/Ch11_110/110_HangarShadowMap.dds",
+      "swinging" : {
+         "sensitivityToImpulse" : "0.28",
+         "rollParams" : "1.00 0.26 36.00 0.48 1.00 0.05 0.32",
+         "lodDist" : "FAR",
+         "pitchParams" : "0.26 36.00 0.48 1.00 0.05 0.32"
+      },
+      "maxHealth" : 1160,
+      "exhaust" : {
+         "pixie" : "diesel_large",
+         "nodes" : "HP_Track_Exhaus_1 HP_Track_Exhaus_2"
+      },
+      "ammoBayHealth" : {
+         "maxRegenHealth" : 135,
+         "maxHealth" : 200,
+         "repairCost" : "1.0"
+      },
+      "models" : {
+         "undamaged" : "vehicles/chinese/Ch11_110/normal/lod0/Hull.model",
+         "destroyed" : "vehicles/chinese/Ch11_110/crash/lod0/Hull.model",
+         "exploded" : "vehicles/chinese/Ch11_110/crash/lod0/Hull.model"
+      },
+      "hitTester" : {
+         "collisionModelClient" : "vehicles/chinese/Ch11_110/collision_client/Hull.model",
+         "collisionModelServer" : "vehicles/chinese/Ch11_110/collision/Hull.model"
+      },
+      "turretPositions" : {
+         "turret" : "0 1 1"
+      },
+      "emblemSlots" : {
+         "clan" : {
+            "rayStart" : "-0.954861 0.612386 1.89711",
+            "size" : "0.28",
+            "hideIfDamaged" : false,
+            "rayUp" : "1 0 -1",
+            "rayEnd" : "-0.768961 0.29166 1.74685"
+         }
+      },
+      "weight" : 24345,
+      "primaryArmor" : "armor_1 armor_3 armor_4",
+      "armor" : {
+         "armor_5" : 100,
+         "armor_12" : 20,
+         "armor_6" : 120,
+         "armor_2" : 110,
+         "armor_7" : 90,
+         "armor_1" : 120,
+         "armor_10" : 30,
+         "armor_9" : 60,
+         "armor_11" : 20,
+         "armor_14" : 30,
+         "armor_13" : "",
+         "armor_4" : 60,
+         "armor_8" : 60,
+         "armor_3" : 90
+      }
+   },
+   "clientAdjustmentFactors" : {
+      "armour" : "1.18895793"
+   },
+   "crew" : {
+      "loader" : {},
+      "driver" : {},
+      "commander" : "AAAAAAAA",
+      "gunner" : {}
+   },
+   "physics" : {
+      "detailed" : {
+         "engines" : {
+            "_12150LS_IGR" : {
+               "smplEnginePower" : "613.2231"
+            }
+         },
+         "chassis" : {
+            "Chassis_Ch11_110_2_IGR" : {
+               "grounds" : {
+                  "snow" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "wood" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "stone" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "ground" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "metal" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  },
+                  "sand" : {
+                     "medium" : {
+                        "rollingFriction" : "0.08855"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "camouflage" : {
+      "tiling" : "1 1 0 0",
+      "exclusionMask" : "vehicles/chinese/Ch11_110/110_CM.dds",
+      "priceFactor" : "1.6"
+   },
+   "effects" : {
+      "collision" : {},
+      "damagedStateGroup" : "large"
+   },
+   "fuelTanks" : {
+      "Heavy" : "shared"
+   },
+   "radios" : {
+      "A-220B_IGR" : "shared"
+   }
+}
