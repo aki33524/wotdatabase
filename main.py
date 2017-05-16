@@ -87,7 +87,7 @@ class Vehicle:
 
 				gl += l
 
-				print(", ".join(gl))
+				print("\t".join(gl))
 
 def shell_detail(sjson):
 	d = {}
@@ -234,7 +234,7 @@ if __name__ == "__main__":
 		"shell3_pierce",
 		"shell3_damage",
 	]
-	print(", ".join(l))
+	print("\t".join(l))
 
 	base_dir = "vehicles"
 	for d in os.listdir(base_dir):
