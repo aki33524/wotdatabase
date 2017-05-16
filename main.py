@@ -100,6 +100,7 @@ def shell_detail(sjson):
 		"HOLLOW_CHARGE":"HEAT"
 	}
 	d["kind"] = kindd[sjson["kind"]]
+	d["price"] = sjson["price"]
 
 	return d
 
@@ -124,6 +125,15 @@ def gun_detail(gjson):
 
 		shell["speed"] = shootv["speed"]
 		gun.shells.append(shell)
+
+	d = {
+		"AP":1,
+		"APCR":2,
+		"HEAT":3,
+		"HE":4,
+	}
+
+	gun.shells.sort(key=lambda s: (d[s["kind"]], s["p100"]))
 
 	if "clip"in gjson:
 		# auto loader
