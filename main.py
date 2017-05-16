@@ -55,6 +55,8 @@ class Vehicle:
 			str(self.front),
 			str(self.sides),
 			str(self.rear),
+			str(self.still),
+			str(self.moving),
 		]
 		for turret in self.turrets:
 			tl = copy.deepcopy(ol)
@@ -78,9 +80,15 @@ class Vehicle:
 				for shell in gun.shells:
 					l.append(shell["kind"])
 					l.append(str(shell["p100"]))
+					l.append(str(shell["p500"]))
+					l.append(str(shell["caliber"]))
+					l.append(str(shell["speed"]))
 					l.append(str(shell["damage"]))
 
 				for i in range(3 - len(gun.shells)):
+					l.append("-")
+					l.append("-")
+					l.append("-")
 					l.append("-")
 					l.append("-")
 					l.append("-")
@@ -151,6 +159,9 @@ def vehicle_detail(vehicle, vjson, tunk_type):
 	vehicle.front = armor[front]
 	vehicle.sides = armor[sides]
 	vehicle.rear = armor[rear]
+	vehicle.still = float(vjson["invisibility"]["still"])
+	vehicle.moving = float(vjson["invisibility"]["moving"])
+	vehicle.fire_penalty = float(vjson["invisibility"]["firePenalty"])
 
 	turrets = vjson["turrets0"]
 	# if turrets is None:
@@ -217,6 +228,8 @@ if __name__ == "__main__":
 		"front",
 		"sides",
 		"rear",
+		"still",
+		"moving",
 		"view",
 		"tfront",
 		"tsides",
@@ -225,13 +238,22 @@ if __name__ == "__main__":
 		"clip_count",
 		"clip_rate",
 		"shell1_type",
-		"shell1_pierce",
+		"shell1_p100",
+		"shell1_p500",
+		"shell1_speed",
+		"shell1_caliber",
 		"shell1_damage",
 		"shell2_type",
-		"shell2_pierce",
+		"shell2_p100",
+		"shell2_p500",
+		"shell2_speed",
+		"shell2_caliber",
 		"shell2_damage",
 		"shell3_type",
-		"shell3_pierce",
+		"shell3_p100",
+		"shell3_p500",
+		"shell3_speed",
+		"shell3_caliber",
 		"shell3_damage",
 	]
 	print("\t".join(l))
